@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://wonderwhy.net/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/privacy/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/privacy/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/tr/gizlilik/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/privacy/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/terms/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/kullanim-sartlari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/terms/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/tr/kullanim-sartlari/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/terms/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/kullanim-sartlari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/terms/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/destek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/support/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/tr/destek/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/destek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/support/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/delete-account/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/delete-account/"/>
+  </url>
+  <url>
+    <loc>https://wonderwhy.net/tr/hesap-silme/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wonderwhy.net/delete-account/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/hesap-silme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/delete-account/"/>
+  </url>
+</urlset>

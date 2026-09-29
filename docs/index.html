@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>wonderwhy: listen to the news, ask what you wonder about</title>
+<meta name="description" content="A short audio news briefing on the topics you pick. Hold the mic to ask a question and see where sources tell a story differently. Coming soon to iPhone.">
+<link rel="canonical" href="https://wonderwhy.net/">
+<link rel="alternate" hreflang="en" href="https://wonderwhy.net/">
+<link rel="alternate" hreflang="tr" href="https://wonderwhy.net/tr/">
+<link rel="alternate" hreflang="x-default" href="https://wonderwhy.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="wonderwhy">
+<meta property="og:title" content="wonderwhy: listen to the news, ask what you wonder about">
+<meta property="og:description" content="A short audio news briefing on the topics you pick. Hold the mic to ask a question and see where sources tell a story differently. Coming soon to iPhone.">
+<meta property="og:url" content="https://wonderwhy.net/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:image" content="https://wonderwhy.net/brand/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="brand/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://wonderwhy.net/#org","name":"wonderwhy","url":"https://wonderwhy.net/","email":"hello@wonderwhy.net","logo":"https://wonderwhy.net/brand/icon-512.png"},{"@type":"WebSite","@id":"https://wonderwhy.net/#website","name":"wonderwhy","url":"https://wonderwhy.net/","inLanguage":["en","tr"],"publisher":{"@id":"https://wonderwhy.net/#org"}}]}</script>
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/json" id="lang-hint">{"en":{"text":"This page is also available in English.","link":"Read in English","close":"Close"},"tr":{"text":"Bu sayfanın Türkçesi de var.","link":"Türkçe oku","close":"Kapat"}}</script>
+<style>:root {
+--bg: #000;
+--raised: #1c1c1e;
+--high: #2c2c2e;
+--sep: #38383a;
+--label: #fff;
+--body: #ebeced;
+--muted: #a1a1a6;
+--disabled: #636366;
+--accent: #0a84ff;
+--danger: #ff453a;
+--pad: 20px;
+--r-card: 14px;
+--r-large: 20px;
+--enter: cubic-bezier(.35, .91, .33, .97);
+--pop: cubic-bezier(.175, .885, .32, 1.275);
+--ease-out: cubic-bezier(0, 0, .58, 1);
+--font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+--font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--body);
+font: 400 17px/22px var(--font);
+letter-spacing: -.41px;
+-webkit-font-smoothing: antialiased;
+overflow-x: clip;
+}
+h1, h2, h3, h4 { margin: 0; color: var(--label); font-family: var(--font-display); }
+p { margin: 0; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+strong { color: var(--label); font-weight: 600; }
+.vh { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.kicker { font: 600 12px/16px var(--font); letter-spacing: .6px; text-transform: uppercase; color: var(--muted); }
+.large-title { font-weight: 700; font-size: clamp(34px, 5.4vw, 60px); line-height: 1.12; letter-spacing: .38px; }
+.title1 { font-weight: 700; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.2; letter-spacing: .36px; }
+.title2 { font: 700 22px/28px var(--font-display); letter-spacing: -.26px; }
+.title3 { font: 600 20px/25px var(--font-display); letter-spacing: -.45px; }
+.headline { font: 600 17px/22px var(--font); letter-spacing: -.41px; color: var(--label); }
+.callout { font: 400 16px/21px var(--font); letter-spacing: -.32px; }
+.subhead { font: 400 15px/20px var(--font); letter-spacing: -.23px; }
+.footnote { font: 400 13px/18px var(--font); letter-spacing: -.08px; color: var(--muted); }
+.caption { font: 400 12px/16px var(--font); color: var(--muted); }
+.muted { color: var(--muted); }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 var(--pad); }
+.narrow { max-width: 720px; }
+.skip {
+position: absolute; left: 12px; top: -80px; z-index: 20;
+background: var(--label); color: #000; padding: 12px 20px; border-radius: 999px;
+font: 600 15px/20px var(--font); text-decoration: none;
+}
+.skip:focus { top: 12px; }
+.top { position: relative; z-index: 5; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 12px; }
+.wordmark { color: var(--label); text-decoration: none; letter-spacing: 1.4px; font-size: 13px; }
+.lang-link { font: 600 15px/20px var(--font); color: var(--label); text-decoration: none; padding: 12px 0 12px 12px; }
+.lang-link:hover { text-decoration: underline; }
+main { display: block; }
+section { padding: 72px 0; }
+.section-head { display: grid; gap: 8px; margin-bottom: 28px; max-width: 720px; }
+.section-head .lead { color: var(--body); }
+.btn {
+display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+min-height: 44px; padding: 12px 24px; border-radius: 999px; border: 0;
+font: 600 17px/22px var(--font); letter-spacing: -.41px; text-decoration: none;
+transition: transform 120ms var(--ease-out);
+cursor: pointer;
+}
+.btn:active { transform: scale(.97); }
+.btn-primary { background: var(--label); color: #000; }
+.btn-quiet { background: var(--raised); color: var(--label); }
+.pill-soon {
+display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 11px 20px;
+border-radius: 999px; border: 1px solid var(--sep); color: var(--label); font: 600 17px/22px var(--font);
+}
+.pill-soon .soon { font: 400 13px/18px var(--font); color: var(--muted); }
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+.rise { animation: rise 500ms var(--enter) both; animation-delay: calc(200ms + 70ms * var(--i, 0)); }
+.js .reveal { opacity: 0; transform: translateY(16px); transition: opacity 500ms var(--enter), transform 500ms var(--enter); transition-delay: calc(70ms * var(--i, 0)); animation: reveal-safety 0s 4s forwards; }
+.js .reveal.in { opacity: 1; transform: none; animation: none; }
+@keyframes reveal-safety { to { opacity: 1; transform: none; } }
+.hero { position: relative; padding: 0; overflow: clip; }
+.wall {
+position: relative; height: min(58vh, 560px); min-height: 340px; overflow: hidden;
+mask-image: linear-gradient(#000 calc(100% - 140px), transparent);
+-webkit-mask-image: linear-gradient(#000 calc(100% - 140px), transparent);
+}
+.wall-tilt {
+position: absolute; left: -17.5%; top: -17.5%; width: 135%; height: 135%;
+display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+transform: rotate(-8deg);
+}
+.wall-col { overflow: hidden; }
+.wall-col:nth-child(n+4) { display: none; }
+.wall-track { display: grid; gap: 10px; padding-bottom: 10px; will-change: transform; }
+.ready .wall-track { animation: wall var(--dur) linear infinite; }
+.hero.paused .wall-track, .hero.offscreen .wall-track { animation-play-state: paused; }
+@keyframes wall { to { transform: translateY(-50%); } }
+.tile {
+height: 150px; background: var(--raised); border-radius: var(--r-card); padding: 12px;
+display: grid; align-content: start; gap: 8px; overflow: hidden;
+-webkit-mask-image: linear-gradient(#000 118px, transparent 146px);
+mask-image: linear-gradient(#000 118px, transparent 146px);
+}
+.tile .footnote { color: var(--body); }
+.wall-toggle {
+display: none; position: absolute; z-index: 3; right: var(--pad); top: 8px;
+width: 44px; height: 44px; border-radius: 999px; border: 0; cursor: pointer;
+background: rgba(28, 28, 30, .86); color: var(--label);
+align-items: center; justify-content: center;
+}
+.ready .wall-toggle { display: inline-flex; }
+.wall-toggle .i-play { display: none; }
+.hero.paused .wall-toggle .i-play { display: block; }
+.hero.paused .wall-toggle .i-pause { display: none; }
+.hero-text { position: relative; z-index: 2; background: var(--bg); padding-top: 8px; padding-bottom: 8px; display: grid; gap: 0; }
+.hero-text .kicker { margin-bottom: 8px; }
+.hero-text h1 { margin-bottom: 12px; }
+.hero-text .body { max-width: 560px; margin-bottom: 24px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.steps { display: grid; gap: 32px; max-width: 560px; }
+.step { display: grid; gap: 16px; align-content: start; margin: 0; }
+.step-head { display: grid; gap: 4px; }
+.step-head h3 { display: flex; align-items: baseline; gap: 10px; }
+.step-no { font: 600 13px/18px var(--font); color: var(--muted); font-variant-numeric: tabular-nums; }
+.card { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 12px; align-content: start; }
+.sample-tag { justify-self: start; font: 600 11px/13px var(--font); letter-spacing: .06px; text-transform: uppercase; color: var(--label); border: 1px solid var(--sep); border-radius: 999px; padding: 3px 8px; }
+.player { display: flex; align-items: center; gap: 12px; }
+.play {
+width: 44px; height: 44px; flex: none; border-radius: 999px; border: 0; cursor: pointer;
+background: var(--label); color: #000; display: none; align-items: center; justify-content: center;
+}
+.ready .play { display: inline-flex; }
+.play .i-pause { display: none; }
+.player.playing .play .i-pause { display: block; }
+.player.playing .play .i-play { display: none; }
+.ready .player audio { display: none; }
+.player audio { width: 100%; max-width: 320px; height: 36px; }
+.wave { display: none; align-items: center; gap: 4px; height: 28px; }
+.ready .wave { display: inline-flex; }
+.wave i { width: 3px; height: 15%; border-radius: 3px; background: var(--disabled); }
+.player.playing .wave i { background: var(--label); animation: bar 900ms ease-in-out infinite alternate; }
+.wave i:nth-child(2) { animation-delay: -120ms; } .wave i:nth-child(3) { animation-delay: -360ms; }
+.wave i:nth-child(4) { animation-delay: -600ms; } .wave i:nth-child(5) { animation-delay: -240ms; }
+.wave i:nth-child(6) { animation-delay: -720ms; } .wave i:nth-child(7) { animation-delay: -480ms; }
+.wave i:nth-child(8) { animation-delay: -180ms; } .wave i:nth-child(9) { animation-delay: -540ms; }
+@keyframes bar { from { height: 18%; } to { height: 100%; } }
+.dur { font: 400 12px/16px var(--font); color: var(--muted); font-variant-numeric: tabular-nums; }
+.transcript { display: grid; gap: 8px; }
+.transcript .label { margin-bottom: -4px; }
+.ready .transcript.playing .w { color: var(--muted); transition: color 120ms var(--ease-out); }
+.ready .transcript.playing .w.on { color: var(--label); }
+.bubble { justify-self: start; background: var(--high); border-radius: var(--r-card); padding: 8px 12px; color: var(--label); }
+.mic { width: 40px; height: 40px; border-radius: 999px; background: var(--label); color: #000; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+.ask-row { display: flex; align-items: center; gap: 12px; }
+.src-row { display: grid; grid-template-columns: 22px 1fr; gap: 4px 10px; align-items: start; }
+.src-no { width: 22px; height: 22px; border-radius: 999px; background: var(--high); color: var(--label); font: 600 12px/22px var(--font); text-align: center; }
+.src-row .kicker { align-self: center; }
+.src-row .subhead { grid-column: 2; color: var(--label); }
+.tag { border-left: 3px solid var(--label); padding: 4px 8px; display: grid; gap: 2px; }
+.tag.danger { border-left-color: var(--danger); }
+.tag .headline { font-size: 15px; line-height: 20px; }
+.hair { height: .5px; background: var(--sep); border: 0; margin: 0; }
+.claims { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.claims .val { font: 700 17px/22px var(--font); color: var(--label); }
+.samples { display: grid; gap: 16px; }
+.brief { background: var(--raised); border-radius: var(--r-large); padding: 20px; display: grid; gap: 10px; margin: 0; }
+.brief .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.choices { display: grid; gap: 8px; max-width: 720px; padding: 0; margin: 0; list-style: none; }
+.choice { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 2px; }
+.download { display: grid; gap: 16px; justify-items: start; }
+.stores { display: flex; flex-wrap: wrap; gap: 8px; }
+.faq { display: grid; gap: 8px; max-width: 720px; }
+.faq details { background: var(--raised); border-radius: var(--r-card); }
+.faq summary {
+list-style: none; cursor: pointer; padding: 16px 48px 16px 16px; position: relative;
+font: 600 17px/22px var(--font); color: var(--label); border-radius: var(--r-card);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+content: ""; position: absolute; right: 20px; top: 50%; width: 9px; height: 9px; margin-top: -7px;
+border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg);
+transition: transform 200ms var(--ease-out);
+}
+.faq details[open] summary::after { transform: rotate(-135deg); margin-top: -2px; }
+.faq .answer { padding: 0 16px 16px; }
+.doc { padding: 24px 0 72px; }
+.doc-head { display: grid; gap: 8px; margin-bottom: 24px; }
+.draft { background: var(--raised); border-left: 3px solid var(--label); border-radius: 0 var(--r-card) var(--r-card) 0; padding: 12px 16px; margin-bottom: 24px; }
+.prose { line-height: 1.6; }
+.prose h2 { font: 700 22px/28px var(--font-display); letter-spacing: -.26px; margin: 40px 0 12px; scroll-margin-top: 16px; }
+.prose h3 { font: 600 17px/22px var(--font); margin: 24px 0 8px; }
+.prose p, .prose ul, .prose ol, .prose table { margin: 0 0 14px; }
+.prose ul, .prose ol { padding-left: 22px; }
+.prose li { margin-bottom: 6px; }
+.prose li::marker { color: var(--muted); }
+.prose .table-wrap { overflow-x: auto; margin: 0 0 14px; }
+.prose table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; line-height: 20px; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: .5px solid var(--sep); }
+.prose th { color: var(--label); font-weight: 600; }
+.toc { background: var(--raised); border-radius: var(--r-card); padding: 16px 20px; margin-bottom: 8px; font: 400 15px/20px var(--font); letter-spacing: -.23px; }
+.toc ol { margin: 8px 0 0; padding-left: 22px; columns: 2 240px; column-gap: 24px; }
+.toc li { margin-bottom: 4px; break-inside: avoid; }
+.todo { background: var(--high); color: var(--label); border-radius: 6px; padding: 0 6px; }
+.info-list { display: grid; gap: 8px; max-width: 720px; }
+.info { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 6px; }
+.lang-hint { background: var(--raised); border-bottom: .5px solid var(--sep); }
+.lang-hint .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; min-height: 48px; padding-top: 2px; padding-bottom: 2px; font: 400 15px/20px var(--font); }
+.lang-hint a { font-weight: 600; white-space: nowrap; }
+.lang-hint button { margin-left: auto; width: 44px; height: 44px; border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 22px; line-height: 1; border-radius: 999px; }
+.foot { border-top: .5px solid var(--sep); padding: 32px 0 48px; }
+.foot .wrap { display: grid; gap: 16px; }
+.foot nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.foot a { color: var(--body); text-decoration: none; display: inline-block; padding: 6px 0; }
+.foot a:hover { text-decoration: underline; }
+.notfound { min-height: 70vh; display: grid; align-content: center; gap: 16px; padding: 48px 0; }
+@media (min-width: 760px) {
+:root { --pad: 32px; }
+.large-title { letter-spacing: -.5px; }
+.title1 { letter-spacing: -.2px; }
+section { padding: 96px 0; }
+.wall { height: min(62vh, 620px); }
+.samples { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 980px) {
+.steps { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; gap: 16px 20px; max-width: none; }
+.step { grid-row: span 2; grid-template-rows: subgrid; gap: 16px; }
+}
+@media (min-width: 1100px) {
+.wall-tilt { grid-template-columns: repeat(5, 1fr); }
+.wall-col:nth-child(n+4) { display: block; }
+}
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto; }
+.rise, .ready .wall-track, .player.playing .wave i { animation: none !important; }
+.js .reveal { opacity: 1; transform: none; transition: none; animation: none; }
+.ready .wall-toggle { display: none; }
+.btn { transition: none; }
+}</style>
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap">
+<a class="wordmark kicker" href="./">wonderwhy</a>
+<a class="lang-link" href="tr/" hreflang="tr" lang="tr">Türkçe</a>
+</div></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+<button class="wall-toggle" type="button" aria-pressed="false" aria-label="Pause the moving headlines"><svg class="i-pause" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><rect x="3.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/><rect x="10.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/></svg><svg class="i-play" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M5 2.8v12.4a.8.8 0 0 0 1.2.7l10-6.2a.8.8 0 0 0 0-1.4l-10-6.2A.8.8 0 0 0 5 2.8Z" fill="currentColor"/></svg></button>
+<div class="wall" aria-hidden="true"><div class="wall-tilt">
+<div class="wall-col"><div class="wall-track" style="--dur:128.0s"><div class="tile"><p class="kicker">National</p><p class="footnote">Rising sea levels threaten Southern California beach town and vital rail line</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Ireland beats Japan in WXV Global Series as Beibhinn Parsons sets try record</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Meta bets on smart glasses to lead the consumer AI device race</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">Google and OpenAI compete to make AI voice conversations more natural</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jon Watts to direct next Star Wars movie</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Nasal spray offers needle-free pain relief for children in emergency rooms</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Scientists discover chemosynthetic bacteria living on coral reef fish gills</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">World Sauna Congress convenes in Oslo as global interest in heat therapy grows</p></div><div class="tile"><p class="kicker">National</p><p class="footnote">Rising sea levels threaten Southern California beach town and vital rail line</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Ireland beats Japan in WXV Global Series as Beibhinn Parsons sets try record</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Meta bets on smart glasses to lead the consumer AI device race</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">Google and OpenAI compete to make AI voice conversations more natural</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jon Watts to direct next Star Wars movie</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Nasal spray offers needle-free pain relief for children in emergency rooms</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Scientists discover chemosynthetic bacteria living on coral reef fish gills</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">World Sauna Congress convenes in Oslo as global interest in heat therapy grows</p></div></div></div>
+<div class="wall-col"><div class="wall-track" style="--dur:85.3s"><div class="tile"><p class="kicker">Politics</p><p class="footnote">Several states compete to host new US Space Academy</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Eva Olid secures first Women Super League victory as Manchester United manager</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Upcoming jobs report could push Treasury yields higher</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">How to use the Live Text feature on your iPhone</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jalen Brunson makes Saturday Night Live hosting debut</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Uterus transplants in the United States lead to dozens of healthy births</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Astronomers discover radio galaxy with four separate jet outbursts</p></div><div class="tile"><p class="kicker">Culture</p><p class="footnote">Author Tomi Adeyemi says she does not plan to watch the film adaptation of her hit novel</p></div><div class="tile"><p class="kicker">Politics</p><p class="footnote">Several states compete to host new US Space Academy</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Eva Olid secures first Women Super League victory as Manchester United manager</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Upcoming jobs report could push Treasury yields higher</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">How to use the Live Text feature on your iPhone</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jalen Brunson makes Saturday Night Live hosting debut</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Uterus transplants in the United States lead to dozens of healthy births</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Astronomers discover radio galaxy with four separate jet outbursts</p></div><div class="tile"><p class="kicker">Culture</p><p class="footnote">Author Tomi Adeyemi says she does not plan to watch the film adaptation of her hit novel</p></div></div></div>
+<div class="wall-col"><div class="wall-track" style="--dur:106.7s"><div class="tile"><p class="kicker">Sports</p><p class="footnote">Major League Baseball releases schedule for the 2026 postseason</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Buffalo Bills to face Los Angeles Chargers in Week 3 matchup</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">Wired names the best party speakers for 2026</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">The tale of two Duos from Apple and Microsoft</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Martin McDonagh calls Wild Horse Nine his most political film</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Medical experts discuss shifting to a single dose for HPV vaccine</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">NASA Astronomy Picture of the Day features Andromeda galaxy before and after digital processing</p></div><div class="tile"><p class="kicker">Culture</p><p class="footnote">How avoiding misery can actually make us more unhappy</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Major League Baseball releases schedule for the 2026 postseason</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Buffalo Bills to face Los Angeles Chargers in Week 3 matchup</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">Wired names the best party speakers for 2026</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">The tale of two Duos from Apple and Microsoft</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Martin McDonagh calls Wild Horse Nine his most political film</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Medical experts discuss shifting to a single dose for HPV vaccine</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">NASA Astronomy Picture of the Day features Andromeda galaxy before and after digital processing</p></div><div class="tile"><p class="kicker">Culture</p><p class="footnote">How avoiding misery can actually make us more unhappy</p></div></div></div>
+<div class="wall-col"><div class="wall-track" style="--dur:91.4s"><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jon Watts to direct next Star Wars movie</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Nasal spray offers needle-free pain relief for children in emergency rooms</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Scientists discover chemosynthetic bacteria living on coral reef fish gills</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">World Sauna Congress convenes in Oslo as global interest in heat therapy grows</p></div><div class="tile"><p class="kicker">National</p><p class="footnote">Rising sea levels threaten Southern California beach town and vital rail line</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Ireland beats Japan in WXV Global Series as Beibhinn Parsons sets try record</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Meta bets on smart glasses to lead the consumer AI device race</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">Google and OpenAI compete to make AI voice conversations more natural</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jon Watts to direct next Star Wars movie</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Nasal spray offers needle-free pain relief for children in emergency rooms</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Scientists discover chemosynthetic bacteria living on coral reef fish gills</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">World Sauna Congress convenes in Oslo as global interest in heat therapy grows</p></div><div class="tile"><p class="kicker">National</p><p class="footnote">Rising sea levels threaten Southern California beach town and vital rail line</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Ireland beats Japan in WXV Global Series as Beibhinn Parsons sets try record</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Meta bets on smart glasses to lead the consumer AI device race</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">Google and OpenAI compete to make AI voice conversations more natural</p></div></div></div>
+<div class="wall-col"><div class="wall-track" style="--dur:116.4s"><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jalen Brunson makes Saturday Night Live hosting debut</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Uterus transplants in the United States lead to dozens of healthy births</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Astronomers discover radio galaxy with four separate jet outbursts</p></div><div class="tile"><p class="kicker">Culture</p><p class="footnote">Author Tomi Adeyemi says she does not plan to watch the film adaptation of her hit novel</p></div><div class="tile"><p class="kicker">Politics</p><p class="footnote">Several states compete to host new US Space Academy</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Eva Olid secures first Women Super League victory as Manchester United manager</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Upcoming jobs report could push Treasury yields higher</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">How to use the Live Text feature on your iPhone</p></div><div class="tile"><p class="kicker">Entertainment</p><p class="footnote">Jalen Brunson makes Saturday Night Live hosting debut</p></div><div class="tile"><p class="kicker">Health</p><p class="footnote">Uterus transplants in the United States lead to dozens of healthy births</p></div><div class="tile"><p class="kicker">Science</p><p class="footnote">Astronomers discover radio galaxy with four separate jet outbursts</p></div><div class="tile"><p class="kicker">Culture</p><p class="footnote">Author Tomi Adeyemi says she does not plan to watch the film adaptation of her hit novel</p></div><div class="tile"><p class="kicker">Politics</p><p class="footnote">Several states compete to host new US Space Academy</p></div><div class="tile"><p class="kicker">Sports</p><p class="footnote">Eva Olid secures first Women Super League victory as Manchester United manager</p></div><div class="tile"><p class="kicker">Business</p><p class="footnote">Upcoming jobs report could push Treasury yields higher</p></div><div class="tile"><p class="kicker">Technology</p><p class="footnote">How to use the Live Text feature on your iPhone</p></div></div></div>
+</div></div>
+<div class="hero-text wrap">
+<p class="kicker rise" style="--i:0">Audio news briefing</p>
+<h1 id="hero-title" class="large-title rise" style="--i:1">Listen to the news.<br>Ask what you wonder about.</h1>
+<p class="body rise" style="--i:3">A short audio briefing every day, on the topics you pick. Stop and ask anytime. When sources tell it differently, we’ll show you.</p>
+<div class="hero-actions rise" style="--i:5"><a class="btn btn-primary" href="#how">Hear an example</a><p class="footnote">Coming soon to the App Store and Google Play.</p></div>
+</div>
+</section>
+<section id="how" aria-labelledby="how-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">An example story</p><h2 id="how-title" class="title1">How it works</h2><p class="lead">Three clips from the app’s own intro, made from a real story (24 September 2026). The sources’ names are hidden, as they are in the app.</p></div>
+<div class="steps">
+<article class="step reveal" style="--i:0" aria-labelledby="step-listen">
+<div class="step-head"><h3 id="step-listen" class="title3"><span class="step-no">1</span>Listen</h3><p class="subhead">Your briefing, read aloud: a few minutes from the topics you pick.</p></div>
+<div class="card"><span class="sample-tag">Example</span>
+<p class="kicker">TECHNOLOGY · 2 SOURCES</p>
+<p class="headline">Honda Shifts Focus from Electric Vehicles to Next-Gen Hybrids</p>
+<div class="player" data-player>
+<button class="play" type="button" aria-label="Play: Listen, 0:08" data-play-label="Play: Listen, 0:08" data-pause-label="Pause: Listen"><svg class="i-play" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M5 2.8v12.4a.8.8 0 0 0 1.2.7l10-6.2a.8.8 0 0 0 0-1.4l-10-6.2A.8.8 0 0 0 5 2.8Z" fill="currentColor"/></svg><svg class="i-pause" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><rect x="3.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/><rect x="10.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/></svg></button>
+<span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+<span class="dur" aria-hidden="true">0:08</span>
+<audio controls preload="none" src="audio/en/listen.m4a"></audio>
+</div>
+<div class="transcript" data-transcript><p class="kicker label">Transcript</p>
+<p class="callout" data-seg data-start="0" data-end="8.44">Automotive giant Honda has canceled two electric models planned for North America and is turning to next-generation hybrids.</p></div>
+</div>
+</article>
+<article class="step reveal" style="--i:1" aria-labelledby="step-ask">
+<div class="step-head"><h3 id="step-ask" class="title3"><span class="step-no">2</span>Ask</h3><p class="subhead">Hold the mic and ask. The answer comes in the same voice, then the briefing picks up where it left off.</p></div>
+<div class="card"><span class="sample-tag">Example</span>
+<div class="player" data-player>
+<button class="play" type="button" aria-label="Play: Ask, 0:07" data-play-label="Play: Ask, 0:07" data-pause-label="Pause: Ask"><svg class="i-play" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M5 2.8v12.4a.8.8 0 0 0 1.2.7l10-6.2a.8.8 0 0 0 0-1.4l-10-6.2A.8.8 0 0 0 5 2.8Z" fill="currentColor"/></svg><svg class="i-pause" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><rect x="3.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/><rect x="10.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/></svg></button>
+<span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+<span class="dur" aria-hidden="true">0:07</span>
+<audio controls preload="none" src="audio/en/ask.m4a"></audio>
+</div>
+<div class="transcript" data-transcript><p class="kicker label">Transcript</p>
+<div class="ask-row"><span class="mic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="6.5" y="1.5" width="7" height="11" rx="3.5" fill="currentColor"/><path d="M3.8 9.5a6.2 6.2 0 0 0 12.4 0M10 15.7v2.8" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></span><p class="bubble" data-seg data-start="0" data-end="1.56"><span class="vh">Question: </span>What does that mean?</p></div>
+<p class="subhead" data-seg data-start="1.91" data-end="7.35"><span class="vh">Answer: </span>Carmakers are turning back to hybrid technology instead of going fully electric.</p></div>
+</div>
+</article>
+<article class="step reveal" style="--i:2" aria-labelledby="step-compare">
+<div class="step-head"><h3 id="step-compare" class="title3"><span class="step-no">3</span>Compare</h3><p class="subhead">When sources tell a story differently, you see where they part ways.</p></div>
+<div class="card"><span class="sample-tag">Example</span>
+<div class="src-row"><span class="src-no" aria-hidden="true">1</span><p class="kicker">Source 1</p><p class="subhead">“Honda will prioritize its next-generation hybrid models.”</p></div>
+<div class="src-row"><span class="src-no" aria-hidden="true">2</span><p class="kicker">Source 2</p><p class="subhead">“Two electric models for North America are canceled; the new hybrid cuts costs by 30 percent.”</p></div>
+<div class="tag"><p class="headline">Different angle</p><p class="footnote">One tells the story of a new push, the other of a retreat.</p></div>
+<hr class="hair">
+<p class="footnote">When does production start?</p>
+<div class="claims"><div><p class="footnote">Source 1</p><p class="val">next year</p></div><div><p class="footnote">Source 2</p><p class="val">2027</p></div></div>
+<div class="tag danger"><p class="headline">Conflicting</p></div>
+<div class="player" data-player>
+<button class="play" type="button" aria-label="Play: Compare, 0:14" data-play-label="Play: Compare, 0:14" data-pause-label="Pause: Compare"><svg class="i-play" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><path d="M5 2.8v12.4a.8.8 0 0 0 1.2.7l10-6.2a.8.8 0 0 0 0-1.4l-10-6.2A.8.8 0 0 0 5 2.8Z" fill="currentColor"/></svg><svg class="i-pause" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" focusable="false"><rect x="3.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/><rect x="10.5" y="2.5" width="4" height="13" rx="1.2" fill="currentColor"/></svg></button>
+<span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+<span class="dur" aria-hidden="true">0:14</span>
+<audio controls preload="none" src="audio/en/compare.m4a"></audio>
+</div>
+<div class="transcript" data-transcript><p class="kicker label">What you hear</p>
+<p class="subhead" data-seg data-start="0" data-end="13.84">The sources tell this story differently. Source 1 describes a new push; Source 2, a retreat. They also disagree on when production starts: one says next year, the other says 2027.</p></div>
+</div>
+</article>
+</div>
+</div></section>
+<section id="samples" aria-labelledby="samples-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">Example briefing · September 2026</p><h2 id="samples-title" class="title1">Two stories from a briefing</h2><p class="lead">Summaries the app wrote from its sources, as they appeared in the app.</p></div>
+<div class="samples">
+<article class="brief reveal" style="--i:0">
+<div class="meta"><span class="sample-tag">Example</span><p class="kicker">Science · 1 source</p></div>
+<h3 class="title3">Scientists discover chemosynthetic bacteria living on coral reef fish gills</h3>
+<p class="callout">Scientists have discovered chemosynthetic bacteria living on the gills of coral reef fish. While these bacteria were previously known to live in marine environments and alongside invertebrates like worms and mollusks, this is the first time they have been found on fish. Researchers believe this specialized microbiome could play a crucial role in fish metabolism, immunity, and health.</p>
+<p class="footnote">Sources: Phys.org</p>
+</article>
+<article class="brief reveal" style="--i:1">
+<div class="meta"><span class="sample-tag">Example</span><p class="kicker">Entertainment · 2 sources</p></div>
+<h3 class="title3">Jon Watts to direct next Star Wars movie</h3>
+<p class="callout">A new Star Wars movie is in development with director Jon Watts attached. Watts previously directed the hit Spider-Man trilogy starring Tom Holland. Simon Kinberg is writing the project, which is reportedly part of a new trilogy that will serve as the next episodes of the Skywalker Saga.</p>
+<p class="footnote">Sources: Variety, The Hollywood Reporter</p>
+</article>
+</div>
+</div></section>
+<section id="editions" aria-labelledby="editions-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">Editions</p><h2 id="editions-title" class="title1">Three editions</h2><p class="lead">Pick an edition and your briefing comes from its news.</p></div>
+<ul class="choices">
+<li class="choice reveal" style="--i:0"><p class="headline">Türkiye</p><p class="footnote">In Turkish · news from Türkiye</p></li>
+<li class="choice reveal" style="--i:1"><p class="headline">United States</p><p class="footnote">In English · U.S. news</p></li>
+<li class="choice reveal" style="--i:2"><p class="headline">World</p><p class="footnote">In English · top stories from around the world</p></li>
+</ul>
+</div></section>
+<section id="download" aria-labelledby="download-title"><div class="wrap download">
+<div class="section-head reveal"><p class="kicker">Coming soon</p><h2 id="download-title" class="title1">Coming soon to the App Store and Google Play</h2><p class="lead">iPhone first, then Android.</p></div>
+<div class="stores"><span class="pill-soon">App Store <span class="soon">coming soon</span></span><span class="pill-soon">Google Play <span class="soon">coming soon</span></span></div>
+<a class="btn btn-quiet" href="mailto:hello@wonderwhy.net?subject=Notify%20me%20when%20wonderwhy%20is%20out">Email me when it’s out</a>
+<p class="footnote">We keep your address only to tell you when the app is out, then delete it. <a href="privacy/">Privacy Policy</a></p>
+</div></section>
+<section id="faq" aria-labelledby="faq-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">Questions</p><h2 id="faq-title" class="title1">Frequently asked</h2></div>
+<div class="faq">
+<details class="reveal" style="--i:0"><summary>When does it come out?</summary><div class="answer"><p>Soon. iPhone first, then Android. The store buttons on this page will work as soon as it’s out.</p></div></details>
+<details class="reveal" style="--i:1"><summary>Which languages and editions are there?</summary><div class="answer"><p>The app is in Turkish and English. There are three editions: Türkiye (Turkish), United States (English) and World (English).</p></div></details>
+<details class="reveal" style="--i:2"><summary>Who writes and reads the news?</summary><div class="answer"><p>AI writes the briefings from public news sources, and an AI voice reads them. Every story shows its sources. AI can make mistakes, so check the original when it matters.</p></div></details>
+<details class="reveal" style="--i:3"><summary>Is my question recorded?</summary><div class="answer"><p>Your spoken question is sent to Google’s Gemini service so it can be understood and answered. We don’t store the recording, the transcript or the answer. The <a href="privacy/">Privacy Policy</a> has the details.</p></div></details>
+<details class="reveal" style="--i:4"><summary>Where does the news come from?</summary><div class="answer"><p>From news outlets’ public feeds (RSS). The app groups stories that several outlets cover and shows where they differ.</p></div></details>
+<details class="reveal" style="--i:5"><summary>Does it cost anything?</summary><div class="answer"><p>No. The app is free right now.</p></div></details>
+<details class="reveal" style="--i:6"><summary>How do I get help?</summary><div class="answer"><p>See the <a href="support/">Support</a> page or write to <a href="mailto:hello@wonderwhy.net">hello@wonderwhy.net</a>.</p></div></details>
+</div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<nav aria-label="Legal"><ul><li><a href="./">Home</a></li><li><a href="privacy/">Privacy</a></li><li><a href="terms/">Terms</a></li><li><a href="support/">Support</a></li><li><a href="tr/" hreflang="tr" lang="tr">Türkçe</a></li></ul></nav>
+<p class="footnote">© 2026 wonderwhy · The app isn’t out yet.</p>
+</div></footer>
+</body>
+</html>
