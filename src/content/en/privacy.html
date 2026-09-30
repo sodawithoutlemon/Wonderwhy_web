@@ -1,0 +1,149 @@
+<p>This policy explains what the {brand} app and the {domain} website collect, why, who processes it, how long it is kept and what you can do about it. It describes how the app works today. When that changes, we update this page and the date above.</p>
+
+<h2 id="who">Who we are</h2>
+<p>{brand} is published by {publisher}{address} (“we”). We are the data controller for the personal data described here. For anything about your data, write to <a href="mailto:{emailPrivacy}">{emailPrivacy}</a>.</p>
+
+<h2 id="summary">Summary</h2>
+<ul>
+<li>No ads, no analytics, no tracking across other apps or websites. We don’t sell or share your personal data.</li>
+<li>You need an account (email and password) to read and listen; without one you can only look around. Your lists and settings sync between your devices.</li>
+<li>When you ask a question by voice, the recording goes to Google’s Gemini service to be understood and answered. We don’t store it.</li>
+<li>AI writes the news summaries from public news feeds. None of your data is sent for that.</li>
+<li>Apart from your account and what you keep in it, we keep nothing for more than 7 days.</li>
+<li>You can delete your account in the app, or by email without it (see <a href="{deleteAccount}">Delete your account</a>).</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Data</th><th scope="col">Why</th><th scope="col">Where it goes</th><th scope="col">How long</th></tr></thead>
+<tbody>
+<tr><td>Email, password, optional name</td><td>Account and sign-in</td><td>Google Firebase Authentication</td><td>Until you delete your account</td></tr>
+<tr><td>Synced lists and settings</td><td>Keep them in step across your devices</td><td>Google Cloud Firestore (Belgium)</td><td>Until you delete your account</td></tr>
+<tr><td>Votes and poll answers</td><td>Count them once and show totals</td><td>Google Cloud Firestore (Belgium)</td><td>7 days after the story’s day, or until you delete your account if sooner</td></tr>
+<tr><td>Voice question (up to 15 seconds) and the sentence playing</td><td>Understand and answer your question</td><td>Google Gemini API</td><td>Not stored by us</td></tr>
+<tr><td>Live mode audio</td><td>Spoken conversation about your briefing</td><td>Google Gemini, through Firebase</td><td>Not stored by us</td></tr>
+<tr><td>Daily usage counters (your ID and a number)</td><td>Fair-use limits</td><td>Google Cloud Firestore (Belgium)</td><td>7 days; deleted at once with your account</td></tr>
+<tr><td>Server logs (IP address, app and device details)</td><td>Security and fixing problems</td><td>Google Cloud (Belgium)</td><td>7 days</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="account">Your account</h2>
+<p>To open stories and listen, you need an account; without one you can go through the introduction and see the day’s headlines. When you create an account, we process your email address, your password and, if you enter it, your name. Google’s Firebase Authentication stores them; we never see your password. Sign in with Apple and Sign in with Google are prepared but not switched on yet. When they are, Apple or Google will share your name, your email address (Apple may give a private relay address) and a sign-in token with us.</p>
+<p>Before you sign in, the app may create a random guest ID (a Firebase anonymous account) for features that need one. It isn’t linked to your name or email, but it is still personal data, because what is stored under it can be linked back to your phone. If you then create an account, your guest ID becomes your account ID. If you sign in to an account you already have, the app stops using the guest ID. A guest ID that isn’t used for 7 days is deleted automatically, together with its votes and counters.</p>
+
+<h2 id="synced">What syncs to your account</h2>
+<p>When you are signed in with an account (not as a guest), the app keeps the following in Google Cloud Firestore so it follows you to your other devices. Only you can read it.</p>
+<ul>
+<li>Preferences: your topics, languages, story depth, text size, listening settings and notification choices.</li>
+<li>Saved stories (up to 50), stories you recently read or listened to (up to 30) and your listening queue (up to 20). These are copies of the stories inside the app.</li>
+<li>Topics and sources you follow or mute.</li>
+<li>Your own copy of your votes and poll answers, and the stories you reported.</li>
+<li>Your word list (up to 1,500 words), with the sentence and headline where you found each word.</li>
+<li>Today’s listening progress: which stories you heard, how long you listened and how many questions you asked. Only the number of questions is kept, not the questions.</li>
+</ul>
+
+<h2 id="votes">Votes and reports</h2>
+<p>When you react to a story or answer a poll, your vote is stored with your account or guest ID, so that it counts once and you can change it. Other people see only the totals. Votes are deleted with the story, 7 days after the story’s day.</p>
+<p>When you report a problem with a story, we store the story, the reason you picked and any note you write (up to 500 characters). The report isn’t linked to your ID, and it is deleted after 7 days. Please don’t put personal information in the note: because it isn’t linked to you, we can’t find it earlier to delete it.</p>
+
+<h2 id="microphone">Microphone and questions</h2>
+<h3>Push-to-talk questions</h3>
+<p>While a briefing plays, you can hold the microphone button and ask a question. The app records only while you hold the button, for up to 15 seconds. It sends the recording, together with the sentence that was playing, to our server. Our server sends them to the Google Gemini API, which works out your question and writes an answer. Google’s text-to-speech then reads the answer in the briefing’s voice.</p>
+<p>Before your first voice question, the app tells you that your voice goes to Google’s AI and asks you to agree. Nothing is recorded or sent until you do.</p>
+<p>We don’t store the recording, what you said or the answer, and we don’t write them to our logs. Our logs keep only numbers, such as the length of the answer and how long it took. Your voice is not used to identify you.</p>
+<p>We use the Gemini API as a paid service. Under Google’s terms for paid services, Google doesn’t use this data to improve its products; it keeps prompts and answers for a limited time only to detect misuse and to meet legal obligations.</p>
+<h3>Ready-made questions</h3>
+<p>Some questions are buttons, such as asking for more detail on a story. Their answers are about the story, not about you, so we save them with the story and reuse them for everyone.</p>
+<h3>Live mode</h3>
+<p>In some cases the app uses a live conversation mode instead of recorded audio. We switch it on from our side, or the app uses it when a story’s audio can’t be prepared. In live mode:</p>
+<ul>
+<li>the app streams microphone audio directly from your phone to Google’s Gemini service through Firebase, for as long as the live session is open;</li>
+<li>the microphone listens whenever the app isn’t speaking, so you don’t need to hold a button;</li>
+<li>Google transcribes both sides of the conversation;</li>
+<li>to set up the conversation, the app also sends the stories in your briefing and your language and depth settings;</li>
+<li>if you ask about a word, the app may add it to your word list.</li>
+</ul>
+<p>We don’t store live-mode audio or transcripts.</p>
+<p>iOS asks for your permission before the app can use the microphone. You can turn it off at any time in the iPhone’s Settings.</p>
+
+<h2 id="news">How the news is made</h2>
+<p>Our server collects stories from news outlets’ public feeds. It sends them to OpenAI to write the summaries and to Google to read them aloud. These requests contain only news text, none of your data. Stories and their audio files are deleted from our servers 7 days after the day they were published.</p>
+<p>Your personal briefing is put together on your phone from the shared edition, so your topics aren’t sent to any AI service (except in live mode, above).</p>
+<p>News images load directly from the publishers’ servers, and source links open the publisher’s page in a browser inside the app. Those publishers can see your IP address and apply their own privacy policies.</p>
+
+<h2 id="device">On your phone</h2>
+<ul>
+<li>Your lists, settings and sync state, in the app’s own storage.</li>
+<li>A cache of story audio, in a temporary folder that iOS may clear.</li>
+<li>Your sign-in session, in the iPhone’s Keychain. Keychain items can remain after you delete the app.</li>
+<li>An offline copy of your synced data, kept by Firestore.</li>
+</ul>
+<p>When you sign out or delete your account, the app removes your lists, votes, words and progress from the phone. It keeps your app settings (topics, languages, text size) so the app keeps working. Deleting the app removes them.</p>
+<p>To protect our servers from misuse, the app uses Firebase App Check with Apple’s DeviceCheck to confirm that requests come from the genuine app. We don’t store device identifiers.</p>
+
+<h2 id="notifications">Notifications</h2>
+<p>Notifications aren’t switched on yet. When they are, and only if you allow them, your phone subscribes to topics (such as your morning briefing time) through Firebase Cloud Messaging and Apple’s push service. We don’t store a device token.</p>
+
+<h2 id="limits">Usage limits and server logs</h2>
+<p>To keep the service fair and affordable, we count how many questions you ask and how many story audios you have generated each day. Each counter holds your account or guest ID, the date and a number. While a story’s audio is being made, the job is recorded with your ID. Counters and job records are deleted after 7 days, and at once when you delete your account.</p>
+<p>Our servers run on Google Cloud in Belgium (europe-west1). Google Cloud keeps request logs with IP addresses and app and device details for 7 days. Our own log lines contain numbers, not account IDs.</p>
+
+<h2 id="no-tracking">No ads, analytics or selling</h2>
+<p>The app has no advertising, no analytics and no crash-reporting tools, and it doesn’t track you across other companies’ apps or websites. We don’t sell or share personal data, as California law defines those terms. We don’t make decisions about you by automated means that have legal or similarly significant effects.</p>
+
+<h2 id="processors">Who processes your data</h2>
+<ul>
+<li><strong>Google</strong> (Firebase Authentication, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Cloud Messaging, Gemini API and Firebase AI Logic): hosting, sign-in, sync, questions and audio. Firestore, Cloud Functions and Cloud Storage are in Belgium; sign-in, Gemini and some other services may process data in the United States and other countries.</li>
+<li><strong>OpenAI</strong>: writes the news summaries. It receives no personal data.</li>
+<li><strong>Apple</strong>: DeviceCheck and push notifications, and Sign in with Apple once it is switched on.</li>
+<li><strong>GitHub</strong>: hosts this website.</li>
+<li><strong>{emailProvider}</strong>: forwards the email you send to our addresses.</li>
+</ul>
+<p>These providers process data on our behalf under their data processing terms, which require them to protect it at least as well as this policy describes.</p>
+<p>Some of them process data outside Türkiye and the European Economic Area, including in the United States. These transfers rely on the safeguards the law requires: for the EEA, the providers’ standard contractual clauses; for Türkiye, the mechanisms in Article 9 of the Personal Data Protection Law No. 6698 (KVKK).</p>
+
+<h2 id="retention">How long we keep data</h2>
+<p>Your account and what you keep in it stay until you delete the account. Everything else is deleted within 7 days: a job runs every night and removes what is older.</p>
+<ul>
+<li><strong>Account and synced data:</strong> until you delete your account.</li>
+<li><strong>Votes:</strong> deleted with the story, 7 days after the story’s day, or earlier if you delete your account.</li>
+<li><strong>Guest IDs:</strong> deleted after 7 days without use, together with their votes and counters. This includes a guest ID left behind when you signed in to an existing account.</li>
+<li><strong>Reports:</strong> 7 days.</li>
+<li><strong>Daily usage counters and audio job records:</strong> 7 days; deleted at once when you delete your account.</li>
+<li><strong>Voice questions:</strong> not stored.</li>
+<li><strong>Stories, story audio and ready-made answers:</strong> 7 days after the story’s day.</li>
+<li><strong>Server logs:</strong> 7 days. They contain no account IDs.</li>
+<li><strong>Emails you send us:</strong> as long as we need to deal with your message. If you ask us to tell you when the app is out, we keep your address until we have done so, then delete it.</li>
+</ul>
+
+<h2 id="deletion">Deleting your data</h2>
+<p>In the app, go to <strong>Profile › Delete account</strong> and confirm with <strong>Delete account permanently</strong>. This deletes at once your account, everything stored under it (lists, settings, words and progress), all your votes, and your usage counters and audio job records. If you used Sign in with Apple, the app also revokes its access to your Apple ID. On your phone, the app removes your lists and keeps its settings, as described above.</p>
+<p>Afterwards nothing linked to your account remains on our servers. Anonymous reports and server logs, which contain no account ID, are deleted within 7 days.</p>
+<p>If you can’t use the app, write to <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> from the email address of your account. The steps are also on the <a href="{deleteAccount}">Delete your account</a> page. Guest IDs are deleted automatically after 7 days without use; if you want yours deleted sooner, write to us.</p>
+
+<h2 id="rights">Your rights</h2>
+<p>Depending on where you live, you have some or all of these rights:</p>
+<ul>
+<li><strong>Türkiye (KVKK, Article 11):</strong> to learn whether we process your data and request information about it; to learn the purpose and whether it is used for that purpose; to know who it is shared with in Türkiye or abroad; to have it corrected or deleted and have those you shared it with told; to object to a result against you that comes only from automated analysis; and to claim compensation for damage caused by unlawful processing. You can apply to us in writing or by email; we answer within 30 days, free of charge. If you aren’t satisfied, you can complain to the Personal Data Protection Authority (KVKK).</li>
+<li><strong>EEA and UK (GDPR):</strong> to access, correct or delete your data; to restrict or object to its use; to receive it in a portable format; to withdraw consent at any time; and to complain to your data protection authority.</li>
+<li><strong>California (CCPA/CPRA):</strong> to know what we collect and how we use it, to delete and correct it, and not to be treated differently for using these rights. We don’t sell or share personal information. We use sensitive information, such as your account login, only to provide the service.</li>
+</ul>
+<p>To use any of these rights, write to <a href="mailto:{emailPrivacy}">{emailPrivacy}</a>. We may ask you to confirm the request comes from you.</p>
+
+<h2 id="legal-bases">Legal bases</h2>
+<ul>
+<li><strong>Providing the service you ask for</strong> (account, sync, answering questions, votes): performing our contract with you (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)).</li>
+<li><strong>Security, misuse prevention, usage limits and logs:</strong> our legitimate interests (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</li>
+<li><strong>Microphone and notifications:</strong> your permission, which you can withdraw in the iPhone’s Settings (GDPR Art. 6(1)(a)).</li>
+<li><strong>Legal obligations</strong>, where they apply (GDPR Art. 6(1)(c); KVKK Art. 5(2)(<span lang="tr">ç</span>)).</li>
+</ul>
+
+<h2 id="children">Age</h2>
+<p>The app is for adults. You must be at least 18 to use it: its question and live features use Google’s Gemini API, whose terms don’t allow services aimed at, or likely to be used by, people under 18. If you think someone under 18 has given us personal data, write to us and we will delete it.</p>
+
+<h2 id="website">This website</h2>
+<p>{domain} is a static site hosted by GitHub Pages. It uses no cookies, no browser storage, no analytics and no third-party scripts or fonts. GitHub processes visitors’ IP addresses to deliver the site and keep it secure, under the GitHub Privacy Statement. Audio samples load only when you press play. If you email us, we use your address to reply.</p>
+
+<h2 id="changes">Changes to this policy</h2>
+<p>We update this page when the app or the law changes, and change the date at the top. For significant changes we will also let you know in the app.</p>
+
+<h2 id="contact">Contact</h2>
+<p>{publisher}{address}<br><a href="mailto:{emailPrivacy}">{emailPrivacy}</a></p>

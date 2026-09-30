@@ -1,0 +1,192 @@
+{
+  "locale": "en-US",
+  "ogLocale": "en_US",
+  "langName": "English",
+  "skip": "Skip to content",
+  "nav": {
+    "home": "Home",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support",
+    "language": "Language"
+  },
+  "footer": {
+    "notYet": "The app isn’t out yet.",
+    "legal": "Legal"
+  },
+  "hint": {
+    "text": "This page is also available in English.",
+    "link": "Read in English",
+    "close": "Close"
+  },
+  "placeholder": {
+    "publisher": "[Publisher name]",
+    "address": "[Postal address]",
+    "emailProvider": "[Email provider]"
+  },
+  "categories": {
+    "gundem": "National",
+    "siyaset": "Politics",
+    "spor": "Sports",
+    "ekonomi": "Business",
+    "dunya": "World",
+    "teknoloji": "Technology",
+    "magazin": "Entertainment",
+    "saglik": "Health",
+    "bilim": "Science",
+    "kultur": "Culture"
+  },
+  "sourcesCount": { "one": "{n} source", "other": "{n} sources" },
+  "sample": "Example",
+  "player": {
+    "play": "Play",
+    "pause": "Pause",
+    "transcript": "Transcript"
+  },
+  "pages": {
+    "home": {
+      "title": "wonderwhy: listen to the news, ask what you wonder about",
+      "description": "A short audio news briefing on the topics you pick. Hold the mic to ask a question and see where sources tell a story differently. Coming soon to iPhone."
+    },
+    "privacy": {
+      "title": "Privacy Policy · wonderwhy",
+      "description": "What data the wonderwhy app and website collect, why, who processes it, how long it is kept and how to delete it.",
+      "heading": "Privacy Policy"
+    },
+    "terms": {
+      "title": "Terms of Use · wonderwhy",
+      "description": "The terms for using the wonderwhy audio news app and website.",
+      "heading": "Terms of Use"
+    },
+    "support": {
+      "title": "Support · wonderwhy",
+      "description": "Get help with wonderwhy, contact us, make a privacy request or delete your account.",
+      "heading": "Help and contact"
+    },
+    "deleteAccount": {
+      "title": "Delete your account · wonderwhy",
+      "description": "How to delete your wonderwhy account in the app or by email, what is deleted and what is kept.",
+      "heading": "Delete your account"
+    },
+    "notFound": {
+      "title": "Page not found · wonderwhy",
+      "heading": "Page not found",
+      "body": "This page doesn’t exist or has moved.",
+      "home": "Go to the home page"
+    }
+  },
+  "legal": {
+    "kicker": "Legal",
+    "draft": "Draft. This text has not had a legal review yet.",
+    "updated": "Last updated: {date}",
+    "versionLink": "This text in English",
+    "contents": "Contents"
+  },
+  "wall": {
+    "pause": "Pause the moving headlines"
+  },
+  "hero": {
+    "kicker": "Audio news briefing",
+    "title": "Listen to the news.\nAsk what you wonder about.",
+    "body": "A short audio briefing every day, on the topics you pick. Stop and ask anytime. When sources tell it differently, we’ll show you.",
+    "cta": "Hear an example",
+    "soon": "Coming soon to the App Store and Google Play."
+  },
+  "how": {
+    "kicker": "An example story",
+    "title": "How it works",
+    "lead": "Three clips from the app’s own intro, made from a real story (24 September 2026). The sources’ names are hidden, as they are in the app.",
+    "listen": {
+      "title": "Listen",
+      "body": "Your briefing, read aloud: a few minutes from the topics you pick."
+    },
+    "ask": {
+      "title": "Ask",
+      "body": "Hold the mic and ask. The answer comes in the same voice, then the briefing picks up where it left off.",
+      "question": "Question",
+      "answer": "Answer"
+    },
+    "compare": {
+      "title": "Compare",
+      "body": "When sources tell a story differently, you see where they part ways.",
+      "spoken": "What you hear"
+    }
+  },
+  "samples": {
+    "kicker": "Example briefing · September 2026",
+    "title": "Two stories from a briefing",
+    "lead": "Summaries the app wrote from its sources, as they appeared in the app.",
+    "sources": "Sources"
+  },
+  "editions": {
+    "kicker": "Editions",
+    "title": "Three editions",
+    "lead": "Pick an edition and your briefing comes from its news.",
+    "items": [
+      { "name": "Türkiye", "detail": "In Turkish · news from Türkiye" },
+      { "name": "United States", "detail": "In English · U.S. news" },
+      { "name": "World", "detail": "In English · top stories from around the world" }
+    ]
+  },
+  "download": {
+    "kicker": "Coming soon",
+    "title": "Coming soon to the App Store and Google Play",
+    "lead": "iPhone first, then Android.",
+    "soon": "coming soon",
+    "notify": "Email me when it’s out",
+    "notifySubject": "Notify me when wonderwhy is out",
+    "notifyNote": "We keep your address only to tell you when the app is out, then delete it."
+  },
+  "faq": {
+    "kicker": "Questions",
+    "title": "Frequently asked",
+    "items": [
+      {
+        "q": "When does it come out?",
+        "a": "Soon. iPhone first, then Android. The store buttons on this page will work as soon as it’s out."
+      },
+      {
+        "q": "Which languages and editions are there?",
+        "a": "The app is in Turkish and English. There are three editions: Türkiye (Turkish), United States (English) and World (English)."
+      },
+      {
+        "q": "Who writes and reads the news?",
+        "a": "AI writes the briefings from public news sources, and an AI voice reads them. Every story shows its sources. AI can make mistakes, so check the original when it matters."
+      },
+      {
+        "q": "Is my question recorded?",
+        "aHtml": "Your spoken question is sent to Google’s Gemini service so it can be understood and answered. We don’t store the recording, the transcript or the answer. The <a href=\"{privacy}\">Privacy Policy</a> has the details."
+      },
+      {
+        "q": "Where does the news come from?",
+        "a": "From news outlets’ public feeds (RSS). The app groups stories that several outlets cover and shows where they differ."
+      },
+      {
+        "q": "Does it cost anything?",
+        "a": "No. The app is free right now."
+      },
+      {
+        "q": "How do I get help?",
+        "aHtml": "See the <a href=\"{support}\">Support</a> page or write to <a href=\"mailto:{hello}\">{hello}</a>."
+      }
+    ]
+  },
+  "support": {
+    "kicker": "Support",
+    "lead": "The app isn’t out yet. If you have a question, an idea or a problem, email us.",
+    "contactTitle": "Contact",
+    "contactHtml": "Write to <a href=\"mailto:{hello}\">{hello}</a>.",
+    "privacyTitle": "Privacy requests",
+    "privacyHtml": "To see, correct, export or delete your data, write to <a href=\"mailto:{privacy}\">{privacy}</a>. The <a href=\"{privacyPage}\">Privacy Policy</a> explains your rights.",
+    "deleteTitle": "Delete your account",
+    "deleteHtml": "In the app, go to <strong>Profile › Delete account</strong>. This deletes your account, your synced data, your votes and your usage records at once. Without the app, write to <a href=\"mailto:{privacy}\">{privacy}</a>. The steps and what is kept are on the <a href=\"{deletePage}\">Delete your account</a> page.",
+    "guestTitle": "Only looked around without an account?",
+    "guestHtml": "Deleting the app removes the lists and settings it kept on your phone. A guest ID the app may have created on our servers is deleted automatically after 7 days without use. To have it deleted sooner, write to <a href=\"mailto:{privacy}\">{privacy}</a>.",
+    "faqHtml": "More answers are in the <a href=\"{faq}\">FAQ</a>."
+  },
+  "redirect": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "choose": "Choose a language:"
+  }
+}

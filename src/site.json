@@ -1,0 +1,21 @@
+{
+  "_note": "Sitenin tek ayar dosyası. null = henüz yok: yer tutucu gösterilir (check.mjs listeler). Ayrıntı README.md.",
+  "brand": "wonderwhy",
+  "origin": "https://wonderwhy.net",
+  "year": 2026,
+  "publisher": {
+    "name": "Yiğit Özdemir (Yelkovan.ai)",
+    "address": null
+  },
+  "emailProvider": null,
+  "email": {
+    "hello": "info@yelkovan.ai",
+    "privacy": "info@yelkovan.ai"
+  },
+  "stores": {
+    "appStore": null,
+    "googlePlay": null,
+    "appStoreId": null
+  },
+  "legalUpdated": "2026-09-30"
+}

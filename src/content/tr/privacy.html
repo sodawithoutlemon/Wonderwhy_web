@@ -1,0 +1,149 @@
+<p>Bu politika, {brand} uygulamasının ve {domain} sitesinin hangi verileri, neden topladığını, kimlerin işlediğini, ne kadar saklandığını ve bu konuda neler yapabileceğini anlatır. Uygulamanın bugün nasıl çalıştığını yansıtır. Bu değişirse sayfayı ve yukarıdaki tarihi güncelleriz. KVKK kapsamındaki aydınlatma metni yerine de geçer.</p>
+
+<h2 id="biz-kimiz">Biz kimiz</h2>
+<p>{brand}’ın yayıncısı {publisher}{address} (“biz”). Burada anlatılan kişisel verilerin veri sorumlusuyuz. Verinle ilgili her konuda <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yazabilirsin.</p>
+
+<h2 id="ozet">Özet</h2>
+<ul>
+<li>Reklam yok, analitik yok, başka uygulama ve sitelerde takip yok. Kişisel verini satmayız ve paylaşmayız.</li>
+<li>Okumak ve dinlemek için hesap (e-posta ve şifre) gerekir; hesapsız yalnız göz atabilirsin. Listelerin ve ayarların cihazların arasında eşitlenir.</li>
+<li>Sesli soru sorduğunda kayıt, anlaşılıp cevaplanması için Google’ın Gemini hizmetine gider. Biz saklamayız.</li>
+<li>Haber özetlerini yapay zekâ, herkese açık haber akışlarından yazar. Bunun için senin hiçbir verin gönderilmez.</li>
+<li>Hesabın ve içinde tuttukların dışında hiçbir şeyi 7 günden uzun saklamayız.</li>
+<li>Hesabını uygulamanın içinden ya da uygulama olmadan e-postayla silebilirsin (<a href="{deleteAccount}">Hesabını sil</a> sayfası).</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Veri</th><th scope="col">Amaç</th><th scope="col">Nereye gider</th><th scope="col">Ne kadar</th></tr></thead>
+<tbody>
+<tr><td>E-posta, şifre, isteğe bağlı ad</td><td>Hesap ve giriş</td><td>Google Firebase Authentication</td><td>Hesabını silene kadar</td></tr>
+<tr><td>Eşitlenen listeler ve ayarlar</td><td>Cihazların arasında aynı kalmaları</td><td>Google Cloud Firestore (Belçika)</td><td>Hesabını silene kadar</td></tr>
+<tr><td>Oylar ve anket cevapları</td><td>Bir kez sayılmaları ve toplamların gösterilmesi</td><td>Google Cloud Firestore (Belçika)</td><td>Haberin gününden 7 gün sonra; hesabını daha önce silersen o an</td></tr>
+<tr><td>Sesli soru (en çok 15 saniye) ve o an çalan cümle</td><td>Sorunu anlamak ve cevaplamak</td><td>Google Gemini API</td><td>Biz saklamayız</td></tr>
+<tr><td>Canlı mod sesi</td><td>Bültenin üzerine sesli sohbet</td><td>Firebase üzerinden Google Gemini</td><td>Biz saklamayız</td></tr>
+<tr><td>Günlük kullanım sayaçları (kimliğin ve bir sayı)</td><td>Adil kullanım sınırları</td><td>Google Cloud Firestore (Belçika)</td><td>7 gün; hesabını silince hemen</td></tr>
+<tr><td>Sunucu kayıtları (IP adresi, uygulama ve cihaz bilgisi)</td><td>Güvenlik ve hata giderme</td><td>Google Cloud (Belçika)</td><td>7 gün</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="hesap">Hesabın</h2>
+<p>Haberleri açmak ve dinlemek için hesap gerekir; hesapsız tanıtımı geçip günün başlıklarını görebilirsin. Hesap açtığında e-posta adresini, şifreni ve girersen adını işleriz. Bunları Google’ın Firebase Authentication hizmeti saklar; şifreni biz hiç görmeyiz. Apple ile giriş ve Google ile giriş hazır ama henüz açık değil. Açıldıklarında Apple ya da Google adını, e-posta adresini (Apple gizli bir yönlendirme adresi verebilir) ve bir giriş jetonunu bizimle paylaşır.</p>
+<p>Giriş yapmadan önce uygulama, kimlik isteyen özellikler için rastgele bir misafir kimliği (Firebase anonim hesabı) oluşturabilir. Bu kimlik adına ya da e-postana bağlı değildir, ama yine de kişisel veridir: altında saklananlar telefonuna kadar izlenebilir. Sonra hesap açarsan misafir kimliğin hesap kimliğin olur. Var olan bir hesaba giriş yaparsan uygulama misafir kimliğini kullanmayı bırakır. 7 gün kullanılmayan misafir kimliği, oyları ve sayaçlarıyla birlikte kendiliğinden silinir.</p>
+
+<h2 id="esitlenenler">Hesabına eşitlenenler</h2>
+<p>Bir hesapla (misafir olarak değil) giriş yaptığında uygulama aşağıdakileri, diğer cihazlarında da görebilmen için Google Cloud Firestore’da tutar. Bunları yalnız sen okuyabilirsin.</p>
+<ul>
+<li>Tercihler: konuların, dillerin, haber derinliği, yazı boyutu, dinleme ayarların ve bildirim seçimlerin.</li>
+<li>Kaydettiğin haberler (en çok 50), son okuduğun ya da dinlediğin haberler (en çok 30) ve dinleme listen (en çok 20). Bunlar uygulamanın içindeki haberlerin kopyalarıdır.</li>
+<li>Takip ettiğin ya da susturduğun konular ve kaynaklar.</li>
+<li>Oylarının ve anket cevaplarının senin kopyan, sorun bildirdiğin haberler.</li>
+<li>Kelime listen (en çok 1.500 kelime), her kelimenin geçtiği cümle ve başlıkla birlikte.</li>
+<li>Günün dinleme ilerlemesi: hangi haberleri dinlediğin, ne kadar dinlediğin ve kaç soru sorduğun. Soruların kendisi değil, yalnız sayısı tutulur.</li>
+</ul>
+
+<h2 id="oylar">Oylar ve sorun bildirimleri</h2>
+<p>Bir habere tepki verdiğinde ya da ankete cevap verdiğinde oyun, bir kez sayılsın ve değiştirebilesin diye hesap ya da misafir kimliğinle saklanır. Başkaları yalnız toplamları görür. Oylar, haberin gününden 7 gün sonra haberle birlikte silinir.</p>
+<p>Bir haberdeki sorunu bildirdiğinde haberi, seçtiğin nedeni ve yazdığın notu (en çok 500 karakter) saklarız. Sorun bildirimi kimliğine bağlanmaz ve 7 gün sonra silinir. Lütfen nota kişisel bilgi yazma: sana bağlı olmadığı için daha önce bulup silemeyiz.</p>
+
+<h2 id="mikrofon">Mikrofon ve sorular</h2>
+<h3>Bas-konuş sorular</h3>
+<p>Bülten çalarken mikrofon düğmesine basılı tutup soru sorabilirsin. Uygulama yalnız düğmeyi tuttuğun sürece, en çok 15 saniye kaydeder. Kaydı, o an çalan cümleyle birlikte sunucumuza gönderir. Sunucumuz bunları Google Gemini API’ye iletir; Gemini sorunu anlar ve bir cevap yazar. Ardından Google’ın seslendirme hizmeti cevabı bültenin sesiyle okur.</p>
+<p>İlk sesli sorundan önce uygulama, sesinin Google’ın yapay zekâsına gideceğini söyler ve onayını ister. Onaylamadan hiçbir şey kaydedilmez ve gönderilmez.</p>
+<p>Kaydı, söylediklerini ve cevabı saklamayız; kayıtlarımıza da yazmayız. Kayıtlarımızda yalnız cevabın uzunluğu ve ne kadar sürdüğü gibi sayılar kalır. Sesin kimliğini belirlemek için kullanılmaz.</p>
+<p>Gemini API’yi ücretli hizmet olarak kullanıyoruz. Google’ın ücretli hizmet şartlarına göre Google bu verileri kendi ürünlerini geliştirmek için kullanmaz; istekleri ve cevapları yalnız kötüye kullanımı tespit etmek ve yasal yükümlülüklerini yerine getirmek için sınırlı bir süre tutar.</p>
+<h3>Hazır sorular</h3>
+<p>Bazı sorular düğmedir, örneğin bir haberin ayrıntısını istemek. Bunların cevapları seninle değil haberle ilgilidir; bu yüzden haberle birlikte saklanır ve herkes için yeniden kullanılır.</p>
+<h3>Canlı mod</h3>
+<p>Uygulama bazı durumlarda kayıtlı ses yerine canlı sohbet modunu kullanır. Bunu biz açarız ya da bir haberin sesi hazırlanamadığında uygulama kendisi kullanır. Canlı modda:</p>
+<ul>
+<li>uygulama, canlı oturum açık kaldığı sürece mikrofon sesini telefonundan doğrudan Firebase üzerinden Google’ın Gemini hizmetine akıtır;</li>
+<li>uygulama konuşmadığı her an mikrofon dinler, düğmeye basılı tutman gerekmez;</li>
+<li>Google sohbetin iki tarafını da yazıya döker;</li>
+<li>sohbeti kurmak için uygulama bültenindeki haberleri, dil ve derinlik ayarlarını da gönderir;</li>
+<li>bir kelimeyi sorarsan uygulama onu kelime listene ekleyebilir.</li>
+</ul>
+<p>Canlı moddaki sesi ve dökümü saklamayız.</p>
+<p>iOS, uygulama mikrofonu kullanmadan önce senden izin ister. Bu izni istediğin zaman iPhone’un Ayarlar’ından kapatabilirsin.</p>
+
+<h2 id="haberler">Haberler nasıl hazırlanıyor</h2>
+<p>Sunucumuz haberleri haber kuruluşlarının herkese açık akışlarından toplar. Özetleri yazdırmak için OpenAI’ye, sesli okutmak için Google’a gönderir. Bu isteklerde yalnız haber metni vardır, senin hiçbir verin yoktur. Haberler ve ses dosyaları, yayınlandıkları günden 7 gün sonra sunucularımızdan silinir.</p>
+<p>Kişisel bültenin, ortak baskıdan telefonunda hazırlanır; bu yüzden konuların hiçbir yapay zekâ hizmetine gönderilmez (yukarıdaki canlı mod hariç).</p>
+<p>Haber görselleri doğrudan yayıncıların sunucularından yüklenir; kaynak bağlantıları yayıncının sayfasını uygulamanın içindeki tarayıcıda açar. Bu yayıncılar IP adresini görebilir ve kendi gizlilik politikalarını uygular.</p>
+
+<h2 id="cihaz">Telefonunda</h2>
+<ul>
+<li>Listelerin, ayarların ve eşitleme durumu, uygulamanın kendi deposunda.</li>
+<li>Haber seslerinin önbelleği, iOS’un temizleyebileceği geçici bir klasörde.</li>
+<li>Oturum bilgin, iPhone’un Anahtar Zinciri’nde. Anahtar Zinciri’ndeki kayıtlar uygulamayı silsen de kalabilir.</li>
+<li>Eşitlenen verilerinin Firestore’un tuttuğu çevrimdışı kopyası.</li>
+</ul>
+<p>Çıkış yaptığında ya da hesabını sildiğinde uygulama listelerini, oylarını, kelimelerini ve ilerlemeni telefondan kaldırır. Uygulama çalışmaya devam etsin diye ayarlarını (konular, diller, yazı boyutu) bırakır. Uygulamayı silmek bunları da kaldırır.</p>
+<p>Sunucularımızı kötüye kullanıma karşı korumak için uygulama, isteklerin gerçek uygulamadan geldiğini Firebase App Check ve Apple’ın DeviceCheck hizmetiyle doğrular. Cihaz tanımlayıcılarını saklamayız.</p>
+
+<h2 id="bildirimler">Bildirimler</h2>
+<p>Bildirimler henüz açık değil. Açıldığında, ve yalnız izin verirsen, telefonun Firebase Cloud Messaging ve Apple’ın bildirim hizmeti üzerinden konulara (örneğin sabah bülteninin saatine) abone olur. Cihaz jetonunu saklamayız.</p>
+
+<h2 id="sinirlar">Kullanım sınırları ve sunucu kayıtları</h2>
+<p>Hizmet adil ve karşılanabilir kalsın diye her gün kaç soru sorduğunu ve kaç haber sesi ürettiğini sayarız. Her sayaçta hesap ya da misafir kimliğin, tarih ve bir sayı bulunur. Bir haberin sesi hazırlanırken iş, kimliğinle kaydedilir. Sayaçlar ve iş kayıtları 7 gün sonra, hesabını silersen hemen silinir.</p>
+<p>Sunucularımız Belçika’da, Google Cloud üzerinde (europe-west1) çalışır. Google Cloud, IP adreslerini ve uygulama ve cihaz bilgilerini içeren istek kayıtlarını 7 gün tutar. Kendi kayıt satırlarımızda hesap kimliği değil, yalnız sayılar bulunur.</p>
+
+<h2 id="takip-yok">Reklam, analitik ve satış yok</h2>
+<p>Uygulamada reklam, analitik ya da çökme raporlama aracı yoktur ve seni başka şirketlerin uygulamalarında ya da sitelerinde izlemez. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
+
+<h2 id="isleyenler">Verini kimler işliyor</h2>
+<ul>
+<li><strong>Google</strong> (Firebase Authentication, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Cloud Messaging, Gemini API ve Firebase AI Logic): barındırma, giriş, eşitleme, sorular ve ses. Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
+<li><strong>OpenAI</strong>: haber özetlerini yazar. Hiçbir kişisel veri almaz.</li>
+<li><strong>Apple</strong>: DeviceCheck ve bildirimler; açıldığında Apple ile giriş.</li>
+<li><strong>GitHub</strong>: bu siteyi barındırır.</li>
+<li><strong>{emailProvider}</strong>: adreslerimize gönderdiğin e-postaları iletir.</li>
+</ul>
+<p>Bu hizmet sağlayıcılar veriyi bizim adımıza, kendi veri işleme şartlarına göre işler; bu şartlar veriyi en az bu politikada anlatıldığı kadar korumalarını gerektirir.</p>
+<p>Bazıları veriyi Türkiye ve Avrupa Ekonomik Alanı dışında, ABD dahil başka ülkelerde işler. Bu aktarımlar yasanın öngördüğü güvencelere dayanır: AEA için hizmet sağlayıcıların standart sözleşme hükümleri, Türkiye için 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun (KVKK) 9. maddesindeki yollar.</p>
+
+<h2 id="saklama">Saklama süreleri</h2>
+<p>Hesabın ve içinde tuttukların, hesabı silene kadar kalır. Geri kalan her şey en çok 7 gün içinde silinir: her gece çalışan bir iş daha eskileri kaldırır.</p>
+<ul>
+<li><strong>Hesap ve eşitlenen veriler:</strong> hesabını silene kadar.</li>
+<li><strong>Oylar:</strong> haberin gününden 7 gün sonra haberle birlikte; hesabını daha önce silersen o an.</li>
+<li><strong>Misafir kimlikleri:</strong> 7 gün kullanılmazsa oyları ve sayaçlarıyla birlikte silinir. Var olan bir hesaba giriş yaptığında geride kalan misafir kimliği de buna dahil.</li>
+<li><strong>Sorun bildirimleri:</strong> 7 gün.</li>
+<li><strong>Günlük kullanım sayaçları ve ses işi kayıtları:</strong> 7 gün; hesabını silince hemen.</li>
+<li><strong>Sesli sorular:</strong> saklanmaz.</li>
+<li><strong>Haberler, haber sesleri ve hazır cevaplar:</strong> haberin gününden 7 gün sonra.</li>
+<li><strong>Sunucu kayıtları:</strong> 7 gün. Hesap kimliği içermez.</li>
+<li><strong>Bize gönderdiğin e-postalar:</strong> mesajınla ilgilenmemiz gerektiği sürece. Uygulama çıkınca haber vermemizi istersen adresini haber verene kadar tutar, sonra sileriz.</li>
+</ul>
+
+<h2 id="silme">Verini silmek</h2>
+<p>Uygulamada <strong>Profil › Hesabı sil</strong>’e git ve <strong>Hesabı kalıcı olarak sil</strong> ile onayla. Bu işlem hesabını, altında tutulan her şeyi (listeler, ayarlar, kelimeler ve ilerleme), bütün oylarını, kullanım sayaçlarını ve ses işi kayıtlarını hemen siler. Apple ile giriş yaptıysan uygulama, Apple kimliğine erişimini de kaldırır. Telefonunda ise yukarıda anlatıldığı gibi listelerini kaldırır, ayarlarını bırakır.</p>
+<p>Sonrasında sunucularımızda hesabına bağlı hiçbir şey kalmaz. Hesap kimliği içermeyen sorun bildirimleri ve sunucu kayıtları 7 gün içinde silinir.</p>
+<p>Uygulamayı kullanamıyorsan hesabının e-posta adresinden <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yaz. Adımlar <a href="{deleteAccount}">Hesabını sil</a> sayfasında da var. Misafir kimlikleri 7 gün kullanılmayınca kendiliğinden silinir; seninkinin daha önce silinmesini istersen bize yaz.</p>
+
+<h2 id="haklar">Hakların</h2>
+<p>Nerede yaşadığına göre bu hakların bir kısmına ya da tümüne sahipsin:</p>
+<ul>
+<li><strong>Türkiye (KVKK 11. madde):</strong> verinin işlenip işlenmediğini öğrenme ve bilgi isteme; işleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme; yurt içinde ya da yurt dışında kimlere aktarıldığını bilme; eksik ya da yanlışsa düzeltilmesini, silinmesini ve bunun aktarılanlara bildirilmesini isteme; yalnız otomatik sistemlerle analiz sonucu aleyhine çıkan bir sonuca itiraz etme; hukuka aykırı işleme yüzünden zarara uğrarsan zararın giderilmesini isteme. Bize yazılı olarak ya da e-postayla başvurabilirsin; en geç 30 gün içinde, ücretsiz cevap veririz. Cevaptan memnun kalmazsan Kişisel Verileri Koruma Kurulu’na şikâyette bulunabilirsin.</li>
+<li><strong>AEA ve Birleşik Krallık (GDPR):</strong> verine erişme, düzeltme ya da sildirme; işlenmesini kısıtlama ya da itiraz etme; taşınabilir bir biçimde alma; rızanı istediğin zaman geri çekme; veri koruma otoritene şikâyet etme.</li>
+<li><strong>Kaliforniya (CCPA/CPRA):</strong> ne topladığımızı ve nasıl kullandığımızı öğrenme, sildirme ve düzeltme, bu hakları kullandığın için farklı muamele görmeme. Kişisel bilgiyi satmayız ve paylaşmayız. Hesap girişin gibi hassas bilgileri yalnız hizmeti sunmak için kullanırız.</li>
+</ul>
+<p>Bu haklardan birini kullanmak için <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yaz. Talebin senden geldiğini doğrulamanı isteyebiliriz.</p>
+
+<h2 id="hukuki-sebepler">Hukuki sebepler</h2>
+<ul>
+<li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c; GDPR md. 6/1-b).</li>
+<li><strong>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve kayıtlar:</strong> meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f).</li>
+<li><strong>Mikrofon ve bildirimler:</strong> iPhone’un Ayarlar’ından geri alabileceğin iznin (GDPR md. 6/1-a).</li>
+<li><strong>Yasal yükümlülükler</strong>, uygulandığı durumlarda (KVKK md. 5/2-ç; GDPR md. 6/1-c).</li>
+</ul>
+
+<h2 id="yas">Yaş</h2>
+<p>Uygulama yetişkinler içindir; kullanmak için en az 18 yaşında olmalısın. Soru ve canlı mod özellikleri Google’ın Gemini API’sini kullanır ve bu hizmetin şartları 18 yaşından küçüklere yönelik ya da onların kullanması muhtemel hizmetlere izin vermez. 18 yaşından küçük birinin bize kişisel veri verdiğini düşünüyorsan bize yaz, sileriz.</p>
+
+<h2 id="site">Bu site</h2>
+<p>{domain}, GitHub Pages’te barındırılan statik bir sitedir. Çerez, tarayıcı deposu, analitik, üçüncü taraf betiği ya da yazı tipi kullanmaz. GitHub, siteyi sunmak ve güvenliğini sağlamak için ziyaretçilerin IP adreslerini GitHub Gizlilik Bildirimi’ne göre işler. Örnek sesler yalnız oynat düğmesine bastığında yüklenir. Bize e-posta gönderirsen adresini cevap vermek için kullanırız.</p>
+
+<h2 id="degisiklikler">Bu politikadaki değişiklikler</h2>
+<p>Uygulama ya da yasalar değiştiğinde bu sayfayı ve üstteki tarihi güncelleriz. Önemli değişiklikleri ayrıca uygulamada da bildiririz.</p>
+
+<h2 id="iletisim">İletişim</h2>
+<p>{publisher}{address}<br><a href="mailto:{emailPrivacy}">{emailPrivacy}</a></p>

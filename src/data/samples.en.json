@@ -1,0 +1,26 @@
+{
+  "curatedAt": "2026-09-27",
+  "items": [
+    {
+      "id": "2107e524832e3918",
+      "category": "bilim",
+      "day": "2026-09-27",
+      "headline": "Scientists discover chemosynthetic bacteria living on coral reef fish gills",
+      "text": "Scientists have discovered chemosynthetic bacteria living on the gills of coral reef fish. While these bacteria were previously known to live in marine environments and alongside invertebrates like worms and mollusks, this is the first time they have been found on fish. Researchers believe this specialized microbiome could play a crucial role in fish metabolism, immunity, and health.",
+      "sources": [
+        "Phys.org"
+      ]
+    },
+    {
+      "id": "6012ea705b508e0d",
+      "category": "magazin",
+      "day": "2026-09-27",
+      "headline": "Jon Watts to direct next Star Wars movie",
+      "text": "A new Star Wars movie is in development with director Jon Watts attached. Watts previously directed the hit Spider-Man trilogy starring Tom Holland. Simon Kinberg is writing the project, which is reportedly part of a new trilogy that will serve as the next episodes of the Skywalker Saga.",
+      "sources": [
+        "Variety",
+        "The Hollywood Reporter"
+      ]
+    }
+  ]
+}

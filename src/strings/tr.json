@@ -1,0 +1,192 @@
+{
+  "locale": "tr-TR",
+  "ogLocale": "tr_TR",
+  "langName": "Türkçe",
+  "skip": "İçeriğe geç",
+  "nav": {
+    "home": "Ana sayfa",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar",
+    "support": "Destek",
+    "language": "Dil"
+  },
+  "footer": {
+    "notYet": "Uygulama henüz yayında değil.",
+    "legal": "Hukuki"
+  },
+  "hint": {
+    "text": "Bu sayfanın Türkçesi de var.",
+    "link": "Türkçe oku",
+    "close": "Kapat"
+  },
+  "placeholder": {
+    "publisher": "[Yayıncı adı]",
+    "address": "[Posta adresi]",
+    "emailProvider": "[E-posta sağlayıcısı]"
+  },
+  "categories": {
+    "gundem": "Gündem",
+    "siyaset": "Siyaset",
+    "spor": "Spor",
+    "ekonomi": "Ekonomi",
+    "dunya": "Dünya",
+    "teknoloji": "Teknoloji",
+    "magazin": "Magazin",
+    "saglik": "Sağlık",
+    "bilim": "Bilim",
+    "kultur": "Kültür"
+  },
+  "sourcesCount": { "other": "{n} kaynak" },
+  "sample": "Örnek",
+  "player": {
+    "play": "Oynat",
+    "pause": "Duraklat",
+    "transcript": "Döküm"
+  },
+  "pages": {
+    "home": {
+      "title": "wonderwhy: haberi dinle, merak ettiğini sor",
+      "description": "Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Mikrofona basılı tutup sor, kaynakların haberi nerede farklı anlattığını gör. Yakında iPhone'da."
+    },
+    "privacy": {
+      "title": "Gizlilik Politikası · wonderwhy",
+      "description": "wonderwhy uygulamasının ve sitesinin hangi verileri, neden topladığı, kimlerin işlediği, ne kadar saklandığı ve nasıl silineceği.",
+      "heading": "Gizlilik Politikası"
+    },
+    "terms": {
+      "title": "Kullanım Şartları · wonderwhy",
+      "description": "wonderwhy sesli haber uygulamasının ve sitesinin kullanım şartları.",
+      "heading": "Kullanım Şartları"
+    },
+    "support": {
+      "title": "Destek · wonderwhy",
+      "description": "wonderwhy için yardım al, bize yaz, gizlilik talebinde bulun ya da hesabını sil.",
+      "heading": "Yardım ve iletişim"
+    },
+    "deleteAccount": {
+      "title": "Hesabını sil · wonderwhy",
+      "description": "wonderwhy hesabını uygulamada ya da e-postayla nasıl sileceğin, nelerin silinip nelerin kaldığı.",
+      "heading": "Hesabını sil"
+    },
+    "notFound": {
+      "title": "Sayfa bulunamadı · wonderwhy",
+      "heading": "Sayfa bulunamadı",
+      "body": "Bu sayfa yok ya da taşındı.",
+      "home": "Ana sayfaya git"
+    }
+  },
+  "legal": {
+    "kicker": "Hukuki",
+    "draft": "Taslak. Bu metin henüz hukuki incelemeden geçmedi.",
+    "updated": "Son güncelleme: {date}",
+    "versionLink": "Bu metnin Türkçesi",
+    "contents": "İçindekiler"
+  },
+  "wall": {
+    "pause": "Kayan manşetleri durdur"
+  },
+  "hero": {
+    "kicker": "Sesli haber bülteni",
+    "title": "Haberi dinle.\nMerak ettiğini sor.",
+    "body": "Her gün seçtiğin konulardan birkaç dakikalık sesli bir bülten. Takıldığın yerde dur, sor; kaynaklar farklı anlatıyorsa sana gösterelim.",
+    "cta": "Örneği dinle",
+    "soon": "Yakında App Store ve Google Play'de."
+  },
+  "how": {
+    "kicker": "Örnek bir haber",
+    "title": "Nasıl çalışır?",
+    "lead": "Uygulamanın kendi tanıtımından üç ses. Gerçek bir haberden hazırlandı (24 Eylül 2026); kaynak adları, uygulamadaki gibi gizli.",
+    "listen": {
+      "title": "Dinle",
+      "body": "Bültenin sesli: seçtiğin konulardan birkaç dakika."
+    },
+    "ask": {
+      "title": "Sor",
+      "body": "Mikrofona basılı tut ve sor. Cevap aynı sesle gelir, bülten kaldığı yerden sürer.",
+      "question": "Soru",
+      "answer": "Cevap"
+    },
+    "compare": {
+      "title": "Karşılaştır",
+      "body": "Kaynaklar bir haberi farklı anlatıyorsa nerede ayrıldıklarını görürsün.",
+      "spoken": "Duyduğun"
+    }
+  },
+  "samples": {
+    "kicker": "Örnek bülten · Eylül 2026",
+    "title": "Bir bültenden iki haber",
+    "lead": "Uygulamanın kaynaklardan yazdığı özetler, uygulamada göründükleri gibi.",
+    "sources": "Kaynaklar"
+  },
+  "editions": {
+    "kicker": "Baskılar",
+    "title": "Üç baskı",
+    "lead": "Bir baskı seç; bültenin onun haberlerinden gelsin.",
+    "items": [
+      { "name": "Türkiye", "detail": "Türkçe · Türkiye gündemi" },
+      { "name": "ABD", "detail": "İngilizce · ABD gündemi" },
+      { "name": "Dünya", "detail": "İngilizce · dünyadan öne çıkanlar" }
+    ]
+  },
+  "download": {
+    "kicker": "Yakında",
+    "title": "Yakında App Store ve Google Play'de",
+    "lead": "Önce iPhone'da, sonra Android'de.",
+    "soon": "yakında",
+    "notify": "Çıkınca bana haber ver",
+    "notifySubject": "wonderwhy çıkınca haber ver",
+    "notifyNote": "Adresini yalnız uygulama çıkınca sana haber vermek için tutarız, sonra sileriz."
+  },
+  "faq": {
+    "kicker": "Sorular",
+    "title": "Sık sorulanlar",
+    "items": [
+      {
+        "q": "Ne zaman çıkıyor?",
+        "a": "Yakında. Önce iPhone'da, sonra Android'de. Çıktığında bu sayfadaki mağaza düğmeleri çalışır hâle gelecek."
+      },
+      {
+        "q": "Hangi diller ve baskılar var?",
+        "a": "Uygulama Türkçe ve İngilizce. Üç baskı var: Türkiye (Türkçe), ABD (İngilizce) ve Dünya (İngilizce)."
+      },
+      {
+        "q": "Haberleri kim yazıyor, kim okuyor?",
+        "a": "Bültenleri yapay zekâ açık haber kaynaklarından yazar, yapay zekâ sesi okur. Her haberde kaynakları görünür. Yapay zekâ hata yapabilir; önemli bir konuda asıl kaynağa bak."
+      },
+      {
+        "q": "Sorduğum soru kaydediliyor mu?",
+        "aHtml": "Sesli sorun, anlaşılıp cevaplanması için Google'ın Gemini hizmetine gönderilir. Kaydı, dökümü ve cevabı biz saklamayız. Ayrıntılar <a href=\"{privacy}\">Gizlilik Politikası</a>'nda."
+      },
+      {
+        "q": "Haberler nereden geliyor?",
+        "a": "Haber kuruluşlarının herkese açık akışlarından (RSS). Uygulama birden çok kaynağın verdiği haberleri bir araya getirir ve nerede ayrıldıklarını gösterir."
+      },
+      {
+        "q": "Ücretli mi?",
+        "a": "Hayır. Uygulama şu an ücretsiz."
+      },
+      {
+        "q": "Nasıl yardım alırım?",
+        "aHtml": "<a href=\"{support}\">Destek</a> sayfasına bak ya da <a href=\"mailto:{hello}\">{hello}</a> adresine yaz."
+      }
+    ]
+  },
+  "support": {
+    "kicker": "Destek",
+    "lead": "Uygulama henüz yayında değil. Sorun, önerin ya da bir sorunun varsa bize e-posta gönder.",
+    "contactTitle": "İletişim",
+    "contactHtml": "<a href=\"mailto:{hello}\">{hello}</a> adresine yaz.",
+    "privacyTitle": "Gizlilik talepleri",
+    "privacyHtml": "Verini görmek, düzeltmek, dışa aktarmak ya da sildirmek için <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz. Hakların <a href=\"{privacyPage}\">Gizlilik Politikası</a>'nda.",
+    "deleteTitle": "Hesabını sil",
+    "deleteHtml": "Uygulamada <strong>Profil › Hesabı sil</strong>’e git. Hesabın, eşitlenen verilerin, oyların ve kullanım kayıtların hemen silinir. Uygulama olmadan <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz. Adımlar ve kalanlar <a href=\"{deletePage}\">Hesabını sil</a> sayfasında.",
+    "guestTitle": "Hesapsız yalnız göz mü attın?",
+    "guestHtml": "Uygulamayı silmek, telefonunda tuttuğu listeleri ve ayarları kaldırır. Uygulamanın sunucumuzda oluşturmuş olabileceği misafir kimliği 7 gün kullanılmayınca kendiliğinden silinir. Daha önce silinmesini istersen <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz.",
+    "faqHtml": "Başka cevaplar <a href=\"{faq}\">sık sorulanlarda</a>."
+  },
+  "redirect": {
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "choose": "Dil seç:"
+  }
+}

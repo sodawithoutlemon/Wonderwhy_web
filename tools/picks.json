@@ -1,0 +1,72 @@
+{
+  "_note": "Sitedeki duvar ve örnek brifler için elle seçilmiş haber kimlikleri (app/assets/onboarding/stories*.json). Ölçüt docs/14 §İçerik: suç, iddia, ölüm, siyasetçi ve özel kişi yok. Değiştirince: node website/tools/snapshot.mjs",
+  "tr": {
+    "wall": [
+      "1c82ebe0cb7d278d",
+      "33e34cac3dd0b571",
+      "0c9bd7a2e88d0bf5",
+      "32a7ac4a9e8d9379",
+      "3df6dfc80010e21e",
+      "4b4a627f5029bc29",
+      "a8c52722ddf08f7f",
+      "c6ce6d473b7280de",
+      "21192098f33f65d4",
+      "c82d1d748da55cc7",
+      "eddcbdc9d0cb0331",
+      "ef9f3bd03ec94491",
+      "46a24828b561622d",
+      "8b2ad9b4a580bfc8",
+      "bec6dd2a8e69d03c",
+      "f74b5ea21f0f2b3a",
+      "2a7ae8e4513e93a6",
+      "c49b2c6d960125a9",
+      "20550dc7d57234ec",
+      "f61ccc40a34023c0",
+      "41c8da0efa1668b5",
+      "dunya-1",
+      "7a85bf1dbd549fd2",
+      "e028946ba26ebe4f"
+    ],
+    "samples": [
+      "4b4a627f5029bc29",
+      "2a7ae8e4513e93a6"
+    ],
+    "fixes": {
+      "Kapadokyada": "Kapadokya'da",
+      "Listesindeki": "Listesi'ndeki"
+    }
+  },
+  "en": {
+    "wall": [
+      "a915337e6892e93f",
+      "1b1fe03faa172f4c",
+      "d2811d88af63d780",
+      "f18ac3808a620ace",
+      "90794a58713a3806",
+      "884598b0a5915782",
+      "9cfbcf7d56993b90",
+      "982cfe171af6d693",
+      "5998a55c46b71012",
+      "a69fd45fe49407c7",
+      "c296bd4203d51260",
+      "48c2e59269b8fbd7",
+      "6012ea705b508e0d",
+      "72787283856786aa",
+      "9f8e22dbc96386d2",
+      "1d3636a42066ca10",
+      "c41656275e54872e",
+      "51170d1f50f1b4c5",
+      "2107e524832e3918",
+      "eb204fa74afe15b9",
+      "c7aba2fbc9f87c48",
+      "596cb7f29290fd33",
+      "a1350630f3d49370",
+      "bb918648536419d2"
+    ],
+    "samples": [
+      "2107e524832e3918",
+      "6012ea705b508e0d"
+    ],
+    "fixes": {}
+  }
+}

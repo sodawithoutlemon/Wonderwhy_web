@@ -1,0 +1,40 @@
+{
+  "_note": "Tanıtımın içeriği gerçek bir haberden: Honda'nın elektrikli araç planları (24 Eylül 2026, iki teknoloji yayını; kümelenmiş hikâye 1e28cb87bedf3990). Metinler o haberin başlığından, metninden ve kaynak farklarından; kaynak adları bilerek 'Kaynak 1 / Kaynak 2' (ADR-025).",
+  "category": "teknoloji",
+  "tr": {
+    "kicker": "TEKNOLOJİ · 2 KAYNAK",
+    "headline": "Honda Elektrikli Araç Planlarını İptal Edip Hibrit Modellere Yöneliyor",
+    "listen": "Otomotiv devi Honda, Kuzey Amerika için planladığı iki elektrikli modeli iptal etti ve yeni nesil hibritlere yöneliyor.",
+    "question": "Bu ne demek?",
+    "answer": "Üreticiler tamamen elektrikli araçlar yerine yeniden hibrit teknolojisine yöneliyor.",
+    "source1": "Kaynak 1",
+    "source2": "Kaynak 2",
+    "frame1": "Honda yeni nesil hibrit modellerine öncelik verecek.",
+    "frame2": "Kuzey Amerika'daki iki elektrikli model iptal edildi; yeni hibrit maliyetleri yüzde 30 düşürecek.",
+    "frameTag": "Farklı bakış",
+    "frameNote": "Biri yeni bir atılım anlatıyor, öbürü bir geri adım.",
+    "conflictQuestion": "Üretim ne zaman başlıyor?",
+    "conflict1": "gelecek yıl",
+    "conflict2": "2027",
+    "conflictTag": "Çelişiyor",
+    "compareSpoken": "Kaynaklar bu haberi farklı anlatıyor. Kaynak 1 yeni bir atılımdan söz ediyor, Kaynak 2 bir geri adımdan. Üretimin ne zaman başlayacağında da çelişiyorlar: biri gelecek yıl diyor, öbürü 2027."
+  },
+  "en": {
+    "kicker": "TECHNOLOGY · 2 SOURCES",
+    "headline": "Honda Shifts Focus from Electric Vehicles to Next-Gen Hybrids",
+    "listen": "Automotive giant Honda has canceled two electric models planned for North America and is turning to next-generation hybrids.",
+    "question": "What does that mean?",
+    "answer": "Carmakers are turning back to hybrid technology instead of going fully electric.",
+    "source1": "Source 1",
+    "source2": "Source 2",
+    "frame1": "Honda will prioritize its next-generation hybrid models.",
+    "frame2": "Two electric models for North America are canceled; the new hybrid cuts costs by 30 percent.",
+    "frameTag": "Different angle",
+    "frameNote": "One tells the story of a new push, the other of a retreat.",
+    "conflictQuestion": "When does production start?",
+    "conflict1": "next year",
+    "conflict2": "2027",
+    "conflictTag": "Conflicting",
+    "compareSpoken": "The sources tell this story differently. Source 1 describes a new push; Source 2, a retreat. They also disagree on when production starts: one says next year, the other says 2027."
+  }
+}
