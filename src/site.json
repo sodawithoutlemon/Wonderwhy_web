@@ -7,7 +7,7 @@
     "name": "Yiğit Özdemir (Yelkovan.ai)",
     "address": null
   },
-  "emailProvider": null,
+  "emailProvider": "Google Workspace",
   "email": {
     "hello": "info@yelkovan.ai",
     "privacy": "info@yelkovan.ai"
