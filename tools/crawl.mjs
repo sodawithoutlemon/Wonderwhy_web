@@ -124,7 +124,7 @@ if (CHECK_404) {
   const res = await fetch(missing, { redirect: 'manual' });
   const body = await res.text();
   if (res.status !== 404) errors.push(`${missing}: 404 beklenirdi, ${res.status} geldi`);
-  else if (!body.includes('<meta name="robots" content="noindex">') || !/<title>[^<]*wonderwhy<\/title>/.test(body))
+  else if (!body.includes('<meta name="robots" content="noindex">') || !/<title>[^<]*wonderwhy<\/title>/i.test(body))
     errors.push(`${missing}: 404 geldi ama gövde bizim 404 sayfamız değil`);
 }
 
