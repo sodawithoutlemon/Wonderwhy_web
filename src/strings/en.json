@@ -45,31 +45,31 @@
   },
   "pages": {
     "home": {
-      "title": "wonderwhy: listen to the news, ask what you wonder about",
+      "title": "Wonderwhy: listen to the news, ask what you wonder about",
       "description": "A short audio news briefing on the topics you pick. Hold the mic to ask a question and see where sources tell a story differently. Coming soon to iPhone."
     },
     "privacy": {
-      "title": "Privacy Policy · wonderwhy",
-      "description": "What data the wonderwhy app and website collect, why, who processes it, how long it is kept and how to delete it.",
+      "title": "Privacy Policy · Wonderwhy",
+      "description": "What data the Wonderwhy app and website collect, why, who processes it, how long it is kept and how to delete it.",
       "heading": "Privacy Policy"
     },
     "terms": {
-      "title": "Terms of Use · wonderwhy",
-      "description": "The terms for using the wonderwhy audio news app and website.",
+      "title": "Terms of Use · Wonderwhy",
+      "description": "The terms for using the Wonderwhy audio news app and website.",
       "heading": "Terms of Use"
     },
     "support": {
-      "title": "Support · wonderwhy",
-      "description": "Get help with wonderwhy, contact us, make a privacy request or delete your account.",
+      "title": "Support · Wonderwhy",
+      "description": "Get help with Wonderwhy, contact us, make a privacy request or delete your account.",
       "heading": "Help and contact"
     },
     "deleteAccount": {
-      "title": "Delete your account · wonderwhy",
-      "description": "How to delete your wonderwhy account in the app or by email, what is deleted and what is kept.",
+      "title": "Delete your account · Wonderwhy",
+      "description": "How to delete your Wonderwhy account in the app or by email, what is deleted and what is kept.",
       "heading": "Delete your account"
     },
     "notFound": {
-      "title": "Page not found · wonderwhy",
+      "title": "Page not found · Wonderwhy",
       "heading": "Page not found",
       "body": "This page doesn’t exist or has moved.",
       "home": "Go to the home page"
@@ -134,7 +134,7 @@
     "lead": "iPhone first, then Android.",
     "soon": "coming soon",
     "notify": "Email me when it’s out",
-    "notifySubject": "Notify me when wonderwhy is out",
+    "notifySubject": "Notify me when Wonderwhy is out",
     "notifyNote": "We keep your address only to tell you when the app is out, then delete it."
   },
   "faq": {

@@ -45,31 +45,31 @@
   },
   "pages": {
     "home": {
-      "title": "wonderwhy: haberi dinle, merak ettiğini sor",
+      "title": "Wonderwhy: haberi dinle, merak ettiğini sor",
       "description": "Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Mikrofona basılı tutup sor, kaynakların haberi nerede farklı anlattığını gör. Yakında iPhone'da."
     },
     "privacy": {
-      "title": "Gizlilik Politikası · wonderwhy",
-      "description": "wonderwhy uygulamasının ve sitesinin hangi verileri, neden topladığı, kimlerin işlediği, ne kadar saklandığı ve nasıl silineceği.",
+      "title": "Gizlilik Politikası · Wonderwhy",
+      "description": "Wonderwhy uygulamasının ve sitesinin hangi verileri, neden topladığı, kimlerin işlediği, ne kadar saklandığı ve nasıl silineceği.",
       "heading": "Gizlilik Politikası"
     },
     "terms": {
-      "title": "Kullanım Şartları · wonderwhy",
-      "description": "wonderwhy sesli haber uygulamasının ve sitesinin kullanım şartları.",
+      "title": "Kullanım Şartları · Wonderwhy",
+      "description": "Wonderwhy sesli haber uygulamasının ve sitesinin kullanım şartları.",
       "heading": "Kullanım Şartları"
     },
     "support": {
-      "title": "Destek · wonderwhy",
-      "description": "wonderwhy için yardım al, bize yaz, gizlilik talebinde bulun ya da hesabını sil.",
+      "title": "Destek · Wonderwhy",
+      "description": "Wonderwhy için yardım al, bize yaz, gizlilik talebinde bulun ya da hesabını sil.",
       "heading": "Yardım ve iletişim"
     },
     "deleteAccount": {
-      "title": "Hesabını sil · wonderwhy",
-      "description": "wonderwhy hesabını uygulamada ya da e-postayla nasıl sileceğin, nelerin silinip nelerin kaldığı.",
+      "title": "Hesabını sil · Wonderwhy",
+      "description": "Wonderwhy hesabını uygulamada ya da e-postayla nasıl sileceğin, nelerin silinip nelerin kaldığı.",
       "heading": "Hesabını sil"
     },
     "notFound": {
-      "title": "Sayfa bulunamadı · wonderwhy",
+      "title": "Sayfa bulunamadı · Wonderwhy",
       "heading": "Sayfa bulunamadı",
       "body": "Bu sayfa yok ya da taşındı.",
       "home": "Ana sayfaya git"
@@ -134,7 +134,7 @@
     "lead": "Önce iPhone'da, sonra Android'de.",
     "soon": "yakında",
     "notify": "Çıkınca bana haber ver",
-    "notifySubject": "wonderwhy çıkınca haber ver",
+    "notifySubject": "Wonderwhy çıkınca haber ver",
     "notifyNote": "Adresini yalnız uygulama çıkınca sana haber vermek için tutarız, sonra sileriz."
   },
   "faq": {
