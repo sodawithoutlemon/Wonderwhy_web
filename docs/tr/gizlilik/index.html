@@ -285,8 +285,7 @@ html { scroll-behavior: auto; }
 </div></header>
 <main id="main" class="doc"><div class="wrap narrow">
 <div class="doc-head"><p class="kicker">Hukuki</p><h1 class="large-title">Gizlilik Politikası</h1>
-<p class="footnote">Son güncelleme: 30 Eylül 2026 · <a href="../../privacy/" hreflang="en" lang="en">This text in English</a></p></div>
-<p class="draft callout">Taslak. Bu metin henüz hukuki incelemeden geçmedi.</p>
+<p class="footnote">Son güncelleme: 1 Ekim 2026 · <a href="../../privacy/" hreflang="en" lang="en">This text in English</a></p></div>
 <nav class="toc" aria-labelledby="toc-title"><p id="toc-title" class="headline">İçindekiler</p><ol><li><a href="#biz-kimiz">Biz kimiz</a></li><li><a href="#ozet">Özet</a></li><li><a href="#hesap">Hesabın</a></li><li><a href="#esitlenenler">Hesabına eşitlenenler</a></li><li><a href="#oylar">Oylar ve sorun bildirimleri</a></li><li><a href="#mikrofon">Mikrofon ve sorular</a></li><li><a href="#haberler">Haberler nasıl hazırlanıyor</a></li><li><a href="#cihaz">Telefonunda</a></li><li><a href="#bildirimler">Bildirimler</a></li><li><a href="#sinirlar">Kullanım sınırları ve sunucu kayıtları</a></li><li><a href="#takip-yok">Reklam, analitik ve satış yok</a></li><li><a href="#isleyenler">Verini kimler işliyor</a></li><li><a href="#saklama">Saklama süreleri</a></li><li><a href="#silme">Verini silmek</a></li><li><a href="#haklar">Hakların</a></li><li><a href="#hukuki-sebepler">Hukuki sebepler</a></li><li><a href="#yas">Yaş</a></li><li><a href="#site">Bu site</a></li><li><a href="#degisiklikler">Bu politikadaki değişiklikler</a></li><li><a href="#iletisim">İletişim</a></li></ol></nav>
 <div class="prose">
 <p>Bu politika, Wonderwhy uygulamasının ve wonderwhy.net sitesinin hangi verileri, neden topladığını, kimlerin işlediğini, ne kadar saklandığını ve bu konuda neler yapabileceğini anlatır. Uygulamanın bugün nasıl çalıştığını yansıtır. Bu değişirse sayfayı ve yukarıdaki tarihi güncelleriz. KVKK kapsamındaki aydınlatma metni yerine de geçer.</p>
@@ -297,7 +296,7 @@ html { scroll-behavior: auto; }
 <h2 id="ozet">Özet</h2>
 <ul>
 <li>Reklam yok, analitik yok, başka uygulama ve sitelerde takip yok. Kişisel verini satmayız ve paylaşmayız.</li>
-<li>Okumak ve dinlemek için hesap (e-posta ve şifre) gerekir; hesapsız yalnız göz atabilirsin. Listelerin ve ayarların cihazların arasında eşitlenir.</li>
+<li>Okumak ve dinlemek için hesap gerekir: e-posta ve şifre, Apple ile giriş (iPhone ve iPad’de) ya da Google ile giriş. Hesapsız yalnız göz atabilirsin. Listelerin ve ayarların cihazların arasında eşitlenir.</li>
 <li>Sesli soru sorduğunda kayıt, anlaşılıp cevaplanması için Google’ın Gemini hizmetine gider. Biz saklamayız.</li>
 <li>Haber özetlerini yapay zekâ, herkese açık haber akışlarından yazar. Bunun için senin hiçbir verin gönderilmez.</li>
 <li>Hesabın ve içinde tuttukların dışında hiçbir şeyi 7 günden uzun saklamayız.</li>
@@ -306,18 +305,17 @@ html { scroll-behavior: auto; }
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">Veri</th><th scope="col">Amaç</th><th scope="col">Nereye gider</th><th scope="col">Ne kadar</th></tr></thead>
 <tbody>
-<tr><td>E-posta, şifre, isteğe bağlı ad</td><td>Hesap ve giriş</td><td>Google Firebase Authentication</td><td>Hesabını silene kadar</td></tr>
+<tr><td>E-posta, şifre ya da Apple/Google ile giriş, isteğe bağlı ad</td><td>Hesap ve giriş</td><td>Google Firebase Authentication</td><td>Hesabını silene kadar</td></tr>
 <tr><td>Eşitlenen listeler ve ayarlar</td><td>Cihazların arasında aynı kalmaları</td><td>Google Cloud Firestore (Belçika)</td><td>Hesabını silene kadar</td></tr>
 <tr><td>Oylar ve anket cevapları</td><td>Bir kez sayılmaları ve toplamların gösterilmesi</td><td>Google Cloud Firestore (Belçika)</td><td>Haberin gününden 7 gün sonra; hesabını daha önce silersen o an</td></tr>
 <tr><td>Sesli soru (en çok 15 saniye) ve o an çalan cümle</td><td>Sorunu anlamak ve cevaplamak</td><td>Google Gemini API</td><td>Biz saklamayız</td></tr>
-<tr><td>Canlı mod sesi</td><td>Bültenin üzerine sesli sohbet</td><td>Firebase üzerinden Google Gemini</td><td>Biz saklamayız</td></tr>
 <tr><td>Günlük kullanım sayaçları (kimliğin ve bir sayı)</td><td>Adil kullanım sınırları</td><td>Google Cloud Firestore (Belçika)</td><td>7 gün; hesabını silince hemen</td></tr>
 <tr><td>Sunucu kayıtları (IP adresi, uygulama ve cihaz bilgisi)</td><td>Güvenlik ve hata giderme</td><td>Google Cloud (Belçika)</td><td>7 gün</td></tr>
 </tbody>
 </table></div>
 
 <h2 id="hesap">Hesabın</h2>
-<p>Haberleri açmak ve dinlemek için hesap gerekir; hesapsız tanıtımı geçip günün başlıklarını görebilirsin. Hesap açtığında e-posta adresini, şifreni ve girersen adını işleriz. Bunları Google’ın Firebase Authentication hizmeti saklar; şifreni biz hiç görmeyiz. Apple ile giriş ve Google ile giriş hazır ama henüz açık değil. Açıldıklarında Apple ya da Google adını, e-posta adresini (Apple gizli bir yönlendirme adresi verebilir) ve bir giriş jetonunu bizimle paylaşır.</p>
+<p>Haberleri açmak ve dinlemek için hesap gerekir; hesapsız tanıtımı geçip günün başlıklarını görebilirsin. Hesap açtığında e-posta adresini, şifreni ve girersen adını işleriz. Bunları Google’ın Firebase Authentication hizmeti saklar; şifreni biz hiç görmeyiz. Apple ile giriş (iPhone ve iPad’de) ya da Google ile giriş de kullanabilirsin. O zaman Apple ya da Google adını, e-posta adresini (Apple gizli bir yönlendirme adresi verebilir) ve bir giriş jetonunu bizimle paylaşır. Google ile girişte Firebase Authentication, Google profil fotoğrafının web adresini de saklar; uygulama onu kullanmaz ve göstermez.</p>
 <p>Giriş yapmadan önce uygulama, kimlik isteyen özellikler için rastgele bir misafir kimliği (Firebase anonim hesabı) oluşturabilir. Bu kimlik adına ya da e-postana bağlı değildir, ama yine de kişisel veridir: altında saklananlar telefonuna kadar izlenebilir. Sonra hesap açarsan misafir kimliğin hesap kimliğin olur. Var olan bir hesaba giriş yaparsan uygulama misafir kimliğini kullanmayı bırakır. 7 gün kullanılmayan misafir kimliği, oyları ve sayaçlarıyla birlikte kendiliğinden silinir.</p>
 
 <h2 id="esitlenenler">Hesabına eşitlenenler</h2>
@@ -343,35 +341,25 @@ html { scroll-behavior: auto; }
 <p>Gemini API’yi ücretli hizmet olarak kullanıyoruz. Google’ın ücretli hizmet şartlarına göre Google bu verileri kendi ürünlerini geliştirmek için kullanmaz; istekleri ve cevapları yalnız kötüye kullanımı tespit etmek ve yasal yükümlülüklerini yerine getirmek için sınırlı bir süre tutar.</p>
 <h3>Hazır sorular</h3>
 <p>Bazı sorular düğmedir, örneğin bir haberin ayrıntısını istemek. Bunların cevapları seninle değil haberle ilgilidir; bu yüzden haberle birlikte saklanır ve herkes için yeniden kullanılır.</p>
-<h3>Canlı mod</h3>
-<p>Uygulama bazı durumlarda kayıtlı ses yerine canlı sohbet modunu kullanır. Bunu biz açarız ya da bir haberin sesi hazırlanamadığında uygulama kendisi kullanır. Canlı modda:</p>
-<ul>
-<li>uygulama, canlı oturum açık kaldığı sürece mikrofon sesini telefonundan doğrudan Firebase üzerinden Google’ın Gemini hizmetine akıtır;</li>
-<li>uygulama konuşmadığı her an mikrofon dinler, düğmeye basılı tutman gerekmez;</li>
-<li>Google sohbetin iki tarafını da yazıya döker;</li>
-<li>sohbeti kurmak için uygulama bültenindeki haberleri, dil ve derinlik ayarlarını da gönderir;</li>
-<li>bir kelimeyi sorarsan uygulama onu kelime listene ekleyebilir.</li>
-</ul>
-<p>Canlı moddaki sesi ve dökümü saklamayız.</p>
-<p>iOS, uygulama mikrofonu kullanmadan önce senden izin ister. Bu izni istediğin zaman iPhone’un Ayarlar’ından kapatabilirsin.</p>
+<p>Telefonun, uygulama mikrofonu kullanmadan önce senden izin ister. Bu izni istediğin zaman telefonunun ayarlarından kapatabilirsin.</p>
 
 <h2 id="haberler">Haberler nasıl hazırlanıyor</h2>
-<p>Sunucumuz haberleri haber kuruluşlarının herkese açık akışlarından toplar. Özetleri yazdırmak için OpenAI’ye, sesli okutmak için Google’a gönderir. Bu isteklerde yalnız haber metni vardır, senin hiçbir verin yoktur. Haberler ve ses dosyaları, yayınlandıkları günden 7 gün sonra sunucularımızdan silinir.</p>
-<p>Kişisel bültenin, ortak baskıdan telefonunda hazırlanır; bu yüzden konuların hiçbir yapay zekâ hizmetine gönderilmez (yukarıdaki canlı mod hariç).</p>
+<p>Sunucumuz haberleri haber kuruluşlarının herkese açık akışlarından toplar; aynı haberi kuruluşların nasıl anlattığını karşılaştırmak için sayfalarının ilk paragraflarını da okur. Özetleri yazdırmak için OpenAI’ye, sesli okutmak için Google’a gönderir. Bu isteklerde yalnız haber metni vardır, senin hiçbir verin yoktur. Haberler ve ses dosyaları, yayınlandıkları günden 7 gün sonra sunucularımızdan silinir.</p>
+<p>Kişisel bültenin, ortak baskıdan telefonunda hazırlanır; bu yüzden konuların hiçbir yapay zekâ hizmetine gönderilmez.</p>
 <p>Haber görselleri doğrudan yayıncıların sunucularından yüklenir; kaynak bağlantıları yayıncının sayfasını uygulamanın içindeki tarayıcıda açar. Bu yayıncılar IP adresini görebilir ve kendi gizlilik politikalarını uygular.</p>
 
 <h2 id="cihaz">Telefonunda</h2>
 <ul>
 <li>Listelerin, ayarların ve eşitleme durumu, uygulamanın kendi deposunda.</li>
-<li>Haber seslerinin önbelleği, iOS’un temizleyebileceği geçici bir klasörde.</li>
-<li>Oturum bilgin, iPhone’un Anahtar Zinciri’nde. Anahtar Zinciri’ndeki kayıtlar uygulamayı silsen de kalabilir.</li>
+<li>Haber seslerinin önbelleği, telefonunun temizleyebileceği geçici bir klasörde.</li>
+<li>Oturum bilgin: iPhone ve iPad’de Anahtar Zinciri’nde, uygulamayı silsen de kalabilir; Android’de uygulamanın kendi gizli deposunda.</li>
 <li>Eşitlenen verilerinin Firestore’un tuttuğu çevrimdışı kopyası.</li>
 </ul>
 <p>Çıkış yaptığında ya da hesabını sildiğinde uygulama listelerini, oylarını, kelimelerini ve ilerlemeni telefondan kaldırır. Uygulama çalışmaya devam etsin diye ayarlarını (konular, diller, yazı boyutu) bırakır. Uygulamayı silmek bunları da kaldırır.</p>
-<p>Sunucularımızı kötüye kullanıma karşı korumak için uygulama, isteklerin gerçek uygulamadan geldiğini Firebase App Check ve Apple’ın DeviceCheck hizmetiyle doğrular. Cihaz tanımlayıcılarını saklamayız.</p>
+<p>Sunucularımızı kötüye kullanıma karşı korumak için uygulama, isteklerin gerçek uygulamadan geldiğini Firebase App Check ile doğrular: iPhone ve iPad’de Apple’ın DeviceCheck, Android’de Google Play Integrity hizmetiyle. Cihaz tanımlayıcılarını saklamayız.</p>
 
 <h2 id="bildirimler">Bildirimler</h2>
-<p>Bildirimler henüz açık değil. Açıldığında, ve yalnız izin verirsen, telefonun Firebase Cloud Messaging ve Apple’ın bildirim hizmeti üzerinden konulara (örneğin sabah bülteninin saatine) abone olur. Cihaz jetonunu saklamayız.</p>
+<p>Yalnız bildirimlere izin verirsen telefonun Firebase Cloud Messaging üzerinden, iPhone ve iPad’de Apple’ın bildirim hizmetiyle de, konulara (örneğin sabah bülteninin saatine ya da baskındaki önemli gelişmelere) abone olur. Bildirimleri sana kişisel olarak değil konulara göndeririz; cihaz jetonunu saklamayız. Bildirimleri uygulamanın Profil sayfasından ya da telefonunun ayarlarından kapatabilirsin.</p>
 
 <h2 id="sinirlar">Kullanım sınırları ve sunucu kayıtları</h2>
 <p>Hizmet adil ve karşılanabilir kalsın diye her gün kaç soru sorduğunu ve kaç haber sesi ürettiğini sayarız. Her sayaçta hesap ya da misafir kimliğin, tarih ve bir sayı bulunur. Bir haberin sesi hazırlanırken iş, kimliğinle kaydedilir. Sayaçlar ve iş kayıtları 7 gün sonra, hesabını silersen hemen silinir.</p>
@@ -382,9 +370,9 @@ html { scroll-behavior: auto; }
 
 <h2 id="isleyenler">Verini kimler işliyor</h2>
 <ul>
-<li><strong>Google</strong> (Firebase Authentication, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Cloud Messaging, Gemini API ve Firebase AI Logic): barındırma, giriş, eşitleme, sorular ve ses. Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
+<li><strong>Google</strong> (Firebase Authentication, Google ile giriş, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud Messaging ve Gemini API): barındırma, giriş, eşitleme, sorular ve ses. Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
 <li><strong>OpenAI</strong>: haber özetlerini yazar. Hiçbir kişisel veri almaz.</li>
-<li><strong>Apple</strong>: DeviceCheck ve bildirimler; açıldığında Apple ile giriş.</li>
+<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.</li>
 <li><strong>GitHub</strong>: bu siteyi barındırır.</li>
 <li><strong>Google Workspace</strong>: posta kutumuzu barındırır; bize gönderdiğin e-postalar orada durur.</li>
 </ul>
@@ -423,12 +411,12 @@ html { scroll-behavior: auto; }
 <ul>
 <li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c; GDPR md. 6/1-b).</li>
 <li><strong>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve kayıtlar:</strong> meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f).</li>
-<li><strong>Mikrofon ve bildirimler:</strong> iPhone’un Ayarlar’ından geri alabileceğin iznin (GDPR md. 6/1-a).</li>
+<li><strong>Mikrofon ve bildirimler:</strong> telefonunun ayarlarından geri alabileceğin iznin (GDPR md. 6/1-a).</li>
 <li><strong>Yasal yükümlülükler</strong>, uygulandığı durumlarda (KVKK md. 5/2-ç; GDPR md. 6/1-c).</li>
 </ul>
 
 <h2 id="yas">Yaş</h2>
-<p>Uygulama yetişkinler içindir; kullanmak için en az 18 yaşında olmalısın. Soru ve canlı mod özellikleri Google’ın Gemini API’sini kullanır ve bu hizmetin şartları 18 yaşından küçüklere yönelik ya da onların kullanması muhtemel hizmetlere izin vermez. 18 yaşından küçük birinin bize kişisel veri verdiğini düşünüyorsan bize yaz, sileriz.</p>
+<p>Uygulama yetişkinler içindir; kullanmak için en az 18 yaşında olmalısın. Soru özelliği Google’ın Gemini API’sini kullanır ve bu hizmetin şartları 18 yaşından küçüklere yönelik ya da onların kullanması muhtemel hizmetlere izin vermez. 18 yaşından küçük birinin bize kişisel veri verdiğini düşünüyorsan bize yaz, sileriz.</p>
 
 <h2 id="site">Bu site</h2>
 <p>wonderwhy.net, GitHub Pages’te barındırılan statik bir sitedir. Çerez, tarayıcı deposu, analitik, üçüncü taraf betiği ya da yazı tipi kullanmaz. GitHub, siteyi sunmak ve güvenliğini sağlamak için ziyaretçilerin IP adreslerini GitHub Gizlilik Bildirimi’ne göre işler. Örnek sesler yalnız oynat düğmesine bastığında yüklenir. Bize e-posta gönderirsen adresini cevap vermek için kullanırız.</p>
