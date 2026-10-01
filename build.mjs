@@ -416,8 +416,7 @@ function legalBody(lang, key) {
   return `<main id="main" class="doc"><div class="wrap narrow">
 <div class="doc-head"><p class="kicker">${esc(t.legal.kicker)}</p><h1 class="large-title">${esc(t.pages[key].heading)}</h1>
 <p class="footnote">${esc(fill(t.legal.updated, { date: vars.updated }))} · <a href="${PAGES[key][o]}" hreflang="${o}" lang="${o}">${esc(S[o].legal.versionLink)}</a></p></div>
-<p class="draft callout">${esc(t.legal.draft)}</p>
-<nav class="toc" aria-labelledby="toc-title"><p id="toc-title" class="headline">${esc(t.legal.contents)}</p><ol>${toc}</ol></nav>
+${site.legalDraft ? `<p class="draft callout">${esc(t.legal.draft)}</p>\n` : ''}<nav class="toc" aria-labelledby="toc-title"><p id="toc-title" class="headline">${esc(t.legal.contents)}</p><ol>${toc}</ol></nav>
 <div class="prose">
 ${content}
 </div>
