@@ -46,7 +46,7 @@
   "pages": {
     "home": {
       "title": "Wonderwhy: haberi dinle, merak ettiğini sor",
-      "description": "Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Mikrofona basılı tutup sor, kaynakların haberi nerede farklı anlattığını gör. Yakında iPhone'da."
+      "description": "Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Mikrofona basılı tutup sor, kaynakların haberi nerede farklı anlattığını gör. iPhone, iPad ve Android'de."
     },
     "privacy": {
       "title": "Gizlilik Politikası · Wonderwhy",
@@ -129,9 +129,9 @@
     ]
   },
   "download": {
-    "kicker": "Yakında",
-    "title": "Yakında App Store ve Google Play'de",
-    "lead": "Önce iPhone'da, sonra Android'de.",
+    "kicker": "İndir",
+    "title": "Wonderwhy'ı indir",
+    "lead": "App Store ve Google Play'de ücretsiz.",
     "soon": "yakında",
     "notify": "Çıkınca bana haber ver",
     "notifySubject": "Wonderwhy çıkınca haber ver",
@@ -142,8 +142,8 @@
     "title": "Sık sorulanlar",
     "items": [
       {
-        "q": "Ne zaman çıkıyor?",
-        "a": "Yakında. Önce iPhone'da, sonra Android'de. Çıktığında bu sayfadaki mağaza düğmeleri çalışır hâle gelecek."
+        "q": "Nereden indirebilirim?",
+        "a": "iPhone ve iPad için App Store'da, Android için Google Play'de. Ücretsiz."
       },
       {
         "q": "Hangi diller ve baskılar var?",
@@ -173,7 +173,7 @@
   },
   "support": {
     "kicker": "Destek",
-    "lead": "Uygulama henüz yayında değil. Sorun, önerin ya da bir sorunun varsa bize e-posta gönder.",
+    "lead": "Sorun, önerin ya da bir sorunun varsa bize e-posta gönder.",
     "contactTitle": "İletişim",
     "contactHtml": "<a href=\"mailto:{hello}\">{hello}</a> adresine yaz.",
     "privacyTitle": "Gizlilik talepleri",

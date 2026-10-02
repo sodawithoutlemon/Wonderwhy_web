@@ -13,9 +13,9 @@
     "privacy": "info@yelkovan.ai"
   },
   "stores": {
-    "appStore": null,
-    "googlePlay": null,
-    "appStoreId": null
+    "appStore": "https://apps.apple.com/app/id6817247112",
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.ay.wonderwhy",
+    "appStoreId": "6817247112"
   },
   "legalUpdated": "2026-10-02",
   "legalDraft": false

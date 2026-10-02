@@ -346,8 +346,8 @@ ${editions}
 <section id="download" aria-labelledby="download-title"><div class="wrap download">
 <div class="section-head reveal"><p class="kicker">${esc(d.kicker)}</p><h2 id="download-title" class="title1">${esc(d.title)}</h2><p class="lead">${esc(d.lead)}</p></div>
 ${storeButtons(lang)}
-<a class="btn btn-quiet" href="${esc(mail)}">${esc(d.notify)}</a>
-<p class="footnote">${esc(d.notifyNote)} <a href="${PAGES.privacy[lang]}">${esc(t.pages.privacy.heading)}</a></p>
+${released ? '' : `<a class="btn btn-quiet" href="${esc(mail)}">${esc(d.notify)}</a>
+<p class="footnote">${esc(d.notifyNote)} <a href="${PAGES.privacy[lang]}">${esc(t.pages.privacy.heading)}</a></p>`}
 </div></section>
 <section id="faq" aria-labelledby="faq-title"><div class="wrap">
 <div class="section-head reveal"><p class="kicker">${esc(t.faq.kicker)}</p><h2 id="faq-title" class="title1">${esc(t.faq.title)}</h2></div>
