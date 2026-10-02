@@ -155,7 +155,7 @@
       },
       {
         "q": "Is my question recorded?",
-        "aHtml": "Your spoken question is sent to Google’s Gemini service so it can be understood and answered. We don’t store the recording, the transcript or the answer. The <a href=\"{privacy}\">Privacy Policy</a> has the details."
+        "aHtml": "Your spoken question is sent to Google’s Gemini service so it can be understood and answered. We don’t store the recording. The question and answer are kept only if you report an answer (for 7 days) or when a “what is …?” question is saved to My questions in your Library (until you delete your account). The <a href=\"{privacy}\">Privacy Policy</a> has the details."
       },
       {
         "q": "Where does the news come from?",

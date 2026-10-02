@@ -155,7 +155,7 @@
       },
       {
         "q": "Sorduğum soru kaydediliyor mu?",
-        "aHtml": "Sesli sorun, anlaşılıp cevaplanması için Google'ın Gemini hizmetine gönderilir. Kaydı, dökümü ve cevabı biz saklamayız. Ayrıntılar <a href=\"{privacy}\">Gizlilik Politikası</a>'nda."
+        "aHtml": "Sesli sorun, anlaşılıp cevaplanması için Google'ın Gemini hizmetine gönderilir. Kaydı biz saklamayız. Soru ve cevap yalnız bir cevabı bildirirsen (7 gün) ya da “… nedir?” soruların Kitaplık › Sorularım’a kaydedildiğinde (hesabını silene kadar) saklanır. Ayrıntılar <a href=\"{privacy}\">Gizlilik Politikası</a>'nda."
       },
       {
         "q": "Haberler nereden geliyor?",

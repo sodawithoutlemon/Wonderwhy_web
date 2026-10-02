@@ -35,19 +35,19 @@
 <li>Kaydettiğin haberler (en çok 50), son okuduğun ya da dinlediğin haberler (en çok 30) ve dinleme listen (en çok 20). Bunlar uygulamanın içindeki haberlerin kopyalarıdır.</li>
 <li>Takip ettiğin ya da susturduğun konular ve kaynaklar.</li>
 <li>Oylarının ve anket cevaplarının senin kopyan, sorun bildirdiğin haberler.</li>
-<li>Kelime listen (en çok 1.500 kelime), her kelimenin geçtiği cümle ve başlıkla birlikte.</li>
+<li>Kelime listen ve Sorularım (en çok 1.500 kayıt): her kelime ya da kavram, geçtiği cümle ve başlıkla birlikte. Sesle bir şeyin ne demek olduğunu sorduğunda (“… nedir?” gibi) kavram ve cevap buraya eklenir.</li>
 <li>Günün dinleme ilerlemesi: hangi haberleri dinlediğin, ne kadar dinlediğin ve kaç soru sorduğun. Soruların kendisi değil, yalnız sayısı tutulur.</li>
 </ul>
 
 <h2 id="oylar">Oylar ve sorun bildirimleri</h2>
 <p>Bir habere tepki verdiğinde ya da ankete cevap verdiğinde oyun, bir kez sayılsın ve değiştirebilesin diye hesap ya da misafir kimliğinle saklanır. Başkaları yalnız toplamları görür. Oylar, haberin gününden 7 gün sonra haberle birlikte silinir.</p>
-<p>Bir haberdeki sorunu bildirdiğinde haberi, seçtiğin nedeni ve yazdığın notu (en çok 500 karakter) saklarız. Sorun bildirimi kimliğine bağlanmaz ve 7 gün sonra silinir. Lütfen nota kişisel bilgi yazma: sana bağlı olmadığı için daha önce bulup silemeyiz.</p>
+<p>Bir haberde ya da cevapta sorun bildirdiğinde haberi, seçtiğin nedeni ve notu (en çok 500 karakter) saklarız. Sesli bir cevabı bildirirsen, neyin yanlış gittiğini görebilmemiz için uygulama notu sorduğun soruyla ve cevapla doldurur; göndermeden önce değiştirebilir ya da silebilirsin. Sorun bildirimi kimliğine bağlanmaz ve 7 gün sonra silinir. Lütfen nota kişisel bilgi yazma: sana bağlı olmadığı için daha önce bulup silemeyiz.</p>
 
 <h2 id="mikrofon">Mikrofon ve sorular</h2>
 <h3>Bas-konuş sorular</h3>
 <p>Bülten çalarken mikrofon düğmesine basılı tutup soru sorabilirsin. Uygulama yalnız düğmeyi tuttuğun sürece, en çok 15 saniye kaydeder. Kaydı, o an çalan cümleyle birlikte sunucumuza gönderir. Sunucumuz bunları Google Gemini API’ye iletir; Gemini sorunu anlar ve bir cevap yazar. Ardından Google’ın seslendirme hizmeti cevabı bültenin sesiyle okur.</p>
 <p>İlk sesli sorundan önce uygulama, sesinin Google’ın yapay zekâsına gideceğini söyler ve onayını ister. Onaylamadan hiçbir şey kaydedilmez ve gönderilmez.</p>
-<p>Kaydı, söylediklerini ve cevabı saklamayız; kayıtlarımıza da yazmayız. Kayıtlarımızda yalnız cevabın uzunluğu ve ne kadar sürdüğü gibi sayılar kalır. Sesin kimliğini belirlemek için kullanılmaz.</p>
+<p>Kaydı saklamayız; söylediklerini ve cevabı kayıtlarımıza yazmayız. İki istisna var, ikisi de senin elinde: bir cevabı bildirirsen bildirim, sorduğun soruyu ve cevabı 7 gün tutar (bkz. <a href="#oylar">Oylar ve sorun bildirimleri</a>); bir şeyin ne demek olduğunu sorduğunda kavram ve cevap Kitaplık › Sorularım’a kaydedilir ve hesabını silene kadar hesabınla eşitlenir (bkz. <a href="#esitlenenler">Hesabına eşitlenenler</a>). Kayıtlarımızda yalnız cevabın uzunluğu ve ne kadar sürdüğü gibi sayılar kalır. Sesin kimliğini belirlemek için kullanılmaz.</p>
 <p>Gemini API’yi ücretli hizmet olarak kullanıyoruz. Google’ın ücretli hizmet şartlarına göre Google bu verileri kendi ürünlerini geliştirmek için kullanmaz; istekleri ve cevapları yalnız kötüye kullanımı tespit etmek ve yasal yükümlülüklerini yerine getirmek için sınırlı bir süre tutar.</p>
 <h3>Hazır sorular</h3>
 <p>Bazı sorular düğmedir, örneğin bir haberin ayrıntısını istemek. Bunların cevapları seninle değil haberle ilgilidir; bu yüzden haberle birlikte saklanır ve herkes için yeniden kullanılır.</p>
@@ -97,7 +97,7 @@
 <li><strong>Misafir kimlikleri:</strong> 7 gün kullanılmazsa oyları ve sayaçlarıyla birlikte silinir. Var olan bir hesaba giriş yaptığında geride kalan misafir kimliği de buna dahil.</li>
 <li><strong>Sorun bildirimleri:</strong> 7 gün.</li>
 <li><strong>Günlük kullanım sayaçları ve ses işi kayıtları:</strong> 7 gün; hesabını silince hemen.</li>
-<li><strong>Sesli sorular:</strong> saklanmaz.</li>
+<li><strong>Ses kayıtları:</strong> saklanmaz. Soru ve cevap yalnız yukarıdaki iki durumda kalır: sorun bildiriminde 7 gün, Sorularım’da hesabını silene kadar.</li>
 <li><strong>Haberler, haber sesleri ve hazır cevaplar:</strong> haberin gününden 7 gün sonra.</li>
 <li><strong>Sunucu kayıtları:</strong> 7 gün. Hesap kimliği içermez.</li>
 <li><strong>Bize gönderdiğin e-postalar:</strong> mesajınla ilgilenmemiz gerektiği sürece. Uygulama çıkınca haber vermemizi istersen adresini haber verene kadar tutar, sonra sileriz.</li>
