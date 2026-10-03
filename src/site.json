@@ -5,6 +5,8 @@
   "year": 2026,
   "publisher": {
     "name": "Yiğit Özdemir (Yelkovan.ai)",
+    "org": "Yelkovan.ai",
+    "person": "Yiğit Özdemir",
     "address": null
   },
   "emailProvider": "Google Workspace",
@@ -18,5 +20,6 @@
     "appStoreId": "6817247112"
   },
   "legalUpdated": "2026-10-02",
+  "homeUpdated": "2026-10-03",
   "legalDraft": false
 }

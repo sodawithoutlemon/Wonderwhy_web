@@ -27,5 +27,17 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.ay.wonderwhy",
+      "url": "https://play.google.com/store/apps/details?id=com.ay.wonderwhy"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/id6817247112"
+    }
+  ],
+  "prefer_related_applications": false
 }

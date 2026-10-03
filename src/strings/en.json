@@ -45,8 +45,8 @@
   },
   "pages": {
     "home": {
-      "title": "Wonderwhy: listen to the news, ask what you wonder about",
-      "description": "A short audio news briefing on the topics you pick. Hold the mic to ask a question and see where sources tell a story differently. On iPhone, iPad and Android."
+      "title": "Wonderwhy: AI audio news app. Listen, ask, compare sources",
+      "description": "Free AI audio news app: a short daily news briefing on topics you pick. Ask questions by voice and see where sources differ. iPhone, iPad and Android."
     },
     "privacy": {
       "title": "Privacy Policy · Wonderwhy",
@@ -86,7 +86,7 @@
     "pause": "Pause the moving headlines"
   },
   "hero": {
-    "kicker": "Audio news briefing",
+    "kicker": "AI audio news app",
     "title": "Listen to the news.\nAsk what you wonder about.",
     "body": "A short audio briefing every day, on the topics you pick. Stop and ask anytime. When sources tell it differently, we’ll show you.",
     "cta": "Hear an example",
@@ -94,7 +94,7 @@
   },
   "how": {
     "kicker": "An example story",
-    "title": "How it works",
+    "title": "How the audio news briefing works",
     "lead": "Three clips from the app’s own intro, made from a real story (24 September 2026). The sources’ names are hidden, as they are in the app.",
     "listen": {
       "title": "Listen",
@@ -120,7 +120,7 @@
   },
   "editions": {
     "kicker": "Editions",
-    "title": "Three editions",
+    "title": "News from Türkiye, the U.S. and the world",
     "lead": "Pick an edition and your briefing comes from its news.",
     "items": [
       { "name": "Türkiye", "detail": "In Turkish · news from Türkiye" },
@@ -133,6 +133,8 @@
     "title": "Get Wonderwhy",
     "lead": "Free on the App Store and Google Play.",
     "soon": "coming soon",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play",
     "notify": "Email me when it’s out",
     "notifySubject": "Notify me when Wonderwhy is out",
     "notifyNote": "We keep your address only to tell you when the app is out, then delete it."
@@ -152,6 +154,10 @@
       {
         "q": "Who writes and reads the news?",
         "a": "AI writes the briefings from public news sources, and an AI voice reads them. Every story shows its sources. AI can make mistakes, so check the original when it matters."
+      },
+      {
+        "q": "Is it like a news podcast?",
+        "a": "Like a news podcast made for you: a few minutes of news on the topics you pick, written and read by AI and updated through the day. Stop it anytime to ask a question."
       },
       {
         "q": "Is my question recorded?",

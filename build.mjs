@@ -119,6 +119,7 @@ function head(lang, { title, description, page = null, noindex = false, jsonld =
     if (og) {
       tags.push(
         `<meta property="og:image" content="${abs('/brand/' + og)}">`,
+        `<meta property="og:image:alt" content="${esc(title)}">`,
         '<meta property="og:image:width" content="1200">',
         '<meta property="og:image:height" content="630">',
         '<meta name="twitter:card" content="summary_large_image">',
@@ -214,7 +215,8 @@ function storeButtons(lang) {
     url
       ? `<a class="btn btn-primary" href="${esc(url)}">${esc(name)}</a>`
       : `<span class="pill-soon">${esc(name)} <span class="soon">${esc(t.soon)}</span></span>`;
-  return `<div class="stores">${one('App Store', site.stores.appStore)}${one('Google Play', site.stores.googlePlay)}</div>`;
+  // Bağlantı metni rozetlerin resmî ifadesi (SEO: "App Store"dan daha açıklayıcı, 3 Eki).
+  return `<div class="stores">${one(t.appStore, site.stores.appStore)}${one(t.googlePlay, site.stores.googlePlay)}</div>`;
 }
 
 function player(lang, clip, stepTitle) {
@@ -325,7 +327,7 @@ function homeBody(lang) {
   return `<main id="main">
 <section class="hero" aria-labelledby="hero-title">
 <button class="wall-toggle" type="button" aria-pressed="false" aria-label="${esc(t.wall.pause)}">${icon.pause}${icon.play}</button>
-<div class="wall" aria-hidden="true"><div class="wall-tilt">
+<div class="wall" aria-hidden="true" data-nosnippet><div class="wall-tilt">
 ${wallHtml(lang)}
 </div></div>
 <div class="hero-text wrap">
@@ -358,8 +360,20 @@ ${faq}
 </main>`;
 }
 
-function homeJsonLd() {
-  const org = { '@type': 'Organization', '@id': abs('/#org'), name: site.brand, url: abs('/'), email: site.email.hello };
+// Yapılandırılmış veri (3 Eki, SEO denetimi): dile göre; yayıncı Yelkovan.ai, uygulama
+// mağaza adresleri varken, SSS her zaman. Puan (aggregateRating) gerçek puan gelene kadar yok.
+function homeJsonLd(lang) {
+  const t = S[lang];
+  const pub = site.publisher;
+  const org = {
+    '@type': 'Organization',
+    '@id': abs('/#org'),
+    name: pub.org ?? site.brand,
+    url: abs('/'),
+    email: site.email.hello,
+    brand: { '@type': 'Brand', name: site.brand },
+  };
+  if (pub.person) org.founder = { '@type': 'Person', name: pub.person };
   if (brand.has('icon-512.png')) org.logo = abs('/brand/icon-512.png');
   const graph = [
     org,
@@ -374,17 +388,37 @@ function homeJsonLd() {
   ];
   const offers = [site.stores.appStore, site.stores.googlePlay].filter(Boolean);
   if (offers.length) {
-    graph.push({
+    const app = {
       '@type': 'MobileApplication',
+      '@id': abs('/#app'),
       name: site.brand,
+      url: abs(PAGES.home[lang]),
+      description: t.pages.home.description,
       applicationCategory: 'NewsApplication',
-      operatingSystem: site.stores.googlePlay ? 'iOS, Android' : 'iOS',
+      operatingSystem: site.stores.googlePlay ? 'iOS, iPadOS, Android' : 'iOS, iPadOS',
       inLanguage: LANGS,
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      isAccessibleForFree: true,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
       installUrl: offers,
+      downloadUrl: offers,
+      sameAs: offers,
       publisher: { '@id': abs('/#org') },
-    });
+    };
+    if (brand.has('icon-512.png')) app.image = abs('/brand/icon-512.png');
+    if (pub.person) app.author = { '@type': 'Person', name: pub.person };
+    graph.push(app);
   }
+  const faqVars = { privacy: abs(PAGES.privacy[lang]), support: abs(PAGES.support[lang]), hello: site.email.hello };
+  graph.push({
+    '@type': 'FAQPage',
+    '@id': abs(PAGES.home[lang] + '#faq'),
+    inLanguage: lang,
+    mainEntity: t.faq.items.map((it) => ({
+      '@type': 'Question',
+      name: it.q,
+      acceptedAnswer: { '@type': 'Answer', text: it.aHtml ? fill(it.aHtml, faqVars).replace(/<[^>]+>/g, '') : it.a },
+    })),
+  });
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 
@@ -511,7 +545,8 @@ function legalRedirect(key, from) {
 function sitemap() {
   const urls = [];
   for (const [key, paths] of Object.entries(PAGES)) {
-    const lastmod = LEGAL_PAGES.includes(key) ? `\n    <lastmod>${site.legalUpdated}</lastmod>` : '';
+    const date = LEGAL_PAGES.includes(key) ? site.legalUpdated : key === 'home' ? site.homeUpdated : null;
+    const lastmod = date ? `\n    <lastmod>${date}</lastmod>` : '';
     const alts = [...LANGS.map((l) => [l, paths[l]]), ['x-default', paths.en]]
       .map(([hl, p]) => `\n    <xhtml:link rel="alternate" hreflang="${hl}" href="${abs(p)}"/>`)
       .join('');
@@ -534,8 +569,14 @@ function manifest() {
   ]) {
     if (brand.has(file)) icons.push({ src: `brand/${file}`, sizes, type: 'image/png', ...(purpose && { purpose }) });
   }
+  // Mağaza uygulamaları (Chrome'un yükleme önerisi uygulamayı da tanısın); site tercih edilmez.
+  const related = [
+    site.stores.googlePlay && { platform: 'play', id: 'com.ay.wonderwhy', url: site.stores.googlePlay },
+    site.stores.appStore && { platform: 'itunes', url: site.stores.appStore },
+  ].filter(Boolean);
+  const apps = related.length ? { related_applications: related, prefer_related_applications: false } : {};
   return JSON.stringify(
-    { name: site.brand, short_name: site.brand, start_url: './', display: 'browser', background_color: '#000000', theme_color: '#000000', icons },
+    { name: site.brand, short_name: site.brand, start_url: './', display: 'browser', background_color: '#000000', theme_color: '#000000', icons, ...apps },
     null,
     2,
   ) + '\n';
@@ -565,7 +606,7 @@ out('CNAME', new URL(site.origin).host + '\n');
 
 for (const lang of LANGS) {
   const t = S[lang];
-  out(PAGES.home[lang], page(lang, { page: 'home', ...t.pages.home, jsonld: homeJsonLd(), body: homeBody(lang) }));
+  out(PAGES.home[lang], page(lang, { page: 'home', ...t.pages.home, jsonld: homeJsonLd(lang), body: homeBody(lang) }));
   for (const key of LEGAL_PAGES) {
     out(PAGES[key][lang], page(lang, { page: key, ...t.pages[key], body: legalBody(lang, key) }));
   }

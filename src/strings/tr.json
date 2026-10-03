@@ -45,8 +45,8 @@
   },
   "pages": {
     "home": {
-      "title": "Wonderwhy: haberi dinle, merak ettiğini sor",
-      "description": "Seçtiğin konulardan birkaç dakikalık sesli haber bülteni. Mikrofona basılı tutup sor, kaynakların haberi nerede farklı anlattığını gör. iPhone, iPad ve Android'de."
+      "title": "Wonderwhy: sesli haber uygulaması. Dinle, sor, kıyasla",
+      "description": "Ücretsiz sesli haber uygulaması: seçtiğin konulardan günlük haber özeti. Dinle, sesle sor, kaynakların nerede ayrıştığını gör. iPhone, iPad ve Android."
     },
     "privacy": {
       "title": "Gizlilik Politikası · Wonderwhy",
@@ -86,15 +86,15 @@
     "pause": "Kayan manşetleri durdur"
   },
   "hero": {
-    "kicker": "Sesli haber bülteni",
+    "kicker": "Sesli haber uygulaması",
     "title": "Haberi dinle.\nMerak ettiğini sor.",
-    "body": "Her gün seçtiğin konulardan birkaç dakikalık sesli bir bülten. Takıldığın yerde dur, sor; kaynaklar farklı anlatıyorsa sana gösterelim.",
+    "body": "Seçtiğin konulardan her gün birkaç dakikalık sesli haber özeti. Takıldığın yerde dur, sor; kaynaklar farklı anlatıyorsa sana gösterelim.",
     "cta": "Örneği dinle",
     "soon": "Yakında App Store ve Google Play'de."
   },
   "how": {
     "kicker": "Örnek bir haber",
-    "title": "Nasıl çalışır?",
+    "title": "Sesli haber bülteni nasıl çalışır?",
     "lead": "Uygulamanın kendi tanıtımından üç ses. Gerçek bir haberden hazırlandı (24 Eylül 2026); kaynak adları, uygulamadaki gibi gizli.",
     "listen": {
       "title": "Dinle",
@@ -120,7 +120,7 @@
   },
   "editions": {
     "kicker": "Baskılar",
-    "title": "Üç baskı",
+    "title": "Türkiye, ABD ve dünyadan haberler",
     "lead": "Bir baskı seç; bültenin onun haberlerinden gelsin.",
     "items": [
       { "name": "Türkiye", "detail": "Türkçe · Türkiye gündemi" },
@@ -133,6 +133,8 @@
     "title": "Wonderwhy'ı indir",
     "lead": "App Store ve Google Play'de ücretsiz.",
     "soon": "yakında",
+    "appStore": "App Store'dan İndirin",
+    "googlePlay": "Google Play'den Alın",
     "notify": "Çıkınca bana haber ver",
     "notifySubject": "Wonderwhy çıkınca haber ver",
     "notifyNote": "Adresini yalnız uygulama çıkınca sana haber vermek için tutarız, sonra sileriz."
@@ -152,6 +154,10 @@
       {
         "q": "Haberleri kim yazıyor, kim okuyor?",
         "a": "Bültenleri yapay zekâ açık haber kaynaklarından yazar, yapay zekâ sesi okur. Her haberde kaynakları görünür. Yapay zekâ hata yapabilir; önemli bir konuda asıl kaynağa bak."
+      },
+      {
+        "q": "Haber podcast'inden farkı ne?",
+        "a": "Senin için hazırlanan bir haber podcast'i gibi: seçtiğin konulardan, yapay zekânın yazıp okuduğu birkaç dakikalık haber; gün içinde yenilenir. İstediğin an durdurup soru sorabilirsin."
       },
       {
         "q": "Sorduğum soru kaydediliyor mu?",
