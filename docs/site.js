@@ -24,6 +24,22 @@
 
   // ---- Kayan duvar: durdur düğmesi (WCAG 2.2.2) ve ekran dışındayken dur.
   var hero = doc.querySelector('.hero');
+  // Manşetler HTML'de bir kez (Y3, 20 Eki). Kesintisiz kayma (-50%) için izin
+  // ikinci kopyası ve geniş ekranın 4.–5. sütunları (`data-copy` sütunu,
+  // `data-shift` kadar döndürülmüş) burada; hepsi aria-hidden duvarın içinde.
+  if (hero) {
+    var tracks = [].slice.call(hero.querySelectorAll('.wall-track'));
+    var originals = tracks.map(function (t) { return [].slice.call(t.children); });
+    tracks.forEach(function (track) {
+      var from = track.getAttribute('data-copy');
+      if (from !== null) {
+        var tiles = originals[+from];
+        var n = +track.getAttribute('data-shift') || 0;
+        tiles.slice(n).concat(tiles.slice(0, n)).forEach(function (t) { track.appendChild(t.cloneNode(true)); });
+      }
+      [].slice.call(track.children).forEach(function (t) { track.appendChild(t.cloneNode(true)); });
+    });
+  }
   var toggle = hero && hero.querySelector('.wall-toggle');
   if (toggle) {
     toggle.addEventListener('click', function () {

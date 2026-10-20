@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["8NPLHMAKXW.com.ay.wonderwhy"],
+        "components": [
+          { "/": "/s/*", "?": { "id": "?*" }, "comment": "Shared story (ADR-062)" },
+          { "/": "/tr/s/*", "?": { "id": "?*" }, "comment": "Shared story, Turkish page (ADR-062)" }
+        ]
+      }
+    ]
+  }
+}
