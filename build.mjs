@@ -38,6 +38,8 @@ const PAGES = {
   support: { en: '/support/', tr: '/tr/destek/' },
   // Hesap silme (Google Play Data safety bu adresi istiyor; ADR-043).
   deleteAccount: { en: '/delete-account/', tr: '/tr/hesap-silme/' },
+  // Konu sayfası (Y3, 20 Eki): "compare news sources" / "haber kaynaklarını karşılaştırma".
+  compare: { en: '/compare-news-sources/', tr: '/tr/kaynak-karsilastirma/' },
 };
 // İçeriği `content/{dil}/{anahtar}.html`'den gelen hukuki sayfalar.
 const LEGAL_PAGES = ['privacy', 'terms', 'deleteAccount'];
@@ -178,7 +180,7 @@ function footer(lang, page) {
   const alt = `<li><a href="${PAGES[page][o]}" hreflang="${o}" lang="${o}">${esc(S[o].langName)}</a></li>`;
   const note = site.stores.appStore || site.stores.googlePlay ? '' : ` · ${esc(t.footer.notYet)}`;
   return `<footer class="foot"><div class="wrap">
-<nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('privacy')}${link('terms')}${link('support')}${alt}</ul></nav>
+<nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('compare')}${link('privacy')}${link('terms')}${link('support')}${alt}</ul></nav>
 <p class="footnote">© ${site.year} ${esc(site.brand)}${note}</p>
 ${hasBadges() ? `<p class="footnote">${esc(t.footer.trademarks)}</p>\n` : ''}</div></footer>`;
 }
@@ -294,9 +296,9 @@ function player(lang, clip, stepTitle) {
 // AVIF, yoksa JPEG; çerçeve CSS'te. Adım adları: listen, ask, compare.
 const SHOTS = ['listen', 'ask', 'compare'];
 const shotUrl = (lang, id, ext) => `/screens/${lang}/${id}.${ext}`;
-const shot = (lang, id) => `<picture class="shot">
+const shot = (lang, id, { eager = false } = {}) => `<picture class="shot">
 <source type="image/avif" srcset="${shotUrl(lang, id, 'avif')}">
-<img src="${shotUrl(lang, id, 'jpg')}" alt="${esc(S[lang].how[id].shotAlt)}" width="${screens.width}" height="${screens.height}" loading="lazy" decoding="async">
+<img src="${shotUrl(lang, id, 'jpg')}" alt="${esc(S[lang].how[id].shotAlt)}" width="${screens.width}" height="${screens.height}"${eager ? '' : ' loading="lazy"'} decoding="async">
 </picture>`;
 
 const seg = (tag, cls, start, end, html) =>
@@ -309,8 +311,10 @@ function howHtml(lang) {
   const a = audio[lang];
   const tagSample = `<span class="sample-tag">${esc(t.sample)}</span>`;
   const qEnd = (a.askQuestionEnd - 0.35).toFixed(2);
+  // Kıyasla adımı konu sayfasına bağlanır (iç bağlantı, Y3).
+  const more = (id) => (h[id].more ? ` <a href="${PAGES.compare[lang]}">${esc(h[id].more)}</a>` : '');
   const step = (i, id, title, body, card) => `<article class="step reveal" style="--i:${i}" aria-labelledby="step-${id}">
-<div class="step-head"><h3 id="step-${id}" class="title3"><span class="step-no">${i + 1}</span>${esc(title)}</h3><p class="subhead">${esc(body)}</p></div>
+<div class="step-head"><h3 id="step-${id}" class="title3"><span class="step-no">${i + 1}</span>${esc(title)}</h3><p class="subhead">${esc(body)}${more(id)}</p></div>
 ${shot(lang, id)}
 <div class="card">${tagSample}
 ${card}
@@ -491,6 +495,122 @@ function homeJsonLd(lang) {
   return { '@context': 'https://schema.org', '@graph': graph };
 }
 
+// ---------------------------------------------------------------- konu sayfası
+
+/**
+ * "Kaynak karşılaştırma" (Y3, 20 Eki): aramadan gelen ziyaretçiyi mağazaya
+ * taşıyan sayfa (kullanıcı: "SEO, ASO'ya köprü"). Metin uygulamanın kendi
+ * etiketleriyle (ARB compare*, ADR-035, ADR-050); renkli noktalar Signal
+ * jetonları (ADR-046), yazı renklenmez. Söylenmeyecekler: docs/15.
+ */
+function compareBody(lang) {
+  const t = S[lang];
+  const c = t.compare;
+  const kinds = c.kinds
+    .map((k, i) => `<li class="kind reveal" style="--i:${i}"><span class="dot dot-${k.key}" aria-hidden="true"></span><div><p class="headline">${esc(k.name)}</p><p class="subhead">${esc(k.body)}</p></div></li>`)
+    .join('\n');
+  const steps = c.steps
+    .map((st, i) => `<li class="reveal" style="--i:${i}"><span class="step-no">${i + 1}</span><div><h3 class="headline">${esc(st.title)}</h3><p class="subhead">${esc(st.body)}</p></div></li>`)
+    .join('\n');
+  const ex = c.example;
+  const sources = ex.sources
+    .map((src, i) => `<div class="src-row"><span class="src-no" aria-hidden="true">${i + 1}</span><p class="kicker" translate="no">${esc(src.name)}</p><p class="subhead">${esc(src.title)}</p></div>`)
+    .join('\n');
+  const label = (key) => c.kinds.find((k) => k.key === key).name;
+  const faq = c.faq
+    .map((it, i) => `<details class="reveal" style="--i:${i}"><summary>${esc(it.q)}</summary><div class="answer"><p>${esc(it.a)}</p></div></details>`)
+    .join('\n');
+  return `<main id="main">
+<section class="topic-hero" aria-labelledby="topic-title"><div class="wrap topic">
+<div class="topic-text">
+<p class="kicker rise" style="--i:0">${esc(c.kicker)}</p>
+<h1 id="topic-title" class="large-title rise" style="--i:1">${esc(c.title)}</h1>
+<p class="lead rise" style="--i:3">${esc(c.lead)}</p>
+<div class="rise" style="--i:5">${storeButtons(lang, 'web-compare')}</div>
+</div>
+${shot(lang, 'compare', { eager: true })}
+</div></section>
+<section id="kinds" aria-labelledby="kinds-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="kinds-title" class="title1">${esc(c.kindsTitle)}</h2></div>
+<ul class="kinds">
+${kinds}
+</ul>
+<p class="footnote kinds-note">${esc(c.kindsNote)}</p>
+</div></section>
+<section id="how" aria-labelledby="how-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="how-title" class="title1">${esc(c.stepsTitle)}</h2></div>
+<ol class="topic-steps">
+${steps}
+</ol>
+</div></section>
+<section id="example" aria-labelledby="example-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="example-title" class="title1">${esc(c.exampleTitle)}</h2><p class="lead">${esc(c.exampleLead)}</p></div>
+<div class="card example reveal"><span class="sample-tag">${esc(t.sample)}</span>
+<p class="headline">${esc(ex.headline)}</p>
+${sources}
+<hr class="hair">
+<div class="tag danger"><p class="headline">${esc(label('conflict'))}</p><p class="footnote">${esc(ex.conflict)}</p></div>
+<div class="tag detail"><p class="headline">${esc(label('detail'))}</p><p class="footnote">${esc(ex.detail)}</p></div>
+</div>
+</div></section>
+<section id="limits" aria-labelledby="limits-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="limits-title" class="title1">${esc(c.limitsTitle)}</h2></div>
+<ul class="limits">
+${c.limits.map((l) => `<li>${esc(l)}</li>`).join('\n')}
+</ul>
+</div></section>
+<section id="faq" aria-labelledby="faq-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="faq-title" class="title1">${esc(c.faqTitle)}</h2></div>
+<div class="faq">
+${faq}
+</div>
+</div></section>
+<section id="download" aria-labelledby="download-title"><div class="wrap download">
+<div class="section-head reveal"><h2 id="download-title" class="title1">${esc(c.ctaTitle)}</h2><p class="lead">${esc(c.ctaLead)}</p></div>
+${storeButtons(lang, 'web-compare')}
+<p class="footnote"><a href="${PAGES.home[lang]}#how">${esc(c.homeLink)}</a></p>
+</div></section>
+</main>`;
+}
+
+// WebPage + BreadcrumbList + FAQPage; uygulama ve site ana sayfadaki @id'lerle bağlı.
+function compareJsonLd(lang) {
+  const t = S[lang];
+  const c = t.compare;
+  const url = abs(PAGES.compare[lang]);
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': url + '#page',
+        url,
+        name: t.pages.compare.title,
+        description: t.pages.compare.description,
+        inLanguage: lang,
+        isPartOf: { '@id': abs('/#website') },
+        about: { '@id': abs('/#app') },
+        primaryImageOfPage: abs(shotUrl(lang, 'compare', 'jpg')),
+        breadcrumb: { '@id': url + '#breadcrumb' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': url + '#breadcrumb',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: site.brand, item: abs(PAGES.home[lang]) },
+          { '@type': 'ListItem', position: 2, name: c.kicker, item: url },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': url + '#faq',
+        inLanguage: lang,
+        mainEntity: c.faq.map((it) => ({ '@type': 'Question', name: it.q, acceptedAnswer: { '@type': 'Answer', text: it.a } })),
+      },
+    ],
+  };
+}
+
 // ---------------------------------------------------------------- hukuki ve destek
 
 function legalBody(lang, key) {
@@ -641,7 +761,7 @@ ${footer(lang, 'home')}
 function sitemap() {
   const urls = [];
   for (const [key, paths] of Object.entries(PAGES)) {
-    const date = LEGAL_PAGES.includes(key) ? site.legalUpdated : key === 'home' ? site.homeUpdated : null;
+    const date = LEGAL_PAGES.includes(key) ? site.legalUpdated : { home: site.homeUpdated, compare: site.compareUpdated }[key] ?? null;
     const lastmod = date ? `\n    <lastmod>${date}</lastmod>` : '';
     const alts = [...LANGS.map((l) => [l, paths[l]]), ['x-default', paths.en]]
       .map(([hl, p]) => `\n    <xhtml:link rel="alternate" hreflang="${hl}" href="${abs(p)}"/>`)
@@ -707,6 +827,7 @@ for (const lang of LANGS) {
     out(PAGES[key][lang], page(lang, { page: key, ...t.pages[key], body: legalBody(lang, key) }));
   }
   out(PAGES.support[lang], page(lang, { page: 'support', ...t.pages.support, body: supportBody(lang) }));
+  out(PAGES.compare[lang], page(lang, { page: 'compare', ...t.pages.compare, jsonld: compareJsonLd(lang), body: compareBody(lang) }));
 }
 for (const [path, key] of Object.entries(LEGAL_REDIRECTS)) out(path, legalRedirect(key, path));
 for (const lang of LANGS) out(SHARE_PAGES[lang], sharePage(lang));

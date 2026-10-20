@@ -14,6 +14,10 @@
   --disabled: #636366; /* yalnız süs; metinde kullanılmaz */
   --accent: #0a84ff;
   --danger: #ff453a;
+  /* palette.dart › Signal: yalnız 6 pt noktalar ve etiket çizgisi (ADR-046) */
+  --signal-agree: #30d158;
+  --signal-emphasis: #ff9f0a;
+  --signal-detail: #ffd60a;
   /* metrics.dart */
   --pad: 20px;
   --r-card: 14px;
@@ -260,6 +264,28 @@ section { padding: 72px 0; }
 .todo { background: var(--high); color: var(--label); border-radius: 6px; padding: 0 6px; }
 .info-list { display: grid; gap: 8px; max-width: 720px; }
 .info { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 6px; }
+/* Konu sayfası: kaynak karşılaştırma (Y3) */
+.topic-hero { padding: 32px 0 48px; }
+.topic { display: grid; gap: 32px; }
+.topic-text { display: grid; gap: 12px; align-content: start; }
+.topic-text .lead { max-width: 560px; margin-bottom: 12px; }
+.kinds { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-width: 720px; }
+.kind { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: flex; gap: 12px; align-items: baseline; }
+.kind > div { display: grid; gap: 2px; }
+.dot { flex: none; width: 6px; height: 6px; border-radius: 50%; transform: translateY(-2px); }
+.dot-conflict { background: var(--danger); }
+.dot-emphasis { background: var(--signal-emphasis); }
+.dot-detail { background: var(--signal-detail); }
+.dot-agree { background: var(--signal-agree); }
+.kinds-note { margin-top: 12px; }
+.topic-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; max-width: 720px; }
+.topic-steps li { display: flex; gap: 12px; align-items: baseline; }
+.topic-steps li > div { display: grid; gap: 4px; }
+.example { max-width: 560px; }
+.tag.detail { border-left-color: var(--signal-detail); }
+.limits { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 720px; }
+.limits li::marker { color: var(--muted); }
+
 /* Paylaşılan haber sayfası (/s/, ADR-062) */
 .share .stores + .footnote { margin-top: 20px; }
 
@@ -286,6 +312,9 @@ section { padding: 72px 0; }
   section { padding: 96px 0; }
   .wall { height: min(62vh, 620px); }
   .samples { grid-template-columns: repeat(2, 1fr); }
+  .topic-hero { padding: 48px 0 72px; }
+  .topic { grid-template-columns: 1fr auto; align-items: center; gap: 48px; }
+  .topic .shot { width: 260px; }
 }
 @media (min-width: 980px) {
   .steps { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto auto; gap: 16px 20px; max-width: none; }

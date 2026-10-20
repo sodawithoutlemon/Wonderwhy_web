@@ -8,6 +8,7 @@
     "privacy": "Gizlilik",
     "terms": "Şartlar",
     "support": "Destek",
+    "compare": "Kaynak karşılaştırma",
     "language": "Dil"
   },
   "footer": {
@@ -75,6 +76,10 @@
       "body": "Bu sayfa yok ya da taşındı.",
       "home": "Ana sayfaya git"
     },
+    "compare": {
+      "title": "Haber kaynaklarını karşılaştırma · Wonderwhy",
+      "description": "Aynı haberi farklı yayınlar nasıl veriyor? Nerede çeliştiklerini, nasıl farklı anlattıklarını ve neyi yalnız birinin yazdığını Wonderwhy’da gör."
+    },
     "share": {
       "title": "Wonderwhy'da bir haber",
       "description": "Bu haberi Wonderwhy uygulamasında dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör."
@@ -117,6 +122,7 @@
       "title": "Karşılaştır",
       "body": "Kaynaklar bir haberi farklı anlatıyorsa nerede ayrıldıklarını görürsün.",
       "spoken": "Duyduğun",
+      "more": "Kaynak karşılaştırma nasıl çalışır?",
       "shotAlt": "Wonderwhy'da bir haber: kaynakların ne dediği, nerede çeliştikleri ve neyi yalnız birinin yazdığı (örnek içerik)."
     }
   },
@@ -197,6 +203,95 @@
     "guestTitle": "Hesapsız yalnız göz mü attın?",
     "guestHtml": "Uygulamayı silmek, telefonunda tuttuğu listeleri ve ayarları kaldırır. Uygulamanın sunucumuzda oluşturmuş olabileceği misafir kimliği 7 gün kullanılmayınca kendiliğinden silinir. Daha önce silinmesini istersen <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz.",
     "faqHtml": "Başka cevaplar <a href=\"{faq}\">sık sorulanlarda</a>."
+  },
+  "compare": {
+    "kicker": "Kaynak karşılaştırma",
+    "title": "Aynı haberi kaynaklarına göre karşılaştır",
+    "lead": "Bir olay, birkaç yayın, farklı anlatımlar. Wonderwhy onları yan yana koyar ve nerede ayrıştıklarını gösterir; beş sekme açmana gerek kalmaz.",
+    "kindsTitle": "Her haberde ne görürsün",
+    "kinds": [
+      {
+        "key": "conflict",
+        "name": "Çelişiyor",
+        "body": "Yayınlar arasında uyuşmayan sayı, tarih ya da iddia."
+      },
+      {
+        "key": "emphasis",
+        "name": "Farklı vurgu",
+        "body": "Aynı olgu, belirgin biçimde farklı anlatılmış."
+      },
+      {
+        "key": "detail",
+        "name": "Yalnız bir kaynakta",
+        "body": "Önemli bir ayrıntıyı yalnız bir yayın veriyor."
+      },
+      {
+        "key": "agree",
+        "name": "Yakın anlatıyorlar",
+        "body": "Yayınlar haberi birbirine yakın anlatıyor."
+      }
+    ],
+    "kindsNote": "Etiket bulunan en ağır farkı söyler; bir puan değildir.",
+    "stepsTitle": "Nasıl çalışır?",
+    "steps": [
+      {
+        "title": "Aynı olay bir arada",
+        "body": "Aynı olayı veren farklı yayınlar, baskında tek haberde toplanır: Türkiye, ABD ya da Dünya."
+      },
+      {
+        "title": "Yapay zekâ karşılaştırır",
+        "body": "Yapay zekâ haberleri yan yana okur ve farkları ayırır. Her kaynağın başlığını ve ayrıştıkları noktaları görürsün."
+      },
+      {
+        "title": "Aslını oku",
+        "body": "Bir kaynağa dokunup haberin aslını oku. Karşılaştırma sence yanlışsa haberden bildir."
+      }
+    ],
+    "exampleTitle": "Bir örnek",
+    "exampleLead": "Uygulama ekranındaki gibi kurgusal yayınlarla.",
+    "example": {
+      "headline": "Merkez bankası faizi sabit tuttu",
+      "sources": [
+        {
+          "name": "Günce Haber",
+          "title": "Faiz sabit, enflasyon yavaşlıyor"
+        },
+        {
+          "name": "Pusula Gazetesi",
+          "title": "Merkez bankası faizi değiştirmedi, gözler aralıkta"
+        },
+        {
+          "name": "Kıyı Postası",
+          "title": "Faiz kararında kurul ikiye bölündü"
+        }
+      ],
+      "conflict": "Pusula Gazetesi kararın oybirliğiyle alındığını yazıyor; Kıyı Postası’na göre iki üye indirimden yana oy verdi.",
+      "detail": "Konut kredisi faizlerinin yatay kaldığını yalnız Günce Haber yazıyor."
+    },
+    "limitsTitle": "Ne yapmaz",
+    "limits": [
+      "Kimin haklı olduğuna karar vermez. Haberlerin nerede ayrıştığını gösterir; karar senin.",
+      "Yayınlara ya da taraflılıklarına puan vermez.",
+      "Bir farkı kaçırabilir. “Yakın anlatıyorlar” kesin uyum demek değildir."
+    ],
+    "faqTitle": "Sorular",
+    "faq": [
+      {
+        "q": "Taraflılık ölçer mi?",
+        "a": "Hayır. Wonderwhy yayınlara puan vermez, onları sağ ya da sol diye etiketlemez. Aynı haberin anlatımlarının nerede ayrıştığını karşılaştırır: olgular, vurgu ve ayrıntılar."
+      },
+      {
+        "q": "Hangi yayınları karşılaştırıyor?",
+        "a": "Baskının haber akışlarındaki yayınları: Türk, ABD’li ve uluslararası yayınlar. Her kaynağın adı yazar ve haberin aslına bağlanır."
+      },
+      {
+        "q": "Haberi dinleyebilir miyim?",
+        "a": "Evet. Her haber kısa sesli bülteninin parçası. Mikrofona basılı tutup sorarsın, cevap aynı sesle gelir."
+      }
+    ],
+    "ctaTitle": "Kaynakların nerede ayrıştığını gör",
+    "ctaLead": "Wonderwhy App Store ve Google Play’de.",
+    "homeLink": "Sesli bülten nasıl çalışır?"
   },
   "share": {
     "kicker": "Wonderwhy'dan paylaşıldı",

@@ -8,6 +8,7 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "support": "Support",
+    "compare": "Compare news sources",
     "language": "Language"
   },
   "footer": {
@@ -75,6 +76,10 @@
       "body": "This page doesn’t exist or has moved.",
       "home": "Go to the home page"
     },
+    "compare": {
+      "title": "Compare news sources on the same story · Wonderwhy",
+      "description": "See how different outlets report the same story: where they conflict, how each one frames it and what only one of them mentions. In the Wonderwhy app."
+    },
     "share": {
       "title": "A story on Wonderwhy",
       "description": "Listen to this story in the Wonderwhy app, ask about it by voice and see where its sources differ."
@@ -117,6 +122,7 @@
       "title": "Compare",
       "body": "When sources tell a story differently, you see where they part ways.",
       "spoken": "What you hear",
+      "more": "How source comparison works",
       "shotAlt": "A story in Wonderwhy: what each source says, where they conflict and what only one of them reports (sample content)."
     }
   },
@@ -197,6 +203,95 @@
     "guestTitle": "Only looked around without an account?",
     "guestHtml": "Deleting the app removes the lists and settings it kept on your phone. A guest ID the app may have created on our servers is deleted automatically after 7 days without use. To have it deleted sooner, write to <a href=\"mailto:{privacy}\">{privacy}</a>.",
     "faqHtml": "More answers are in the <a href=\"{faq}\">FAQ</a>."
+  },
+  "compare": {
+    "kicker": "Source comparison",
+    "title": "Compare news sources on the same story",
+    "lead": "One event, several outlets, different versions. Wonderwhy lines them up and shows you where they part ways, without opening five tabs.",
+    "kindsTitle": "What you see on every story",
+    "kinds": [
+      {
+        "key": "conflict",
+        "name": "Conflicting",
+        "body": "Numbers, dates or claims that don’t match between outlets."
+      },
+      {
+        "key": "emphasis",
+        "name": "Framed differently",
+        "body": "The same fact, told with a clearly different emphasis."
+      },
+      {
+        "key": "detail",
+        "name": "Only one source",
+        "body": "An important detail that only one outlet mentions."
+      },
+      {
+        "key": "agree",
+        "name": "Much the same",
+        "body": "The outlets tell the story in much the same way."
+      }
+    ],
+    "kindsNote": "The label names the most serious difference found. It isn’t a score.",
+    "stepsTitle": "How it works",
+    "steps": [
+      {
+        "title": "Same event, grouped",
+        "body": "Reports of the same event from different outlets become one story in your edition: Türkiye, US or World."
+      },
+      {
+        "title": "Compared by AI",
+        "body": "AI reads the reports side by side and sorts what differs. You see each source’s headline and the points where they part ways."
+      },
+      {
+        "title": "Read the originals",
+        "body": "Tap any source to read its article. Think a comparison is wrong? Report it from the story."
+      }
+    ],
+    "exampleTitle": "An example",
+    "exampleLead": "With made-up outlets, as in the app screen.",
+    "example": {
+      "headline": "Central bank keeps rates steady",
+      "sources": [
+        {
+          "name": "Harbor Daily",
+          "title": "Rates on hold as inflation cools"
+        },
+        {
+          "name": "Northline News",
+          "title": "Central bank keeps rates steady, eyes December"
+        },
+        {
+          "name": "The Civic Ledger",
+          "title": "Rate decision splits the board"
+        }
+      ],
+      "conflict": "Northline News says the vote was unanimous; The Civic Ledger reports two members voted for a cut.",
+      "detail": "Only Harbor Daily notes that mortgage rates barely moved."
+    },
+    "limitsTitle": "What it doesn’t do",
+    "limits": [
+      "It doesn’t decide who is right. It shows where the reports differ; the call is yours.",
+      "It doesn’t rate outlets or their bias.",
+      "It can miss a difference. “Much the same” isn’t a guarantee."
+    ],
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "Is this a bias checker?",
+        "a": "No. Wonderwhy doesn’t score outlets or label them left or right. It compares how the reports of one story differ: facts, framing and details."
+      },
+      {
+        "q": "Which outlets does it compare?",
+        "a": "The outlets in your edition’s news feeds: Turkish, American and international. Every source is named and links to its original article."
+      },
+      {
+        "q": "Can I listen to the story too?",
+        "a": "Yes. Every story is part of your short audio briefing. Hold the mic to ask about it, and the answer comes in the same voice."
+      }
+    ],
+    "ctaTitle": "See where the sources differ",
+    "ctaLead": "Wonderwhy is on the App Store and Google Play.",
+    "homeLink": "How the audio briefing works"
   },
   "share": {
     "kicker": "Shared from Wonderwhy",
