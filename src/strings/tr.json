@@ -76,6 +76,11 @@
       "body": "Bu sayfa yok ya da taşındı.",
       "home": "Ana sayfaya git"
     },
+    "kvkk": {
+      "title": "KVKK Aydınlatma Metni · Wonderwhy",
+      "description": "Wonderwhy’ın kişisel verileri KVKK’nın 10. maddesine göre nasıl işlediği: veri sorumlusu, amaçlar, hukuki sebepler, aktarımlar ve hakların.",
+      "heading": "KVKK Aydınlatma Metni"
+    },
     "compare": {
       "title": "Haber kaynaklarını karşılaştırma · Wonderwhy",
       "description": "Aynı haberi farklı yayınlar nasıl veriyor? Nerede çeliştiklerini, nasıl farklı anlattıklarını ve neyi yalnız birinin yazdığını Wonderwhy’da gör."

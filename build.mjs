@@ -40,9 +40,11 @@ const PAGES = {
   deleteAccount: { en: '/delete-account/', tr: '/tr/hesap-silme/' },
   // Konu sayfası (Y3, 20 Eki): "compare news sources" / "haber kaynaklarını karşılaştırma".
   compare: { en: '/compare-news-sources/', tr: '/tr/kaynak-karsilastirma/' },
+  // KVKK md. 10 aydınlatma metni (Y3, 20 Eki): gizlilik politikasının KVKK düzenindeki özeti.
+  kvkk: { en: '/kvkk-notice/', tr: '/tr/kvkk/' },
 };
 // İçeriği `content/{dil}/{anahtar}.html`'den gelen hukuki sayfalar.
-const LEGAL_PAGES = ['privacy', 'terms', 'deleteAccount'];
+const LEGAL_PAGES = ['privacy', 'terms', 'deleteAccount', 'kvkk'];
 // Uygulamanın açtığı, dile bağlı olmayan adresler (LegalLinks). noindex.
 const LEGAL_REDIRECTS = { '/legal/privacy/': 'privacy', '/legal/terms/': 'terms' };
 // Uygulamanın paylaştığı haber bağlantısı (ADR-062): `/s/?e=<baskı>&d=<gün>&id=<haber>`.
@@ -630,6 +632,7 @@ function legalBody(lang, key) {
     terms: PAGES.terms[lang],
     support: PAGES.support[lang],
     deleteAccount: PAGES.deleteAccount[lang],
+    kvkk: PAGES.kvkk[lang],
     updated: dateText(site.legalUpdated, lang),
   };
   const content = fill(read(`content/${lang}/${key}.html`), vars);
