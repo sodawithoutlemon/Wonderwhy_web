@@ -112,7 +112,11 @@ async function visit(href) {
 // dosyalar yok ve yokluk hata değil (30 Eyl, ADR-044).
 const siteJs = await fetch(new URL('site.js', BASE)).then((r) => (r.ok ? r.text() : ''), () => '');
 const EDITIONS = siteJs.includes('editions/') ? ['editions/tr.json', 'editions/us.json', 'editions/world.json'] : [];
-const STARTS = ['./', 'robots.txt', 'sitemap.xml', '404.html', 'legal/privacy/', 'legal/terms/', ...EDITIONS];
+// Universal Links / App Links (ADR-062): bağlantısız; Apple ve Google doğrudan
+// ister, yönlendirme olmamalı (200 dışı hata). /s/ paylaşım sayfaları noindex,
+// bağlantısı uygulamanın paylaştığı adreste.
+const LINKS = ['.well-known/apple-app-site-association', '.well-known/assetlinks.json', 's/', 'tr/s/'];
+const STARTS = ['./', 'robots.txt', 'sitemap.xml', '404.html', 'legal/privacy/', 'legal/terms/', ...LINKS, ...EDITIONS];
 for (const start of STARTS) add(start, BASE.href);
 while (queue.length) {
   const batch = queue.splice(0, PARALLEL);

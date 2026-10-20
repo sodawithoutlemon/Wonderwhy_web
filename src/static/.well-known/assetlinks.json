@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ay.wonderwhy",
+      "sha256_cert_fingerprints": [
+        "7D:4D:0B:EF:B8:52:1C:6A:49:84:94:25:DF:E2:37:60:C8:52:7E:AF:02:53:35:0C:A1:F9:EA:7C:BE:85:35:AE",
+        "D8:EE:42:93:21:D5:61:7F:F6:7F:B4:B5:75:E1:A9:54:2C:99:06:12:1B:C8:C4:46:B4:C9:26:31:1E:F0:18:00"
+      ]
+    }
+  }
+]

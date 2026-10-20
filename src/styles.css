@@ -153,6 +153,13 @@ section { padding: 72px 0; }
 .step-head h3 { display: flex; align-items: baseline; gap: 10px; }
 .step-no { font: 600 13px/18px var(--font); color: var(--muted); font-variant-numeric: tabular-nums; }
 .card { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 12px; align-content: start; }
+/* Uygulamanın ekranı (Y3): tools/screens.sh yalnız ekranı kırpar, çerçeveyi bu
+   çizer. Köşe oranı ekranın kendi köşesi (560 px'te ~48 px). */
+.shot { display: block; justify-self: center; width: min(62vw, 240px); }
+.shot img {
+  display: block; width: 100%; height: auto; background: var(--raised);
+  border-radius: 8.6% / 4%; box-shadow: 0 0 0 6px var(--raised), 0 0 0 7px var(--sep);
+}
 .sample-tag { justify-self: start; font: 600 11px/13px var(--font); letter-spacing: .06px; text-transform: uppercase; color: var(--label); border: 1px solid var(--sep); border-radius: 999px; padding: 3px 8px; }
 
 .player { display: flex; align-items: center; gap: 12px; }
@@ -208,7 +215,13 @@ section { padding: 72px 0; }
 
 /* İndir */
 .download { display: grid; gap: 16px; justify-items: start; }
-.stores { display: flex; flex-wrap: wrap; gap: 8px; }
+.stores { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+/* Resmî rozetler: Apple en az 40 px yükseklik; Google'ın PNG'si kendi boşluğunu
+   taşıyor, görünen rozet Apple'ınkiyle aynı boyda olsun diye büyük ve kırpık. */
+.badge { display: inline-flex; border-radius: 8px; }
+.badge img { display: block; width: auto; height: 40px; }
+.badge-googlePlay { margin: -10px -9px; }
+.badge-googlePlay img { height: 60px; }
 
 /* SSS */
 .faq { display: grid; gap: 8px; max-width: 720px; }
@@ -247,6 +260,8 @@ section { padding: 72px 0; }
 .todo { background: var(--high); color: var(--label); border-radius: 6px; padding: 0 6px; }
 .info-list { display: grid; gap: 8px; max-width: 720px; }
 .info { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 6px; }
+/* Paylaşılan haber sayfası (/s/, ADR-062) */
+.share .stores + .footnote { margin-top: 20px; }
 
 /* Dil önerisi (site.js) */
 .lang-hint { background: var(--raised); border-bottom: .5px solid var(--sep); }
@@ -273,8 +288,8 @@ section { padding: 72px 0; }
   .samples { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 980px) {
-  .steps { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; gap: 16px 20px; max-width: none; }
-  .step { grid-row: span 2; grid-template-rows: subgrid; gap: 16px; }
+  .steps { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto auto; gap: 16px 20px; max-width: none; }
+  .step { grid-row: span 3; grid-template-rows: subgrid; gap: 16px; }
 }
 @media (min-width: 1100px) {
   .wall-tilt { grid-template-columns: repeat(5, 1fr); }

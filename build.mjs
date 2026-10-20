@@ -28,6 +28,7 @@ const demo = json('data/demo.json');
 const audio = json('data/audio.json');
 const wall = Object.fromEntries(LANGS.map((l) => [l, json(`data/wall.${l}.json`)]));
 const samples = Object.fromEntries(LANGS.map((l) => [l, json(`data/samples.${l}.json`)]));
+const screens = json('data/screens.json'); // tools/screens.sh
 
 // Sayfa çiftleri: dil değiştirici, hreflang ve sitemap hep buradan. Sonda "/" var.
 const PAGES = {
@@ -42,6 +43,11 @@ const PAGES = {
 const LEGAL_PAGES = ['privacy', 'terms', 'deleteAccount'];
 // Uygulamanın açtığı, dile bağlı olmayan adresler (LegalLinks). noindex.
 const LEGAL_REDIRECTS = { '/legal/privacy/': 'privacy', '/legal/terms/': 'terms' };
+// Uygulamanın paylaştığı haber bağlantısı (ADR-062): `/s/?e=<baskı>&d=<gün>&id=<haber>`.
+// Uygulama yüklüyse iOS (apple-app-site-association) ve Android (assetlinks.json)
+// haberi uygulamada açar; değilse bu durağan sayfa. noindex, sitemap'te yok.
+// Yol ve sorgu uygulamadaki `StoryLink` ile aynı olmalı (app/lib/links).
+const SHARE_PAGES = { en: '/s/', tr: '/tr/s/' };
 
 const abs = (path) => site.origin + path;
 
@@ -92,7 +98,7 @@ const icon = {
 
 // ---------------------------------------------------------------- iskelet
 
-function head(lang, { title, description, page = null, noindex = false, jsonld = null }) {
+function head(lang, { title, description, page = null, noindex = false, jsonld = null, ogUrl = null }) {
   const t = S[lang];
   const tags = [
     '<meta charset="utf-8">',
@@ -101,11 +107,15 @@ function head(lang, { title, description, page = null, noindex = false, jsonld =
   ];
   if (description) tags.push(`<meta name="description" content="${esc(description)}">`);
   if (noindex) tags.push('<meta name="robots" content="noindex">');
+  // Paylaşım önizlemesi: dizinlenen sayfalarda canonical + hreflang ile; /s/
+  // gibi noindex sayfalarda (ogUrl) yalnız og kartı.
+  const url = page ? abs(PAGES[page][lang]) : ogUrl;
   if (page) {
-    const url = abs(PAGES[page][lang]);
     tags.push(`<link rel="canonical" href="${url}">`);
     for (const l of LANGS) tags.push(`<link rel="alternate" hreflang="${l}" href="${abs(PAGES[page][l])}">`);
     tags.push(`<link rel="alternate" hreflang="x-default" href="${abs(PAGES[page].en)}">`);
+  }
+  if (url) {
     const og = ogImage(lang);
     tags.push(
       '<meta property="og:type" content="website">',
@@ -170,7 +180,7 @@ function footer(lang, page) {
   return `<footer class="foot"><div class="wrap">
 <nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('privacy')}${link('terms')}${link('support')}${alt}</ul></nav>
 <p class="footnote">© ${site.year} ${esc(site.brand)}${note}</p>
-</div></footer>`;
+${hasBadges() ? `<p class="footnote">${esc(t.footer.trademarks)}</p>\n` : ''}</div></footer>`;
 }
 
 function page(lang, { page: key, title, description, noindex, jsonld, body }) {
@@ -193,31 +203,79 @@ ${key ? footer(lang, key) : ''}
 const SPEEDS = [10, 15, 12, 14, 11]; // px/sn; welcome.dart 10/15/12, geniş ekranda iki sütun daha
 const TILE_PITCH = 160; // 150 yükseklik + 10 aralık
 
+// Her manşet HTML'de bir kez (Y3, 20 Eki; önceden 24 manşet 80 karoydu). Kesintisiz
+// kayma için izin ikinci kopyasını ve geniş ekranın 4.–5. sütunlarını site.js
+// üretir (`data-copy` sütunu, `data-shift` kadar döndürülmüş). JS yoksa duvar
+// zaten kaymıyordu; o sütunlar boş kalır.
 function wallHtml(lang) {
   const items = wall[lang].items;
   const cols = [0, 1, 2].map((c) => items.filter((_, i) => i % 3 === c));
-  cols.push(rotate(cols[0], 4), rotate(cols[1], 4)); // yalnız geniş ekranda görünür
   const tile = (it) =>
     `<div class="tile"><p class="kicker">${esc(S[lang].categories[it.category])}</p><p class="footnote">${esc(it.headline)}</p></div>`;
-  return cols
-    .map((col, c) => {
-      const dur = ((col.length * TILE_PITCH) / SPEEDS[c]).toFixed(1);
-      const tiles = col.map(tile).join('');
-      return `<div class="wall-col"><div class="wall-track" style="--dur:${dur}s">${tiles}${tiles}</div></div>`;
-    })
-    .join('\n');
+  const dur = (n, c) => ((n * TILE_PITCH) / SPEEDS[c]).toFixed(1);
+  const filled = cols.map(
+    (col, c) => `<div class="wall-col"><div class="wall-track" style="--dur:${dur(col.length, c)}s">${col.map(tile).join('')}</div></div>`,
+  );
+  // Yalnız geniş ekranda görünür; içini site.js doldurur.
+  const copies = [0, 1].map(
+    (src, k) =>
+      `<div class="wall-col"><div class="wall-track" style="--dur:${dur(cols[src].length, 3 + k)}s" data-copy="${src}" data-shift="4"></div></div>`,
+  );
+  return [...filled, ...copies].join('\n');
 }
-const rotate = (arr, n) => arr.slice(n).concat(arr.slice(0, n));
 
-function storeButtons(lang) {
-  const t = S[lang].download;
-  const one = (name, url) =>
-    url
-      ? `<a class="btn btn-primary" href="${esc(url)}">${esc(name)}</a>`
-      : `<span class="pill-soon">${esc(name)} <span class="soon">${esc(t.soon)}</span></span>`;
-  // Bağlantı metni rozetlerin resmî ifadesi (SEO: "App Store"dan daha açıklayıcı, 3 Eki).
-  return `<div class="stores">${one(t.appStore, site.stores.appStore)}${one(t.googlePlay, site.stores.googlePlay)}</div>`;
+/**
+ * Mağaza adresi, sayfanın kampanya adıyla (Y3, 20 Eki; site ASO'ya köprü).
+ * App Store: `pt` (sağlayıcı) + `ct` App Store Connect › App Analytics ›
+ * Kampanyalar'da görünür; `pt` yoksa adres yalın kalır. Play: `referrer`
+ * UTM'si Play Console'un edinme raporunda. Kişisel veri yok, sitede dış istek
+ * yok. Smart App Banner, JSON-LD ve manifest yalın adresi kullanır.
+ */
+function storeUrl(store, campaign) {
+  const url = site.stores[store];
+  if (!url || !campaign) return url;
+  const u = new URL(url);
+  if (store === 'appStore') {
+    if (!site.stores.appStoreProvider) return url;
+    u.searchParams.set('pt', site.stores.appStoreProvider);
+    u.searchParams.set('ct', campaign);
+    u.searchParams.set('mt', '8');
+  } else {
+    u.searchParams.set('referrer', `utm_source=${new URL(site.origin).host}&utm_medium=site&utm_campaign=${campaign}`);
+  }
+  return u.toString();
 }
+
+// Resmî mağaza rozetleri (Apple Marketing Tools, Google Play badges), dile göre;
+// dosya yoksa metin düğme. Ölçüler dosyanın kendisinden (width/height, CLS yok).
+const badgeDir = join(SRC, 'static', 'badges');
+const badges = new Set(existsSync(badgeDir) ? readdirSync(badgeDir) : []);
+function imageSize(file) {
+  const buf = readFileSync(file);
+  if (file.endsWith('.png')) return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+  const vb = buf.toString('utf8').match(/viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"/);
+  return { w: Math.round(+vb[1]), h: Math.round(+vb[2]) };
+}
+const BADGES = {
+  appStore: (lang) => `app-store-${lang}.svg`,
+  googlePlay: (lang) => `google-play-${lang}.png`,
+};
+
+function storeButtons(lang, campaign) {
+  const t = S[lang].download;
+  const one = (store) => {
+    const name = t[store];
+    const url = storeUrl(store, campaign);
+    if (!url) return `<span class="pill-soon">${esc(name)} <span class="soon">${esc(t.soon)}</span></span>`;
+    const file = BADGES[store](lang);
+    if (!badges.has(file)) return `<a class="btn btn-primary" href="${esc(url)}">${esc(name)}</a>`;
+    const { w, h } = imageSize(join(badgeDir, file));
+    return `<a class="badge badge-${store}" href="${esc(url)}"><img src="/badges/${file}" alt="${esc(name)}" width="${w}" height="${h}"></a>`;
+  };
+  // Erişilebilir ad rozetlerin resmî ifadesi (SEO: "App Store"dan daha açıklayıcı, 3 Eki).
+  return `<div class="stores">${one('appStore')}${one('googlePlay')}</div>`;
+}
+const hasBadges = () => LANGS.some((l) => Object.values(BADGES).some((f) => badges.has(f(l))));
 
 function player(lang, clip, stepTitle) {
   const t = S[lang].player;
@@ -232,6 +290,15 @@ function player(lang, clip, stepTitle) {
 </div>`;
 }
 
+// Uygulamanın ekranı (tools/screens.sh; mağaza görsellerinden, kurgusal içerik).
+// AVIF, yoksa JPEG; çerçeve CSS'te. Adım adları: listen, ask, compare.
+const SHOTS = ['listen', 'ask', 'compare'];
+const shotUrl = (lang, id, ext) => `/screens/${lang}/${id}.${ext}`;
+const shot = (lang, id) => `<picture class="shot">
+<source type="image/avif" srcset="${shotUrl(lang, id, 'avif')}">
+<img src="${shotUrl(lang, id, 'jpg')}" alt="${esc(S[lang].how[id].shotAlt)}" width="${screens.width}" height="${screens.height}" loading="lazy" decoding="async">
+</picture>`;
+
 const seg = (tag, cls, start, end, html) =>
   `<${tag} class="${cls}" data-seg data-start="${start}" data-end="${end}">${html}</${tag}>`;
 
@@ -244,6 +311,7 @@ function howHtml(lang) {
   const qEnd = (a.askQuestionEnd - 0.35).toFixed(2);
   const step = (i, id, title, body, card) => `<article class="step reveal" style="--i:${i}" aria-labelledby="step-${id}">
 <div class="step-head"><h3 id="step-${id}" class="title3"><span class="step-no">${i + 1}</span>${esc(title)}</h3><p class="subhead">${esc(body)}</p></div>
+${shot(lang, id)}
 <div class="card">${tagSample}
 ${card}
 </div>
@@ -303,7 +371,7 @@ function homeBody(lang) {
   const t = S[lang];
   const released = site.stores.appStore || site.stores.googlePlay;
   const heroActions = released
-    ? storeButtons(lang)
+    ? storeButtons(lang, 'web-home')
     : `<a class="btn btn-primary" href="#how">${esc(t.hero.cta)}</a><p class="footnote">${esc(t.hero.soon)}</p>`;
   const faqVars = {
     privacy: PAGES.privacy[lang],
@@ -347,7 +415,7 @@ ${editions}
 </div></section>
 <section id="download" aria-labelledby="download-title"><div class="wrap download">
 <div class="section-head reveal"><p class="kicker">${esc(d.kicker)}</p><h2 id="download-title" class="title1">${esc(d.title)}</h2><p class="lead">${esc(d.lead)}</p></div>
-${storeButtons(lang)}
+${storeButtons(lang, 'web-home')}
 ${released ? '' : `<a class="btn btn-quiet" href="${esc(mail)}">${esc(d.notify)}</a>
 <p class="footnote">${esc(d.notifyNote)} <a href="${PAGES.privacy[lang]}">${esc(t.pages.privacy.heading)}</a></p>`}
 </div></section>
@@ -405,6 +473,7 @@ function homeJsonLd(lang) {
       publisher: { '@id': abs('/#org') },
     };
     if (brand.has('icon-512.png')) app.image = abs('/brand/icon-512.png');
+    app.screenshot = SHOTS.map((id) => abs(shotUrl(lang, id, 'jpg')));
     if (pub.person) app.author = { '@type': 'Person', name: pub.person };
     graph.push(app);
   }
@@ -540,6 +609,33 @@ function legalRedirect(key, from) {
 `;
 }
 
+/**
+ * Paylaşılan haberin web sayfası. Haberi göstermez (site durağan, haberler
+ * uygulamada ve bir hafta saklanıyor): uygulamayı ve mağaza rozetlerini anlatır.
+ * Önizleme kartı (og) dile göre; iMessage, WhatsApp gibi uygulamalar bunu
+ * gösterir.
+ */
+function sharePage(lang) {
+  const t = S[lang];
+  const sh = t.share;
+  return `<!doctype html>
+<html lang="${lang}" dir="ltr">
+<head>
+${head(lang, { title: t.pages.share.title, description: t.pages.share.description, noindex: true, ogUrl: abs(SHARE_PAGES[lang]) })}
+</head>
+<body>
+${header(lang, null)}
+<main id="main" class="doc"><div class="wrap narrow share">
+<div class="doc-head"><p class="kicker">${esc(sh.kicker)}</p><h1 class="large-title">${esc(sh.title)}</h1><p>${esc(sh.body)}</p></div>
+${storeButtons(lang, 'web-share')}
+<p class="footnote">${esc(sh.note)} <a href="${PAGES.home[lang]}">${esc(sh.more)}</a></p>
+</div></main>
+${footer(lang, 'home')}
+</body>
+</html>
+`;
+}
+
 // ---------------------------------------------------------------- yardımcı dosyalar
 
 function sitemap() {
@@ -586,7 +682,7 @@ function manifest() {
 
 // Sayfalardaki kökten href/src'ler göreli olur (404 hariç, yukarıda).
 // Mutlak adresler (canonical, hreflang, og, JSON-LD) dokunulmadan kalır.
-const ROOT_REF = /(\s(?:href|src))="\/(?!\/)([^"]*)"/g;
+const ROOT_REF = /(\s(?:href|src|srcset))="\/(?!\/)([^"]*)"/g;
 
 function out(path, content) {
   const file = path.endsWith('/') ? join(DIST, path, 'index.html') : join(DIST, path);
@@ -613,6 +709,7 @@ for (const lang of LANGS) {
   out(PAGES.support[lang], page(lang, { page: 'support', ...t.pages.support, body: supportBody(lang) }));
 }
 for (const [path, key] of Object.entries(LEGAL_REDIRECTS)) out(path, legalRedirect(key, path));
+for (const lang of LANGS) out(SHARE_PAGES[lang], sharePage(lang));
 out('404.html', notFound());
 out('sitemap.xml', sitemap());
 out('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);

@@ -14,6 +14,7 @@ const DIST = join(HERE, 'docs');
 const site = JSON.parse(readFileSync(join(HERE, 'src', 'site.json'), 'utf8'));
 const ORIGIN = site.origin;
 const MAX_HTML_BYTES = 80_000;
+const MAX_IMAGE_BYTES = 120_000; // tek görsel (ekranlar ~30 KB AVIF, ~60–80 KB JPEG)
 
 const errors = [];
 const warnings = [];
@@ -35,6 +36,8 @@ const walk = (dir) =>
 const files = walk(DIST).map((p) => '/' + relative(DIST, p).split(sep).join('/'));
 const fileSet = new Set(files);
 const urlOf = (file) => file.replace(/index\.html$/, '');
+// Bir etiketin gösterdiği adresler (srcset tek adres: build.mjs › shot).
+const refsOf = (t) => [t.a.href, t.a.src, t.a.srcset].filter((r) => r !== undefined);
 
 const VOID = new Set(['area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'source', 'track', 'wbr']);
 const attrs = (s) => Object.fromEntries([...s.matchAll(/([\w:-]+)(?:="([^"]*)")?/g)].map(([, k, v]) => [k.toLowerCase(), v ?? '']));
@@ -103,7 +106,7 @@ for (const file of files.filter((f) => f.endsWith('.html'))) {
   // Site olduğu gibi, GitHub'ın alt yolunda da sunuluyor: iç bağlantı göreli
   // olmalı. 404 istisna (her derinlikte aynı dosya; build.mjs › notFound).
   if (file !== '/404.html') {
-    const rooted = [...new Set(tags.map((t) => t.a.href ?? t.a.src).filter((r) => r && /^\/(?!\/)/.test(r)))];
+    const rooted = [...new Set(tags.flatMap(refsOf).filter((r) => r && /^\/(?!\/)/.test(r)))];
     if (rooted.length) err(file, `kökten başlayan bağlantı (göreli olmalı): ${rooted.slice(0, 4).join(', ')}`);
   }
 
@@ -141,14 +144,15 @@ function sortObj(o) {
 const external = new Set();
 for (const [url, p] of pages) {
   for (const t of p.tags) {
-    const ref = t.a.href ?? t.a.src;
-    if (ref === undefined || t.tag === 'link' && /canonical|alternate/.test(t.a.rel)) continue;
-    if (/^(mailto:|https?:)/.test(ref)) {
-      if (ref.startsWith(ORIGIN)) checkInternal(p, ref.slice(ORIGIN.length));
-      else external.add(ref.split('?')[0]);
-      continue;
+    if (t.tag === 'link' && /canonical|alternate/.test(t.a.rel)) continue;
+    for (const ref of refsOf(t)) {
+      if (/^(mailto:|https?:)/.test(ref)) {
+        if (ref.startsWith(ORIGIN)) checkInternal(p, ref.slice(ORIGIN.length));
+        else external.add(ref.split('?')[0]);
+        continue;
+      }
+      checkInternal(p, ref);
     }
-    checkInternal(p, ref);
   }
 }
 function checkInternal(p, ref) {
@@ -161,6 +165,21 @@ function checkInternal(p, ref) {
     const target = pages.get(urlOf(file));
     if (target && !target.ids.includes(hash)) err(p.file, `kırık çapa: ${ref}`);
   }
+}
+
+// ---------------------------------------------------------------- görseller
+
+// Her <img> alt (boş değil), width ve height taşır (yer ayrılır, sayfa kaymaz);
+// görsel dosyaları sınırı aşmaz.
+for (const [url, p] of pages) {
+  for (const t of p.tags.filter((t) => t.tag === 'img')) {
+    if (!t.a.alt) err(p.file, `<img src="${t.a.src}"> alt yok ya da boş`);
+    for (const k of ['width', 'height']) if (!/^\d+$/.test(t.a[k] ?? '')) err(p.file, `<img src="${t.a.src}"> ${k} yok`);
+  }
+}
+for (const f of files.filter((f) => /\.(avif|jpe?g|png|webp|svg)$/.test(f))) {
+  const bytes = statSync(join(DIST, f)).size;
+  if (bytes > MAX_IMAGE_BYTES) err(f, `${bytes} bayt (> ${MAX_IMAGE_BYTES})`);
 }
 
 // ---------------------------------------------------------------- dil sızıntısı
@@ -210,6 +229,46 @@ if (/Disallow:\s*\/\S/.test(robots)) warn('robots.txt', 'Disallow var: noindex s
   if (cname !== new URL(ORIGIN).host) err('CNAME', `${cname} ≠ ${new URL(ORIGIN).host}`);
 }
 if (!fileSet.has('/.nojekyll')) err('.nojekyll', 'yok');
+
+// ---------------------------------------------------------------- Universal Links / App Links
+
+// ADR-062. Uygulama kimliği, paket ve yollar uygulamadaki `StoryLink` ile aynı
+// olmalı (app/lib/links; uygulamanın sözleşme testi de bu değerleri kilitliyor).
+// Yanlış bir dosya yayına girerse bağlantılar sessizce tarayıcıda açılır.
+const APP_ID = '8NPLHMAKXW.com.ay.wonderwhy';
+const PACKAGE = 'com.ay.wonderwhy';
+const SHARE_PATHS = ['/s/', '/tr/s/'];
+const readJson = (f) => {
+  if (!fileSet.has(f)) return err(f, 'yok'), null;
+  try {
+    return JSON.parse(readFileSync(join(DIST, f), 'utf8'));
+  } catch (e) {
+    return err(f, `geçersiz JSON: ${e.message}`), null;
+  }
+};
+{
+  const f = '/.well-known/apple-app-site-association';
+  const aasa = readJson(f);
+  const details = aasa?.applinks?.details ?? [];
+  if (aasa && !details.some((d) => d.appIDs?.includes(APP_ID))) err(f, `${APP_ID} yok`);
+  const paths = details.flatMap((d) => (d.components ?? []).map((c) => c['/']));
+  for (const p of SHARE_PATHS) if (aasa && !paths.includes(p + '*')) err(f, `${p}* yolu yok`);
+  if (paths.some((p) => !SHARE_PATHS.some((s) => p === s + '*'))) err(f, `beklenmeyen yol: ${paths.join(', ')}`);
+}
+{
+  const f = '/.well-known/assetlinks.json';
+  const links = readJson(f);
+  const target = Array.isArray(links) ? links.find((l) => l.target?.package_name === PACKAGE)?.target : null;
+  if (links && !target) err(f, `${PACKAGE} yok`);
+  const prints = target?.sha256_cert_fingerprints ?? [];
+  if (target && !prints.length) err(f, 'parmak izi yok');
+  for (const fp of prints) if (!/^([0-9A-F]{2}:){31}[0-9A-F]{2}$/.test(fp)) err(f, `parmak izi biçimi: ${fp}`);
+}
+for (const p of SHARE_PATHS) {
+  const page = pages.get(p);
+  if (!page) err(p, 'paylaşım sayfası yok');
+  else if (!page.noindex) err(p, 'paylaşım sayfası noindex olmalı');
+}
 
 // ---------------------------------------------------------------- rapor
 

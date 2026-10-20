@@ -12,7 +12,8 @@
   },
   "footer": {
     "notYet": "Uygulama henüz yayında değil.",
-    "legal": "Hukuki"
+    "legal": "Hukuki",
+    "trademarks": "Apple, Apple logosu ve App Store, Apple Inc.'in ABD'de ve diğer ülkelerde tescilli ticari markalarıdır. Google Play ve Google Play logosu, Google LLC'nin ticari markalarıdır."
   },
   "hint": {
     "text": "Bu sayfanın Türkçesi de var.",
@@ -73,6 +74,10 @@
       "heading": "Sayfa bulunamadı",
       "body": "Bu sayfa yok ya da taşındı.",
       "home": "Ana sayfaya git"
+    },
+    "share": {
+      "title": "Wonderwhy'da bir haber",
+      "description": "Bu haberi Wonderwhy uygulamasında dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör."
     }
   },
   "legal": {
@@ -98,18 +103,21 @@
     "lead": "Uygulamanın kendi tanıtımından üç ses. Gerçek bir haberden hazırlandı (24 Eylül 2026); kaynak adları, uygulamadaki gibi gizli.",
     "listen": {
       "title": "Dinle",
-      "body": "Bültenin sesli: seçtiğin konulardan birkaç dakika."
+      "body": "Bültenin sesli: seçtiğin konulardan birkaç dakika.",
+      "shotAlt": "Wonderwhy'ın Bugün ekranı: seçtiğin konulardan günün sesli bülteni (örnek içerik)."
     },
     "ask": {
       "title": "Sor",
       "body": "Mikrofona basılı tut ve sor. Cevap aynı sesle gelir, bülten kaldığı yerden sürer.",
       "question": "Soru",
-      "answer": "Cevap"
+      "answer": "Cevap",
+      "shotAlt": "Wonderwhy'ın oynatıcısı habere sesle sorulan soruyu cevaplıyor (örnek içerik)."
     },
     "compare": {
       "title": "Karşılaştır",
       "body": "Kaynaklar bir haberi farklı anlatıyorsa nerede ayrıldıklarını görürsün.",
-      "spoken": "Duyduğun"
+      "spoken": "Duyduğun",
+      "shotAlt": "Wonderwhy'da bir haber: kaynakların ne dediği, nerede çeliştikleri ve neyi yalnız birinin yazdığı (örnek içerik)."
     }
   },
   "samples": {
@@ -189,6 +197,13 @@
     "guestTitle": "Hesapsız yalnız göz mü attın?",
     "guestHtml": "Uygulamayı silmek, telefonunda tuttuğu listeleri ve ayarları kaldırır. Uygulamanın sunucumuzda oluşturmuş olabileceği misafir kimliği 7 gün kullanılmayınca kendiliğinden silinir. Daha önce silinmesini istersen <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz.",
     "faqHtml": "Başka cevaplar <a href=\"{faq}\">sık sorulanlarda</a>."
+  },
+  "share": {
+    "kicker": "Wonderwhy'dan paylaşıldı",
+    "title": "Bu haber Wonderwhy uygulamasında",
+    "body": "Telefonunda Wonderwhy varsa bu bağlantı haberi uygulamada açar. Yoksa uygulamayı indir: haberi dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör.",
+    "note": "Haberler uygulamada bir hafta kalır.",
+    "more": "Wonderwhy nedir?"
   },
   "redirect": {
     "privacy": "Gizlilik Politikası",
