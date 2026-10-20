@@ -220,12 +220,16 @@ section { padding: 72px 0; }
 /* İndir */
 .download { display: grid; gap: 16px; justify-items: start; }
 .stores { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
-/* Resmî rozetler: Apple en az 40 px yükseklik; Google'ın PNG'si kendi boşluğunu
-   taşıyor, görünen rozet Apple'ınkiyle aynı boyda olsun diye büyük ve kırpık. */
+/* Resmî rozetler: Apple en az 40 px yükseklik. Google'ın PNG'si (646×250) şeffaf
+   boşluk taşıyor; görünen rozet Apple'ınki gibi 40 px olsun diye büyütülüp boşluğu
+   negatif kenarla alınıyor. Ölçüldü: EN görünen 564×168 (kenar 41), TR 646×192
+   (üst/alt 29, yan 0). */
 .badge { display: inline-flex; border-radius: 8px; }
 .badge img { display: block; width: auto; height: 40px; }
-.badge-googlePlay { margin: -10px -9px; }
-.badge-googlePlay img { height: 60px; }
+.badge-googlePlay { margin: -9.75px; }
+.badge-googlePlay img { height: 59.5px; }
+.badge-googlePlay:lang(tr) { margin: -6px 0; }
+.badge-googlePlay:lang(tr) img { height: 52px; }
 
 /* SSS */
 .faq { display: grid; gap: 8px; max-width: 720px; }
