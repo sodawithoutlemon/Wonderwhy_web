@@ -5,28 +5,53 @@
 
 <h2 id="summary">Summary</h2>
 <ul>
-<li>No ads, no analytics, no tracking across other apps or websites. We don’t sell or share your personal data.</li>
+<li><!--if !WONDERWHY_ADS&!WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->No ads, no analytics, no tracking across other apps or websites.<!--end--><!--if !WONDERWHY_ADS&WONDERWHY_ANALYTICS|!WONDERWHY_ADS&WONDERWHY_CRASH_REPORTS-->No ads, no tracking across other apps or websites.<!--end--><!--if WONDERWHY_ADS--><!--if WONDERWHY_PREMIUM-->The free version shows<!--else-->The app shows<!--end--> ads from Google AdMob. They aren’t personalised: they aren’t chosen by your interests or by what you do in other apps.<!--end--><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> To improve the app we measure how it’s used and when it crashes; turn this off any time in Profile › Privacy &amp; data.<!--end--> We don’t sell or share your personal data.</li>
 <li>You need an account to read and listen: email and password, Sign in with Apple (on iPhone and iPad) or Sign in with Google. Without one you can only look around. Your lists and settings sync between your devices.</li>
-<li>When you ask a question by voice, the recording goes to Google’s Gemini service to be understood and answered. We don’t store it.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>You can subscribe to Premium if you like. Apple or Google takes the payment; we never see your card details.</li>
+<!--end-->
+<li>When you ask a question by voice, the recording goes to Google’s Gemini service to be understood and answered. We don’t store it.<!--if WONDERWHY_VOICE_COMMANDS--> If you turn on voice commands, your phone itself understands them; your voice doesn’t leave the phone.<!--end--></li>
 <li>AI writes the news summaries from public news feeds. None of your data is sent for that.</li>
-<li>Apart from your account and what you keep in it, we keep nothing for more than 7 days.</li>
+<li>Apart from your account and what you keep in it, we keep nothing for more than 7 days.<!--if WONDERWHY_ANALYTICS--> The one exception is usage measurement: 90 days (see <a href="#no-tracking">Usage measurement and crash reports</a>).<!--end--></li>
 <li>You can delete your account in the app, or by email without it (see <a href="{deleteAccount}">Delete your account</a>).</li>
 </ul>
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">Data</th><th scope="col">Why</th><th scope="col">Where it goes</th><th scope="col">How long</th></tr></thead>
 <tbody>
 <tr><td>Email, password or Apple/Google sign-in, optional name</td><td>Account and sign-in</td><td>Google Firebase Authentication</td><td>Until you delete your account</td></tr>
+<!--if WONDERWHY_EMAIL_CODE-->
+<tr><td>Email verification code (only a summary) and number of tries</td><td>Confirming the address is yours</td><td>Google Cloud Firestore (Belgium); sent through Google Workspace</td><td>7 days at most; at once when you delete your account</td></tr>
+<!--end-->
 <tr><td>Synced lists and settings</td><td>Keep them in step across your devices</td><td>Google Cloud Firestore (Belgium)</td><td>Until you delete your account</td></tr>
 <tr><td>Votes and poll answers</td><td>Count them once and show totals</td><td>Google Cloud Firestore (Belgium)</td><td>7 days after the story’s day, or until you delete your account if sooner</td></tr>
 <tr><td>Voice question (up to 15 seconds) and the sentence playing</td><td>Understand and answer your question</td><td>Google Gemini API</td><td>Not stored by us</td></tr>
+<!--if WONDERWHY_VOICE_COMMANDS-->
+<tr><td>Voice commands (if you turn them on)</td><td>Control the briefing by voice</td><td>Nowhere: understood on your phone</td><td>Not stored</td></tr>
+<!--end-->
 <tr><td>Daily usage counters (your ID and a number)</td><td>Fair-use limits</td><td>Google Cloud Firestore (Belgium)</td><td>7 days; deleted at once with your account</td></tr>
+<!--if WONDERWHY_PREMIUM-->
+<tr><td>Free listening time (how many seconds you listened today)</td><td>Counting the daily free time</td><td>Your phone; Google Cloud Firestore (Belgium)</td><td>Today’s count only, overwritten the next day; deleted at once with your account</td></tr>
+<tr><td>Subscription (your account ID, the store’s purchase record, your subscription status)</td><td>Confirming the purchase and unlocking Premium</td><td>RevenueCat; Google Cloud Firestore (Belgium). Apple or Google takes the payment</td><td>Status while the subscription lasts; the RevenueCat record until you delete your account</td></tr>
+<!--end-->
 <tr><td>Server logs (IP address, app and device details)</td><td>Security and fixing problems</td><td>Google Cloud (Belgium)</td><td>7 days</td></tr>
+<!--if WONDERWHY_ANALYTICS-->
+<tr><td>Usage measurement (screens you open, listening, buttons you tap; your account ID and the app’s device ID)</td><td>Improving the app</td><td>Google Cloud Firestore (Belgium), Google Analytics for Firebase</td><td>90 days (Google Analytics: 2 months); daily totals aren’t personal and are kept</td></tr>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<tr><td>Crash reports (where the error happened, device model, system and app version, your account ID)</td><td>Finding and fixing bugs</td><td>Firebase Crashlytics</td><td>90 days</td></tr>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<tr><td>Ad data (IP address and approximate location, device and app details, interaction with ads; a device ID: the identifier for vendor (IDFV) on iPhone and iPad, the advertising ID on Android)</td><td>Showing and measuring non-personalised ads, preventing fraud</td><td>Google AdMob</td><td>On Google’s own schedule</td></tr>
+<!--end-->
 </tbody>
 </table></div>
 
 <h2 id="account">Your account</h2>
 <p>To open stories and listen, you need an account; without one you can go through the introduction and see the day’s headlines. When you create an account, we process your email address, your password and, if you enter it, your name. Google’s Firebase Authentication stores them; we never see your password. You can also use Sign in with Apple (on iPhone and iPad) or Sign in with Google. Apple or Google then shares your name, your email address (Apple may give a private relay address) and a sign-in token with us. With Google, Firebase Authentication also stores the web address of your Google profile photo; the app doesn’t use or show it. During Google sign-in, Google’s sign-in software may also use your IP address to estimate your approximate location, to protect the sign-in against fraud.</p>
-<p>Before you sign in, the app may create a random guest ID (a Firebase anonymous account) for features that need one. It isn’t linked to your name or email, but it is still personal data, because what is stored under it can be linked back to your phone. If you then create an account, your guest ID becomes your account ID. If you sign in to an account you already have, the app stops using the guest ID. A guest ID that isn’t used for 7 days is deleted automatically, together with its votes and counters.</p>
+<!--if WONDERWHY_EMAIL_CODE-->
+<p>When you create an account with email and password, we send a 6-digit code to confirm the address is yours. The code comes from <a href="mailto:{emailHello}">{emailHello}</a> through Google Workspace and is valid for 10 minutes. We don’t store the code itself: only a one-way summary of it and how many times it was tried, for 7 days at most. Password reset emails come from Firebase Authentication, in the name of {domain}.</p>
+<!--end-->
+<p>Before you sign in, the app may create a random guest ID (a Firebase anonymous account) for features that need one. It isn’t linked to your name or email, but it is still personal data, because what is stored under it can be linked back to your phone. If you then create an account, your guest ID becomes your account ID. If you sign in to an account you already have, the app stops using the guest ID. A guest ID that isn’t used for 7 days is deleted automatically.</p>
 
 <h2 id="synced">What syncs to your account</h2>
 <p>When you are signed in with an account (not as a guest), the app keeps the following in Google Cloud Firestore so it follows you to your other devices. Only you can read it.</p>
@@ -37,10 +62,13 @@
 <li>Your own copy of your votes and poll answers, and the stories you reported.</li>
 <li>Your word list and My questions (up to 1,500 entries): each word or concept with the sentence and headline where you found it. When you ask by voice what something means (for example “what is …?”), the concept and the answer are added here.</li>
 <li>Today’s listening progress: which stories you heard, how long you listened and how many questions you asked. Only the number of questions is kept, not the questions.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>Your subscription status and today’s count of free listening time (see <a href="#subscription">Subscription and payment</a>). Only our server writes these.</li>
+<!--end-->
 </ul>
 
 <h2 id="votes">Votes and reports</h2>
-<p>When you react to a story or answer a poll, your vote is stored with your account or guest ID, so that it counts once and you can change it. Other people see only the totals. Votes are deleted with the story, 7 days after the story’s day.</p>
+<p>When you react to a story or answer a poll, your vote is stored with your account ID, so that it counts once and you can change it. Other people see only the totals. Votes are deleted with the story, 7 days after the story’s day.</p>
 <p>When you report a problem with a story or an answer, we store the story, the reason you picked and the note (up to 500 characters). If you report a voice answer, the app fills the note with your question and the answer so we can see what went wrong; you can change or delete it before you send. The report isn’t linked to your ID, and it is deleted after 7 days. Please don’t put personal information in the note: because it isn’t linked to you, we can’t find it earlier to delete it.</p>
 
 <h2 id="microphone">Microphone and questions</h2>
@@ -49,9 +77,13 @@
 <p>Before your first voice question, the app tells you that your voice goes to Google’s AI and asks you to agree. Nothing is recorded or sent until you do.</p>
 <p>We don’t store the recording, and we don’t write what you said or the answer to our logs. There are two exceptions, both in your hands: if you report an answer, the report keeps your question and the answer for 7 days (see <a href="#votes">Votes and reports</a>); and when you ask what something means, the concept and the answer are saved to My questions in your Library and sync with your account until you delete it (see <a href="#synced">What syncs to your account</a>). Our logs keep only numbers, such as the length of the answer and how long it took. Your voice is not used to identify you.</p>
 <p>We use the Gemini API as a paid service. Under Google’s terms for paid services, Google doesn’t use this data to improve its products; it keeps prompts and answers for a limited time only to detect misuse and to meet legal obligations.</p>
+<!--if WONDERWHY_VOICE_COMMANDS-->
+<h3>Voice commands</h3>
+<p>If you turn them on, your phone’s own speech recogniser understands the short commands you say while a briefing plays (“stop”, “next”, “faster”). Recognition happens on your phone; the audio doesn’t go to us or to any other company, and it isn’t stored. The microphone listens only while the app is on screen and a briefing is open, or the Today screen is showing; the player, the mini player and Today say “Listening”. You can turn voice commands off in Profile › Reading and listening.</p>
+<!--end-->
 <h3>Ready-made questions</h3>
 <p>Some questions are buttons, such as asking for more detail on a story. Their answers are about the story, not about you, so we save them with the story and reuse them for everyone.</p>
-<p>Your phone asks for your permission before the app can use the microphone. You can turn it off at any time in your phone’s settings.</p>
+<p>Your phone asks for your permission before the app can use the microphone<!--if WONDERWHY_VOICE_COMMANDS-->, and for speech recognition before voice commands<!--end-->. You can turn it off at any time in your phone’s settings.</p>
 
 <h2 id="news">How the news is made</h2>
 <p>Our server collects stories from news outlets’ public feeds, and reads the opening paragraphs of their pages to compare how outlets report the same story. It sends them to OpenAI to write the summaries and to Google to read them aloud. These requests contain only news text, none of your data. Stories and their audio files are deleted from our servers 7 days after the day they were published.</p>
@@ -62,41 +94,93 @@
 <ul>
 <li>Your lists, settings and sync state, in the app’s own storage.</li>
 <li>A cache of story audio, in a temporary folder that your phone may clear.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>Today’s count of free listening time. If you subscribe, the Today audio downloaded for offline listening also sits in the cache folder and isn’t backed up.</li>
+<!--end-->
 <li>Your sign-in session: on iPhone and iPad in the Keychain, where it can remain after you delete the app; on Android in the app’s private storage.</li>
 <li>An offline copy of your synced data, kept by Firestore.</li>
 </ul>
 <p>When you sign out or delete your account, the app removes your lists, votes, words and progress from the phone. It keeps your app settings (topics, languages, text size) so the app keeps working. Deleting the app removes them.</p>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<p>For usage measurement and crash reports the app keeps a random ID and the records waiting to be sent on your phone. Your choice to turn them off is kept on the phone too and isn’t cleared when you sign out.</p>
+<!--end-->
 <p>To protect our servers from misuse, the app uses Firebase App Check, with Apple’s DeviceCheck on iPhone and iPad and Google Play Integrity on Android, to confirm that requests come from the genuine app. We don’t store device identifiers.</p>
 
 <h2 id="notifications">Notifications</h2>
 <p>Only if you allow notifications, your phone subscribes to topics (such as your morning briefing time or major developments in your edition) through Firebase Cloud Messaging, and on iPhone and iPad also Apple’s push service. We send to topics, not to you personally, and we don’t store a device token. You can turn notifications off in the app’s Profile or in your phone’s settings.</p>
 
 <h2 id="limits">Usage limits and server logs</h2>
-<p>To keep the service fair and affordable, we count how many questions you ask and how many story audios you have generated each day. Each counter holds your account or guest ID, the date and a number. While a story’s audio is being made, the job is recorded with your ID. Counters and job records are deleted after 7 days, and at once when you delete your account.</p>
+<p>To keep the service fair and affordable, we count how many questions you ask and how many story audios you have generated each day. Each counter holds your account ID, the date and a number. While a story’s audio is being made, the job is recorded with your ID. Counters and job records are deleted after 7 days, and at once when you delete your account.</p>
 <p>Our servers run on Google Cloud in Belgium (europe-west1). Google Cloud keeps request logs with IP addresses and app and device details for 7 days. Our own log lines contain numbers, not account IDs.</p>
 
-<h2 id="no-tracking">No ads, analytics or selling</h2>
-<p>The app has no advertising, no analytics and no crash-reporting tools, and it doesn’t track you across other companies’ apps or websites. We don’t sell or share personal data, as California law defines those terms. We don’t make decisions about you by automated means that have legal or similarly significant effects.</p>
+<!--if WONDERWHY_PREMIUM-->
+<h2 id="subscription">Subscription and payment</h2>
+<p>The free version lets you listen for a set time each day. To count it, the app keeps how many seconds you listened today on your phone and in your account: only today’s number, overwritten the next day, with no history. It isn’t counted for subscribers.</p>
+<p>If you subscribe to Premium, Apple takes the payment on the App Store and Google on Google Play; we never see your card or payment details. We confirm the purchase and your subscription status with RevenueCat. RevenueCat receives your account ID and the store’s purchase record; it doesn’t receive your email, your name or your device’s advertising identifiers. Your subscription’s current status (which product, when it ends, which store, whether it renews) is kept in your account and deleted when the subscription ends. Only our server writes it.</p>
+<p>If you subscribe, the audio of your Today list is downloaded to your phone so you can listen offline. It sits in your phone’s cache folder and isn’t backed up. It is deleted on a new day, when you sign out, when you delete your account or when your subscription ends, and within 7 days at the latest.</p>
+<p>Deleting your account doesn’t end the subscription; cancel it separately in the App Store or Google Play subscription settings. Purchase, trial, cancellation and refund terms are in the <a href="{terms}#subscription">Terms of Use</a>.</p>
 
+<!--end-->
+<h2 id="no-tracking"><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Usage measurement and crash reports<!--end--><!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS&!WONDERWHY_ADS-->No ads, analytics or selling<!--end--><!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS&WONDERWHY_ADS-->No analytics or selling<!--end--></h2>
+<!--if WONDERWHY_ANALYTICS-->
+<p>To improve the app we measure how it’s used: which screens you open and for how long, which stories in a briefing you listen to, skip or stop at, that you asked a question (only how many, how long and whether it worked, never the text of the question or answer), and taps on buttons like save, share and reactions. Each record carries your account ID, a random ID the app gives this phone, the app and system version, language and edition. Story text, your questions, your email and your name never go into these records. They’re kept on our servers (Belgium) and in Google Analytics for Firebase.</p>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<p>When the app crashes or hits an error, technical details (where in the code it happened, device model, system and app version) go to Firebase Crashlytics with your account ID. We don’t write error message text to our own records.</p>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<p>We do this based on our legitimate interest (see <a href="#legal-bases">Legal bases</a>). You can turn “Usage data” and “Crash reports” off separately any time in <strong>Profile › Privacy &amp; data</strong>; from then on nothing is sent from that phone and pending records are deleted. The app tells you this once, the first time you open it.</p>
+<p><!--if WONDERWHY_ADS-->Usage measurement doesn’t use the advertising identifier (IDFA, Android advertising ID), and we don’t use it for ads.<!--else-->No ads. We don’t read the advertising identifier (IDFA, Android advertising ID) and don’t track you across other companies’ apps or websites.<!--end--> Advertising signals and Google signals are off in Google Analytics. We don’t sell or share personal data, as California law defines those terms. We don’t make decisions about you by automated means that have legal or similarly significant effects.</p>
+<!--end-->
+<!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->
+<p>The app has no <!--if !WONDERWHY_ADS-->advertising, no <!--end-->analytics and no crash-reporting tools<!--if !WONDERWHY_ADS-->, and it doesn’t track you across other companies’ apps or websites<!--end-->. We don’t sell or share personal data, as California law defines those terms. We don’t make decisions about you by automated means that have legal or similarly significant effects.</p>
+<!--end-->
+
+<!--if WONDERWHY_ADS-->
+<h2 id="ads">Ads</h2>
+<p><!--if WONDERWHY_PREMIUM-->The free version shows<!--else-->The app shows<!--end--> ads: small ads in the Today list, in Explore, at the end of stories and in the player, and now and then a full-screen ad when you finish or close a listening session.<!--if WONDERWHY_PREMIUM--> Premium has no ads.<!--end--> Google AdMob picks and shows the ads.</p>
+<p>The ads aren’t personalised: they aren’t chosen by your interests or by what you do in other apps and websites. On iPhone and iPad we don’t ask for access to the advertising identifier (IDFA). Even so, to show ads, cap how often they appear, measure them and prevent fraud, Google’s ad software collects from your phone: your IP address and the approximate location it gives, device and app details, your interaction with ads and a device ID: on iPhone and iPad the identifier for vendor (IDFV), which is specific to our apps; on Android the advertising ID and the app set ID. Google processes this under its own privacy policy. On Android you can reset or delete the advertising ID in your phone’s settings.</p>
+<p>In the European Economic Area, the UK and Switzerland, the app asks for your choice with Google’s consent form before showing ads. You can change it later in <strong>Profile › Privacy &amp; data › Ad privacy choices</strong>.</p>
+<p>We don’t give Google your account ID, email, name or the stories you listen to for ads.</p>
+
+<!--end-->
 <h2 id="processors">Who processes your data</h2>
 <ul>
-<li><strong>Google</strong> (Firebase Authentication, Sign in with Google, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud Messaging and Gemini API): hosting, sign-in, sync, questions and audio. Firestore, Cloud Functions and Cloud Storage are in Belgium; sign-in, Gemini and some other services may process data in the United States and other countries.</li>
+<li><strong>Google</strong> (Firebase Authentication, Sign in with Google, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Messaging, Gemini API, Google Analytics for Firebase and Firebase Crashlytics): hosting, sign-in, sync, questions, audio, usage measurement and crash reports.<!--else-->Messaging and Gemini API): hosting, sign-in, sync, questions and audio.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play takes subscription payments.<!--end--><!--if WONDERWHY_ADS--> Google AdMob picks and shows the ads (see <a href="#ads">Ads</a>).<!--end--> Firestore, Cloud Functions and Cloud Storage are in Belgium; sign-in, Gemini and some other services may process data in the United States and other countries.</li>
 <li><strong>OpenAI</strong>: writes the news summaries. It receives no personal data.</li>
-<li><strong>Apple</strong>: Sign in with Apple, DeviceCheck and push notifications.</li>
+<li><strong>Apple</strong>: Sign in with Apple, DeviceCheck and push notifications.<!--if WONDERWHY_PREMIUM--> It takes subscription payments on the App Store.<!--end--></li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>RevenueCat</strong> (United States): confirms purchases and your subscription status.</li>
+<!--end-->
 <li><strong>GitHub</strong>: hosts this website.</li>
-<li><strong>{emailProvider}</strong>: hosts our mailbox; the email you send us is stored there.</li>
+<li><strong>{emailProvider}</strong>: hosts our mailbox<!--if WONDERWHY_EMAIL_CODE--> and sends email verification codes<!--end-->; the email you send us is stored there.</li>
 </ul>
-<p>These providers process data on our behalf under their data processing terms, which require them to protect it at least as well as this policy describes.</p>
+<p>These providers process data on our behalf under their data processing terms, which require them to protect it at least as well as this policy describes.<!--if WONDERWHY_PREMIUM&!WONDERWHY_ADS--> Apple and Google also process store payments under their own privacy policies.<!--end--><!--if WONDERWHY_ADS&!WONDERWHY_PREMIUM--> Google also processes ad data under its own privacy policy.<!--end--><!--if WONDERWHY_PREMIUM&WONDERWHY_ADS--> Apple and Google also process store payments, and Google ad data, under their own privacy policies.<!--end--></p>
 <p>Some of them process data outside Türkiye and the European Economic Area, including in the United States. These transfers rely on the safeguards the law requires: for the EEA, the providers’ standard contractual clauses; for Türkiye, the mechanisms in Article 9 of the Personal Data Protection Law No. 6698 (KVKK).</p>
 
 <h2 id="retention">How long we keep data</h2>
-<p>Your account and what you keep in it stay until you delete the account. Everything else is deleted within 7 days: a job runs every night and removes what is older.</p>
+<p>Your account and what you keep in it stay until you delete the account.<!--if WONDERWHY_ANALYTICS--> Usage measurement is kept for 90 days.<!--end--> Everything else is deleted within 7 days: a job runs every night and removes what is older.</p>
 <ul>
 <li><strong>Account and synced data:</strong> until you delete your account.</li>
 <li><strong>Votes:</strong> deleted with the story, 7 days after the story’s day, or earlier if you delete your account.</li>
-<li><strong>Guest IDs:</strong> deleted after 7 days without use, together with their votes and counters. This includes a guest ID left behind when you signed in to an existing account.</li>
+<li><strong>Guest IDs:</strong> deleted after 7 days without use. This includes a guest ID left behind when you signed in to an existing account.</li>
 <li><strong>Reports:</strong> 7 days.</li>
+<!--if WONDERWHY_EMAIL_CODE-->
+<li><strong>Email verification codes:</strong> the code itself isn’t stored; its summary and the number of tries for 7 days at most, at once when you delete your account.</li>
+<!--end-->
 <li><strong>Daily usage counters and audio job records:</strong> 7 days; deleted at once when you delete your account.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>Subscription:</strong> its current status while it lasts; your RevenueCat record until you delete your account. The free listening count is today’s only; offline audio 7 days at most. Apple and Google keep purchase records under their own policies and legal obligations.</li>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS-->
+<li><strong>Usage measurement:</strong> 90 days; 2 months in Google Analytics. Your account’s usage summary (first and last day of use, totals) until you delete your account; without an account, 90 days after last use. Daily totals that aren’t tied to anyone (e.g. how many people listened that day) are kept.</li>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<li><strong>Crash reports:</strong> 90 days.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Ad data:</strong> on Google’s own schedule; we don’t keep it.</li>
+<!--end-->
 <li><strong>Voice recordings:</strong> not stored. A question and its answer are kept only as described above: in a report (7 days) or in My questions (until you delete your account).</li>
 <li><strong>Stories, story audio and ready-made answers:</strong> 7 days after the story’s day.</li>
 <li><strong>Server logs:</strong> 7 days. They contain no account IDs.</li>
@@ -104,24 +188,33 @@
 </ul>
 
 <h2 id="deletion">Deleting your data</h2>
-<p>In the app, go to <strong>Profile › Delete account</strong> and confirm with <strong>Delete account permanently</strong>. This deletes at once your account, everything stored under it (lists, settings, words and progress), all your votes, and your usage counters and audio job records. If you used Sign in with Apple, the app also revokes its access to your Apple ID. On your phone, the app removes your lists and keeps its settings, as described above.</p>
-<p>Afterwards nothing linked to your account remains on our servers. Anonymous reports and server logs, which contain no account ID, are deleted within 7 days.</p>
+<p>In the app, go to <strong>Profile › Delete account</strong> and confirm with <strong>Delete account permanently</strong>. This deletes at once your account, everything stored under it (lists, settings, words and progress), all your votes, and your usage counters<!--if WONDERWHY_ANALYTICS-->, usage measurement<!--end--><!--if WONDERWHY_EMAIL_CODE-->, email verification records<!--end--><!--if WONDERWHY_PREMIUM-->, subscription status, free listening count, RevenueCat record<!--end--> and audio job records. If you used Sign in with Apple, the app also revokes its access to your Apple ID. On your phone, the app removes your lists and keeps its settings, as described above.</p>
+<!--if WONDERWHY_PREMIUM-->
+<p>Deleting your account doesn’t cancel your subscription. To stop being charged, cancel it in the App Store or Google Play subscription settings.</p>
+<!--end-->
+<p>Afterwards nothing linked to your account remains on our servers.<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Records in Google Analytics and Crashlytics are deleted on their own schedule (2 months, 90 days); anonymous reports and server logs, which contain no account ID, within 7 days.<!--else--> Anonymous reports and server logs, which contain no account ID, are deleted within 7 days.<!--end--></p>
 <p>If you can’t use the app, write to <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> from the email address of your account. The steps are also on the <a href="{deleteAccount}">Delete your account</a> page. Guest IDs are deleted automatically after 7 days without use; if you want yours deleted sooner, write to us.</p>
 
 <h2 id="rights">Your rights</h2>
 <p>Depending on where you live, you have some or all of these rights:</p>
 <ul>
-<li><strong>Türkiye (KVKK, Article 11):</strong> to learn whether we process your data and request information about it; to learn the purpose and whether it is used for that purpose; to know who it is shared with in Türkiye or abroad; to have it corrected or deleted and have those you shared it with told; to object to a result against you that comes only from automated analysis; and to claim compensation for damage caused by unlawful processing. You can apply to us in writing or by email; we answer within 30 days, free of charge. If you aren’t satisfied, you can complain to the Personal Data Protection Authority (KVKK). Details: <a href="{kvkk}">KVKK notice</a>.</li>
-<li><strong>EEA and UK (GDPR):</strong> to access, correct or delete your data; to restrict or object to its use; to receive it in a portable format; to withdraw consent at any time; and to complain to your data protection authority.</li>
+<li><strong>Türkiye (KVKK, Article 11):</strong> to learn whether we process your data and request information about it; to learn the purpose and whether it is used for that purpose; to know who it is shared with in Türkiye or abroad; to have it corrected or deleted and have those you shared it with told; to object to a result against you that comes only from automated analysis; and to claim compensation for damage caused by unlawful processing. You can apply by writing to us from the email address registered to your account; we answer within 30 days, free of charge. If you aren’t satisfied, you can complain to the Personal Data Protection Authority (KVKK). Details: <a href="{kvkk}">KVKK notice</a>.</li>
+<li><strong>EEA and UK (GDPR):</strong> to access, correct or delete your data; to restrict or object to its use<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> (for usage measurement and crash reports, instantly with the switches in the app)<!--end-->; to receive it in a portable format; to withdraw consent at any time; and to complain to your data protection authority.</li>
 <li><strong>California (CCPA/CPRA):</strong> to know what we collect and how we use it, to delete and correct it, and not to be treated differently for using these rights. We don’t sell or share personal information. We use sensitive information, such as your account login, only to provide the service.</li>
 </ul>
 <p>To use any of these rights, write to <a href="mailto:{emailPrivacy}">{emailPrivacy}</a>. We may ask you to confirm the request comes from you.</p>
 
 <h2 id="legal-bases">Legal bases</h2>
 <ul>
-<li><strong>Providing the service you ask for</strong> (account, sync, answering questions, votes): performing our contract with you (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)).</li>
+<li><strong>Providing the service you ask for</strong> (account, sync, answering questions, votes<!--if WONDERWHY_PREMIUM-->, subscription and free listening time<!--end-->): performing our contract with you (GDPR Art. 6(1)(b); KVKK Art. 5(2)(c)).</li>
 <li><strong>Security, misuse prevention, usage limits and logs:</strong> our legitimate interests (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)).</li>
-<li><strong>Microphone and notifications:</strong> your permission, which you can withdraw in your phone’s settings (GDPR Art. 6(1)(a)).</li>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<li><strong>Usage measurement and crash reports:</strong> our legitimate interest in improving the app and fixing bugs (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)). You can object and turn them off in Profile › Privacy &amp; data.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Non-personalised ads:</strong> our legitimate interest in keeping <!--if WONDERWHY_PREMIUM-->the free version<!--else-->the app<!--end--> running (GDPR Art. 6(1)(f); KVKK Art. 5(2)(f)). In the European Economic Area, the UK and Switzerland, your choice in the consent form (GDPR Art. 6(1)(a)).</li>
+<!--end-->
+<li><strong>Microphone<!--if WONDERWHY_VOICE_COMMANDS-->, speech recognition<!--end--> and notifications:</strong> your permission, which you can withdraw in your phone’s settings (GDPR Art. 6(1)(a)).</li>
 <li><strong>Legal obligations</strong>, where they apply (GDPR Art. 6(1)(c); KVKK Art. 5(2)(<span lang="tr">ç</span>)).</li>
 </ul>
 

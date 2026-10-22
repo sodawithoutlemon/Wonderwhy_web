@@ -150,7 +150,7 @@
   "download": {
     "kicker": "İndir",
     "title": "Wonderwhy'ı indir",
-    "lead": "App Store ve Google Play'de ücretsiz.",
+    "lead": "App Store ve Google Play'de ücretsiz.<!--if WONDERWHY_PREMIUM--> Premium ile sınırsız dinle.<!--end-->",
     "soon": "yakında",
     "appStore": "App Store'dan İndirin",
     "googlePlay": "Google Play'den İndirin",
@@ -164,7 +164,7 @@
     "items": [
       {
         "q": "Nereden indirebilirim?",
-        "a": "iPhone ve iPad için App Store'da, Android için Google Play'de. Ücretsiz."
+        "a": "iPhone ve iPad için App Store'da, Android için Google Play'de. <!--if WONDERWHY_PREMIUM-->İndirmesi ücretsiz.<!--else-->Ücretsiz.<!--end-->"
       },
       {
         "q": "Hangi diller ve baskılar var?",
@@ -188,7 +188,7 @@
       },
       {
         "q": "Ücretli mi?",
-        "a": "Hayır. Uygulama şu an ücretsiz."
+        "a": "<!--if WONDERWHY_PREMIUM-->İndirmesi ve her gün belli bir süre dinlemesi ücretsiz. Premium aboneliği sınırsız ve çevrimdışı dinleme gibi özellikler açar<!--if WONDERWHY_ADS--> ve reklam göstermez<!--end-->; fiyatını App Store ve Google Play gösterir.<!--else-->Hayır. Uygulama şu an ücretsiz.<!--if WONDERWHY_ADS--> Uygulamada reklam gösterilir.<!--end--><!--end-->"
       },
       {
         "q": "Nasıl yardım alırım?",

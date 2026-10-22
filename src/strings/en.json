@@ -150,7 +150,7 @@
   "download": {
     "kicker": "Download",
     "title": "Get Wonderwhy",
-    "lead": "Free on the App Store and Google Play.",
+    "lead": "Free on the App Store and Google Play.<!--if WONDERWHY_PREMIUM--> Go unlimited with Premium.<!--end-->",
     "soon": "coming soon",
     "appStore": "Download on the App Store",
     "googlePlay": "Get it on Google Play",
@@ -164,7 +164,7 @@
     "items": [
       {
         "q": "Where can I get it?",
-        "a": "On the App Store for iPhone and iPad, and on Google Play for Android. It’s free."
+        "a": "On the App Store for iPhone and iPad, and on Google Play for Android. <!--if WONDERWHY_PREMIUM-->It’s free to download.<!--else-->It’s free.<!--end-->"
       },
       {
         "q": "Which languages and editions are there?",
@@ -188,7 +188,7 @@
       },
       {
         "q": "Does it cost anything?",
-        "a": "No. The app is free right now."
+        "a": "<!--if WONDERWHY_PREMIUM-->It’s free to download, and you can listen for a set time every day for free. A Premium subscription unlocks features such as unlimited and offline listening<!--if WONDERWHY_ADS-->, with no ads<!--end-->; the App Store and Google Play show the price.<!--else-->No. The app is free right now.<!--if WONDERWHY_ADS--> It shows ads.<!--end--><!--end-->"
       },
       {
         "q": "How do I get help?",

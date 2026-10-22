@@ -2,6 +2,8 @@
 //
 //   node build.mjs
 //   FORCE_REDUCED_MOTION=1 node build.mjs   # hareket azaltmayı dene
+//   APP_FLAGS=WONDERWHY_ADS,WONDERWHY_PREMIUM SITE_OUT=/tmp/x node build.mjs
+//     # başka bayraklarla, başka klasöre (check.mjs --variants böyle çağırır)
 //
 // Tek ayar dosyası src/site.json; metinler src/strings/{en,tr}.json; hukuki
 // metinler src/content/{en,tr}/*.html. Ayrıntı: docs/14-WEB-SITESI.md.
@@ -16,14 +18,89 @@ import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const SRC = join(HERE, 'src');
 // GitHub Pages bu reponun `main` dalındaki `docs/` klasörünü olduğu gibi sunar.
-const DIST = join(HERE, 'docs');
+const DIST = process.env.SITE_OUT || join(HERE, 'docs');
 const read = (p) => readFileSync(join(SRC, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 
 const LANGS = ['en', 'tr'];
 const other = (lang) => (lang === 'en' ? 'tr' : 'en');
 const site = json('site.json');
-const S = Object.fromEntries(LANGS.map((l) => [l, json(`strings/${l}.json`)]));
+
+// ---------------------------------------------------------------- uygulama bayrakları
+//
+// Hukuki metin uygulamanın o sürümde açık olan özelliklerini anlatır (ADR-062,
+// 2.0.0 eki). `site.json › appFlags` uygulamanın bayrak adlarını taşır
+// (`app/lib/config/feature_flags.dart`); yayın günü sürümde açılanlar `true`
+// olur. Metinlerde (content/*.html ve strings/*.json değerleri):
+//
+//   <!--if WONDERWHY_ADS-->…<!--else-->…<!--end-->
+//   <!--if !WONDERWHY_ADS-->…<!--end-->            (tersi)
+//   <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->…<!--end-->  (biri yeter)
+//   <!--if WONDERWHY_ADS&WONDERWHY_PREMIUM-->…<!--end-->               (ikisi de; & önce)
+//
+// Bloklar iç içe olabilir. Kendi satırında duran işaret satırıyla birlikte düşer;
+// satır içindekinde boşluğu bloğun içine yaz. Bilinmeyen bayrak ve kapanmamış
+// blok derlemeyi durdurur. APP_FLAGS (virgüllü ad listesi) site.json'u ezer.
+const FLAG_NAMES = Object.keys(site.appFlags);
+const flags =
+  process.env.APP_FLAGS === undefined
+    ? site.appFlags
+    : (() => {
+        const on = process.env.APP_FLAGS.split(',').map((s) => s.trim()).filter(Boolean);
+        for (const n of on) if (!FLAG_NAMES.includes(n)) throw new Error(`APP_FLAGS: bilinmeyen bayrak ${n}`);
+        return Object.fromEntries(FLAG_NAMES.map((n) => [n, on.includes(n)]));
+      })();
+const COND = /<!--(?:if\s+([^>]*?)|(else)|(end))-->/g;
+function flagExpr(expr, where) {
+  return expr.split('|').some((all) =>
+    all.split('&').every((term) => {
+      const t = term.trim();
+      const name = t.replace(/^!/, '');
+      if (!FLAG_NAMES.includes(name)) throw new Error(`${where}: bilinmeyen bayrak "${name}" (site.json › appFlags)`);
+      return t.startsWith('!') ? !flags[name] : flags[name];
+    }),
+  );
+}
+function cond(text, where) {
+  let out = '';
+  let at = 0;
+  const open = []; // { on, inElse }; dıştan içe
+  const shown = () => open.every((b) => b.on !== b.inElse);
+  for (const m of text.matchAll(COND)) {
+    let start = m.index;
+    let end = start + m[0].length;
+    // Kendi satırındaki işaret, satır sonuyla birlikte düşer.
+    const lineStart = text.lastIndexOf('\n', start - 1) + 1;
+    if (lineStart >= at && /^[ \t]*$/.test(text.slice(lineStart, start)) && text[end] === '\n') {
+      start = lineStart;
+      end += 1;
+    }
+    if (shown()) out += text.slice(at, start);
+    at = end;
+    const top = open[open.length - 1];
+    if (m[1] !== undefined) open.push({ on: flagExpr(m[1], where), inElse: false });
+    else if (m[2]) {
+      if (!top || top.inElse) throw new Error(`${where}: <!--if--> olmadan <!--else-->`);
+      top.inElse = true;
+    } else {
+      if (!top) throw new Error(`${where}: <!--if--> olmadan <!--end-->`);
+      open.pop();
+    }
+  }
+  if (open.length) throw new Error(`${where}: kapanmamış <!--if-->`);
+  return out + text.slice(at);
+}
+// strings/*.json'daki her metin değerine (bloklar tek bir değerin içinde kalır).
+const condDeep = (v, where) =>
+  typeof v === 'string'
+    ? cond(v, where)
+    : Array.isArray(v)
+      ? v.map((x, i) => condDeep(x, `${where}[${i}]`))
+      : v && typeof v === 'object'
+        ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, condDeep(x, `${where}.${k}`)]))
+        : v;
+
+const S = Object.fromEntries(LANGS.map((l) => [l, condDeep(json(`strings/${l}.json`), `strings/${l}.json`)]));
 const demo = json('data/demo.json');
 const audio = json('data/audio.json');
 const wall = Object.fromEntries(LANGS.map((l) => [l, json(`data/wall.${l}.json`)]));
@@ -635,7 +712,8 @@ function legalBody(lang, key) {
     kvkk: PAGES.kvkk[lang],
     updated: dateText(site.legalUpdated, lang),
   };
-  const content = fill(read(`content/${lang}/${key}.html`), vars);
+  const file = `content/${lang}/${key}.html`;
+  const content = fill(cond(read(file), file), vars);
   const toc = [...content.matchAll(/<h2 id="([^"]+)">([\s\S]*?)<\/h2>/g)]
     .map(([, id, text]) => `<li><a href="#${id}">${text}</a></li>`)
     .join('');

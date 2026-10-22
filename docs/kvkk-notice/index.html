@@ -325,7 +325,7 @@ html { scroll-behavior: auto; }
 </div></header>
 <main id="main" class="doc"><div class="wrap narrow">
 <div class="doc-head"><p class="kicker">Legal</p><h1 class="large-title">KVKK notice</h1>
-<p class="footnote">Last updated: October 20, 2026 · <a href="../tr/kvkk/" hreflang="tr" lang="tr">Bu metnin Türkçesi</a></p></div>
+<p class="footnote">Last updated: October 22, 2026 · <a href="../tr/kvkk/" hreflang="tr" lang="tr">Bu metnin Türkçesi</a></p></div>
 <nav class="toc" aria-labelledby="toc-title"><p id="toc-title" class="headline">Contents</p><ol><li><a href="#controller">Data controller</a></li><li><a href="#data">Personal data we process and why</a></li><li><a href="#legal-bases">Legal bases</a></li><li><a href="#collection">How we collect it</a></li><li><a href="#transfers">Who receives it</a></li><li><a href="#retention">How long we keep it</a></li><li><a href="#rights">Your rights under Article 11 of the KVKK</a></li><li><a href="#requests">How to apply</a></li></ol></nav>
 <div class="prose">
 <p>This notice explains how the Wonderwhy app and the wonderwhy.net website process personal data, as required by Article 10 of Türkiye’s Personal Data Protection Law No. 6698 (KVKK) and the Communiqué on the Procedures and Principles of the Obligation to Inform. It is a summary of our <a href="../privacy/">Privacy Policy</a> in the order the KVKK asks for; the details are there.</p>
@@ -338,9 +338,12 @@ html { scroll-behavior: auto; }
 <thead><tr><th scope="col">Category</th><th scope="col">Data</th><th scope="col">Purpose</th></tr></thead>
 <tbody>
 <tr><td>Identity</td><td>Name (optional), account or guest ID</td><td>Account and sign-in; counting votes once; usage limits</td></tr>
-<tr><td>Contact</td><td>Email address; emails you send us</td><td>Account and sign-in; replying to you</td></tr>
+<tr><td>Contact</td><td>Email address; a summary of the email verification code; emails you send us</td><td>Account and sign-in; confirming the address is yours; replying to you</td></tr>
 <tr><td>Customer transactions</td><td>Synced lists and settings, Word list and My questions, listening progress, votes and poll answers, problem reports</td><td>Providing the service you ask for and syncing it across your devices</td></tr>
-<tr><td>Voice recording</td><td>Spoken question (up to 15 seconds) and the sentence playing at that moment</td><td>Understanding and answering your question; the recording isn’t kept</td></tr>
+<tr><td>Customer transactions (subscription)</td><td>The store’s purchase record, your subscription status, today’s count of free listening time</td><td>Confirming the purchase and unlocking Premium; counting the daily free time</td></tr>
+<tr><td>Voice recording</td><td>Spoken question (up to 15 seconds) and the sentence playing at that moment</td><td>Understanding and answering your question; the recording isn’t kept. Voice commands are understood on your phone and never reach us</td></tr>
+<tr><td>Usage and crash data</td><td>Screens you open, listening, buttons you tap, how many questions you ask and how long they take (not their text); crash reports; your account ID and the app’s device ID</td><td>Improving the app; finding and fixing bugs</td></tr>
+<tr><td>Marketing (ads)</td><td>IP address and approximate location, device and app details, interaction with ads; a device ID (IDFV on iPhone and iPad, the advertising ID on Android)</td><td>Showing and measuring non-personalised ads, preventing fraud (Google AdMob)</td></tr>
 <tr><td>Transaction security</td><td>Server logs (IP address, app and device details), daily usage counters; with Google sign-in, the approximate location Google may estimate from your IP address</td><td>Security, misuse prevention, usage limits and troubleshooting</td></tr>
 </tbody>
 </table></div>
@@ -348,28 +351,31 @@ html { scroll-behavior: auto; }
 
 <h2 id="legal-bases">Legal bases</h2>
 <ul>
-<li><strong>Providing the service you ask for</strong> (account, sync, answering questions, votes): performing our contract with you (KVKK Art. 5(2)(c)).</li>
+<li><strong>Providing the service you ask for</strong> (account, sync, answering questions, votes, subscription and free listening time): performing our contract with you (KVKK Art. 5(2)(c)).</li>
 <li><strong>Security, misuse prevention, usage limits and logs:</strong> our legitimate interests (KVKK Art. 5(2)(f)).</li>
+<li><strong>Usage measurement and crash reports:</strong> our legitimate interest in improving the app and fixing bugs (KVKK Art. 5(2)(f)). You can object and turn them off in Profile › Privacy &amp; data.</li>
+<li><strong>Non-personalised ads:</strong> our legitimate interest in keeping the free version running (KVKK Art. 5(2)(f)).</li>
 <li><strong>Legal obligations</strong>, where they apply (KVKK Art. 5(2)(<span lang="tr">ç</span>)).</li>
-<li><strong>Microphone and notifications:</strong> your permission, which you can withdraw in your phone’s settings. Before your first spoken question, the app tells you that your voice goes to Google’s AI and asks you to agree; nothing is recorded or sent until you do.</li>
+<li><strong>Microphone, speech recognition and notifications:</strong> your permission, which you can withdraw in your phone’s settings. Before your first spoken question, the app tells you that your voice goes to Google’s AI and asks you to agree; nothing is recorded or sent until you do.</li>
 </ul>
 
 <h2 id="collection">How we collect it</h2>
-<p>Electronically and automatically: what you enter when you create an account or sign in, what you create while using the app (lists, votes, questions) and the logs of requests to our servers. By email, if you write to us.</p>
+<p>Electronically and automatically: what you enter when you create an account or sign in, what you create while using the app (lists, votes, questions) and the logs of requests to our servers. The purchase record comes from the App Store or Google Play, through RevenueCat. Google’s ad software collects ad data from your phone itself. By email, if you write to us.</p>
 
 <h2 id="transfers">Who receives it</h2>
 <p>We don’t sell or share your personal data. To provide the service, these providers process it on our behalf:</p>
 <ul>
-<li><strong>Google</strong> (Firebase, Google Cloud, the Gemini API and Google sign-in): hosting, sign-in, sync, questions and audio.</li>
-<li><strong>Apple</strong>: Sign in with Apple, DeviceCheck and notifications.</li>
+<li><strong>Google</strong> (Firebase, Google Cloud, the Gemini API, Google sign-in, Google Analytics for Firebase and Firebase Crashlytics): hosting, sign-in, sync, questions, audio, usage measurement and crash reports. Google Play takes subscription payments. Google AdMob picks and shows the ads.</li>
+<li><strong>Apple</strong>: Sign in with Apple, DeviceCheck and notifications. It takes subscription payments on the App Store.</li>
+<li><strong>RevenueCat</strong> (United States): confirms purchases and your subscription status.</li>
 <li><strong>GitHub</strong>: hosts this website.</li>
-<li><strong>Google Workspace</strong>: hosts our mailbox.</li>
+<li><strong>Google Workspace</strong>: hosts our mailbox and sends email verification codes.</li>
 <li><strong>OpenAI</strong>: writes the news summaries; it receives no personal data.</li>
 </ul>
 <p>Our servers are in Belgium. Some of these providers process data outside Türkiye, including in the United States; these transfers rely on the mechanisms in Article 9 of the KVKK. Details: <a href="../privacy/#processors">Who processes your data</a>.</p>
 
 <h2 id="retention">How long we keep it</h2>
-<p>Your account and what it holds stay until you delete the account. Everything else is deleted within 7 days at most. Details: <a href="../privacy/#retention">How long we keep data</a>.</p>
+<p>Your account and what it holds stay until you delete the account. Usage measurement is kept for 90 days (2 months in Google Analytics). Your subscription status is kept while the subscription lasts, and your RevenueCat record until you delete your account. Google keeps ad data on its own schedule. Everything else is deleted within 7 days at most. Details: <a href="../privacy/#retention">How long we keep data</a>.</p>
 
 <h2 id="rights">Your rights under Article 11 of the KVKK</h2>
 <ul>
@@ -385,7 +391,7 @@ html { scroll-behavior: auto; }
 </ul>
 
 <h2 id="requests">How to apply</h2>
-<p>To use these rights, apply to us in writing or write to <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> from the email address registered to your account. We may ask you to confirm that the request comes from you. We answer within 30 days at the latest, free of charge. If you aren’t satisfied with the answer, or get none in time, you can complain to the Personal Data Protection Board (<span lang="tr">Kişisel Verileri Koruma Kurulu</span>).</p>
+<p>To use these rights, write to <a href="mailto:info@yelkovan.ai">info@yelkovan.ai</a> from the email address registered to your account. We may ask you to confirm that the request comes from you. We answer within 30 days at the latest, free of charge. If you aren’t satisfied with the answer, or get none in time, you can complain to the Personal Data Protection Board (<span lang="tr">Kişisel Verileri Koruma Kurulu</span>).</p>
 <p>You don’t need to apply to delete your account and data: the steps on the <a href="../delete-account/">Delete your account</a> page are enough.</p>
 
 </div>

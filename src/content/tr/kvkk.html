@@ -8,9 +8,18 @@
 <thead><tr><th scope="col">Veri kategorisi</th><th scope="col">Veriler</th><th scope="col">Amaç</th></tr></thead>
 <tbody>
 <tr><td>Kimlik</td><td>Ad (isteğe bağlı), hesap ya da misafir kimliği</td><td>Hesap ve giriş; oyların bir kez sayılması; kullanım sınırları</td></tr>
-<tr><td>İletişim</td><td>E-posta adresi; bize yazdığın e-postalar</td><td>Hesap ve giriş; sana cevap vermek</td></tr>
+<tr><td>İletişim</td><td>E-posta adresi;<!--if WONDERWHY_EMAIL_CODE--> e-posta doğrulama kodunun özeti;<!--end--> bize yazdığın e-postalar</td><td>Hesap ve giriş;<!--if WONDERWHY_EMAIL_CODE--> adresinin sana ait olduğunu doğrulamak;<!--end--> sana cevap vermek</td></tr>
 <tr><td>Müşteri işlem</td><td>Eşitlenen listeler ve ayarlar, Kelime listesi ve Sorularım, dinleme ilerlemesi, oylar ve anket cevapları, sorun bildirimleri</td><td>İstediğin hizmeti sunmak ve cihazların arasında eşitlemek</td></tr>
-<tr><td>Ses kaydı</td><td>Sesli soru (en çok 15 saniye) ve o an çalan cümle</td><td>Sorunu anlamak ve cevaplamak; kayıt saklanmaz</td></tr>
+<!--if WONDERWHY_PREMIUM-->
+<tr><td>Müşteri işlem (abonelik)</td><td>Mağazanın satın alma kaydı, aboneliğin durumu, ücretsiz dinleme süresinin bugünkü sayısı</td><td>Satın almayı doğrulamak ve Premium’u açmak; günlük ücretsiz süreyi saymak</td></tr>
+<!--end-->
+<tr><td>Ses kaydı</td><td>Sesli soru (en çok 15 saniye) ve o an çalan cümle</td><td>Sorunu anlamak ve cevaplamak; kayıt saklanmaz<!--if WONDERWHY_VOICE_COMMANDS-->. Sesli komutlar telefonunda anlaşılır, bize gelmez<!--end--></td></tr>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<tr><td>Kullanım ve çökme verisi</td><td>Açtığın ekranlar, dinleme, dokunduğun düğmeler, soruların sayısı ve süresi (metni değil); çökme raporları; hesap kimliğin ve uygulamanın cihaz kimliği</td><td>Uygulamayı geliştirmek; hataları bulup düzeltmek</td></tr>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<tr><td>Pazarlama (reklam)</td><td>IP adresi ve yaklaşık konum, cihaz ve uygulama bilgisi, reklamla etkileşim; cihaz kimliği (iPhone ve iPad’de IDFV, Android’de reklam kimliği)</td><td>Kişiselleştirilmemiş reklam göstermek ve ölçmek, sahtekârlığı önlemek (Google AdMob)</td></tr>
+<!--end-->
 <tr><td>İşlem güvenliği</td><td>Sunucu kayıtları (IP adresi, uygulama ve cihaz bilgisi), günlük kullanım sayaçları; Google ile girişte Google’ın IP adresinden tahmin edebildiği yaklaşık konum</td><td>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve hata giderme</td></tr>
 </tbody>
 </table></div>
@@ -18,28 +27,37 @@
 
 <h2 id="hukuki-sebepler">Hukuki sebepler</h2>
 <ul>
-<li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c).</li>
+<li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar<!--if WONDERWHY_PREMIUM-->, abonelik ve ücretsiz dinleme süresi<!--end-->): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c).</li>
 <li><strong>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve kayıtlar:</strong> meşru menfaatimiz (KVKK md. 5/2-f).</li>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<li><strong>Kullanım ölçümü ve çökme raporları:</strong> uygulamayı geliştirmek ve hataları düzeltmek için meşru menfaatimiz (KVKK md. 5/2-f). Profil › Gizlilik ve veri’den itiraz edip kapatabilirsin.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Kişiselleştirilmemiş reklam:</strong> <!--if WONDERWHY_PREMIUM-->ücretsiz sürümü<!--else-->uygulamayı<!--end--> sürdürebilmek için meşru menfaatimiz (KVKK md. 5/2-f).</li>
+<!--end-->
 <li><strong>Yasal yükümlülükler</strong>, uygulandığı durumlarda (KVKK md. 5/2-ç).</li>
-<li><strong>Mikrofon ve bildirimler:</strong> telefonunun ayarlarından geri alabileceğin iznin. Uygulama ilk sesli sorudan önce sesinin Google’ın yapay zekâsına gideceğini söyler ve onayını ister; onaylamadan hiçbir şey kaydedilmez ve gönderilmez.</li>
+<li><strong>Mikrofon<!--if WONDERWHY_VOICE_COMMANDS-->, konuşma tanıma<!--end--> ve bildirimler:</strong> telefonunun ayarlarından geri alabileceğin iznin. Uygulama ilk sesli sorudan önce sesinin Google’ın yapay zekâsına gideceğini söyler ve onayını ister; onaylamadan hiçbir şey kaydedilmez ve gönderilmez.</li>
 </ul>
 
 <h2 id="toplama">Toplama yöntemi</h2>
-<p>Kişisel verilerin elektronik ortamda, otomatik yollarla toplanır: hesap açarken ve giriş yaparken girdiklerin, uygulamayı kullanırken oluşanlar (listeler, oylar, sorular) ve sunucularımıza gelen isteklerin kayıtları. Bize e-posta gönderirsen e-postayla.</p>
+<p>Kişisel verilerin elektronik ortamda, otomatik yollarla toplanır: hesap açarken ve giriş yaparken girdiklerin, uygulamayı kullanırken oluşanlar (listeler, oylar, sorular) ve sunucularımıza gelen isteklerin kayıtları.<!--if WONDERWHY_PREMIUM--> Satın alma kaydı App Store ya da Google Play’den, RevenueCat üzerinden gelir.<!--end--><!--if WONDERWHY_ADS--> Reklam verisini Google’ın reklam yazılımı telefonundan kendisi toplar.<!--end--> Bize e-posta gönderirsen e-postayla.</p>
 
 <h2 id="aktarim">Kimlere aktarılır</h2>
 <p>Kişisel verini satmayız ve paylaşmayız. Hizmeti sunmak için şu hizmet sağlayıcılar verini bizim adımıza işler:</p>
 <ul>
-<li><strong>Google</strong> (Firebase, Google Cloud, Gemini API ve Google ile giriş): barındırma, giriş, eşitleme, sorular ve ses.</li>
-<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.</li>
+<li><strong>Google</strong> (Firebase, Google Cloud, Gemini <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->API, Google ile giriş, Google Analytics for Firebase ve Firebase Crashlytics): barındırma, giriş, eşitleme, sorular, ses, kullanım ölçümü ve çökme raporları.<!--else-->API ve Google ile giriş): barındırma, giriş, eşitleme, sorular ve ses.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play’de abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ADS--> Google AdMob reklamları seçer ve gösterir.<!--end--></li>
+<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.<!--if WONDERWHY_PREMIUM--> App Store’da abonelik ödemesini alır.<!--end--></li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>RevenueCat</strong> (ABD): satın almaları ve aboneliğin durumunu doğrular.</li>
+<!--end-->
 <li><strong>GitHub</strong>: bu siteyi barındırır.</li>
-<li><strong>{emailProvider}</strong>: posta kutumuzu barındırır.</li>
+<li><strong>{emailProvider}</strong>: posta kutumuzu barındırır<!--if WONDERWHY_EMAIL_CODE--> ve e-posta doğrulama kodlarını gönderir<!--end-->.</li>
 <li><strong>OpenAI</strong>: haber özetlerini yazar; hiçbir kişisel veri almaz.</li>
 </ul>
 <p>Sunucularımız Belçika’dadır. Bu sağlayıcıların bir kısmı veriyi Türkiye dışında, ABD dahil başka ülkelerde işler; bu aktarımlar KVKK’nın 9. maddesindeki yollara dayanır. Ayrıntı: <a href="{privacy}#isleyenler">Verini kimler işliyor</a>.</p>
 
 <h2 id="saklama">Saklama</h2>
-<p>Hesabın ve içinde tuttukların, hesabını silene kadar kalır. Geri kalan her şey en çok 7 gün içinde silinir. Ayrıntı: <a href="{privacy}#saklama">Saklama süreleri</a>.</p>
+<p>Hesabın ve içinde tuttukların, hesabını silene kadar kalır.<!--if WONDERWHY_ANALYTICS--> Kullanım ölçümü 90 gün kalır (Google Analytics’te 2 ay).<!--end--><!--if WONDERWHY_PREMIUM--> Aboneliğin durumu abonelik sürdükçe, RevenueCat’teki kaydın hesabını silene kadar kalır.<!--end--><!--if WONDERWHY_ADS--> Reklam verisini Google kendi sürelerine göre tutar.<!--end--> Geri kalan her şey en çok 7 gün içinde silinir. Ayrıntı: <a href="{privacy}#saklama">Saklama süreleri</a>.</p>
 
 <h2 id="haklar">KVKK 11. maddedeki hakların</h2>
 <ul>
@@ -55,5 +73,5 @@
 </ul>
 
 <h2 id="basvuru">Başvuru</h2>
-<p>Haklarını kullanmak için bize yazılı olarak ya da hesabına kayıtlı e-posta adresinden <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yazarak başvurabilirsin. Talebin senden geldiğini doğrulamanı isteyebiliriz. Başvuruna en geç 30 gün içinde, ücretsiz cevap veririz. Cevaptan memnun kalmazsan ya da süresinde cevap alamazsan Kişisel Verileri Koruma Kurulu’na şikâyette bulunabilirsin.</p>
+<p>Haklarını kullanmak için hesabına kayıtlı e-posta adresinden <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yazarak başvurabilirsin. Talebin senden geldiğini doğrulamanı isteyebiliriz. Başvuruna en geç 30 gün içinde, ücretsiz cevap veririz. Cevaptan memnun kalmazsan ya da süresinde cevap alamazsan Kişisel Verileri Koruma Kurulu’na şikâyette bulunabilirsin.</p>
 <p>Hesabını ve verilerini silmek için başvuru gerekmez: <a href="{deleteAccount}">Hesabını sil</a> sayfasındaki adımlar yeter.</p>

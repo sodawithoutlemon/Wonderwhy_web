@@ -20,8 +20,17 @@
     "appStoreId": "6817247112",
     "appStoreProvider": null
   },
-  "legalUpdated": "2026-10-20",
-  "homeUpdated": "2026-10-20",
+  "legalUpdated": "2026-10-22",
+  "homeUpdated": "2026-10-22",
   "compareUpdated": "2026-10-20",
-  "legalDraft": false
+  "legalDraft": false,
+  "_appFlags": "Yayındaki uygulama sürümünde açık olan özellikler (adlar app/lib/config/feature_flags.dart'taki gibi). Hukuki metinler ve 'ücretsiz' satırları bunlara göre derlenir (build.mjs › cond). Yayın günü o sürümün bayraklarıyla güncelle, legalUpdated'i de.",
+  "appFlags": {
+    "WONDERWHY_EMAIL_CODE": true,
+    "WONDERWHY_ANALYTICS": true,
+    "WONDERWHY_CRASH_REPORTS": true,
+    "WONDERWHY_VOICE_COMMANDS": true,
+    "WONDERWHY_PREMIUM": true,
+    "WONDERWHY_ADS": true
+  }
 }

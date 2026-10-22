@@ -5,28 +5,53 @@
 
 <h2 id="ozet">Özet</h2>
 <ul>
-<li>Reklam yok, analitik yok, başka uygulama ve sitelerde takip yok. Kişisel verini satmayız ve paylaşmayız.</li>
+<li><!--if !WONDERWHY_ADS&!WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->Reklam yok, analitik yok, başka uygulama ve sitelerde takip yok.<!--end--><!--if !WONDERWHY_ADS&WONDERWHY_ANALYTICS|!WONDERWHY_ADS&WONDERWHY_CRASH_REPORTS-->Reklam yok, başka uygulama ve sitelerde takip yok.<!--end--><!--if WONDERWHY_ADS--><!--if WONDERWHY_PREMIUM-->Ücretsiz sürümde<!--else-->Uygulamada<!--end--><!--end--><!--if WONDERWHY_ADS--> Google AdMob ile reklam gösteririz. Reklamlar kişiselleştirilmez: ilgi alanlarına ya da başka uygulamalardaki davranışına göre seçilmez.<!--end--><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Uygulamayı geliştirmek için nasıl kullanıldığını ve çökmeleri ölçüyoruz; istediğin an Profil › Gizlilik ve veri’den kapatabilirsin.<!--end--> Kişisel verini satmayız ve paylaşmayız.</li>
 <li>Okumak ve dinlemek için hesap gerekir: e-posta ve şifre, Apple ile giriş (iPhone ve iPad’de) ya da Google ile giriş. Hesapsız yalnız göz atabilirsin. Listelerin ve ayarların cihazların arasında eşitlenir.</li>
-<li>Sesli soru sorduğunda kayıt, anlaşılıp cevaplanması için Google’ın Gemini hizmetine gider. Biz saklamayız.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>İstersen Premium’a abone olabilirsin. Ödemeyi Apple ya da Google alır; kart bilgilerini biz görmeyiz.</li>
+<!--end-->
+<li>Sesli soru sorduğunda kayıt, anlaşılıp cevaplanması için Google’ın Gemini hizmetine gider. Biz saklamayız.<!--if WONDERWHY_VOICE_COMMANDS--> Sesli komutları açarsan onları telefonun kendisi anlar; sesin telefondan çıkmaz.<!--end--></li>
 <li>Haber özetlerini yapay zekâ, herkese açık haber akışlarından yazar. Bunun için senin hiçbir verin gönderilmez.</li>
-<li>Hesabın ve içinde tuttukların dışında hiçbir şeyi 7 günden uzun saklamayız.</li>
+<li>Hesabın ve içinde tuttukların dışında hiçbir şeyi 7 günden uzun saklamayız.<!--if WONDERWHY_ANALYTICS--> Tek istisna kullanım ölçümü: 90 gün (bkz. <a href="#takip-yok">Kullanım ölçümü ve çökme raporları</a>).<!--end--></li>
 <li>Hesabını uygulamanın içinden ya da uygulama olmadan e-postayla silebilirsin (<a href="{deleteAccount}">Hesabını sil</a> sayfası).</li>
 </ul>
 <div class="table-wrap"><table>
 <thead><tr><th scope="col">Veri</th><th scope="col">Amaç</th><th scope="col">Nereye gider</th><th scope="col">Ne kadar</th></tr></thead>
 <tbody>
 <tr><td>E-posta, şifre ya da Apple/Google ile giriş, isteğe bağlı ad</td><td>Hesap ve giriş</td><td>Google Firebase Authentication</td><td>Hesabını silene kadar</td></tr>
+<!--if WONDERWHY_EMAIL_CODE-->
+<tr><td>E-posta doğrulama kodu (yalnız özeti) ve deneme sayısı</td><td>Adresinin sana ait olduğunu doğrulamak</td><td>Google Cloud Firestore (Belçika); posta Google Workspace üzerinden</td><td>En çok 7 gün; hesabını silince hemen</td></tr>
+<!--end-->
 <tr><td>Eşitlenen listeler ve ayarlar</td><td>Cihazların arasında aynı kalmaları</td><td>Google Cloud Firestore (Belçika)</td><td>Hesabını silene kadar</td></tr>
 <tr><td>Oylar ve anket cevapları</td><td>Bir kez sayılmaları ve toplamların gösterilmesi</td><td>Google Cloud Firestore (Belçika)</td><td>Haberin gününden 7 gün sonra; hesabını daha önce silersen o an</td></tr>
 <tr><td>Sesli soru (en çok 15 saniye) ve o an çalan cümle</td><td>Sorunu anlamak ve cevaplamak</td><td>Google Gemini API</td><td>Biz saklamayız</td></tr>
+<!--if WONDERWHY_VOICE_COMMANDS-->
+<tr><td>Sesli komutlar (açarsan)</td><td>Bülteni sesle yönetmek</td><td>Hiçbir yere: telefonunda anlaşılır</td><td>Saklanmaz</td></tr>
+<!--end-->
 <tr><td>Günlük kullanım sayaçları (kimliğin ve bir sayı)</td><td>Adil kullanım sınırları</td><td>Google Cloud Firestore (Belçika)</td><td>7 gün; hesabını silince hemen</td></tr>
+<!--if WONDERWHY_PREMIUM-->
+<tr><td>Ücretsiz dinleme süresi (bugün kaç saniye dinlediğin)</td><td>Günlük ücretsiz süreyi saymak</td><td>Telefonun; Google Cloud Firestore (Belçika)</td><td>Yalnız bugünün sayısı; ertesi gün üzerine yazılır, hesabını silince hemen</td></tr>
+<tr><td>Abonelik (hesap kimliğin, mağazanın satın alma kaydı, aboneliğin durumu)</td><td>Satın almayı doğrulamak ve Premium’u açmak</td><td>RevenueCat; Google Cloud Firestore (Belçika). Ödemeyi Apple ya da Google alır</td><td>Durum, abonelik sürdükçe; RevenueCat’teki kayıt hesabını silene kadar</td></tr>
+<!--end-->
 <tr><td>Sunucu kayıtları (IP adresi, uygulama ve cihaz bilgisi)</td><td>Güvenlik ve hata giderme</td><td>Google Cloud (Belçika)</td><td>7 gün</td></tr>
+<!--if WONDERWHY_ANALYTICS-->
+<tr><td>Kullanım ölçümü (açtığın ekranlar, dinleme, dokunduğun düğmeler; hesap kimliğin ve uygulamanın cihaz kimliği)</td><td>Uygulamayı geliştirmek</td><td>Google Cloud Firestore (Belçika), Google Analytics for Firebase</td><td>90 gün (Google Analytics: 2 ay); günlük toplamlar kişisel değil, kalır</td></tr>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<tr><td>Çökme raporları (hatanın yeri, cihaz modeli, sistem ve uygulama sürümü, hesap kimliğin)</td><td>Hataları bulup düzeltmek</td><td>Firebase Crashlytics</td><td>90 gün</td></tr>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<tr><td>Reklam verisi (IP adresi ve yaklaşık konum, cihaz ve uygulama bilgisi, reklamla etkileşim; cihaz kimliği: iPhone ve iPad’de satıcı kimliği (IDFV), Android’de reklam kimliği)</td><td>Kişiselleştirilmemiş reklam göstermek ve ölçmek, sahtekârlığı önlemek</td><td>Google AdMob</td><td>Google’ın kendi sürelerine göre</td></tr>
+<!--end-->
 </tbody>
 </table></div>
 
 <h2 id="hesap">Hesabın</h2>
 <p>Haberleri açmak ve dinlemek için hesap gerekir; hesapsız tanıtımı geçip günün başlıklarını görebilirsin. Hesap açtığında e-posta adresini, şifreni ve girersen adını işleriz. Bunları Google’ın Firebase Authentication hizmeti saklar; şifreni biz hiç görmeyiz. Apple ile giriş (iPhone ve iPad’de) ya da Google ile giriş de kullanabilirsin. O zaman Apple ya da Google adını, e-posta adresini (Apple gizli bir yönlendirme adresi verebilir) ve bir giriş jetonunu bizimle paylaşır. Google ile girişte Firebase Authentication, Google profil fotoğrafının web adresini de saklar; uygulama onu kullanmaz ve göstermez. Google ile giriş sırasında Google'ın giriş yazılımı, girişi sahtekârlığa karşı korumak için IP adresinden yaklaşık konumunu da tahmin edebilir.</p>
-<p>Giriş yapmadan önce uygulama, kimlik isteyen özellikler için rastgele bir misafir kimliği (Firebase anonim hesabı) oluşturabilir. Bu kimlik adına ya da e-postana bağlı değildir, ama yine de kişisel veridir: altında saklananlar telefonuna kadar izlenebilir. Sonra hesap açarsan misafir kimliğin hesap kimliğin olur. Var olan bir hesaba giriş yaparsan uygulama misafir kimliğini kullanmayı bırakır. 7 gün kullanılmayan misafir kimliği, oyları ve sayaçlarıyla birlikte kendiliğinden silinir.</p>
+<!--if WONDERWHY_EMAIL_CODE-->
+<p>E-posta ve şifreyle hesap açtığında adresinin sana ait olduğunu doğrulamak için 6 haneli bir kod göndeririz. Kod, Google Workspace üzerinden <a href="mailto:{emailHello}">{emailHello}</a> adresinden gelir ve 10 dakika geçerlidir. Kodun kendisini saklamayız: yalnız geri çevrilemeyen bir özetini ve kaç kez denendiğini, en çok 7 gün tutarız. Şifre sıfırlama postaları Firebase Authentication’dan, {domain} adıyla gelir.</p>
+<!--end-->
+<p>Giriş yapmadan önce uygulama, kimlik isteyen özellikler için rastgele bir misafir kimliği (Firebase anonim hesabı) oluşturabilir. Bu kimlik adına ya da e-postana bağlı değildir, ama yine de kişisel veridir: altında saklananlar telefonuna kadar izlenebilir. Sonra hesap açarsan misafir kimliğin hesap kimliğin olur. Var olan bir hesaba giriş yaparsan uygulama misafir kimliğini kullanmayı bırakır. 7 gün kullanılmayan misafir kimliği kendiliğinden silinir.</p>
 
 <h2 id="esitlenenler">Hesabına eşitlenenler</h2>
 <p>Bir hesapla (misafir olarak değil) giriş yaptığında uygulama aşağıdakileri, diğer cihazlarında da görebilmen için Google Cloud Firestore’da tutar. Bunları yalnız sen okuyabilirsin.</p>
@@ -37,10 +62,13 @@
 <li>Oylarının ve anket cevaplarının senin kopyan, sorun bildirdiğin haberler.</li>
 <li>Kelime listen ve Sorularım (en çok 1.500 kayıt): her kelime ya da kavram, geçtiği cümle ve başlıkla birlikte. Sesle bir şeyin ne demek olduğunu sorduğunda (“… nedir?” gibi) kavram ve cevap buraya eklenir.</li>
 <li>Günün dinleme ilerlemesi: hangi haberleri dinlediğin, ne kadar dinlediğin ve kaç soru sorduğun. Soruların kendisi değil, yalnız sayısı tutulur.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>Aboneliğinin durumu ve ücretsiz dinleme süresinin bugünkü sayısı (bkz. <a href="#abonelik">Abonelik ve ödeme</a>). Bunları yalnız sunucumuz yazar.</li>
+<!--end-->
 </ul>
 
 <h2 id="oylar">Oylar ve sorun bildirimleri</h2>
-<p>Bir habere tepki verdiğinde ya da ankete cevap verdiğinde oyun, bir kez sayılsın ve değiştirebilesin diye hesap ya da misafir kimliğinle saklanır. Başkaları yalnız toplamları görür. Oylar, haberin gününden 7 gün sonra haberle birlikte silinir.</p>
+<p>Bir habere tepki verdiğinde ya da ankete cevap verdiğinde oyun, bir kez sayılsın ve değiştirebilesin diye hesap kimliğinle saklanır. Başkaları yalnız toplamları görür. Oylar, haberin gününden 7 gün sonra haberle birlikte silinir.</p>
 <p>Bir haberde ya da cevapta sorun bildirdiğinde haberi, seçtiğin nedeni ve notu (en çok 500 karakter) saklarız. Sesli bir cevabı bildirirsen, neyin yanlış gittiğini görebilmemiz için uygulama notu sorduğun soruyla ve cevapla doldurur; göndermeden önce değiştirebilir ya da silebilirsin. Sorun bildirimi kimliğine bağlanmaz ve 7 gün sonra silinir. Lütfen nota kişisel bilgi yazma: sana bağlı olmadığı için daha önce bulup silemeyiz.</p>
 
 <h2 id="mikrofon">Mikrofon ve sorular</h2>
@@ -49,9 +77,13 @@
 <p>İlk sesli sorundan önce uygulama, sesinin Google’ın yapay zekâsına gideceğini söyler ve onayını ister. Onaylamadan hiçbir şey kaydedilmez ve gönderilmez.</p>
 <p>Kaydı saklamayız; söylediklerini ve cevabı kayıtlarımıza yazmayız. İki istisna var, ikisi de senin elinde: bir cevabı bildirirsen bildirim, sorduğun soruyu ve cevabı 7 gün tutar (bkz. <a href="#oylar">Oylar ve sorun bildirimleri</a>); bir şeyin ne demek olduğunu sorduğunda kavram ve cevap Kitaplık › Sorularım’a kaydedilir ve hesabını silene kadar hesabınla eşitlenir (bkz. <a href="#esitlenenler">Hesabına eşitlenenler</a>). Kayıtlarımızda yalnız cevabın uzunluğu ve ne kadar sürdüğü gibi sayılar kalır. Sesin kimliğini belirlemek için kullanılmaz.</p>
 <p>Gemini API’yi ücretli hizmet olarak kullanıyoruz. Google’ın ücretli hizmet şartlarına göre Google bu verileri kendi ürünlerini geliştirmek için kullanmaz; istekleri ve cevapları yalnız kötüye kullanımı tespit etmek ve yasal yükümlülüklerini yerine getirmek için sınırlı bir süre tutar.</p>
+<!--if WONDERWHY_VOICE_COMMANDS-->
+<h3>Sesli komutlar</h3>
+<p>Açarsan, bülten dinlerken söylediğin kısa komutları (“dur”, “sıradaki”, “daha hızlı”) telefonunun kendi konuşma tanıyıcısı anlar. Tanıma telefonunda yapılır; ses kaydı bize ya da başka bir şirkete gitmez, saklanmaz. Mikrofon yalnız uygulama açıkken, bülten açıkken ya da Bugün ekranındayken dinler; oynatıcıda, mini oynatıcıda ve Bugün’de “Dinliyor” yazar. Profil › Okuma ve dinleme’den kapatabilirsin.</p>
+<!--end-->
 <h3>Hazır sorular</h3>
 <p>Bazı sorular düğmedir, örneğin bir haberin ayrıntısını istemek. Bunların cevapları seninle değil haberle ilgilidir; bu yüzden haberle birlikte saklanır ve herkes için yeniden kullanılır.</p>
-<p>Telefonun, uygulama mikrofonu kullanmadan önce senden izin ister. Bu izni istediğin zaman telefonunun ayarlarından kapatabilirsin.</p>
+<p>Telefonun, uygulama mikrofonu kullanmadan önce senden izin ister<!--if WONDERWHY_VOICE_COMMANDS-->; sesli komutlar için konuşma tanıma iznini de ister<!--end-->. Bu izni istediğin zaman telefonunun ayarlarından kapatabilirsin.</p>
 
 <h2 id="haberler">Haberler nasıl hazırlanıyor</h2>
 <p>Sunucumuz haberleri haber kuruluşlarının herkese açık akışlarından toplar; aynı haberi kuruluşların nasıl anlattığını karşılaştırmak için sayfalarının ilk paragraflarını da okur. Özetleri yazdırmak için OpenAI’ye, sesli okutmak için Google’a gönderir. Bu isteklerde yalnız haber metni vardır, senin hiçbir verin yoktur. Haberler ve ses dosyaları, yayınlandıkları günden 7 gün sonra sunucularımızdan silinir.</p>
@@ -62,41 +94,93 @@
 <ul>
 <li>Listelerin, ayarların ve eşitleme durumu, uygulamanın kendi deposunda.</li>
 <li>Haber seslerinin önbelleği, telefonunun temizleyebileceği geçici bir klasörde.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>Ücretsiz dinleme süresinin bugünkü sayısı. Aboneysen, çevrimdışı dinlemek için indirilen Bugün sesleri de önbellek klasöründe durur ve yedeğe girmez.</li>
+<!--end-->
 <li>Oturum bilgin: iPhone ve iPad’de Anahtar Zinciri’nde, uygulamayı silsen de kalabilir; Android’de uygulamanın kendi gizli deposunda.</li>
 <li>Eşitlenen verilerinin Firestore’un tuttuğu çevrimdışı kopyası.</li>
 </ul>
 <p>Çıkış yaptığında ya da hesabını sildiğinde uygulama listelerini, oylarını, kelimelerini ve ilerlemeni telefondan kaldırır. Uygulama çalışmaya devam etsin diye ayarlarını (konular, diller, yazı boyutu) bırakır. Uygulamayı silmek bunları da kaldırır.</p>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<p>Kullanım ölçümü ve çökme raporları için uygulama telefonunda rastgele bir kimlik ve gönderilmeyi bekleyen kayıtları tutar. Kapatma tercihin de telefonda durur; çıkış yapınca silinmez.</p>
+<!--end-->
 <p>Sunucularımızı kötüye kullanıma karşı korumak için uygulama, isteklerin gerçek uygulamadan geldiğini Firebase App Check ile doğrular: iPhone ve iPad’de Apple’ın DeviceCheck, Android’de Google Play Integrity hizmetiyle. Cihaz tanımlayıcılarını saklamayız.</p>
 
 <h2 id="bildirimler">Bildirimler</h2>
 <p>Yalnız bildirimlere izin verirsen telefonun Firebase Cloud Messaging üzerinden, iPhone ve iPad’de Apple’ın bildirim hizmetiyle de, konulara (örneğin sabah bülteninin saatine ya da baskındaki önemli gelişmelere) abone olur. Bildirimleri sana kişisel olarak değil konulara göndeririz; cihaz jetonunu saklamayız. Bildirimleri uygulamanın Profil sayfasından ya da telefonunun ayarlarından kapatabilirsin.</p>
 
 <h2 id="sinirlar">Kullanım sınırları ve sunucu kayıtları</h2>
-<p>Hizmet adil ve karşılanabilir kalsın diye her gün kaç soru sorduğunu ve kaç haber sesi ürettiğini sayarız. Her sayaçta hesap ya da misafir kimliğin, tarih ve bir sayı bulunur. Bir haberin sesi hazırlanırken iş, kimliğinle kaydedilir. Sayaçlar ve iş kayıtları 7 gün sonra, hesabını silersen hemen silinir.</p>
+<p>Hizmet adil ve karşılanabilir kalsın diye her gün kaç soru sorduğunu ve kaç haber sesi ürettiğini sayarız. Her sayaçta hesap kimliğin, tarih ve bir sayı bulunur. Bir haberin sesi hazırlanırken iş, kimliğinle kaydedilir. Sayaçlar ve iş kayıtları 7 gün sonra, hesabını silersen hemen silinir.</p>
 <p>Sunucularımız Belçika’da, Google Cloud üzerinde (europe-west1) çalışır. Google Cloud, IP adreslerini ve uygulama ve cihaz bilgilerini içeren istek kayıtlarını 7 gün tutar. Kendi kayıt satırlarımızda hesap kimliği değil, yalnız sayılar bulunur.</p>
 
-<h2 id="takip-yok">Reklam, analitik ve satış yok</h2>
-<p>Uygulamada reklam, analitik ya da çökme raporlama aracı yoktur ve seni başka şirketlerin uygulamalarında ya da sitelerinde izlemez. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
+<!--if WONDERWHY_PREMIUM-->
+<h2 id="abonelik">Abonelik ve ödeme</h2>
+<p>Ücretsiz sürümde her gün belli bir süre dinleyebilirsin. Bunu saymak için uygulama, o gün kaç saniye dinlediğini telefonunda ve hesabında tutar: yalnız bugünün sayısı, ertesi gün üzerine yazılır, geçmiş tutulmaz. Abonelerde sayılmaz.</p>
+<p>Premium’a abone olursan ödemeyi App Store’da Apple, Google Play’de Google alır; kart ve ödeme bilgilerini biz görmeyiz. Satın almayı ve aboneliğin durumunu RevenueCat hizmetiyle doğrularız. RevenueCat hesap kimliğini ve mağazanın satın alma kaydını alır; e-postanı, adını ya da cihazının reklam kimliklerini almaz. Aboneliğinin güncel durumu (hangi ürün, ne zaman biteceği, hangi mağazadan, yenilenip yenilenmeyeceği) hesabında tutulur ve abonelik bitince silinir. Bunu yalnız sunucumuz yazar.</p>
+<p>Aboneysen Bugün listesinin sesleri, çevrimdışı dinleyebilmen için telefonuna indirilir. Telefonunun önbellek klasöründe durur ve yedeğe girmezler. Yeni günde, çıkış yaptığında, hesabını sildiğinde ya da aboneliğin bitince, en geç 7 gün içinde silinirler.</p>
+<p>Hesabını silmek aboneliği bitirmez; onu App Store ya da Google Play’in abonelik ayarlarından ayrıca iptal etmelisin. Satın alma, deneme, iptal ve iade koşulları <a href="{terms}#abonelik">Kullanım Şartları</a>’nda.</p>
 
+<!--end-->
+<h2 id="takip-yok"><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Kullanım ölçümü ve çökme raporları<!--end--><!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS&!WONDERWHY_ADS-->Reklam, analitik ve satış yok<!--end--><!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS&WONDERWHY_ADS-->Analitik ve satış yok<!--end--></h2>
+<!--if WONDERWHY_ANALYTICS-->
+<p>Uygulamayı geliştirmek için nasıl kullanıldığını ölçeriz: hangi ekranları açtığını ve ne kadar kaldığını, bültende hangi haberleri dinlediğini, atladığını ya da nerede bıraktığını, soru sorduğunu (sorunun ve cevabın metni değil, yalnız sayısı, süresi ve sonucu) ve kaydet, paylaş, tepki gibi düğmelere dokunduğunu. Her kayıtta hesap kimliğin, uygulamanın bu telefona verdiği rastgele bir kimlik, uygulama ve sistem sürümü, dil ve baskı bulunur. Haber metni, sorduğun soru, e-postan ya da adın bu kayıtlara girmez. Kayıtlar sunucularımızda (Belçika) ve Google Analytics for Firebase’de tutulur.</p>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<p>Uygulama çöktüğünde ya da hata verdiğinde teknik ayrıntılar (hatanın kodda nerede olduğu, cihaz modeli, sistem ve uygulama sürümü) hesap kimliğinle Firebase Crashlytics’e gider. Hata mesajlarının metnini kendi kayıtlarımıza yazmayız.</p>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<p>Bunu meşru menfaatimize dayanarak yaparız (bkz. <a href="#hukuki-sebepler">Hukuki sebepler</a>). İstediğin an <strong>Profil › Gizlilik ve veri</strong>’den “Kullanım verisi”ni ve “Çökme raporları”nı ayrı ayrı kapatabilirsin; kapatınca o telefondan hiçbir şey gönderilmez ve bekleyen kayıtlar silinir. Uygulama bunu ilk açılışta bir kez söyler.</p>
+<p><!--if WONDERWHY_ADS-->Kullanım ölçümü reklam kimliğini (IDFA, Android reklam kimliği) kullanmaz; ölçümü reklam için de kullanmayız.<!--else-->Reklam yok. Reklam kimliğini (IDFA, Android reklam kimliği) okumayız, seni başka şirketlerin uygulamalarında ya da sitelerinde izlemeyiz.<!--end--> Google Analytics’te reklam sinyalleri ve Google signals kapalıdır. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
+<!--end-->
+<!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->
+<p>Uygulamada <!--if !WONDERWHY_ADS-->reklam, <!--end-->analitik ya da çökme raporlama aracı yoktur<!--if !WONDERWHY_ADS--> ve seni başka şirketlerin uygulamalarında ya da sitelerinde izlemez<!--end-->. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
+<!--end-->
+
+<!--if WONDERWHY_ADS-->
+<h2 id="reklam">Reklamlar</h2>
+<p><!--if WONDERWHY_PREMIUM-->Ücretsiz sürümde<!--else-->Uygulamada<!--end--> reklam gösteririz: Bugün listesinde, Keşfet’te, haberlerin sonunda ve oynatıcıda küçük reklamlar; bir dinlemeyi bitirince ya da kapatınca, sık olmamak üzere, tam ekran bir reklam.<!--if WONDERWHY_PREMIUM--> Premium’da reklam yoktur.<!--end--> Reklamları Google AdMob seçer ve gösterir.</p>
+<p>Reklamlar kişiselleştirilmez: ilgi alanlarına ya da başka uygulama ve sitelerdeki davranışına göre seçilmez. iPhone ve iPad’de reklam kimliğine (IDFA) erişim istemeyiz. Yine de reklamı göstermek, kaç kez gösterildiğini sınırlamak, ölçmek ve sahtekârlığı önlemek için Google’ın reklam yazılımı telefonundan şunları alır: IP adresi ve ondan çıkan yaklaşık konum, cihaz ve uygulama bilgisi, reklamla etkileşimin ve bir cihaz kimliği: iPhone ve iPad’de uygulamalarımıza özel satıcı kimliği (IDFV), Android’de reklam kimliği ve uygulama grubu kimliği (app set ID). Google bunları kendi gizlilik politikasına göre işler. Android’de reklam kimliğini telefonunun ayarlarından sıfırlayabilir ya da silebilirsin.</p>
+<p>Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de uygulama, reklam göstermeden önce Google’ın rıza formuyla seçimini sorar. Seçimini sonra <strong>Profil › Gizlilik ve veri › Reklam gizlilik seçenekleri</strong>’nden değiştirebilirsin.</p>
+<p>Reklam için hesap kimliğini, e-postanı, adını ya da dinlediğin haberleri Google’a vermeyiz.</p>
+
+<!--end-->
 <h2 id="isleyenler">Verini kimler işliyor</h2>
 <ul>
-<li><strong>Google</strong> (Firebase Authentication, Google ile giriş, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud Messaging ve Gemini API): barındırma, giriş, eşitleme, sorular ve ses. Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
+<li><strong>Google</strong> (Firebase Authentication, Google ile giriş, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Messaging, Gemini API, Google Analytics for Firebase ve Firebase Crashlytics): barındırma, giriş, eşitleme, sorular, ses, kullanım ölçümü ve çökme raporları.<!--else-->Messaging ve Gemini API): barındırma, giriş, eşitleme, sorular ve ses.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play’de abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ADS--> Google AdMob reklamları seçer ve gösterir (bkz. <a href="#reklam">Reklamlar</a>).<!--end--> Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
 <li><strong>OpenAI</strong>: haber özetlerini yazar. Hiçbir kişisel veri almaz.</li>
-<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.</li>
+<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.<!--if WONDERWHY_PREMIUM--> App Store’da abonelik ödemesini alır.<!--end--></li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>RevenueCat</strong> (ABD): satın almaları ve aboneliğin durumunu doğrular.</li>
+<!--end-->
 <li><strong>GitHub</strong>: bu siteyi barındırır.</li>
-<li><strong>{emailProvider}</strong>: posta kutumuzu barındırır; bize gönderdiğin e-postalar orada durur.</li>
+<li><strong>{emailProvider}</strong>: posta kutumuzu barındırır<!--if WONDERWHY_EMAIL_CODE--> ve e-posta doğrulama kodlarını gönderir<!--end-->; bize gönderdiğin e-postalar orada durur.</li>
 </ul>
-<p>Bu hizmet sağlayıcılar veriyi bizim adımıza, kendi veri işleme şartlarına göre işler; bu şartlar veriyi en az bu politikada anlatıldığı kadar korumalarını gerektirir.</p>
+<p>Bu hizmet sağlayıcılar veriyi bizim adımıza, kendi veri işleme şartlarına göre işler; bu şartlar veriyi en az bu politikada anlatıldığı kadar korumalarını gerektirir.<!--if WONDERWHY_PREMIUM&!WONDERWHY_ADS--> Apple ve Google mağaza ödemelerini kendi gizlilik politikalarına göre de işler.<!--end--><!--if WONDERWHY_ADS&!WONDERWHY_PREMIUM--> Google reklam verisini kendi gizlilik politikasına göre de işler.<!--end--><!--if WONDERWHY_PREMIUM&WONDERWHY_ADS--> Apple ve Google mağaza ödemelerini, Google reklam verisini de kendi gizlilik politikalarına göre işler.<!--end--></p>
 <p>Bazıları veriyi Türkiye ve Avrupa Ekonomik Alanı dışında, ABD dahil başka ülkelerde işler. Bu aktarımlar yasanın öngördüğü güvencelere dayanır: AEA için hizmet sağlayıcıların standart sözleşme hükümleri, Türkiye için 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun (KVKK) 9. maddesindeki yollar.</p>
 
 <h2 id="saklama">Saklama süreleri</h2>
-<p>Hesabın ve içinde tuttukların, hesabı silene kadar kalır. Geri kalan her şey en çok 7 gün içinde silinir: her gece çalışan bir iş daha eskileri kaldırır.</p>
+<p>Hesabın ve içinde tuttukların, hesabı silene kadar kalır.<!--if WONDERWHY_ANALYTICS--> Kullanım ölçümü 90 gün kalır.<!--end--> Geri kalan her şey en çok 7 gün içinde silinir: her gece çalışan bir iş daha eskileri kaldırır.</p>
 <ul>
 <li><strong>Hesap ve eşitlenen veriler:</strong> hesabını silene kadar.</li>
 <li><strong>Oylar:</strong> haberin gününden 7 gün sonra haberle birlikte; hesabını daha önce silersen o an.</li>
-<li><strong>Misafir kimlikleri:</strong> 7 gün kullanılmazsa oyları ve sayaçlarıyla birlikte silinir. Var olan bir hesaba giriş yaptığında geride kalan misafir kimliği de buna dahil.</li>
+<li><strong>Misafir kimlikleri:</strong> 7 gün kullanılmazsa silinir. Var olan bir hesaba giriş yaptığında geride kalan misafir kimliği de buna dahil.</li>
 <li><strong>Sorun bildirimleri:</strong> 7 gün.</li>
+<!--if WONDERWHY_EMAIL_CODE-->
+<li><strong>E-posta doğrulama kodları:</strong> kodun kendisi saklanmaz; özeti ve deneme sayısı en çok 7 gün, hesabını silince hemen.</li>
+<!--end-->
 <li><strong>Günlük kullanım sayaçları ve ses işi kayıtları:</strong> 7 gün; hesabını silince hemen.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>Abonelik:</strong> güncel durumu abonelik sürdükçe; RevenueCat’teki kaydın hesabını silene kadar. Ücretsiz dinleme sayısı yalnız bugünün; çevrimdışı sesler en çok 7 gün. Apple ve Google satın alma kayıtlarını kendi politikalarına ve yasal yükümlülüklerine göre tutar.</li>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS-->
+<li><strong>Kullanım ölçümü:</strong> 90 gün; Google Analytics’te 2 ay. Hesabının kullanım özeti (ilk ve son kullanım günü, toplam sayılar) hesabını silene kadar; hesapsız kullanımda son kullanımdan 90 gün sonra silinir. Kimseye bağlı olmayan günlük toplamlar (ör. o gün kaç kişi dinledi) kalır.</li>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<li><strong>Çökme raporları:</strong> 90 gün.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Reklam verisi:</strong> Google’ın kendi sürelerine göre; biz tutmayız.</li>
+<!--end-->
 <li><strong>Ses kayıtları:</strong> saklanmaz. Soru ve cevap yalnız yukarıdaki iki durumda kalır: sorun bildiriminde 7 gün, Sorularım’da hesabını silene kadar.</li>
 <li><strong>Haberler, haber sesleri ve hazır cevaplar:</strong> haberin gününden 7 gün sonra.</li>
 <li><strong>Sunucu kayıtları:</strong> 7 gün. Hesap kimliği içermez.</li>
@@ -104,24 +188,33 @@
 </ul>
 
 <h2 id="silme">Verini silmek</h2>
-<p>Uygulamada <strong>Profil › Hesabı sil</strong>’e git ve <strong>Hesabı kalıcı olarak sil</strong> ile onayla. Bu işlem hesabını, altında tutulan her şeyi (listeler, ayarlar, kelimeler ve ilerleme), bütün oylarını, kullanım sayaçlarını ve ses işi kayıtlarını hemen siler. Apple ile giriş yaptıysan uygulama, Apple kimliğine erişimini de kaldırır. Telefonunda ise yukarıda anlatıldığı gibi listelerini kaldırır, ayarlarını bırakır.</p>
-<p>Sonrasında sunucularımızda hesabına bağlı hiçbir şey kalmaz. Hesap kimliği içermeyen sorun bildirimleri ve sunucu kayıtları 7 gün içinde silinir.</p>
+<p>Uygulamada <strong>Profil › Hesabı sil</strong>’e git ve <strong>Hesabı kalıcı olarak sil</strong> ile onayla. Bu işlem hesabını, altında tutulan her şeyi (listeler, ayarlar, kelimeler ve ilerleme), bütün oylarını, kullanım sayaçlarını<!--if WONDERWHY_ANALYTICS-->, kullanım ölçümünü<!--end--><!--if WONDERWHY_EMAIL_CODE-->, e-posta doğrulama kayıtlarını<!--end--><!--if WONDERWHY_PREMIUM-->, aboneliğinin durumunu, ücretsiz dinleme sayını, RevenueCat’teki kaydını<!--end--> ve ses işi kayıtlarını hemen siler. Apple ile giriş yaptıysan uygulama, Apple kimliğine erişimini de kaldırır. Telefonunda ise yukarıda anlatıldığı gibi listelerini kaldırır, ayarlarını bırakır.</p>
+<!--if WONDERWHY_PREMIUM-->
+<p>Hesabını silmek aboneliğini iptal etmez. Ücret alınmaya devam etmesin diye aboneliği App Store ya da Google Play’in abonelik ayarlarından iptal et.</p>
+<!--end-->
+<p>Sonrasında sunucularımızda hesabına bağlı hiçbir şey kalmaz.<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Google Analytics ve Crashlytics’teki kayıtlar kendi sürelerinde (2 ay, 90 gün), hesap<!--else--> Hesap<!--end--> kimliği içermeyen sorun bildirimleri ve sunucu kayıtları 7 gün içinde silinir.</p>
 <p>Uygulamayı kullanamıyorsan hesabının e-posta adresinden <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yaz. Adımlar <a href="{deleteAccount}">Hesabını sil</a> sayfasında da var. Misafir kimlikleri 7 gün kullanılmayınca kendiliğinden silinir; seninkinin daha önce silinmesini istersen bize yaz.</p>
 
 <h2 id="haklar">Hakların</h2>
 <p>Nerede yaşadığına göre bu hakların bir kısmına ya da tümüne sahipsin:</p>
 <ul>
-<li><strong>Türkiye (KVKK 11. madde):</strong> verinin işlenip işlenmediğini öğrenme ve bilgi isteme; işleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme; yurt içinde ya da yurt dışında kimlere aktarıldığını bilme; eksik ya da yanlışsa düzeltilmesini, silinmesini ve bunun aktarılanlara bildirilmesini isteme; yalnız otomatik sistemlerle analiz sonucu aleyhine çıkan bir sonuca itiraz etme; hukuka aykırı işleme yüzünden zarara uğrarsan zararın giderilmesini isteme. Bize yazılı olarak ya da e-postayla başvurabilirsin; en geç 30 gün içinde, ücretsiz cevap veririz. Cevaptan memnun kalmazsan Kişisel Verileri Koruma Kurulu’na şikâyette bulunabilirsin. Ayrıntı: <a href="{kvkk}">KVKK Aydınlatma Metni</a>.</li>
-<li><strong>AEA ve Birleşik Krallık (GDPR):</strong> verine erişme, düzeltme ya da sildirme; işlenmesini kısıtlama ya da itiraz etme; taşınabilir bir biçimde alma; rızanı istediğin zaman geri çekme; veri koruma otoritene şikâyet etme.</li>
+<li><strong>Türkiye (KVKK 11. madde):</strong> verinin işlenip işlenmediğini öğrenme ve bilgi isteme; işleme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme; yurt içinde ya da yurt dışında kimlere aktarıldığını bilme; eksik ya da yanlışsa düzeltilmesini, silinmesini ve bunun aktarılanlara bildirilmesini isteme; yalnız otomatik sistemlerle analiz sonucu aleyhine çıkan bir sonuca itiraz etme; hukuka aykırı işleme yüzünden zarara uğrarsan zararın giderilmesini isteme. Hesabına kayıtlı e-posta adresinden bize yazarak başvurabilirsin; en geç 30 gün içinde, ücretsiz cevap veririz. Cevaptan memnun kalmazsan Kişisel Verileri Koruma Kurulu’na şikâyette bulunabilirsin. Ayrıntı: <a href="{kvkk}">KVKK Aydınlatma Metni</a>.</li>
+<li><strong>AEA ve Birleşik Krallık (GDPR):</strong> verine erişme, düzeltme ya da sildirme; işlenmesini kısıtlama ya da itiraz etme<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> (kullanım ölçümü ve çökme raporları için uygulamadaki anahtarlarla hemen)<!--end-->; taşınabilir bir biçimde alma; rızanı istediğin zaman geri çekme; veri koruma otoritene şikâyet etme.</li>
 <li><strong>Kaliforniya (CCPA/CPRA):</strong> ne topladığımızı ve nasıl kullandığımızı öğrenme, sildirme ve düzeltme, bu hakları kullandığın için farklı muamele görmeme. Kişisel bilgiyi satmayız ve paylaşmayız. Hesap girişin gibi hassas bilgileri yalnız hizmeti sunmak için kullanırız.</li>
 </ul>
 <p>Bu haklardan birini kullanmak için <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yaz. Talebin senden geldiğini doğrulamanı isteyebiliriz.</p>
 
 <h2 id="hukuki-sebepler">Hukuki sebepler</h2>
 <ul>
-<li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c; GDPR md. 6/1-b).</li>
+<li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar<!--if WONDERWHY_PREMIUM-->, abonelik ve ücretsiz dinleme süresi<!--end-->): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c; GDPR md. 6/1-b).</li>
 <li><strong>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve kayıtlar:</strong> meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f).</li>
-<li><strong>Mikrofon ve bildirimler:</strong> telefonunun ayarlarından geri alabileceğin iznin (GDPR md. 6/1-a).</li>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<li><strong>Kullanım ölçümü ve çökme raporları:</strong> uygulamayı geliştirmek ve hataları düzeltmek için meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f). Profil › Gizlilik ve veri’den itiraz edip kapatabilirsin.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Kişiselleştirilmemiş reklam:</strong> <!--if WONDERWHY_PREMIUM-->ücretsiz sürümü<!--else-->uygulamayı<!--end--> sürdürebilmek için meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f). Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de rıza formundaki seçimin (GDPR md. 6/1-a).</li>
+<!--end-->
+<li><strong>Mikrofon<!--if WONDERWHY_VOICE_COMMANDS-->, konuşma tanıma<!--end--> ve bildirimler:</strong> telefonunun ayarlarından geri alabileceğin iznin (GDPR md. 6/1-a).</li>
 <li><strong>Yasal yükümlülükler</strong>, uygulandığı durumlarda (KVKK md. 5/2-ç; GDPR md. 6/1-c).</li>
 </ul>
 

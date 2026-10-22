@@ -1,17 +1,46 @@
 // wonderwhy.net denetimi: docs üzerinde çalışır (önce build.mjs).
 //
 //   node check.mjs
+//   node check.mjs --variants   # site.json › appFlags'in bütün birleşimlerini
+//                               # geçici klasörlere derler ve her birini denetler
 //
 // Hata varsa 1 ile çıkar (publish.sh yayını durdurur). Yer tutucular yalnız uyarıdır.
 // Bağımlılık yok: HTML'i küçük bir etiket tarayıcıyla okur; site kendi
 // ürettiğimiz, düzenli bir HTML olduğu için bu yeterli.
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
+import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { dirname, join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const DIST = join(HERE, 'docs');
 const site = JSON.parse(readFileSync(join(HERE, 'src', 'site.json'), 'utf8'));
+
+// Hukuki metin bayrağa bağlı (build.mjs › cond): yayın günü hangi bayraklar
+// açılırsa açılsın metin bozuk çıkmasın diye her birleşim derlenip denetlenir.
+if (process.argv.includes('--variants')) {
+  const names = Object.keys(site.appFlags);
+  const root = mkdtempSync(join(tmpdir(), 'wonderwhy-variants-'));
+  const failed = [];
+  for (let mask = 0; mask < 1 << names.length; mask++) {
+    const on = names.filter((_, i) => mask & (1 << i));
+    const out = join(root, String(mask));
+    const env = { ...process.env, APP_FLAGS: on.join(','), SITE_OUT: out };
+    const build = spawnSync(process.execPath, [join(HERE, 'build.mjs')], { env, encoding: 'utf8' });
+    const check = build.status === 0 && spawnSync(process.execPath, [join(HERE, 'check.mjs')], { env, encoding: 'utf8' });
+    if (build.status !== 0 || check.status !== 0) {
+      failed.push(on.join(',') || '(hepsi kapalı)');
+      const log = build.status !== 0 ? build.stderr : check.stdout;
+      console.log(`HATA   [${on.join(',') || 'hepsi kapalı'}]\n${log.split('\n').filter((l) => /HATA|Error/.test(l)).join('\n')}`);
+    }
+    rmSync(out, { recursive: true, force: true });
+  }
+  rmSync(root, { recursive: true, force: true });
+  console.log(`${1 << names.length} birleşim (${names.join(', ')}): ${failed.length ? `${failed.length} hatalı` : 'hepsi temiz'}`);
+  process.exit(failed.length ? 1 : 0);
+}
+
+const DIST = process.env.SITE_OUT || join(HERE, 'docs');
 const ORIGIN = site.origin;
 const MAX_HTML_BYTES = 80_000;
 const MAX_IMAGE_BYTES = 120_000; // tek görsel (ekranlar ~30 KB AVIF, ~60–80 KB JPEG)
@@ -103,6 +132,14 @@ for (const file of files.filter((f) => f.endsWith('.html'))) {
   if (Buffer.byteLength(html) > MAX_HTML_BYTES) err(file, `${Buffer.byteLength(html)} bayt (> ${MAX_HTML_BYTES})`);
   const todos = (html.match(/class="todo"/g) || []).length;
   if (todos) warn(file, `${todos} yer tutucu (site.json'da doldur)`);
+  // Bayrak blokları (build.mjs › cond) iz bırakmamalı: işaret, boş öğe, düşen
+  // bloğun arkasında kalan çift boşluk ya da noktalama.
+  if (/<!--(?:if\b|else-->|end-->)/.test(html)) err(file, 'bayrak işareti kalmış (<!--if/else/end-->)');
+  const empty = html.match(/<(li|p|td|h2|h3|strong)(?:\s[^>]*)?>\s*<\/\1>/);
+  if (empty) err(file, `boş <${empty[1]}> (bayrak bloğu?)`);
+  const body = (html.match(/<main[\s\S]*<\/main>/) || [''])[0].replace(/<[^>]+>/g, '');
+  const loose = body.match(/[^\s] {2,}[^\s]| [.,;:)]|[.,;:]{2}|\( /);
+  if (loose) err(file, `metinde boşluk ya da noktalama hatası: "${loose[0]}"`);
   // Site olduğu gibi, GitHub'ın alt yolunda da sunuluyor: iç bağlantı göreli
   // olmalı. 404 istisna (her derinlikte aynı dosya; build.mjs › notFound).
   if (file !== '/404.html') {
@@ -229,6 +266,16 @@ if (/Disallow:\s*\/\S/.test(robots)) warn('robots.txt', 'Disallow var: noindex s
   if (cname !== new URL(ORIGIN).host) err('CNAME', `${cname} ≠ ${new URL(ORIGIN).host}`);
 }
 if (!fileSet.has('/.nojekyll')) err('.nojekyll', 'yok');
+// app-ads.txt (AdMob, IAB biçimi): varsa her satır "alan, pub-…, DIRECT|RESELLER[, kimlik]".
+// AdMob dosyayı mağaza sayfasındaki geliştirici sitesinin kökünde arar.
+if (fileSet.has('/app-ads.txt')) {
+  const rows = readFileSync(join(DIST, 'app-ads.txt'), 'utf8').split('\n').map((l) => l.replace(/#.*/, '').trim()).filter(Boolean);
+  if (!rows.length) err('app-ads.txt', 'boş');
+  for (const r of rows)
+    if (!/^[a-z0-9.-]+\.[a-z]{2,}, pub-\d{16}, (DIRECT|RESELLER)(, [0-9a-f]+)?$/.test(r)) err('app-ads.txt', `biçim: ${r}`);
+  if (!rows.some((r) => r.startsWith('google.com, pub-') && r.includes(', DIRECT, f08c47fec0942fa0')))
+    err('app-ads.txt', 'AdMob satırı yok (google.com, pub-…, DIRECT, f08c47fec0942fa0)');
+}
 
 // ---------------------------------------------------------------- Universal Links / App Links
 

@@ -12,8 +12,12 @@ Website of the wonderwhy app (Turkish and English).
   düzenlenmez; `build.mjs` üretir.
 - `src/`: kaynak.
   - `site.json`: tek ayar dosyası (marka, adres, yayıncı, e-postalar, mağaza
-    bağlantıları, hukuki metinlerin tarihi).
+    bağlantıları, hukuki metinlerin tarihi, `appFlags`).
   - `strings/{en,tr}.json`: arayüz metinleri; `content/{en,tr}/`: hukuki metinler.
+  - `appFlags`: yayındaki uygulama sürümünde açık özellikler. Metinlerdeki
+    `<!--if WONDERWHY_X-->…<!--else-->…<!--end-->` blokları bunlara göre
+    derlenir (`!` tersi, `|` veya, `&` ve; iç içe olabilir). Ayrıntı
+    `build.mjs` › `cond`.
   - `data/`, `static/`, `styles.css`.
 - `build.mjs` (`src` → `docs`), `check.mjs` (denetim), `publish.sh` (derle,
   denetle, kaydet, gönder).
@@ -27,6 +31,7 @@ Website of the wonderwhy app (Turkish and English).
 
 ```bash
 node build.mjs && node check.mjs
+node check.mjs --variants   # appFlags'in bütün birleşimleri
 ./publish.sh --dry-run
 ./publish.sh
 node tools/crawl.mjs https://wonderwhy.net/
