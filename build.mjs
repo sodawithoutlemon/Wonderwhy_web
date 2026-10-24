@@ -5,8 +5,8 @@
 //   APP_FLAGS=WONDERWHY_ADS,WONDERWHY_PREMIUM SITE_OUT=/tmp/x node build.mjs
 //     # başka bayraklarla, başka klasöre (check.mjs --variants böyle çağırır)
 //
-// Tek ayar dosyası src/site.json; metinler src/strings/{en,tr}.json; hukuki
-// metinler src/content/{en,tr}/*.html. Ayrıntı: docs/14-WEB-SITESI.md.
+// Tek ayar dosyası src/site.json; metinler src/strings/{en,tr,es,de}.json; hukuki
+// metinler src/content/{dil}/*.html. Ayrıntı: docs/14-WEB-SITESI.md.
 //
 // Çıktı olduğu gibi yayınlanır (GitHub Pages, derlemesiz): iç bağlantılar
 // göreli yazılır ki site hem wonderwhy.net'te hem GitHub'ın alt yolunda
@@ -22,8 +22,8 @@ const DIST = process.env.SITE_OUT || join(HERE, 'docs');
 const read = (p) => readFileSync(join(SRC, p), 'utf8');
 const json = (p) => JSON.parse(read(p));
 
-const LANGS = ['en', 'tr'];
-const other = (lang) => (lang === 'en' ? 'tr' : 'en');
+// Dört dil (24 Eki, ADR-072): uygulamanın arayüz dilleri. İlk dil x-default.
+const LANGS = ['en', 'tr', 'es', 'de'];
 const site = json('site.json');
 
 // ---------------------------------------------------------------- uygulama bayrakları
@@ -105,21 +105,31 @@ const demo = json('data/demo.json');
 const audio = json('data/audio.json');
 const wall = Object.fromEntries(LANGS.map((l) => [l, json(`data/wall.${l}.json`)]));
 const samples = Object.fromEntries(LANGS.map((l) => [l, json(`data/samples.${l}.json`)]));
-const screens = json('data/screens.json'); // tools/screens.sh
+const gallery = json('data/gallery.json'); // tools/gallery.sh
 
-// Sayfa çiftleri: dil değiştirici, hreflang ve sitemap hep buradan. Sonda "/" var.
+// Sayfa takımları: dil menüsü, hreflang ve sitemap hep buradan. Sonda "/" var.
+// Bir sayfanın her dilde olması gerekmez (KVKK yalnız en ve tr).
 const PAGES = {
-  home: { en: '/', tr: '/tr/' },
-  privacy: { en: '/privacy/', tr: '/tr/gizlilik/' },
-  terms: { en: '/terms/', tr: '/tr/kullanim-sartlari/' },
-  support: { en: '/support/', tr: '/tr/destek/' },
+  home: { en: '/', tr: '/tr/', es: '/es/', de: '/de/' },
+  privacy: { en: '/privacy/', tr: '/tr/gizlilik/', es: '/es/privacidad/', de: '/de/datenschutz/' },
+  terms: { en: '/terms/', tr: '/tr/kullanim-sartlari/', es: '/es/condiciones/', de: '/de/nutzungsbedingungen/' },
+  support: { en: '/support/', tr: '/tr/destek/', es: '/es/soporte/', de: '/de/hilfe/' },
   // Hesap silme (Google Play Data safety bu adresi istiyor; ADR-043).
-  deleteAccount: { en: '/delete-account/', tr: '/tr/hesap-silme/' },
+  deleteAccount: { en: '/delete-account/', tr: '/tr/hesap-silme/', es: '/es/eliminar-cuenta/', de: '/de/konto-loeschen/' },
   // Konu sayfası (Y3, 20 Eki): "compare news sources" / "haber kaynaklarını karşılaştırma".
-  compare: { en: '/compare-news-sources/', tr: '/tr/kaynak-karsilastirma/' },
+  compare: {
+    en: '/compare-news-sources/',
+    tr: '/tr/kaynak-karsilastirma/',
+    es: '/es/comparar-fuentes-de-noticias/',
+    de: '/de/nachrichtenquellen-vergleichen/',
+  },
   // KVKK md. 10 aydınlatma metni (Y3, 20 Eki): gizlilik politikasının KVKK düzenindeki özeti.
   kvkk: { en: '/kvkk-notice/', tr: '/tr/kvkk/' },
 };
+/** Sayfanın bulunduğu diller, LANGS sırasıyla. */
+const langsOf = (key) => LANGS.filter((l) => PAGES[key][l]);
+/** Sayfa o dilde yoksa İngilizcesi (ör. KVKK'ya İspanyolca politikadan bağlantı). */
+const pageUrl = (key, lang) => PAGES[key][lang] ?? PAGES[key].en;
 // İçeriği `content/{dil}/{anahtar}.html`'den gelen hukuki sayfalar.
 const LEGAL_PAGES = ['privacy', 'terms', 'deleteAccount', 'kvkk'];
 // Uygulamanın açtığı, dile bağlı olmayan adresler (LegalLinks). noindex.
@@ -193,7 +203,7 @@ function head(lang, { title, description, page = null, noindex = false, jsonld =
   const url = page ? abs(PAGES[page][lang]) : ogUrl;
   if (page) {
     tags.push(`<link rel="canonical" href="${url}">`);
-    for (const l of LANGS) tags.push(`<link rel="alternate" hreflang="${l}" href="${abs(PAGES[page][l])}">`);
+    for (const l of langsOf(page)) tags.push(`<link rel="alternate" hreflang="${l}" href="${abs(PAGES[page][l])}">`);
     tags.push(`<link rel="alternate" hreflang="x-default" href="${abs(PAGES[page].en)}">`);
   }
   if (url) {
@@ -205,7 +215,7 @@ function head(lang, { title, description, page = null, noindex = false, jsonld =
       `<meta property="og:description" content="${esc(description)}">`,
       `<meta property="og:url" content="${url}">`,
       `<meta property="og:locale" content="${t.ogLocale}">`,
-      `<meta property="og:locale:alternate" content="${S[other(lang)].ogLocale}">`,
+      ...(page ? langsOf(page) : LANGS).filter((l) => l !== lang).map((l) => `<meta property="og:locale:alternate" content="${S[l].ogLocale}">`),
     );
     if (og) {
       tags.push(
@@ -239,27 +249,40 @@ function head(lang, { title, description, page = null, noindex = false, jsonld =
   return tags.join('\n');
 }
 
+// Uygulama ikonu (S6, ADR-049): siyah karede dinleyen soru. Üst çubukta, ana
+// sayfanın girişinde ve İndir'de; çevresini CSS çizer (siyah zeminde görünsün).
+const appIcon = (size, cls = 'app-icon') =>
+  `<img class="${cls}" src="/brand/icon-512.png" alt="" width="${size}" height="${size}" data-deco>`;
+
+/** Sayfanın diğer dillerdeki sürümleri: `<a hreflang lang>` listesi. */
+const langLinks = (lang, page) =>
+  langsOf(page)
+    .filter((l) => l !== lang)
+    .map((l) => `<a href="${PAGES[page][l]}" hreflang="${l}" lang="${l}">${esc(S[l].langName)}</a>`);
+
 function header(lang, page) {
   const t = S[lang];
-  const o = other(lang);
-  const alt = page
-    ? `<a class="lang-link" href="${PAGES[page][o]}" hreflang="${o}" lang="${o}">${esc(S[o].langName)}</a>`
+  // Dil menüsü (24 Eki): dört dil; JS'siz çalışan <details>.
+  const menu = page
+    ? `<details class="lang-menu"><summary aria-label="${esc(t.nav.language)}: ${esc(t.langName)}">${esc(t.langName)}</summary><ul>${langLinks(lang, page)
+        .map((a) => `<li>${a.replace('<a ', '<a class="lang-link" ')}</li>`)
+        .join('')}</ul></details>`
     : '';
   return `<a class="skip" href="#main">${esc(t.skip)}</a>
 <header class="top"><div class="wrap">
-<a class="wordmark kicker" href="${PAGES.home[lang]}">${esc(site.brand)}</a>
-${alt}
+<a class="wordmark" href="${PAGES.home[lang]}">${appIcon(28, 'mark')}<span>${esc(site.brand)}</span></a>
+${menu}
 </div></header>`;
 }
 
 function footer(lang, page) {
   const t = S[lang];
-  const o = other(lang);
   const link = (p) => `<li><a href="${PAGES[p][lang]}">${esc(t.nav[p])}</a></li>`;
-  const alt = `<li><a href="${PAGES[page][o]}" hreflang="${o}" lang="${o}">${esc(S[o].langName)}</a></li>`;
   const note = site.stores.appStore || site.stores.googlePlay ? '' : ` · ${esc(t.footer.notYet)}`;
+  const langs = langLinks(lang, page).map((a) => `<li>${a}</li>`).join('');
   return `<footer class="foot"><div class="wrap">
-<nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('compare')}${link('privacy')}${link('terms')}${link('support')}${alt}</ul></nav>
+<nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('compare')}${link('privacy')}${link('terms')}${link('support')}</ul></nav>
+<nav aria-label="${esc(t.footer.languages)}"><ul class="foot-langs">${langs}</ul></nav>
 <p class="footnote">© ${site.year} ${esc(site.brand)}${note}</p>
 ${hasBadges() ? `<p class="footnote">${esc(t.footer.trademarks)}</p>\n` : ''}</div></footer>`;
 }
@@ -281,28 +304,24 @@ ${key ? footer(lang, key) : ''}
 
 // ---------------------------------------------------------------- ana sayfa
 
-const SPEEDS = [10, 15, 12, 14, 11]; // px/sn; welcome.dart 10/15/12, geniş ekranda iki sütun daha
-const TILE_PITCH = 160; // 150 yükseklik + 10 aralık
+// Kayan haber duvarı (24 Eki, ADR-072; kullanıcı: "kayan haberlerde resim yok,
+// bu kadar büyük olmasına gerek yok, kayan haber solda, bilgi sağda"). Geniş
+// ekranda girişin solunda, telefonda yazının altında; düz, fotoğraflı küçük
+// karolar. Fotoğraflar yayıncının adresinden, Referer'sız (kopya yok, ADR-034);
+// açılmazsa karonun zemini ve yazısı kalır. Her manşet HTML'de bir kez; kesintisiz
+// kayma (-50%) için izin ikinci kopyasını site.js üretir.
+const SPEEDS = [12, 16, 14]; // px/sn; welcome.dart 10/15/12'ye yakın, biraz canlı
+const TILE_PITCH = 196; // ortalama karo yüksekliği + 10 aralık (süre hesabı için)
 
-// Her manşet HTML'de bir kez (Y3, 20 Eki; önceden 24 manşet 80 karoydu). Kesintisiz
-// kayma için izin ikinci kopyasını ve geniş ekranın 4.–5. sütunlarını site.js
-// üretir (`data-copy` sütunu, `data-shift` kadar döndürülmüş). JS yoksa duvar
-// zaten kaymıyordu; o sütunlar boş kalır.
 function wallHtml(lang) {
   const items = wall[lang].items;
   const cols = [0, 1, 2].map((c) => items.filter((_, i) => i % 3 === c));
   const tile = (it) =>
-    `<div class="tile"><p class="kicker">${esc(S[lang].categories[it.category])}</p><p class="footnote">${esc(it.headline)}</p></div>`;
+    `<div class="tile"><img src="${esc(it.image)}" alt="" width="320" height="200" loading="lazy" decoding="async" fetchpriority="low" referrerpolicy="no-referrer" data-deco><div class="tile-text"><p class="tile-cat">${esc(S[lang].categories[it.category])}</p><p class="tile-head">${esc(it.headline)}</p></div></div>`;
   const dur = (n, c) => ((n * TILE_PITCH) / SPEEDS[c]).toFixed(1);
-  const filled = cols.map(
-    (col, c) => `<div class="wall-col"><div class="wall-track" style="--dur:${dur(col.length, c)}s">${col.map(tile).join('')}</div></div>`,
-  );
-  // Yalnız geniş ekranda görünür; içini site.js doldurur.
-  const copies = [0, 1].map(
-    (src, k) =>
-      `<div class="wall-col"><div class="wall-track" style="--dur:${dur(cols[src].length, 3 + k)}s" data-copy="${src}" data-shift="4"></div></div>`,
-  );
-  return [...filled, ...copies].join('\n');
+  return cols
+    .map((col, c) => `<div class="wall-col"><div class="wall-track" style="--dur:${dur(col.length, c)}s">${col.map(tile).join('')}</div></div>`)
+    .join('\n');
 }
 
 /**
@@ -371,14 +390,27 @@ function player(lang, clip, stepTitle) {
 </div>`;
 }
 
-// Uygulamanın ekranı (tools/screens.sh; mağaza görsellerinden, kurgusal içerik).
-// AVIF, yoksa JPEG; çerçeve CSS'te. Adım adları: listen, ask, compare.
-const SHOTS = ['listen', 'ask', 'compare'];
-const shotUrl = (lang, id, ext) => `/screens/${lang}/${id}.${ext}`;
+// Mağaza görselleri (24 Eki, ADR-072; tools/gallery.sh): App Store'un iPhone 6,9"
+// seti olduğu gibi, başlık yazısıyla; kurgusal içerik (ADR-057). AVIF, yoksa JPEG.
+// Kareler ve sıra gallery.json'dan; mağaza seti değişince betik yeniden çalışır.
+const shotUrl = (lang, id, ext) => `/gallery/${lang}/${id}.${ext}`;
 const shot = (lang, id, { eager = false } = {}) => `<picture class="shot">
 <source type="image/avif" srcset="${shotUrl(lang, id, 'avif')}">
-<img src="${shotUrl(lang, id, 'jpg')}" alt="${esc(S[lang].how[id].shotAlt)}" width="${screens.width}" height="${screens.height}"${eager ? '' : ' loading="lazy"'} decoding="async">
+<img src="${shotUrl(lang, id, 'jpg')}" alt="${esc(S[lang].gallery.items[id])}" width="${gallery.width}" height="${gallery.height}"${eager ? '' : ' loading="lazy"'} decoding="async">
 </picture>`;
+
+function galleryHtml(lang) {
+  const g = S[lang].gallery;
+  const items = gallery.items.map((id) => `<li>${shot(lang, id)}</li>`).join('\n');
+  return `<section id="screens" class="screens" aria-labelledby="screens-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">${esc(g.kicker)}</p><h2 id="screens-title" class="title1">${esc(g.title)}</h2></div>
+</div>
+<section class="gallery" aria-label="${esc(g.label)}" tabindex="0"><ul>
+${items}
+</ul></section>
+<div class="wrap"><p class="footnote">${esc(g.note)}</p></div>
+</section>`;
+}
 
 const seg = (tag, cls, start, end, html) =>
   `<${tag} class="${cls}" data-seg data-start="${start}" data-end="${end}">${html}</${tag}>`;
@@ -394,7 +426,6 @@ function howHtml(lang) {
   const more = (id) => (h[id].more ? ` <a href="${PAGES.compare[lang]}">${esc(h[id].more)}</a>` : '');
   const step = (i, id, title, body, card) => `<article class="step reveal" style="--i:${i}" aria-labelledby="step-${id}">
 <div class="step-head"><h3 id="step-${id}" class="title3"><span class="step-no">${i + 1}</span>${esc(title)}</h3><p class="subhead">${esc(body)}${more(id)}</p></div>
-${shot(lang, id)}
 <div class="card">${tagSample}
 ${card}
 </div>
@@ -450,6 +481,57 @@ ${cards}
 </div></section>`;
 }
 
+// Özellik ikonları: SF Symbols'un çizgi üslubunda (web'de SF Symbols yok), 24 px.
+const ICON_PATHS = {
+  car: '<path d="M5 11l1.6-4.3A2 2 0 0 1 8.5 5.4h7a2 2 0 0 1 1.9 1.3L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><path d="M6.5 17v2M17.5 17v2"/><circle cx="7.5" cy="14" r=".9" fill="currentColor" stroke="none"/><circle cx="16.5" cy="14" r=".9" fill="currentColor" stroke="none"/>',
+  voice: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/>',
+  speed: '<path d="M4.6 17.5a8.5 8.5 0 1 1 14.8 0"/><path d="M12 13.5l4.2-4.2"/><circle cx="12" cy="13.5" r="1.2" fill="currentColor" stroke="none"/>',
+  narrator: '<circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M17 6.2a4.2 4.2 0 0 1 0 5.6M19.7 3.8a7.8 7.8 0 0 1 0 10.4"/>',
+  offline: '<path d="M12 3.5v11.5M7.5 10.5 12 15l4.5-4.5"/><path d="M5 19.5h14"/>',
+  editions: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.7 5.4 3.7 8.5s-1.3 5.9-3.7 8.5c-2.4-2.6-3.7-5.4-3.7-8.5S9.6 6.1 12 3.5Z"/>',
+  check: '<path d="M5 12.5l4.2 4.2L19 7"/>',
+};
+const svgIcon = (name, size = 24) =>
+  `<svg width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICON_PATHS[name]}</svg>`;
+
+/** Bayrak bloğu düşünce boş kalan liste öğeleri ve SSS soruları atlanır. */
+const faqItems = (lang) => S[lang].faq.items.filter((it) => it.q);
+
+// 2.0.0'ın yenileri (24 Eki, ADR-072). Premium olanların yanında etiket.
+function featuresHtml(lang) {
+  const f = S[lang].features;
+  const items = f.items
+    .filter((it) => it.title)
+    .map(
+      (it, i) => `<li class="feature reveal" style="--i:${i}"><span class="f-icon">${svgIcon(it.key)}</span><div><h3 class="headline">${esc(it.title)}${it.premium && flags[it.premium] ? ` <span class="sample-tag">${esc(f.premium)}</span>` : ''}</h3><p class="subhead">${esc(it.body)}</p></div></li>`,
+    )
+    .join('\n');
+  return `<section id="new" aria-labelledby="new-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">${esc(f.kicker)}</p><h2 id="new-title" class="title1">${esc(f.title)}</h2><p class="lead">${esc(f.lead)}</p></div>
+<ul class="features">
+${items}
+</ul>
+</div></section>`;
+}
+
+// Ücretsiz ve Premium (Y3b kararı: fiyat yok, fiyatı mağaza gösterir). Yalnız
+// abonelik açıkken (WONDERWHY_PREMIUM).
+function premiumHtml(lang) {
+  const p = S[lang].premium;
+  if (!p.kicker) return '';
+  const list = (items) =>
+    `<ul class="checks">${items.filter(Boolean).map((x) => `<li>${svgIcon('check', 18)}<span>${esc(x)}</span></li>`).join('')}</ul>`;
+  const note = fill(p.noteHtml, { terms: `${PAGES.terms[lang]}#${S[lang].support.termsAnchor}` });
+  return `<section id="premium" aria-labelledby="premium-title"><div class="wrap">
+<div class="section-head reveal"><p class="kicker">${esc(p.kicker)}</p><h2 id="premium-title" class="title1">${esc(p.title)}</h2></div>
+<div class="plans">
+<div class="plan reveal"><h3 class="title3">${esc(p.free.name)}</h3>${list(p.free.items)}</div>
+<div class="plan plan-plus reveal" style="--i:1"><h3 class="title3">${esc(p.plus.name)}</h3>${list(p.plus.items)}</div>
+</div>
+<p class="footnote plans-note">${note}</p>
+</div></section>`;
+}
+
 function homeBody(lang) {
   const t = S[lang];
   const released = site.stores.appStore || site.stores.googlePlay;
@@ -459,9 +541,10 @@ function homeBody(lang) {
   const faqVars = {
     privacy: PAGES.privacy[lang],
     support: PAGES.support[lang],
+    supportSub: `${PAGES.support[lang]}#subscription`,
     hello: esc(site.email.hello),
   };
-  const faq = t.faq.items
+  const faq = faqItems(lang)
     .map(
       (it, i) =>
         `<details class="reveal" style="--i:${i}"><summary>${esc(it.q)}</summary><div class="answer"><p>${it.aHtml ? fill(it.aHtml, faqVars) : esc(it.a)}</p></div></details>`,
@@ -476,20 +559,27 @@ function homeBody(lang) {
   const d = t.download;
   const mail = `mailto:${site.email.hello}?subject=${encodeURIComponent(d.notifySubject)}`;
   return `<main id="main">
-<section class="hero" aria-labelledby="hero-title">
-<button class="wall-toggle" type="button" aria-pressed="false" aria-label="${esc(t.wall.pause)}">${icon.pause}${icon.play}</button>
-<div class="wall" aria-hidden="true" data-nosnippet><div class="wall-tilt">
-${wallHtml(lang)}
-</div></div>
-<div class="hero-text wrap">
-<p class="kicker rise" style="--i:0">${esc(t.hero.kicker)}</p>
-<h1 id="hero-title" class="large-title rise" style="--i:1">${lines(t.hero.title)}</h1>
+<section class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid">
+<div class="hero-text">
+<div class="rise" style="--i:0">${appIcon(64)}</div>
+<p class="kicker rise" style="--i:1">${esc(t.hero.kicker)}</p>
+<h1 id="hero-title" class="large-title rise" style="--i:2">${lines(t.hero.title)}</h1>
 <p class="body rise" style="--i:3">${esc(t.hero.body)}</p>
-<div class="hero-actions rise" style="--i:5">${heroActions}</div>
+<div class="hero-actions rise" style="--i:4">${heroActions}</div>
+<p class="rise" style="--i:5"><a class="new-link" href="#new">${esc(t.hero.newLink)} <span aria-hidden="true">›</span></a></p>
 </div>
-</section>
+<div class="wall-panel">
+<button class="wall-toggle" type="button" aria-pressed="false" aria-label="${esc(t.wall.pause)}">${icon.pause}${icon.play}</button>
+<div class="wall" aria-hidden="true" data-nosnippet>
+${wallHtml(lang)}
+</div>
+</div>
+</div></section>
+${galleryHtml(lang)}
+${featuresHtml(lang)}
 ${howHtml(lang)}
 ${samplesHtml(lang)}
+${premiumHtml(lang)}
 <section id="editions" aria-labelledby="editions-title"><div class="wrap">
 <div class="section-head reveal"><p class="kicker">${esc(t.editions.kicker)}</p><h2 id="editions-title" class="title1">${esc(t.editions.title)}</h2><p class="lead">${esc(t.editions.lead)}</p></div>
 <ul class="choices">
@@ -497,6 +587,7 @@ ${editions}
 </ul>
 </div></section>
 <section id="download" aria-labelledby="download-title"><div class="wrap download">
+${appIcon(72)}
 <div class="section-head reveal"><p class="kicker">${esc(d.kicker)}</p><h2 id="download-title" class="title1">${esc(d.title)}</h2><p class="lead">${esc(d.lead)}</p></div>
 ${storeButtons(lang, 'web-home')}
 ${released ? '' : `<a class="btn btn-quiet" href="${esc(mail)}">${esc(d.notify)}</a>
@@ -556,16 +647,21 @@ function homeJsonLd(lang) {
       publisher: { '@id': abs('/#org') },
     };
     if (brand.has('icon-512.png')) app.image = abs('/brand/icon-512.png');
-    app.screenshot = SHOTS.map((id) => abs(shotUrl(lang, id, 'jpg')));
+    app.screenshot = gallery.items.map((id) => abs(shotUrl(lang, id, 'jpg')));
     if (pub.person) app.author = { '@type': 'Person', name: pub.person };
     graph.push(app);
   }
-  const faqVars = { privacy: abs(PAGES.privacy[lang]), support: abs(PAGES.support[lang]), hello: site.email.hello };
+  const faqVars = {
+    privacy: abs(PAGES.privacy[lang]),
+    support: abs(PAGES.support[lang]),
+    supportSub: abs(`${PAGES.support[lang]}#subscription`),
+    hello: site.email.hello,
+  };
   graph.push({
     '@type': 'FAQPage',
     '@id': abs(PAGES.home[lang] + '#faq'),
     inLanguage: lang,
-    mainEntity: t.faq.items.map((it) => ({
+    mainEntity: faqItems(lang).map((it) => ({
       '@type': 'Question',
       name: it.q,
       acceptedAnswer: { '@type': 'Answer', text: it.aHtml ? fill(it.aHtml, faqVars).replace(/<[^>]+>/g, '') : it.a },
@@ -607,7 +703,7 @@ function compareBody(lang) {
 <p class="lead rise" style="--i:3">${esc(c.lead)}</p>
 <div class="rise" style="--i:5">${storeButtons(lang, 'web-compare')}</div>
 </div>
-${shot(lang, 'compare', { eager: true })}
+${shot(lang, 'story_compare', { eager: true })}
 </div></section>
 <section id="kinds" aria-labelledby="kinds-title"><div class="wrap">
 <div class="section-head reveal"><h2 id="kinds-title" class="title1">${esc(c.kindsTitle)}</h2></div>
@@ -669,7 +765,7 @@ function compareJsonLd(lang) {
         inLanguage: lang,
         isPartOf: { '@id': abs('/#website') },
         about: { '@id': abs('/#app') },
-        primaryImageOfPage: abs(shotUrl(lang, 'compare', 'jpg')),
+        primaryImageOfPage: abs(shotUrl(lang, 'story_compare', 'jpg')),
         breadcrumb: { '@id': url + '#breadcrumb' },
       },
       {
@@ -694,7 +790,6 @@ function compareJsonLd(lang) {
 
 function legalBody(lang, key) {
   const t = S[lang];
-  const o = other(lang);
   const vars = {
     brand: esc(site.brand),
     domain: esc(new URL(site.origin).host),
@@ -709,7 +804,8 @@ function legalBody(lang, key) {
     terms: PAGES.terms[lang],
     support: PAGES.support[lang],
     deleteAccount: PAGES.deleteAccount[lang],
-    kvkk: PAGES.kvkk[lang],
+    // KVKK aydınlatma metni yalnız en ve tr: es/de politika İngilizcesine bağlanır.
+    kvkk: pageUrl('kvkk', lang),
     updated: dateText(site.legalUpdated, lang),
   };
   const file = `content/${lang}/${key}.html`;
@@ -719,8 +815,8 @@ function legalBody(lang, key) {
     .join('');
   return `<main id="main" class="doc"><div class="wrap narrow">
 <div class="doc-head"><p class="kicker">${esc(t.legal.kicker)}</p><h1 class="large-title">${esc(t.pages[key].heading)}</h1>
-<p class="footnote">${esc(fill(t.legal.updated, { date: vars.updated }))} · <a href="${PAGES[key][o]}" hreflang="${o}" lang="${o}">${esc(S[o].legal.versionLink)}</a></p></div>
-${site.legalDraft ? `<p class="draft callout">${esc(t.legal.draft)}</p>\n` : ''}<nav class="toc" aria-labelledby="toc-title"><p id="toc-title" class="headline">${esc(t.legal.contents)}</p><ol>${toc}</ol></nav>
+<p class="footnote">${esc(fill(t.legal.updated, { date: vars.updated }))} · ${esc(t.legal.otherLanguages)}: ${langLinks(lang, key).join(', ')}</p></div>
+${site.legalDraft ? `<p class="draft callout">${esc(t.legal.draft)}</p>\n` : ''}${t.legal.translationNote ? `<p class="draft callout">${esc(t.legal.translationNote)}</p>\n` : ''}<nav class="toc" aria-labelledby="toc-title"><p id="toc-title" class="headline">${esc(t.legal.contents)}</p><ol>${toc}</ol></nav>
 <div class="prose">
 ${content}
 </div>
@@ -735,14 +831,17 @@ function supportBody(lang) {
     privacy: esc(site.email.privacy),
     privacyPage: PAGES.privacy[lang],
     deletePage: PAGES.deleteAccount[lang],
+    termsSub: `${PAGES.terms[lang]}#${s.termsAnchor}`,
     faq: PAGES.home[lang] + '#faq',
   };
-  const box = (title, html) => `<div class="info"><h2 class="headline">${esc(title)}</h2><p>${fill(html, vars)}</p></div>`;
+  const box = (title, html, id) =>
+    title ? `<div class="info"${id ? ` id="${id}"` : ''}><h2 class="headline">${esc(title)}</h2><p>${fill(html, vars)}</p></div>` : '';
   return `<main id="main" class="doc"><div class="wrap narrow">
 <div class="doc-head"><p class="kicker">${esc(s.kicker)}</p><h1 class="large-title">${esc(t.pages.support.heading)}</h1><p>${esc(s.lead)}</p></div>
 <div class="info-list">
 ${box(s.contactTitle, s.contactHtml)}
 ${box(s.privacyTitle, s.privacyHtml)}
+${box(s.subscriptionTitle, s.subscriptionHtml, 'subscription')}
 ${box(s.deleteTitle, s.deleteHtml)}
 ${box(s.guestTitle, s.guestHtml)}
 </div>
@@ -758,7 +857,6 @@ ${box(s.guestTitle, s.guestHtml)}
  */
 function notFound() {
   const en = S.en.pages.notFound;
-  const tr = S.tr.pages.notFound;
   return `<!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -767,43 +865,47 @@ ${head('en', { title: en.title, noindex: true })}
 </head>
 <body>
 <a class="skip" href="#main">${esc(S.en.skip)}</a>
-<header class="top"><div class="wrap"><a class="wordmark kicker" href="/">${esc(site.brand)}</a></div></header>
+<header class="top"><div class="wrap"><a class="wordmark" href="/">${appIcon(28, 'mark')}<span>${esc(site.brand)}</span></a></div></header>
 <main id="main" class="wrap notfound">
 <p class="kicker">404</p>
 <h1 class="large-title">${esc(en.heading)}</h1>
 <p>${esc(en.body)}</p>
 <p><a class="btn btn-primary" href="/">${esc(en.home)}</a></p>
-<div lang="tr" style="display:grid;gap:12px;margin-top:32px">
-<h2 class="title2">${esc(tr.heading)}</h2>
-<p>${esc(tr.body)}</p>
-<p><a class="btn btn-quiet" href="/tr/">${esc(tr.home)}</a></p>
-</div>
+${LANGS.filter((l) => l !== 'en')
+  .map((l) => {
+    const n = S[l].pages.notFound;
+    return `<div lang="${l}" style="display:grid;gap:12px;margin-top:32px">
+<h2 class="title2">${esc(n.heading)}</h2>
+<p>${esc(n.body)}</p>
+<p><a class="btn btn-quiet" href="${PAGES.home[l]}">${esc(n.home)}</a></p>
+</div>`;
+  })
+  .join('\n')}
 </main>
 </body>
 </html>
 `;
 }
 
-/** /legal/*: dile göre yönlendiren, JS yoksa iki bağlantıyı gösteren küçük sayfa. */
+/** /legal/*: dile göre yönlendiren, JS yoksa bütün dilleri gösteren küçük sayfa. */
 function legalRedirect(key, from) {
-  const en = relTo(from, PAGES[key].en);
-  const tr = relTo(from, PAGES[key].tr);
+  const to = Object.fromEntries(LANGS.map((l) => [l, relTo(from, PAGES[key][l])]));
+  const others = LANGS.filter((l) => l !== 'en');
   return `<!doctype html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>${esc(S.en.redirect[key])} · ${esc(S.tr.redirect[key])}</title>
-<script>(function(){var l=((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase();location.replace((l.indexOf("tr")===0?"${tr}":"${en}")+location.hash);})();</script>
+<title>${LANGS.map((l) => esc(S[l].redirect[key])).join(' · ')}</title>
+<script>(function(){var to=${JSON.stringify(to)};var l=((navigator.languages&&navigator.languages[0])||navigator.language||"").toLowerCase().slice(0,2);location.replace((to[l]||to.en)+location.hash);})();</script>
 <style>body{margin:0;background:#000;color:#ebeced;font:400 17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}main{max-width:560px;margin:0 auto;padding:48px 20px;display:grid;gap:12px}a{color:#0a84ff}</style>
 </head>
 <body>
 <main>
-<h1 style="font-size:22px;color:#fff;margin:0">${esc(S.en.redirect[key])} <span lang="tr">· ${esc(S.tr.redirect[key])}</span></h1>
-<p>${esc(S.en.redirect.choose)} <span lang="tr">/ ${esc(S.tr.redirect.choose)}</span></p>
-<p><a href="${en}" hreflang="en">${esc(S.en.redirect[key])} (English)</a></p>
-<p lang="tr"><a href="${tr}" hreflang="tr">${esc(S.tr.redirect[key])} (Türkçe)</a></p>
+<h1 style="font-size:22px;color:#fff;margin:0">${esc(S.en.redirect[key])}${others.map((l) => ` <span lang="${l}">· ${esc(S[l].redirect[key])}</span>`).join('')}</h1>
+<p>${esc(S.en.redirect.choose)}${others.map((l) => ` <span lang="${l}">/ ${esc(S[l].redirect.choose)}</span>`).join('')}</p>
+${LANGS.map((l) => `<p${l === 'en' ? '' : ` lang="${l}"`}><a href="${to[l]}" hreflang="${l}">${esc(S[l].redirect[key])} (${esc(S[l].langName)})</a></p>`).join('\n')}
 </main>
 </body>
 </html>
@@ -844,10 +946,10 @@ function sitemap() {
   for (const [key, paths] of Object.entries(PAGES)) {
     const date = LEGAL_PAGES.includes(key) ? site.legalUpdated : { home: site.homeUpdated, compare: site.compareUpdated }[key] ?? null;
     const lastmod = date ? `\n    <lastmod>${date}</lastmod>` : '';
-    const alts = [...LANGS.map((l) => [l, paths[l]]), ['x-default', paths.en]]
+    const alts = [...langsOf(key).map((l) => [l, paths[l]]), ['x-default', paths.en]]
       .map(([hl, p]) => `\n    <xhtml:link rel="alternate" hreflang="${hl}" href="${abs(p)}"/>`)
       .join('');
-    for (const l of LANGS) urls.push(`  <url>\n    <loc>${abs(paths[l])}</loc>${lastmod}${alts}\n  </url>`);
+    for (const l of langsOf(key)) urls.push(`  <url>\n    <loc>${abs(paths[l])}</loc>${lastmod}${alts}\n  </url>`);
   }
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -904,14 +1006,15 @@ out('CNAME', new URL(site.origin).host + '\n');
 for (const lang of LANGS) {
   const t = S[lang];
   out(PAGES.home[lang], page(lang, { page: 'home', ...t.pages.home, jsonld: homeJsonLd(lang), body: homeBody(lang) }));
-  for (const key of LEGAL_PAGES) {
+  for (const key of LEGAL_PAGES.filter((k) => PAGES[k][lang])) {
     out(PAGES[key][lang], page(lang, { page: key, ...t.pages[key], body: legalBody(lang, key) }));
   }
   out(PAGES.support[lang], page(lang, { page: 'support', ...t.pages.support, body: supportBody(lang) }));
   out(PAGES.compare[lang], page(lang, { page: 'compare', ...t.pages.compare, jsonld: compareJsonLd(lang), body: compareBody(lang) }));
 }
 for (const [path, key] of Object.entries(LEGAL_REDIRECTS)) out(path, legalRedirect(key, path));
-for (const lang of LANGS) out(SHARE_PAGES[lang], sharePage(lang));
+// Paylaşım sayfaları yalnız en ve tr: uygulamanın StoryLink'i ve AASA bu yolları tanıyor.
+for (const lang of Object.keys(SHARE_PAGES)) out(SHARE_PAGES[lang], sharePage(lang));
 out('404.html', notFound());
 out('sitemap.xml', sitemap());
 out('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);

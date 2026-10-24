@@ -14,7 +14,8 @@
   "footer": {
     "notYet": "Uygulama henüz yayında değil.",
     "legal": "Hukuki",
-    "trademarks": "Apple, Apple logosu ve App Store, Apple Inc.'in ABD'de ve diğer ülkelerde tescilli ticari markalarıdır. Google Play ve Google Play logosu, Google LLC'nin ticari markalarıdır."
+    "trademarks": "Apple, Apple logosu, App Store ve CarPlay, Apple Inc.'in ABD'de ve diğer ülkelerde tescilli ticari markalarıdır. Google Play, Google Play logosu ve Android Auto, Google LLC'nin ticari markalarıdır.",
+    "languages": "Diller"
   },
   "hint": {
     "text": "Bu sayfanın Türkçesi de var.",
@@ -38,7 +39,9 @@
     "bilim": "Bilim",
     "kultur": "Kültür"
   },
-  "sourcesCount": { "other": "{n} kaynak" },
+  "sourcesCount": {
+    "other": "{n} kaynak"
+  },
   "sample": "Örnek",
   "player": {
     "play": "Oynat",
@@ -94,8 +97,9 @@
     "kicker": "Hukuki",
     "draft": "Taslak. Bu metin henüz hukuki incelemeden geçmedi.",
     "updated": "Son güncelleme: {date}",
-    "versionLink": "Bu metnin Türkçesi",
-    "contents": "İçindekiler"
+    "contents": "İçindekiler",
+    "otherLanguages": "Diğer diller",
+    "translationNote": ""
   },
   "wall": {
     "pause": "Kayan manşetleri durdur"
@@ -105,7 +109,8 @@
     "title": "Haberi dinle.\nMerak ettiğini sor.",
     "body": "Seçtiğin konulardan her gün birkaç dakikalık sesli haber özeti. Takıldığın yerde dur, sor; kaynaklar farklı anlatıyorsa sana gösterelim.",
     "cta": "Örneği dinle",
-    "soon": "Yakında App Store ve Google Play'de."
+    "soon": "Yakında App Store ve Google Play'de.",
+    "newLink": "Yeni: CarPlay, Android Auto ve sesli komutlar"
   },
   "how": {
     "kicker": "Örnek bir haber",
@@ -113,22 +118,19 @@
     "lead": "Uygulamanın kendi tanıtımından üç ses. Gerçek bir haberden hazırlandı (24 Eylül 2026); kaynak adları, uygulamadaki gibi gizli.",
     "listen": {
       "title": "Dinle",
-      "body": "Bültenin sesli: seçtiğin konulardan birkaç dakika.",
-      "shotAlt": "Wonderwhy'ın Bugün ekranı: seçtiğin konulardan günün sesli bülteni (örnek içerik)."
+      "body": "Bültenin sesli: seçtiğin konulardan birkaç dakika."
     },
     "ask": {
       "title": "Sor",
       "body": "Mikrofona basılı tut ve sor. Cevap aynı sesle gelir, bülten kaldığı yerden sürer.",
       "question": "Soru",
-      "answer": "Cevap",
-      "shotAlt": "Wonderwhy'ın oynatıcısı habere sesle sorulan soruyu cevaplıyor (örnek içerik)."
+      "answer": "Cevap"
     },
     "compare": {
       "title": "Karşılaştır",
       "body": "Kaynaklar bir haberi farklı anlatıyorsa nerede ayrıldıklarını görürsün.",
       "spoken": "Duyduğun",
-      "more": "Kaynak karşılaştırma nasıl çalışır?",
-      "shotAlt": "Wonderwhy'da bir haber: kaynakların ne dediği, nerede çeliştikleri ve neyi yalnız birinin yazdığı (örnek içerik)."
+      "more": "Kaynak karşılaştırma nasıl çalışır?"
     }
   },
   "samples": {
@@ -139,12 +141,29 @@
   },
   "editions": {
     "kicker": "Baskılar",
-    "title": "Türkiye, ABD ve dünyadan haberler",
+    "title": "Türkiye, ABD, dünya, İspanya ve Almanya'dan haberler",
     "lead": "Bir baskı seç; bültenin onun haberlerinden gelsin.",
     "items": [
-      { "name": "Türkiye", "detail": "Türkçe · Türkiye gündemi" },
-      { "name": "ABD", "detail": "İngilizce · ABD gündemi" },
-      { "name": "Dünya", "detail": "İngilizce · dünyadan öne çıkanlar" }
+      {
+        "name": "Türkiye",
+        "detail": "Türkçe · Türkiye gündemi"
+      },
+      {
+        "name": "ABD",
+        "detail": "İngilizce · ABD gündemi"
+      },
+      {
+        "name": "Dünya",
+        "detail": "İngilizce · dünyadan öne çıkanlar"
+      },
+      {
+        "name": "İspanya",
+        "detail": "İspanyolca · İspanya gündemi"
+      },
+      {
+        "name": "Almanya",
+        "detail": "Almanca · Almanya gündemi"
+      }
     ]
   },
   "download": {
@@ -168,7 +187,7 @@
       },
       {
         "q": "Hangi diller ve baskılar var?",
-        "a": "Uygulama Türkçe ve İngilizce. Üç baskı var: Türkiye (Türkçe), ABD (İngilizce) ve Dünya (İngilizce)."
+        "a": "Uygulama Türkçe, İngilizce, İspanyolca ve Almanca. Beş baskı var: Türkiye (Türkçe), ABD (İngilizce), Dünya (İngilizce), İspanya (İspanyolca) ve Almanya (Almanca)."
       },
       {
         "q": "Haberleri kim yazıyor, kim okuyor?",
@@ -191,6 +210,22 @@
         "a": "<!--if WONDERWHY_PREMIUM-->İndirmesi ve her gün belli bir süre dinlemesi ücretsiz. Premium aboneliği sınırsız ve çevrimdışı dinleme gibi özellikler açar<!--if WONDERWHY_ADS--> ve reklam göstermez<!--end-->; fiyatını App Store ve Google Play gösterir.<!--else-->Hayır. Uygulama şu an ücretsiz.<!--if WONDERWHY_ADS--> Uygulamada reklam gösterilir.<!--end--><!--end-->"
       },
       {
+        "q": "CarPlay ve Android Auto'da çalışır mı?",
+        "a": "<!--if WONDERWHY_PREMIUM-->Evet, Premium'la. Bülteni aracın ekranından başlatır; Bugün, Listem ve bölümler arasında gezersin.<!--else-->Evet. Bülteni aracın ekranından başlatır; Bugün, Listem ve bölümler arasında gezersin.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_VOICE_COMMANDS-->Sesli komutlar nasıl çalışır?<!--end-->",
+        "a": "<!--if WONDERWHY_VOICE_COMMANDS-->Dinlerken “dur”, “sıradaki”, “daha hızlı” gibi kısa bir komut söylersin. Komutlar kulaklıkla çalışır. Onları telefonunun kendi konuşma tanıyıcısı anlar; ses hiçbir yere gönderilmez.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_PREMIUM-->İnternetsiz dinleyebilir miyim?<!--end-->",
+        "a": "<!--if WONDERWHY_PREMIUM-->Evet, Premium'la. Bugünün haberlerini telefona indirip bağlantısız dinlersin. İndirilenler ertesi gün silinir.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_PREMIUM-->Aboneliğimi nasıl iptal ederim?<!--end-->",
+        "aHtml": "<!--if WONDERWHY_PREMIUM-->App Store ya da Google Play hesabından. Adımlar <a href=\"{supportSub}\">Destek</a> sayfasında.<!--end-->"
+      },
+      {
         "q": "Nasıl yardım alırım?",
         "aHtml": "<a href=\"{support}\">Destek</a> sayfasına bak ya da <a href=\"mailto:{hello}\">{hello}</a> adresine yaz."
       }
@@ -207,7 +242,10 @@
     "deleteHtml": "Uygulamada <strong>Profil › Hesabı sil</strong>’e git. Hesabın, eşitlenen verilerin, oyların ve kullanım kayıtların hemen silinir. Uygulama olmadan <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz. Adımlar ve kalanlar <a href=\"{deletePage}\">Hesabını sil</a> sayfasında.",
     "guestTitle": "Hesapsız yalnız göz mü attın?",
     "guestHtml": "Uygulamayı silmek, telefonunda tuttuğu listeleri ve ayarları kaldırır. Uygulamanın sunucumuzda oluşturmuş olabileceği misafir kimliği 7 gün kullanılmayınca kendiliğinden silinir. Daha önce silinmesini istersen <a href=\"mailto:{privacy}\">{privacy}</a> adresine yaz.",
-    "faqHtml": "Başka cevaplar <a href=\"{faq}\">sık sorulanlarda</a>."
+    "faqHtml": "Başka cevaplar <a href=\"{faq}\">sık sorulanlarda</a>.",
+    "subscriptionTitle": "<!--if WONDERWHY_PREMIUM-->Abonelik<!--end-->",
+    "subscriptionHtml": "<!--if WONDERWHY_PREMIUM-->Premium, mağaza hesabından yönetilir ve iptal edilir: iPhone ve iPad'de Ayarlar › adın › Abonelikler, Android'de Play Store › profil › Ödemeler ve abonelikler › Abonelikler. İptal edince Premium dönemin sonuna kadar sürer. Yeni telefonda uygulamada <strong>Profil › Abonelik</strong>'i açıp <strong>Satın alımları geri yükle</strong>'ye dokun. İadeleri Apple ya da Google yapar. Hesabını silmek aboneliği iptal etmez. Koşulların tamamı <a href=\"{termsSub}\">Kullanım Şartları</a>'nda.<!--end-->",
+    "termsAnchor": "abonelik"
   },
   "compare": {
     "kicker": "Kaynak karşılaştırma",
@@ -241,7 +279,7 @@
     "steps": [
       {
         "title": "Aynı olay bir arada",
-        "body": "Aynı olayı veren farklı yayınlar, baskında tek haberde toplanır: Türkiye, ABD ya da Dünya."
+        "body": "Aynı olayı veren farklı yayınlar, baskında tek haberde toplanır: Türkiye, ABD, Dünya, İspanya ya da Almanya."
       },
       {
         "title": "Yapay zekâ karşılaştırır",
@@ -287,7 +325,7 @@
       },
       {
         "q": "Hangi yayınları karşılaştırıyor?",
-        "a": "Baskının haber akışlarındaki yayınları: Türk, ABD’li ve uluslararası yayınlar. Her kaynağın adı yazar ve haberin aslına bağlanır."
+        "a": "Baskının haber akışlarındaki yayınları: Türk, ABD’li, İspanyol, Alman ve uluslararası yayınlar. Her kaynağın adı yazar ve haberin aslına bağlanır."
       },
       {
         "q": "Haberi dinleyebilir miyim?",
@@ -309,5 +347,83 @@
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
     "choose": "Dil seç:"
+  },
+  "gallery": {
+    "kicker": "Uygulamadan",
+    "title": "İçine bir göz at",
+    "label": "Uygulamanın ekran görüntüleri",
+    "note": "Uygulamanın ekranları, örnek içerikle.",
+    "items": {
+      "player_answer": "Haberi dinle, merak ettiğini sor: oynatıcı sesle sorulan soruyu cevaplıyor.",
+      "home": "Seçtiğin konulardan kısa sesli bülten: Bugün ekranı.",
+      "story_compare": "Kaynakların nerede ayrıştığını gör: bir haber, üç yayın.",
+      "home_list": "Her haber, kaynaklarıyla: günün listesi.",
+      "story": "Kısa özet ve neden önemli olduğu: haber sayfası.",
+      "explore": "İlgilendiğin konuları takip et: Keşfet ekranı."
+    }
+  },
+  "features": {
+    "kicker": "Yeni",
+    "title": "Arabada, elin serbestken, internetsiz",
+    "lead": "Son sürümle gelenler.",
+    "premium": "Premium",
+    "items": [
+      {
+        "key": "car",
+        "title": "CarPlay ve Android Auto",
+        "body": "Bültenin aracın ekranında: Bugün, Listem ve bölümler.",
+        "premium": "WONDERWHY_PREMIUM"
+      },
+      {
+        "key": "voice",
+        "title": "Sesli komutlar",
+        "body": "Dinlerken “dur”, “sıradaki”, “daha hızlı” de; elini kullanmadan yönet. Kulaklıkla çalışır; ses telefonunda işlenir."
+      },
+      {
+        "key": "speed",
+        "title": "Dinleme hızı",
+        "body": "0,75×'ten 2×'e beş kademe."
+      },
+      {
+        "key": "narrator",
+        "title": "Anlatıcı sesi",
+        "body": "Beş sesten birini seç. Bülten ve sorularının cevapları o sesle gelir."
+      },
+      {
+        "key": "offline",
+        "title": "<!--if WONDERWHY_PREMIUM-->İnternetsiz dinle<!--end-->",
+        "body": "<!--if WONDERWHY_PREMIUM-->Bugünün haberlerini telefona indir, uçak modunda da dinle.<!--end-->",
+        "premium": "WONDERWHY_PREMIUM"
+      },
+      {
+        "key": "editions",
+        "title": "Beş baskı, dört dil",
+        "body": "Türkiye, ABD, Dünya, İspanya ve Almanya. Uygulama Türkçe, İngilizce, İspanyolca ve Almanca."
+      }
+    ]
+  },
+  "premium": {
+    "kicker": "<!--if WONDERWHY_PREMIUM-->Ücretsiz ve Premium<!--end-->",
+    "title": "Ücretsiz başla, daha fazlası için Premium.",
+    "free": {
+      "name": "Ücretsiz",
+      "items": [
+        "Her gün birkaç dakika dinle ve sor",
+        "Bütün baskılar, diller ve kaynak karşılaştırma",
+        "Sesli komutlar, hız ve anlatıcı sesi"
+      ]
+    },
+    "plus": {
+      "name": "Premium",
+      "items": [
+        "Sınırsız dinle ve sor",
+        "Arka planda ve kilit ekranında da çalar",
+        "CarPlay ve Android Auto",
+        "İnternetsiz dinle",
+        "Daha uzun kişisel bülten",
+        "<!--if WONDERWHY_ADS-->Reklamsız<!--end-->"
+      ]
+    },
+    "noteHtml": "<!--if WONDERWHY_ADS-->Ücretsiz sürümde reklam gösterilir. <!--end-->Ülkendeki fiyatı App Store ve Google Play gösterir. Premium, mağaza hesabından iptal edene kadar kendiliğinden yenilenir. Ayrıntılar <a href=\"{terms}\">Kullanım Şartları</a>'nda."
   }
 }

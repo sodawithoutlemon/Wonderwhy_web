@@ -1,0 +1,25 @@
+{
+  "curatedAt": "2026-10-24",
+  "items": [
+    {
+      "id": "a9a7823a93a9dfb3",
+      "category": "teknoloji",
+      "day": "2026-10-22",
+      "headline": "Euclid entdeckt nebenbei einen bislang unbekannten Kometen",
+      "text": "Das Weltraumteleskop Euclid hat zufällig einen bislang unbekannten Kometen entdeckt. Seine eigentliche Aufgabe ist eine andere: Das Teleskop soll Milliarden Galaxien kartieren und dazu beitragen, die Geheimnisse des Universums zu entschlüsseln. Der Komet wurde bei dieser Arbeit ganz nebenbei aufgespürt. Damit steht Euclid nicht nur für die geplante Erfassung ferner Galaxien, sondern auch für eine unerwartete Entdeckung.",
+      "sources": [
+        "t3n"
+      ]
+    },
+    {
+      "id": "90a75c4f37c45545",
+      "category": "bilim",
+      "day": "2026-10-23",
+      "headline": "Bernstein belegt Schwanzabwurf bei Echsen vor 99 Millionen Jahren",
+      "text": "Viele Echsen werfen ihren Schwanz ab, wenn sie bedroht werden. Ein etwa 99 Millionen Jahre alter Bernstein aus Myanmar belegt nun, dass diese Fluchtstrategie schon damals existierte. Er enthält direkte Spuren der Muskelkontraktion, durch die sich der Schwanz gezielt löst. Bisher ließ sich dieses Verhalten bei frühen Echsen nur indirekt aus Fossilien erschließen.",
+      "sources": [
+        "scinexx"
+      ]
+    }
+  ]
+}

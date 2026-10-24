@@ -1,9 +1,10 @@
 # wonderwhy.net
 
 wonderwhy uygulamasının sitesi: tanıtım, gizlilik politikası, kullanım
-şartları, destek ve hesap silme sayfaları. Türkçe ve İngilizce.
+şartları, destek ve hesap silme sayfaları. İngilizce, Türkçe, İspanyolca ve
+Almanca (KVKK aydınlatma metni yalnız Türkçe ve İngilizce).
 
-Website of the wonderwhy app (Turkish and English).
+Website of the Wonderwhy app (English, Turkish, Spanish and German).
 
 ## Yapı
 
@@ -13,7 +14,8 @@ Website of the wonderwhy app (Turkish and English).
 - `src/`: kaynak.
   - `site.json`: tek ayar dosyası (marka, adres, yayıncı, e-postalar, mağaza
     bağlantıları, hukuki metinlerin tarihi, `appFlags`).
-  - `strings/{en,tr}.json`: arayüz metinleri; `content/{en,tr}/`: hukuki metinler.
+  - `strings/{en,tr,es,de}.json`: arayüz metinleri (dört dil aynı anahtarları
+    taşır); `content/{dil}/`: hukuki metinler.
   - `appFlags`: yayındaki uygulama sürümünde açık özellikler. Metinlerdeki
     `<!--if WONDERWHY_X-->…<!--else-->…<!--end-->` blokları bunlara göre
     derlenir (`!` tersi, `|` veya, `&` ve; iç içe olabilir). Ayrıntı
@@ -24,8 +26,11 @@ Website of the wonderwhy app (Turkish and English).
 - `tools/`:
   - `crawl.mjs`: yayındaki siteyi gezer, her adresi ister;
   - `snapshot.mjs` ve `audio.sh`: uygulamanın onboarding içeriğini ve seslerini
-    siteye kopyalar. Uygulama reposu gerekir: varsayılan olarak bu reponun bir
-    üstü, ya da `APP_ROOT`.
+    siteye kopyalar (Almanya'nın manşetleri Firestore'un herkese açık
+    baskısından). `gallery.sh`: App Store'un iPhone 6,9" mağaza görsellerini
+    "Uygulamadan" şeridine küçültür; mağaza seti değişince yeniden çalıştır.
+    Uygulama reposu gerekir: varsayılan olarak bu reponun bir üstü, ya da
+    `APP_ROOT`.
 
 ## Komutlar
 

@@ -1,125 +1,197 @@
 {
-  "curatedAt": "2026-09-27",
+  "curatedAt": "2026-10-20",
   "items": [
     {
-      "id": "1c82ebe0cb7d278d",
+      "id": "2b4d6f56b42b94ab",
       "category": "teknoloji",
-      "headline": "Audi A6 e-tron Tek Şarjla 1.300 Kilometreyi Aşarak Menzil Rekoru Kırdı"
+      "headline": "NASA, -170 dereceye dayanabilen katı hal bataryası geliştirdi",
+      "source": "ShiftDelete",
+      "image": "https://www.donanimhaber.com/images/images/haber/211686/1200x675nasa-170-dereceye-dayanabilen-kati-hal-batarya-gelistirdi.jpg",
+      "kb": 70
     },
     {
-      "id": "33e34cac3dd0b571",
-      "category": "teknoloji",
-      "headline": "Google Yapay Zeka Veri Merkezini Uzaya Taşıyor"
-    },
-    {
-      "id": "0c9bd7a2e88d0bf5",
-      "category": "teknoloji",
-      "headline": "Google Gemini Yapay Zekasına Yüz Kazandırdı"
-    },
-    {
-      "id": "32a7ac4a9e8d9379",
-      "category": "teknoloji",
-      "headline": "Google Fotoğraflar uygulamasında dijital gardırop dönemi başladı"
-    },
-    {
-      "id": "3df6dfc80010e21e",
-      "category": "teknoloji",
-      "headline": "OPPO ve Xiaomi Yeni Ürünlerini Tanıttı"
-    },
-    {
-      "id": "4b4a627f5029bc29",
+      "id": "3adbec24a29ca47a",
       "category": "bilim",
-      "headline": "Hubble Uzay Teleskobu İki Yüz Bininci Yörüngesini Tamamladı"
+      "headline": "İnsan boyu son 100 yılda yaklaşık 10 santimetre uzadı",
+      "source": "BBC Türkçe",
+      "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/d9fd/live/eee46610-c3c7-11f1-bc2e-018d645d8d21.png",
+      "kb": 49
     },
     {
-      "id": "a8c52722ddf08f7f",
-      "category": "bilim",
-      "headline": "Günün Gökbilim Görüntüsü: Omega Centauri Küresel Yıldız Kümesi"
-    },
-    {
-      "id": "c6ce6d473b7280de",
-      "category": "bilim",
-      "headline": "Lazer Haritalama Amazon Kuşlarının Yaşam Alanlarını Ortaya Çıkarıyor"
-    },
-    {
-      "id": "21192098f33f65d4",
-      "category": "bilim",
-      "headline": "TEKNOFEST Birincisi Gençlerden Ay Misyonu İçin Kritik Adım"
-    },
-    {
-      "id": "c82d1d748da55cc7",
-      "category": "bilim",
-      "headline": "Türkiye'den derin uzayda bir ilk: Hibrit roket teknolojisi test edilecek"
-    },
-    {
-      "id": "eddcbdc9d0cb0331",
+      "id": "934062c6f3800f75",
       "category": "ekonomi",
-      "headline": "Türk Hava Yolları Boeing ile yüz elli uçaklık dev anlaşmayı kesinleştirdi"
+      "headline": "İGA İstanbul Havalimanı dünyanın en iyisi seçildi",
+      "source": "Dünya",
+      "image": "https://image.dunya.com/rcman/Cw1280h720q95gc/storage/files/images/2025/09/25/istanbul-havalimani-ne41_cover.jpg",
+      "kb": 87
     },
     {
-      "id": "ef9f3bd03ec94491",
+      "id": "236c85cae5475f98",
+      "category": "spor",
+      "headline": "Real Madrid, Arda Güler'in gol attığı maçta Sevilla'yı 4-1 yendi",
+      "source": "AA Spor",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2496000/arda-guler-aa-2496672.jpg",
+      "kb": 137
+    },
+    {
+      "id": "dac4e98467edf23f",
+      "category": "kultur",
+      "headline": "Kültepe'de ilk Helenistik mozaik yapısı bulundu",
+      "source": "TRT Kültür-Sanat",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2496000/kultepe-kazi-2497055.jpg",
+      "kb": 90
+    },
+    {
+      "id": "c14fa419e379cec3",
+      "category": "dunya",
+      "headline": "Samanyolu’nda ilk kilonova kalıntısı keşfedilmiş olabilir",
+      "source": "TRT Haber Dünya",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2366000/2366732.jpg",
+      "kb": 57
+    },
+    {
+      "id": "387ac94730d0a3b2",
+      "category": "gundem",
+      "headline": "Yeni haftada pastırma yazı havası bekleniyor",
+      "source": "CNN Türk",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2242000/bahar-2242977.jpg",
+      "kb": 137
+    },
+    {
+      "id": "225791d229d76186",
+      "category": "magazin",
+      "headline": "Gupse Özay’ın çocukluğundan ilham alan filmi galasını yaptı",
+      "source": "Sabah Magazin",
+      "image": "https://iasbh.tmgrup.com.tr/2cd9f1/1200/675/0/96/514/386?u=https://isbh.tmgrup.com.tr/sbh/2026/10/19/icimdeki-cocugu-ortaya-cikardim-1792424800610.jpeg",
+      "kb": 35
+    },
+    {
+      "id": "ea295be5f2f4c57d",
+      "category": "teknoloji",
+      "headline": "Amazon, Bee Frontier ve Bee Eclipse cihazlarını tanıttı",
+      "source": "Webtekno",
+      "image": "https://imgrosetta.webtekno.com/file/693127/693127-640xauto.jpg",
+      "kb": 5
+    },
+    {
+      "id": "efb96b5af8fd1347",
+      "category": "bilim",
+      "headline": "Orionid meteor yağmuru geceleri görülebilecek",
+      "source": "BBC Türkçe",
+      "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/0f1c/live/1b496550-a053-11f0-b687-23a5afa8b42e.jpg",
+      "kb": 3
+    },
+    {
+      "id": "199a23678f394322",
       "category": "ekonomi",
-      "headline": "Elektrikli araç şarj istasyonlarında yeni dönem"
+      "headline": "Elazığ vişne mermeri uluslararası pazarda talep görüyor",
+      "source": "AA Ekonomi",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1672000/visne-mermeri-aa-1672469.jpg",
+      "kb": 206
     },
     {
-      "id": "46a24828b561622d",
+      "id": "3f7236d50f25ee15",
       "category": "spor",
-      "headline": "Basketbol Süper Ligi'nde Yeni Sezon Başlıyor"
+      "headline": "Trabzonspor, Beşiktaş’ı 2-0 mağlup etti",
+      "source": "AA Spor",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2496000/salahaa-2496927.jpg",
+      "kb": 74
     },
     {
-      "id": "8b2ad9b4a580bfc8",
-      "category": "spor",
-      "headline": "Türkiye-İtalya Maçının Bilet Satışı Başladı"
-    },
-    {
-      "id": "bec6dd2a8e69d03c",
-      "category": "spor",
-      "headline": "Avrupa'da Dev Sezonlar Yarın Başlıyor"
-    },
-    {
-      "id": "f74b5ea21f0f2b3a",
-      "category": "spor",
-      "headline": "Leeds ve Warrington Büyük Final İçin Karşı Karşıya"
-    },
-    {
-      "id": "2a7ae8e4513e93a6",
+      "id": "84f5a02ebc2ab641",
       "category": "kultur",
-      "headline": "Kapadokya'da Riskli Peribacaları Restore Ediliyor"
+      "headline": "Gece müzeciliğinde ziyaretçi sayısı 1,3 milyonu aştı",
+      "source": "TRT Kültür-Sanat",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2466000/efes-aa-2466140.jpg",
+      "kb": 174
     },
     {
-      "id": "c49b2c6d960125a9",
-      "category": "kultur",
-      "headline": "İstanbul Kültür Yolu Festivali Başlıyor"
-    },
-    {
-      "id": "20550dc7d57234ec",
-      "category": "kultur",
-      "headline": "Türk Mitolojisinden Yeni Sinema Evreni: Yeşim Taşı Efsanesi"
-    },
-    {
-      "id": "f61ccc40a34023c0",
-      "category": "kultur",
-      "headline": "Bridgewater Hall Otuzuncu Yılını James MacMillan'ın Yeni Senfonisiyle Kutluyor"
-    },
-    {
-      "id": "41c8da0efa1668b5",
+      "id": "6806a9a0fa584a13",
       "category": "dunya",
-      "headline": "Hırvatistan Artemis Anlaşmaları'nı imzaladı"
+      "headline": "Küresel saat sisteminde artık saniye uygulaması sona erdi",
+      "source": "TRT Haber Dünya",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/1662000/saat-aa-1663472.jpg",
+      "kb": 55
     },
     {
-      "id": "dunya-1",
+      "id": "46205c25d5d55c28",
+      "category": "teknoloji",
+      "headline": "Mercedes-AMG elektrikli GT SUV’u tanıttı",
+      "source": "DonanımHaber",
+      "image": "https://www.donanimhaber.com/images/images/haber/211791/1200x675mercedes-amg-gt-suv-tanitildi-0-100-sadece-2-5-saniye.jpg",
+      "kb": 163
+    },
+    {
+      "id": "dcdda3e2ad5c8bbe",
+      "category": "bilim",
+      "headline": "Webb, Samanyolu’nun merkezindeki kara deliğin çevresinde metalce zengin gaz buldu",
+      "source": "Phys.org",
+      "image": "https://scx1.b-cdn.net/csz/news/800a/2026/a-swirling-vortex-of-h.jpg",
+      "kb": 58
+    },
+    {
+      "id": "80c570f98d008b57",
+      "category": "ekonomi",
+      "headline": "Türkiye'nin yumurta ihracatı 9 ayda 418,7 milyon dolara ulaştı",
+      "source": "AA Ekonomi",
+      "image": "https://image.dunya.com/rcman/Cw1280h720q95gc/storage/files/images/2025/07/29/yumurta-ju5x_cover.jpg",
+      "kb": 144
+    },
+    {
+      "id": "f6cf5d36d7b9b0e1",
+      "category": "spor",
+      "headline": "Sergen Yalçın, A Milli Takım’ın başına geçiyor",
+      "source": "BBC Türkçe",
+      "image": "https://ichef.bbci.co.uk/ace/ws/240/cpsprodpb/4e5c/live/1d7ef4f0-cbd8-11f1-b139-f77a8b036d06.jpg",
+      "kb": 6
+    },
+    {
+      "id": "4d8b26b473463a69",
+      "category": "kultur",
+      "headline": "“İstanbul: Bir Şehir, Bin Bakış” sergisi Paris’te açıldı",
+      "source": "TRT Kültür-Sanat",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2496000/istanbul-bir-sehir-bin-bakis-sergi-aa-2496935.jpg",
+      "kb": 102
+    },
+    {
+      "id": "4ba89a77d1dd7b48",
       "category": "dunya",
-      "headline": "ECB: Yeni avro banknotları 2030'da tedavüle girecek"
+      "headline": "Grönland’da derin deniz madenciliğine geçici yasak gündemde",
+      "source": "TRT Haber Dünya",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2328000/gronland-2328306.jpg",
+      "kb": 77
     },
     {
-      "id": "7a85bf1dbd549fd2",
-      "category": "saglik",
-      "headline": "Konya'da antioksidan deposu aronya meyvesinin hasadı başladı"
+      "id": "1a4169a5f6f09cd9",
+      "category": "teknoloji",
+      "headline": "Apple, 28 Ekim’de yeni MacBook ve iPad mini’yi tanıtacak",
+      "source": "ShiftDelete",
+      "image": "https://www.donanimhaber.com/images/images/haber/211672/1200x675dokunmatik-ekranli-macbook-pro-28-ekim-de-tanitilacak.jpg",
+      "kb": 38
     },
     {
-      "id": "e028946ba26ebe4f",
-      "category": "saglik",
-      "headline": "Sabahları yorgun uyanmanın nedeni rüyalar olabilir"
+      "id": "f7a8a9235c037049",
+      "category": "bilim",
+      "headline": "Curiosity, Mars’taki bulutları izliyor",
+      "source": "NASA",
+      "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/msl/2026/curiosity-rover-updates/october/https___mars.nasa.gov_msl-raw-images_proj_msl_redops_ods_surface_sol_05037_opgs_edr_ncam_NRB_844669907EDR_S1250558NCAM00543M_.JPG?w=800",
+      "kb": 74
+    },
+    {
+      "id": "48e0f970ee192d2e",
+      "category": "ekonomi",
+      "headline": "Karadeniz'in su ürünleri ihracatı 9 ayda 322 milyon doları aştı",
+      "source": "TRT Ekonomi",
+      "image": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2292000/su-urunleriaa-2292645.jpg",
+      "kb": 156
+    },
+    {
+      "id": "49047478ba918ae9",
+      "category": "spor",
+      "headline": "PSG ile Barcelona salı günü karşılaşıyor",
+      "source": "BBC Sport",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e053/live/2a307260-cba0-11f1-9ee2-f74dfb8e54e5.png",
+      "kb": 64
     }
   ]
 }

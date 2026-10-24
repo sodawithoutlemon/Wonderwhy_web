@@ -20,9 +20,9 @@
     "appStoreId": "6817247112",
     "appStoreProvider": null
   },
-  "legalUpdated": "2026-10-22",
-  "homeUpdated": "2026-10-22",
-  "compareUpdated": "2026-10-20",
+  "legalUpdated": "2026-10-24",
+  "homeUpdated": "2026-10-24",
+  "compareUpdated": "2026-10-24",
   "legalDraft": false,
   "_appFlags": "Yayındaki uygulama sürümünde açık olan özellikler (adlar app/lib/config/feature_flags.dart'taki gibi). Hukuki metinler ve 'ücretsiz' satırları bunlara göre derlenir (build.mjs › cond). Yayın günü o sürümün bayraklarıyla güncelle, legalUpdated'i de.",
   "appFlags": {

@@ -14,7 +14,8 @@
   "footer": {
     "notYet": "The app isn’t out yet.",
     "legal": "Legal",
-    "trademarks": "Apple, the Apple logo and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play and the Google Play logo are trademarks of Google LLC."
+    "trademarks": "Apple, the Apple logo, App Store and CarPlay are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play, the Google Play logo and Android Auto are trademarks of Google LLC.",
+    "languages": "Languages"
   },
   "hint": {
     "text": "This page is also available in English.",
@@ -38,7 +39,10 @@
     "bilim": "Science",
     "kultur": "Culture"
   },
-  "sourcesCount": { "one": "{n} source", "other": "{n} sources" },
+  "sourcesCount": {
+    "one": "{n} source",
+    "other": "{n} sources"
+  },
   "sample": "Example",
   "player": {
     "play": "Play",
@@ -94,8 +98,9 @@
     "kicker": "Legal",
     "draft": "Draft. This text has not had a legal review yet.",
     "updated": "Last updated: {date}",
-    "versionLink": "This text in English",
-    "contents": "Contents"
+    "contents": "Contents",
+    "otherLanguages": "Also in",
+    "translationNote": ""
   },
   "wall": {
     "pause": "Pause the moving headlines"
@@ -105,7 +110,8 @@
     "title": "Listen to the news.\nAsk what you wonder about.",
     "body": "A short audio briefing every day, on the topics you pick. Stop and ask anytime. When sources tell it differently, we’ll show you.",
     "cta": "Hear an example",
-    "soon": "Coming soon to the App Store and Google Play."
+    "soon": "Coming soon to the App Store and Google Play.",
+    "newLink": "New: CarPlay, Android Auto and voice commands"
   },
   "how": {
     "kicker": "An example story",
@@ -113,22 +119,19 @@
     "lead": "Three clips from the app’s own intro, made from a real story (24 September 2026). The sources’ names are hidden, as they are in the app.",
     "listen": {
       "title": "Listen",
-      "body": "Your briefing, read aloud: a few minutes from the topics you pick.",
-      "shotAlt": "Wonderwhy’s Today screen: the day’s audio briefing from the topics you picked (sample content)."
+      "body": "Your briefing, read aloud: a few minutes from the topics you pick."
     },
     "ask": {
       "title": "Ask",
       "body": "Hold the mic and ask. The answer comes in the same voice, then the briefing picks up where it left off.",
       "question": "Question",
-      "answer": "Answer",
-      "shotAlt": "Wonderwhy’s player answering a spoken question about the story (sample content)."
+      "answer": "Answer"
     },
     "compare": {
       "title": "Compare",
       "body": "When sources tell a story differently, you see where they part ways.",
       "spoken": "What you hear",
-      "more": "How source comparison works",
-      "shotAlt": "A story in Wonderwhy: what each source says, where they conflict and what only one of them reports (sample content)."
+      "more": "How source comparison works"
     }
   },
   "samples": {
@@ -139,12 +142,29 @@
   },
   "editions": {
     "kicker": "Editions",
-    "title": "News from Türkiye, the U.S. and the world",
+    "title": "News from Türkiye, the United States, the world, Spain and Germany",
     "lead": "Pick an edition and your briefing comes from its news.",
     "items": [
-      { "name": "Türkiye", "detail": "In Turkish · news from Türkiye" },
-      { "name": "United States", "detail": "In English · U.S. news" },
-      { "name": "World", "detail": "In English · top stories from around the world" }
+      {
+        "name": "Türkiye",
+        "detail": "In Turkish · news from Türkiye"
+      },
+      {
+        "name": "United States",
+        "detail": "In English · U.S. news"
+      },
+      {
+        "name": "World",
+        "detail": "In English · top stories from around the world"
+      },
+      {
+        "name": "Spain",
+        "detail": "In Spanish · news from Spain"
+      },
+      {
+        "name": "Germany",
+        "detail": "In German · news from Germany"
+      }
     ]
   },
   "download": {
@@ -168,7 +188,7 @@
       },
       {
         "q": "Which languages and editions are there?",
-        "a": "The app is in Turkish and English. There are three editions: Türkiye (Turkish), United States (English) and World (English)."
+        "a": "The app is in English, Turkish, Spanish and German. There are five editions: Türkiye (Turkish), United States (English), World (English), Spain (Spanish) and Germany (German)."
       },
       {
         "q": "Who writes and reads the news?",
@@ -191,6 +211,22 @@
         "a": "<!--if WONDERWHY_PREMIUM-->It’s free to download, and you can listen for a set time every day for free. A Premium subscription unlocks features such as unlimited and offline listening<!--if WONDERWHY_ADS-->, with no ads<!--end-->; the App Store and Google Play show the price.<!--else-->No. The app is free right now.<!--if WONDERWHY_ADS--> It shows ads.<!--end--><!--end-->"
       },
       {
+        "q": "Does it work with CarPlay and Android Auto?",
+        "a": "<!--if WONDERWHY_PREMIUM-->Yes, with Premium. Start your briefing from the car’s screen and move between Today, My list and sections.<!--else-->Yes. Start your briefing from the car’s screen and move between Today, My list and sections.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_VOICE_COMMANDS-->How do voice commands work?<!--end-->",
+        "a": "<!--if WONDERWHY_VOICE_COMMANDS-->While you listen, say a short command like “stop”, “next” or “faster”. Commands work with headphones. Your phone’s own speech recognizer understands them; the audio isn’t sent anywhere.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_PREMIUM-->Can I listen offline?<!--end-->",
+        "a": "<!--if WONDERWHY_PREMIUM-->Yes, with Premium. Download today’s stories to your phone and listen without a connection. Downloads are removed the next day.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_PREMIUM-->How do I cancel my subscription?<!--end-->",
+        "aHtml": "<!--if WONDERWHY_PREMIUM-->In your App Store or Google Play account. The steps are on the <a href=\"{supportSub}\">Support</a> page.<!--end-->"
+      },
+      {
         "q": "How do I get help?",
         "aHtml": "See the <a href=\"{support}\">Support</a> page or write to <a href=\"mailto:{hello}\">{hello}</a>."
       }
@@ -207,7 +243,10 @@
     "deleteHtml": "In the app, go to <strong>Profile › Delete account</strong>. This deletes your account, your synced data, your votes and your usage records at once. Without the app, write to <a href=\"mailto:{privacy}\">{privacy}</a>. The steps and what is kept are on the <a href=\"{deletePage}\">Delete your account</a> page.",
     "guestTitle": "Only looked around without an account?",
     "guestHtml": "Deleting the app removes the lists and settings it kept on your phone. A guest ID the app may have created on our servers is deleted automatically after 7 days without use. To have it deleted sooner, write to <a href=\"mailto:{privacy}\">{privacy}</a>.",
-    "faqHtml": "More answers are in the <a href=\"{faq}\">FAQ</a>."
+    "faqHtml": "More answers are in the <a href=\"{faq}\">FAQ</a>.",
+    "subscriptionTitle": "<!--if WONDERWHY_PREMIUM-->Subscription<!--end-->",
+    "subscriptionHtml": "<!--if WONDERWHY_PREMIUM-->Premium is managed and cancelled in your store account: on iPhone and iPad in Settings › your name › Subscriptions, on Android in the Play Store › profile › Payments &amp; subscriptions › Subscriptions. After you cancel, Premium lasts until the end of the period. On a new phone, open <strong>Profile › Subscription</strong> in the app and tap <strong>Restore purchases</strong>. Refunds are handled by Apple or Google. Deleting your account doesn’t cancel the subscription. The full terms are in the <a href=\"{termsSub}\">Terms of Use</a>.<!--end-->",
+    "termsAnchor": "subscription"
   },
   "compare": {
     "kicker": "Source comparison",
@@ -241,7 +280,7 @@
     "steps": [
       {
         "title": "Same event, grouped",
-        "body": "Reports of the same event from different outlets become one story in your edition: Türkiye, US or World."
+        "body": "Reports of the same event from different outlets become one story in your edition: Türkiye, US, World, Spain or Germany."
       },
       {
         "title": "Compared by AI",
@@ -287,7 +326,7 @@
       },
       {
         "q": "Which outlets does it compare?",
-        "a": "The outlets in your edition’s news feeds: Turkish, American and international. Every source is named and links to its original article."
+        "a": "The outlets in your edition’s news feeds: Turkish, American, Spanish, German and international. Every source is named and links to its original article."
       },
       {
         "q": "Can I listen to the story too?",
@@ -309,5 +348,83 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "choose": "Choose a language:"
+  },
+  "gallery": {
+    "kicker": "In the app",
+    "title": "A look inside",
+    "label": "App screenshots",
+    "note": "Screens from the app, with sample content.",
+    "items": {
+      "player_answer": "Listen to the news, ask what you wonder: the player answers a spoken question.",
+      "home": "Your audio briefing, on topics you pick: the Today screen.",
+      "story_compare": "See where the sources differ: one story compared across three outlets.",
+      "home_list": "Every story, with its sources: the day’s list.",
+      "story": "The short version, and why it matters: a story page.",
+      "explore": "Follow what you care about: the Explore screen."
+    }
+  },
+  "features": {
+    "kicker": "New",
+    "title": "In the car, hands-free, offline",
+    "lead": "What the latest version brings.",
+    "premium": "Premium",
+    "items": [
+      {
+        "key": "car",
+        "title": "CarPlay and Android Auto",
+        "body": "Your briefing on the car’s screen: Today, My list and sections.",
+        "premium": "WONDERWHY_PREMIUM"
+      },
+      {
+        "key": "voice",
+        "title": "Voice commands",
+        "body": "While you listen, say “stop”, “next” or “faster”, no hands needed. Works with headphones; your voice is processed on your phone."
+      },
+      {
+        "key": "speed",
+        "title": "Listening speed",
+        "body": "Five steps from 0.75× to 2×."
+      },
+      {
+        "key": "narrator",
+        "title": "Narrator voice",
+        "body": "Pick one of five voices. Your briefing and the answers to your questions use it."
+      },
+      {
+        "key": "offline",
+        "title": "<!--if WONDERWHY_PREMIUM-->Listen offline<!--end-->",
+        "body": "<!--if WONDERWHY_PREMIUM-->Download today’s stories to your phone and listen in airplane mode.<!--end-->",
+        "premium": "WONDERWHY_PREMIUM"
+      },
+      {
+        "key": "editions",
+        "title": "Five editions, four languages",
+        "body": "Türkiye, the United States, World, Spain and Germany. The app is in English, Turkish, Spanish and German."
+      }
+    ]
+  },
+  "premium": {
+    "kicker": "<!--if WONDERWHY_PREMIUM-->Free and Premium<!--end-->",
+    "title": "Start free. Go Premium when you want more.",
+    "free": {
+      "name": "Free",
+      "items": [
+        "Listen and ask for a few minutes every day",
+        "Every edition and language, and source comparison",
+        "Voice commands, speed and narrator voice"
+      ]
+    },
+    "plus": {
+      "name": "Premium",
+      "items": [
+        "Unlimited listening and questions",
+        "Keeps playing in the background and on the lock screen",
+        "CarPlay and Android Auto",
+        "Listen offline",
+        "A longer personal briefing",
+        "<!--if WONDERWHY_ADS-->No ads<!--end-->"
+      ]
+    },
+    "noteHtml": "<!--if WONDERWHY_ADS-->The free version shows ads. <!--end-->The App Store and Google Play show the price for your country. Premium renews automatically until you cancel it in your store account. See the <a href=\"{terms}\">Terms of Use</a>."
   }
 }

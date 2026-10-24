@@ -76,9 +76,25 @@ strong { color: var(--label); font-weight: 600; }
 
 .top { position: relative; z-index: 5; }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 12px; }
-.wordmark { color: var(--label); text-decoration: none; letter-spacing: 1.4px; font-size: 13px; }
-.lang-link { font: 600 15px/20px var(--font); color: var(--label); text-decoration: none; padding: 12px 0 12px 12px; }
-.lang-link:hover { text-decoration: underline; }
+/* Üst çubukta ikon + ad (24 Eki); dokunma alanı 44 px */
+.wordmark { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--label); text-decoration: none; font: 600 17px/22px var(--font); letter-spacing: -.41px; }
+/* Uygulama ikonu: siyah kare siyah zeminde kaybolmasın diye ince çerçeve (iOS ikon köşesi) */
+.mark, .app-icon { display: block; border-radius: 22.5%; box-shadow: 0 0 0 1px var(--sep); }
+.app-icon { width: 64px; height: 64px; margin-bottom: 20px; }
+/* Dil menüsü (24 Eki, dört dil): JS'siz <details> */
+.lang-menu { position: relative; }
+.lang-menu summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 0 0 12px;
+  font: 600 15px/20px var(--font); color: var(--label);
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary::after { content: ""; width: 7px; height: 7px; margin-top: -4px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); }
+.lang-menu ul {
+  position: absolute; right: 0; top: 100%; z-index: 10; margin: 4px 0 0; padding: 6px; list-style: none; min-width: 160px;
+  background: var(--raised); border: .5px solid var(--sep); border-radius: var(--r-card); box-shadow: 0 12px 32px rgba(0, 0, 0, .5);
+}
+.lang-link { display: block; font: 400 17px/22px var(--font); color: var(--label); text-decoration: none; padding: 11px 12px; border-radius: 10px; }
+.lang-link:hover, .lang-link:focus-visible { background: var(--high); }
 
 main { display: block; }
 section { padding: 72px 0; }
@@ -105,37 +121,52 @@ section { padding: 72px 0; }
 /* Kademeli beliriş: scene_frame.dart › StaggerIn (500ms, 70ms adım, 16px) */
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
 .rise { animation: rise 500ms var(--enter) both; animation-delay: calc(200ms + 70ms * var(--i, 0)); }
+/* Girişin başlığı ve metni yalnız kayarak gelir, saydam başlamaz (24 Eki, ölçüldü):
+   saydam başlayan metni Chrome LCP'ye saymıyor, LCP duvarın yavaş yayıncı
+   fotoğrafına kayıyordu (telefonda 3,7–4,7 sn). */
+@keyframes rise-move { from { transform: translateY(16px); } }
+.hero-text h1.rise, .hero-text .body.rise { animation-name: rise-move; }
 .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity 500ms var(--enter), transform 500ms var(--enter); transition-delay: calc(70ms * var(--i, 0)); animation: reveal-safety 0s 4s forwards; }
 .js .reveal.in { opacity: 1; transform: none; animation: none; }
 @keyframes reveal-safety { to { opacity: 1; transform: none; } }
 
-/* Hero ve kayan duvar: welcome.dart (3 sütun, −8°, 1.35 taşma, 150 yükseklik, 10 aralık) */
-.hero { position: relative; padding: 0; overflow: clip; }
+/* Giriş (24 Eki, ADR-072): geniş ekranda solda kayan haberler, sağda yazı;
+   telefonda önce yazı ve mağaza düğmeleri (ilk ekranda), altında duvar. */
+.hero { position: relative; padding: 24px 0 56px; }
+.hero-grid { display: grid; gap: 32px; }
+.hero-text { display: grid; align-content: center; justify-items: start; }
+.hero-text .kicker { margin-bottom: 8px; }
+.hero-text h1 { margin-bottom: 12px; }
+.hero-text .body { max-width: 520px; margin-bottom: 24px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.new-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-top: 12px; font: 600 15px/20px var(--font); color: var(--label); text-decoration: none; }
+.new-link:hover { text-decoration: underline; }
+
+/* Kayan duvar: welcome.dart'ın düz hâli; küçük, fotoğraflı karolar */
+.wall-panel { position: relative; }
 .wall {
-  position: relative; height: min(58vh, 560px); min-height: 340px; overflow: hidden;
-  mask-image: linear-gradient(#000 calc(100% - 140px), transparent);
-  -webkit-mask-image: linear-gradient(#000 calc(100% - 140px), transparent);
-}
-.wall-tilt {
-  position: absolute; left: -17.5%; top: -17.5%; width: 135%; height: 135%;
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-  transform: rotate(-8deg);
+  position: relative; height: 340px; overflow: hidden; border-radius: var(--r-large);
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+  -webkit-mask-image: linear-gradient(transparent, #000 48px, #000 calc(100% - 64px), transparent);
+  mask-image: linear-gradient(transparent, #000 48px, #000 calc(100% - 64px), transparent);
 }
 .wall-col { overflow: hidden; }
-.wall-col:nth-child(n+4) { display: none; }
+.wall-col:nth-child(3) { display: none; }
 .wall-track { display: grid; gap: 10px; padding-bottom: 10px; will-change: transform; }
 .ready .wall-track { animation: wall var(--dur) linear infinite; }
+.wall-col:nth-child(2) .wall-track { margin-top: -60px; }
 .hero.paused .wall-track, .hero.offscreen .wall-track { animation-play-state: paused; }
 @keyframes wall { to { transform: translateY(-50%); } }
-.tile {
-  height: 150px; background: var(--raised); border-radius: var(--r-card); padding: 12px;
-  display: grid; align-content: start; gap: 8px; overflow: hidden;
-  -webkit-mask-image: linear-gradient(#000 118px, transparent 146px);
-  mask-image: linear-gradient(#000 118px, transparent 146px);
+.tile { background: var(--raised); border-radius: var(--r-card); overflow: hidden; display: grid; }
+.tile img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; background: var(--high); color: transparent; }
+.tile-text { padding: 8px 10px 10px; display: grid; gap: 2px; }
+.tile-cat { font: 600 11px/13px var(--font); letter-spacing: .06px; text-transform: uppercase; color: var(--muted); }
+.tile-head {
+  font: 600 13px/17px var(--font); letter-spacing: -.08px; color: var(--label);
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
-.tile .footnote { color: var(--body); }
 .wall-toggle {
-  display: none; position: absolute; z-index: 3; right: var(--pad); top: 8px;
+  display: none; position: absolute; z-index: 3; right: 8px; top: 8px;
   width: 44px; height: 44px; border-radius: 999px; border: 0; cursor: pointer;
   background: rgba(28, 28, 30, .86); color: var(--label);
   align-items: center; justify-content: center;
@@ -144,11 +175,35 @@ section { padding: 72px 0; }
 .wall-toggle .i-play { display: none; }
 .hero.paused .wall-toggle .i-play { display: block; }
 .hero.paused .wall-toggle .i-pause { display: none; }
-.hero-text { position: relative; z-index: 2; background: var(--bg); padding-top: 8px; padding-bottom: 8px; display: grid; gap: 0; }
-.hero-text .kicker { margin-bottom: 8px; }
-.hero-text h1 { margin-bottom: 12px; }
-.hero-text .body { max-width: 560px; margin-bottom: 24px; }
-.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+
+/* Uygulamadan: mağaza görselleri, yatay şerit (scroll-snap) */
+.screens .section-head { margin-bottom: 20px; }
+.gallery { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 0 8px; }
+.gallery::-webkit-scrollbar { display: none; }
+.gallery ul {
+  list-style: none; margin: 0; display: flex; gap: 12px; width: max-content;
+  padding: 0 max(var(--pad), calc((100vw - 1080px) / 2 + var(--pad)));
+}
+.gallery li { scroll-snap-align: center; flex: none; }
+.gallery .shot { width: 220px; }
+.gallery .shot img { display: block; width: 100%; height: auto; border-radius: 16px; background: var(--raised); }
+.screens .footnote { margin-top: 12px; }
+
+/* Yenilikler (2.0.0) */
+.features { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.feature { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: flex; gap: 14px; align-items: flex-start; }
+.feature > div { display: grid; gap: 4px; }
+.feature .headline { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.f-icon { flex: none; width: 40px; height: 40px; border-radius: 12px; background: var(--high); color: var(--label); display: inline-flex; align-items: center; justify-content: center; }
+
+/* Ücretsiz ve Premium: ödeme panelindeki gibi önerilen kart beyaz çerçeveli (ADR-070) */
+.plans { display: grid; gap: 12px; max-width: 880px; }
+.plan { background: var(--raised); border-radius: var(--r-large); padding: 20px; display: grid; gap: 14px; align-content: start; }
+.plan-plus { box-shadow: inset 0 0 0 1.5px var(--label); }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.checks li { display: flex; gap: 10px; align-items: flex-start; }
+.checks svg { flex: none; margin-top: 2px; color: var(--accent); }
+.plans-note { margin-top: 16px; max-width: 720px; }
 
 /* Nasıl çalışır: demo_scene.dart */
 .steps { display: grid; gap: 32px; max-width: 560px; }
@@ -157,13 +212,9 @@ section { padding: 72px 0; }
 .step-head h3 { display: flex; align-items: baseline; gap: 10px; }
 .step-no { font: 600 13px/18px var(--font); color: var(--muted); font-variant-numeric: tabular-nums; }
 .card { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 12px; align-content: start; }
-/* Uygulamanın ekranı (Y3): tools/screens.sh yalnız ekranı kırpar, çerçeveyi bu
-   çizer. Köşe oranı ekranın kendi köşesi (560 px'te ~48 px). */
+/* Mağaza görseli (tools/gallery.sh): çerçevesi ve başlığı görselin içinde */
 .shot { display: block; justify-self: center; width: min(62vw, 240px); }
-.shot img {
-  display: block; width: 100%; height: auto; background: var(--raised);
-  border-radius: 8.6% / 4%; box-shadow: 0 0 0 6px var(--raised), 0 0 0 7px var(--sep);
-}
+.shot img { display: block; width: 100%; height: auto; border-radius: 16px; background: var(--raised); }
 .sample-tag { justify-self: start; font: 600 11px/13px var(--font); letter-spacing: .06px; text-transform: uppercase; color: var(--label); border: 1px solid var(--sep); border-radius: 999px; padding: 3px 8px; }
 
 .player { display: flex; align-items: center; gap: 12px; }
@@ -214,22 +265,23 @@ section { padding: 72px 0; }
 .brief .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 
 /* Baskılar: choice_row.dart */
-.choices { display: grid; gap: 8px; max-width: 720px; padding: 0; margin: 0; list-style: none; }
+.choices { display: grid; gap: 8px; max-width: 880px; padding: 0; margin: 0; list-style: none; }
 .choice { background: var(--raised); border-radius: var(--r-card); padding: 16px; display: grid; gap: 2px; }
 
 /* İndir */
 .download { display: grid; gap: 16px; justify-items: start; }
+.download .app-icon { width: 72px; height: 72px; margin-bottom: 4px; }
 .stores { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
 /* Resmî rozetler: Apple en az 40 px yükseklik. Google'ın PNG'si (646×250) şeffaf
    boşluk taşıyor; görünen rozet Apple'ınki gibi 40 px olsun diye büyütülüp boşluğu
-   negatif kenarla alınıyor. Ölçüldü: EN görünen 564×168 (kenar 41), TR 646×192
-   (üst/alt 29, yan 0). */
+   negatif kenarla alınıyor. Ölçüldü: EN görünen 564×168 (kenar 41), TR, ES ve DE
+   646×192 (üst/alt 29, yan 0; ES ve DE 24 Eki). */
 .badge { display: inline-flex; border-radius: 8px; }
 .badge img { display: block; width: auto; height: 40px; }
 .badge-googlePlay { margin: -9.75px; }
 .badge-googlePlay img { height: 59.5px; }
-.badge-googlePlay:lang(tr) { margin: -6px 0; }
-.badge-googlePlay:lang(tr) img { height: 52px; }
+.badge-googlePlay:is(:lang(tr), :lang(es), :lang(de)) { margin: -6px 0; }
+.badge-googlePlay:is(:lang(tr), :lang(es), :lang(de)) img { height: 52px; }
 
 /* SSS */
 .faq { display: grid; gap: 8px; max-width: 720px; }
@@ -302,31 +354,45 @@ section { padding: 72px 0; }
 /* Alt bilgi */
 .foot { border-top: .5px solid var(--sep); padding: 32px 0 48px; }
 .foot .wrap { display: grid; gap: 16px; }
-.foot nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 20px; }
-.foot a { color: var(--body); text-decoration: none; display: inline-block; padding: 6px 0; }
+.foot nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 20px; }
+.foot a { color: var(--body); text-decoration: none; display: inline-block; padding: 11px 0; }
+.foot-langs a { color: var(--muted); }
 .foot a:hover { text-decoration: underline; }
 
 .notfound { min-height: 70vh; display: grid; align-content: center; gap: 16px; padding: 48px 0; }
 
 /* Geniş ekran */
+@media (min-width: 560px) {
+  .wall { grid-template-columns: repeat(3, 1fr); height: 380px; }
+  .wall-col:nth-child(3) { display: block; }
+}
 @media (min-width: 760px) {
   :root { --pad: 32px; }
   .large-title { letter-spacing: -.5px; }
   .title1 { letter-spacing: -.2px; }
   section { padding: 96px 0; }
-  .wall { height: min(62vh, 620px); }
   .samples { grid-template-columns: repeat(2, 1fr); }
+  .features { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .plans { grid-template-columns: repeat(2, 1fr); }
+  .choices { grid-template-columns: repeat(2, 1fr); }
+  .gallery .shot { width: 240px; }
   .topic-hero { padding: 48px 0 72px; }
   .topic { grid-template-columns: 1fr auto; align-items: center; gap: 48px; }
   .topic .shot { width: 260px; }
 }
-@media (min-width: 980px) {
-  .steps { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto auto; gap: 16px 20px; max-width: none; }
-  .step { grid-row: span 3; grid-template-rows: subgrid; gap: 16px; }
+@media (min-width: 900px) {
+  .hero { padding: 32px 0 72px; }
+  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+  .wall-panel { order: -1; }
+  /* İki sütunda başlık yarım genişlikte: üst sınır 60 yerine 52 px (Almancası 4 satıra çıkıyordu) */
+  .hero-text h1 { font-size: clamp(34px, 4.2vw, 52px); }
+  .wall { height: min(72vh, 600px); min-height: 480px; }
+  .features { grid-template-columns: repeat(3, 1fr); }
+  .choices { grid-template-columns: repeat(3, 1fr); }
 }
-@media (min-width: 1100px) {
-  .wall-tilt { grid-template-columns: repeat(5, 1fr); }
-  .wall-col:nth-child(n+4) { display: block; }
+@media (min-width: 980px) {
+  .steps { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; gap: 16px 20px; max-width: none; }
+  .step { grid-row: span 2; grid-template-rows: subgrid; gap: 16px; }
 }
 
 /* Hareketi azalt: uygulamada süreler 0, sonsuz animasyon başlamaz (docs/03) */

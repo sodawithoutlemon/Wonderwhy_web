@@ -138,7 +138,8 @@ for (const file of files.filter((f) => f.endsWith('.html'))) {
   const empty = html.match(/<(li|p|td|h2|h3|strong)(?:\s[^>]*)?>\s*<\/\1>/);
   if (empty) err(file, `boş <${empty[1]}> (bayrak bloğu?)`);
   const body = (html.match(/<main[\s\S]*<\/main>/) || [''])[0].replace(/<[^>]+>/g, '');
-  const loose = body.match(/[^\s] {2,}[^\s]| [.,;:)]|[.,;:]{2}|\( /);
+  // Kısaltmadan sonra virgül (U.S., EE. UU.,) hata değil: büyük harften sonraki nokta atlanır.
+  const loose = body.match(/[^\s] {2,}[^\s]| [.,;:)]|(?<![A-ZÄÖÜ])[.,;:]{2}|\( /);
   if (loose) err(file, `metinde boşluk ya da noktalama hatası: "${loose[0]}"`);
   // Site olduğu gibi, GitHub'ın alt yolunda da sunuluyor: iç bağlantı göreli
   // olmalı. 404 istisna (her derinlikte aynı dosya; build.mjs › notFound).
@@ -153,7 +154,8 @@ for (const file of files.filter((f) => f.endsWith('.html'))) {
     if (!meta('description')) err(file, 'meta description yok');
     const expected = ORIGIN + urlOf(file);
     if (canonical !== expected) err(file, `canonical ${canonical} ≠ ${expected}`);
-    for (const hl of ['en', 'tr', 'x-default']) if (!alternates[hl]) err(file, `hreflang="${hl}" yok`);
+    // Her sayfa her dilde olmayabilir (KVKK yalnız en, tr): en, x-default ve kendisi şart.
+    for (const hl of new Set(['en', 'x-default', pageLang])) if (!alternates[hl]) err(file, `hreflang="${hl}" yok`);
     if (alternates[pageLang] !== expected) err(file, `kendi dilinin hreflang'ı kendisini göstermiyor`);
     if (alternates['x-default'] !== alternates.en) err(file, 'x-default EN sürümü olmalı');
   }
@@ -179,12 +181,14 @@ function sortObj(o) {
 // ---------------------------------------------------------------- bağlantılar
 
 const external = new Set();
+const externalImages = new Set(); // duvarın yayıncı fotoğrafları (crawl.mjs --images ister)
 for (const [url, p] of pages) {
   for (const t of p.tags) {
     if (t.tag === 'link' && /canonical|alternate/.test(t.a.rel)) continue;
     for (const ref of refsOf(t)) {
       if (/^(mailto:|https?:)/.test(ref)) {
         if (ref.startsWith(ORIGIN)) checkInternal(p, ref.slice(ORIGIN.length));
+        else if (t.tag === 'img') externalImages.add(ref);
         else external.add(ref.split('?')[0]);
         continue;
       }
@@ -207,11 +211,17 @@ function checkInternal(p, ref) {
 // ---------------------------------------------------------------- görseller
 
 // Her <img> alt (boş değil), width ve height taşır (yer ayrılır, sayfa kaymaz);
-// görsel dosyaları sınırı aşmaz.
+// görsel dosyaları sınırı aşmaz. Süs görseli (`data-deco`: ikon, aria-hidden
+// duvarın fotoğrafları) boş alt taşır. Dış görsel (yayıncının fotoğrafı, ADR-034)
+// https ve Referer'sız istenir: ziyaretçinin hangi sayfada olduğu yayıncıya gitmez.
 for (const [url, p] of pages) {
   for (const t of p.tags.filter((t) => t.tag === 'img')) {
-    if (!t.a.alt) err(p.file, `<img src="${t.a.src}"> alt yok ya da boş`);
+    if (!t.a.alt && !('data-deco' in t.a && t.a.alt === '')) err(p.file, `<img src="${t.a.src}"> alt yok ya da boş`);
     for (const k of ['width', 'height']) if (!/^\d+$/.test(t.a[k] ?? '')) err(p.file, `<img src="${t.a.src}"> ${k} yok`);
+    if (/^(https?:)?\/\//.test(t.a.src ?? '')) {
+      if (!t.a.src.startsWith('https://')) err(p.file, `dış görsel https değil: ${t.a.src}`);
+      if (t.a.referrerpolicy !== 'no-referrer') err(p.file, `dış görselde referrerpolicy="no-referrer" yok: ${t.a.src}`);
+    }
   }
 }
 for (const f of files.filter((f) => /\.(avif|jpe?g|png|webp|svg)$/.test(f))) {
@@ -221,22 +231,30 @@ for (const f of files.filter((f) => /\.(avif|jpe?g|png|webp|svg)$/.test(f))) {
 
 // ---------------------------------------------------------------- dil sızıntısı
 
-// EN sayfalarında Türkçe harf; TR sayfalarında İngilizce bağlaç ve zamir.
-// Başka dildeki parçalar lang özniteliğiyle işaretli olmalı (dil bağlantısı gibi).
-const TR_LETTERS = /[çğıöşüÇĞİÖŞÜ]/;
+// EN sayfalarında Türkçe, İspanyolca ya da Almanca harf; TR, ES ve DE
+// sayfalarında İngilizce bağlaç ve zamir; ES ve DE sayfalarında Türkçeye özgü
+// harf (24 Eki: dört dil). Başka dildeki parçalar lang özniteliğiyle işaretli
+// olmalı (dil bağlantısı gibi).
+const TR_LETTERS = /[çğıöşüÇĞİÖŞÜñÑ¿¡ßäÄ]/;
+const TR_ONLY = /[ğışĞİŞ]/; // ç İspanyolcada da var (Barça)
 // Özel adlar: yer adı ve yayıncının adı (site.json'dan; ör. "Yiğit Özdemir").
 const EN_ALLOW = new Set(['Türkiye', ...(site.publisher.name ?? '').split(/[^\p{L}]+/u).filter(Boolean)]);
 const EN_WORDS = /\b(the|and|with|your|you|this|that|are|is|of|for|to|from|when|what|how)\b/i;
-const TR_ALLOW = [/Firebase[\w ]*/g, /Google[\w ]*/g, /Cloud [A-Z]\w+/g, /App (Store|Check)/g, /GitHub[\w ]*/g, /Phys\.org/g];
+const TR_ALLOW = [/Firebase[\w ]*/g, /Google[\w ]*/g, /Cloud [A-Z]\w+/g, /App (Store|Check)/g, /GitHub[\w ]*/g, /Phys\.org/g, /Android Auto/g];
 for (const [url, p] of pages) {
+  const words = p.text.split(/[^\p{L}]+/u);
   if (p.pageLang === 'en') {
-    const bad = [...new Set(p.text.split(/[^\p{L}]+/u).filter((w) => TR_LETTERS.test(w) && !EN_ALLOW.has(w)))];
-    if (bad.length) err(p.file, `EN sayfada Türkçe: ${bad.slice(0, 8).join(', ')}`);
-  } else if (p.pageLang === 'tr') {
-    let t = p.text;
-    for (const re of TR_ALLOW) t = t.replace(re, ' ');
-    const bad = [...new Set(t.match(new RegExp(EN_WORDS.source, 'gi')) || [])];
-    if (bad.length) err(p.file, `TR sayfada İngilizce: ${bad.slice(0, 8).join(', ')}`);
+    const bad = [...new Set(words.filter((w) => TR_LETTERS.test(w) && !EN_ALLOW.has(w)))];
+    if (bad.length) err(p.file, `EN sayfada başka dil: ${bad.slice(0, 8).join(', ')}`);
+    continue;
+  }
+  let t = p.text;
+  for (const re of TR_ALLOW) t = t.replace(re, ' ');
+  const bad = [...new Set(t.match(new RegExp(EN_WORDS.source, 'gi')) || [])];
+  if (bad.length) err(p.file, `${p.pageLang.toUpperCase()} sayfada İngilizce: ${bad.slice(0, 8).join(', ')}`);
+  if (p.pageLang !== 'tr') {
+    const trBad = [...new Set(words.filter((w) => TR_ONLY.test(w) && !EN_ALLOW.has(w)))];
+    if (trBad.length) err(p.file, `${p.pageLang.toUpperCase()} sayfada Türkçe: ${trBad.slice(0, 8).join(', ')}`);
   }
 }
 
@@ -322,6 +340,7 @@ for (const p of SHARE_PATHS) {
 const indexable = [...pages.values()].filter((p) => !p.noindex).length;
 console.log(`${pages.size} sayfa (${indexable} dizinlenir), sitemap'te ${entries.length} adres`);
 console.log(`dış bağlantılar: ${[...external].sort().join(', ') || 'yok'}`);
+console.log(`dış görseller (yayıncı fotoğrafları): ${externalImages.size}`);
 for (const w of warnings) console.log(`uyarı  ${w}`);
 for (const e of errors) console.log(`HATA   ${e}`);
 console.log(errors.length ? `${errors.length} hata` : 'denetim temiz');

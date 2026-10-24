@@ -1,125 +1,197 @@
 {
-  "curatedAt": "2026-09-27",
+  "curatedAt": "2026-10-20",
   "items": [
     {
-      "id": "a915337e6892e93f",
+      "id": "f0f155e5a312e1b3",
       "category": "gundem",
-      "headline": "Rising sea levels threaten Southern California beach town and vital rail line"
+      "headline": "Christiane Amanpour to leave CNN after 43 years",
+      "source": "PBS NewsHour",
+      "image": "https://d3i6fh83elv35t.cloudfront.net/static/2026/10/2024-05-15T093814Z_878244081_RC2XQ7A7RU3K_RTRMADP_3_MEDIA-TRUTHTELLERS-1024x683.jpg",
+      "kb": 101
     },
     {
-      "id": "1b1fe03faa172f4c",
-      "category": "siyaset",
-      "headline": "Several states compete to host new US Space Academy"
+      "id": "33a429a2b38df035",
+      "category": "gundem",
+      "headline": "Japan launches mission to collect samples from Mars’s moons",
+      "source": "Euronews",
+      "image": "https://images.euronews.com/articles/stories/09/95/91/98/696x392_cmsv2_d522d96e-7861-5cd1-838c-566c5aa704fa-9959198.jpg",
+      "kb": 8
     },
     {
-      "id": "d2811d88af63d780",
-      "category": "spor",
-      "headline": "Major League Baseball releases schedule for the 2026 postseason"
-    },
-    {
-      "id": "f18ac3808a620ace",
-      "category": "spor",
-      "headline": "Ireland beats Japan in WXV Global Series as Beibhinn Parsons sets try record"
-    },
-    {
-      "id": "90794a58713a3806",
-      "category": "spor",
-      "headline": "Eva Olid secures first Women Super League victory as Manchester United manager"
-    },
-    {
-      "id": "884598b0a5915782",
-      "category": "spor",
-      "headline": "Buffalo Bills to face Los Angeles Chargers in Week 3 matchup"
-    },
-    {
-      "id": "9cfbcf7d56993b90",
+      "id": "a13db92bdee68910",
       "category": "ekonomi",
-      "headline": "Meta bets on smart glasses to lead the consumer AI device race"
+      "headline": "A $55,000 humanoid robot takes on household chores",
+      "source": "MarketWatch",
+      "image": "https://images.mktw.net/im-72452545?width=640",
+      "kb": 53
     },
     {
-      "id": "982cfe171af6d693",
+      "id": "8d4460304669cfcc",
+      "category": "spor",
+      "headline": "Sarina Wiegman extends England contract through Euro 2029",
+      "source": "BBC Sport",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/383f/live/75035850-cba2-11f1-9ee2-f74dfb8e54e5.jpg",
+      "kb": 5
+    },
+    {
+      "id": "51e24765d0114fa5",
+      "category": "dunya",
+      "headline": "Black bear enters California library and eats honey",
+      "source": "Guardian World",
+      "image": "https://i.guim.co.uk/img/media/4fc3e8f7038ab7a9c3581cfb8ee3b0b55e1df9d2/244_95_1230_984/master/1230.jpg?width=700&quality=85&auto=format&fit=max&s=af4605f73adbba5a12647884b4012808",
+      "kb": 56
+    },
+    {
+      "id": "0000ab69e1f10f17",
       "category": "ekonomi",
-      "headline": "Upcoming jobs report could push Treasury yields higher"
+      "headline": "Jio Platforms targets 10.3 trillion rupees in India’s biggest-ever IPO",
+      "source": "Guardian Business",
+      "image": "https://i.guim.co.uk/img/media/3ae335b7e0e881c618a8eb3edcc27734c745f17e/510_0_4583_3668/master/4583.jpg?width=700&quality=85&auto=format&fit=max&s=40028a54202fd4434861478cec56b784",
+      "kb": 40
     },
     {
-      "id": "5998a55c46b71012",
+      "id": "8a6bebfeedb0b56d",
       "category": "teknoloji",
-      "headline": "Wired names the best party speakers for 2026"
+      "headline": "Japan launches mission to collect samples from Phobos",
+      "source": "Ars Technica",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/52568167027_27ac36afb5_o-1152x648.jpg",
+      "kb": 35
     },
     {
-      "id": "a69fd45fe49407c7",
-      "category": "teknoloji",
-      "headline": "Google and OpenAI compete to make AI voice conversations more natural"
+      "id": "ef7a44cf7b8d3fad",
+      "category": "dunya",
+      "headline": "Expedition finds no plane debris on Nikumaroro",
+      "source": "Guardian Asia Pacific",
+      "image": "https://i.guim.co.uk/img/media/48e22e7f80585e094976be01a597fcd7bf66c7bc/0_138_2805_2244/master/2805.jpg?width=700&quality=85&auto=format&fit=max&s=cffcabb841a1eee5fe8a9199e140f2a8",
+      "kb": 38
     },
     {
-      "id": "c296bd4203d51260",
-      "category": "teknoloji",
-      "headline": "How to use the Live Text feature on your iPhone"
-    },
-    {
-      "id": "48c2e59269b8fbd7",
-      "category": "teknoloji",
-      "headline": "The tale of two Duos from Apple and Microsoft"
-    },
-    {
-      "id": "6012ea705b508e0d",
-      "category": "magazin",
-      "headline": "Jon Watts to direct next Star Wars movie"
-    },
-    {
-      "id": "72787283856786aa",
-      "category": "magazin",
-      "headline": "Jalen Brunson makes Saturday Night Live hosting debut"
-    },
-    {
-      "id": "9f8e22dbc96386d2",
-      "category": "magazin",
-      "headline": "Martin McDonagh calls Wild Horse Nine his most political film"
-    },
-    {
-      "id": "1d3636a42066ca10",
+      "id": "1cfaa0309b0c293b",
       "category": "saglik",
-      "headline": "Nasal spray offers needle-free pain relief for children in emergency rooms"
+      "headline": "3D printing method could expand options for personalized cardiovascular devices",
+      "source": "Medical Xpress",
+      "image": "https://scx1.b-cdn.net/csz/news/800a/2026/researchers-develop-3d-1.jpg",
+      "kb": 44
     },
     {
-      "id": "c41656275e54872e",
+      "id": "fdf569ad19020692",
+      "category": "teknoloji",
+      "headline": "Slate opens its first showroom as $25,000 electric truck nears production",
+      "source": "Ars Technica",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/slate-visit-chicago-intro-1152x648.jpg",
+      "kb": 152
+    },
+    {
+      "id": "29e87877443e2b88",
+      "category": "bilim",
+      "headline": "Bumblebee-like insect spotted in France after 150 years",
+      "source": "Phys.org",
+      "image": "https://scx1.b-cdn.net/csz/news/800a/2026/observing-and-logging.jpg",
+      "kb": 34
+    },
+    {
+      "id": "dcde3ddf666e2bc3",
       "category": "saglik",
-      "headline": "Uterus transplants in the United States lead to dozens of healthy births"
+      "headline": "Australian team develops gene-editing platform for cell therapies",
+      "source": "Medical Xpress",
+      "image": "https://scx1.b-cdn.net/csz/news/800a/2026/clinician-led-approach.jpg",
+      "kb": 45
     },
     {
-      "id": "51170d1f50f1b4c5",
-      "category": "saglik",
-      "headline": "Medical experts discuss shifting to a single dose for HPV vaccine"
-    },
-    {
-      "id": "2107e524832e3918",
-      "category": "bilim",
-      "headline": "Scientists discover chemosynthetic bacteria living on coral reef fish gills"
-    },
-    {
-      "id": "eb204fa74afe15b9",
-      "category": "bilim",
-      "headline": "Astronomers discover radio galaxy with four separate jet outbursts"
-    },
-    {
-      "id": "c7aba2fbc9f87c48",
-      "category": "bilim",
-      "headline": "NASA Astronomy Picture of the Day features Andromeda galaxy before and after digital processing"
-    },
-    {
-      "id": "596cb7f29290fd33",
-      "category": "bilim",
-      "headline": "World Sauna Congress convenes in Oslo as global interest in heat therapy grows"
-    },
-    {
-      "id": "a1350630f3d49370",
+      "id": "889c403be7bd6386",
       "category": "kultur",
-      "headline": "Author Tomi Adeyemi says she does not plan to watch the film adaptation of her hit novel"
+      "headline": "Scholars say Shakespeare was the principal author of Edward III",
+      "source": "The Guardian Culture",
+      "image": "https://i.guim.co.uk/img/media/9c8e899762425492abfe5294af03f840961b7c5e/298_0_2884_2307/master/2884.jpg?width=700&quality=85&auto=format&fit=max&s=b4e6fe5c40527d0d5060ebbe4841155d",
+      "kb": 70
     },
     {
-      "id": "bb918648536419d2",
+      "id": "14f8508b57ab2e64",
+      "category": "bilim",
+      "headline": "Orionid meteor shower peaks this week",
+      "source": "Guardian Science",
+      "image": "https://i.guim.co.uk/img/media/ed0e8a41fd06e32e773050302d8439c1d4686730/727_0_1629_1304/master/1629.jpg?width=700&quality=85&auto=format&fit=max&s=704e78e0e0ab12c8124eed9fd527d7dc",
+      "kb": 23
+    },
+    {
+      "id": "9f197eab6dae2978",
+      "category": "gundem",
+      "headline": "Brewers sweep Dodgers to reach World Series for first time since 1982",
+      "source": "NBC News",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit_1500w/rockcms/2026-10/261015-Brewers-Dodgers-Baseball-vsb-2253-b51017.jpg",
+      "kb": 256
+    },
+    {
+      "id": "f538a20092c3acc1",
       "category": "kultur",
-      "headline": "How avoiding misery can actually make us more unhappy"
+      "headline": "Judi Dench joins campaign to keep The Archers in Birmingham",
+      "source": "BBC Arts",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2e18/live/5ff1c6f0-c985-11f1-b646-2b044167639a.png",
+      "kb": 51
+    },
+    {
+      "id": "6119a561832710c7",
+      "category": "ekonomi",
+      "headline": "College computer science boom turns to bust",
+      "source": "MarketWatch",
+      "image": "https://images.mktw.net/im-39955150?width=640",
+      "kb": 19
+    },
+    {
+      "id": "16de6944c9fa4d7e",
+      "category": "gundem",
+      "headline": "Cloudstreet tops ABC Radio National poll of Australia’s favorite books",
+      "source": "Guardian World",
+      "image": "https://i.guim.co.uk/img/media/32169d31543b2f2b3a3aeb45698cbec5bbce95ae/29_0_1035_828/master/1035.jpg?width=700&quality=85&auto=format&fit=max&s=34ad256258d070117649462b5dc6ed48",
+      "kb": 115
+    },
+    {
+      "id": "0d67fdaa04231a2a",
+      "category": "dunya",
+      "headline": "Peru pilot links daily payments to rainforest-friendly practices",
+      "source": "Guardian World",
+      "image": "https://i.guim.co.uk/img/media/5dcbf6e6a550212dfa34c885265d9ef3a763ed30/353_0_4800_3840/master/4800.jpg?width=700&quality=85&auto=format&fit=max&s=268163964cec7744c8b254453a301e21",
+      "kb": 83
+    },
+    {
+      "id": "8c116b050fba21e2",
+      "category": "spor",
+      "headline": "Gloucester and Bordeaux draw 36-36 in Champions Cup opener",
+      "source": "Independent Sport",
+      "image": "https://static.independent.co.uk/2026/10/16/22/2026-10-16T205951Z_1810956046_UP1EMAG1M6847_RTRMADP_3_RUGBY-UNION-CHAMPIONS-GLO-BOR.JPG?width=1200&auto=webp&trim=0%2C0%2C0%2C0",
+      "kb": 139
+    },
+    {
+      "id": "572f214c85dd4672",
+      "category": "teknoloji",
+      "headline": "Spotify rolls out paid podcast memberships",
+      "source": "TechCrunch",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Spotify-Podcast-Memberships.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=640",
+      "kb": 19
+    },
+    {
+      "id": "32d8a8506a9441fb",
+      "category": "ekonomi",
+      "headline": "Some singles turn to in-person dating events over apps",
+      "source": "BBC Business",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6ca8/live/4a070320-cbc7-11f1-9a39-31b474234113.jpg",
+      "kb": 6
+    },
+    {
+      "id": "033e43f1aeb30208",
+      "category": "saglik",
+      "headline": "AI-enhanced virtual reality program may help manage menopause symptoms",
+      "source": "Medical Xpress",
+      "image": "https://scx1.b-cdn.net/csz/news/800a/2026/menopause-6.jpg",
+      "kb": 17
+    },
+    {
+      "id": "2b652c5a5ae5d730",
+      "category": "dunya",
+      "headline": "Thailand’s 2026 vegetarian festival centers on nine days of worship and abstinence",
+      "source": "Guardian Asia Pacific",
+      "image": "https://i.guim.co.uk/img/media/f14b0097595608785fde2646ec7d3d88a789077e/537_0_3722_2979/master/3722.jpg?width=700&quality=85&auto=format&fit=max&s=a7e617ce927d8a2c4f27dc6b14740add",
+      "kb": 101
     }
   ]
 }

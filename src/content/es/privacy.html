@@ -1,0 +1,231 @@
+<p>Esta política explica qué recogen la app {brand} y el sitio web {domain}, para qué, quién lo trata, cuánto tiempo se conserva y qué puedes hacer al respecto. Describe cómo funciona la app hoy. Cuando eso cambia, actualizamos esta página y la fecha de arriba. Si estás en Turquía, el <a href="{kvkk}">aviso KVKK</a> (en inglés) lo resume en el orden que exige la ley turca.</p>
+
+<h2 id="who">Quiénes somos</h2>
+<p>{brand} está publicada por {publisher}{address} (“nosotros”). Somos el responsable del tratamiento de los datos personales que se describen aquí. Para cualquier cuestión sobre tus datos, escribe a <a href="mailto:{emailPrivacy}">{emailPrivacy}</a>.</p>
+
+<h2 id="summary">Resumen</h2>
+<ul>
+<li><!--if !WONDERWHY_ADS&!WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->Sin anuncios, sin analítica y sin seguimiento en otras apps ni sitios web.<!--end--><!--if !WONDERWHY_ADS&WONDERWHY_ANALYTICS|!WONDERWHY_ADS&WONDERWHY_CRASH_REPORTS-->Sin anuncios y sin seguimiento en otras apps ni sitios web.<!--end--><!--if WONDERWHY_ADS--><!--if WONDERWHY_PREMIUM-->La versión gratuita muestra<!--else-->La app muestra<!--end--> anuncios de Google AdMob. No son personalizados: no se eligen según tus intereses ni según lo que haces en otras apps.<!--end--><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Para mejorar la app medimos cómo se usa y cuándo falla; puedes desactivarlo cuando quieras en Perfil › Privacidad y datos.<!--end--> No vendemos ni compartimos tus datos personales.</li>
+<li>Necesitas una cuenta para leer y escuchar: correo electrónico y contraseña, Iniciar sesión con Apple (en iPhone y iPad) o Iniciar sesión con Google. Sin cuenta solo puedes echar un vistazo. Tus listas y ajustes se sincronizan entre tus dispositivos.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>Si quieres, puedes suscribirte a Premium. El pago lo cobra Apple o Google; nunca vemos los datos de tu tarjeta.</li>
+<!--end-->
+<li>Cuando haces una pregunta por voz, la grabación va al servicio Gemini de Google para que la entienda y la responda. No la guardamos.<!--if WONDERWHY_VOICE_COMMANDS--> Si activas los comandos de voz, es tu propio móvil el que los entiende; tu voz no sale del móvil.<!--end--></li>
+<li>Una IA escribe los resúmenes de las noticias a partir de canales de noticias públicos. Para ello no se envía ninguno de tus datos.</li>
+<li>Aparte de tu cuenta y lo que guardas en ella, no conservamos nada más de 7 días.<!--if WONDERWHY_ANALYTICS--> La única excepción es la medición de uso: 90 días (consulta <a href="#no-tracking">Medición de uso e informes de fallos</a>).<!--end--></li>
+<li>Puedes eliminar tu cuenta en la app, o por correo electrónico sin ella (consulta <a href="{deleteAccount}">Eliminar tu cuenta</a>).</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Datos</th><th scope="col">Para qué</th><th scope="col">Adónde van</th><th scope="col">Cuánto tiempo</th></tr></thead>
+<tbody>
+<tr><td>Correo electrónico, contraseña o inicio de sesión con Apple/Google, nombre opcional</td><td>Cuenta e inicio de sesión</td><td>Google Firebase Authentication</td><td>Hasta que elimines tu cuenta</td></tr>
+<!--if WONDERWHY_EMAIL_CODE-->
+<tr><td>Código de verificación del correo (solo un resumen) y número de intentos</td><td>Confirmar que la dirección es tuya</td><td>Google Cloud Firestore (Bélgica); enviado a través de Google Workspace</td><td>7 días como máximo; en el acto cuando eliminas tu cuenta</td></tr>
+<!--end-->
+<tr><td>Listas y ajustes sincronizados</td><td>Mantenerlos al día en todos tus dispositivos</td><td>Google Cloud Firestore (Bélgica)</td><td>Hasta que elimines tu cuenta</td></tr>
+<tr><td>Votos y respuestas a encuestas</td><td>Contarlos una sola vez y mostrar los totales</td><td>Google Cloud Firestore (Bélgica)</td><td>7 días después del día de la noticia, o hasta que elimines tu cuenta si es antes</td></tr>
+<tr><td>Pregunta por voz (hasta 15 segundos) y la frase que está sonando</td><td>Entender y responder tu pregunta</td><td>Google Gemini API</td><td>Nosotros no la guardamos</td></tr>
+<!--if WONDERWHY_VOICE_COMMANDS-->
+<tr><td>Comandos de voz (si los activas)</td><td>Controlar el boletín por voz</td><td>A ningún sitio: se entienden en tu móvil</td><td>No se guardan</td></tr>
+<!--end-->
+<tr><td>Contadores de uso diario (tu ID y un número)</td><td>Límites de uso razonable</td><td>Google Cloud Firestore (Bélgica)</td><td>7 días; se eliminan en el acto con tu cuenta</td></tr>
+<!--if WONDERWHY_PREMIUM-->
+<tr><td>Tiempo de escucha gratuito (cuántos segundos has escuchado hoy)</td><td>Contar el tiempo gratuito diario</td><td>Tu móvil; Google Cloud Firestore (Bélgica)</td><td>Solo el recuento de hoy, que se sobrescribe al día siguiente; se elimina en el acto con tu cuenta</td></tr>
+<tr><td>Suscripción (el ID de tu cuenta, el registro de compra de la tienda, el estado de tu suscripción)</td><td>Confirmar la compra y desbloquear Premium</td><td>RevenueCat; Google Cloud Firestore (Bélgica). El pago lo cobra Apple o Google</td><td>El estado, mientras dure la suscripción; el registro de RevenueCat, hasta que elimines tu cuenta</td></tr>
+<!--end-->
+<tr><td>Registros del servidor (dirección IP, datos de la app y del dispositivo)</td><td>Seguridad y resolución de problemas</td><td>Google Cloud (Bélgica)</td><td>7 días</td></tr>
+<!--if WONDERWHY_ANALYTICS-->
+<tr><td>Medición de uso (pantallas que abres, escucha, botones que tocas; el ID de tu cuenta y el ID de dispositivo de la app)</td><td>Mejorar la app</td><td>Google Cloud Firestore (Bélgica), Google Analytics for Firebase</td><td>90 días (Google Analytics: 2 meses); los totales diarios no son personales y se conservan</td></tr>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<tr><td>Informes de fallos (dónde se produjo el error, modelo del dispositivo, versión del sistema y de la app, el ID de tu cuenta)</td><td>Encontrar y corregir errores</td><td>Firebase Crashlytics</td><td>90 días</td></tr>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<tr><td>Datos de anuncios (dirección IP y ubicación aproximada, datos del dispositivo y de la app, interacción con los anuncios; un ID de dispositivo: el identificador para proveedores (IDFV) en iPhone y iPad, el ID de publicidad en Android)</td><td>Mostrar y medir anuncios no personalizados, prevenir el fraude</td><td>Google AdMob</td><td>Según los plazos propios de Google</td></tr>
+<!--end-->
+</tbody>
+</table></div>
+
+<h2 id="account">Tu cuenta</h2>
+<p>Para abrir noticias y escuchar necesitas una cuenta; sin ella puedes recorrer la introducción y ver los titulares del día. Cuando creas una cuenta, tratamos tu dirección de correo electrónico, tu contraseña y, si lo introduces, tu nombre. Los guarda Firebase Authentication, de Google; nosotros nunca vemos tu contraseña. También puedes usar Iniciar sesión con Apple (en iPhone y iPad) o Iniciar sesión con Google. En ese caso, Apple o Google comparte con nosotros tu nombre, tu dirección de correo (Apple puede darnos una dirección de retransmisión privada) y un token de inicio de sesión. Con Google, Firebase Authentication también guarda la dirección web de tu foto de perfil de Google; la app no la usa ni la muestra. Durante el inicio de sesión con Google, el software de inicio de sesión de Google también puede usar tu dirección IP para estimar tu ubicación aproximada, con el fin de proteger el inicio de sesión contra el fraude.</p>
+<!--if WONDERWHY_EMAIL_CODE-->
+<p>Cuando creas una cuenta con correo electrónico y contraseña, te enviamos un código de 6 dígitos para confirmar que la dirección es tuya. El código llega desde <a href="mailto:{emailHello}">{emailHello}</a> a través de Google Workspace y es válido durante 10 minutos. No guardamos el código en sí: solo un resumen unidireccional del código y cuántas veces se ha intentado, durante 7 días como máximo. Los correos para restablecer la contraseña los envía Firebase Authentication, en nombre de {domain}.</p>
+<!--end-->
+<p>Antes de que inicies sesión, la app puede crear un ID de invitado aleatorio (una cuenta anónima de Firebase) para las funciones que lo necesitan. No está vinculado a tu nombre ni a tu correo, pero sigue siendo un dato personal, porque lo que se guarda con él puede relacionarse con tu móvil. Si después creas una cuenta, tu ID de invitado pasa a ser el ID de tu cuenta. Si inicias sesión en una cuenta que ya tenías, la app deja de usar el ID de invitado. Un ID de invitado que no se usa durante 7 días se elimina automáticamente.</p>
+
+<h2 id="synced">Qué se sincroniza con tu cuenta</h2>
+<p>Cuando has iniciado sesión con una cuenta (no como invitado), la app guarda lo siguiente en Google Cloud Firestore para que te acompañe en tus otros dispositivos. Solo tú puedes leerlo.</p>
+<ul>
+<li>Preferencias: tus temas, idiomas, profundidad de las noticias, tamaño del texto, ajustes de escucha y opciones de notificaciones.</li>
+<li>Noticias guardadas (hasta 50), noticias que has leído o escuchado recientemente (hasta 30) y tu lista de escucha (hasta 20). Son copias de las noticias dentro de la app.</li>
+<li>Temas y fuentes que sigues u ocultas.</li>
+<li>Tu propia copia de tus votos y respuestas a encuestas, y las noticias sobre las que has enviado un aviso.</li>
+<li>Tu lista de palabras y Mis preguntas (hasta 1500 entradas): cada palabra o concepto con la frase y el titular donde lo encontraste. Cuando preguntas por voz qué significa algo (por ejemplo, “¿qué es …?”), el concepto y la respuesta se añaden aquí.</li>
+<li>Tu progreso de escucha de hoy: qué noticias has oído, cuánto tiempo has escuchado y cuántas preguntas has hecho. Solo se guarda el número de preguntas, no las preguntas.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>El estado de tu suscripción y el recuento de hoy de tu tiempo de escucha gratuito (consulta <a href="#subscription">Suscripción y pago</a>). Solo nuestro servidor escribe estos datos.</li>
+<!--end-->
+</ul>
+
+<h2 id="votes">Votos y avisos</h2>
+<p>Cuando reaccionas a una noticia o respondes a una encuesta, tu voto se guarda con el ID de tu cuenta, para que cuente una sola vez y puedas cambiarlo. Los demás solo ven los totales. Los votos se eliminan con la noticia, 7 días después del día de la noticia.</p>
+<p>Cuando nos avisas de un problema con una noticia o una respuesta, guardamos la noticia, el motivo que elegiste y la nota (hasta 500 caracteres). Si nos avisas de un problema con una respuesta de voz, la app rellena la nota con tu pregunta y la respuesta para que podamos ver qué falló; puedes cambiarla o borrarla antes de enviarla. El aviso no está vinculado a tu ID y se elimina a los 7 días. Por favor, no pongas información personal en la nota: como no está vinculada a ti, no podemos encontrarla antes para eliminarla.</p>
+
+<h2 id="microphone">Micrófono y preguntas</h2>
+<h3>Preguntas con pulsar para hablar</h3>
+<p>Mientras suena un boletín, puedes mantener pulsado el botón del micrófono y hacer una pregunta. La app solo graba mientras mantienes pulsado el botón, hasta 15 segundos. Envía la grabación, junto con la frase que estaba sonando, a nuestro servidor. Nuestro servidor las envía a la API de Gemini de Google, que interpreta tu pregunta y redacta una respuesta. Después, la conversión de texto a voz de Google lee la respuesta con la voz del boletín.</p>
+<p>Antes de tu primera pregunta por voz, la app te avisa de que tu voz va a la IA de Google y te pide que lo aceptes. No se graba ni se envía nada hasta que lo hagas.</p>
+<p>No guardamos la grabación, ni escribimos en nuestros registros lo que dijiste ni la respuesta. Hay dos excepciones, ambas en tus manos: si nos avisas de un problema con una respuesta, el aviso conserva tu pregunta y la respuesta durante 7 días (consulta <a href="#votes">Votos y avisos</a>); y cuando preguntas qué significa algo, el concepto y la respuesta se guardan en Mis preguntas, en tu Biblioteca, y se sincronizan con tu cuenta hasta que la elimines (consulta <a href="#synced">Qué se sincroniza con tu cuenta</a>). Nuestros registros solo guardan números, como la longitud de la respuesta y cuánto tardó. Tu voz no se usa para identificarte.</p>
+<p>Usamos la API de Gemini como servicio de pago. Según las condiciones de Google para los servicios de pago, Google no usa estos datos para mejorar sus productos; conserva las peticiones y las respuestas durante un tiempo limitado únicamente para detectar usos indebidos y cumplir obligaciones legales.</p>
+<!--if WONDERWHY_VOICE_COMMANDS-->
+<h3>Comandos de voz</h3>
+<p>Si los activas, el propio reconocedor de voz de tu móvil entiende los comandos cortos que dices mientras suena un boletín (“para”, “siguiente”, “más rápido”). El reconocimiento se hace en tu móvil; el audio no nos llega ni a nosotros ni a ninguna otra empresa, y no se guarda. El micrófono solo escucha mientras la app está en pantalla y hay un boletín abierto, o se muestra la pantalla Hoy; el reproductor, el minirreproductor y Hoy indican “Escuchando”. Puedes desactivar los comandos de voz en Perfil › Leer y escuchar.</p>
+<!--end-->
+<h3>Preguntas preparadas</h3>
+<p>Algunas preguntas son botones, como pedir más detalles sobre una noticia. Sus respuestas tratan de la noticia, no de ti, así que las guardamos con la noticia y las reutilizamos para todos.</p>
+<p>Tu móvil te pide permiso antes de que la app pueda usar el micrófono<!--if WONDERWHY_VOICE_COMMANDS-->, y para el reconocimiento de voz antes de los comandos de voz<!--end-->. Puedes desactivarlo en cualquier momento en los ajustes del móvil.</p>
+
+<h2 id="news">Cómo se hacen las noticias</h2>
+<p>Nuestro servidor recopila noticias de los canales públicos de los medios de comunicación y lee los primeros párrafos de sus páginas para comparar cómo cuentan los medios una misma noticia. Las envía a OpenAI para que escriba los resúmenes y a Google para que los lea en voz alta. Estas peticiones solo contienen texto de noticias, ninguno de tus datos. Las noticias y sus archivos de audio se eliminan de nuestros servidores 7 días después del día en que se publicaron.</p>
+<p>Tu boletín personal se monta en tu móvil a partir de la edición común, así que tus temas no se envían a ningún servicio de IA.</p>
+<p>Las imágenes de las noticias se cargan directamente desde los servidores de los medios, y los enlaces a las fuentes abren la página del medio en un navegador dentro de la app. Esos medios pueden ver tu dirección IP y aplican sus propias políticas de privacidad.</p>
+
+<h2 id="device">En tu móvil</h2>
+<ul>
+<li>Tus listas, ajustes y estado de sincronización, en el almacenamiento propio de la app.</li>
+<li>Una caché del audio de las noticias, en una carpeta temporal que tu móvil puede vaciar.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li>El recuento de hoy de tu tiempo de escucha gratuito. Si te suscribes, el audio de Hoy descargado para escuchar sin conexión también está en la carpeta de caché y no se incluye en las copias de seguridad.</li>
+<!--end-->
+<li>Tu sesión iniciada: en iPhone y iPad, en el Llavero, donde puede quedarse después de eliminar la app; en Android, en el almacenamiento privado de la app.</li>
+<li>Una copia sin conexión de tus datos sincronizados, que guarda Firestore.</li>
+</ul>
+<p>Cuando cierras sesión o eliminas tu cuenta, la app quita del móvil tus listas, votos, palabras y progreso. Conserva los ajustes de la app (temas, idiomas, tamaño del texto) para que la app siga funcionando. Al eliminar la app, se borran también.</p>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<p>Para la medición de uso y los informes de fallos, la app guarda en tu móvil un ID aleatorio y los registros pendientes de envío. Tu decisión de desactivarlos también se guarda en el móvil y no se borra al cerrar sesión.</p>
+<!--end-->
+<p>Para proteger nuestros servidores de usos indebidos, la app usa Firebase App Check, con DeviceCheck de Apple en iPhone y iPad y Google Play Integrity en Android, para confirmar que las peticiones vienen de la app auténtica. No guardamos identificadores de dispositivo.</p>
+
+<h2 id="notifications">Notificaciones</h2>
+<p>Solo si permites las notificaciones, tu móvil se suscribe a temas (como la hora de tu boletín de la mañana o las novedades importantes de tu edición) a través de Firebase Cloud Messaging y, en iPhone y iPad, también del servicio de notificaciones push de Apple. Enviamos a temas, no a ti personalmente, y no guardamos ningún token de dispositivo. Puedes desactivar las notificaciones en el Perfil de la app o en los ajustes del móvil.</p>
+
+<h2 id="limits">Límites de uso y registros del servidor</h2>
+<p>Para que el servicio sea justo y asequible, contamos cuántas preguntas haces y cuántos audios de noticias has generado cada día. Cada contador contiene el ID de tu cuenta, la fecha y un número. Mientras se prepara el audio de una noticia, el trabajo se registra con tu ID. Los contadores y los registros de trabajos se eliminan a los 7 días, y en el acto cuando eliminas tu cuenta.</p>
+<p>Nuestros servidores funcionan en Google Cloud en Bélgica (europe-west1). Google Cloud conserva registros de peticiones con direcciones IP y datos de la app y del dispositivo durante 7 días. Nuestras propias líneas de registro contienen números, no identificadores de cuenta.</p>
+
+<!--if WONDERWHY_PREMIUM-->
+<h2 id="subscription">Suscripción y pago</h2>
+<p>La versión gratuita te permite escuchar durante un tiempo determinado cada día. Para contarlo, la app guarda en tu móvil y en tu cuenta cuántos segundos has escuchado hoy: solo el número de hoy, que se sobrescribe al día siguiente, sin historial. A los suscriptores no se les cuenta.</p>
+<p>Si te suscribes a Premium, el pago lo cobra Apple en el App Store y Google en Google Play; nunca vemos los datos de tu tarjeta ni de pago. Confirmamos la compra y el estado de tu suscripción con RevenueCat. RevenueCat recibe el ID de tu cuenta y el registro de compra de la tienda; no recibe tu correo, tu nombre ni los identificadores de publicidad de tu dispositivo. El estado actual de tu suscripción (qué producto, cuándo termina, en qué tienda, si se renueva) se guarda en tu cuenta y se elimina cuando termina la suscripción. Solo nuestro servidor lo escribe.</p>
+<p>Si te suscribes, el audio de tu lista de Hoy se descarga en tu móvil para que puedas escucharlo sin conexión. Está en la carpeta de caché del móvil y no se incluye en las copias de seguridad. Se elimina al empezar un nuevo día, cuando cierras sesión, cuando eliminas tu cuenta o cuando termina tu suscripción, y como muy tarde a los 7 días.</p>
+<p>Eliminar tu cuenta no pone fin a la suscripción; cancélala por separado en los ajustes de suscripciones del App Store o de Google Play. Las condiciones de compra, prueba, cancelación y reembolso están en las <a href="{terms}#subscription">Condiciones de uso</a>.</p>
+
+<!--end-->
+<h2 id="no-tracking"><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Medición de uso e informes de fallos<!--end--><!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS&!WONDERWHY_ADS-->Sin anuncios, analítica ni venta de datos<!--end--><!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS&WONDERWHY_ADS-->Sin analítica ni venta de datos<!--end--></h2>
+<!--if WONDERWHY_ANALYTICS-->
+<p>Para mejorar la app medimos cómo se usa: qué pantallas abres y durante cuánto tiempo, qué noticias de un boletín escuchas, te saltas o en cuáles paras, que has hecho una pregunta (solo cuántas, cuánto duraron y si funcionaron, nunca el texto de la pregunta ni de la respuesta), y los toques en botones como guardar, compartir y reacciones. Cada registro lleva el ID de tu cuenta, un ID aleatorio que la app asigna a este móvil, la versión de la app y del sistema, el idioma y la edición. El texto de las noticias, tus preguntas, tu correo y tu nombre nunca entran en estos registros. Se guardan en nuestros servidores (Bélgica) y en Google Analytics for Firebase.</p>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<p>Cuando la app falla o da un error, los datos técnicos (en qué parte del código ocurrió, modelo del dispositivo, versión del sistema y de la app) van a Firebase Crashlytics con el ID de tu cuenta. No escribimos el texto de los mensajes de error en nuestros propios registros.</p>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<p>Lo hacemos sobre la base de nuestro interés legítimo (consulta <a href="#legal-bases">Bases jurídicas</a>). Puedes desactivar “Datos de uso” e “Informes de fallos” por separado cuando quieras en <strong>Perfil › Privacidad y datos</strong>; a partir de ese momento no se envía nada desde ese móvil y los registros pendientes se eliminan. La app te lo dice una vez, la primera vez que la abres.</p>
+<p><!--if WONDERWHY_ADS-->La medición de uso no utiliza el identificador de publicidad (IDFA, ID de publicidad de Android), y no usamos la medición para anuncios.<!--else-->Sin anuncios. No leemos el identificador de publicidad (IDFA, ID de publicidad de Android) ni te seguimos en las apps o sitios web de otras empresas.<!--end--> Las señales de publicidad y Google signals están desactivadas en Google Analytics. No vendemos ni compartimos datos personales, en el sentido que da a esos términos la ley de California. No tomamos decisiones sobre ti por medios automatizados que tengan efectos jurídicos o efectos igualmente significativos.</p>
+<!--end-->
+<!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->
+<p>La app no tiene <!--if !WONDERWHY_ADS-->publicidad ni <!--end-->herramientas de analítica ni de informes de fallos<!--if !WONDERWHY_ADS-->, y no te sigue en las apps o sitios web de otras empresas<!--end-->. No vendemos ni compartimos datos personales, en el sentido que da a esos términos la ley de California. No tomamos decisiones sobre ti por medios automatizados que tengan efectos jurídicos o efectos igualmente significativos.</p>
+<!--end-->
+
+<!--if WONDERWHY_ADS-->
+<h2 id="ads">Anuncios</h2>
+<p><!--if WONDERWHY_PREMIUM-->La versión gratuita muestra<!--else-->La app muestra<!--end--> anuncios: anuncios pequeños en la lista de Hoy, en Explorar, al final de las noticias y en el reproductor, y de vez en cuando un anuncio a pantalla completa cuando terminas o cierras una sesión de escucha.<!--if WONDERWHY_PREMIUM--> Premium no tiene anuncios.<!--end--> Google AdMob elige y muestra los anuncios.</p>
+<p>Los anuncios no son personalizados: no se eligen según tus intereses ni según lo que haces en otras apps y sitios web. En iPhone y iPad no pedimos acceso al identificador de publicidad (IDFA). Aun así, para mostrar anuncios, limitar la frecuencia con la que aparecen, medirlos y prevenir el fraude, el software publicitario de Google recoge de tu móvil: tu dirección IP y la ubicación aproximada que proporciona, datos del dispositivo y de la app, tu interacción con los anuncios y un ID de dispositivo: en iPhone y iPad, el identificador para proveedores (IDFV), que es específico de nuestras apps; en Android, el ID de publicidad y el ID del conjunto de apps. Google trata estos datos según su propia política de privacidad. En Android puedes restablecer o eliminar el ID de publicidad en los ajustes del móvil.</p>
+<p>En el Espacio Económico Europeo, el Reino Unido y Suiza, la app te pide tu elección con el formulario de consentimiento de Google antes de mostrar anuncios. Puedes cambiarla más adelante en <strong>Perfil › Privacidad y datos › Privacidad de los anuncios</strong>.</p>
+<p>No damos a Google el ID de tu cuenta, tu correo, tu nombre ni las noticias que escuchas para los anuncios.</p>
+
+<!--end-->
+<h2 id="processors">Quién trata tus datos</h2>
+<ul>
+<li><strong>Google</strong> (Firebase Authentication, Iniciar sesión con Google, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Messaging, Gemini API, Google Analytics for Firebase y Firebase Crashlytics): alojamiento, inicio de sesión, sincronización, preguntas, audio, medición de uso e informes de fallos.<!--else-->Messaging y Gemini API): alojamiento, inicio de sesión, sincronización, preguntas y audio.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play cobra los pagos de las suscripciones.<!--end--><!--if WONDERWHY_ADS--> Google AdMob elige y muestra los anuncios (consulta <a href="#ads">Anuncios</a>).<!--end--> Firestore, Cloud Functions y Cloud Storage están en Bélgica; el inicio de sesión, Gemini y algunos otros servicios pueden tratar datos en Estados Unidos y otros países.</li>
+<li><strong>OpenAI</strong>: escribe los resúmenes de las noticias. No recibe datos personales.</li>
+<li><strong>Apple</strong>: Iniciar sesión con Apple, DeviceCheck y notificaciones push.<!--if WONDERWHY_PREMIUM--> Cobra los pagos de las suscripciones en el App Store.<!--end--></li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>RevenueCat</strong> (Estados Unidos): confirma las compras y el estado de tu suscripción.</li>
+<!--end-->
+<li><strong>GitHub</strong>: aloja este sitio web.</li>
+<li><strong>{emailProvider}</strong>: aloja nuestro buzón de correo<!--if WONDERWHY_EMAIL_CODE--> y envía los códigos de verificación del correo<!--end-->; allí se guardan los correos que nos envías.</li>
+</ul>
+<p>Estos proveedores tratan los datos por cuenta nuestra según sus condiciones de tratamiento de datos, que les obligan a protegerlos al menos tan bien como se describe en esta política.<!--if WONDERWHY_PREMIUM&!WONDERWHY_ADS--> Apple y Google también tratan los pagos en las tiendas según sus propias políticas de privacidad.<!--end--><!--if WONDERWHY_ADS&!WONDERWHY_PREMIUM--> Google también trata los datos de anuncios según su propia política de privacidad.<!--end--><!--if WONDERWHY_PREMIUM&WONDERWHY_ADS--> Apple y Google también tratan los pagos en las tiendas, y Google los datos de anuncios, según sus propias políticas de privacidad.<!--end--></p>
+<p>Algunos de ellos tratan datos fuera de Turquía y del Espacio Económico Europeo, incluido Estados Unidos. Estas transferencias se basan en las garantías que exige la ley: para el EEE, las cláusulas contractuales tipo de los proveedores; para Turquía, los mecanismos del artículo 9 de la Ley n.º 6698 de Protección de Datos Personales (KVKK).</p>
+
+<h2 id="retention">Cuánto tiempo conservamos los datos</h2>
+<p>Tu cuenta y lo que guardas en ella se conservan hasta que elimines la cuenta.<!--if WONDERWHY_ANALYTICS--> La medición de uso se conserva durante 90 días.<!--end--> Todo lo demás se elimina en un plazo de 7 días: cada noche se ejecuta un proceso que borra lo que es más antiguo.</p>
+<ul>
+<li><strong>Cuenta y datos sincronizados:</strong> hasta que elimines tu cuenta.</li>
+<li><strong>Votos:</strong> se eliminan con la noticia, 7 días después del día de la noticia, o antes si eliminas tu cuenta.</li>
+<li><strong>ID de invitado:</strong> se eliminan tras 7 días sin uso. Esto incluye el ID de invitado que queda sin usar cuando inicias sesión en una cuenta que ya existía.</li>
+<li><strong>Avisos:</strong> 7 días.</li>
+<!--if WONDERWHY_EMAIL_CODE-->
+<li><strong>Códigos de verificación del correo:</strong> el código en sí no se guarda; su resumen y el número de intentos, 7 días como máximo, y en el acto cuando eliminas tu cuenta.</li>
+<!--end-->
+<li><strong>Contadores de uso diario y registros de trabajos de audio:</strong> 7 días; se eliminan en el acto cuando eliminas tu cuenta.</li>
+<!--if WONDERWHY_PREMIUM-->
+<li><strong>Suscripción:</strong> su estado actual, mientras dure; tu registro en RevenueCat, hasta que elimines tu cuenta. El recuento de escucha gratuita es solo el de hoy; el audio sin conexión, 7 días como máximo. Apple y Google conservan los registros de compra según sus propias políticas y obligaciones legales.</li>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS-->
+<li><strong>Medición de uso:</strong> 90 días; 2 meses en Google Analytics. El resumen de uso de tu cuenta (primer y último día de uso, totales), hasta que elimines tu cuenta; sin cuenta, 90 días después del último uso. Se conservan los totales diarios que no están vinculados a nadie (por ejemplo, cuántas personas escucharon ese día).</li>
+<!--end-->
+<!--if WONDERWHY_CRASH_REPORTS-->
+<li><strong>Informes de fallos:</strong> 90 días.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Datos de anuncios:</strong> según los plazos propios de Google; nosotros no los conservamos.</li>
+<!--end-->
+<li><strong>Grabaciones de voz:</strong> no se guardan. Una pregunta y su respuesta solo se conservan como se describe arriba: en un aviso (7 días) o en Mis preguntas (hasta que elimines tu cuenta).</li>
+<li><strong>Noticias, audio de las noticias y respuestas preparadas:</strong> 7 días después del día de la noticia.</li>
+<li><strong>Registros del servidor:</strong> 7 días. No contienen identificadores de cuenta.</li>
+<li><strong>Correos que nos envías:</strong> el tiempo que necesitemos para atender tu mensaje. Si nos pides que te avisemos cuando salga la app, conservamos tu dirección hasta que lo hayamos hecho y después la eliminamos.</li>
+</ul>
+
+<h2 id="deletion">Eliminar tus datos</h2>
+<p>En la app, ve a <strong>Perfil › Eliminar cuenta</strong> y confirma con <strong>Eliminar cuenta para siempre</strong>. Esto elimina en el acto tu cuenta, todo lo que se guarda en ella (listas, ajustes, palabras y progreso), todos tus votos, tus contadores de uso<!--if WONDERWHY_ANALYTICS-->, la medición de uso<!--end--><!--if WONDERWHY_EMAIL_CODE-->, los registros de verificación del correo<!--end--><!--if WONDERWHY_PREMIUM-->, el estado de la suscripción, el recuento de escucha gratuita, el registro de RevenueCat<!--end--> y los registros de trabajos de audio. Si usaste Iniciar sesión con Apple, la app también revoca su acceso a tu Apple ID. En tu móvil, la app quita tus listas y conserva sus ajustes, como se describe arriba.</p>
+<!--if WONDERWHY_PREMIUM-->
+<p>Eliminar tu cuenta no cancela tu suscripción. Para que dejen de cobrarte, cancélala en los ajustes de suscripciones del App Store o de Google Play.</p>
+<!--end-->
+<p>Después, no queda en nuestros servidores nada vinculado a tu cuenta.<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Los registros de Google Analytics y Crashlytics se eliminan según sus propios plazos (2 meses, 90 días); los avisos anónimos y los registros del servidor, que no contienen ningún ID de cuenta, en un plazo de 7 días.<!--else--> Los avisos anónimos y los registros del servidor, que no contienen ningún ID de cuenta, se eliminan en un plazo de 7 días.<!--end--></p>
+<p>Si no puedes usar la app, escribe a <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> desde la dirección de correo de tu cuenta. Los pasos también están en la página <a href="{deleteAccount}">Eliminar tu cuenta</a>. Los ID de invitado se eliminan automáticamente tras 7 días sin uso; si quieres que eliminemos el tuyo antes, escríbenos.</p>
+
+<h2 id="rights">Tus derechos</h2>
+<p>Según dónde vivas, tienes algunos o todos estos derechos:</p>
+<ul>
+<li><strong>Turquía (KVKK, artículo 11):</strong> saber si tratamos tus datos y solicitar información sobre ellos; conocer la finalidad y si se usan conforme a ella; saber con quién se comparten en Turquía o en el extranjero; obtener su rectificación o supresión y que se informe de ello a aquellos con quienes se compartieron; oponerte a un resultado en tu contra que derive exclusivamente de un análisis automatizado; y reclamar una indemnización por los daños causados por un tratamiento ilícito. Puedes presentar tu solicitud escribiéndonos desde la dirección de correo registrada en tu cuenta; respondemos en un plazo de 30 días, de forma gratuita. Si no estás conforme, puedes presentar una reclamación ante la Autoridad de Protección de Datos Personales (KVKK). Más información: <a href="{kvkk}">aviso KVKK</a> (en inglés).</li>
+<li><strong>EEE y Reino Unido (RGPD, Reglamento General de Protección de Datos):</strong> acceder a tus datos, rectificarlos o suprimirlos; limitar su uso u oponerte a él<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> (en la medición de uso y los informes de fallos, al instante con los interruptores de la app)<!--end-->; recibirlos en un formato portable; retirar tu consentimiento en cualquier momento; y presentar una reclamación ante tu autoridad de protección de datos.</li>
+<li><strong>California (CCPA/CPRA):</strong> saber qué recogemos y cómo lo usamos, eliminarlo y corregirlo, y no recibir un trato diferente por ejercer estos derechos. No vendemos ni compartimos información personal. Usamos la información sensible, como los datos de acceso a tu cuenta, solo para prestar el servicio.</li>
+</ul>
+<p>Para ejercer cualquiera de estos derechos, escribe a <a href="mailto:{emailPrivacy}">{emailPrivacy}</a>. Podemos pedirte que confirmes que la solicitud procede de ti.</p>
+
+<h2 id="legal-bases">Bases jurídicas</h2>
+<ul>
+<li><strong>Prestar el servicio que pides</strong> (cuenta, sincronización, respuesta a preguntas, votos<!--if WONDERWHY_PREMIUM-->, suscripción y tiempo de escucha gratuito<!--end-->): la ejecución de nuestro contrato contigo (RGPD art. 6(1)(b); KVKK art. 5(2)(c)).</li>
+<li><strong>Seguridad, prevención de usos indebidos, límites de uso y registros:</strong> nuestros intereses legítimos (RGPD art. 6(1)(f); KVKK art. 5(2)(f)).</li>
+<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
+<li><strong>Medición de uso e informes de fallos:</strong> nuestro interés legítimo en mejorar la app y corregir errores (RGPD art. 6(1)(f); KVKK art. 5(2)(f)). Puedes oponerte y desactivarlos en Perfil › Privacidad y datos.</li>
+<!--end-->
+<!--if WONDERWHY_ADS-->
+<li><strong>Anuncios no personalizados:</strong> nuestro interés legítimo en mantener <!--if WONDERWHY_PREMIUM-->la versión gratuita<!--else-->la app<!--end--> en funcionamiento (RGPD art. 6(1)(f); KVKK art. 5(2)(f)). En el Espacio Económico Europeo, el Reino Unido y Suiza, tu elección en el formulario de consentimiento (RGPD art. 6(1)(a)).</li>
+<!--end-->
+<li><strong>Micrófono<!--if WONDERWHY_VOICE_COMMANDS-->, reconocimiento de voz<!--end--> y notificaciones:</strong> tu permiso, que puedes retirar en los ajustes del móvil (RGPD art. 6(1)(a)).</li>
+<li><strong>Obligaciones legales</strong>, cuando sean aplicables (RGPD art. 6(1)(c); KVKK art. 5(2)(<span lang="tr">ç</span>)).</li>
+</ul>
+
+<h2 id="children">Edad</h2>
+<p>La app es para adultos. Debes tener al menos 18 años para usarla: su función de preguntas usa la API de Gemini de Google, cuyas condiciones no permiten servicios dirigidos a menores de 18 años o que probablemente vayan a ser usados por ellos. Si crees que un menor de 18 años nos ha dado datos personales, escríbenos y los eliminaremos.</p>
+
+<h2 id="website">Este sitio web</h2>
+<p>{domain} es un sitio estático alojado en GitHub Pages. No usa cookies, ni almacenamiento del navegador, ni analítica, ni scripts o fuentes de terceros. GitHub trata las direcciones IP de los visitantes para servir el sitio y mantenerlo seguro, según la Declaración de privacidad de GitHub. Las fotos de noticias de la página de inicio se cargan desde los servidores de los medios; los medios pueden ver tu dirección IP, y no se envía ninguna dirección de referencia. Las muestras de audio solo se cargan cuando pulsas reproducir. Si nos escribes, usamos tu dirección para responderte.</p>
+
+<h2 id="changes">Cambios en esta política</h2>
+<p>Actualizamos esta página cuando cambian la app o la ley, y cambiamos la fecha de arriba. Si los cambios son importantes, también te avisaremos en la app.</p>
+
+<h2 id="contact">Contacto</h2>
+<p>{publisher}{address}<br><a href="mailto:{emailPrivacy}">{emailPrivacy}</a></p>

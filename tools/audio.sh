@@ -5,7 +5,7 @@
 #   bash tools/audio.sh
 #   APP_ROOT=/yol/uygulama-reposu bash tools/audio.sh
 #
-# Çıktı: src/static/audio/{en,tr}/{listen,ask,compare}.m4a
+# Çıktı: src/static/audio/{en,tr,es,de}/{listen,ask,compare}.m4a
 #        src/data/audio.json (ölçülen süreler, saniye)
 # Uygulama reposu varsayılan olarak bu reponun bir üstü (README).
 # ask.m4a = soru + 0.35 sn sessizlik + cevap (uygulamadaki sıra).
@@ -33,7 +33,7 @@ check() { # check <ölçülen> <beklenen> <ad>
 mkdir -p "$(dirname "$JSON")"
 echo "{" >"$JSON.tmp"
 first=1
-for lang in en tr; do
+for lang in en tr es de; do
   mkdir -p "$OUT/$lang"
   for clip in listen compare; do
     ffmpeg -loglevel error -y "${IN[@]}" -i "$SRC/$lang/$clip.ulaw" "${ENC[@]}" "$OUT/$lang/$clip.m4a"

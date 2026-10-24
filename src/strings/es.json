@@ -1,0 +1,430 @@
+{
+  "locale": "es-ES",
+  "ogLocale": "es_ES",
+  "langName": "Español",
+  "skip": "Saltar al contenido",
+  "nav": {
+    "home": "Inicio",
+    "privacy": "Privacidad",
+    "terms": "Condiciones",
+    "support": "Soporte",
+    "compare": "Comparar fuentes de noticias",
+    "language": "Idioma"
+  },
+  "footer": {
+    "notYet": "La app aún no está disponible.",
+    "legal": "Legal",
+    "trademarks": "Apple, el logotipo de Apple, App Store y CarPlay son marcas comerciales de Apple Inc., registradas en EE. UU. y en otros países. Google Play, el logotipo de Google Play y Android Auto son marcas comerciales de Google LLC.",
+    "languages": "Idiomas"
+  },
+  "hint": {
+    "text": "Esta página también está disponible en español.",
+    "link": "Leer en español",
+    "close": "Cerrar"
+  },
+  "placeholder": {
+    "publisher": "[Nombre del editor]",
+    "address": "[Dirección postal]",
+    "emailProvider": "[Proveedor de correo electrónico]"
+  },
+  "categories": {
+    "gundem": "Nacional",
+    "siyaset": "Política",
+    "spor": "Deportes",
+    "ekonomi": "Economía",
+    "dunya": "Internacional",
+    "teknoloji": "Tecnología",
+    "magazin": "Gente",
+    "saglik": "Salud",
+    "bilim": "Ciencia",
+    "kultur": "Cultura"
+  },
+  "sourcesCount": {
+    "one": "{n} fuente",
+    "other": "{n} fuentes"
+  },
+  "sample": "Ejemplo",
+  "player": {
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "transcript": "Transcripción"
+  },
+  "pages": {
+    "home": {
+      "title": "Wonderwhy: app de noticias en audio con IA. Escucha, pregunta, compara fuentes",
+      "description": "App gratuita de noticias en audio con IA: un boletín diario breve con tus temas. Pregunta por voz y mira en qué difieren las fuentes. iPhone, iPad y Android."
+    },
+    "privacy": {
+      "title": "Política de privacidad · Wonderwhy",
+      "description": "Qué datos recogen la app y el sitio web de Wonderwhy, para qué, quién los trata, cuánto tiempo se guardan y cómo eliminarlos.",
+      "heading": "Política de privacidad"
+    },
+    "terms": {
+      "title": "Condiciones de uso · Wonderwhy",
+      "description": "Las condiciones para usar la app de noticias en audio Wonderwhy y su sitio web.",
+      "heading": "Condiciones de uso"
+    },
+    "support": {
+      "title": "Soporte · Wonderwhy",
+      "description": "Consigue ayuda con Wonderwhy, escríbenos, haz una solicitud de privacidad o elimina tu cuenta.",
+      "heading": "Ayuda y contacto"
+    },
+    "deleteAccount": {
+      "title": "Eliminar tu cuenta · Wonderwhy",
+      "description": "Cómo eliminar tu cuenta de Wonderwhy en la app o por correo electrónico, qué se borra y qué se conserva.",
+      "heading": "Eliminar tu cuenta"
+    },
+    "notFound": {
+      "title": "Página no encontrada · Wonderwhy",
+      "heading": "Página no encontrada",
+      "body": "Esta página no existe o se ha movido.",
+      "home": "Ir a la página de inicio"
+    },
+    "kvkk": {
+      "title": "Aviso KVKK (Turquía) · Wonderwhy",
+      "description": "Cómo trata Wonderwhy los datos personales según el artículo 10 de la KVKK turca: responsable, fines, bases jurídicas, transferencias y tus derechos.",
+      "heading": "Aviso KVKK"
+    },
+    "compare": {
+      "title": "Comparar fuentes de noticias sobre un mismo hecho · Wonderwhy",
+      "description": "Mira cómo cuentan distintos medios la misma noticia: en qué se contradicen, qué enfoque da cada uno y qué menciona solo uno. En la app Wonderwhy."
+    },
+    "share": {
+      "title": "Una noticia en Wonderwhy",
+      "description": "Escucha esta noticia en la app Wonderwhy, pregunta sobre ella por voz y mira en qué difieren sus fuentes."
+    }
+  },
+  "legal": {
+    "kicker": "Legal",
+    "draft": "Borrador. Este texto aún no ha pasado una revisión legal.",
+    "updated": "Última actualización: {date}",
+    "contents": "Contenido",
+    "otherLanguages": "También en",
+    "translationNote": "Esta traducción es orientativa. Si hay alguna diferencia, prevalece la versión en inglés."
+  },
+  "wall": {
+    "pause": "Pausar los titulares en movimiento"
+  },
+  "hero": {
+    "kicker": "App de noticias en audio con IA",
+    "title": "Escucha las noticias.\nPregunta lo que quieras.",
+    "body": "Cada día, un boletín en audio de pocos minutos con los temas que elijas. Para y pregunta cuando quieras; si las fuentes lo cuentan distinto, te lo mostramos.",
+    "cta": "Escucha un ejemplo",
+    "soon": "Muy pronto en el App Store y Google Play.",
+    "newLink": "Novedad: CarPlay, Android Auto y comandos de voz"
+  },
+  "how": {
+    "kicker": "Una noticia de ejemplo",
+    "title": "Cómo funciona el boletín de noticias en audio",
+    "lead": "Tres fragmentos de la propia presentación de la app, hechos a partir de una noticia real (24 de septiembre de 2026). Los nombres de las fuentes están ocultos, como en la app.",
+    "listen": {
+      "title": "Escuchar",
+      "body": "Tu boletín, leído en voz alta: unos minutos con los temas que elijas."
+    },
+    "ask": {
+      "title": "Preguntar",
+      "body": "Mantén pulsado el micrófono y pregunta. La respuesta llega con la misma voz y luego el boletín sigue donde lo dejó.",
+      "question": "Pregunta",
+      "answer": "Respuesta"
+    },
+    "compare": {
+      "title": "Comparar",
+      "body": "Cuando las fuentes cuentan una noticia de forma distinta, ves en qué se separan.",
+      "spoken": "Lo que oyes",
+      "more": "Cómo funciona la comparación de fuentes"
+    }
+  },
+  "samples": {
+    "kicker": "Boletín de ejemplo · octubre de 2026",
+    "title": "Dos noticias de un boletín",
+    "lead": "Resúmenes que la app escribió a partir de sus fuentes, tal como aparecieron en la app.",
+    "sources": "Fuentes"
+  },
+  "editions": {
+    "kicker": "Ediciones",
+    "title": "Noticias de Turquía, EE. UU., el mundo, España y Alemania",
+    "lead": "Elige una edición y tu boletín se hará con sus noticias.",
+    "items": [
+      {
+        "name": "Turquía",
+        "detail": "En turco · la actualidad de Turquía"
+      },
+      {
+        "name": "Estados Unidos",
+        "detail": "En inglés · la actualidad de EE. UU."
+      },
+      {
+        "name": "Mundo",
+        "detail": "En inglés · lo más destacado de todo el mundo"
+      },
+      {
+        "name": "España",
+        "detail": "En español · la actualidad de España"
+      },
+      {
+        "name": "Alemania",
+        "detail": "En alemán · la actualidad de Alemania"
+      }
+    ]
+  },
+  "download": {
+    "kicker": "Descargar",
+    "title": "Descarga Wonderwhy",
+    "lead": "Gratis en el App Store y Google Play.<!--if WONDERWHY_PREMIUM--> Escucha sin límites con Premium.<!--end-->",
+    "soon": "próximamente",
+    "appStore": "Consíguelo en el App Store",
+    "googlePlay": "Disponible en Google Play",
+    "notify": "Avísame por correo cuando salga",
+    "notifySubject": "Avísame cuando salga Wonderwhy",
+    "notifyNote": "Guardamos tu dirección solo para avisarte cuando salga la app y después la borramos."
+  },
+  "faq": {
+    "kicker": "Preguntas",
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿Dónde puedo descargarla?",
+        "a": "En el App Store para iPhone y iPad, y en Google Play para Android. <!--if WONDERWHY_PREMIUM-->Descargarla es gratis.<!--else-->Es gratis.<!--end-->"
+      },
+      {
+        "q": "¿En qué idiomas y ediciones está?",
+        "a": "La app está en inglés, turco, español y alemán. Hay cinco ediciones: Turquía (turco), Estados Unidos (inglés), Mundo (inglés), España (español) y Alemania (alemán)."
+      },
+      {
+        "q": "¿Quién escribe y lee las noticias?",
+        "a": "La IA escribe los boletines a partir de fuentes de noticias públicas y una voz de IA los lee. Cada noticia muestra sus fuentes. La IA puede equivocarse, así que consulta el original cuando sea importante."
+      },
+      {
+        "q": "¿Es como un pódcast de noticias?",
+        "a": "Es como un pódcast de noticias hecho para ti: unos minutos de noticias con los temas que elijas, escritos y leídos por IA y actualizados a lo largo del día. Páralo cuando quieras para hacer una pregunta."
+      },
+      {
+        "q": "¿Se graba mi pregunta?",
+        "aHtml": "Tu pregunta hablada se envía al servicio Gemini de Google para entenderla y responderla. No guardamos la grabación. La pregunta y la respuesta solo se conservan si informas de una respuesta (durante 7 días) o cuando una pregunta del tipo «¿qué es…?» se guarda en Biblioteca › Mis preguntas (hasta que elimines tu cuenta). Encontrarás los detalles en la <a href=\"{privacy}\">Política de privacidad</a>."
+      },
+      {
+        "q": "¿De dónde salen las noticias?",
+        "a": "De los canales públicos (RSS) de los medios de comunicación. La app agrupa las noticias que cubren varios medios y muestra en qué difieren."
+      },
+      {
+        "q": "¿Cuesta algo?",
+        "a": "<!--if WONDERWHY_PREMIUM-->Descargarla es gratis y cada día puedes escuchar sin pagar durante un tiempo limitado. Una suscripción Premium desbloquea funciones como la escucha ilimitada y sin conexión<!--if WONDERWHY_ADS-->, sin anuncios<!--end-->; el App Store y Google Play muestran el precio.<!--else-->No. Ahora mismo la app es gratis.<!--if WONDERWHY_ADS--> Muestra anuncios.<!--end--><!--end-->"
+      },
+      {
+        "q": "¿Funciona con CarPlay y Android Auto?",
+        "a": "<!--if WONDERWHY_PREMIUM-->Sí, con Premium. Empieza tu boletín desde la pantalla del coche y muévete entre Hoy, Mi lista y Secciones.<!--else-->Sí. Empieza tu boletín desde la pantalla del coche y muévete entre Hoy, Mi lista y Secciones.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_VOICE_COMMANDS-->¿Cómo funcionan los comandos de voz?<!--end-->",
+        "a": "<!--if WONDERWHY_VOICE_COMMANDS-->Mientras escuchas, di un comando corto como «para», «siguiente» o «más rápido». Los comandos funcionan con auriculares. Los entiende el propio reconocimiento de voz de tu móvil; el audio no se envía a ningún sitio.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_PREMIUM-->¿Puedo escuchar sin conexión?<!--end-->",
+        "a": "<!--if WONDERWHY_PREMIUM-->Sí, con Premium. Descarga las noticias de hoy en tu móvil y escúchalas sin conexión. Las descargas se borran al día siguiente.<!--end-->"
+      },
+      {
+        "q": "<!--if WONDERWHY_PREMIUM-->¿Cómo cancelo mi suscripción?<!--end-->",
+        "aHtml": "<!--if WONDERWHY_PREMIUM-->En tu cuenta del App Store o de Google Play. Los pasos están en la página de <a href=\"{supportSub}\">Soporte</a>.<!--end-->"
+      },
+      {
+        "q": "¿Cómo consigo ayuda?",
+        "aHtml": "Consulta la página de <a href=\"{support}\">Soporte</a> o escribe a <a href=\"mailto:{hello}\">{hello}</a>."
+      }
+    ]
+  },
+  "support": {
+    "kicker": "Soporte",
+    "lead": "Si tienes una pregunta, una idea o un problema, escríbenos un correo.",
+    "contactTitle": "Contacto",
+    "contactHtml": "Escribe a <a href=\"mailto:{hello}\">{hello}</a>.",
+    "privacyTitle": "Solicitudes de privacidad",
+    "privacyHtml": "Para ver, corregir, exportar o eliminar tus datos, escribe a <a href=\"mailto:{privacy}\">{privacy}</a>. La <a href=\"{privacyPage}\">Política de privacidad</a> explica tus derechos.",
+    "deleteTitle": "Eliminar tu cuenta",
+    "deleteHtml": "En la app, ve a <strong>Perfil › Eliminar cuenta</strong>. Así se eliminan a la vez tu cuenta, tus datos sincronizados, tus votos y tus registros de uso. Sin la app, escribe a <a href=\"mailto:{privacy}\">{privacy}</a>. Los pasos y lo que se conserva están en la página <a href=\"{deletePage}\">Eliminar tu cuenta</a>.",
+    "guestTitle": "¿Solo has echado un vistazo sin cuenta?",
+    "guestHtml": "Si desinstalas la app, se borran las listas y los ajustes que guardaba en tu móvil. El identificador de invitado que la app haya podido crear en nuestros servidores se elimina automáticamente tras 7 días sin uso. Si quieres que se elimine antes, escribe a <a href=\"mailto:{privacy}\">{privacy}</a>.",
+    "faqHtml": "Hay más respuestas en las <a href=\"{faq}\">preguntas frecuentes</a>.",
+    "subscriptionTitle": "<!--if WONDERWHY_PREMIUM-->Suscripción<!--end-->",
+    "subscriptionHtml": "<!--if WONDERWHY_PREMIUM-->Premium se gestiona y se cancela en tu cuenta de la tienda: en iPhone y iPad, en Ajustes › tu nombre › Suscripciones; en Android, en Play Store › perfil › Pagos y suscripciones › Suscripciones. Si cancelas, Premium sigue activo hasta el final del periodo. En un móvil nuevo, abre <strong>Perfil › Suscripción</strong> en la app y toca <strong>Restaurar compras</strong>. Los reembolsos los gestiona Apple o Google. Eliminar tu cuenta no cancela la suscripción. Las condiciones completas están en las <a href=\"{termsSub}\">Condiciones de uso</a>.<!--end-->",
+    "termsAnchor": "subscription"
+  },
+  "compare": {
+    "kicker": "Comparación de fuentes",
+    "title": "Compara las fuentes de noticias de un mismo hecho",
+    "lead": "Un hecho, varios medios, versiones distintas. Wonderwhy las pone una al lado de otra y te muestra en qué se separan, sin abrir cinco pestañas.",
+    "kindsTitle": "Lo que ves en cada noticia",
+    "kinds": [
+      {
+        "key": "conflict",
+        "name": "Se contradicen",
+        "body": "Cifras, fechas o afirmaciones que no coinciden entre los medios."
+      },
+      {
+        "key": "emphasis",
+        "name": "Enfoque distinto",
+        "body": "El mismo hecho, contado con un enfoque claramente distinto."
+      },
+      {
+        "key": "detail",
+        "name": "Solo en una fuente",
+        "body": "Un detalle importante que solo menciona un medio."
+      },
+      {
+        "key": "agree",
+        "name": "Lo cuentan de forma parecida",
+        "body": "Los medios cuentan la noticia de forma muy parecida."
+      }
+    ],
+    "kindsNote": "La etiqueta indica la diferencia más grave que se ha encontrado. No es una puntuación.",
+    "stepsTitle": "Cómo funciona",
+    "steps": [
+      {
+        "title": "El mismo hecho, agrupado",
+        "body": "Las noticias de distintos medios sobre un mismo hecho se convierten en una sola noticia en tu edición: Turquía, EE. UU., Mundo, España o Alemania."
+      },
+      {
+        "title": "Comparado por IA",
+        "body": "La IA lee las noticias una al lado de otra y clasifica lo que difiere. Ves el titular de cada fuente y los puntos en los que se separan."
+      },
+      {
+        "title": "Lee los originales",
+        "body": "Toca cualquier fuente para leer su artículo. ¿Crees que una comparación es errónea? Avísanos desde la noticia."
+      }
+    ],
+    "exampleTitle": "Un ejemplo",
+    "exampleLead": "Con medios inventados, como en la pantalla de la app.",
+    "example": {
+      "headline": "El banco central mantiene los tipos",
+      "sources": [
+        {
+          "name": "Harbor Daily",
+          "title": "Tipos sin cambios mientras se modera la inflación"
+        },
+        {
+          "name": "Northline News",
+          "title": "El banco central mantiene los tipos y mira a diciembre"
+        },
+        {
+          "name": "Civic Ledger",
+          "title": "La decisión sobre los tipos divide al consejo"
+        }
+      ],
+      "conflict": "Northline News dice que la votación fue unánime; Civic Ledger informa de que dos miembros votaron a favor de una bajada.",
+      "detail": "Solo Harbor Daily señala que los tipos de las hipotecas apenas se movieron."
+    },
+    "limitsTitle": "Lo que no hace",
+    "limits": [
+      "No decide quién tiene razón. Muestra en qué difieren las noticias; la conclusión es tuya.",
+      "No puntúa a los medios ni su sesgo.",
+      "Puede pasar por alto alguna diferencia. «Lo cuentan de forma parecida» no es una garantía."
+    ],
+    "faqTitle": "Preguntas",
+    "faq": [
+      {
+        "q": "¿Es un detector de sesgo?",
+        "a": "No. Wonderwhy no puntúa a los medios ni los etiqueta como de izquierdas o de derechas. Compara en qué difieren las versiones de una misma noticia: hechos, enfoque y detalles."
+      },
+      {
+        "q": "¿Qué medios compara?",
+        "a": "Los medios de los canales de noticias de tu edición: turcos, estadounidenses, españoles, alemanes e internacionales. Cada fuente aparece con su nombre y enlaza a su artículo original."
+      },
+      {
+        "q": "¿También puedo escuchar la noticia?",
+        "a": "Sí. Cada noticia forma parte de tu breve boletín en audio. Mantén pulsado el micrófono para preguntar sobre ella y la respuesta llega con la misma voz."
+      }
+    ],
+    "ctaTitle": "Mira en qué difieren las fuentes",
+    "ctaLead": "Wonderwhy está en el App Store y Google Play.",
+    "homeLink": "Cómo funciona el boletín en audio"
+  },
+  "share": {
+    "kicker": "Compartido desde Wonderwhy",
+    "title": "Esta noticia está en la app Wonderwhy",
+    "body": "Si tienes Wonderwhy en el móvil, este enlace abre la noticia en la app. Si no, descarga la app: escucha la noticia, pregunta sobre ella por voz y mira en qué difieren sus fuentes.",
+    "note": "Las noticias se quedan en la app una semana.",
+    "more": "¿Qué es Wonderwhy?"
+  },
+  "redirect": {
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "choose": "Elige un idioma:"
+  },
+  "gallery": {
+    "kicker": "En la app",
+    "title": "Un vistazo por dentro",
+    "label": "Capturas de pantalla de la app",
+    "note": "Pantallas de la app, con contenido de ejemplo.",
+    "items": {
+      "player_answer": "Escucha las noticias, pregunta lo que quieras: el reproductor responde a una pregunta hablada.",
+      "home": "Tus temas, en un boletín de audio: la pantalla Hoy.",
+      "story_compare": "Mira en qué difieren las fuentes: una noticia comparada en tres medios.",
+      "home_list": "Cada noticia, con sus fuentes: la lista del día.",
+      "story": "Lo esencial y por qué importa: la página de una noticia.",
+      "explore": "Sigue lo que te interesa: la pantalla Explorar."
+    }
+  },
+  "features": {
+    "kicker": "Novedades",
+    "title": "En el coche, sin manos, sin conexión",
+    "lead": "Lo que trae la última versión.",
+    "premium": "Premium",
+    "items": [
+      {
+        "key": "car",
+        "title": "CarPlay y Android Auto",
+        "body": "Tu boletín en la pantalla del coche: Hoy, Mi lista y Secciones.",
+        "premium": "WONDERWHY_PREMIUM"
+      },
+      {
+        "key": "voice",
+        "title": "Comandos de voz",
+        "body": "Mientras escuchas, di «para», «siguiente» o «más rápido», sin usar las manos. Funciona con auriculares; tu voz se procesa en tu móvil."
+      },
+      {
+        "key": "speed",
+        "title": "Velocidad de narración",
+        "body": "Cinco niveles, de 0,75× a 2×."
+      },
+      {
+        "key": "narrator",
+        "title": "Voz del narrador",
+        "body": "Elige una de cinco voces. La usan tu boletín y las respuestas a tus preguntas."
+      },
+      {
+        "key": "offline",
+        "title": "<!--if WONDERWHY_PREMIUM-->Escucha sin conexión<!--end-->",
+        "body": "<!--if WONDERWHY_PREMIUM-->Descarga las noticias de hoy en tu móvil y escúchalas en modo avión.<!--end-->",
+        "premium": "WONDERWHY_PREMIUM"
+      },
+      {
+        "key": "editions",
+        "title": "Cinco ediciones, cuatro idiomas",
+        "body": "Turquía, EE. UU., Mundo, España y Alemania. La app está en inglés, turco, español y alemán."
+      }
+    ]
+  },
+  "premium": {
+    "kicker": "<!--if WONDERWHY_PREMIUM-->Gratis y Premium<!--end-->",
+    "title": "Empieza gratis. Hazte Premium cuando quieras más.",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Escucha y pregunta unos minutos cada día",
+        "Todas las ediciones e idiomas, y la comparación de fuentes",
+        "Comandos de voz, velocidad y voz del narrador"
+      ]
+    },
+    "plus": {
+      "name": "Premium",
+      "items": [
+        "Escucha y preguntas ilimitadas",
+        "Sigue sonando en segundo plano y en la pantalla de bloqueo",
+        "CarPlay y Android Auto",
+        "Escucha sin conexión",
+        "Un boletín personal más largo",
+        "<!--if WONDERWHY_ADS-->Sin anuncios<!--end-->"
+      ]
+    },
+    "noteHtml": "<!--if WONDERWHY_ADS-->La versión gratuita muestra anuncios. <!--end-->El App Store y Google Play muestran el precio para tu país. Premium se renueva automáticamente hasta que lo canceles en tu cuenta de la tienda. Consulta las <a href=\"{terms}\">Condiciones de uso</a>."
+  }
+}
