@@ -25,18 +25,9 @@
   // ---- Kayan duvar: durdur düğmesi (WCAG 2.2.2) ve ekran dışındayken dur.
   var hero = doc.querySelector('.hero');
   // Manşetler HTML'de bir kez (Y3, 20 Eki). Kesintisiz kayma (-50%) için izin
-  // ikinci kopyası ve geniş ekranın 4.–5. sütunları (`data-copy` sütunu,
-  // `data-shift` kadar döndürülmüş) burada; hepsi aria-hidden duvarın içinde.
+  // ikinci kopyası burada; aria-hidden duvarın içinde.
   if (hero) {
-    var tracks = [].slice.call(hero.querySelectorAll('.wall-track'));
-    var originals = tracks.map(function (t) { return [].slice.call(t.children); });
-    tracks.forEach(function (track) {
-      var from = track.getAttribute('data-copy');
-      if (from !== null) {
-        var tiles = originals[+from];
-        var n = +track.getAttribute('data-shift') || 0;
-        tiles.slice(n).concat(tiles.slice(0, n)).forEach(function (t) { track.appendChild(t.cloneNode(true)); });
-      }
+    [].forEach.call(hero.querySelectorAll('.wall-track'), function (track) {
       [].slice.call(track.children).forEach(function (t) { track.appendChild(t.cloneNode(true)); });
     });
   }
@@ -127,20 +118,25 @@
     return { start: start, end: end, words: words, total: total };
   }
 
-  // ---- Dil önerisi: dışarıdan gelen ve dili sayfanınkinden farklı olana.
+  // ---- Dil önerisi: dışarıdan gelen ve tarayıcısı başka bir dilimizi isteyene
+  // (24 Eki: dört dil). Hedef, tarayıcının dilleri içinde sitede olan ilk dil.
   var lang = root.lang;
-  // Üst şeritteki dil bağlantısı göreli; .href bulunulan adrese göre çözülür
-  // (hreflang etiketi hep wonderwhy.net'i gösterir, GitHub alt yolunda yanlış olur).
-  var alt = doc.querySelector('a.lang-link[hreflang="' + (lang === 'en' ? 'tr' : 'en') + '"]');
-  var fromHere = doc.referrer && doc.referrer.indexOf(location.origin) === 0;
-  var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
-  var wantsTr = String(prefs[0]).toLowerCase().indexOf('tr') === 0;
-  var hasTr = [].some.call(prefs, function (l) { return String(l).toLowerCase().indexOf('tr') === 0; });
-  var suggest = lang === 'en' ? wantsTr : !hasTr;
+  var prefs = [].map.call(
+    navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''],
+    function (l) { return String(l).toLowerCase().slice(0, 2); }
+  );
   var hintData = doc.getElementById('lang-hint');
-  if (alt && !fromHere && suggest && hintData) {
-    var target = lang === 'en' ? 'tr' : 'en';
-    var h = JSON.parse(hintData.textContent)[target];
+  var hints = hintData ? JSON.parse(hintData.textContent) : {};
+  var target = prefs.filter(function (l) { return hints[l]; })[0] || 'en';
+  // İngilizce sayfada tarayıcının ilk dilimizi; diğerlerinde sayfanın dili
+  // tarayıcıda hiç yoksa öner.
+  var suggest = target !== lang && (lang === 'en' || prefs.indexOf(lang) < 0);
+  // Dil bağlantıları göreli; .href bulunulan adrese göre çözülür (hreflang
+  // etiketi hep wonderwhy.net'i gösterir, GitHub alt yolunda yanlış olur).
+  var alt = doc.querySelector('a.lang-link[hreflang="' + target + '"]');
+  var fromHere = doc.referrer && doc.referrer.indexOf(location.origin) === 0;
+  if (alt && !fromHere && suggest) {
+    var h = hints[target];
     var bar = doc.createElement('div');
     bar.className = 'lang-hint';
     bar.setAttribute('role', 'region');
