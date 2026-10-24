@@ -356,10 +356,14 @@
     "note": "Bildschirme aus der App, mit Beispielinhalten.",
     "items": {
       "player_answer": "Hör die Nachrichten, frag, was du wissen willst: Der Player beantwortet eine gesprochene Frage.",
+      "commands": "Mit Kopfhörern per Stimme steuern: Der Player hört auf Sprachbefehle.",
       "home": "Dein Audio-Briefing zu den Themen, die du wählst: der Bildschirm Heute.",
       "story_compare": "Sieh, wo die Quellen abweichen: eine Meldung, drei Medien im Vergleich.",
-      "home_list": "Jede Meldung mit ihren Quellen: die Liste des Tages.",
+      "carplay": "Hör auch im Auto: das Briefing auf einem CarPlay-Bildschirm (Premium).",
+      "listening": "Wähl Tempo und Stimme: Hörtempo und Sprecherstimme.",
+      "editions": "Deutschland, Spanien, Welt: News in deiner Sprache, fünf Ausgaben.",
       "story": "Die Kurzfassung und warum es wichtig ist: die Seite einer Meldung.",
+      "offline": "Vorher laden, offline hören: das heutige Briefing auf dem Handy (Premium).",
       "explore": "Folge dem, was dich interessiert: der Bildschirm Entdecken."
     }
   },

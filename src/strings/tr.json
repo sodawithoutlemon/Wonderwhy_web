@@ -355,10 +355,14 @@
     "note": "Uygulamanın ekranları, örnek içerikle.",
     "items": {
       "player_answer": "Haberi dinle, merak ettiğini sor: oynatıcı sesle sorulan soruyu cevaplıyor.",
+      "commands": "Kulaklıkla sesinle yönet: oynatıcı sesli komutları dinliyor.",
       "home": "Seçtiğin konulardan kısa sesli bülten: Bugün ekranı.",
       "story_compare": "Kaynakların nerede ayrıştığını gör: bir haber, üç yayın.",
-      "home_list": "Her haber, kaynaklarıyla: günün listesi.",
+      "carplay": "Arabada da dinle: CarPlay ekranında bülten (Premium).",
+      "listening": "Hızını ve sesini sen seç: dinleme hızı ve anlatıcı sesi.",
+      "editions": "Türkiye'den Almanya'ya, gündem senin dilinde: beş baskı.",
       "story": "Kısa özet ve neden önemli olduğu: haber sayfası.",
+      "offline": "Önceden indir, çevrimdışı dinle: bugünün bülteni telefonda (Premium).",
       "explore": "İlgilendiğin konuları takip et: Keşfet ekranı."
     }
   },

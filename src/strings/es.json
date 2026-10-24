@@ -356,10 +356,14 @@
     "note": "Pantallas de la app, con contenido de ejemplo.",
     "items": {
       "player_answer": "Escucha las noticias, pregunta lo que quieras: el reproductor responde a una pregunta hablada.",
+      "commands": "Con auriculares, controla con tu voz: el reproductor escucha comandos de voz.",
       "home": "Tus temas, en un boletín de audio: la pantalla Hoy.",
       "story_compare": "Mira en qué difieren las fuentes: una noticia comparada en tres medios.",
-      "home_list": "Cada noticia, con sus fuentes: la lista del día.",
+      "carplay": "Escucha en el coche: el boletín en la pantalla de CarPlay (Premium).",
+      "listening": "Elige la velocidad y la voz: velocidad de escucha y voz del narrador.",
+      "editions": "De España al mundo, noticias en tu idioma: cinco ediciones.",
       "story": "Lo esencial y por qué importa: la página de una noticia.",
+      "offline": "Descárgalo antes, escúchalo sin conexión: el boletín de hoy en el teléfono (Premium).",
       "explore": "Sigue lo que te interesa: la pantalla Explorar."
     }
   },
