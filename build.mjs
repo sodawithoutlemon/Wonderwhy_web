@@ -172,7 +172,8 @@ const orTodo = (value, lang, key) => (value ? esc(value) : `<span class="todo">$
 // GÖREV 3'ün dosyaları gelince static/brand altına kopyalanır; varsa kullanılır.
 const brandDir = join(SRC, 'static', 'brand');
 const brand = new Set(existsSync(brandDir) ? readdirSync(brandDir) : []);
-const ogImage = (lang) => [`og-${lang}.png`, 'og.png'].find((f) => brand.has(f));
+// es/de için ayrı görsel yoksa İngilizcesi (6 Kas: es/de sayfalarında og:image hiç yoktu).
+const ogImage = (lang) => [`og-${lang}.png`, 'og.png', 'og-en.png'].find((f) => brand.has(f));
 
 let css = read('styles.css')
   .replace(/\/\*[\s\S]*?\*\//g, '')
@@ -636,7 +637,8 @@ function homeJsonLd(lang) {
       name: site.brand,
       url: abs(PAGES.home[lang]),
       description: t.pages.home.description,
-      applicationCategory: 'NewsApplication',
+      // Google'ın desteklediği değerlerden (NewsApplication listede yok; 6 Kas).
+      applicationCategory: 'MultimediaApplication',
       operatingSystem: site.stores.googlePlay ? 'iOS, iPadOS, Android' : 'iOS, iPadOS',
       inLanguage: LANGS,
       isAccessibleForFree: true,
