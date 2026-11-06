@@ -247,6 +247,13 @@ function head(lang, { title, description, page = null, noindex = false, jsonld =
     `<style>${css}</style>`,
     '<script src="/site.js" defer></script>',
   );
+  // Ziyaret sayacı (Metricool): çerez ve tarayıcı deposu yok; sayfa adresini,
+  // pencere boyutunu ve yönlendireni bir görsel isteğiyle gönderir.
+  if (site.metricool) {
+    tags.push(
+      `<script>(function(){var s=document.createElement("script");s.src="https://tracker.metricool.com/resources/be.js";s.onload=function(){beTracker.t({hash:${JSON.stringify(site.metricool)}})};document.head.appendChild(s)})();</script>`,
+    );
+  }
   return tags.join('\n');
 }
 
