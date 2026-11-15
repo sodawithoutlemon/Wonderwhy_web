@@ -9,7 +9,10 @@
     "terms": "Condiciones",
     "support": "Soporte",
     "compare": "Comparar fuentes de noticias",
-    "language": "Idioma"
+    "language": "Idioma",
+    "podcast": "Podcast diario de noticias",
+    "carplay": "Noticias en el coche",
+    "today": "Noticias de hoy"
   },
   "footer": {
     "notYet": "La app aún no está disponible.",
@@ -92,6 +95,18 @@
     "share": {
       "title": "Una noticia en Wonderwhy",
       "description": "Escucha esta noticia en la app Wonderwhy, pregunta sobre ella por voz y mira en qué difieren sus fuentes."
+    },
+    "podcast": {
+      "title": "Un podcast diario de noticias para ti · Wonderwhy",
+      "description": "Unos minutos de noticias al día sobre los temas que eliges, como un podcast. Pregunta por voz y compara las fuentes."
+    },
+    "carplay": {
+      "title": "Escucha las noticias en CarPlay · Wonderwhy",
+      "description": "Las noticias del día en el coche: el boletín de Wonderwhy funciona en CarPlay y Android Auto. Escucha sin mirar la pantalla."
+    },
+    "today": {
+      "title": "Noticias de hoy, en resumen · Wonderwhy",
+      "description": "Resúmenes breves de las noticias de hoy en España, actualizados cada día. Escucha el boletín completo en Wonderwhy y pregunta."
     }
   },
   "legal": {
@@ -342,7 +357,8 @@
     "title": "Esta noticia está en la app Wonderwhy",
     "body": "Si tienes Wonderwhy en el móvil, este enlace abre la noticia en la app. Si no, descarga la app: escucha la noticia, pregunta sobre ella por voz y mira en qué difieren sus fuentes.",
     "note": "Las noticias se quedan en la app una semana.",
-    "more": "¿Qué es Wonderwhy?"
+    "more": "¿Qué es Wonderwhy?",
+    "titleLabel": "Noticia compartida"
   },
   "redirect": {
     "privacy": "Política de privacidad",
@@ -430,5 +446,97 @@
       ]
     },
     "noteHtml": "<!--if WONDERWHY_ADS-->La versión gratuita muestra anuncios. <!--end-->El App Store y Google Play muestran el precio para tu país. Premium se renueva automáticamente hasta que lo canceles en tu cuenta de la tienda. Consulta las <a href=\"{terms}\">Condiciones de uso</a>."
+  },
+  "topics": {
+    "podcast": {
+      "kicker": "Podcast diario de noticias",
+      "title": "Un podcast diario de noticias, de pocos minutos y hecho para ti",
+      "lead": "Wonderwhy convierte los temas que eliges en un boletín de audio breve. Lo escuchas como un podcast, con una diferencia: puedes preguntar mientras escuchas.",
+      "stepsTitle": "Cómo funciona",
+      "steps": [
+        {
+          "title": "Elige tus temas",
+          "body": "Economía, deportes, tecnología, mundo… El boletín solo usa las secciones que eliges y deja fuera lo que ocultas."
+        },
+        {
+          "title": "Escucha",
+          "body": "Las noticias del día en unos minutos. Salta de una noticia a otra, cambia la velocidad y sigue donde lo dejaste."
+        },
+        {
+          "title": "Pregunta lo que quieras",
+          "body": "Mantén pulsado y habla: “¿Por qué importa?” La respuesta llega con la misma voz y el boletín continúa."
+        }
+      ],
+      "faqTitle": "Preguntas frecuentes",
+      "faq": [
+        {
+          "q": "¿Está en las apps de podcasts?",
+          "a": "No. El boletín se prepara cada día con tus temas, así que suena en la app de Wonderwhy."
+        },
+        {
+          "q": "¿Cuánto dura?",
+          "a": "Unos minutos. Tu boletín personal crece o se acorta según tus temas, y también puedes escuchar una sola noticia."
+        },
+        {
+          "q": "¿Quién lee las noticias?",
+          "a": "La IA escribe el boletín a partir de fuentes públicas y una voz de IA lo lee. Cada noticia muestra sus fuentes."
+        },
+        {
+          "q": "¿En qué idiomas?",
+          "a": "Español, inglés, turco y alemán. Ediciones: España, Estados Unidos, Mundo, Türkiye y Alemania."
+        }
+      ],
+      "ctaTitle": "Escucha el boletín de hoy",
+      "ctaLead": "Wonderwhy está en App Store y Google Play."
+    },
+    "carplay": {
+      "kicker": "Noticias en el coche",
+      "title": "Escucha las noticias en el coche con Wonderwhy en CarPlay",
+      "lead": "En la carretera no hace falta mirar la pantalla. Empieza el boletín desde la pantalla del coche, salta entre noticias y sigue donde lo dejaste.",
+      "stepsTitle": "Cómo funciona en el coche",
+      "steps": [
+        {
+          "title": "Conecta el móvil",
+          "body": "Wonderwhy aparece en CarPlay y Android Auto, con Hoy, Mi lista y Secciones en la pantalla del coche."
+        },
+        {
+          "title": "Empieza el boletín",
+          "body": "Un toque y suena el boletín del día. Pasa a la siguiente noticia o elige una sección."
+        },
+        {
+          "title": "Sigue en el móvil",
+          "body": "Al bajar del coche, tu punto te espera en el móvil."
+        }
+      ],
+      "faqTitle": "Preguntas frecuentes",
+      "faq": [
+        {
+          "q": "¿CarPlay es gratis?",
+          "a": "CarPlay y Android Auto forman parte de Wonderwhy Premium. La app se descarga gratis; los detalles de Premium están en la app."
+        },
+        {
+          "q": "¿Puedo preguntar en el coche?",
+          "a": "En el coche suenan el boletín y las noticias. Las preguntas por voz funcionan en el móvil, dentro de la app."
+        },
+        {
+          "q": "¿Sigue sonando en segundo plano?",
+          "a": "Sí. Con Premium sigues escuchando con la pantalla bloqueada o con otra app abierta."
+        }
+      ],
+      "ctaTitle": "No te pierdas la actualidad en la carretera",
+      "ctaLead": "Wonderwhy está en App Store y Google Play."
+    },
+    "today": {
+      "kicker": "Noticias de hoy",
+      "title": "Noticias de hoy",
+      "lead": "Las noticias del día de la edición de España de Wonderwhy, cada una en una frase. Se actualiza cada día.",
+      "updated": "Actualizado el {date}",
+      "sources": "{n} fuentes",
+      "listen": "Escucha las noticias completas en la app, pregunta por voz y compara sus fuentes.",
+      "note": "La IA escribe estos resúmenes a partir de fuentes públicas y puede equivocarse. Las noticias se quedan en la app una semana.",
+      "empty": "Los resúmenes de hoy aún no están listos. Puedes escuchar el último boletín en la app.",
+      "ctaTitle": "Escucha las noticias en minutos",
+      "ctaLead": "Wonderwhy está en App Store y Google Play."
+    }
   }
 }

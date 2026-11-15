@@ -155,5 +155,16 @@
     doc.body.insertBefore(bar, skip ? skip.nextSibling : doc.body.firstChild);
   }
 
+  // ---- Paylaşılan haberin başlığı (Z3, ADR-079): uygulama `t` parametresinde
+  // gönderiyor. Yalnız metin olarak (textContent), en çok 120 karakter.
+  var shared = doc.querySelector('[data-shared-title]');
+  if (shared && window.URLSearchParams) {
+    var title = (new URLSearchParams(location.search).get('t') || '').trim();
+    if (title) {
+      shared.textContent = title.length > 120 ? title.slice(0, 119) + '…' : title;
+      shared.hidden = false;
+    }
+  }
+
   root.classList.add('ready');
 })();

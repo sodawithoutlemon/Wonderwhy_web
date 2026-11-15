@@ -1,0 +1,96 @@
+{
+  "day": "2026-11-15",
+  "edition": "de",
+  "items": [
+    {
+      "category": "Topthemen",
+      "headline": "SpaceX fängt Starship erstmals am Startturm auf",
+      "summary": "SpaceX hat die obere Stufe des Starship-Systems nach einem Testflug erstmals am Startturm aufgefangen.",
+      "sources": 3
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Mandy Kunze verteidigt ihren WM-Titel in „Mensch ärgere Dich nicht“",
+      "summary": "Mandy Kunze aus Sachsen hat in Berlin zum zweiten Mal die Weltmeisterschaft im Gesellschaftsspiel „Mensch ärgere Dich nicht“ gewonnen.",
+      "sources": 3
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Bayern-Frauen gewinnen Topspiel in Wolfsburg mit 4:1",
+      "summary": "Der FC Bayern hat das Topspiel der Frauen-Bundesliga beim VfL Wolfsburg mit 4:1 gewonnen.",
+      "sources": 3
+    },
+    {
+      "category": "International",
+      "headline": "Starship kehrt erstmals zur Startrampe zurück",
+      "summary": "SpaceX hat mit dem Starship-System einen wichtigen Schritt geschafft: Nach einem Flug kehrte die Rakete erstmals zur Startrampe zurück.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Rhein-Neckar Löwen müssen sich gegen Lemgo mit einem Unentschieden begnügen",
+      "summary": "Die Rhein-Neckar Löwen bleiben nach dem Trainerwechsel ohne Sieg.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "Frank Thelen gewinnt „Schlag den Star“ trotz Patzer beim Geografie-Rätsel",
+      "summary": "Bei „Schlag den Star“ traten Frank Thelen und seine Ehefrau Nathalie gegen Ralf Dümmel und Anna Heesch an.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Switolina erreicht das Finale der WTA Finals",
+      "summary": "Elina Switolina hat das Endspiel der WTA Finals erreicht. Dort trifft die Ukrainerin auf die Russin Mirra Andrejewa.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "Petitionen fordern Jensen Huangs Rückkehr zu Nvidia",
+      "summary": "Nach mehreren Affären wünschen sich Unterstützer eine Rückkehr von Jensen Huang an die Spitze von Nvidia.",
+      "sources": 2
+    },
+    {
+      "category": "Politik",
+      "headline": "Miersch nennt SPD-Werte bei jungen Menschen eine „schallende Ohrfeige“",
+      "summary": "Nur 3 Prozent der jungen Menschen trauen der SPD zu, sich für ihre Anliegen einzusetzen.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Hase und Volodin führen nach dem Kurzprogramm",
+      "summary": "Minerva Hase und Nikita Volodin liegen beim Grand Prix in den USA nach dem Kurzprogramm in Führung.",
+      "sources": 2
+    },
+    {
+      "category": "Politik",
+      "headline": "Kassenärzte-Chef erwartet mehr Selbstzahler-Termine",
+      "summary": "Wer als gesetzlich Versicherter lange Wartezeiten vermeiden will, könnte künftig häufiger für einen Arzttermin selbst bezahlen müssen.",
+      "sources": 2
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Einzelverkauf kann den Erlös für Mehrfamilienhäuser deutlich steigern",
+      "summary": "Wer ein Mehrfamilienhaus in einzelne Wohnungen aufteilt und diese separat verkauft, kann laut Handelsblatt deutlich mehr erzielen als mit einem Verkauf des ganzen Hauses.",
+      "sources": 1
+    },
+    {
+      "category": "Leute",
+      "headline": "Heil bringt sich im Rennen um den SPD-Vorsitz in Stellung",
+      "summary": "Die SPD sucht eine neue Führung. Ex-Arbeitsminister Heil ist der Erste, der sich im Rennen um den Vorsitz aus der Deckung wagt.",
+      "sources": 1
+    },
+    {
+      "category": "Kultur",
+      "headline": "Münster-„Tatort“ verbindet Tollkirschen-Gift und KI",
+      "summary": "Im aktuellen „Tatort“ aus Münster fällt ein Karnevalist dem Gift der Tollkirsche zum Opfer.",
+      "sources": 1
+    },
+    {
+      "category": "Leute",
+      "headline": "Kompany und Musiala fehlen bei Fanclubbesuchen des FC Bayern",
+      "summary": "Der FC Bayern geht bei Vincent Kompany und Jamal Musiala weiter vorsichtig vor.",
+      "sources": 1
+    }
+  ]
+}

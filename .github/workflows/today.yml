@@ -1,0 +1,38 @@
+# Bugünün gündemi (Z3, 15 Kas 2026, ADR-079): günde iki kez günün haberlerini
+# Firestore'un herkese açık baskısından çeker (tools/today.mjs), siteyi derler,
+# denetler ve yalnız gündem değiştiyse kaydedip gönderir. Pages main › /docs'u
+# sunduğu için gönderim yayındır. Kullanıcı onayı (15 Kas): bu sayfa için günlük
+# otomatik yayın. Başka hiçbir sayfa bu işle değişmez: kaynak değişikliği
+# her zaman publish.sh ve onayla.
+name: today
+on:
+  schedule:
+    - cron: '30 6 * * *'
+    - cron: '30 14 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: today
+  cancel-in-progress: false
+jobs:
+  today:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/today.mjs
+      - run: node build.mjs
+      - run: node check.mjs
+      - name: Yalnız gündem değiştiyse gönder
+        run: |
+          git add src/data/today.*.json
+          if git diff --cached --quiet; then echo "gündem aynı"; exit 0; fi
+          git add docs
+          git config user.name wonderwhy
+          git config user.email hello@wonderwhy.net
+          git commit -m "Site: gündem $(date -u +%F)"
+          git push

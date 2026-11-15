@@ -344,6 +344,13 @@ section { padding: 72px 0; }
 
 /* Paylaşılan haber sayfası (/s/, ADR-062) */
 .share .stores + .footnote { margin-top: 20px; }
+.shared-title { margin: 12px 0 4px; color: var(--label); }
+
+/* Bugünün gündemi (Z3, ADR-079) */
+.today-list { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 0; }
+.today-item { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--sep); }
+.today-item:first-child { padding-top: 0; }
+.today-item h2 { margin: 0; }
 
 /* Dil önerisi (site.js) */
 .lang-hint { background: var(--raised); border-bottom: .5px solid var(--sep); }

@@ -106,6 +106,10 @@ const audio = json('data/audio.json');
 const wall = Object.fromEntries(LANGS.map((l) => [l, json(`data/wall.${l}.json`)]));
 const samples = Object.fromEntries(LANGS.map((l) => [l, json(`data/samples.${l}.json`)]));
 const gallery = json('data/gallery.json'); // tools/gallery.sh
+// Günün gündemi (Z3, ADR-079; tools/today.mjs). Dosya yoksa sayfa "henüz hazır değil" der.
+const today = Object.fromEntries(
+  LANGS.map((l) => [l, existsSync(join(SRC, `data/today.${l}.json`)) ? json(`data/today.${l}.json`) : null]),
+);
 
 // Sayfa takımları: dil menüsü, hreflang ve sitemap hep buradan. Sonda "/" var.
 // Bir sayfanın her dilde olması gerekmez (KVKK yalnız en ve tr).
@@ -125,6 +129,20 @@ const PAGES = {
   },
   // KVKK md. 10 aydınlatma metni (Y3, 20 Eki): gizlilik politikasının KVKK düzenindeki özeti.
   kvkk: { en: '/kvkk-notice/', tr: '/tr/kvkk/' },
+  // Z3 (15 Kas, ADR-079): mağazaya köprü konu sayfaları ve günlük gündem.
+  podcast: {
+    en: '/daily-news-podcast/',
+    tr: '/tr/gunluk-haber-podcasti/',
+    es: '/es/podcast-diario-de-noticias/',
+    de: '/de/taeglicher-nachrichten-podcast/',
+  },
+  carplay: {
+    en: '/carplay-news/',
+    tr: '/tr/carplay-haber/',
+    es: '/es/noticias-carplay/',
+    de: '/de/nachrichten-carplay/',
+  },
+  today: { en: '/todays-headlines/', tr: '/tr/gundem/', es: '/es/noticias-de-hoy/', de: '/de/nachrichten-heute/' },
 };
 /** Sayfanın bulunduğu diller, LANGS sırasıyla. */
 const langsOf = (key) => LANGS.filter((l) => PAGES[key][l]);
@@ -289,7 +307,7 @@ function footer(lang, page) {
   const note = site.stores.appStore || site.stores.googlePlay ? '' : ` · ${esc(t.footer.notYet)}`;
   const langs = langLinks(lang, page).map((a) => `<li>${a}</li>`).join('');
   return `<footer class="foot"><div class="wrap">
-<nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('compare')}${link('privacy')}${link('terms')}${link('support')}</ul></nav>
+<nav aria-label="${esc(t.footer.legal)}"><ul>${link('home')}${link('compare')}${link('podcast')}${link('carplay')}${link('today')}${link('privacy')}${link('terms')}${link('support')}</ul></nav>
 <nav aria-label="${esc(t.footer.languages)}"><ul class="foot-langs">${langs}</ul></nav>
 <p class="footnote">© ${site.year} ${esc(site.brand)}${note}</p>
 ${hasBadges() ? `<p class="footnote">${esc(t.footer.trademarks)}</p>\n` : ''}</div></footer>`;
@@ -795,6 +813,151 @@ function compareJsonLd(lang) {
   };
 }
 
+// ---------------------------------------------------------------- konu sayfaları (Z3)
+
+// Podcast ve CarPlay (Z3, 15 Kas, ADR-079): kaynak karşılaştırma sayfasının
+// sade kalıbı. Amaç mağazaya köprü (Y3 kararı); söylenmeyecekler docs/15.
+const TOPIC_SHOT = { podcast: 'listening', carplay: 'carplay' };
+
+function topicBody(lang, key) {
+  const t = S[lang];
+  const c = t.topics[key];
+  const campaign = `web-${key}`;
+  const steps = c.steps
+    .map((st, i) => `<li class="reveal" style="--i:${i}"><span class="step-no">${i + 1}</span><div><h3 class="headline">${esc(st.title)}</h3><p class="subhead">${esc(st.body)}</p></div></li>`)
+    .join('\n');
+  const faq = c.faq
+    .map((it, i) => `<details class="reveal" style="--i:${i}"><summary>${esc(it.q)}</summary><div class="answer"><p>${esc(it.a)}</p></div></details>`)
+    .join('\n');
+  return `<main id="main">
+<section class="topic-hero" aria-labelledby="topic-title"><div class="wrap topic">
+<div class="topic-text">
+<p class="kicker rise" style="--i:0">${esc(c.kicker)}</p>
+<h1 id="topic-title" class="large-title rise" style="--i:1">${esc(c.title)}</h1>
+<p class="lead rise" style="--i:3">${esc(c.lead)}</p>
+<div class="rise" style="--i:5">${storeButtons(lang, campaign)}</div>
+</div>
+${shot(lang, TOPIC_SHOT[key], { eager: true })}
+</div></section>
+<section id="how" aria-labelledby="how-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="how-title" class="title1">${esc(c.stepsTitle)}</h2></div>
+<ol class="topic-steps">
+${steps}
+</ol>
+</div></section>
+<section id="faq" aria-labelledby="faq-title"><div class="wrap">
+<div class="section-head reveal"><h2 id="faq-title" class="title1">${esc(c.faqTitle)}</h2></div>
+<div class="faq">
+${faq}
+</div>
+</div></section>
+<section id="download" aria-labelledby="download-title"><div class="wrap download">
+<div class="section-head reveal"><h2 id="download-title" class="title1">${esc(c.ctaTitle)}</h2><p class="lead">${esc(c.ctaLead)}</p></div>
+${storeButtons(lang, campaign)}
+<p class="footnote"><a href="${PAGES.home[lang]}#how">${esc(t.compare.homeLink)}</a></p>
+</div></section>
+</main>`;
+}
+
+function topicJsonLd(lang, key) {
+  const t = S[lang];
+  const c = t.topics[key];
+  const url = abs(PAGES[key][lang]);
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': url + '#page',
+        url,
+        name: t.pages[key].title,
+        description: t.pages[key].description,
+        inLanguage: lang,
+        isPartOf: { '@id': abs('/#website') },
+        about: { '@id': abs('/#app') },
+        primaryImageOfPage: abs(shotUrl(lang, TOPIC_SHOT[key], 'jpg')),
+        breadcrumb: { '@id': url + '#breadcrumb' },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': url + '#breadcrumb',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: site.brand, item: abs(PAGES.home[lang]) },
+          { '@type': 'ListItem', position: 2, name: c.kicker, item: url },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': url + '#faq',
+        inLanguage: lang,
+        mainEntity: c.faq.map((it) => ({ '@type': 'Question', name: it.q, acceptedAnswer: { '@type': 'Answer', text: it.a } })),
+      },
+    ],
+  };
+}
+
+/**
+ * Bugünün gündemi (Z3, ADR-079): dil başına tek, adresi sabit sayfa. Veri
+ * `tools/today.mjs`'in Firestore'un herkese açık baskısından çektiği günün
+ * haberleri: bizim başlığımız, özetimizin ilk cümlesi, kaynak sayısı. Kaynak
+ * metni ve görsel yok (kopya riski, ADR-034); yalnız son gün (saklama 7 gün).
+ * Haber başına sayfa yok: Google'ın ölçekli içerik kuralı ve 7 günde 404.
+ */
+function todayBody(lang) {
+  const t = S[lang];
+  const c = t.topics.today;
+  const d = today[lang];
+  const items = d?.items ?? [];
+  const list = items
+    .map((it, i) => `<li class="today-item reveal" style="--i:${Math.min(i, 8)}">
+<p class="kicker">${esc(it.category)}${it.sources > 1 ? ` · ${esc(fill(c.sources, { n: it.sources }))}` : ''}</p>
+<h2 class="headline">${esc(it.headline)}</h2>
+<p class="subhead">${esc(it.summary)}</p>
+</li>`)
+    .join('\n');
+  const updated = d?.day ? `<p class="footnote rise" style="--i:4">${esc(fill(c.updated, { date: dateText(d.day, lang) }))}</p>` : '';
+  return `<main id="main">
+<section class="topic-hero" aria-labelledby="topic-title"><div class="wrap narrow">
+<p class="kicker rise" style="--i:0">${esc(c.kicker)}</p>
+<h1 id="topic-title" class="large-title rise" style="--i:1">${esc(c.title)}</h1>
+<p class="lead rise" style="--i:3">${esc(c.lead)}</p>
+${updated}
+</div></section>
+<section id="today" aria-labelledby="topic-title"><div class="wrap narrow">
+${items.length ? `<ol class="today-list">\n${list}\n</ol>` : `<p class="lead">${esc(c.empty)}</p>`}
+<p class="subhead">${esc(c.listen)}</p>
+<p class="footnote">${esc(c.note)}</p>
+</div></section>
+<section id="download" aria-labelledby="download-title"><div class="wrap download">
+<div class="section-head reveal"><h2 id="download-title" class="title1">${esc(c.ctaTitle)}</h2><p class="lead">${esc(c.ctaLead)}</p></div>
+${storeButtons(lang, 'web-today')}
+<p class="footnote"><a href="${PAGES.home[lang]}#how">${esc(t.compare.homeLink)}</a></p>
+</div></section>
+</main>`;
+}
+
+function todayJsonLd(lang) {
+  const t = S[lang];
+  const url = abs(PAGES.today[lang]);
+  const d = today[lang];
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': url + '#page',
+        url,
+        name: t.pages.today.title,
+        description: t.pages.today.description,
+        inLanguage: lang,
+        isPartOf: { '@id': abs('/#website') },
+        about: { '@id': abs('/#app') },
+        ...(d?.day && { dateModified: d.day }),
+      },
+    ],
+  };
+}
+
 // ---------------------------------------------------------------- hukuki ve destek
 
 function legalBody(lang, key) {
@@ -938,7 +1101,9 @@ ${head(lang, { title: t.pages.share.title, description: t.pages.share.descriptio
 <body>
 ${header(lang, null)}
 <main id="main" class="doc"><div class="wrap narrow share">
-<div class="doc-head"><p class="kicker">${esc(sh.kicker)}</p><h1 class="large-title">${esc(sh.title)}</h1><p>${esc(sh.body)}</p></div>
+<div class="doc-head"><p class="kicker">${esc(sh.kicker)}</p><h1 class="large-title">${esc(sh.title)}</h1>
+<div class="title2 shared-title" data-shared-title hidden aria-label="${esc(sh.titleLabel)}"></div>
+<p>${esc(sh.body)}</p></div>
 ${storeButtons(lang, 'web-share')}
 <p class="footnote">${esc(sh.note)} <a href="${PAGES.home[lang]}">${esc(sh.more)}</a></p>
 </div></main>
@@ -953,7 +1118,7 @@ ${footer(lang, 'home')}
 function sitemap() {
   const urls = [];
   for (const [key, paths] of Object.entries(PAGES)) {
-    const date = LEGAL_PAGES.includes(key) ? site.legalUpdated : { home: site.homeUpdated, compare: site.compareUpdated }[key] ?? null;
+    const date = LEGAL_PAGES.includes(key) ? site.legalUpdated : { home: site.homeUpdated, compare: site.compareUpdated, podcast: site.topicsUpdated, carplay: site.topicsUpdated, today: today.en?.day }[key] ?? null;
     const lastmod = date ? `\n    <lastmod>${date}</lastmod>` : '';
     const alts = [...langsOf(key).map((l) => [l, paths[l]]), ['x-default', paths.en]]
       .map(([hl, p]) => `\n    <xhtml:link rel="alternate" hreflang="${hl}" href="${abs(p)}"/>`)
@@ -990,6 +1155,32 @@ function manifest() {
   ) + '\n';
 }
 
+// llms.txt (Z3, ADR-079; llmstxt.org): yapay zekâ aramalarına sitenin kısa
+// haritası. Metin sayfaların kendi başlık ve açıklamalarından; dört dil.
+function llmsTxt() {
+  const en = S.en;
+  const line = (key, lang) => `- [${S[lang].pages[key].title}](${abs(PAGES[key][lang])}): ${S[lang].pages[key].description}`;
+  const keys = ['home', 'compare', 'podcast', 'carplay', 'today', 'support', 'privacy', 'terms'];
+  const other = LANGS.filter((l) => l !== 'en')
+    .map((l) => `## ${S[l].langName}\n\n${keys.filter((k) => PAGES[k][l]).map((k) => line(k, l)).join('\n')}`)
+    .join('\n\n');
+  return `# ${site.brand}
+
+> ${en.pages.home.description}
+
+${site.brand} is an audio news app for iPhone, iPad and Android: a short daily briefing from the topics you pick, voice questions while you listen, and a comparison of how sources cover the same story. Editions: United States, World, Türkiye, Spain and Germany. App languages: English, Turkish, Spanish and German. Published by ${site.publisher.org}.
+
+- App Store: ${site.stores.appStore}
+- Google Play: ${site.stores.googlePlay}
+
+## Pages
+
+${keys.map((k) => line(k, 'en')).join('\n')}
+
+${other}
+`;
+}
+
 // ---------------------------------------------------------------- yaz
 
 // Sayfalardaki kökten href/src'ler göreli olur (404 hariç, yukarıda).
@@ -1020,6 +1211,10 @@ for (const lang of LANGS) {
   }
   out(PAGES.support[lang], page(lang, { page: 'support', ...t.pages.support, body: supportBody(lang) }));
   out(PAGES.compare[lang], page(lang, { page: 'compare', ...t.pages.compare, jsonld: compareJsonLd(lang), body: compareBody(lang) }));
+  for (const key of ['podcast', 'carplay']) {
+    out(PAGES[key][lang], page(lang, { page: key, ...t.pages[key], jsonld: topicJsonLd(lang, key), body: topicBody(lang, key) }));
+  }
+  out(PAGES.today[lang], page(lang, { page: 'today', ...t.pages.today, jsonld: todayJsonLd(lang), body: todayBody(lang) }));
 }
 for (const [path, key] of Object.entries(LEGAL_REDIRECTS)) out(path, legalRedirect(key, path));
 // Paylaşım sayfaları yalnız en ve tr: uygulamanın StoryLink'i ve AASA bu yolları tanıyor.
@@ -1028,5 +1223,6 @@ out('404.html', notFound());
 out('sitemap.xml', sitemap());
 out('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${abs('/sitemap.xml')}\n`);
 out('site.webmanifest', manifest());
+out('llms.txt', llmsTxt());
 
 console.log(`docs hazır${process.env.FORCE_REDUCED_MOTION ? ' (hareket azaltma zorlandı)' : ''}`);

@@ -9,7 +9,10 @@
     "terms": "Bedingungen",
     "support": "Hilfe",
     "compare": "Nachrichtenquellen vergleichen",
-    "language": "Sprache"
+    "language": "Sprache",
+    "podcast": "Täglicher Nachrichten-Podcast",
+    "carplay": "Nachrichten im Auto",
+    "today": "Nachrichten heute"
   },
   "footer": {
     "notYet": "Die App ist noch nicht erschienen.",
@@ -92,6 +95,18 @@
     "share": {
       "title": "Eine Meldung auf Wonderwhy",
       "description": "Hör dir diese Meldung in der Wonderwhy-App an, frag per Sprache nach und sieh, wo ihre Quellen abweichen."
+    },
+    "podcast": {
+      "title": "Dein täglicher Nachrichten-Podcast · Wonderwhy",
+      "description": "Ein paar Minuten Nachrichten am Tag zu deinen Themen, wie ein Podcast. Frag per Sprache nach und vergleiche die Quellen."
+    },
+    "carplay": {
+      "title": "Nachrichten hören mit CarPlay · Wonderwhy",
+      "description": "Die Nachrichten des Tages im Auto: Das Wonderwhy-Briefing läuft mit CarPlay und Android Auto. Hören, ohne auf den Bildschirm zu schauen."
+    },
+    "today": {
+      "title": "Nachrichten heute, kurz zusammengefasst · Wonderwhy",
+      "description": "Kurze Zusammenfassungen der heutigen Nachrichten aus Deutschland, täglich neu. Das ganze Briefing hörst du in Wonderwhy."
     }
   },
   "legal": {
@@ -342,7 +357,8 @@
     "title": "Diese Meldung ist in der Wonderwhy-App",
     "body": "Wenn du Wonderwhy auf deinem Handy hast, öffnet dieser Link die Meldung in der App. Wenn nicht, hol dir die App: Hör dir die Meldung an, frag per Sprache nach und sieh, wo ihre Quellen abweichen.",
     "note": "Meldungen bleiben eine Woche in der App.",
-    "more": "Was ist Wonderwhy?"
+    "more": "Was ist Wonderwhy?",
+    "titleLabel": "Geteilte Meldung"
   },
   "redirect": {
     "privacy": "Datenschutzerklärung",
@@ -430,5 +446,97 @@
       ]
     },
     "noteHtml": "<!--if WONDERWHY_ADS-->Die kostenlose Version zeigt Werbung. <!--end-->Den Preis für dein Land zeigen App Store und Google Play. Premium verlängert sich automatisch, bis du es in deinem Store-Konto kündigst. Mehr dazu in den <a href=\"{terms}\">Nutzungsbedingungen</a>."
+  },
+  "topics": {
+    "podcast": {
+      "kicker": "Täglicher Nachrichten-Podcast",
+      "title": "Dein täglicher Nachrichten-Podcast, wenige Minuten lang",
+      "lead": "Wonderwhy macht aus deinen Themen ein kurzes Audio-Briefing. Du hörst es wie einen Podcast, mit einem Unterschied: Du kannst beim Hören Fragen stellen.",
+      "stepsTitle": "So funktioniert es",
+      "steps": [
+        {
+          "title": "Themen wählen",
+          "body": "Wirtschaft, Sport, Technik, Welt … Das Briefing nutzt nur deine Rubriken und lässt ausgeblendete Themen weg."
+        },
+        {
+          "title": "Hören",
+          "body": "Die Nachrichten des Tages in wenigen Minuten. Zwischen Meldungen springen, Tempo ändern, später weiterhören."
+        },
+        {
+          "title": "Nachfragen",
+          "body": "Drücken und sprechen: „Warum ist das wichtig?“ Die Antwort kommt in derselben Stimme, dann geht das Briefing weiter."
+        }
+      ],
+      "faqTitle": "Häufige Fragen",
+      "faq": [
+        {
+          "q": "Gibt es das in Podcast-Apps?",
+          "a": "Nein. Das Briefing entsteht jeden Tag neu aus deinen Themen und läuft deshalb in der Wonderwhy-App."
+        },
+        {
+          "q": "Wie lang ist es?",
+          "a": "Ein paar Minuten. Dein persönliches Briefing wächst oder schrumpft mit deinen Themen; einzelne Meldungen kannst du auch allein hören."
+        },
+        {
+          "q": "Wer liest die Nachrichten?",
+          "a": "KI schreibt das Briefing aus öffentlichen Nachrichtenquellen, eine KI-Stimme liest es. Jede Meldung zeigt ihre Quellen."
+        },
+        {
+          "q": "In welchen Sprachen?",
+          "a": "Deutsch, Englisch, Spanisch und Türkisch. Ausgaben: Deutschland, USA, Welt, Spanien und Türkiye."
+        }
+      ],
+      "ctaTitle": "Hör das heutige Briefing",
+      "ctaLead": "Wonderwhy gibt es im App Store und bei Google Play."
+    },
+    "carplay": {
+      "kicker": "Nachrichten im Auto",
+      "title": "Nachrichten im Auto hören: Wonderwhy mit CarPlay",
+      "lead": "Unterwegs musst du nicht auf den Bildschirm schauen. Starte das Briefing am Autodisplay, spring zwischen Meldungen und hör später weiter.",
+      "stepsTitle": "So funktioniert es im Auto",
+      "steps": [
+        {
+          "title": "Handy verbinden",
+          "body": "Wonderwhy erscheint in CarPlay und Android Auto, mit Heute, Meine Liste und Rubriken am Autodisplay."
+        },
+        {
+          "title": "Briefing starten",
+          "body": "Ein Tipp startet das Briefing des Tages. Zur nächsten Meldung springen oder eine Rubrik wählen."
+        },
+        {
+          "title": "Am Handy weiterhören",
+          "body": "Wenn du aussteigst, wartet deine Stelle auf dem Handy."
+        }
+      ],
+      "faqTitle": "Häufige Fragen",
+      "faq": [
+        {
+          "q": "Ist CarPlay kostenlos?",
+          "a": "CarPlay und Android Auto gehören zu Wonderwhy Premium. Die App ist kostenlos erhältlich; Details zu Premium stehen in der App."
+        },
+        {
+          "q": "Kann ich im Auto Fragen stellen?",
+          "a": "Im Auto laufen das Briefing und die Meldungen. Sprachfragen funktionieren am Handy, in der App."
+        },
+        {
+          "q": "Läuft es im Hintergrund weiter?",
+          "a": "Ja. Mit Premium hörst du auch bei gesperrtem Bildschirm oder in einer anderen App weiter."
+        }
+      ],
+      "ctaTitle": "Unterwegs auf dem Laufenden bleiben",
+      "ctaLead": "Wonderwhy gibt es im App Store und bei Google Play."
+    },
+    "today": {
+      "kicker": "Nachrichten heute",
+      "title": "Nachrichten heute",
+      "lead": "Die Meldungen des Tages aus der Deutschland-Ausgabe von Wonderwhy, jeweils in einem Satz. Täglich neu.",
+      "updated": "Stand: {date}",
+      "sources": "{n} Quellen",
+      "listen": "Hör die ganzen Meldungen in der App, frag per Sprache nach und vergleiche die Quellen.",
+      "note": "KI schreibt diese Zusammenfassungen aus öffentlichen Quellen und kann sich irren. Meldungen bleiben eine Woche in der App.",
+      "empty": "Die heutigen Zusammenfassungen sind noch nicht fertig. Das letzte Briefing kannst du in der App hören.",
+      "ctaTitle": "Nachrichten in Minuten hören",
+      "ctaLead": "Wonderwhy gibt es im App Store und bei Google Play."
+    }
   }
 }

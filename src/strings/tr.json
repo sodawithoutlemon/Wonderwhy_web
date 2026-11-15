@@ -9,7 +9,10 @@
     "terms": "Şartlar",
     "support": "Destek",
     "compare": "Kaynak karşılaştırma",
-    "language": "Dil"
+    "language": "Dil",
+    "podcast": "Günlük haber podcast’i",
+    "carplay": "Arabada haber",
+    "today": "Bugünün gündemi"
   },
   "footer": {
     "notYet": "Uygulama henüz yayında değil.",
@@ -91,6 +94,18 @@
     "share": {
       "title": "Wonderwhy'da bir haber",
       "description": "Bu haberi Wonderwhy uygulamasında dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör."
+    },
+    "podcast": {
+      "title": "Günlük haber podcast’i, sana özel · Wonderwhy",
+      "description": "Seçtiğin konulardan birkaç dakikalık günlük haber podcast’i. Dinlerken merak ettiğini sesle sor; aynı haberin kaynaklarını kıyasla."
+    },
+    "carplay": {
+      "title": "CarPlay’de haber dinle · Wonderwhy",
+      "description": "Günün haberlerini arabada dinle: Wonderwhy bülteni CarPlay’de ve Android Auto’da çalışır. Ekrana bakmadan dinle, kaldığın yerden devam et."
+    },
+    "today": {
+      "title": "Bugünün gündemi: kısa haber özetleri · Wonderwhy",
+      "description": "Türkiye gündeminin kısa özetleri, her gün yenilenir. Haberlerin tamamını Wonderwhy’da dinle, merak ettiğini sor."
     }
   },
   "legal": {
@@ -341,7 +356,8 @@
     "title": "Bu haber Wonderwhy uygulamasında",
     "body": "Telefonunda Wonderwhy varsa bu bağlantı haberi uygulamada açar. Yoksa uygulamayı indir: haberi dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör.",
     "note": "Haberler uygulamada bir hafta kalır.",
-    "more": "Wonderwhy nedir?"
+    "more": "Wonderwhy nedir?",
+    "titleLabel": "Paylaşılan haber"
   },
   "redirect": {
     "privacy": "Gizlilik Politikası",
@@ -429,5 +445,97 @@
       ]
     },
     "noteHtml": "<!--if WONDERWHY_ADS-->Ücretsiz sürümde reklam gösterilir. <!--end-->Ülkendeki fiyatı App Store ve Google Play gösterir. Premium, mağaza hesabından iptal edene kadar kendiliğinden yenilenir. Ayrıntılar <a href=\"{terms}\">Kullanım Şartları</a>'nda."
+  },
+  "topics": {
+    "podcast": {
+      "kicker": "Günlük haber podcast’i",
+      "title": "Her gün sana özel, birkaç dakikalık haber podcast’i",
+      "lead": "Wonderwhy seçtiğin konulardan kısa bir sesli bülten hazırlar. Bir podcast gibi dinlersin; farkı, sorunu dinlerken sorabilmen.",
+      "stepsTitle": "Nasıl çalışır?",
+      "steps": [
+        {
+          "title": "Konularını seç",
+          "body": "Ekonomi, spor, teknoloji, dünya… Bülten yalnız seçtiğin bölümlerden gelir; gizlediğin konu girmez."
+        },
+        {
+          "title": "Dinle",
+          "body": "Günün haberleri birkaç dakikalık bir bültende. Haberden habere geç, hızı ayarla, kaldığın yerden devam et."
+        },
+        {
+          "title": "Merak ettiğini sor",
+          "body": "Bas, konuş: “Bu neden önemli?” Cevap aynı seste gelir, bülten kaldığı yerden sürer."
+        }
+      ],
+      "faqTitle": "Sık sorulanlar",
+      "faq": [
+        {
+          "q": "Podcast uygulamasında var mı?",
+          "a": "Hayır. Bülten her gün senin konularına göre hazırlandığı için Wonderwhy uygulamasında çalınır."
+        },
+        {
+          "q": "Ne kadar sürüyor?",
+          "a": "Birkaç dakika. Kişisel bülten seçtiğin konulara göre uzar ya da kısalır; tek bir haberi de ayrıca dinleyebilirsin."
+        },
+        {
+          "q": "Haberleri kim seslendiriyor?",
+          "a": "Bülteni yapay zekâ kamuya açık haber kaynaklarından yazar, yapay zekâ sesi okur. Her haberin kaynakları yanında görünür."
+        },
+        {
+          "q": "Hangi dillerde?",
+          "a": "Türkçe, İngilizce, İspanyolca ve Almanca. Baskılar: Türkiye, ABD, Dünya, İspanya ve Almanya."
+        }
+      ],
+      "ctaTitle": "Bugünün bültenini dinle",
+      "ctaLead": "Wonderwhy App Store ve Google Play’de."
+    },
+    "carplay": {
+      "kicker": "Arabada haber",
+      "title": "Haberleri arabada dinle: CarPlay’de Wonderwhy",
+      "lead": "Yolda ekrana bakmana gerek yok. Günün bülteni araç ekranından başlar; haberden habere geçer, kaldığın yerden devam edersin.",
+      "stepsTitle": "Arabada nasıl çalışır?",
+      "steps": [
+        {
+          "title": "Telefonu bağla",
+          "body": "Wonderwhy CarPlay’de ve Android Auto’da görünür. Araç ekranında Bugün, Listem ve Bölümler var."
+        },
+        {
+          "title": "Bülteni başlat",
+          "body": "Tek dokunuşla günün bülteni. Sonraki habere geç ya da bir bölümü seç."
+        },
+        {
+          "title": "Telefonda devam et",
+          "body": "Arabadan inince kaldığın yer telefonda seni bekler."
+        }
+      ],
+      "faqTitle": "Sık sorulanlar",
+      "faq": [
+        {
+          "q": "CarPlay ücretli mi?",
+          "a": "CarPlay ve Android Auto Wonderwhy Premium’da. Uygulamayı indirmek ücretsiz; Premium’un ayrıntıları uygulamada."
+        },
+        {
+          "q": "Arabada soru sorabilir miyim?",
+          "a": "Arabada bülten ve haberler çalınır. Sesli soru telefonda, uygulamanın içinde."
+        },
+        {
+          "q": "Arka planda da çalışır mı?",
+          "a": "Evet, Premium’da ekran kilitliyken ve başka uygulama açıkken de dinlemeye devam edersin."
+        }
+      ],
+      "ctaTitle": "Yolda gündemi kaçırma",
+      "ctaLead": "Wonderwhy App Store ve Google Play’de."
+    },
+    "today": {
+      "kicker": "Bugünün gündemi",
+      "title": "Bugünün gündemi",
+      "lead": "Wonderwhy’ın Türkiye baskısından günün haberleri, birer cümlelik özetle. Her gün yenilenir.",
+      "updated": "Güncelleme: {date}",
+      "sources": "{n} kaynak",
+      "listen": "Tamamını uygulamada dinle; merak ettiğini sesle sor, kaynakları kıyasla.",
+      "note": "Özetleri yapay zekâ kamuya açık haber kaynaklarından yazar ve yanılabilir. Haberler uygulamada bir hafta kalır.",
+      "empty": "Bugünün özetleri henüz hazır değil. Uygulamada en son bülteni dinleyebilirsin.",
+      "ctaTitle": "Gündemi birkaç dakikada dinle",
+      "ctaLead": "Wonderwhy App Store ve Google Play’de."
+    }
   }
 }

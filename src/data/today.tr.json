@@ -1,0 +1,96 @@
+{
+  "day": "2026-11-15",
+  "edition": "tr",
+  "items": [
+    {
+      "category": "Ekonomi",
+      "headline": "Türkiye ile Singapur arasında JETCO protokolü imzalandı",
+      "summary": "Türkiye ile Singapur, ekonomi ve ticaret işbirliğini geliştirmek amacıyla JETCO protokolü imzaladı.",
+      "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Erdoğan, Bolivya Cumhurbaşkanı Pereira ile görüştü",
+      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, Bolivya Cumhurbaşkanı Rodrigo Paz Pereira ile İstanbul’daki Cumhurbaşkanlığı Dolmabahçe Ofisi’nde bir araya geldi.",
+      "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Türkiye’den Kuzey Kıbrıs Türk Cumhuriyeti’nin 43. kuruluş yıl dönümüne kutlama mesajları",
+      "summary": "Türkiye’den Kuzey Kıbrıs Türk Cumhuriyeti’nin kuruluşunun 43.",
+      "sources": 3
+    },
+    {
+      "category": "Ekonomi",
+      "headline": "Küresel piyasalar haftayı alış ağırlıklı tamamladı",
+      "summary": "Küresel piyasalar haftayı alış ağırlıklı tamamladı. Nvidia CEO’su Jensen Huang’ın istifasına ilişkin endişelerin sınırlı kalabileceği beklentisi ve petrol fiyatlarındaki düşüş, piyasalardaki olumlu seyri destekledi.",
+      "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Hakan Fidan, Brüksel’de bakanlar toplantısına katılacak",
+      "summary": "Dışişleri Bakanı Hakan Fidan, yarın Brüksel’de düzenlenecek Bölgelerarası Güvenlik ve Bağlantısallık Konulu İkinci Bakanlar Toplantısı’na katılacak.",
+      "sources": 3
+    },
+    {
+      "category": "Ekonomi",
+      "headline": "Ekimde üreticilere 2 milyar lira hasar tazminatı ödendi",
+      "summary": "Tarım ve Orman Bakanı İbrahim Yumaklı, ekim ayında üreticilere 2 milyar lira hasar tazminatı ödendiğini bildirdi.",
+      "sources": 2
+    },
+    {
+      "category": "Bilim",
+      "headline": "Türkiye'nin en büyük kuantum bilgisayarı 2027'de devreye alınacak",
+      "summary": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, Türkiye'nin en büyük kuantum bilgisayarının 2027'de devreye alınacağını açıkladı.",
+      "sources": 2
+    },
+    {
+      "category": "Bilim",
+      "headline": "TÜRKSAT, altyapısız bölgeler için güneş enerjili Wi-Fi sistemi geliştirdi",
+      "summary": "TÜRKSAT AŞ, karasal haberleşme hatlarının ve elektrik şebekesinin ulaşamadığı bölgeler için güneş enerjili, uydu destekli kamusal Wi-Fi sistemi geliştirdi.",
+      "sources": 2
+    },
+    {
+      "category": "Magazin",
+      "headline": "Asena, Kani Kudu ile evlendiğini açıkladı",
+      "summary": "Ünlü oryantal Asena, yaklaşık 8 aydır birlikte olduğu Kani Kudu ile evlendiğini açıkladı.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Samsung News, Güney Kore ve Hindistan’da kapanıyor",
+      "summary": "Samsung, Samsung News uygulamasını Güney Kore ve Hindistan’da 21 Aralık’ta kapatacak.",
+      "sources": 1
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "CRKD Atom Plus, küçük gövdesine çift analog çubuk sığdırıyor",
+      "summary": "CRKD'nin Atom Plus adlı oyun kolu, 8BitDo Zero 2'den daha küçük bir gövdeye sahip.",
+      "sources": 1
+    },
+    {
+      "category": "Spor",
+      "headline": "Galler, Yeni Zelanda’yı 73 yıl sonra yendi",
+      "summary": "Galler, Yeni Zelanda’yı 73 yıl aradan sonra ilk kez mağlup etti.",
+      "sources": 1
+    },
+    {
+      "category": "Siyaset",
+      "headline": "SpaceX, Starship’in üst bölümünü ilk kez fırlatma rampasında yakaladı",
+      "summary": "SpaceX, Starship’in üst bölümünü 22,5 saat süren bir uçuşun ardından ilk kez başarıyla yakaladı.",
+      "sources": 1
+    },
+    {
+      "category": "Dünya",
+      "headline": "Frankofon zirvesi, Ruanda ile Kongo arasındaki anlaşmazlıkla Kamboçya’da başladı",
+      "summary": "Fransızca konuşan ülkelerin örgütünün zirvesi Kamboçya’da başladı.",
+      "sources": 1
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Google Pixel ayarlarına Aile bölümü eklendi",
+      "summary": "Google Pixel telefonların ayarlarına yeni bir Aile bölümü eklendi.",
+      "sources": 1
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "day": "2026-11-15",
+  "edition": "es",
+  "items": [
+    {
+      "category": "Cultura",
+      "headline": "Rosalía gana los Latin Grammy a álbum y canción del año",
+      "summary": "Rosalía ganó el Latin Grammy a mejor álbum por «Lux» y el de canción del año por «La Perla».",
+      "sources": 3
+    },
+    {
+      "category": "Nacional",
+      "headline": "Frente Amplio propone permisos retribuidos para la «familia elegida»",
+      "summary": "Frente Amplio propone modificar la Ley de Familias para reconocer las redes de cuidados entre personas sin parentesco ni convivencia.",
+      "sources": 2
+    },
+    {
+      "category": "Deportes",
+      "headline": "España e Inglaterra se juegan el liderato del grupo C de la Nations League",
+      "summary": "España e Inglaterra se enfrentan en el Riyadh Air Metropolitano en la sexta y última jornada del grupo C de la UEFA Nations League.",
+      "sources": 2
+    },
+    {
+      "category": "Deportes",
+      "headline": "El Girona remonta al Oviedo en el estreno de Raúl",
+      "summary": "El Girona venció 1-2 al Real Oviedo en el estreno de Raúl como entrenador del equipo asturiano.",
+      "sources": 2
+    },
+    {
+      "category": "Cultura",
+      "headline": "La bola negra suma 10 nominaciones a los Premios del Cine Europeo",
+      "summary": "La bola negra, de Los Javis, ha conseguido 10 nominaciones a los Premios del Cine Europeo.",
+      "sources": 2
+    },
+    {
+      "category": "Gente",
+      "headline": "La Reina Sofía participa en la Gran Recogida de Alimentos de 2026",
+      "summary": "La Reina Sofía ha participado en Madrid en la Gran Recogida de Alimentos de 2026.",
+      "sources": 2
+    },
+    {
+      "category": "Deportes",
+      "headline": "Joana Sanz confirma el fin de su relación con Dani Alves",
+      "summary": "Joana Sanz ha confirmado que ya no está con Dani Alves y que ambos están tramitando el divorcio.",
+      "sources": 2
+    },
+    {
+      "category": "Nacional",
+      "headline": "Galicia tendrá avisos por lluvia, viento y oleaje hasta las 17.00 horas",
+      "summary": "Un frente atlántico dejará lluvias persistentes en Galicia este domingo y rachas muy fuertes de viento.",
+      "sources": 2
+    },
+    {
+      "category": "Cultura",
+      "headline": "Rosalía y artistas de varios géneros ganan los Latin Grammy 2026",
+      "summary": "Rosalía figura entre las ganadoras de los Latin Grammy 2026 y, según El Mundo Cultura, ha hecho historia en estos premios.",
+      "sources": 2
+    },
+    {
+      "category": "Economía",
+      "headline": "Adif estudia cómo reformar la línea de alta velocidad entre Madrid y Barcelona",
+      "summary": "Adif ha valorado interrumpir el tráfico en la línea de alta velocidad entre Madrid y Barcelona para acelerar las obras y mejorar la fiabilidad del servicio.",
+      "sources": 1
+    },
+    {
+      "category": "Salud",
+      "headline": "El CO₂ exhalado por la población aumentó un 74 % en 3 décadas",
+      "summary": "La cantidad total de CO₂ que las personas exhalan al respirar ha aumentado un 74 % en las últimas 3 décadas.",
+      "sources": 1
+    },
+    {
+      "category": "Economía",
+      "headline": "MetaMender llega al repositorio oficial de Kodi",
+      "summary": "Kodi incorpora MetaMender a su repositorio oficial. Este complemento mejora automáticamente la biblioteca de películas y series: completa las sinopsis, actualiza las puntuaciones y amplía la información de las fichas.",
+      "sources": 1
+    },
+    {
+      "category": "Política",
+      "headline": "Tu Otra Bonita lleva su rock a formato acústico en Clamores",
+      "summary": "Tu Otra Bonita actuará en acústico este domingo en la sala Clamores, en Madrid.",
+      "sources": 1
+    },
+    {
+      "category": "Internacional",
+      "headline": "Ruchira Ranasingha sigue varada en las Islas Cook desde 2023",
+      "summary": "Ruchira Ranasingha, de 50 años, lleva varada en las Islas Cook desde 2023.",
+      "sources": 1
+    },
+    {
+      "category": "Ciencia",
+      "headline": "Hallan en Australia cañones submarinos de hace 550 millones de años",
+      "summary": "Un equipo internacional ha descubierto en Australia gigantescos cañones submarinos de hace 550 millones de años.",
+      "sources": 1
+    }
+  ]
+}

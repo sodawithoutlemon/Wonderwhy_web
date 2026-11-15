@@ -9,7 +9,10 @@
     "terms": "Terms",
     "support": "Support",
     "compare": "Compare news sources",
-    "language": "Language"
+    "language": "Language",
+    "podcast": "Daily news podcast",
+    "carplay": "News in the car",
+    "today": "Today’s headlines"
   },
   "footer": {
     "notYet": "The app isn’t out yet.",
@@ -92,6 +95,18 @@
     "share": {
       "title": "A story on Wonderwhy",
       "description": "Listen to this story in the Wonderwhy app, ask about it by voice and see where its sources differ."
+    },
+    "podcast": {
+      "title": "A daily news podcast made for you · Wonderwhy",
+      "description": "A few minutes of daily news on the topics you pick, like a podcast. Ask about any story by voice and compare its sources."
+    },
+    "carplay": {
+      "title": "Listen to the news on CarPlay · Wonderwhy",
+      "description": "Hear the day’s news in the car: the Wonderwhy briefing plays on CarPlay and Android Auto. Listen hands-free and pick up where you left off."
+    },
+    "today": {
+      "title": "Today’s headlines, summarized · Wonderwhy",
+      "description": "Short summaries of today’s top US stories, updated every day. Listen to the full briefing on Wonderwhy and ask about any story."
     }
   },
   "legal": {
@@ -342,7 +357,8 @@
     "title": "This story is in the Wonderwhy app",
     "body": "If Wonderwhy is on your phone, this link opens the story in the app. If not, get the app: listen to the story, ask about it by voice and see where its sources differ.",
     "note": "Stories stay in the app for a week.",
-    "more": "What is Wonderwhy?"
+    "more": "What is Wonderwhy?",
+    "titleLabel": "Shared story"
   },
   "redirect": {
     "privacy": "Privacy Policy",
@@ -430,5 +446,97 @@
       ]
     },
     "noteHtml": "<!--if WONDERWHY_ADS-->The free version shows ads. <!--end-->The App Store and Google Play show the price for your country. Premium renews automatically until you cancel it in your store account. See the <a href=\"{terms}\">Terms of Use</a>."
+  },
+  "topics": {
+    "podcast": {
+      "kicker": "Daily news podcast",
+      "title": "A daily news podcast, a few minutes long and made for you",
+      "lead": "Wonderwhy turns the topics you pick into a short audio briefing. Listen like a podcast, with one difference: you can ask questions while you listen.",
+      "stepsTitle": "How it works",
+      "steps": [
+        {
+          "title": "Pick your topics",
+          "body": "Business, sports, tech, world… The briefing only uses the sections you chose and leaves out topics you hide."
+        },
+        {
+          "title": "Listen",
+          "body": "The day’s news in a few minutes. Skip between stories, change the speed and resume where you stopped."
+        },
+        {
+          "title": "Ask what you wonder",
+          "body": "Press and talk: “Why does this matter?” The answer comes in the same voice, then the briefing carries on."
+        }
+      ],
+      "faqTitle": "Questions",
+      "faq": [
+        {
+          "q": "Is it in podcast apps?",
+          "a": "No. The briefing is made fresh for your topics every day, so it plays in the Wonderwhy app."
+        },
+        {
+          "q": "How long is it?",
+          "a": "A few minutes. Your personal briefing grows or shrinks with the topics you pick, and you can also play a single story."
+        },
+        {
+          "q": "Who reads the news?",
+          "a": "AI writes the briefing from public news sources and an AI voice reads it. Every story shows its sources."
+        },
+        {
+          "q": "Which languages?",
+          "a": "English, Turkish, Spanish and German. Editions: United States, World, Türkiye, Spain and Germany."
+        }
+      ],
+      "ctaTitle": "Listen to today’s briefing",
+      "ctaLead": "Wonderwhy is on the App Store and Google Play."
+    },
+    "carplay": {
+      "kicker": "News in the car",
+      "title": "Listen to the news in the car with Wonderwhy on CarPlay",
+      "lead": "No need to look at a screen on the road. Start the day’s briefing from the car display, skip between stories and resume where you left off.",
+      "stepsTitle": "How it works in the car",
+      "steps": [
+        {
+          "title": "Connect your phone",
+          "body": "Wonderwhy shows up on CarPlay and Android Auto, with Today, My list and Sections on the car display."
+        },
+        {
+          "title": "Start the briefing",
+          "body": "One tap plays the day’s briefing. Skip to the next story or choose a section."
+        },
+        {
+          "title": "Carry on on your phone",
+          "body": "When you get out, your place is waiting on your phone."
+        }
+      ],
+      "faqTitle": "Questions",
+      "faq": [
+        {
+          "q": "Is CarPlay included for free?",
+          "a": "CarPlay and Android Auto are part of Wonderwhy Premium. The app is free to download; Premium details are in the app."
+        },
+        {
+          "q": "Can I ask questions in the car?",
+          "a": "In the car, the briefing and stories play. Voice questions work on your phone, in the app."
+        },
+        {
+          "q": "Does it play in the background?",
+          "a": "Yes. With Premium, listening continues with the screen locked or another app open."
+        }
+      ],
+      "ctaTitle": "Keep up with the news on the road",
+      "ctaLead": "Wonderwhy is on the App Store and Google Play."
+    },
+    "today": {
+      "kicker": "Today’s headlines",
+      "title": "Today’s headlines",
+      "lead": "The day’s stories from Wonderwhy’s United States edition, each in one sentence. Updated every day.",
+      "updated": "Updated {date}",
+      "sources": "{n} sources",
+      "listen": "Listen to the full stories in the app, ask about them by voice and compare their sources.",
+      "note": "AI writes these summaries from public news sources and can make mistakes. Stories stay in the app for a week.",
+      "empty": "Today’s summaries aren’t ready yet. You can listen to the latest briefing in the app.",
+      "ctaTitle": "Hear the news in minutes",
+      "ctaLead": "Wonderwhy is on the App Store and Google Play."
+    }
   }
 }
