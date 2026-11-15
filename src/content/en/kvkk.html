@@ -15,10 +15,13 @@
 <!--end-->
 <tr><td>Voice recording</td><td>Spoken question (up to 15 seconds) and the sentence playing at that moment</td><td>Understanding and answering your question; the recording isn’t kept<!--if WONDERWHY_VOICE_COMMANDS-->. Voice commands are understood on your phone and never reach us<!--end--></td></tr>
 <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
-<tr><td>Usage and crash data</td><td>Screens you open, listening, buttons you tap, how many questions you ask and how long they take (not their text); crash reports; your account ID and the app’s device ID</td><td>Improving the app; finding and fixing bugs</td></tr>
+<tr><td>Usage and crash data</td><td>Screens you open, listening, buttons you tap, how many questions you ask and how long they take (not their text)<!--if WONDERWHY_ANALYTICS&WONDERWHY_SURVEY-->, mini survey answers (given options)<!--end-->; crash reports; your account ID and the app’s device ID</td><td>Improving the app; finding and fixing bugs</td></tr>
 <!--end-->
 <!--if WONDERWHY_ADS-->
 <tr><td>Marketing (ads)</td><td>IP address and approximate location, device and app details, interaction with ads; a device ID (IDFV on iPhone and iPad, the advertising ID on Android)</td><td>Showing and measuring non-personalised ads, preventing fraud (Google AdMob)</td></tr>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<tr><td>Marketing (ad measurement)</td><td>Whether you installed the app from an ad; first open, sign-in, listening<!--if WONDERWHY_PREMIUM--> and subscription<!--end--> events; on iPhone and iPad the SKAdNetwork registration<!--if WONDERWHY_PREMIUM--> and Apple’s AdServices token<!--end-->. No advertising ID is used</td><td>Seeing whether our ads work (Google Ads, Apple)</td></tr>
 <!--end-->
 <tr><td>Transaction security</td><td>Server logs (IP address, app and device details), daily usage counters; with Google sign-in, the approximate location Google may estimate from your IP address</td><td>Security, misuse prevention, usage limits and troubleshooting</td></tr>
 </tbody>
@@ -35,20 +38,23 @@
 <!--if WONDERWHY_ADS-->
 <li><strong>Non-personalised ads:</strong> our legitimate interest in keeping <!--if WONDERWHY_PREMIUM-->the free version<!--else-->the app<!--end--> running (KVKK Art. 5(2)(f)).</li>
 <!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<li><strong>Ad measurement:</strong> our legitimate interest in seeing whether our ads work (KVKK Art. 5(2)(f)). You can object to the part that goes to Google by turning off “Usage data” in Profile › Privacy &amp; data.</li>
+<!--end-->
 <li><strong>Legal obligations</strong>, where they apply (KVKK Art. 5(2)(<span lang="tr">ç</span>)).</li>
 <li><strong>Microphone<!--if WONDERWHY_VOICE_COMMANDS-->, speech recognition<!--end--> and notifications:</strong> your permission, which you can withdraw in your phone’s settings. Before your first spoken question, the app tells you that your voice goes to Google’s AI and asks you to agree; nothing is recorded or sent until you do.</li>
 </ul>
 
 <h2 id="collection">How we collect it</h2>
-<p>Electronically and automatically: what you enter when you create an account or sign in, what you create while using the app (lists, votes, questions) and the logs of requests to our servers.<!--if WONDERWHY_PREMIUM--> The purchase record comes from the App Store or Google Play, through RevenueCat.<!--end--><!--if WONDERWHY_ADS--> Google’s ad software collects ad data from your phone itself.<!--end--> By email, if you write to us.</p>
+<p>Electronically and automatically: what you enter when you create an account or sign in, what you create while using the app (lists, votes, questions) and the logs of requests to our servers.<!--if WONDERWHY_PREMIUM--> The purchase record comes from the App Store or Google Play, through RevenueCat.<!--end--><!--if WONDERWHY_ADS--> Google’s ad software collects ad data from your phone itself.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Ad measurement is passed from usage measurement to Google Ads; on iPhone and iPad it goes to Apple through SKAdNetwork<!--if WONDERWHY_PREMIUM--> and the AdServices token<!--end-->.<!--end--> By email, if you write to us.</p>
 
 <h2 id="transfers">Who receives it</h2>
-<p>We don’t sell or share your personal data. To provide the service, these providers process it on our behalf:</p>
+<p><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->We don’t sell your personal data. To provide the service and measure our ads, these providers process it:<!--else-->We don’t sell or share your personal data. To provide the service, these providers process it on our behalf:<!--end--></p>
 <ul>
-<li><strong>Google</strong> (Firebase, Google Cloud, the Gemini <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->API, Google sign-in, Google Analytics for Firebase and Firebase Crashlytics): hosting, sign-in, sync, questions, audio, usage measurement and crash reports.<!--else-->API and Google sign-in): hosting, sign-in, sync, questions and audio.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play takes subscription payments.<!--end--><!--if WONDERWHY_ADS--> Google AdMob picks and shows the ads.<!--end--></li>
-<li><strong>Apple</strong>: Sign in with Apple, DeviceCheck and notifications.<!--if WONDERWHY_PREMIUM--> It takes subscription payments on the App Store.<!--end--></li>
+<li><strong>Google</strong> (Firebase, Google Cloud, the Gemini <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->API, Google sign-in, Google Analytics for Firebase and Firebase Crashlytics): hosting, sign-in, sync, questions, audio, usage measurement and crash reports.<!--else-->API and Google sign-in): hosting, sign-in, sync, questions and audio.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play takes subscription payments.<!--end--><!--if WONDERWHY_ADS--> Google AdMob picks and shows the ads.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Google Ads measures how our ads perform.<!--end--></li>
+<li><strong>Apple</strong>: Sign in with Apple, DeviceCheck and notifications.<!--if WONDERWHY_PREMIUM--> It takes subscription payments on the App Store.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> It reports how our ads perform through SKAdNetwork<!--if WONDERWHY_PREMIUM--> and Apple Ads<!--end-->.<!--end--></li>
 <!--if WONDERWHY_PREMIUM-->
-<li><strong>RevenueCat</strong> (United States): confirms purchases and your subscription status.</li>
+<li><strong>RevenueCat</strong> (United States): confirms purchases and your subscription status.<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> On iPhone and iPad it passes the AdServices token to Apple for Apple Ads measurement.<!--end--></li>
 <!--end-->
 <li><strong>GitHub</strong>: hosts this website.</li>
 <li><strong>Metricool</strong> (Spain): counts visits to this website.</li>
@@ -58,7 +64,7 @@
 <p>Our servers are in Belgium. Some of these providers process data outside Türkiye, including in the United States; these transfers rely on the mechanisms in Article 9 of the KVKK. Details: <a href="{privacy}#processors">Who processes your data</a>.</p>
 
 <h2 id="retention">How long we keep it</h2>
-<p>Your account and what it holds stay until you delete the account.<!--if WONDERWHY_ANALYTICS--> Usage measurement is kept for 90 days (2 months in Google Analytics).<!--end--><!--if WONDERWHY_PREMIUM--> Your subscription status is kept while the subscription lasts, and your RevenueCat record until you delete your account.<!--end--><!--if WONDERWHY_ADS--> Google keeps ad data on its own schedule.<!--end--> Everything else is deleted within 7 days at most. Details: <a href="{privacy}#retention">How long we keep data</a>.</p>
+<p>Your account and what it holds stay until you delete the account.<!--if WONDERWHY_ANALYTICS--> Usage measurement is kept for 90 days (2 months in Google Analytics).<!--end--><!--if WONDERWHY_PREMIUM--> Your subscription status is kept while the subscription lasts, and your RevenueCat record until you delete your account.<!--end--><!--if WONDERWHY_ADS--> Google keeps ad data on its own schedule.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Google and Apple keep ad measurement data on their own schedules.<!--end--> Everything else is deleted within 7 days at most. Details: <a href="{privacy}#retention">How long we keep data</a>.</p>
 
 <h2 id="rights">Your rights under Article 11 of the KVKK</h2>
 <ul>

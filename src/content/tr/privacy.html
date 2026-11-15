@@ -5,7 +5,7 @@
 
 <h2 id="ozet">Özet</h2>
 <ul>
-<li><!--if !WONDERWHY_ADS&!WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->Reklam yok, analitik yok, başka uygulama ve sitelerde takip yok.<!--end--><!--if !WONDERWHY_ADS&WONDERWHY_ANALYTICS|!WONDERWHY_ADS&WONDERWHY_CRASH_REPORTS-->Reklam yok, başka uygulama ve sitelerde takip yok.<!--end--><!--if WONDERWHY_ADS--><!--if WONDERWHY_PREMIUM-->Ücretsiz sürümde<!--else-->Uygulamada<!--end--><!--end--><!--if WONDERWHY_ADS--> Google AdMob ile reklam gösteririz. Reklamlar kişiselleştirilmez: ilgi alanlarına ya da başka uygulamalardaki davranışına göre seçilmez.<!--end--><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Uygulamayı geliştirmek için nasıl kullanıldığını ve çökmeleri ölçüyoruz; istediğin an Profil › Gizlilik ve veri’den kapatabilirsin.<!--end--> Kişisel verini satmayız ve paylaşmayız.</li>
+<li><!--if !WONDERWHY_ADS&!WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->Reklam yok, analitik yok, başka uygulama ve sitelerde takip yok.<!--end--><!--if !WONDERWHY_ADS&WONDERWHY_ANALYTICS&!WONDERWHY_ATTRIBUTION|!WONDERWHY_ADS&WONDERWHY_CRASH_REPORTS&!WONDERWHY_ANALYTICS|!WONDERWHY_ADS&WONDERWHY_CRASH_REPORTS&!WONDERWHY_ATTRIBUTION-->Reklam yok, başka uygulama ve sitelerde takip yok.<!--end--><!--if !WONDERWHY_ADS&WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->Uygulamada reklam yok.<!--end--><!--if WONDERWHY_ADS--><!--if WONDERWHY_PREMIUM-->Ücretsiz sürümde<!--else-->Uygulamada<!--end--><!--end--><!--if WONDERWHY_ADS--> Google AdMob ile reklam gösteririz. Reklamlar kişiselleştirilmez: ilgi alanlarına ya da başka uygulamalardaki davranışına göre seçilmez.<!--end--><!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Uygulamayı geliştirmek için nasıl kullanıldığını ve çökmeleri ölçüyoruz; istediğin an Profil › Gizlilik ve veri’den kapatabilirsin.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Reklamlarımızın işe yarayıp yaramadığını ölçmek için, uygulamayı bir reklamdan indirip indirmediğin ve abone olup olmadığın Google’a ve Apple’a bildirilir; reklam kimliği kullanılmaz, reklam kişiselleştirilmez (bkz. <a href="#reklam-olcumu">Reklam ölçümü</a>).<!--end--> Kişisel verini satmayız<!--if !WONDERWHY_ANALYTICS|!WONDERWHY_ATTRIBUTION--> ve paylaşmayız<!--end-->.</li>
 <li>Okumak ve dinlemek için hesap gerekir: e-posta ve şifre, Apple ile giriş (iPhone ve iPad’de) ya da Google ile giriş. Hesapsız yalnız göz atabilirsin. Listelerin ve ayarların cihazların arasında eşitlenir.</li>
 <!--if WONDERWHY_PREMIUM-->
 <li>İstersen Premium’a abone olabilirsin. Ödemeyi Apple ya da Google alır; kart bilgilerini biz görmeyiz.</li>
@@ -36,6 +36,12 @@
 <tr><td>Sunucu kayıtları (IP adresi, uygulama ve cihaz bilgisi)</td><td>Güvenlik ve hata giderme</td><td>Google Cloud (Belçika)</td><td>7 gün</td></tr>
 <!--if WONDERWHY_ANALYTICS-->
 <tr><td>Kullanım ölçümü (açtığın ekranlar, dinleme, dokunduğun düğmeler; hesap kimliğin ve uygulamanın cihaz kimliği)</td><td>Uygulamayı geliştirmek</td><td>Google Cloud Firestore (Belçika), Google Analytics for Firebase</td><td>90 gün (Google Analytics: 2 ay); günlük toplamlar kişisel değil, kalır</td></tr>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_SURVEY-->
+<tr><td>Mini anket cevapları (hazır seçeneklerden seçtiğin; serbest metin yok), hesap kimliğinle</td><td>Uygulamayı ve tanıtımını geliştirmek</td><td>Google Cloud Firestore (Belçika), Google Analytics for Firebase</td><td>Kullanım ölçümüyle aynı: 90 gün (Google Analytics: 2 ay); “Nereden duydun?” cevabı hesabının kullanım özetinde, hesabını silene kadar</td></tr>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<tr><td>Reklam ölçümü (uygulamayı bir reklamdan indirip indirmediğin, ilk açılış, giriş, dinleme<!--if WONDERWHY_PREMIUM--> ve abone olma<!--end--> olayları; iPhone ve iPad’de SKAdNetwork kaydı<!--if WONDERWHY_PREMIUM--> ve Apple’ın AdServices jetonu<!--end-->). Reklam kimliği yok</td><td>Reklamlarımızın işe yarayıp yaramadığını ölçmek</td><td>Google Analytics for Firebase üzerinden Google Ads (AEA, Birleşik Krallık ve İsviçre’de gitmez); Apple<!--if WONDERWHY_PREMIUM-->; RevenueCat<!--end--></td><td>Google ve Apple’ın kendi sürelerine göre<!--if WONDERWHY_PREMIUM-->; RevenueCat’teki kaydın hesabını silene kadar<!--end--></td></tr>
 <!--end-->
 <!--if WONDERWHY_CRASH_REPORTS-->
 <tr><td>Çökme raporları (hatanın yeri, cihaz modeli, sistem ve uygulama sürümü, hesap kimliğin)</td><td>Hataları bulup düzeltmek</td><td>Firebase Crashlytics</td><td>90 gün</td></tr>
@@ -116,7 +122,7 @@
 <!--if WONDERWHY_PREMIUM-->
 <h2 id="abonelik">Abonelik ve ödeme</h2>
 <p>Ücretsiz sürümde her gün belli bir süre dinleyebilirsin. Bunu saymak için uygulama, o gün kaç saniye dinlediğini telefonunda ve hesabında tutar: yalnız bugünün sayısı, ertesi gün üzerine yazılır, geçmiş tutulmaz. Abonelerde sayılmaz.</p>
-<p>Premium’a abone olursan ödemeyi App Store’da Apple, Google Play’de Google alır; kart ve ödeme bilgilerini biz görmeyiz. Satın almayı ve aboneliğin durumunu RevenueCat hizmetiyle doğrularız. RevenueCat hesap kimliğini ve mağazanın satın alma kaydını alır; e-postanı, adını ya da cihazının reklam kimliklerini almaz. Aboneliğinin güncel durumu (hangi ürün, ne zaman biteceği, hangi mağazadan, yenilenip yenilenmeyeceği) hesabında tutulur ve abonelik bitince silinir. Bunu yalnız sunucumuz yazar.</p>
+<p>Premium’a abone olursan ödemeyi App Store’da Apple, Google Play’de Google alır; kart ve ödeme bilgilerini biz görmeyiz. Satın almayı ve aboneliğin durumunu RevenueCat hizmetiyle doğrularız. RevenueCat hesap kimliğini ve mağazanın satın alma kaydını alır; e-postanı, adını ya da cihazının reklam kimliklerini almaz.<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> iPhone ve iPad’de, uygulamayı bir Apple Ads reklamından indirip indirmediğini ölçmek için Apple’ın AdServices jetonunu da alır (bkz. <a href="#reklam-olcumu">Reklam ölçümü</a>).<!--end--> Aboneliğinin güncel durumu (hangi ürün, ne zaman biteceği, hangi mağazadan, yenilenip yenilenmeyeceği) hesabında tutulur ve abonelik bitince silinir. Bunu yalnız sunucumuz yazar.</p>
 <p>Aboneysen Bugün listesinin sesleri, çevrimdışı dinleyebilmen için telefonuna indirilir. Telefonunun önbellek klasöründe durur ve yedeğe girmezler. Yeni günde, çıkış yaptığında, hesabını sildiğinde ya da aboneliğin bitince, en geç 7 gün içinde silinirler.</p>
 <p>Hesabını silmek aboneliği bitirmez; onu App Store ya da Google Play’in abonelik ayarlarından ayrıca iptal etmelisin. Satın alma, deneme, iptal ve iade koşulları <a href="{terms}#abonelik">Kullanım Şartları</a>’nda.</p>
 
@@ -125,12 +131,15 @@
 <!--if WONDERWHY_ANALYTICS-->
 <p>Uygulamayı geliştirmek için nasıl kullanıldığını ölçeriz: hangi ekranları açtığını ve ne kadar kaldığını, bültende hangi haberleri dinlediğini, atladığını ya da nerede bıraktığını, soru sorduğunu (sorunun ve cevabın metni değil, yalnız sayısı, süresi ve sonucu) ve kaydet, paylaş, tepki gibi düğmelere dokunduğunu. Her kayıtta hesap kimliğin, uygulamanın bu telefona verdiği rastgele bir kimlik, uygulama ve sistem sürümü, dil ve baskı bulunur. Haber metni, sorduğun soru, e-postan ya da adın bu kayıtlara girmez. Kayıtlar sunucularımızda (Belçika) ve Google Analytics for Firebase’de tutulur.</p>
 <!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_SURVEY-->
+<p>Bir dinlemeyi bitirdiğinde uygulama ara sıra, haftada en çok bir kez, tek soruluk bir mini anket gösterebilir (ör. bizi nereden duyduğun, genelde nerede dinlediğin). Cevaplamak isteğe bağlıdır<!--if WONDERWHY_PREMIUM-->; abone değilsen cevaplayınca o güne birkaç dakika dinleme süresi eklenir<!--end-->. Yalnız hazır seçeneklerden birini seçersin, serbest metin yazılmaz. Cevabın kullanım ölçümüyle birlikte, hesabına bağlı saklanır: ham kayıtlar 90 gün; “Nereden duydun?” cevabı ayrıca hesabının kullanım özetinde, hesabını silene kadar kalır.</p>
+<!--end-->
 <!--if WONDERWHY_CRASH_REPORTS-->
 <p>Uygulama çöktüğünde ya da hata verdiğinde teknik ayrıntılar (hatanın kodda nerede olduğu, cihaz modeli, sistem ve uygulama sürümü) hesap kimliğinle Firebase Crashlytics’e gider. Hata mesajlarının metnini kendi kayıtlarımıza yazmayız.</p>
 <!--end-->
 <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
 <p>Bunu meşru menfaatimize dayanarak yaparız (bkz. <a href="#hukuki-sebepler">Hukuki sebepler</a>). İstediğin an <strong>Profil › Gizlilik ve veri</strong>’den “Kullanım verisi”ni ve “Çökme raporları”nı ayrı ayrı kapatabilirsin; kapatınca o telefondan hiçbir şey gönderilmez ve bekleyen kayıtlar silinir. Uygulama bunu ilk açılışta bir kez söyler.</p>
-<p><!--if WONDERWHY_ADS-->Kullanım ölçümü reklam kimliğini (IDFA, Android reklam kimliği) kullanmaz; ölçümü reklam için de kullanmayız.<!--else-->Reklam yok. Reklam kimliğini (IDFA, Android reklam kimliği) okumayız, seni başka şirketlerin uygulamalarında ya da sitelerinde izlemeyiz.<!--end--> Google Analytics’te reklam sinyalleri ve Google signals kapalıdır. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
+<p><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--><!--if !WONDERWHY_ADS-->Uygulamada reklam yok. <!--end-->Kullanım ölçümü reklam kimliğini (IDFA, Android reklam kimliği) kullanmaz ve reklamları kişiselleştirmek için kullanılmaz; ondan yalnız kendi reklamlarımızın işe yarayıp yaramadığını ölçeriz (bkz. <a href="#reklam-olcumu">Reklam ölçümü</a>).<!--else--><!--if WONDERWHY_ADS-->Kullanım ölçümü reklam kimliğini (IDFA, Android reklam kimliği) kullanmaz; ölçümü reklam için de kullanmayız.<!--else-->Reklam yok. Reklam kimliğini (IDFA, Android reklam kimliği) okumayız, seni başka şirketlerin uygulamalarında ya da sitelerinde izlemeyiz.<!--end--><!--end--> Google Analytics’te reklam<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> kişiselleştirme<!--end--> sinyalleri ve Google signals kapalıdır. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
 <!--end-->
 <!--if !WONDERWHY_ANALYTICS&!WONDERWHY_CRASH_REPORTS-->
 <p>Uygulamada <!--if !WONDERWHY_ADS-->reklam, <!--end-->analitik ya da çökme raporlama aracı yoktur<!--if !WONDERWHY_ADS--> ve seni başka şirketlerin uygulamalarında ya da sitelerinde izlemez<!--end-->. Kişisel verileri satmayız ve paylaşmayız (Kaliforniya yasasındaki anlamlarıyla). Seninle ilgili hukuki ya da benzer ölçüde önemli sonuç doğuran kararları yalnız otomatik yollarla vermeyiz.</p>
@@ -144,19 +153,29 @@
 <p>Reklam için hesap kimliğini, e-postanı, adını ya da dinlediğin haberleri Google’a vermeyiz.</p>
 
 <!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<h2 id="reklam-olcumu">Reklam ölçümü</h2>
+<p>{brand}’ı Google ve Apple’da reklamla tanıtıyoruz. Reklamlarımızın işe yarayıp yaramadığını ölçmek için, uygulamayı bir reklamdan indirip indirmediğin ve abone olup olmadığın Google’a ve Apple’a bildirilir. Reklam kimliği (IDFA, Android reklam kimliği) kullanılmaz, reklam kişiselleştirilmez.</p>
+<ul>
+<li><strong>Google:</strong> kullanım ölçümünün bazı olayları (ör. ilk açılış, giriş, dinleme<!--if WONDERWHY_PREMIUM--> ve abone olma<!--end-->) Google Analytics for Firebase’den Google Ads’e dönüşüm olarak aktarılır. Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de bu aktarım kapalıdır. Profil › Gizlilik ve veri’den “Kullanım verisi”ni kapatırsan Google Ads’e hiçbir şey gitmez.</li>
+<li><strong>Apple</strong> (iPhone ve iPad): uygulama Apple’ın SKAdNetwork’üne kaydolur; Apple, bir reklamın kuruluma<!--if WONDERWHY_PREMIUM--> ya da aboneliğe<!--end--> yol açıp açmadığını reklam ağına kimliksiz ve gecikmeli olarak bildirir.<!--if WONDERWHY_PREMIUM--> Ayrıca uygulama Apple’ın AdServices jetonunu RevenueCat’e verir; RevenueCat bu jetonla Apple’a uygulamayı bir Apple Ads reklamından indirip indirmediğini sorar ve sonucu (hangi kampanya) aboneliğinin kaydına ekler.<!--end--></li>
+</ul>
+<p>Bunu, reklam bütçemizi işe yarayan yere harcamak için meşru menfaatimize dayanarak yaparız (bkz. <a href="#hukuki-sebepler">Hukuki sebepler</a>).</p>
+
+<!--end-->
 <h2 id="isleyenler">Verini kimler işliyor</h2>
 <ul>
-<li><strong>Google</strong> (Firebase Authentication, Google ile giriş, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Messaging, Gemini API, Google Analytics for Firebase ve Firebase Crashlytics): barındırma, giriş, eşitleme, sorular, ses, kullanım ölçümü ve çökme raporları.<!--else-->Messaging ve Gemini API): barındırma, giriş, eşitleme, sorular ve ses.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play’de abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ADS--> Google AdMob reklamları seçer ve gösterir (bkz. <a href="#reklam">Reklamlar</a>).<!--end--> Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
+<li><strong>Google</strong> (Firebase Authentication, Google ile giriş, Cloud Firestore, Cloud Functions, Cloud Storage, App Check, Play Integrity, Cloud <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->Messaging, Gemini API, Google Analytics for Firebase ve Firebase Crashlytics): barındırma, giriş, eşitleme, sorular, ses, kullanım ölçümü ve çökme raporları.<!--else-->Messaging ve Gemini API): barındırma, giriş, eşitleme, sorular ve ses.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play’de abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ADS--> Google AdMob reklamları seçer ve gösterir (bkz. <a href="#reklam">Reklamlar</a>).<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Google Ads reklamlarımızın sonuçlarını ölçer (bkz. <a href="#reklam-olcumu">Reklam ölçümü</a>).<!--end--> Firestore, Cloud Functions ve Cloud Storage Belçika’dadır; giriş, Gemini ve bazı başka hizmetler veriyi ABD’de ve başka ülkelerde işleyebilir.</li>
 <li><strong>OpenAI</strong>: haber özetlerini yazar. Hiçbir kişisel veri almaz.</li>
-<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.<!--if WONDERWHY_PREMIUM--> App Store’da abonelik ödemesini alır.<!--end--></li>
+<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.<!--if WONDERWHY_PREMIUM--> App Store’da abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> SKAdNetwork<!--if WONDERWHY_PREMIUM--> ve Apple Ads<!--end--> ile reklamlarımızın sonuçlarını bildirir.<!--end--></li>
 <!--if WONDERWHY_PREMIUM-->
-<li><strong>RevenueCat</strong> (ABD): satın almaları ve aboneliğin durumunu doğrular.</li>
+<li><strong>RevenueCat</strong> (ABD): satın almaları ve aboneliğin durumunu doğrular.<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> iPhone ve iPad’de Apple Ads ölçümü için AdServices jetonunu Apple’a iletir.<!--end--></li>
 <!--end-->
 <li><strong>GitHub</strong>: bu siteyi barındırır.</li>
 <li><strong>Metricool</strong> (İspanya): bu sitenin ziyaretlerini sayar.</li>
 <li><strong>{emailProvider}</strong>: posta kutumuzu barındırır<!--if WONDERWHY_EMAIL_CODE--> ve e-posta doğrulama kodlarını gönderir<!--end-->; bize gönderdiğin e-postalar orada durur.</li>
 </ul>
-<p>Bu hizmet sağlayıcılar veriyi bizim adımıza, kendi veri işleme şartlarına göre işler; bu şartlar veriyi en az bu politikada anlatıldığı kadar korumalarını gerektirir.<!--if WONDERWHY_PREMIUM&!WONDERWHY_ADS--> Apple ve Google mağaza ödemelerini kendi gizlilik politikalarına göre de işler.<!--end--><!--if WONDERWHY_ADS&!WONDERWHY_PREMIUM--> Google reklam verisini kendi gizlilik politikasına göre de işler.<!--end--><!--if WONDERWHY_PREMIUM&WONDERWHY_ADS--> Apple ve Google mağaza ödemelerini, Google reklam verisini de kendi gizlilik politikalarına göre işler.<!--end--></p>
+<p>Bu hizmet sağlayıcılar veriyi bizim adımıza, kendi veri işleme şartlarına göre işler; bu şartlar veriyi en az bu politikada anlatıldığı kadar korumalarını gerektirir.<!--if WONDERWHY_PREMIUM&!WONDERWHY_ADS--> Apple ve Google mağaza ödemelerini kendi gizlilik politikalarına göre de işler.<!--end--><!--if WONDERWHY_ADS&!WONDERWHY_PREMIUM--> Google reklam verisini kendi gizlilik politikasına göre de işler.<!--end--><!--if WONDERWHY_PREMIUM&WONDERWHY_ADS--> Apple ve Google mağaza ödemelerini, Google reklam verisini de kendi gizlilik politikalarına göre işler.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Google ve Apple reklam ölçümü verisini kendi gizlilik politikalarına göre de işler.<!--end--></p>
 <p>Bazıları veriyi Türkiye ve Avrupa Ekonomik Alanı dışında, ABD dahil başka ülkelerde işler. Bu aktarımlar yasanın öngördüğü güvencelere dayanır: AEA için hizmet sağlayıcıların standart sözleşme hükümleri, Türkiye için 6698 sayılı Kişisel Verilerin Korunması Kanunu’nun (KVKK) 9. maddesindeki yollar.</p>
 
 <h2 id="saklama">Saklama süreleri</h2>
@@ -176,6 +195,12 @@
 <!--if WONDERWHY_ANALYTICS-->
 <li><strong>Kullanım ölçümü:</strong> 90 gün; Google Analytics’te 2 ay. Hesabının kullanım özeti (ilk ve son kullanım günü, toplam sayılar) hesabını silene kadar; hesapsız kullanımda son kullanımdan 90 gün sonra silinir. Kimseye bağlı olmayan günlük toplamlar (ör. o gün kaç kişi dinledi) kalır.</li>
 <!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_SURVEY-->
+<li><strong>Mini anket cevapları:</strong> kullanım ölçümüyle aynı, 90 gün; “Nereden duydun?” cevabı hesabının kullanım özetinde, hesabını silene kadar.</li>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<li><strong>Reklam ölçümü:</strong> Google ve Apple kendi sürelerine göre tutar<!--if WONDERWHY_PREMIUM-->; RevenueCat’teki Apple Ads sonucu hesabını silene kadar<!--end-->.</li>
+<!--end-->
 <!--if WONDERWHY_CRASH_REPORTS-->
 <li><strong>Çökme raporları:</strong> 90 gün.</li>
 <!--end-->
@@ -193,7 +218,7 @@
 <!--if WONDERWHY_PREMIUM-->
 <p>Hesabını silmek aboneliğini iptal etmez. Ücret alınmaya devam etmesin diye aboneliği App Store ya da Google Play’in abonelik ayarlarından iptal et.</p>
 <!--end-->
-<p>Sonrasında sunucularımızda hesabına bağlı hiçbir şey kalmaz.<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Google Analytics ve Crashlytics’teki kayıtlar kendi sürelerinde (2 ay, 90 gün), hesap<!--else--> Hesap<!--end--> kimliği içermeyen sorun bildirimleri ve sunucu kayıtları 7 gün içinde silinir.</p>
+<p>Sonrasında sunucularımızda hesabına bağlı hiçbir şey kalmaz.<!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS--> Google Analytics ve Crashlytics’teki kayıtlar kendi sürelerinde (2 ay, 90 gün), hesap<!--else--> Hesap<!--end--> kimliği içermeyen sorun bildirimleri ve sunucu kayıtları 7 gün içinde silinir.<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Reklam ölçümü için Google Ads’e ve Apple’a gidenler onların sürelerinde silinir.<!--end--></p>
 <p>Uygulamayı kullanamıyorsan hesabının e-posta adresinden <a href="mailto:{emailPrivacy}">{emailPrivacy}</a> adresine yaz. Adımlar <a href="{deleteAccount}">Hesabını sil</a> sayfasında da var. Misafir kimlikleri 7 gün kullanılmayınca kendiliğinden silinir; seninkinin daha önce silinmesini istersen bize yaz.</p>
 
 <h2 id="haklar">Hakların</h2>
@@ -210,7 +235,10 @@
 <li><strong>İstediğin hizmeti sunmak</strong> (hesap, eşitleme, soruları cevaplamak, oylar<!--if WONDERWHY_PREMIUM-->, abonelik ve ücretsiz dinleme süresi<!--end-->): seninle kurduğumuz sözleşmenin ifası (KVKK md. 5/2-c; GDPR md. 6/1-b).</li>
 <li><strong>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve kayıtlar:</strong> meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f).</li>
 <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
-<li><strong>Kullanım ölçümü ve çökme raporları:</strong> uygulamayı geliştirmek ve hataları düzeltmek için meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f). Profil › Gizlilik ve veri’den itiraz edip kapatabilirsin.</li>
+<li><strong>Kullanım ölçümü ve çökme raporları:</strong> uygulamayı geliştirmek ve hataları düzeltmek için meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f).<!--if WONDERWHY_ANALYTICS&WONDERWHY_SURVEY--> Mini anket cevapları da buna dahildir.<!--end--> Profil › Gizlilik ve veri’den itiraz edip kapatabilirsin.</li>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<li><strong>Reklam ölçümü:</strong> reklamlarımızın işe yarayıp yaramadığını ölçmek için meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f). Google’a giden kısmı Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de kapalıdır; başka yerlerde Profil › Gizlilik ve veri’den “Kullanım verisi”ni kapatarak itiraz edebilirsin. Geri kalanına itiraz için bize yaz.</li>
 <!--end-->
 <!--if WONDERWHY_ADS-->
 <li><strong>Kişiselleştirilmemiş reklam:</strong> <!--if WONDERWHY_PREMIUM-->ücretsiz sürümü<!--else-->uygulamayı<!--end--> sürdürebilmek için meşru menfaatimiz (KVKK md. 5/2-f; GDPR md. 6/1-f). Avrupa Ekonomik Alanı’nda, Birleşik Krallık’ta ve İsviçre’de rıza formundaki seçimin (GDPR md. 6/1-a).</li>

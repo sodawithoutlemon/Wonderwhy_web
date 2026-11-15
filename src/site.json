@@ -22,7 +22,7 @@
   },
   "_metricool": "Ziyaret sayacı (6 Kas 2026): Metricool'daki 'Wonderwhy EN' markasının web bağlantısı. null = sayaç yok. Politikanın 'Bu site' bölümü bunu anlatır.",
   "metricool": "9bd6e49665d82d1ace2eef909fa6c7e5",
-  "legalUpdated": "2026-11-06",
+  "legalUpdated": "2026-11-16",
   "homeUpdated": "2026-10-24",
   "compareUpdated": "2026-10-24",
   "topicsUpdated": "2026-11-15",
@@ -34,6 +34,8 @@
     "WONDERWHY_CRASH_REPORTS": true,
     "WONDERWHY_VOICE_COMMANDS": true,
     "WONDERWHY_PREMIUM": true,
-    "WONDERWHY_ADS": true
+    "WONDERWHY_ADS": true,
+    "WONDERWHY_SURVEY": true,
+    "WONDERWHY_ATTRIBUTION": true
   }
 }

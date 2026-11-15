@@ -15,10 +15,13 @@
 <!--end-->
 <tr><td>Ses kaydı</td><td>Sesli soru (en çok 15 saniye) ve o an çalan cümle</td><td>Sorunu anlamak ve cevaplamak; kayıt saklanmaz<!--if WONDERWHY_VOICE_COMMANDS-->. Sesli komutlar telefonunda anlaşılır, bize gelmez<!--end--></td></tr>
 <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->
-<tr><td>Kullanım ve çökme verisi</td><td>Açtığın ekranlar, dinleme, dokunduğun düğmeler, soruların sayısı ve süresi (metni değil); çökme raporları; hesap kimliğin ve uygulamanın cihaz kimliği</td><td>Uygulamayı geliştirmek; hataları bulup düzeltmek</td></tr>
+<tr><td>Kullanım ve çökme verisi</td><td>Açtığın ekranlar, dinleme, dokunduğun düğmeler, soruların sayısı ve süresi (metni değil)<!--if WONDERWHY_ANALYTICS&WONDERWHY_SURVEY-->, mini anket cevapları (hazır seçenekler)<!--end-->; çökme raporları; hesap kimliğin ve uygulamanın cihaz kimliği</td><td>Uygulamayı geliştirmek; hataları bulup düzeltmek</td></tr>
 <!--end-->
 <!--if WONDERWHY_ADS-->
 <tr><td>Pazarlama (reklam)</td><td>IP adresi ve yaklaşık konum, cihaz ve uygulama bilgisi, reklamla etkileşim; cihaz kimliği (iPhone ve iPad’de IDFV, Android’de reklam kimliği)</td><td>Kişiselleştirilmemiş reklam göstermek ve ölçmek, sahtekârlığı önlemek (Google AdMob)</td></tr>
+<!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<tr><td>Pazarlama (reklam ölçümü)</td><td>Uygulamayı bir reklamdan indirip indirmediğin; ilk açılış, giriş, dinleme<!--if WONDERWHY_PREMIUM--> ve abone olma<!--end--> olayları; iPhone ve iPad’de SKAdNetwork kaydı<!--if WONDERWHY_PREMIUM--> ve Apple’ın AdServices jetonu<!--end-->. Reklam kimliği kullanılmaz</td><td>Reklamlarımızın işe yarayıp yaramadığını ölçmek (Google Ads, Apple)</td></tr>
 <!--end-->
 <tr><td>İşlem güvenliği</td><td>Sunucu kayıtları (IP adresi, uygulama ve cihaz bilgisi), günlük kullanım sayaçları; Google ile girişte Google’ın IP adresinden tahmin edebildiği yaklaşık konum</td><td>Güvenlik, kötüye kullanımı önleme, kullanım sınırları ve hata giderme</td></tr>
 </tbody>
@@ -35,20 +38,23 @@
 <!--if WONDERWHY_ADS-->
 <li><strong>Kişiselleştirilmemiş reklam:</strong> <!--if WONDERWHY_PREMIUM-->ücretsiz sürümü<!--else-->uygulamayı<!--end--> sürdürebilmek için meşru menfaatimiz (KVKK md. 5/2-f).</li>
 <!--end-->
+<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->
+<li><strong>Reklam ölçümü:</strong> reklamlarımızın işe yarayıp yaramadığını ölçmek için meşru menfaatimiz (KVKK md. 5/2-f). Google’a giden kısmına Profil › Gizlilik ve veri’den “Kullanım verisi”ni kapatarak itiraz edebilirsin.</li>
+<!--end-->
 <li><strong>Yasal yükümlülükler</strong>, uygulandığı durumlarda (KVKK md. 5/2-ç).</li>
 <li><strong>Mikrofon<!--if WONDERWHY_VOICE_COMMANDS-->, konuşma tanıma<!--end--> ve bildirimler:</strong> telefonunun ayarlarından geri alabileceğin iznin. Uygulama ilk sesli sorudan önce sesinin Google’ın yapay zekâsına gideceğini söyler ve onayını ister; onaylamadan hiçbir şey kaydedilmez ve gönderilmez.</li>
 </ul>
 
 <h2 id="toplama">Toplama yöntemi</h2>
-<p>Kişisel verilerin elektronik ortamda, otomatik yollarla toplanır: hesap açarken ve giriş yaparken girdiklerin, uygulamayı kullanırken oluşanlar (listeler, oylar, sorular) ve sunucularımıza gelen isteklerin kayıtları.<!--if WONDERWHY_PREMIUM--> Satın alma kaydı App Store ya da Google Play’den, RevenueCat üzerinden gelir.<!--end--><!--if WONDERWHY_ADS--> Reklam verisini Google’ın reklam yazılımı telefonundan kendisi toplar.<!--end--> Bize e-posta gönderirsen e-postayla.</p>
+<p>Kişisel verilerin elektronik ortamda, otomatik yollarla toplanır: hesap açarken ve giriş yaparken girdiklerin, uygulamayı kullanırken oluşanlar (listeler, oylar, sorular) ve sunucularımıza gelen isteklerin kayıtları.<!--if WONDERWHY_PREMIUM--> Satın alma kaydı App Store ya da Google Play’den, RevenueCat üzerinden gelir.<!--end--><!--if WONDERWHY_ADS--> Reklam verisini Google’ın reklam yazılımı telefonundan kendisi toplar.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Reklam ölçümü kullanım ölçümünden Google Ads’e aktarılır; iPhone ve iPad’de Apple’ın SKAdNetwork’ü<!--if WONDERWHY_PREMIUM--> ve AdServices jetonu<!--end--> üzerinden Apple’a gider.<!--end--> Bize e-posta gönderirsen e-postayla.</p>
 
 <h2 id="aktarim">Kimlere aktarılır</h2>
-<p>Kişisel verini satmayız ve paylaşmayız. Hizmeti sunmak için şu hizmet sağlayıcılar verini bizim adımıza işler:</p>
+<p><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION-->Kişisel verini satmayız. Hizmeti sunmak ve reklamlarımızı ölçmek için şu hizmet sağlayıcılar verini işler:<!--else-->Kişisel verini satmayız ve paylaşmayız. Hizmeti sunmak için şu hizmet sağlayıcılar verini bizim adımıza işler:<!--end--></p>
 <ul>
-<li><strong>Google</strong> (Firebase, Google Cloud, Gemini <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->API, Google ile giriş, Google Analytics for Firebase ve Firebase Crashlytics): barındırma, giriş, eşitleme, sorular, ses, kullanım ölçümü ve çökme raporları.<!--else-->API ve Google ile giriş): barındırma, giriş, eşitleme, sorular ve ses.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play’de abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ADS--> Google AdMob reklamları seçer ve gösterir.<!--end--></li>
-<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.<!--if WONDERWHY_PREMIUM--> App Store’da abonelik ödemesini alır.<!--end--></li>
+<li><strong>Google</strong> (Firebase, Google Cloud, Gemini <!--if WONDERWHY_ANALYTICS|WONDERWHY_CRASH_REPORTS-->API, Google ile giriş, Google Analytics for Firebase ve Firebase Crashlytics): barındırma, giriş, eşitleme, sorular, ses, kullanım ölçümü ve çökme raporları.<!--else-->API ve Google ile giriş): barındırma, giriş, eşitleme, sorular ve ses.<!--end--><!--if WONDERWHY_PREMIUM--> Google Play’de abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ADS--> Google AdMob reklamları seçer ve gösterir.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Google Ads reklamlarımızın sonuçlarını ölçer.<!--end--></li>
+<li><strong>Apple</strong>: Apple ile giriş, DeviceCheck ve bildirimler.<!--if WONDERWHY_PREMIUM--> App Store’da abonelik ödemesini alır.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> SKAdNetwork<!--if WONDERWHY_PREMIUM--> ve Apple Ads<!--end--> ile reklamlarımızın sonuçlarını bildirir.<!--end--></li>
 <!--if WONDERWHY_PREMIUM-->
-<li><strong>RevenueCat</strong> (ABD): satın almaları ve aboneliğin durumunu doğrular.</li>
+<li><strong>RevenueCat</strong> (ABD): satın almaları ve aboneliğin durumunu doğrular.<!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> iPhone ve iPad’de Apple Ads ölçümü için AdServices jetonunu Apple’a iletir.<!--end--></li>
 <!--end-->
 <li><strong>GitHub</strong>: bu siteyi barındırır.</li>
 <li><strong>Metricool</strong> (İspanya): bu sitenin ziyaretlerini sayar.</li>
@@ -58,7 +64,7 @@
 <p>Sunucularımız Belçika’dadır. Bu sağlayıcıların bir kısmı veriyi Türkiye dışında, ABD dahil başka ülkelerde işler; bu aktarımlar KVKK’nın 9. maddesindeki yollara dayanır. Ayrıntı: <a href="{privacy}#isleyenler">Verini kimler işliyor</a>.</p>
 
 <h2 id="saklama">Saklama</h2>
-<p>Hesabın ve içinde tuttukların, hesabını silene kadar kalır.<!--if WONDERWHY_ANALYTICS--> Kullanım ölçümü 90 gün kalır (Google Analytics’te 2 ay).<!--end--><!--if WONDERWHY_PREMIUM--> Aboneliğin durumu abonelik sürdükçe, RevenueCat’teki kaydın hesabını silene kadar kalır.<!--end--><!--if WONDERWHY_ADS--> Reklam verisini Google kendi sürelerine göre tutar.<!--end--> Geri kalan her şey en çok 7 gün içinde silinir. Ayrıntı: <a href="{privacy}#saklama">Saklama süreleri</a>.</p>
+<p>Hesabın ve içinde tuttukların, hesabını silene kadar kalır.<!--if WONDERWHY_ANALYTICS--> Kullanım ölçümü 90 gün kalır (Google Analytics’te 2 ay).<!--end--><!--if WONDERWHY_PREMIUM--> Aboneliğin durumu abonelik sürdükçe, RevenueCat’teki kaydın hesabını silene kadar kalır.<!--end--><!--if WONDERWHY_ADS--> Reklam verisini Google kendi sürelerine göre tutar.<!--end--><!--if WONDERWHY_ANALYTICS&WONDERWHY_ATTRIBUTION--> Reklam ölçümü verisini Google ve Apple kendi sürelerine göre tutar.<!--end--> Geri kalan her şey en çok 7 gün içinde silinir. Ayrıntı: <a href="{privacy}#saklama">Saklama süreleri</a>.</p>
 
 <h2 id="haklar">KVKK 11. maddedeki hakların</h2>
 <ul>
