@@ -1,0 +1,52 @@
+# Wonderwhy
+
+> Audio news app with a short daily news briefing and news summary on topics you pick. Ask questions by voice, compare sources. iPhone, iPad and Android.
+
+Wonderwhy is an audio news app for iPhone, iPad and Android: a short daily briefing from the topics you pick, voice questions while you listen, and a comparison of how sources cover the same story. Editions: United States, World, Türkiye, Spain and Germany. App languages: English, Turkish, Spanish and German. Published by Yelkovan.ai.
+
+- App Store: https://apps.apple.com/app/id6817247112
+- Google Play: https://play.google.com/store/apps/details?id=com.ay.wonderwhy
+
+## Pages
+
+- [Wonderwhy: audio news briefing & daily news summary app](https://wonderwhy.net/): Audio news app with a short daily news briefing and news summary on topics you pick. Ask questions by voice, compare sources. iPhone, iPad and Android.
+- [Compare news sources on the same story · Wonderwhy](https://wonderwhy.net/compare-news-sources/): See how different outlets report the same story: where they conflict, how each one frames it and what only one of them mentions. In the Wonderwhy app.
+- [A daily news podcast made for you · Wonderwhy](https://wonderwhy.net/daily-news-podcast/): A few minutes of daily news on the topics you pick, like a podcast. Ask about any story by voice and compare its sources.
+- [Listen to the news on CarPlay · Wonderwhy](https://wonderwhy.net/carplay-news/): Hear the day’s news in the car: the Wonderwhy briefing plays on CarPlay and Android Auto. Listen hands-free and pick up where you left off.
+- [Today’s headlines, summarized · Wonderwhy](https://wonderwhy.net/todays-headlines/): Short summaries of today’s top US stories, updated every day. Listen to the full briefing on Wonderwhy and ask about any story.
+- [Support · Wonderwhy](https://wonderwhy.net/support/): Get help with Wonderwhy, contact us, make a privacy request or delete your account.
+- [Privacy Policy · Wonderwhy](https://wonderwhy.net/privacy/): What data the Wonderwhy app and website collect, why, who processes it, how long it is kept and how to delete it.
+- [Terms of Use · Wonderwhy](https://wonderwhy.net/terms/): The terms for using the Wonderwhy audio news app and website.
+
+## Türkçe
+
+- [Wonderwhy: sesli haber dinle, günlük haber özeti](https://wonderwhy.net/tr/): Sesli haber uygulaması: seçtiğin konulardan günlük haber bülteni ve haber özeti. Dinlerken sesle sor, kaynakları kıyasla. iPhone, iPad ve Android.
+- [Haber kaynaklarını karşılaştırma · Wonderwhy](https://wonderwhy.net/tr/kaynak-karsilastirma/): Aynı haberi farklı yayınlar nasıl veriyor? Nerede çeliştiklerini, nasıl farklı anlattıklarını ve neyi yalnız birinin yazdığını Wonderwhy’da gör.
+- [Günlük haber podcast’i, sana özel · Wonderwhy](https://wonderwhy.net/tr/gunluk-haber-podcasti/): Seçtiğin konulardan birkaç dakikalık günlük haber podcast’i. Dinlerken merak ettiğini sesle sor; aynı haberin kaynaklarını kıyasla.
+- [CarPlay’de haber dinle · Wonderwhy](https://wonderwhy.net/tr/carplay-haber/): Günün haberlerini arabada dinle: Wonderwhy bülteni CarPlay’de ve Android Auto’da çalışır. Ekrana bakmadan dinle, kaldığın yerden devam et.
+- [Bugünün gündemi: kısa haber özetleri · Wonderwhy](https://wonderwhy.net/tr/gundem/): Türkiye gündeminin kısa özetleri, her gün yenilenir. Haberlerin tamamını Wonderwhy’da dinle, merak ettiğini sor.
+- [Destek · Wonderwhy](https://wonderwhy.net/tr/destek/): Wonderwhy için yardım al, bize yaz, gizlilik talebinde bulun ya da hesabını sil.
+- [Gizlilik Politikası · Wonderwhy](https://wonderwhy.net/tr/gizlilik/): Wonderwhy uygulamasının ve sitesinin hangi verileri, neden topladığı, kimlerin işlediği, ne kadar saklandığı ve nasıl silineceği.
+- [Kullanım Şartları · Wonderwhy](https://wonderwhy.net/tr/kullanim-sartlari/): Wonderwhy sesli haber uygulamasının ve sitesinin kullanım şartları.
+
+## Español
+
+- [Wonderwhy: noticias en audio y resumen diario con IA](https://wonderwhy.net/es/): App de noticias en audio: un boletín diario breve y un resumen de noticias con IA sobre tus temas. Pregunta por voz y compara fuentes. iPhone y Android.
+- [Comparar fuentes de noticias sobre un mismo hecho · Wonderwhy](https://wonderwhy.net/es/comparar-fuentes-de-noticias/): Mira cómo cuentan distintos medios la misma noticia: en qué se contradicen, qué enfoque da cada uno y qué menciona solo uno. En la app Wonderwhy.
+- [Un podcast diario de noticias para ti · Wonderwhy](https://wonderwhy.net/es/podcast-diario-de-noticias/): Unos minutos de noticias al día sobre los temas que eliges, como un podcast. Pregunta por voz y compara las fuentes.
+- [Escucha las noticias en CarPlay · Wonderwhy](https://wonderwhy.net/es/noticias-carplay/): Las noticias del día en el coche: el boletín de Wonderwhy funciona en CarPlay y Android Auto. Escucha sin mirar la pantalla.
+- [Noticias de hoy, en resumen · Wonderwhy](https://wonderwhy.net/es/noticias-de-hoy/): Resúmenes breves de las noticias de hoy en España, actualizados cada día. Escucha el boletín completo en Wonderwhy y pregunta.
+- [Soporte · Wonderwhy](https://wonderwhy.net/es/soporte/): Consigue ayuda con Wonderwhy, escríbenos, haz una solicitud de privacidad o elimina tu cuenta.
+- [Política de privacidad · Wonderwhy](https://wonderwhy.net/es/privacidad/): Qué datos recogen la app y el sitio web de Wonderwhy, para qué, quién los trata, cuánto tiempo se guardan y cómo eliminarlos.
+- [Condiciones de uso · Wonderwhy](https://wonderwhy.net/es/condiciones/): Las condiciones para usar la app de noticias en audio Wonderwhy y su sitio web.
+
+## Deutsch
+
+- [Wonderwhy: Nachrichten hören, täglich zusammengefasst](https://wonderwhy.net/de/): Nachrichten hören statt lesen: ein kurzes tägliches Briefing mit KI-Zusammenfassung zu deinen Themen. Frag per Sprache nach, vergleiche Quellen.
+- [Nachrichtenquellen zur selben Meldung vergleichen · Wonderwhy](https://wonderwhy.net/de/nachrichtenquellen-vergleichen/): Sieh, wie verschiedene Medien über dieselbe Meldung berichten: wo sie sich widersprechen, wie sie gewichten und was nur eines erwähnt. In der Wonderwhy-App.
+- [Dein täglicher Nachrichten-Podcast · Wonderwhy](https://wonderwhy.net/de/taeglicher-nachrichten-podcast/): Ein paar Minuten Nachrichten am Tag zu deinen Themen, wie ein Podcast. Frag per Sprache nach und vergleiche die Quellen.
+- [Nachrichten hören mit CarPlay · Wonderwhy](https://wonderwhy.net/de/nachrichten-carplay/): Die Nachrichten des Tages im Auto: Das Wonderwhy-Briefing läuft mit CarPlay und Android Auto. Hören, ohne auf den Bildschirm zu schauen.
+- [Nachrichten heute, kurz zusammengefasst · Wonderwhy](https://wonderwhy.net/de/nachrichten-heute/): Kurze Zusammenfassungen der heutigen Nachrichten aus Deutschland, täglich neu. Das ganze Briefing hörst du in Wonderwhy.
+- [Hilfe · Wonderwhy](https://wonderwhy.net/de/hilfe/): Hol dir Hilfe zu Wonderwhy, schreib uns, stell eine Datenschutzanfrage oder lösche dein Konto.
+- [Datenschutzerklärung · Wonderwhy](https://wonderwhy.net/de/datenschutz/): Welche Daten die Wonderwhy-App und die Website erheben, warum, wer sie verarbeitet, wie lange sie gespeichert werden und wie du sie löschst.
+- [Nutzungsbedingungen · Wonderwhy](https://wonderwhy.net/de/nutzungsbedingungen/): Die Bedingungen für die Nutzung der Audio-Nachrichten-App Wonderwhy und ihrer Website.

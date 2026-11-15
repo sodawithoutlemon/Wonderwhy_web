@@ -316,6 +316,11 @@ transition: transform 200ms var(--ease-out);
 .limits { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 720px; }
 .limits li::marker { color: var(--muted); }
 .share .stores + .footnote { margin-top: 20px; }
+.shared-title { margin: 12px 0 4px; color: var(--label); }
+.today-list { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 0; }
+.today-item { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--sep); }
+.today-item:first-child { padding-top: 0; }
+.today-item h2 { margin: 0; }
 .lang-hint { background: var(--raised); border-bottom: .5px solid var(--sep); }
 .lang-hint .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; min-height: 48px; padding-top: 2px; padding-bottom: 2px; font: 400 15px/20px var(--font); }
 .lang-hint a { font-weight: 600; white-space: nowrap; }
@@ -375,12 +380,14 @@ html { scroll-behavior: auto; }
 
 </div></header>
 <main id="main" class="doc"><div class="wrap narrow share">
-<div class="doc-head"><p class="kicker">Shared from Wonderwhy</p><h1 class="large-title">This story is in the Wonderwhy app</h1><p>If Wonderwhy is on your phone, this link opens the story in the app. If not, get the app: listen to the story, ask about it by voice and see where its sources differ.</p></div>
+<div class="doc-head"><p class="kicker">Shared from Wonderwhy</p><h1 class="large-title">This story is in the Wonderwhy app</h1>
+<div class="title2 shared-title" data-shared-title hidden aria-label="Shared story"></div>
+<p>If Wonderwhy is on your phone, this link opens the story in the app. If not, get the app: listen to the story, ask about it by voice and see where its sources differ.</p></div>
 <div class="stores"><a class="badge badge-appStore" href="https://apps.apple.com/app/id6817247112"><img src="../badges/app-store-en.svg" alt="Download on the App Store" width="120" height="40"></a><a class="badge badge-googlePlay" href="https://play.google.com/store/apps/details?id=com.ay.wonderwhy&amp;referrer=utm_source%3Dwonderwhy.net%26utm_medium%3Dsite%26utm_campaign%3Dweb-share"><img src="../badges/google-play-en.png" alt="Get it on Google Play" width="646" height="250"></a></div>
 <p class="footnote">Stories stay in the app for a week. <a href="../">What is Wonderwhy?</a></p>
 </div></main>
 <footer class="foot"><div class="wrap">
-<nav aria-label="Legal"><ul><li><a href="../">Home</a></li><li><a href="../compare-news-sources/">Compare news sources</a></li><li><a href="../privacy/">Privacy</a></li><li><a href="../terms/">Terms</a></li><li><a href="../support/">Support</a></li></ul></nav>
+<nav aria-label="Legal"><ul><li><a href="../">Home</a></li><li><a href="../compare-news-sources/">Compare news sources</a></li><li><a href="../daily-news-podcast/">Daily news podcast</a></li><li><a href="../carplay-news/">News in the car</a></li><li><a href="../todays-headlines/">Today’s headlines</a></li><li><a href="../privacy/">Privacy</a></li><li><a href="../terms/">Terms</a></li><li><a href="../support/">Support</a></li></ul></nav>
 <nav aria-label="Languages"><ul class="foot-langs"><li><a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li></ul></nav>
 <p class="footnote">© 2026 Wonderwhy</p>
 <p class="footnote">Apple, the Apple logo, App Store and CarPlay are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play, the Google Play logo and Android Auto are trademarks of Google LLC.</p>

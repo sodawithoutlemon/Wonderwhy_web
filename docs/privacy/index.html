@@ -321,6 +321,11 @@ transition: transform 200ms var(--ease-out);
 .limits { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 720px; }
 .limits li::marker { color: var(--muted); }
 .share .stores + .footnote { margin-top: 20px; }
+.shared-title { margin: 12px 0 4px; color: var(--label); }
+.today-list { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 0; }
+.today-item { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--sep); }
+.today-item:first-child { padding-top: 0; }
+.today-item h2 { margin: 0; }
 .lang-hint { background: var(--raised); border-bottom: .5px solid var(--sep); }
 .lang-hint .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; min-height: 48px; padding-top: 2px; padding-bottom: 2px; font: 400 15px/20px var(--font); }
 .lang-hint a { font-weight: 600; white-space: nowrap; }
@@ -565,7 +570,7 @@ html { scroll-behavior: auto; }
 </div>
 </div></main>
 <footer class="foot"><div class="wrap">
-<nav aria-label="Legal"><ul><li><a href="../">Home</a></li><li><a href="../compare-news-sources/">Compare news sources</a></li><li><a href="./">Privacy</a></li><li><a href="../terms/">Terms</a></li><li><a href="../support/">Support</a></li></ul></nav>
+<nav aria-label="Legal"><ul><li><a href="../">Home</a></li><li><a href="../compare-news-sources/">Compare news sources</a></li><li><a href="../daily-news-podcast/">Daily news podcast</a></li><li><a href="../carplay-news/">News in the car</a></li><li><a href="../todays-headlines/">Today’s headlines</a></li><li><a href="./">Privacy</a></li><li><a href="../terms/">Terms</a></li><li><a href="../support/">Support</a></li></ul></nav>
 <nav aria-label="Languages"><ul class="foot-langs"><li><a href="../tr/gizlilik/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="../es/privacidad/" hreflang="es" lang="es">Español</a></li><li><a href="../de/datenschutz/" hreflang="de" lang="de">Deutsch</a></li></ul></nav>
 <p class="footnote">© 2026 Wonderwhy</p>
 <p class="footnote">Apple, the Apple logo, App Store and CarPlay are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play, the Google Play logo and Android Auto are trademarks of Google LLC.</p>

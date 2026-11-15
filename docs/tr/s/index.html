@@ -316,6 +316,11 @@ transition: transform 200ms var(--ease-out);
 .limits { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 720px; }
 .limits li::marker { color: var(--muted); }
 .share .stores + .footnote { margin-top: 20px; }
+.shared-title { margin: 12px 0 4px; color: var(--label); }
+.today-list { list-style: none; margin: 0 0 24px; padding: 0; display: grid; gap: 0; }
+.today-item { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--sep); }
+.today-item:first-child { padding-top: 0; }
+.today-item h2 { margin: 0; }
 .lang-hint { background: var(--raised); border-bottom: .5px solid var(--sep); }
 .lang-hint .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; min-height: 48px; padding-top: 2px; padding-bottom: 2px; font: 400 15px/20px var(--font); }
 .lang-hint a { font-weight: 600; white-space: nowrap; }
@@ -375,12 +380,14 @@ html { scroll-behavior: auto; }
 
 </div></header>
 <main id="main" class="doc"><div class="wrap narrow share">
-<div class="doc-head"><p class="kicker">Wonderwhy&#39;dan paylaşıldı</p><h1 class="large-title">Bu haber Wonderwhy uygulamasında</h1><p>Telefonunda Wonderwhy varsa bu bağlantı haberi uygulamada açar. Yoksa uygulamayı indir: haberi dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör.</p></div>
+<div class="doc-head"><p class="kicker">Wonderwhy&#39;dan paylaşıldı</p><h1 class="large-title">Bu haber Wonderwhy uygulamasında</h1>
+<div class="title2 shared-title" data-shared-title hidden aria-label="Paylaşılan haber"></div>
+<p>Telefonunda Wonderwhy varsa bu bağlantı haberi uygulamada açar. Yoksa uygulamayı indir: haberi dinle, merak ettiğini sesle sor, kaynaklarının nerede ayrıştığını gör.</p></div>
 <div class="stores"><a class="badge badge-appStore" href="https://apps.apple.com/app/id6817247112"><img src="../../badges/app-store-tr.svg" alt="App Store&#39;dan İndirin" width="151" height="40"></a><a class="badge badge-googlePlay" href="https://play.google.com/store/apps/details?id=com.ay.wonderwhy&amp;referrer=utm_source%3Dwonderwhy.net%26utm_medium%3Dsite%26utm_campaign%3Dweb-share"><img src="../../badges/google-play-tr.png" alt="Google Play&#39;den İndirin" width="646" height="250"></a></div>
 <p class="footnote">Haberler uygulamada bir hafta kalır. <a href="../">Wonderwhy nedir?</a></p>
 </div></main>
 <footer class="foot"><div class="wrap">
-<nav aria-label="Hukuki"><ul><li><a href="../">Ana sayfa</a></li><li><a href="../kaynak-karsilastirma/">Kaynak karşılaştırma</a></li><li><a href="../gizlilik/">Gizlilik</a></li><li><a href="../kullanim-sartlari/">Şartlar</a></li><li><a href="../destek/">Destek</a></li></ul></nav>
+<nav aria-label="Hukuki"><ul><li><a href="../">Ana sayfa</a></li><li><a href="../kaynak-karsilastirma/">Kaynak karşılaştırma</a></li><li><a href="../gunluk-haber-podcasti/">Günlük haber podcast’i</a></li><li><a href="../carplay-haber/">Arabada haber</a></li><li><a href="../gundem/">Bugünün gündemi</a></li><li><a href="../gizlilik/">Gizlilik</a></li><li><a href="../kullanim-sartlari/">Şartlar</a></li><li><a href="../destek/">Destek</a></li></ul></nav>
 <nav aria-label="Diller"><ul class="foot-langs"><li><a href="../../" hreflang="en" lang="en">English</a></li><li><a href="../../es/" hreflang="es" lang="es">Español</a></li><li><a href="../../de/" hreflang="de" lang="de">Deutsch</a></li></ul></nav>
 <p class="footnote">© 2026 Wonderwhy</p>
 <p class="footnote">Apple, Apple logosu, App Store ve CarPlay, Apple Inc.&#39;in ABD&#39;de ve diğer ülkelerde tescilli ticari markalarıdır. Google Play, Google Play logosu ve Android Auto, Google LLC&#39;nin ticari markalarıdır.</p>
