@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-15",
+  "day": "2026-11-16",
   "edition": "es",
   "items": [
     {
-      "category": "Cultura",
-      "headline": "Rosalía gana los Latin Grammy a álbum y canción del año",
-      "summary": "Rosalía ganó el Latin Grammy a mejor álbum por «Lux» y el de canción del año por «La Perla».",
+      "category": "Gente",
+      "headline": "La infanta Margarita, ingresada en la UCI por una infección",
+      "summary": "La infanta Margarita, hermana del rey Juan Carlos, está ingresada en la UCI de un hospital de Madrid por una infección.",
       "sources": 3
     },
     {
-      "category": "Nacional",
-      "headline": "Frente Amplio propone permisos retribuidos para la «familia elegida»",
-      "summary": "Frente Amplio propone modificar la Ley de Familias para reconocer las redes de cuidados entre personas sin parentesco ni convivencia.",
+      "category": "Deportes",
+      "headline": "Albacete y Celta Fortuna se enfrentan en la jornada 14",
+      "summary": "El Albacete recibe al Celta Fortuna en el Carlos Belmonte, en un partido de la 14.",
       "sources": 2
     },
     {
       "category": "Deportes",
-      "headline": "España e Inglaterra se juegan el liderato del grupo C de la Nations League",
-      "summary": "España e Inglaterra se enfrentan en el Riyadh Air Metropolitano en la sexta y última jornada del grupo C de la UEFA Nations League.",
+      "headline": "Alcaraz se enfrenta a Tiafoe en la fase de grupos de las ATP Finals",
+      "summary": "Carlos Alcaraz se mide a Frances Tiafoe en la fase de grupos de las Nitto ATP Finals.",
+      "sources": 2
+    },
+    {
+      "category": "Política",
+      "headline": "Ceuta tendrá un asiento permanente en el Comité Europeo de las Regiones",
+      "summary": "La Unión Europea ha aprobado que Ceuta tenga un asiento permanente en el Comité Europeo de las Regiones, con el aval del Consejo de la UE.",
       "sources": 2
     },
     {
       "category": "Deportes",
-      "headline": "El Girona remonta al Oviedo en el estreno de Raúl",
-      "summary": "El Girona venció 1-2 al Real Oviedo en el estreno de Raúl como entrenador del equipo asturiano.",
+      "headline": "Tuchel destaca el triunfo de Inglaterra en el Metropolitano",
+      "summary": "Thomas Tuchel calificó de “muy especial” la victoria de Inglaterra ante España en el Metropolitano, en la Liga de Naciones.",
       "sources": 2
     },
     {
       "category": "Cultura",
       "headline": "La bola negra suma 10 nominaciones a los Premios del Cine Europeo",
-      "summary": "La bola negra, de Los Javis, ha conseguido 10 nominaciones a los Premios del Cine Europeo.",
+      "summary": "La bola negra, la película de Los Javis, ha conseguido 10 nominaciones a los Premios del Cine Europeo.",
       "sources": 2
     },
     {
-      "category": "Gente",
-      "headline": "La Reina Sofía participa en la Gran Recogida de Alimentos de 2026",
-      "summary": "La Reina Sofía ha participado en Madrid en la Gran Recogida de Alimentos de 2026.",
-      "sources": 2
-    },
-    {
-      "category": "Deportes",
-      "headline": "Joana Sanz confirma el fin de su relación con Dani Alves",
-      "summary": "Joana Sanz ha confirmado que ya no está con Dani Alves y que ambos están tramitando el divorcio.",
-      "sources": 2
-    },
-    {
-      "category": "Nacional",
-      "headline": "Galicia tendrá avisos por lluvia, viento y oleaje hasta las 17.00 horas",
-      "summary": "Un frente atlántico dejará lluvias persistentes en Galicia este domingo y rachas muy fuertes de viento.",
+      "category": "Economía",
+      "headline": "Moeve estudia vender su red de estaciones de servicio",
+      "summary": "Moeve está sondeando una posible venta de su red de estaciones de servicio, que cuenta con más de 1.",
       "sources": 2
     },
     {
       "category": "Cultura",
-      "headline": "Rosalía y artistas de varios géneros ganan los Latin Grammy 2026",
-      "summary": "Rosalía figura entre las ganadoras de los Latin Grammy 2026 y, según El Mundo Cultura, ha hecho historia en estos premios.",
+      "headline": "Rosalía obtiene 9 nominaciones a los Grammy de 2027",
+      "summary": "Rosalía ha conseguido 9 nominaciones a los Premios Grammy de 2027 por su cuarto álbum, «LUX».",
+      "sources": 2
+    },
+    {
+      "category": "Internacional",
+      "headline": "Trump atribuye a la Administración Biden la crisis aérea del viernes",
+      "summary": "Donald Trump se ha desmarcado de la crisis aérea del viernes en Estados Unidos.",
+      "sources": 2
+    },
+    {
+      "category": "Nacional",
+      "headline": "Frente Amplio propone permisos de cuidados para la familia elegida",
+      "summary": "Frente Amplio propone modificar la Ley de Familias para reconocer las redes de cuidados entre personas sin parentesco ni convivencia.",
       "sources": 2
     },
     {
       "category": "Economía",
-      "headline": "Adif estudia cómo reformar la línea de alta velocidad entre Madrid y Barcelona",
-      "summary": "Adif ha valorado interrumpir el tráfico en la línea de alta velocidad entre Madrid y Barcelona para acelerar las obras y mejorar la fiabilidad del servicio.",
-      "sources": 1
-    },
-    {
-      "category": "Salud",
-      "headline": "El CO₂ exhalado por la población aumentó un 74 % en 3 décadas",
-      "summary": "La cantidad total de CO₂ que las personas exhalan al respirar ha aumentado un 74 % en las últimas 3 décadas.",
-      "sources": 1
-    },
-    {
-      "category": "Economía",
-      "headline": "MetaMender llega al repositorio oficial de Kodi",
-      "summary": "Kodi incorpora MetaMender a su repositorio oficial. Este complemento mejora automáticamente la biblioteca de películas y series: completa las sinopsis, actualiza las puntuaciones y amplía la información de las fichas.",
-      "sources": 1
-    },
-    {
-      "category": "Política",
-      "headline": "Tu Otra Bonita lleva su rock a formato acústico en Clamores",
-      "summary": "Tu Otra Bonita actuará en acústico este domingo en la sala Clamores, en Madrid.",
-      "sources": 1
+      "headline": "Carlos Cuerpo anuncia la creación de un comité de expertos ferroviarios",
+      "summary": "Este lunes se constituye el comité de expertos ferroviarios anunciado por Carlos Cuerpo, vicepresidente primero del Gobierno y ministro de Economía, que también está al frente de Transportes.",
+      "sources": 2
     },
     {
       "category": "Internacional",
-      "headline": "Ruchira Ranasingha sigue varada en las Islas Cook desde 2023",
-      "summary": "Ruchira Ranasingha, de 50 años, lleva varada en las Islas Cook desde 2023.",
+      "headline": "China confirma una cumbre entre Xi, Trump y Putin en Shenzhen el 19 de noviembre",
+      "summary": "China ha confirmado que Xi Jinping, Donald Trump y Vladimir Putin se reunirán en Shenzhen el jueves 19 de noviembre.",
+      "sources": 2
+    },
+    {
+      "category": "Internacional",
+      "headline": "Un asesor del primer ministro británico usa ChatGPT para preparar un discurso en un tren",
+      "summary": "Un asesor del primer ministro británico fue fotografiado en un tren mientras utilizaba ChatGPT para preparar un discurso.",
+      "sources": 2
+    },
+    {
+      "category": "Ciencia",
+      "headline": "Hallan en Senon tres depósitos con más de 40.000 monedas romanas",
+      "summary": "Durante unas obras de ampliación de una vivienda en Senon, al noreste de Francia, arqueólogos encontraron tres depósitos de monedas romanas.",
       "sources": 1
     },
     {
       "category": "Ciencia",
-      "headline": "Hallan en Australia cañones submarinos de hace 550 millones de años",
-      "summary": "Un equipo internacional ha descubierto en Australia gigantescos cañones submarinos de hace 550 millones de años.",
+      "headline": "Lexus presenta el SUV eléctrico TZ de 6 plazas en España",
+      "summary": "Lexus ofrece en España el TZ, un SUV eléctrico con 6 plazas y 3 configuraciones.",
       "sources": 1
     }
   ]

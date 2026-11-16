@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-15",
+  "day": "2026-11-16",
   "edition": "en",
   "items": [
     {
-      "category": "Entertainment",
-      "headline": "Chris Pratt says he would welcome a fourth Guardians film with James Gunn",
-      "summary": "Chris Pratt says he would love to make a fourth Guardians of the Galaxy movie with James Gunn.",
+      "category": "Technology",
+      "headline": "US hyperscale data centers use about 2% of the nation’s electricity",
+      "summary": "A new study estimates that hyperscale data centers use about 2% of all electricity in the United States.",
+      "sources": 3
+    },
+    {
+      "category": "National",
+      "headline": "Raye leads 2027 Grammy nominations with 11 nods",
+      "summary": "English singer-songwriter Raye leads the nominations for the 2027 Grammy Awards, with 11.",
+      "sources": 3
+    },
+    {
+      "category": "Technology",
+      "headline": "Instagram adds Amazon affiliate links to posts and Reels",
+      "summary": "Instagram now lets creators add Amazon affiliate links directly to Reels and feed posts.",
       "sources": 3
     },
     {
       "category": "Sports",
-      "headline": "Australia wins a record fourth Women's World Cup",
-      "summary": "Australia defeated New Zealand 34-10 in Brisbane to claim a record fourth Women's World Cup title.",
-      "sources": 2
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Billy Evans to discuss documentary portrayal in first TV interview",
-      "summary": "Billy Evans, longtime partner of Theranos founder Elizabeth Holmes, will give his first television interview on CBS News Sunday Morning.",
+      "headline": "Thomas Frank takes charge at Crystal Palace after Tottenham setback",
+      "summary": "Thomas Frank is now confirmed as the new manager of Crystal Palace.",
       "sources": 2
     },
     {
       "category": "Sports",
-      "headline": "Australia beat New Zealand for 4th straight Rugby League World Cup",
-      "summary": "Australia beat New Zealand comfortably in Brisbane to win the Men’s Rugby League World Cup.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Wales beats New Zealand for the first time in 73 years",
-      "summary": "Welsh rugby fans are waking up to a historic result: Wales has beaten New Zealand for the first time in 73 years.",
+      "headline": "College basketball polls reflect Week 2 results",
+      "summary": "The new men’s AP Top 25 poll is out after Week 2 of the 2026 college basketball season.",
       "sources": 2
     },
     {
       "category": "Entertainment",
-      "headline": "Amanda Seyfried to host ‘Saturday Night Live’ on Dec. 5",
-      "summary": "Amanda Seyfried will make her hosting debut on “Saturday Night Live” in the Dec.",
+      "headline": "Brit List 2026 highlights 13 unproduced British screenplays",
+      "summary": "The 2026 Brit List has named 13 writers behind promising British film and television screenplays that have not yet been produced.",
       "sources": 2
     },
     {
-      "category": "National",
-      "headline": "FAA ground stop disrupts college football travel",
-      "summary": "A Federal Aviation Administration ground stop disrupted travel for college football teams and fans.",
+      "category": "Sports",
+      "headline": "Andy Robertson becomes Scotland’s most-capped player",
+      "summary": "Andy Robertson became Scotland’s most-capped player on Monday, making his 103rd appearance in a Nations League game against Switzerland.",
       "sources": 2
     },
     {
-      "category": "National",
-      "headline": "Nationwide ground stop ends after disrupting U.S. flights",
-      "summary": "A nationwide ground stop that disrupted U. S.",
+      "category": "Entertainment",
+      "headline": "Stars arrive for the 2026 Governors Awards",
+      "summary": "The red carpet is open for the Academy of Motion Picture Arts and Sciences’ 2026 Governors Awards at the Ray Dolby Ballroom in Hollywood.",
       "sources": 2
     },
     {
-      "category": "World",
-      "headline": "Philippines wins first Eurovision Song Contest Asia",
-      "summary": "Carmelle Collado has won the first Eurovision Song Contest Asia, taking the Philippines’ entry, “Sobra-Sobra,” to victory in Bangkok on Saturday night.",
-      "sources": 2
-    },
-    {
-      "category": "World",
-      "headline": "Italy fines Meta €805 million over access to users’ photos",
-      "summary": "Italy’s data protection authority has fined Meta €805 million over its access to users’ photos.",
+      "category": "Entertainment",
+      "headline": "Willie Geist to leave Morning Joe for expanded role on Today",
+      "summary": "Willie Geist plans to leave MS NOW’s Morning Joe at the end of the year and take on a broader role at NBC’s Today franchise.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "M6 Mac Mini starts at $779 in early Black Friday sale",
-      "summary": "The M6 Mac Mini is on sale ahead of Black Friday 2026, with prices starting at $779.",
-      "sources": 1
+      "headline": "Zoox robotaxis join Uber in Las Vegas",
+      "summary": "Uber riders in Las Vegas can now be matched with Zoox robotaxis through the Uber app.",
+      "sources": 2
+    },
+    {
+      "category": "National",
+      "headline": "United Airlines says system outage is resolved",
+      "summary": "United Airlines said Monday that it had resolved a widespread system outage that delayed flight departures.",
+      "sources": 2
+    },
+    {
+      "category": "National",
+      "headline": "Air travel disruptions collide with a proposed $50 billion overhaul",
+      "summary": "Air travelers faced more disruption over the weekend as airlines scrambled to manage travel chaos.",
+      "sources": 2
+    },
+    {
+      "category": "World",
+      "headline": "Czechs rally against plan to change public media funding",
+      "summary": "Protesters rallied in Prague against a plan to move funding for public media to the state.",
+      "sources": 2
     },
     {
       "category": "Health",
-      "headline": "Time and space can feel different in schizophrenia-spectrum conditions",
-      "summary": "A minute can feel brief during an enjoyable moment, but long when someone is bored or stressed.",
+      "headline": "US set to lose measles-free status",
+      "summary": "The United States is set to lose its measles-free designation this week.",
       "sources": 1
     },
     {
-      "category": "Culture",
-      "headline": "Undercover cameras examine conditions at Crowborough asylum camp",
-      "summary": "Tonight’s television lineup includes a report from inside the Crowborough asylum camp.",
-      "sources": 1
-    },
-    {
-      "category": "Politics",
-      "headline": "Rebellion forms against Trump’s handpicked Republican Party chair",
-      "summary": "A rebellion is forming against the chairman of the Republican National Committee, who was handpicked by President Donald Trump.",
-      "sources": 1
-    },
-    {
-      "category": "Culture",
-      "headline": "Glyndebourne Youth Opera stages a new show about grief and magic",
-      "summary": "Glyndebourne Youth Opera’s new full-length opera, Spark, follows Clara, a girl whose anxiety keeps her from going to school.",
+      "category": "Business",
+      "headline": "Micron, AMD and other AI stocks fall as chip selloff intensifies",
+      "summary": "Micron, AMD and other AI-related stocks fell as a selloff in the chip sector intensified.",
       "sources": 1
     }
   ]
