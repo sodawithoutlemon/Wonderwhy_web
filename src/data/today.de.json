@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-16",
+  "day": "2026-11-21",
   "edition": "de",
   "items": [
     {
-      "category": "Topthemen",
-      "headline": "Robert Pattinson soll James Bond spielen",
-      "summary": "Robert Pattinson wird der nächste James Bond. Der britische Schauspieler übernimmt die Rolle des Geheimagenten 007 und folgt damit auf Daniel Craig.",
-      "sources": 4
-    },
-    {
-      "category": "Wissen",
-      "headline": "SpaceX fängt Starship erstmals am Startturm auf",
-      "summary": "SpaceX hat die obere Stufe des Starship nach einem Testflug erstmals wieder am Startturm aufgefangen.",
-      "sources": 3
-    },
-    {
-      "category": "Sport",
-      "headline": "Zverev gewinnt Auftaktspiel bei den ATP Finals",
-      "summary": "Alexander Zverev ist mit einem Sieg in die ATP Finals gestartet.",
-      "sources": 3
-    },
-    {
-      "category": "Topthemen",
-      "headline": "EU genehmigt Übernahme der Commerzbank durch UniCredit",
-      "summary": "Die EU-Kommission hat grünes Licht für die geplante Übernahme der Commerzbank durch die italienische Großbank UniCredit gegeben.",
-      "sources": 3
-    },
-    {
-      "category": "Leute",
-      "headline": "Renée Hoenderkamp erwartet mit 59 Jahren ein Kind",
-      "summary": "Die britische Ärztin und TV-Moderatorin Renée Hoenderkamp ist mit 59 Jahren schwanger.",
-      "sources": 2
-    },
-    {
-      "category": "Sport",
-      "headline": "Kompany leitet erstmals wieder Bayern-Training",
-      "summary": "Vincent Kompany hat am Montag erstmals seit mehr als 3 Wochen wieder eine Trainingseinheit beim FC Bayern geleitet.",
-      "sources": 2
-    },
-    {
-      "category": "Leute",
-      "headline": "Mathias Mester wird erstmals Vater",
-      "summary": "Mathias Mester wird zum ersten Mal Vater. Der frühere Para-Leichtathlet und TV-Star erwartet mit Christina Holtmann ein Kind.",
-      "sources": 2
-    },
-    {
-      "category": "Politik",
-      "headline": "Fünf EU-Länder planen Abschiebezentrum in Ruanda ab 2027",
-      "summary": "Deutschland, Österreich, Dänemark, die Niederlande und Griechenland planen ein Abschiebezentrum in Ruanda.",
-      "sources": 2
-    },
-    {
       "category": "International",
-      "headline": "Philippinen und Australien vereinbaren engere Verteidigungszusammenarbeit",
-      "summary": "Die Philippinen und Australien wollen militärisch enger zusammenarbeiten.",
+      "headline": "EU und Großbritannien nähern sich wieder an",
+      "summary": "Sechs Jahre nach dem Brexit rücken Großbritannien und die EU wieder näher zusammen.",
       "sources": 2
     },
     {
       "category": "Sport",
-      "headline": "USA verteidigen bei Frauen-Eishockey-WM den Titel gegen Kanada",
-      "summary": "Die USA haben bei der Eishockey-Weltmeisterschaft der Frauen in Dänemark ihren Titel verteidigt.",
-      "sources": 2
-    },
-    {
-      "category": "Leute",
-      "headline": "Harry und Meghan fehlen bei königlichen Weihnachtsfeiern",
-      "summary": "Harry und Meghan verbringen die Feiertage in England, sind aber nicht zu den königlichen Weihnachtsfeiern eingeladen.",
+      "headline": "Rafael Nadal wird in den Vorstand von Real Madrid gewählt",
+      "summary": "Rafael Nadal ist in den Vorstand von Real Madrid gewählt worden.",
       "sources": 2
     },
     {
       "category": "Topthemen",
-      "headline": "Fünf EU-Staaten planen Abschiebezentrum in Ruanda für 2027",
-      "summary": "Deutschland und vier weitere EU-Staaten wollen 2027 ein Abschiebezentrum in Ruanda eröffnen.",
-      "sources": 2
-    },
-    {
-      "category": "Politik",
-      "headline": "Merz stellt Senkung der Stromsteuer für alle in Aussicht",
-      "summary": "Bundeskanzler Friedrich Merz rechnet damit, dass der Koalitionsausschuss eine Senkung der Stromsteuer für alle beschließt.",
-      "sources": 2
-    },
-    {
-      "category": "Politik",
-      "headline": "Bremen stoppt umstrittene Kampagne gegen Islamismus",
-      "summary": "Bremen hat eine umstrittene Kampagne gegen Islamismus abgebrochen.",
+      "headline": "Verstappen zeigt Russell in Las Vegas den Mittelfinger",
+      "summary": "Beim Formel-1-Wochenende in Las Vegas gerieten Max Verstappen und George Russell erneut aneinander.",
       "sources": 2
     },
     {
       "category": "Wirtschaft",
-      "headline": "Älterer Programmfehler löste weltweiten Microsoft-Ausfall aus",
-      "summary": "Ende letzter Woche fielen Microsoft-Dienste weltweit über viele Stunden aus.",
+      "headline": "Katar kündigt Investitionen von 15 Milliarden Euro in Deutschland an",
+      "summary": "Der Emir von Katar hat bei einem Besuch in Deutschland Investitionen von 15 Milliarden Euro angekündigt.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "Kalifornien fordert Antworten zu Nvidias China-Geschäften",
+      "summary": "Nvidia steht wegen seiner Geschäfte mit China erneut unter Druck.",
+      "sources": 2
+    },
+    {
+      "category": "Politik",
+      "headline": "Boris Rhein erhöht den Druck auf die Bundesregierung",
+      "summary": "Hessens Ministerpräsident Boris Rhein kritisiert die Bundesregierung und erhöht den Druck auf die Koalition in Berlin.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "BBC-Doku zeigt Prinzessin Kate bei Bergtour und spricht über ihre Genesung",
+      "summary": "Eine neue BBC-Dokumentation begleitet Prinzessin Kate nach ihrer Krebsdiagnose.",
+      "sources": 2
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Galeria schließt Filialen in Berlin, Köln und München",
+      "summary": "Die insolvente Warenhauskette Galeria schließt 3 weitere Filialen.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Alcaraz trifft im Halbfinale auf Shelton",
+      "summary": "Im Tennis steht heute das Halbfinale zwischen Carlos Alcaraz und Ben Shelton auf dem Programm.",
+      "sources": 2
+    },
+    {
+      "category": "International",
+      "headline": "Pistorius will Militärpakt mit Polen ausbauen",
+      "summary": "Bundesverteidigungsminister Boris Pistorius will die militärische Zusammenarbeit zwischen Deutschland und Polen ausbauen.",
+      "sources": 2
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Harry Kane fällt beim FC Bayern monatelang aus",
+      "summary": "Der FC Bayern München muss mehrere Monate auf Harry Kane verzichten.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Aicher mit großem Rückstand im Slalom von Gurgl",
+      "summary": "Emma Aicher ist beim zweiten Slalom der Wintersaison in Gurgl mit großem Rückstand unterwegs.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "Manuela Schwesig sagt Termine wegen einer Operation ab",
+      "summary": "Manuela Schwesig muss operiert werden. Die Ministerpräsidentin von Mecklenburg-Vorpommern hat deshalb alle Termine für kommende Woche abgesagt.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "Städtetags-Präsident kritisiert Tokio Hotel nach Pyro-Streit",
+      "summary": "Bei einem Konzert von Tokio Hotel in Leipzig hat Bill Kaulitz die nicht genehmigten Pyroeffekte kritisiert.",
+      "sources": 2
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Frauen in der EU arbeiten rechnerisch bis Jahresende unbezahlt",
+      "summary": "Wegen der Lohnlücke zwischen Frauen und Männern arbeiten Frauen in der EU rechnerisch ab heute bis zum Jahresende quasi unbezahlt.",
       "sources": 2
     }
   ]

@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-17",
+  "day": "2026-11-21",
   "edition": "tr",
   "items": [
     {
+      "category": "Gündem",
+      "headline": "Atama ve görevden alma kararları Resmî Gazete’de yayımlandı",
+      "summary": "Bazı bakanlıklara ilişkin atama ve görevden alma kararları Resmî Gazete’de yayımlandı.",
+      "sources": 5
+    },
+    {
       "category": "Ekonomi",
-      "headline": "Ziraat Bankası, COP31’de 2 milyar dolarlık finansman anlaşmaları imzaladı",
-      "summary": "Ziraat Bankası, COP31 kapsamında uluslararası finans kuruluşlarıyla 2 milyar dolar karşılığı sürdürülebilir kalkınma odaklı finansman anlaşmaları imzaladı.",
+      "headline": "BDDK kredi kartı ve konut kredisi kurallarını değiştirdi",
+      "summary": "BDDK, kredi kartlarının asgari ödeme oranları ve konut kredileri için yeni kurallar açıkladı.",
+      "sources": 4
+    },
+    {
+      "category": "Ekonomi",
+      "headline": "Değerli metaller 34 haftanın en sert haftalık düşüşünü yaşadı",
+      "summary": "Değerli metaller, haftalık bazda son 34 haftanın en sert değer kaybını yaşadı.",
       "sources": 3
     },
     {
       "category": "Gündem",
-      "headline": "COP31’de yapay zekâ destekli temiz teknoloji girişimi başlatıldı",
-      "summary": "Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır, COP31 kapsamında Yapay Zekâ Destekli Temiz Teknolojiler Girişimi’nin başlatıldığını duyurdu.",
+      "headline": "DMM, 10 bin Rohingyalının Türkiye’ye yerleştirileceği iddiasını yalanladı",
+      "summary": "Dezenformasyonla Mücadele Merkezi, 10 bin Rohingyalının Türkiye’ye yerleştirileceği yönündeki iddiaların asılsız olduğunu açıkladı.",
       "sources": 3
     },
     {
       "category": "Ekonomi",
-      "headline": "BIST 100 günü yatay seyirle tamamladı",
-      "summary": "Borsa İstanbul’da BIST 100 endeksi günü yatay seyirle tamamladı.",
+      "headline": "SPK, BR Madencilik’e 6 ay işlem yasağı getirdi",
+      "summary": "Sermaye Piyasası Kurulu, Batıçim Batı Anadolu Sanayi ve Ticaret AŞ pay piyasasındaki işlemler nedeniyle BR Madencilik’e 6 ay süreyle geçici işlem yasağı uygulanmasına karar verdi.",
       "sources": 3
     },
     {
       "category": "Gündem",
-      "headline": "Erdoğan: Türkiye’nin hamleleri dünyada konuşuluyor",
-      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, AK Parti Gençlik Kolları Üniversiteli Gençlik Buluşması’nda konuştu.",
+      "headline": "Türkiye, ICAO Konsey üyeliğine yeniden seçildi",
+      "summary": "Türkiye, Uluslararası Sivil Havacılık Örgütü ICAO’nun Konsey üyeliğine seçildi.",
       "sources": 3
     },
     {
-      "category": "Ekonomi",
-      "headline": "Tesla, Grünheide fabrikasına 3 milyar avro yatıracak",
-      "summary": "Tesla, Almanya’daki Grünheide fabrikasını genişletmek için 3 milyar avro yatırım planını açıkladı.",
-      "sources": 3
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "Apple, iPhone Duo için yüzle kilit açmayı test ediyor",
-      "summary": "Apple, iPhone Duo için yüzle kilit açma özelliğini iOS 27. 3’ün geliştirici beta sürümünde test ediyor.",
-      "sources": 3
-    },
-    {
-      "category": "Gündem",
-      "headline": "Kurtulmuş: Hiçbir ülke uluslararası yükümlülüklerden kaçınmamalı",
-      "summary": "TBMM Başkanı Numan Kurtulmuş, COP31 Parlamenter Toplantısı’nda ülkelerin uluslararası yükümlülüklerden kaçınmasının kabul edilemeyeceğini söyledi.",
-      "sources": 3
-    },
-    {
-      "category": "Dünya",
-      "headline": "Güney Afrika’da 2 silahlı saldırıda 17 kişi öldü",
-      "summary": "Güney Afrika’da meydana gelen 2 toplu silahlı saldırıda en az 17 kişi öldü.",
+      "category": "Magazin",
+      "headline": "Arzum Onan, oğlu Can Aslantuğ’un 26. yaşını kutladı",
+      "summary": "Arzum Onan, 26 yaşına giren oğlu Can Aslantuğ’un doğum gününü sosyal medya paylaşımıyla kutladı.",
       "sources": 2
     },
     {
       "category": "Kültür",
-      "headline": "Sezai Karakoç’un diriliş düşüncesi edebiyat ve fikir hayatında iz bıraktı",
-      "summary": "Şair ve düşünür Sezai Karakoç, hayatını “Diriliş Nesli” adını verdiği yeni bir gençliğin yetişmesine adadı.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "Robert Pattinson yeni James Bond oldu",
-      "summary": "Robert Pattinson, James Bond rolünü üstlenecek yeni isim olarak duyuruldu.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "PlayStation Plus’ın 12 aylık paketlerinde indirim başladı",
-      "summary": "PlayStation Plus’ın Türkiye’deki 12 aylık Deluxe, Extra ve Essential paketleri indirime girdi.",
+      "headline": "Ayasofya'da yaklaşık 420 metrelik tünel hattı temizlendi",
+      "summary": "Ayasofya-i Kebir Cami-i Şerifi'nin restorasyon çalışmaları kapsamında, yapının yer altındaki tarihî tünel ve mekânlarında çalışma yürütülüyor.",
       "sources": 2
     },
     {
       "category": "Dünya",
-      "headline": "Nvidia, Jensen Huang’ı geri getirme kampanyasını reddetti; Trump girişimi destekliyor",
-      "summary": "Nvidia, eski Üst Yönetici Jensen Huang’ın görevine dönmesini isteyen “Jensen’ı Geri Getirin” kampanyasını reddetti.",
-      "sources": 1
+      "headline": "Anthropic hisseleri halka arz sonrası geriledi",
+      "summary": "Anthropic hisseleri, büyük ilgi gören halka arzının ardından düşüşe geçti.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Apple, Mac bilgisayarları kontrol eden yapay zekâ ajanı geliştiriyor",
+      "summary": "Apple, Mac bilgisayarları kullanıcı adına kontrol edebilecek bir yapay zekâ ajanı üzerinde çalışıyor.",
+      "sources": 2
+    },
+    {
+      "category": "Dünya",
+      "headline": "Mamdani, Rikers Island hapishanesini 2032’ye kadar kapatmayı planlıyor",
+      "summary": "New York Belediye Başkanı Zohran Mamdani, Rikers Island hapishane kompleksini 2032’ye kadar kapatma planını açıkladı.",
+      "sources": 2
     },
     {
       "category": "Sağlık",
-      "headline": "Uzmanlara göre ölçülü bitter çikolata sağlığa fayda sağlayabilir",
-      "summary": "Çikolata, sağlıklı yaşam için çoğu zaman uzak durulması önerilen yiyecekler arasında sayılıyor.",
-      "sources": 1
+      "headline": "Kronik yalnızlık, 65 yaş üstünde demans riskini yüzde 38 artırıyor",
+      "summary": "Bilim insanlarının çalışmasına göre, kronik yalnızlık yaşayan 65 yaş üstü kişilerde demans riski yüzde 38 daha yüksek.",
+      "sources": 2
     },
     {
-      "category": "Bilim",
-      "headline": "Yapay zekâ hatalarını denetlemek iş yükünü artırıyor",
-      "summary": "Yapay zekâdan alınan yanıtlar eksik, yanlış ya da güncelliğini yitirmiş olabiliyor.",
-      "sources": 1
+      "category": "Dünya",
+      "headline": "Fosil yakıt tartışması COP31 görüşmelerini çıkmaza soktu",
+      "summary": "COP31 iklim görüşmelerinde fosil yakıtlar üzerindeki anlaşmazlık, yeni bir küresel iklim anlaşması için yürütülen müzakereleri çıkmaza soktu.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Elektrikli Mercedes-AMG GT 4-Kapı Coupé Türkiye’de satışa çıktı",
+      "summary": "Mercedes-AMG’nin tamamen elektrikli GT 4-Kapı Coupé modeli Türkiye’de satışa çıktı.",
+      "sources": 2
     },
     {
       "category": "Spor",
-      "headline": "Jorge Jesus, Dolores Aveiro’nun eleştirilerine yanıt verdi",
-      "summary": "Portekiz teknik direktörü Jorge Jesus, Cristiano Ronaldo’nun annesi Dolores Aveiro’nun kendisi hakkındaki sözlerine yanıt verdi.",
+      "headline": "Donmuş zemin nedeniyle İskoçya’da 2 maç ertelendi",
+      "summary": "İskoçya’daki 2 futbol maçı, donmuş zemin nedeniyle ertelendi.",
       "sources": 1
     }
   ]

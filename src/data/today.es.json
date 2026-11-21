@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-16",
+  "day": "2026-11-21",
   "edition": "es",
   "items": [
     {
-      "category": "Gente",
-      "headline": "La infanta Margarita, ingresada en la UCI por una infección",
-      "summary": "La infanta Margarita, hermana del rey Juan Carlos, está ingresada en la UCI de un hospital de Madrid por una infección.",
+      "category": "Cultura",
+      "headline": "Vicente Luis Mora gana el National Book Award por «Centroeuropa»",
+      "summary": "El poeta cordobés Vicente Luis Mora ha ganado el National Book Award de Estados Unidos por «Centroeuropa».",
       "sources": 3
     },
     {
       "category": "Deportes",
-      "headline": "Albacete y Celta Fortuna se enfrentan en la jornada 14",
-      "summary": "El Albacete recibe al Celta Fortuna en el Carlos Belmonte, en un partido de la 14.",
-      "sources": 2
+      "headline": "Alcaraz se enfrenta a Shelton en las semifinales de las ATP Finals",
+      "summary": "Carlos Alcaraz y Ben Shelton se enfrentan en las semifinales de las ATP Finals.",
+      "sources": 3
     },
     {
       "category": "Deportes",
-      "headline": "Alcaraz se enfrenta a Tiafoe en la fase de grupos de las ATP Finals",
-      "summary": "Carlos Alcaraz se mide a Frances Tiafoe en la fase de grupos de las Nitto ATP Finals.",
+      "headline": "La clasificación del GP de Portugal de MotoGP se disputa en Portimao",
+      "summary": "La clasificación del Gran Premio de Portugal de MotoGP se celebra este sábado, 21 de noviembre, en el circuito de Portimao.",
       "sources": 2
     },
     {
-      "category": "Política",
-      "headline": "Ceuta tendrá un asiento permanente en el Comité Europeo de las Regiones",
-      "summary": "La Unión Europea ha aprobado que Ceuta tenga un asiento permanente en el Comité Europeo de las Regiones, con el aval del Consejo de la UE.",
-      "sources": 2
-    },
-    {
-      "category": "Deportes",
-      "headline": "Tuchel destaca el triunfo de Inglaterra en el Metropolitano",
-      "summary": "Thomas Tuchel calificó de “muy especial” la victoria de Inglaterra ante España en el Metropolitano, en la Liga de Naciones.",
-      "sources": 2
-    },
-    {
-      "category": "Cultura",
-      "headline": "La bola negra suma 10 nominaciones a los Premios del Cine Europeo",
-      "summary": "La bola negra, la película de Los Javis, ha conseguido 10 nominaciones a los Premios del Cine Europeo.",
-      "sources": 2
-    },
-    {
-      "category": "Economía",
-      "headline": "Moeve estudia vender su red de estaciones de servicio",
-      "summary": "Moeve está sondeando una posible venta de su red de estaciones de servicio, que cuenta con más de 1.",
-      "sources": 2
-    },
-    {
-      "category": "Cultura",
-      "headline": "Rosalía obtiene 9 nominaciones a los Grammy de 2027",
-      "summary": "Rosalía ha conseguido 9 nominaciones a los Premios Grammy de 2027 por su cuarto álbum, «LUX».",
-      "sources": 2
-    },
-    {
-      "category": "Internacional",
-      "headline": "Trump atribuye a la Administración Biden la crisis aérea del viernes",
-      "summary": "Donald Trump se ha desmarcado de la crisis aérea del viernes en Estados Unidos.",
+      "category": "Gente",
+      "headline": "Ion Aramendi y María Lamela darán las Campanadas 2027 desde Santiago",
+      "summary": "Ion Aramendi y María Lamela presentarán las Campanadas de Mediaset España para despedir 2026 y dar la bienvenida a 2027.",
       "sources": 2
     },
     {
       "category": "Nacional",
-      "headline": "Frente Amplio propone permisos de cuidados para la familia elegida",
-      "summary": "Frente Amplio propone modificar la Ley de Familias para reconocer las redes de cuidados entre personas sin parentesco ni convivencia.",
+      "headline": "Sánchez prorrogará en 2027 el impuesto a la banca para financiar vivienda",
+      "summary": "Pedro Sánchez ha anunciado que el Consejo de Ministros aprobará el próximo martes la prórroga del impuesto a la banca durante 2027.",
       "sources": 2
     },
     {
       "category": "Economía",
-      "headline": "Carlos Cuerpo anuncia la creación de un comité de expertos ferroviarios",
-      "summary": "Este lunes se constituye el comité de expertos ferroviarios anunciado por Carlos Cuerpo, vicepresidente primero del Gobierno y ministro de Economía, que también está al frente de Transportes.",
+      "headline": "Chema Alonso ficha por Meta tras dejar Cloudflare",
+      "summary": "Chema Alonso deja Cloudflare, donde llevaba año y medio, y se incorpora a Meta como vicepresidente global de Gestión de Producto.",
       "sources": 2
     },
     {
-      "category": "Internacional",
-      "headline": "China confirma una cumbre entre Xi, Trump y Putin en Shenzhen el 19 de noviembre",
-      "summary": "China ha confirmado que Xi Jinping, Donald Trump y Vladimir Putin se reunirán en Shenzhen el jueves 19 de noviembre.",
+      "category": "Deportes",
+      "headline": "Sabadell y Granada, protagonistas de un seguimiento en directo",
+      "summary": "El Sabadell y el Granada centran un seguimiento en directo de su encuentro.",
       "sources": 2
     },
     {
-      "category": "Internacional",
-      "headline": "Un asesor del primer ministro británico usa ChatGPT para preparar un discurso en un tren",
-      "summary": "Un asesor del primer ministro británico fue fotografiado en un tren mientras utilizaba ChatGPT para preparar un discurso.",
+      "category": "Economía",
+      "headline": "Semaf desconvoca la huelga de maquinistas del 23 de noviembre",
+      "summary": "Semaf ha desconvocado la huelga de maquinistas prevista para el 23 de noviembre, tras alcanzar un acuerdo con el Ministerio de Transportes y Renfe.",
       "sources": 2
     },
     {
-      "category": "Ciencia",
-      "headline": "Hallan en Senon tres depósitos con más de 40.000 monedas romanas",
-      "summary": "Durante unas obras de ampliación de una vivienda en Senon, al noreste de Francia, arqueólogos encontraron tres depósitos de monedas romanas.",
+      "category": "Nacional",
+      "headline": "Gabriel Arrúe defiende priorizar la vivienda pública y regular el mercado",
+      "summary": "Gabriel Arrúe, secretario general de las Juventudes Socialistas de Euskadi, defiende que se construya vivienda, pero con prioridad para la pública y la protegida.",
+      "sources": 1
+    },
+    {
+      "category": "Nacional",
+      "headline": "Lluvias y viento este sábado, con frío y heladas el domingo",
+      "summary": "Este sábado se esperan lluvias abundantes y fuertes vientos.",
       "sources": 1
     },
     {
       "category": "Ciencia",
-      "headline": "Lexus presenta el SUV eléctrico TZ de 6 plazas en España",
-      "summary": "Lexus ofrece en España el TZ, un SUV eléctrico con 6 plazas y 3 configuraciones.",
+      "headline": "Humanos, chimpancés y bonobos están a una distancia genética similar",
+      "summary": "La genética evolutiva sitúa a los humanos a una distancia similar de los chimpancés y los bonobos.",
+      "sources": 1
+    },
+    {
+      "category": "Ciencia",
+      "headline": "Un experimento cuestiona que el maullido revele por sí solo qué pide un gato",
+      "summary": "Un equipo de investigadoras brasileñas ha publicado un experimento que pone en duda una idea habitual sobre los gatos: que basta con escuchar su maullido para saber qué quieren.",
+      "sources": 1
+    },
+    {
+      "category": "Ciencia",
+      "headline": "Hallan en China fósiles de un anfibio acorazado que vivió en el mar hace 237 millones de años",
+      "summary": "Un equipo de paleontólogos ha documentado en China fósiles de un anfibio acorazado que vivió hace 237 millones de años.",
+      "sources": 1
+    },
+    {
+      "category": "Tecnología",
+      "headline": "China desarrolla acuicultura en el desierto de Taklamakán",
+      "summary": "China ha abierto instalaciones de acuicultura en el desierto de Taklamakán, una zona que durante siglos los viajeros de la Ruta de la Seda evitaban rodeando por el norte o el sur.",
+      "sources": 1
+    },
+    {
+      "category": "Gente",
+      "headline": "ABC Gente relaciona a Wendi Deng con Vladímir Putin",
+      "summary": "ABC Gente publica que Wendi Deng, exmujer del magnate Rupert Murdoch, podría mantener una relación con el presidente ruso, Vladímir Putin.",
       "sources": 1
     }
   ]

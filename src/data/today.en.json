@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-16",
+  "day": "2026-11-21",
   "edition": "en",
   "items": [
     {
-      "category": "Technology",
-      "headline": "US hyperscale data centers use about 2% of the nation’s electricity",
-      "summary": "A new study estimates that hyperscale data centers use about 2% of all electricity in the United States.",
-      "sources": 3
-    },
-    {
-      "category": "National",
-      "headline": "Raye leads 2027 Grammy nominations with 11 nods",
-      "summary": "English singer-songwriter Raye leads the nominations for the 2027 Grammy Awards, with 11.",
-      "sources": 3
-    },
-    {
-      "category": "Technology",
-      "headline": "Instagram adds Amazon affiliate links to posts and Reels",
-      "summary": "Instagram now lets creators add Amazon affiliate links directly to Reels and feed posts.",
-      "sources": 3
-    },
-    {
       "category": "Sports",
-      "headline": "Thomas Frank takes charge at Crystal Palace after Tottenham setback",
-      "summary": "Thomas Frank is now confirmed as the new manager of Crystal Palace.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "College basketball polls reflect Week 2 results",
-      "summary": "The new men’s AP Top 25 poll is out after Week 2 of the 2026 college basketball season.",
+      "headline": "England call up Ben McKinney for South Africa Tests",
+      "summary": "England have called up Durham opener Ben McKinney for their Test tour of South Africa.",
       "sources": 2
     },
     {
       "category": "Entertainment",
-      "headline": "Brit List 2026 highlights 13 unproduced British screenplays",
-      "summary": "The 2026 Brit List has named 13 writers behind promising British film and television screenplays that have not yet been produced.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Andy Robertson becomes Scotland’s most-capped player",
-      "summary": "Andy Robertson became Scotland’s most-capped player on Monday, making his 103rd appearance in a Nations League game against Switzerland.",
-      "sources": 2
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Stars arrive for the 2026 Governors Awards",
-      "summary": "The red carpet is open for the Academy of Motion Picture Arts and Sciences’ 2026 Governors Awards at the Ray Dolby Ballroom in Hollywood.",
-      "sources": 2
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Willie Geist to leave Morning Joe for expanded role on Today",
-      "summary": "Willie Geist plans to leave MS NOW’s Morning Joe at the end of the year and take on a broader role at NBC’s Today franchise.",
+      "headline": "Bassam Tariq says leaving Marvel’s Blade taught him not to make films without a proper script",
+      "summary": "Director Bassam Tariq says his experience on Marvel’s Blade taught him that life is too short to make bad films.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Zoox robotaxis join Uber in Las Vegas",
-      "summary": "Uber riders in Las Vegas can now be matched with Zoox robotaxis through the Uber app.",
+      "headline": "Internet Archive workers vote to join a union",
+      "summary": "A supermajority of eligible workers at the Internet Archive voted to join the Communications Workers of America.",
+      "sources": 2
+    },
+    {
+      "category": "Sports",
+      "headline": "Antonelli is fastest in qualifying, but Verstappen gets Las Vegas pole",
+      "summary": "Mercedes driver Kimi Antonelli set the fastest time in qualifying for the Las Vegas Grand Prix.",
+      "sources": 2
+    },
+    {
+      "category": "Sports",
+      "headline": "Harden moves past Bryant for 50-point games",
+      "summary": "James Harden moved into third place on the NBA’s all-time list for 50-point games, passing Kobe Bryant.",
+      "sources": 2
+    },
+    {
+      "category": "Entertainment",
+      "headline": "Lauren Neustadter to leave Hello Sunshine at year’s end",
+      "summary": "Lauren Neustadter, Hello Sunshine’s president of film and television, is leaving Reese Witherspoon’s company at the end of the year.",
       "sources": 2
     },
     {
       "category": "National",
-      "headline": "United Airlines says system outage is resolved",
-      "summary": "United Airlines said Monday that it had resolved a widespread system outage that delayed flight departures.",
-      "sources": 2
-    },
-    {
-      "category": "National",
-      "headline": "Air travel disruptions collide with a proposed $50 billion overhaul",
-      "summary": "Air travelers faced more disruption over the weekend as airlines scrambled to manage travel chaos.",
+      "headline": "Trump touts Asia trip and ties with Xi and Putin at White House news conference",
+      "summary": "President Trump used a White House news conference to praise his recent trip to Asia and his meetings with Chinese President Xi Jinping and Russian President Vladimir Putin.",
       "sources": 2
     },
     {
       "category": "World",
-      "headline": "Czechs rally against plan to change public media funding",
-      "summary": "Protesters rallied in Prague against a plan to move funding for public media to the state.",
+      "headline": "Fossil fuel dispute leaves COP31 talks deadlocked",
+      "summary": "COP31 climate talks have stalled over fossil fuels, pushing the summit into overtime.",
       "sources": 2
     },
     {
-      "category": "Health",
-      "headline": "US set to lose measles-free status",
-      "summary": "The United States is set to lose its measles-free designation this week.",
-      "sources": 1
+      "category": "National",
+      "headline": "New York City Mayor Zohran Mamdani tears Achilles playing soccer with journalists",
+      "summary": "New York City Mayor Zohran Mamdani says he tore his Achilles tendon while playing soccer against the City Hall press corps.",
+      "sources": 2
+    },
+    {
+      "category": "National",
+      "headline": "Trump touts trilateral summit with Xi and Putin",
+      "summary": "President Trump praised a trilateral summit involving Chinese President Xi Jinping and Russian President Vladimir Putin.",
+      "sources": 2
     },
     {
       "category": "Business",
-      "headline": "Micron, AMD and other AI stocks fall as chip selloff intensifies",
-      "summary": "Micron, AMD and other AI-related stocks fell as a selloff in the chip sector intensified.",
+      "headline": "A brutal week nearly erased stocks’ gains for the year",
+      "summary": "Stocks had a brutal week that nearly wiped out their gains for the entire year.",
+      "sources": 1
+    },
+    {
+      "category": "Culture",
+      "headline": "International tourists travel Route 66 for its 100th anniversary",
+      "summary": "International tour groups drive the length of Route 66 every year.",
+      "sources": 1
+    },
+    {
+      "category": "Entertainment",
+      "headline": "Director says The Blind Ferryman rejects Western stereotypes and appeals for sympathy",
+      "summary": "Iraqi-Swiss filmmaker Ali Toffan Al-Fatlawi says he does not want The Blind Ferryman to rely on Western stereotypes or ask for sympathy.",
+      "sources": 1
+    },
+    {
+      "category": "Health",
+      "headline": "Access gaps widen as GLP-1 use surges",
+      "summary": "GLP-1 drugs have rapidly gained popularity in the United States, expanding from treatments for type 2 diabetes to use in weight management and other areas.",
+      "sources": 1
+    },
+    {
+      "category": "Politics",
+      "headline": "Trump’s nuclear jobs vision meets the fine print",
+      "summary": "Donald Trump promoted the prospect of a boom in nuclear energy jobs.",
       "sources": 1
     }
   ]
