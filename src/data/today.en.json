@@ -4,8 +4,26 @@
   "items": [
     {
       "category": "Sports",
+      "headline": "Chelsea loses 4-1 to Leeds as Alonso’s honeymoon ends",
+      "summary": "Chelsea manager Xabi Alonso is facing a difficult spell after his team lost 4-1 to Leeds at Stamford Bridge.",
+      "sources": 2
+    },
+    {
+      "category": "Sports",
       "headline": "England call up Ben McKinney for South Africa Tests",
       "summary": "England have called up Durham opener Ben McKinney for their Test tour of South Africa.",
+      "sources": 2
+    },
+    {
+      "category": "Sports",
+      "headline": "Lewis Moody joins England to face New Zealand’s haka",
+      "summary": "Former England captain Lewis Moody will join the current England team to face New Zealand’s haka before Saturday’s Test match at Allianz Stadium.",
+      "sources": 2
+    },
+    {
+      "category": "Politics",
+      "headline": "Trump vows to work with Democrats on 10% credit card rate cap",
+      "summary": "President Trump says he will work with the incoming Democratic Congress to cap credit card interest rates at 10%.",
       "sources": 2
     },
     {
@@ -18,18 +36,6 @@
       "category": "Technology",
       "headline": "Internet Archive workers vote to join a union",
       "summary": "A supermajority of eligible workers at the Internet Archive voted to join the Communications Workers of America.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Antonelli is fastest in qualifying, but Verstappen gets Las Vegas pole",
-      "summary": "Mercedes driver Kimi Antonelli set the fastest time in qualifying for the Las Vegas Grand Prix.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Harden moves past Bryant for 50-point games",
-      "summary": "James Harden moved into third place on the NBA’s all-time list for 50-point games, passing Kobe Bryant.",
       "sources": 2
     },
     {
@@ -63,33 +69,27 @@
       "sources": 2
     },
     {
+      "category": "Entertainment",
+      "headline": "Hailey Bieber addresses criticism over “optimistical delusion” comment",
+      "summary": "Hailey Bieber is addressing criticism over a phrase she used in a recent sit-down interview.",
+      "sources": 1
+    },
+    {
       "category": "Business",
       "headline": "A brutal week nearly erased stocks’ gains for the year",
       "summary": "Stocks had a brutal week that nearly wiped out their gains for the entire year.",
       "sources": 1
     },
     {
-      "category": "Culture",
-      "headline": "International tourists travel Route 66 for its 100th anniversary",
-      "summary": "International tour groups drive the length of Route 66 every year.",
+      "category": "Science",
+      "headline": "Repeated bending strengthens a sugar-based hydrogel",
+      "summary": "Most materials weaken as they are used. But a team led by Chenfeng Ke at Washington University in St.",
       "sources": 1
     },
     {
-      "category": "Entertainment",
-      "headline": "Director says The Blind Ferryman rejects Western stereotypes and appeals for sympathy",
-      "summary": "Iraqi-Swiss filmmaker Ali Toffan Al-Fatlawi says he does not want The Blind Ferryman to rely on Western stereotypes or ask for sympathy.",
-      "sources": 1
-    },
-    {
-      "category": "Health",
-      "headline": "Access gaps widen as GLP-1 use surges",
-      "summary": "GLP-1 drugs have rapidly gained popularity in the United States, expanding from treatments for type 2 diabetes to use in weight management and other areas.",
-      "sources": 1
-    },
-    {
-      "category": "Politics",
-      "headline": "Trump’s nuclear jobs vision meets the fine print",
-      "summary": "Donald Trump promoted the prospect of a boom in nuclear energy jobs.",
+      "category": "Business",
+      "headline": "Ron Johnson calls Social Security a “scam” and urges lawmakers to shut it down",
+      "summary": "Wisconsin Republican Senator Ron Johnson called Social Security a “scam” and urged lawmakers to shut it down.",
       "sources": 1
     }
   ]

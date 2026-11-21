@@ -3,6 +3,12 @@
   "edition": "de",
   "items": [
     {
+      "category": "Sport",
+      "headline": "Nmecha trifft spät für den BVB und spricht über seinen Jubel",
+      "summary": "Felix Nmecha hat Borussia Dortmund im Auswärtsspiel bei Borussia Mönchengladbach zum Sieg verholfen.",
+      "sources": 2
+    },
+    {
       "category": "International",
       "headline": "EU und Großbritannien nähern sich wieder an",
       "summary": "Sechs Jahre nach dem Brexit rücken Großbritannien und die EU wieder näher zusammen.",
@@ -15,9 +21,9 @@
       "sources": 2
     },
     {
-      "category": "Topthemen",
-      "headline": "Verstappen zeigt Russell in Las Vegas den Mittelfinger",
-      "summary": "Beim Formel-1-Wochenende in Las Vegas gerieten Max Verstappen und George Russell erneut aneinander.",
+      "category": "Sport",
+      "headline": "Alcaraz erreicht erneut das Finale der ATP Finals",
+      "summary": "Carlos Alcaraz hat das Halbfinale der ATP Finals gegen Ben Shelton gewonnen und steht damit im Endspiel.",
       "sources": 2
     },
     {
@@ -39,21 +45,9 @@
       "sources": 2
     },
     {
-      "category": "Leute",
-      "headline": "BBC-Doku zeigt Prinzessin Kate bei Bergtour und spricht über ihre Genesung",
-      "summary": "Eine neue BBC-Dokumentation begleitet Prinzessin Kate nach ihrer Krebsdiagnose.",
-      "sources": 2
-    },
-    {
       "category": "Wirtschaft",
       "headline": "Galeria schließt Filialen in Berlin, Köln und München",
       "summary": "Die insolvente Warenhauskette Galeria schließt 3 weitere Filialen.",
-      "sources": 2
-    },
-    {
-      "category": "Sport",
-      "headline": "Alcaraz trifft im Halbfinale auf Shelton",
-      "summary": "Im Tennis steht heute das Halbfinale zwischen Carlos Alcaraz und Ben Shelton auf dem Programm.",
       "sources": 2
     },
     {
@@ -69,9 +63,9 @@
       "sources": 2
     },
     {
-      "category": "Sport",
-      "headline": "Aicher mit großem Rückstand im Slalom von Gurgl",
-      "summary": "Emma Aicher ist beim zweiten Slalom der Wintersaison in Gurgl mit großem Rückstand unterwegs.",
+      "category": "Topthemen",
+      "headline": "Dortmund übernimmt die Tabellenführung vom FC Bayern",
+      "summary": "Der FC Bayern hat die Tabellenführung in der Bundesliga verloren.",
       "sources": 2
     },
     {
@@ -84,6 +78,12 @@
       "category": "Leute",
       "headline": "Städtetags-Präsident kritisiert Tokio Hotel nach Pyro-Streit",
       "summary": "Bei einem Konzert von Tokio Hotel in Leipzig hat Bill Kaulitz die nicht genehmigten Pyroeffekte kritisiert.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "Sarah Connor zeigt sich mit neuer Haarfarbe",
+      "summary": "Sängerin Sarah Connor hat ihren Look verändert und präsentiert sich mit einer neuen Haarfarbe.",
       "sources": 2
     },
     {

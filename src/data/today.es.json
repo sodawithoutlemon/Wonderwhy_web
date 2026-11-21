@@ -27,21 +27,15 @@
       "sources": 2
     },
     {
-      "category": "Nacional",
-      "headline": "Sánchez prorrogará en 2027 el impuesto a la banca para financiar vivienda",
-      "summary": "Pedro Sánchez ha anunciado que el Consejo de Ministros aprobará el próximo martes la prórroga del impuesto a la banca durante 2027.",
+      "category": "Deportes",
+      "headline": "Mourinho deja a Vinicius en el banquillo ante el Celta",
+      "summary": "José Mourinho ha dejado a Vinicius en el banquillo para el partido del Real Madrid contra el Celta de Vigo, correspondiente a la jornada 13 de LaLiga EA Sports.",
       "sources": 2
     },
     {
       "category": "Economía",
       "headline": "Chema Alonso ficha por Meta tras dejar Cloudflare",
       "summary": "Chema Alonso deja Cloudflare, donde llevaba año y medio, y se incorpora a Meta como vicepresidente global de Gestión de Producto.",
-      "sources": 2
-    },
-    {
-      "category": "Deportes",
-      "headline": "Sabadell y Granada, protagonistas de un seguimiento en directo",
-      "summary": "El Sabadell y el Granada centran un seguimiento en directo de su encuentro.",
       "sources": 2
     },
     {
@@ -52,8 +46,26 @@
     },
     {
       "category": "Nacional",
+      "headline": "Sánchez prorrogará en 2027 el impuesto a la banca para financiar vivienda",
+      "summary": "Pedro Sánchez ha anunciado que el Consejo de Ministros aprobará el próximo martes la prórroga del impuesto a la banca durante 2027.",
+      "sources": 2
+    },
+    {
+      "category": "Ciencia",
+      "headline": "Hallan indicios de cannabis quemado en un cementerio chino de hace 2.500 años",
+      "summary": "En el cementerio de Jirzankal, en los montes Pamir, China, se han encontrado restos de cannabis quemado que apuntan a antiguos rituales funerarios.",
+      "sources": 1
+    },
+    {
+      "category": "Nacional",
       "headline": "Gabriel Arrúe defiende priorizar la vivienda pública y regular el mercado",
       "summary": "Gabriel Arrúe, secretario general de las Juventudes Socialistas de Euskadi, defiende que se construya vivienda, pero con prioridad para la pública y la protegida.",
+      "sources": 1
+    },
+    {
+      "category": "Política",
+      "headline": "El Cajasol Ángel Ximénez vence al Nava y sale provisionalmente del descenso",
+      "summary": "El Cajasol Ángel Ximénez ganó 28-33 al Balonmano Nava en Segovia y encadenó su segunda victoria, tras imponerse al Frigoríficos del Morrazo.",
       "sources": 1
     },
     {
@@ -69,27 +81,15 @@
       "sources": 1
     },
     {
-      "category": "Ciencia",
-      "headline": "Un experimento cuestiona que el maullido revele por sí solo qué pide un gato",
-      "summary": "Un equipo de investigadoras brasileñas ha publicado un experimento que pone en duda una idea habitual sobre los gatos: que basta con escuchar su maullido para saber qué quieren.",
+      "category": "Política",
+      "headline": "El PP pide reducir a 12 meses el plazo para regular la carrera profesional del Sescam",
+      "summary": "El Partido Popular ha propuesto reducir de 18 a 12 meses el plazo para que el Gobierno de Castilla-La Mancha apruebe el decreto sobre la carrera profesional del Sescam.",
       "sources": 1
     },
     {
       "category": "Ciencia",
-      "headline": "Hallan en China fósiles de un anfibio acorazado que vivió en el mar hace 237 millones de años",
-      "summary": "Un equipo de paleontólogos ha documentado en China fósiles de un anfibio acorazado que vivió hace 237 millones de años.",
-      "sources": 1
-    },
-    {
-      "category": "Tecnología",
-      "headline": "China desarrolla acuicultura en el desierto de Taklamakán",
-      "summary": "China ha abierto instalaciones de acuicultura en el desierto de Taklamakán, una zona que durante siglos los viajeros de la Ruta de la Seda evitaban rodeando por el norte o el sur.",
-      "sources": 1
-    },
-    {
-      "category": "Gente",
-      "headline": "ABC Gente relaciona a Wendi Deng con Vladímir Putin",
-      "summary": "ABC Gente publica que Wendi Deng, exmujer del magnate Rupert Murdoch, podría mantener una relación con el presidente ruso, Vladímir Putin.",
+      "headline": "Un fósil de Messel aporta pistas sobre la caza de los búhos",
+      "summary": "En el yacimiento de Messel, en Alemania, paleontólogos han identificado una nueva especie de ave rapaz a partir de un fósil de hace 47 millones de años.",
       "sources": 1
     }
   ]
