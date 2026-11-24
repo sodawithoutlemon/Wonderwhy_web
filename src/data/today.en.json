@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-21",
+  "day": "2026-11-23",
   "edition": "en",
   "items": [
     {
-      "category": "Sports",
-      "headline": "Chelsea loses 4-1 to Leeds as Alonso’s honeymoon ends",
-      "summary": "Chelsea manager Xabi Alonso is facing a difficult spell after his team lost 4-1 to Leeds at Stamford Bridge.",
-      "sources": 2
+      "category": "Entertainment",
+      "headline": "Samantha Morton to receive BFI Fellowship",
+      "summary": "Samantha Morton will receive the British Film Institute’s highest honor, the BFI Fellowship.",
+      "sources": 3
     },
     {
-      "category": "Sports",
-      "headline": "England call up Ben McKinney for South Africa Tests",
-      "summary": "England have called up Durham opener Ben McKinney for their Test tour of South Africa.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Lewis Moody joins England to face New Zealand’s haka",
-      "summary": "Former England captain Lewis Moody will join the current England team to face New Zealand’s haka before Saturday’s Test match at Allianz Stadium.",
-      "sources": 2
-    },
-    {
-      "category": "Politics",
-      "headline": "Trump vows to work with Democrats on 10% credit card rate cap",
-      "summary": "President Trump says he will work with the incoming Democratic Congress to cap credit card interest rates at 10%.",
-      "sources": 2
+      "category": "National",
+      "headline": "Trump says he spoke with Nvidia board about bringing back Jensen Huang",
+      "summary": "President Donald Trump says he spoke with Nvidia board members about bringing Jensen Huang back as the company's CEO.",
+      "sources": 3
     },
     {
       "category": "Entertainment",
-      "headline": "Bassam Tariq says leaving Marvel’s Blade taught him not to make films without a proper script",
-      "summary": "Director Bassam Tariq says his experience on Marvel’s Blade taught him that life is too short to make bad films.",
+      "headline": "Deborah Ann Woll will play Faye in Prime Video’s God of War series",
+      "summary": "Deborah Ann Woll will reprise her role as Faye in Amazon’s live-action God of War series for Prime Video.",
+      "sources": 3
+    },
+    {
+      "category": "Entertainment",
+      "headline": "Steven Spielberg to direct adaptation of ‘The Heart in Winter’",
+      "summary": "Steven Spielberg will direct a film adaptation of Kevin Barry’s 2024 Western novel, ‘The Heart in Winter.",
+      "sources": 3
+    },
+    {
+      "category": "Sports",
+      "headline": "Scotland aim to upset Sweden and reach the World Cup",
+      "summary": "Scotland women’s head coach Melissa Andreatta says her team intends to bring Sweden’s World Cup dream “crashing down.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Internet Archive workers vote to join a union",
-      "summary": "A supermajority of eligible workers at the Internet Archive voted to join the Communications Workers of America.",
+      "headline": "Retailers roll out early Black Friday tech deals",
+      "summary": "Retailers have started offering Black Friday discounts before the shopping holiday arrives.",
       "sources": 2
     },
     {
-      "category": "Entertainment",
-      "headline": "Lauren Neustadter to leave Hello Sunshine at year’s end",
-      "summary": "Lauren Neustadter, Hello Sunshine’s president of film and television, is leaving Reese Witherspoon’s company at the end of the year.",
+      "category": "Sports",
+      "headline": "South Carolina stays unanimous No. 1 ahead of UConn matchup",
+      "summary": "South Carolina remains the unanimous No. 1 team in the AP Top 25 women’s basketball poll.",
       "sources": 2
     },
     {
-      "category": "National",
-      "headline": "Trump touts Asia trip and ties with Xi and Putin at White House news conference",
-      "summary": "President Trump used a White House news conference to praise his recent trip to Asia and his meetings with Chinese President Xi Jinping and Russian President Vladimir Putin.",
+      "category": "Technology",
+      "headline": "Nintendo Switch 2 bundle gets a $50 Black Friday discount",
+      "summary": "Nintendo has cut $50 from one of its 2 current Switch 2 console bundles for Black Friday.",
+      "sources": 2
+    },
+    {
+      "category": "Sports",
+      "headline": "UK to host 2035 Women’s World Cup",
+      "summary": "The United Kingdom will host the 2035 Women’s World Cup. England, Northern Ireland, Scotland, and Wales will host the tournament.",
       "sources": 2
     },
     {
       "category": "World",
-      "headline": "Fossil fuel dispute leaves COP31 talks deadlocked",
-      "summary": "COP31 climate talks have stalled over fossil fuels, pushing the summit into overtime.",
+      "headline": "COP31 climate talks break down without a deal",
+      "summary": "COP31 climate talks in Turkey ended without a deal after the proposed main text was rejected by the European Union, the United Kingdom, and allies in the developing world.",
+      "sources": 2
+    },
+    {
+      "category": "Technology",
+      "headline": "Jensen Huang reinstated as Nvidia CEO and board chair",
+      "summary": "Jensen Huang has been reinstated as Nvidia’s CEO and board chair, amid a scandal.",
       "sources": 2
     },
     {
       "category": "National",
-      "headline": "New York City Mayor Zohran Mamdani tears Achilles playing soccer with journalists",
-      "summary": "New York City Mayor Zohran Mamdani says he tore his Achilles tendon while playing soccer against the City Hall press corps.",
+      "headline": "UN climate talks collapse over fossil fuels",
+      "summary": "International climate talks in Turkey broke down Sunday after negotiators clashed over fossil fuels, the main cause of global warming.",
+      "sources": 2
+    },
+    {
+      "category": "World",
+      "headline": "US intelligence chief backs Trump’s description of Putin as a friend",
+      "summary": "US Director of National Intelligence Jay Clayton said he trusts Donald Trump “completely” after Trump called Russian President Vladimir Putin “a friend” during a recent meeting in China.",
       "sources": 2
     },
     {
       "category": "National",
-      "headline": "Trump touts trilateral summit with Xi and Putin",
-      "summary": "President Trump praised a trilateral summit involving Chinese President Xi Jinping and Russian President Vladimir Putin.",
+      "headline": "Delta restores system after Thanksgiving travel delays",
+      "summary": "Delta Air Lines restored an automated system Sunday afternoon after a problem delayed flights nationwide as Thanksgiving travel began.",
       "sources": 2
     },
     {
-      "category": "Entertainment",
-      "headline": "Hailey Bieber addresses criticism over “optimistical delusion” comment",
-      "summary": "Hailey Bieber is addressing criticism over a phrase she used in a recent sit-down interview.",
-      "sources": 1
-    },
-    {
       "category": "Business",
-      "headline": "A brutal week nearly erased stocks’ gains for the year",
-      "summary": "Stocks had a brutal week that nearly wiped out their gains for the entire year.",
-      "sources": 1
-    },
-    {
-      "category": "Science",
-      "headline": "Repeated bending strengthens a sugar-based hydrogel",
-      "summary": "Most materials weaken as they are used. But a team led by Chenfeng Ke at Washington University in St.",
-      "sources": 1
-    },
-    {
-      "category": "Business",
-      "headline": "Ron Johnson calls Social Security a “scam” and urges lawmakers to shut it down",
-      "summary": "Wisconsin Republican Senator Ron Johnson called Social Security a “scam” and urged lawmakers to shut it down.",
+      "headline": "Trump wants Jensen Huang back at Nvidia as tech stocks sell off",
+      "summary": "President Donald Trump wants Nvidia chief executive Jensen Huang back at the company, as technology stocks face a selloff.",
       "sources": 1
     }
   ]

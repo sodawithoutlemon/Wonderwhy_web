@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-21",
+  "day": "2026-11-24",
   "edition": "tr",
   "items": [
     {
-      "category": "Gündem",
-      "headline": "Atama ve görevden alma kararları Resmî Gazete’de yayımlandı",
-      "summary": "Bazı bakanlıklara ilişkin atama ve görevden alma kararları Resmî Gazete’de yayımlandı.",
+      "category": "Ekonomi",
+      "headline": "2026 yılı yeniden değerleme oranı yüzde 27,83 oldu",
+      "summary": "2026 yılı için yeniden değerleme oranı yüzde 27,83 olarak belirlendi.",
       "sources": 5
     },
     {
-      "category": "Ekonomi",
-      "headline": "BDDK kredi kartı ve konut kredisi kurallarını değiştirdi",
-      "summary": "BDDK, kredi kartlarının asgari ödeme oranları ve konut kredileri için yeni kurallar açıkladı.",
+      "category": "Gündem",
+      "headline": "Bahçeli’den 24 Kasım Öğretmenler Günü mesajı",
+      "summary": "MHP Genel Başkanı Devlet Bahçeli, 24 Kasım Öğretmenler Günü dolayısıyla öğretmenlere mesaj gönderdi.",
       "sources": 4
     },
     {
       "category": "Ekonomi",
-      "headline": "Değerli metaller 34 haftanın en sert haftalık düşüşünü yaşadı",
-      "summary": "Değerli metaller, haftalık bazda son 34 haftanın en sert değer kaybını yaşadı.",
-      "sources": 3
-    },
-    {
-      "category": "Gündem",
-      "headline": "DMM, 10 bin Rohingyalının Türkiye’ye yerleştirileceği iddiasını yalanladı",
-      "summary": "Dezenformasyonla Mücadele Merkezi, 10 bin Rohingyalının Türkiye’ye yerleştirileceği yönündeki iddiaların asılsız olduğunu açıkladı.",
+      "headline": "BIST 100 günü yüzde 0,24 düşüşle tamamladı",
+      "summary": "Borsa İstanbul’da BIST 100 endeksi, işlem gününü düşüşle kapattı.",
       "sources": 3
     },
     {
       "category": "Ekonomi",
-      "headline": "SPK, BR Madencilik’e 6 ay işlem yasağı getirdi",
-      "summary": "Sermaye Piyasası Kurulu, Batıçim Batı Anadolu Sanayi ve Ticaret AŞ pay piyasasındaki işlemler nedeniyle BR Madencilik’e 6 ay süreyle geçici işlem yasağı uygulanmasına karar verdi.",
+      "headline": "Ekimde kartlı ödemeler 2,9 trilyon liraya ulaştı",
+      "summary": "Türkiye’de kredi kartı, banka kartı ve ön ödemeli kartlarla ekim ayında yapılan ödemelerin toplamı 2 trilyon 920,9 milyar liraya çıktı.",
       "sources": 3
+    },
+    {
+      "category": "Bilim",
+      "headline": "Webb, Cassiopeia A kalıntısında yıldızın son evresine ışık tuttu",
+      "summary": "NASA’nın James Webb Uzay Teleskobu, Cassiopeia A adlı süpernova kalıntısının yüksek çözünürlüklü, orta kızılötesi görüntüsünü elde etti.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Fiat Grizzly ve Fastback’in Türkiye fiyatları açıklandı",
+      "summary": "Fiat’ın Grizzly ve Fastback modellerinin Türkiye satış fiyatları açıklandı.",
+      "sources": 2
+    },
+    {
+      "category": "Dünya",
+      "headline": "COP31 iklim zirvesi anlaşmasız sona erdi",
+      "summary": "Türkiye’de düzenlenen COP31 iklim zirvesi, tarafların nihai bir anlaşmaya varamamasıyla sona erdi.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Hepsiburada’da Efsane Cuma indirimleri başladı",
+      "summary": "Hepsiburada, Efsane Kasım’ın 11. yılına özel Efsane Cuma indirimlerini başlattı.",
+      "sources": 2
     },
     {
       "category": "Gündem",
-      "headline": "Türkiye, ICAO Konsey üyeliğine yeniden seçildi",
-      "summary": "Türkiye, Uluslararası Sivil Havacılık Örgütü ICAO’nun Konsey üyeliğine seçildi.",
-      "sources": 3
-    },
-    {
-      "category": "Magazin",
-      "headline": "Arzum Onan, oğlu Can Aslantuğ’un 26. yaşını kutladı",
-      "summary": "Arzum Onan, 26 yaşına giren oğlu Can Aslantuğ’un doğum gününü sosyal medya paylaşımıyla kutladı.",
-      "sources": 2
-    },
-    {
-      "category": "Kültür",
-      "headline": "Ayasofya'da yaklaşık 420 metrelik tünel hattı temizlendi",
-      "summary": "Ayasofya-i Kebir Cami-i Şerifi'nin restorasyon çalışmaları kapsamında, yapının yer altındaki tarihî tünel ve mekânlarında çalışma yürütülüyor.",
-      "sources": 2
-    },
-    {
-      "category": "Dünya",
-      "headline": "Anthropic hisseleri halka arz sonrası geriledi",
-      "summary": "Anthropic hisseleri, büyük ilgi gören halka arzının ardından düşüşe geçti.",
+      "headline": "Murat Kurum’dan Özgür Özel’in COP31 eleştirilerine tepki",
+      "summary": "Çevre, Şehircilik ve İklim Değişikliği Bakanı Murat Kurum, Yeni Parti Genel Başkanı Özgür Özel’in COP31’e yönelik eleştirilerine tepki gösterdi.",
       "sources": 2
     },
     {
       "category": "Teknoloji",
-      "headline": "Apple, Mac bilgisayarları kontrol eden yapay zekâ ajanı geliştiriyor",
-      "summary": "Apple, Mac bilgisayarları kullanıcı adına kontrol edebilecek bir yapay zekâ ajanı üzerinde çalışıyor.",
+      "headline": "Honor 700 serisi, arka ekran ve 9.000 mAh bataryayla tanıtıldı",
+      "summary": "Honor, 700 serisini tanıttı. Seri, Honor 700, Honor 700 Pro ve Honor 700S modellerinden oluşuyor.",
       "sources": 2
     },
     {
-      "category": "Dünya",
-      "headline": "Mamdani, Rikers Island hapishanesini 2032’ye kadar kapatmayı planlıyor",
-      "summary": "New York Belediye Başkanı Zohran Mamdani, Rikers Island hapishane kompleksini 2032’ye kadar kapatma planını açıkladı.",
+      "category": "Gündem",
+      "headline": "AK Parti, Öğretmenler Günü için video paylaştı",
+      "summary": "AK Parti, 24 Kasım Öğretmenler Günü’nü hazırladığı bir videoyla kutladı.",
       "sources": 2
     },
     {
-      "category": "Teknoloji",
-      "headline": "Elektrikli Mercedes-AMG GT 4-Kapı Coupé Türkiye’de satışa çıktı",
-      "summary": "Mercedes-AMG’nin tamamen elektrikli GT 4-Kapı Coupé modeli Türkiye’de satışa çıktı.",
-      "sources": 2
-    },
-    {
-      "category": "Dünya",
-      "headline": "Fosil yakıt tartışması COP31 görüşmelerini çıkmaza soktu",
-      "summary": "COP31 iklim görüşmelerinde fosil yakıtlar üzerindeki anlaşmazlık, yeni bir küresel iklim anlaşması için yürütülen müzakereleri çıkmaza soktu.",
-      "sources": 2
-    },
-    {
-      "category": "Sağlık",
-      "headline": "Kronik yalnızlık, 65 yaş üstünde demans riskini yüzde 38 artırıyor",
-      "summary": "Bilim insanlarının çalışmasına göre, kronik yalnızlık yaşayan 65 yaş üstü kişilerde demans riski yüzde 38 daha yüksek.",
-      "sources": 2
+      "category": "Bilim",
+      "headline": "Mars’ta astronotlar gelmeden önce bakteri ve nükleer enerjiyle ev yetiştirme önerisi",
+      "summary": "Mars’a astronotlar ulaşmadan önce hazır barınaklar yetiştirme fikri gündeme geldi.",
+      "sources": 1
     },
     {
       "category": "Spor",
-      "headline": "Donmuş zemin nedeniyle İskoçya’da 2 maç ertelendi",
-      "summary": "İskoçya’daki 2 futbol maçı, donmuş zemin nedeniyle ertelendi.",
+      "headline": "Troy Deeney Premier League haftanın takımını seçiyor",
+      "summary": "Premier League’de her maç haftasının ardından Troy Deeney, haftanın takımını belirliyor.",
+      "sources": 1
+    },
+    {
+      "category": "Bilim",
+      "headline": "Thebes’te bulunan papirüs parçaları antik Mısır’daki lanet ritüelini yeniden düşündürüyor",
+      "summary": "Antik Mısır’ın Thebes kentindeki bir tapınakta, yakılmış 40 papirüs parçası bulundu.",
+      "sources": 1
+    },
+    {
+      "category": "Siyaset",
+      "headline": "16 yaşındaki JJ Gabriel transfer gündeminde",
+      "summary": "Henüz A takımda resmi maça çıkmamış 16 yaşındaki JJ Gabriel, yılın en büyük transfer dedikodularından birinin odağında.",
       "sources": 1
     }
   ]

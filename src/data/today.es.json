@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-21",
+  "day": "2026-11-24",
   "edition": "es",
   "items": [
     {
-      "category": "Cultura",
-      "headline": "Vicente Luis Mora gana el National Book Award por «Centroeuropa»",
-      "summary": "El poeta cordobés Vicente Luis Mora ha ganado el National Book Award de Estados Unidos por «Centroeuropa».",
-      "sources": 3
+      "category": "Gente",
+      "headline": "Blanca Romero y Quique Sánchez Flores rompen tras un año de relación",
+      "summary": "Blanca Romero y Quique Sánchez Flores habrían puesto fin a su relación después de un año juntos.",
+      "sources": 2
     },
     {
       "category": "Deportes",
-      "headline": "Alcaraz se enfrenta a Shelton en las semifinales de las ATP Finals",
-      "summary": "Carlos Alcaraz y Ben Shelton se enfrentan en las semifinales de las ATP Finals.",
-      "sources": 3
-    },
-    {
-      "category": "Deportes",
-      "headline": "La clasificación del GP de Portugal de MotoGP se disputa en Portimao",
-      "summary": "La clasificación del Gran Premio de Portugal de MotoGP se celebra este sábado, 21 de noviembre, en el circuito de Portimao.",
+      "headline": "Jorge Ventosa deja El Hormiguero tras 19 años",
+      "summary": "Jorge Ventosa dejará El Hormiguero después de 19 años vinculado al programa.",
       "sources": 2
     },
     {
       "category": "Gente",
-      "headline": "Ion Aramendi y María Lamela darán las Campanadas 2027 desde Santiago",
-      "summary": "Ion Aramendi y María Lamela presentarán las Campanadas de Mediaset España para despedir 2026 y dar la bienvenida a 2027.",
+      "headline": "Marta Sanahuja habla de su embarazo tras una pérdida",
+      "summary": "Marta Sanahuja, jurado de MasterChef y creadora de contenido, ha hablado de su nuevo embarazo.",
+      "sources": 2
+    },
+    {
+      "category": "Economía",
+      "headline": "Moeve y World2Fly prueban en un vuelo una mezcla de combustibles sostenibles",
+      "summary": "Moeve y World2Fly han operado un vuelo entre Madrid y Lisboa con una mezcla de combustible sintético renovable, combustible sostenible de origen biológico y queroseno convencional.",
+      "sources": 2
+    },
+    {
+      "category": "Nacional",
+      "headline": "Feijóo promete recuperar la «equidad» en los informativos de RTVE",
+      "summary": "Alberto Núñez Feijóo ha criticado a RTVE y ha descrito la televisión como «norcoreana».",
       "sources": 2
     },
     {
       "category": "Deportes",
-      "headline": "Mourinho deja a Vinicius en el banquillo ante el Celta",
-      "summary": "José Mourinho ha dejado a Vinicius en el banquillo para el partido del Real Madrid contra el Celta de Vigo, correspondiente a la jornada 13 de LaLiga EA Sports.",
+      "headline": "Lamine Yamal se pierde el partido ante el Sabah por molestias en el tobillo",
+      "summary": "Lamine Yamal no viajará a Azerbaiyán con el Barcelona y se perderá el partido de Champions ante el Sabah, previsto para el miércoles.",
       "sources": 2
     },
     {
       "category": "Economía",
-      "headline": "Chema Alonso ficha por Meta tras dejar Cloudflare",
-      "summary": "Chema Alonso deja Cloudflare, donde llevaba año y medio, y se incorpora a Meta como vicepresidente global de Gestión de Producto.",
+      "headline": "Murtra pide que Europa desarrolle su propia tecnología",
+      "summary": "Marc Murtra, presidente de Telefónica, reclama que Europa desarrolle tecnología propia.",
       "sources": 2
     },
     {
-      "category": "Economía",
-      "headline": "Semaf desconvoca la huelga de maquinistas del 23 de noviembre",
-      "summary": "Semaf ha desconvocado la huelga de maquinistas prevista para el 23 de noviembre, tras alcanzar un acuerdo con el Ministerio de Transportes y Renfe.",
-      "sources": 2
-    },
-    {
-      "category": "Nacional",
-      "headline": "Sánchez prorrogará en 2027 el impuesto a la banca para financiar vivienda",
-      "summary": "Pedro Sánchez ha anunciado que el Consejo de Ministros aprobará el próximo martes la prórroga del impuesto a la banca durante 2027.",
-      "sources": 2
-    },
-    {
-      "category": "Ciencia",
-      "headline": "Hallan indicios de cannabis quemado en un cementerio chino de hace 2.500 años",
-      "summary": "En el cementerio de Jirzankal, en los montes Pamir, China, se han encontrado restos de cannabis quemado que apuntan a antiguos rituales funerarios.",
+      "category": "Tecnología",
+      "headline": "Ser amable no implica buscar mucha vida social",
+      "summary": "Hay personas que se llevan bien con sus compañeros, amigos y familiares, pero prefieren pasar parte de su tiempo libre a solas.",
       "sources": 1
     },
     {
-      "category": "Nacional",
-      "headline": "Gabriel Arrúe defiende priorizar la vivienda pública y regular el mercado",
-      "summary": "Gabriel Arrúe, secretario general de las Juventudes Socialistas de Euskadi, defiende que se construya vivienda, pero con prioridad para la pública y la protegida.",
-      "sources": 1
-    },
-    {
-      "category": "Política",
-      "headline": "El Cajasol Ángel Ximénez vence al Nava y sale provisionalmente del descenso",
-      "summary": "El Cajasol Ángel Ximénez ganó 28-33 al Balonmano Nava en Segovia y encadenó su segunda victoria, tras imponerse al Frigoríficos del Morrazo.",
-      "sources": 1
-    },
-    {
-      "category": "Nacional",
-      "headline": "Lluvias y viento este sábado, con frío y heladas el domingo",
-      "summary": "Este sábado se esperan lluvias abundantes y fuertes vientos.",
+      "category": "Cultura",
+      "headline": "La familia biológica, en escena en el Matadero",
+      "summary": "Ayuso tiene una recomendación cultural para estos días: acercarse al Matadero y ver La forma humana, de Pablo Messiez.",
       "sources": 1
     },
     {
       "category": "Ciencia",
-      "headline": "Humanos, chimpancés y bonobos están a una distancia genética similar",
-      "summary": "La genética evolutiva sitúa a los humanos a una distancia similar de los chimpancés y los bonobos.",
+      "headline": "El Xiaomi 17T Pro baja a 540 euros, cerca de su mínimo histórico",
+      "summary": "El Xiaomi 17T Pro se vende por 540 euros, un precio que lo deja cerca de su mínimo histórico.",
       "sources": 1
     },
     {
-      "category": "Política",
-      "headline": "El PP pide reducir a 12 meses el plazo para regular la carrera profesional del Sescam",
-      "summary": "El Partido Popular ha propuesto reducir de 18 a 12 meses el plazo para que el Gobierno de Castilla-La Mancha apruebe el decreto sobre la carrera profesional del Sescam.",
+      "category": "Salud",
+      "headline": "Amnistía Internacional señala 57 retrocesos en los programas de PP y Vox",
+      "summary": "Amnistía Internacional ha identificado al menos 57 retrocesos en derechos humanos en los programas electorales del PP y Vox.",
       "sources": 1
     },
     {
       "category": "Ciencia",
-      "headline": "Un fósil de Messel aporta pistas sobre la caza de los búhos",
-      "summary": "En el yacimiento de Messel, en Alemania, paleontólogos han identificado una nueva especie de ave rapaz a partir de un fósil de hace 47 millones de años.",
+      "headline": "Sinner cae en Roland Garros tras sufrir un bajón físico con 33 grados",
+      "summary": "Jannik Sinner quedó eliminado en la segunda ronda de Roland Garros, el 28 de mayo, tras sufrir mareos y un acusado bajón físico ante el argentino Francisco Cerúndolo.",
+      "sources": 1
+    },
+    {
+      "category": "Salud",
+      "headline": "Un equipo crea 6.986 cerebros virtuales para estudiar el envejecimiento",
+      "summary": "Un equipo internacional de científicos ha creado 6. 986 réplicas virtuales del cerebro humano.",
+      "sources": 1
+    },
+    {
+      "category": "Tecnología",
+      "headline": "Cómo elegir una tarjeta SD o microSD según el contenido que creas",
+      "summary": "Al comprar una cámara de fotos, un dron u otro dispositivo para crear contenido, muchas personas se fijan primero en la resolución, la calidad de imagen y las opciones de grabación.",
+      "sources": 1
+    },
+    {
+      "category": "Cultura",
+      "headline": "Cultura prepara un recurso contra las cláusulas de las ayudas al cine de Castilla y León",
+      "summary": "El Ministerio de Cultura iniciará los trámites para impugnar ante el Tribunal Constitucional las convocatorias de ayudas de 2026 para largometrajes y cortometrajes de Castilla y León.",
       "sources": 1
     }
   ]

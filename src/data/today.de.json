@@ -1,96 +1,96 @@
 {
-  "day": "2026-11-21",
+  "day": "2026-11-24",
   "edition": "de",
   "items": [
     {
-      "category": "Sport",
-      "headline": "Nmecha trifft spät für den BVB und spricht über seinen Jubel",
-      "summary": "Felix Nmecha hat Borussia Dortmund im Auswärtsspiel bei Borussia Mönchengladbach zum Sieg verholfen.",
-      "sources": 2
-    },
-    {
-      "category": "International",
-      "headline": "EU und Großbritannien nähern sich wieder an",
-      "summary": "Sechs Jahre nach dem Brexit rücken Großbritannien und die EU wieder näher zusammen.",
-      "sources": 2
-    },
-    {
-      "category": "Sport",
-      "headline": "Rafael Nadal wird in den Vorstand von Real Madrid gewählt",
-      "summary": "Rafael Nadal ist in den Vorstand von Real Madrid gewählt worden.",
-      "sources": 2
-    },
-    {
-      "category": "Sport",
-      "headline": "Alcaraz erreicht erneut das Finale der ATP Finals",
-      "summary": "Carlos Alcaraz hat das Halbfinale der ATP Finals gegen Ben Shelton gewonnen und steht damit im Endspiel.",
-      "sources": 2
-    },
-    {
-      "category": "Wirtschaft",
-      "headline": "Katar kündigt Investitionen von 15 Milliarden Euro in Deutschland an",
-      "summary": "Der Emir von Katar hat bei einem Besuch in Deutschland Investitionen von 15 Milliarden Euro angekündigt.",
+      "category": "Leute",
+      "headline": "Bahar Kizil legt aus gesundheitlichen Gründen eine Musikpause ein",
+      "summary": "Vor 20 Jahren gewann Bahar Kizil gemeinsam mit Mandy Capristo und Senna Gammour die Castingshow „Popstars“.",
       "sources": 2
     },
     {
       "category": "Technik",
-      "headline": "Kalifornien fordert Antworten zu Nvidias China-Geschäften",
-      "summary": "Nvidia steht wegen seiner Geschäfte mit China erneut unter Druck.",
+      "headline": "Black-Friday-Woche bringt Rabatte auf Apple-Geräte",
+      "summary": "Die Black-Friday-Woche hat begonnen. Auch für Nutzerinnen und Nutzer von iPhone, Mac und anderen Apple-Geräten gibt es reduzierte Angebote.",
       "sources": 2
     },
     {
-      "category": "Politik",
-      "headline": "Boris Rhein erhöht den Druck auf die Bundesregierung",
-      "summary": "Hessens Ministerpräsident Boris Rhein kritisiert die Bundesregierung und erhöht den Druck auf die Koalition in Berlin.",
-      "sources": 2
-    },
-    {
-      "category": "Wirtschaft",
-      "headline": "Galeria schließt Filialen in Berlin, Köln und München",
-      "summary": "Die insolvente Warenhauskette Galeria schließt 3 weitere Filialen.",
-      "sources": 2
-    },
-    {
-      "category": "International",
-      "headline": "Pistorius will Militärpakt mit Polen ausbauen",
-      "summary": "Bundesverteidigungsminister Boris Pistorius will die militärische Zusammenarbeit zwischen Deutschland und Polen ausbauen.",
+      "category": "Sport",
+      "headline": "FIFA vergibt Frauen-WMs 2031 und 2035",
+      "summary": "Die FIFA hat die Frauen-Weltmeisterschaften 2031 und 2035 vergeben.",
       "sources": 2
     },
     {
       "category": "Topthemen",
-      "headline": "Harry Kane fällt beim FC Bayern monatelang aus",
-      "summary": "Der FC Bayern München muss mehrere Monate auf Harry Kane verzichten.",
+      "headline": "Nvidia setzt Jensen Huang wieder an die Spitze",
+      "summary": "Nvidia setzt Jensen Huang wieder an die Spitze des Unternehmens.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "Jensen Huang kehrt als Nvidia-Chef zurück, Aktie steigt kräftig",
+      "summary": "Jensen Huang ist als Chef des Chipkonzerns Nvidia zurückgekehrt.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Jannik Sinner droht nach Knieproblemen eine Operation",
+      "summary": "Jannik Sinner steht offenbar eine Operation am Knie bevor. Der italienische Tennisstar hat seit seinem Wimbledon-Finale gegen Alexander Zverev kein Match mehr bestritten.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "Paartherapeutin kritisiert Manuel Neuer nach Ehe-Aus",
+      "summary": "Ein Video von Manuel Neuer mit einer anderen Frau verbreitete sich kurz nach seiner Trennung im Internet.",
       "sources": 2
     },
     {
       "category": "Topthemen",
-      "headline": "Dortmund übernimmt die Tabellenführung vom FC Bayern",
-      "summary": "Der FC Bayern hat die Tabellenführung in der Bundesliga verloren.",
+      "headline": "Ann-Katrin Berger wechselt von Gotham FC zu Union Berlin",
+      "summary": "Ann-Katrin Berger verlässt den US-Club Gotham FC und wechselt zu Union Berlin.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Lennart Karl spricht offen über fehlenden Plan B",
+      "summary": "Der 18-jährige Lennart Karl hat bei einem Besuch in einem Fanclub offen über seinen Lebensweg gesprochen.",
       "sources": 2
     },
     {
       "category": "Leute",
-      "headline": "Manuela Schwesig sagt Termine wegen einer Operation ab",
-      "summary": "Manuela Schwesig muss operiert werden. Die Ministerpräsidentin von Mecklenburg-Vorpommern hat deshalb alle Termine für kommende Woche abgesagt.",
+      "headline": "Thomas Gottschalk ist erneut Großvater geworden",
+      "summary": "Thomas Gottschalk und seine Ex-Frau Thea sind wieder Großeltern.",
       "sources": 2
     },
     {
-      "category": "Leute",
-      "headline": "Städtetags-Präsident kritisiert Tokio Hotel nach Pyro-Streit",
-      "summary": "Bei einem Konzert von Tokio Hotel in Leipzig hat Bill Kaulitz die nicht genehmigten Pyroeffekte kritisiert.",
-      "sources": 2
+      "category": "Wissen",
+      "headline": "Tabakähnliche Pflanze stellt Wirkstoff gegen Krebs her",
+      "summary": "Ein Forscherteam hat eine tabakähnliche Pflanze dazu gebracht, Paclitaxel herzustellen.",
+      "sources": 1
     },
     {
-      "category": "Leute",
-      "headline": "Sarah Connor zeigt sich mit neuer Haarfarbe",
-      "summary": "Sängerin Sarah Connor hat ihren Look verändert und präsentiert sich mit einer neuen Haarfarbe.",
-      "sources": 2
+      "category": "Kultur",
+      "headline": "Melinda Cooper untersucht eine neue Allianz im Kapitalismus",
+      "summary": "Die australische Soziologin Melinda Cooper widmet sich in den Adorno-Vorlesungen einer Verbindung, die den Kapitalismus neu prägt.",
+      "sources": 1
     },
     {
       "category": "Wirtschaft",
-      "headline": "Frauen in der EU arbeiten rechnerisch bis Jahresende unbezahlt",
-      "summary": "Wegen der Lohnlücke zwischen Frauen und Männern arbeiten Frauen in der EU rechnerisch ab heute bis zum Jahresende quasi unbezahlt.",
-      "sources": 2
+      "headline": "USA setzen Megaspeed im Nvidia-Streit auf schwarze Liste",
+      "summary": "Die USA haben das Unternehmen Megaspeed auf eine schwarze Liste gesetzt.",
+      "sources": 1
+    },
+    {
+      "category": "Gesundheit",
+      "headline": "KHZG-Fördermittel stärken die Digitalisierung deutscher Kliniken",
+      "summary": "Krankenhäuser in Deutschland sind dank Fördermitteln des Krankenhauszukunftsgesetzes digitaler aufgestellt.",
+      "sources": 1
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Coca-Cola holt Finanzchef von Bristol Myers Squibb",
+      "summary": "Coca-Cola bekommt einen neuen Finanzchef: David Elkins wechselt vom Pharmakonzern Bristol Myers Squibb zu dem Getränkehersteller.",
+      "sources": 1
     }
   ]
 }
