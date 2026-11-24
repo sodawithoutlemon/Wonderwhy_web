@@ -3,33 +3,21 @@
   "edition": "es",
   "items": [
     {
-      "category": "Gente",
-      "headline": "Blanca Romero y Quique Sánchez Flores rompen tras un año de relación",
-      "summary": "Blanca Romero y Quique Sánchez Flores habrían puesto fin a su relación después de un año juntos.",
-      "sources": 2
-    },
-    {
       "category": "Deportes",
-      "headline": "Jorge Ventosa deja El Hormiguero tras 19 años",
-      "summary": "Jorge Ventosa dejará El Hormiguero después de 19 años vinculado al programa.",
+      "headline": "Ferran Torres compra las oficinas del Valencia por cerca de 7 millones de euros",
+      "summary": "Ferran Torres, delantero valenciano del PSG, ha comprado las oficinas del Valencia junto a Mestalla por una cantidad cercana a los 7 millones de euros.",
+      "sources": 3
+    },
+    {
+      "category": "Internacional",
+      "headline": "Francisco escribió que vio al diablo en varias ocasiones",
+      "summary": "En extractos de su diario, el papa Francisco escribió que vio al diablo 3 veces y que también vio «las puertas del infierno».",
       "sources": 2
     },
     {
       "category": "Gente",
-      "headline": "Marta Sanahuja habla de su embarazo tras una pérdida",
-      "summary": "Marta Sanahuja, jurado de MasterChef y creadora de contenido, ha hablado de su nuevo embarazo.",
-      "sources": 2
-    },
-    {
-      "category": "Economía",
-      "headline": "Moeve y World2Fly prueban en un vuelo una mezcla de combustibles sostenibles",
-      "summary": "Moeve y World2Fly han operado un vuelo entre Madrid y Lisboa con una mezcla de combustible sintético renovable, combustible sostenible de origen biológico y queroseno convencional.",
-      "sources": 2
-    },
-    {
-      "category": "Nacional",
-      "headline": "Feijóo promete recuperar la «equidad» en los informativos de RTVE",
-      "summary": "Alberto Núñez Feijóo ha criticado a RTVE y ha descrito la televisión como «norcoreana».",
+      "headline": "Un incendio afecta a la mansión de Will Smith en California",
+      "summary": "Un nuevo incendio ha afectado a la mansión de California del actor Will Smith y su mujer, Jada Pinkett.",
       "sources": 2
     },
     {
@@ -39,57 +27,69 @@
       "sources": 2
     },
     {
-      "category": "Economía",
-      "headline": "Murtra pide que Europa desarrolle su propia tecnología",
-      "summary": "Marc Murtra, presidente de Telefónica, reclama que Europa desarrolle tecnología propia.",
+      "category": "Gente",
+      "headline": "Blanca Romero y Quique Sánchez Flores rompen tras un año de relación",
+      "summary": "Blanca Romero y Quique Sánchez Flores habrían puesto fin a su relación después de un año juntos.",
       "sources": 2
     },
     {
-      "category": "Tecnología",
-      "headline": "Ser amable no implica buscar mucha vida social",
-      "summary": "Hay personas que se llevan bien con sus compañeros, amigos y familiares, pero prefieren pasar parte de su tiempo libre a solas.",
-      "sources": 1
+      "category": "Economía",
+      "headline": "El impuesto a la banca aportará 1.400 millones para vivienda",
+      "summary": "El Gobierno ha aprobado una nueva modificación del impuesto a la banca, que busca recaudar 1.",
+      "sources": 2
+    },
+    {
+      "category": "Salud",
+      "headline": "El Gobierno anuncia un decreto para proteger la información sobre el aborto y recurrirá una ley madrileña",
+      "summary": "Pedro Sánchez ha anunciado un real decreto para blindar la información sobre el aborto.",
+      "sources": 2
+    },
+    {
+      "category": "Gente",
+      "headline": "Gabriela Guillén recuerda a Carlos Osborne como «un caballero»",
+      "summary": "Gabriela Guillén ha hablado de Carlos, el hijo de Bertín Osborne y Fabiola Martínez.",
+      "sources": 2
+    },
+    {
+      "category": "Economía",
+      "headline": "El Gobierno rebaja el IRPF a 2,6 millones de autónomos y simplifica el IVA",
+      "summary": "El Consejo de Ministros ha aprobado un paquete de medidas fiscales para los autónomos.",
+      "sources": 2
     },
     {
       "category": "Cultura",
-      "headline": "La familia biológica, en escena en el Matadero",
-      "summary": "Ayuso tiene una recomendación cultural para estos días: acercarse al Matadero y ver La forma humana, de Pablo Messiez.",
+      "headline": "Paco Cerdà gana el Premio del Libro Europeo con ‘Presentes’",
+      "summary": "El escritor valenciano Paco Cerdà ha ganado el Premio del Libro Europeo con ‘Presentes’.",
+      "sources": 2
+    },
+    {
+      "category": "Economía",
+      "headline": "Moeve y World2Fly prueban en un vuelo una mezcla de combustibles sostenibles",
+      "summary": "Moeve y World2Fly han operado un vuelo entre Madrid y Lisboa con una mezcla de combustible sintético renovable, combustible sostenible de origen biológico y queroseno convencional.",
+      "sources": 2
+    },
+    {
+      "category": "Deportes",
+      "headline": "Jorge Ventosa deja El Hormiguero tras 19 años",
+      "summary": "Jorge Ventosa dejará El Hormiguero después de 19 años vinculado al programa.",
+      "sources": 2
+    },
+    {
+      "category": "Nacional",
+      "headline": "Feijóo promete recuperar la «equidad» en los informativos de RTVE",
+      "summary": "Alberto Núñez Feijóo ha criticado a RTVE y ha descrito la televisión como «norcoreana».",
+      "sources": 2
+    },
+    {
+      "category": "Cultura",
+      "headline": "Disney estrenará el 27 de noviembre «Hechizo: Bienvenidos a Hexe»",
+      "summary": "Disney estrenará el 27 de noviembre «Hechizo: Bienvenidos a Hexe», una nueva película de animación.",
       "sources": 1
     },
     {
       "category": "Ciencia",
-      "headline": "El Xiaomi 17T Pro baja a 540 euros, cerca de su mínimo histórico",
-      "summary": "El Xiaomi 17T Pro se vende por 540 euros, un precio que lo deja cerca de su mínimo histórico.",
-      "sources": 1
-    },
-    {
-      "category": "Salud",
-      "headline": "Amnistía Internacional señala 57 retrocesos en los programas de PP y Vox",
-      "summary": "Amnistía Internacional ha identificado al menos 57 retrocesos en derechos humanos en los programas electorales del PP y Vox.",
-      "sources": 1
-    },
-    {
-      "category": "Ciencia",
-      "headline": "Sinner cae en Roland Garros tras sufrir un bajón físico con 33 grados",
-      "summary": "Jannik Sinner quedó eliminado en la segunda ronda de Roland Garros, el 28 de mayo, tras sufrir mareos y un acusado bajón físico ante el argentino Francisco Cerúndolo.",
-      "sources": 1
-    },
-    {
-      "category": "Salud",
-      "headline": "Un equipo crea 6.986 cerebros virtuales para estudiar el envejecimiento",
-      "summary": "Un equipo internacional de científicos ha creado 6. 986 réplicas virtuales del cerebro humano.",
-      "sources": 1
-    },
-    {
-      "category": "Tecnología",
-      "headline": "Cómo elegir una tarjeta SD o microSD según el contenido que creas",
-      "summary": "Al comprar una cámara de fotos, un dron u otro dispositivo para crear contenido, muchas personas se fijan primero en la resolución, la calidad de imagen y las opciones de grabación.",
-      "sources": 1
-    },
-    {
-      "category": "Cultura",
-      "headline": "Cultura prepara un recurso contra las cláusulas de las ayudas al cine de Castilla y León",
-      "summary": "El Ministerio de Cultura iniciará los trámites para impugnar ante el Tribunal Constitucional las convocatorias de ayudas de 2026 para largometrajes y cortometrajes de Castilla y León.",
+      "headline": "EPHX1, una enzima clave en el avance de la fibrosis hepática",
+      "summary": "La enzima EPHX1 se perfila como un elemento clave en la progresión de la fibrosis hepática hacia la cirrosis.",
       "sources": 1
     }
   ]

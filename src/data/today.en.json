@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-23",
+  "day": "2026-11-24",
   "edition": "en",
   "items": [
     {
       "category": "Entertainment",
-      "headline": "Samantha Morton to receive BFI Fellowship",
-      "summary": "Samantha Morton will receive the British Film Institute’s highest honor, the BFI Fellowship.",
+      "headline": "‘I See Buildings Fall Like Lightning’ leads BIFA craft winners",
+      "summary": "The British Independent Film Awards has announced winners in 10 craft categories for 2026.",
       "sources": 3
+    },
+    {
+      "category": "Science",
+      "headline": "Webb reveals clues in Cassiopeia A’s supernova remnant",
+      "summary": "NASA’s James Webb Space Telescope has captured a detailed view of Cassiopeia A, a remnant left by a massive star’s explosion.",
+      "sources": 2
+    },
+    {
+      "category": "Sports",
+      "headline": "Kevin de Bruyne returns to Manchester City after move to Napoli",
+      "summary": "Kevin de Bruyne is returning to Manchester City after joining Napoli last summer.",
+      "sources": 2
     },
     {
       "category": "National",
-      "headline": "Trump says he spoke with Nvidia board about bringing back Jensen Huang",
-      "summary": "President Donald Trump says he spoke with Nvidia board members about bringing Jensen Huang back as the company's CEO.",
-      "sources": 3
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Deborah Ann Woll will play Faye in Prime Video’s God of War series",
-      "summary": "Deborah Ann Woll will reprise her role as Faye in Amazon’s live-action God of War series for Prime Video.",
-      "sources": 3
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Steven Spielberg to direct adaptation of ‘The Heart in Winter’",
-      "summary": "Steven Spielberg will direct a film adaptation of Kevin Barry’s 2024 Western novel, ‘The Heart in Winter.",
-      "sources": 3
-    },
-    {
-      "category": "Sports",
-      "headline": "Scotland aim to upset Sweden and reach the World Cup",
-      "summary": "Scotland women’s head coach Melissa Andreatta says her team intends to bring Sweden’s World Cup dream “crashing down.",
+      "headline": "Nvidia restores Jensen Huang as CEO after 2 weeks",
+      "summary": "Nvidia has restored Jensen Huang as its chief executive, just 2 weeks after he resigned.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Retailers roll out early Black Friday tech deals",
-      "summary": "Retailers have started offering Black Friday discounts before the shopping holiday arrives.",
+      "headline": "Apple renews Ted Lasso for Season 5",
+      "summary": "Apple has renewed Ted Lasso for a fifth season on Apple TV. The series had appeared to be ending after Season 3, making the renewal a return for a show many viewers thought was finished.",
       "sources": 2
     },
     {
       "category": "Sports",
-      "headline": "South Carolina stays unanimous No. 1 ahead of UConn matchup",
-      "summary": "South Carolina remains the unanimous No. 1 team in the AP Top 25 women’s basketball poll.",
+      "headline": "Gloucestershire to become Bristol Lions for T20 Blast",
+      "summary": "Gloucestershire will compete as the Bristol Lions in the T20 Blast starting with the 2027 season.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Nintendo Switch 2 bundle gets a $50 Black Friday discount",
-      "summary": "Nintendo has cut $50 from one of its 2 current Switch 2 console bundles for Black Friday.",
+      "headline": "Meta brings its Muse AI assistant to Instagram DMs",
+      "summary": "Meta is bringing its Muse AI assistant into Instagram direct messages.",
       "sources": 2
     },
     {
       "category": "Sports",
-      "headline": "UK to host 2035 Women’s World Cup",
-      "summary": "The United Kingdom will host the 2035 Women’s World Cup. England, Northern Ireland, Scotland, and Wales will host the tournament.",
+      "headline": "Leny Yoro cleared to face Brentford after red card overturned",
+      "summary": "Manchester United defender Leny Yoro is available for Saturday’s match against Brentford.",
       "sources": 2
     },
     {
       "category": "World",
-      "headline": "COP31 climate talks break down without a deal",
-      "summary": "COP31 climate talks in Turkey ended without a deal after the proposed main text was rejected by the European Union, the United Kingdom, and allies in the developing world.",
+      "headline": "India’s Cockroach movement leader says he was stopped from flying to UK",
+      "summary": "Saurav Das, a leader of India’s youth-led Cockroach movement, says immigration officials stopped him from boarding a flight from Delhi to the UK.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Jensen Huang reinstated as Nvidia CEO and board chair",
-      "summary": "Jensen Huang has been reinstated as Nvidia’s CEO and board chair, amid a scandal.",
+      "headline": "Uber, Nuro, and Lucid begin driverless robotaxi testing in the Bay Area",
+      "summary": "Uber, Nuro, and Lucid have begun testing fully driverless robotaxis on public roads in the San Francisco Bay Area.",
+      "sources": 2
+    },
+    {
+      "category": "Politics",
+      "headline": "Trump says he persuaded Nvidia’s board to reinstate Jensen Huang",
+      "summary": "Jensen Huang returned as Nvidia’s CEO on Monday, after the company’s board changed its mind within days.",
       "sources": 2
     },
     {
       "category": "National",
-      "headline": "UN climate talks collapse over fossil fuels",
-      "summary": "International climate talks in Turkey broke down Sunday after negotiators clashed over fossil fuels, the main cause of global warming.",
+      "headline": "U.S.-led group to host 2031 Women’s World Cup",
+      "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women’s World Cup.",
       "sources": 2
     },
     {
-      "category": "World",
-      "headline": "US intelligence chief backs Trump’s description of Putin as a friend",
-      "summary": "US Director of National Intelligence Jay Clayton said he trusts Donald Trump “completely” after Trump called Russian President Vladimir Putin “a friend” during a recent meeting in China.",
-      "sources": 2
+      "category": "Science",
+      "headline": "New clam species found inside deep-sea urchin",
+      "summary": "Researchers discovered a new clam species living inside the esophagus of a deep-sea sea urchin.",
+      "sources": 1
     },
     {
-      "category": "National",
-      "headline": "Delta restores system after Thanksgiving travel delays",
-      "summary": "Delta Air Lines restored an automated system Sunday afternoon after a problem delayed flights nationwide as Thanksgiving travel began.",
-      "sources": 2
+      "category": "Entertainment",
+      "headline": "Gregg Sulkin joins ‘MobLand’ for Season 3",
+      "summary": "Paramount+ has started filming Season 3 of ‘MobLand,’ and the series has added Gregg Sulkin in a recurring role.",
+      "sources": 1
     },
     {
-      "category": "Business",
-      "headline": "Trump wants Jensen Huang back at Nvidia as tech stocks sell off",
-      "summary": "President Donald Trump wants Nvidia chief executive Jensen Huang back at the company, as technology stocks face a selloff.",
+      "category": "Health",
+      "headline": "FDA approval adds an endocrine therapy option for early-stage breast cancer",
+      "summary": "The FDA has approved a new endocrine therapy option for people with early-stage breast cancer.",
       "sources": 1
     }
   ]

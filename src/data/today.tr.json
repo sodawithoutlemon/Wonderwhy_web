@@ -22,9 +22,39 @@
     },
     {
       "category": "Ekonomi",
-      "headline": "Ekimde kartlı ödemeler 2,9 trilyon liraya ulaştı",
-      "summary": "Türkiye’de kredi kartı, banka kartı ve ön ödemeli kartlarla ekim ayında yapılan ödemelerin toplamı 2 trilyon 920,9 milyar liraya çıktı.",
+      "headline": "TMSF, Mondi Mobilya'nın tamamını satışa çıkardı",
+      "summary": "Tasarruf Mevduatı Sigorta Fonu, Hazine mülkiyetindeki Mondi Mobilya'nın yüzde 100 hissesini satışa çıkardı.",
       "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Ömer Çelik ve Efkan Ala, Yeni Parti toplantısındaki sloganlara tepki gösterdi",
+      "summary": "AK Parti Genel Başkan Yardımcısı ve Parti Sözcüsü Ömer Çelik ile AK Parti Genel Başkanvekili Efkan Ala, Yeni Parti’nin grup toplantısında Cumhurbaşkanı Erdoğan’a yönelik sloganlara tepki gösterdi.",
+      "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Hayati Yazıcı, AK Parti'deki görevlerinden istifa etti",
+      "summary": "AK Parti'nin kurucu isimlerinden Hayati Yazıcı, partideki görevlerinden istifa ettiğini açıkladı.",
+      "sources": 3
+    },
+    {
+      "category": "Siyaset",
+      "headline": "Galatasaray, Şampiyonlar Ligi’nde Aston Villa’yı ağırlıyor",
+      "summary": "Galatasaray, UEFA Şampiyonlar Ligi’nin 5. haftasında Aston Villa’yı sahasında konuk edecek.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Uber, Nuro ve Lucid San Francisco Körfez Bölgesi’nde sürücüsüz testlere başladı",
+      "summary": "Uber, Nuro ve Lucid, San Francisco Körfez Bölgesi’nde sürücüsüz robotaksi testlerine başladı.",
+      "sources": 2
+    },
+    {
+      "category": "Magazin",
+      "headline": "Derya Uluğ, Asil Gök’le nikâhı öncesi kına gecesi düzenledi",
+      "summary": "Şarkıcı Derya Uluğ, müzisyen Asil Gök’le 25 Kasım’da yapacağı nikâh öncesinde kına gecesi düzenledi.",
+      "sources": 2
     },
     {
       "category": "Bilim",
@@ -39,58 +69,28 @@
       "sources": 2
     },
     {
-      "category": "Dünya",
-      "headline": "COP31 iklim zirvesi anlaşmasız sona erdi",
-      "summary": "Türkiye’de düzenlenen COP31 iklim zirvesi, tarafların nihai bir anlaşmaya varamamasıyla sona erdi.",
-      "sources": 2
-    },
-    {
       "category": "Teknoloji",
       "headline": "Hepsiburada’da Efsane Cuma indirimleri başladı",
       "summary": "Hepsiburada, Efsane Kasım’ın 11. yılına özel Efsane Cuma indirimlerini başlattı.",
       "sources": 2
     },
     {
-      "category": "Gündem",
-      "headline": "Murat Kurum’dan Özgür Özel’in COP31 eleştirilerine tepki",
-      "summary": "Çevre, Şehircilik ve İklim Değişikliği Bakanı Murat Kurum, Yeni Parti Genel Başkanı Özgür Özel’in COP31’e yönelik eleştirilerine tepki gösterdi.",
+      "category": "Dünya",
+      "headline": "Jensen Huang, Nvidia CEO’su olarak görevine döndü",
+      "summary": "Jensen Huang, Nvidia CEO’su olarak yeniden göreve döndü. Dönüşü, şirket hisselerinin günler önce elden çıkarılmasının ardından yapay zekâ piyasasındaki yükselişe yeni bir ivme kazandırdı.",
       "sources": 2
     },
     {
-      "category": "Teknoloji",
-      "headline": "Honor 700 serisi, arka ekran ve 9.000 mAh bataryayla tanıtıldı",
-      "summary": "Honor, 700 serisini tanıttı. Seri, Honor 700, Honor 700 Pro ve Honor 700S modellerinden oluşuyor.",
+      "category": "Dünya",
+      "headline": "COP31 iklim zirvesi anlaşmasız sona erdi",
+      "summary": "Türkiye’de düzenlenen COP31 iklim zirvesi, tarafların nihai bir anlaşmaya varamamasıyla sona erdi.",
       "sources": 2
     },
     {
-      "category": "Gündem",
-      "headline": "AK Parti, Öğretmenler Günü için video paylaştı",
-      "summary": "AK Parti, 24 Kasım Öğretmenler Günü’nü hazırladığı bir videoyla kutladı.",
+      "category": "Magazin",
+      "headline": "Meryem Uzerli, Koruncuk Vakfı’ndaki kız çocuklarını ziyaret etti",
+      "summary": "Oyuncu Meryem Uzerli, destek verdiği Koruncuk Vakfı’ndaki kız çocuklarıyla yeniden buluştu.",
       "sources": 2
-    },
-    {
-      "category": "Bilim",
-      "headline": "Mars’ta astronotlar gelmeden önce bakteri ve nükleer enerjiyle ev yetiştirme önerisi",
-      "summary": "Mars’a astronotlar ulaşmadan önce hazır barınaklar yetiştirme fikri gündeme geldi.",
-      "sources": 1
-    },
-    {
-      "category": "Spor",
-      "headline": "Troy Deeney Premier League haftanın takımını seçiyor",
-      "summary": "Premier League’de her maç haftasının ardından Troy Deeney, haftanın takımını belirliyor.",
-      "sources": 1
-    },
-    {
-      "category": "Bilim",
-      "headline": "Thebes’te bulunan papirüs parçaları antik Mısır’daki lanet ritüelini yeniden düşündürüyor",
-      "summary": "Antik Mısır’ın Thebes kentindeki bir tapınakta, yakılmış 40 papirüs parçası bulundu.",
-      "sources": 1
-    },
-    {
-      "category": "Siyaset",
-      "headline": "16 yaşındaki JJ Gabriel transfer gündeminde",
-      "summary": "Henüz A takımda resmi maça çıkmamış 16 yaşındaki JJ Gabriel, yılın en büyük transfer dedikodularından birinin odağında.",
-      "sources": 1
     }
   ]
 }

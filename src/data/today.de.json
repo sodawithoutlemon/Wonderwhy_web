@@ -3,27 +3,9 @@
   "edition": "de",
   "items": [
     {
-      "category": "Leute",
-      "headline": "Bahar Kizil legt aus gesundheitlichen Gründen eine Musikpause ein",
-      "summary": "Vor 20 Jahren gewann Bahar Kizil gemeinsam mit Mandy Capristo und Senna Gammour die Castingshow „Popstars“.",
-      "sources": 2
-    },
-    {
-      "category": "Technik",
-      "headline": "Black-Friday-Woche bringt Rabatte auf Apple-Geräte",
-      "summary": "Die Black-Friday-Woche hat begonnen. Auch für Nutzerinnen und Nutzer von iPhone, Mac und anderen Apple-Geräten gibt es reduzierte Angebote.",
-      "sources": 2
-    },
-    {
       "category": "Sport",
-      "headline": "FIFA vergibt Frauen-WMs 2031 und 2035",
-      "summary": "Die FIFA hat die Frauen-Weltmeisterschaften 2031 und 2035 vergeben.",
-      "sources": 2
-    },
-    {
-      "category": "Topthemen",
-      "headline": "Nvidia setzt Jensen Huang wieder an die Spitze",
-      "summary": "Nvidia setzt Jensen Huang wieder an die Spitze des Unternehmens.",
+      "headline": "Schach-WM in Genf: Sindarov gilt gegen Gukesh als Favorit",
+      "summary": "In Genf beginnt heute die Schach-Weltmeisterschaft zwischen Javokhir Sindarov und Dommaraju Gukesh.",
       "sources": 2
     },
     {
@@ -33,15 +15,51 @@
       "sources": 2
     },
     {
-      "category": "Sport",
-      "headline": "Jannik Sinner droht nach Knieproblemen eine Operation",
-      "summary": "Jannik Sinner steht offenbar eine Operation am Knie bevor. Der italienische Tennisstar hat seit seinem Wimbledon-Finale gegen Alexander Zverev kein Match mehr bestritten.",
+      "category": "Leute",
+      "headline": "Bahar Kizil legt aus gesundheitlichen Gründen eine Musikpause ein",
+      "summary": "Vor 20 Jahren gewann Bahar Kizil gemeinsam mit Mandy Capristo und Senna Gammour die Castingshow „Popstars“.",
+      "sources": 2
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Ifo-Geschäftsklima auf höchstem Stand seit Frühjahr 2023",
+      "summary": "Das Ifo-Geschäftsklima ist auf den höchsten Stand seit dem Frühjahr 2023 gestiegen.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "Black-Friday-Woche bringt Rabatte auf Apple-Geräte",
+      "summary": "Die Black-Friday-Woche hat begonnen. Auch für Nutzerinnen und Nutzer von iPhone, Mac und anderen Apple-Geräten gibt es reduzierte Angebote.",
+      "sources": 2
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Stimmung in deutschen Unternehmen steigt weiter",
+      "summary": "Die Stimmung in der deutschen Wirtschaft hat sich im November zum 7.",
       "sources": 2
     },
     {
       "category": "Leute",
-      "headline": "Paartherapeutin kritisiert Manuel Neuer nach Ehe-Aus",
-      "summary": "Ein Video von Manuel Neuer mit einer anderen Frau verbreitete sich kurz nach seiner Trennung im Internet.",
+      "headline": "Patrice Aminati trauert um 3 Freundinnen mit Krebs",
+      "summary": "Patrice Aminati trauert um 3 Frauen, die ihr besonders nahestanden.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "NRW-Polizei will Palantir durch deutsche Software ersetzen",
+      "summary": "Die Polizei in Nordrhein-Westfalen will den US-Dienst Palantir durch deutsche Software ersetzen.",
+      "sources": 2
+    },
+    {
+      "category": "Leute",
+      "headline": "Barbara Eden hält sich mit Radfahren und Krafttraining fit",
+      "summary": "Barbara Eden ist 95 Jahre alt und weiterhin aktiv. Die Schauspielerin wurde in den 1960er-Jahren mit der Serie „Bezaubernde Jeannie“ weltbekannt.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "UEFA-Vertreter lehnen Einsicht in FIFA-Akten ab",
+      "summary": "Die europäischen Vertreter im FIFA-Council wollen die von der FIFA angebotenen Akten zum umstrittenen Investorendeal nicht einsehen.",
       "sources": 2
     },
     {
@@ -51,45 +69,27 @@
       "sources": 2
     },
     {
-      "category": "Sport",
-      "headline": "Lennart Karl spricht offen über fehlenden Plan B",
-      "summary": "Der 18-jährige Lennart Karl hat bei einem Besuch in einem Fanclub offen über seinen Lebensweg gesprochen.",
+      "category": "Topthemen",
+      "headline": "Warnstreiks in der Metall- und Elektroindustrie gehen weiter",
+      "summary": "In der Metall- und Elektroindustrie laufen weitere Warnstreiks.",
       "sources": 2
-    },
-    {
-      "category": "Leute",
-      "headline": "Thomas Gottschalk ist erneut Großvater geworden",
-      "summary": "Thomas Gottschalk und seine Ex-Frau Thea sind wieder Großeltern.",
-      "sources": 2
-    },
-    {
-      "category": "Wissen",
-      "headline": "Tabakähnliche Pflanze stellt Wirkstoff gegen Krebs her",
-      "summary": "Ein Forscherteam hat eine tabakähnliche Pflanze dazu gebracht, Paclitaxel herzustellen.",
-      "sources": 1
     },
     {
       "category": "Kultur",
-      "headline": "Melinda Cooper untersucht eine neue Allianz im Kapitalismus",
-      "summary": "Die australische Soziologin Melinda Cooper widmet sich in den Adorno-Vorlesungen einer Verbindung, die den Kapitalismus neu prägt.",
-      "sources": 1
+      "headline": "Jensen Huang und die Wette auf künstliche Intelligenz",
+      "summary": "Jensen Huang, Chef des Chipkonzerns Nvidia, steht im Zentrum der großen Wette auf künstliche Intelligenz.",
+      "sources": 2
     },
     {
-      "category": "Wirtschaft",
-      "headline": "USA setzen Megaspeed im Nvidia-Streit auf schwarze Liste",
-      "summary": "Die USA haben das Unternehmen Megaspeed auf eine schwarze Liste gesetzt.",
-      "sources": 1
+      "category": "Sport",
+      "headline": "EU-Kommission schlägt Verbot russischer Flaggen bei Sportevents vor",
+      "summary": "Russische Mannschaften und Einzelsportler sollen bei Wettkämpfen in der EU künftig nicht mehr unter ihrer Landesflagge antreten dürfen.",
+      "sources": 2
     },
     {
       "category": "Gesundheit",
-      "headline": "KHZG-Fördermittel stärken die Digitalisierung deutscher Kliniken",
-      "summary": "Krankenhäuser in Deutschland sind dank Fördermitteln des Krankenhauszukunftsgesetzes digitaler aufgestellt.",
-      "sources": 1
-    },
-    {
-      "category": "Wirtschaft",
-      "headline": "Coca-Cola holt Finanzchef von Bristol Myers Squibb",
-      "summary": "Coca-Cola bekommt einen neuen Finanzchef: David Elkins wechselt vom Pharmakonzern Bristol Myers Squibb zu dem Getränkehersteller.",
+      "headline": "Kürzungen bei Hilfsgeldern gefährden Fortschritte im Kampf gegen HIV",
+      "summary": "Im Kampf gegen HIV sind nach Angaben der Vereinten Nationen Fortschritte erzielt worden.",
       "sources": 1
     }
   ]
