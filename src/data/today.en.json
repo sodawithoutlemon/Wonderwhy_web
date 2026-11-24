@@ -4,9 +4,27 @@
   "items": [
     {
       "category": "Entertainment",
+      "headline": "The Rings of Power renewed for Season 4",
+      "summary": "Amazon has renewed The Lord of the Rings: The Rings of Power for a fourth season.",
+      "sources": 3
+    },
+    {
+      "category": "Entertainment",
       "headline": "‘I See Buildings Fall Like Lightning’ leads BIFA craft winners",
       "summary": "The British Independent Film Awards has announced winners in 10 craft categories for 2026.",
       "sources": 3
+    },
+    {
+      "category": "Sports",
+      "headline": "Brandon Aiyuk is set to meet with the Commanders",
+      "summary": "Free-agent wide receiver Brandon Aiyuk is scheduled to meet with the Washington Commanders after his recent release from the San Francisco 49ers.",
+      "sources": 2
+    },
+    {
+      "category": "Technology",
+      "headline": "Tidal will ban AI-generated music starting December 9",
+      "summary": "Tidal will ban AI-generated music starting December 9. The company expects to remove about 29 million tracks from its service.",
+      "sources": 2
     },
     {
       "category": "Science",
@@ -39,15 +57,9 @@
       "sources": 2
     },
     {
-      "category": "Technology",
-      "headline": "Meta brings its Muse AI assistant to Instagram DMs",
-      "summary": "Meta is bringing its Muse AI assistant into Instagram direct messages.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Leny Yoro cleared to face Brentford after red card overturned",
-      "summary": "Manchester United defender Leny Yoro is available for Saturday’s match against Brentford.",
+      "category": "Science",
+      "headline": "Hubble shows barred galaxy NGC 4394",
+      "summary": "NASA and ESA’s Hubble Space Telescope has released a new view of NGC 4394, a bright galaxy with a distinct bar.",
       "sources": 2
     },
     {
@@ -63,6 +75,12 @@
       "sources": 2
     },
     {
+      "category": "Entertainment",
+      "headline": "Disney orders an Aquamarine series",
+      "summary": "Disney has ordered a live-action series inspired by the 2006 film Aquamarine.",
+      "sources": 2
+    },
+    {
       "category": "Politics",
       "headline": "Trump says he persuaded Nvidia’s board to reinstate Jensen Huang",
       "summary": "Jensen Huang returned as Nvidia’s CEO on Monday, after the company’s board changed its mind within days.",
@@ -73,24 +91,6 @@
       "headline": "U.S.-led group to host 2031 Women’s World Cup",
       "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women’s World Cup.",
       "sources": 2
-    },
-    {
-      "category": "Science",
-      "headline": "New clam species found inside deep-sea urchin",
-      "summary": "Researchers discovered a new clam species living inside the esophagus of a deep-sea sea urchin.",
-      "sources": 1
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Gregg Sulkin joins ‘MobLand’ for Season 3",
-      "summary": "Paramount+ has started filming Season 3 of ‘MobLand,’ and the series has added Gregg Sulkin in a recurring role.",
-      "sources": 1
-    },
-    {
-      "category": "Health",
-      "headline": "FDA approval adds an endocrine therapy option for early-stage breast cancer",
-      "summary": "The FDA has approved a new endocrine therapy option for people with early-stage breast cancer.",
-      "sources": 1
     }
   ]
 }

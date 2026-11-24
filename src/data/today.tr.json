@@ -1,96 +1,96 @@
 {
-  "day": "2026-11-24",
+  "day": "2026-11-25",
   "edition": "tr",
   "items": [
     {
-      "category": "Ekonomi",
-      "headline": "2026 yılı yeniden değerleme oranı yüzde 27,83 oldu",
-      "summary": "2026 yılı için yeniden değerleme oranı yüzde 27,83 olarak belirlendi.",
-      "sources": 5
-    },
-    {
       "category": "Gündem",
-      "headline": "Bahçeli’den 24 Kasım Öğretmenler Günü mesajı",
-      "summary": "MHP Genel Başkanı Devlet Bahçeli, 24 Kasım Öğretmenler Günü dolayısıyla öğretmenlere mesaj gönderdi.",
+      "headline": "Valiler Kararnamesi yayımlandı: 41 ilin valisi değişti",
+      "summary": "Resmi Gazete’de yayımlanan Valiler Kararnamesi’yle 41 ilin valisi değişti.",
       "sources": 4
     },
     {
       "category": "Ekonomi",
-      "headline": "BIST 100 günü yüzde 0,24 düşüşle tamamladı",
-      "summary": "Borsa İstanbul’da BIST 100 endeksi, işlem gününü düşüşle kapattı.",
+      "headline": "HGS'deki usulsüz tahsilatlar iade edilecek",
+      "summary": "Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, Hızlı Geçiş Sistemi'nde usulüne uygun yapılmayan ödemelerin vatandaşlara iade edileceğini açıkladı.",
+      "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Hayati Yazıcı, AK Parti’deki görevlerinden istifa etti",
+      "summary": "AK Parti’nin kurucu isimlerinden Hayati Yazıcı, partideki görevlerinden istifa ettiğini açıkladı.",
       "sources": 3
     },
     {
       "category": "Ekonomi",
-      "headline": "TMSF, Mondi Mobilya'nın tamamını satışa çıkardı",
-      "summary": "Tasarruf Mevduatı Sigorta Fonu, Hazine mülkiyetindeki Mondi Mobilya'nın yüzde 100 hissesini satışa çıkardı.",
+      "headline": "İran’da serbest piyasada dolar 284 bin tümeni gördü",
+      "summary": "İran’da doların serbest piyasadaki satış kuru, ABD yaptırımları sonrasında tarihinin en yüksek seviyesine çıktı.",
+      "sources": 3
+    },
+    {
+      "category": "Ekonomi",
+      "headline": "BIST 100 günü yüzde 1,25 düşüşle tamamladı",
+      "summary": "Borsa İstanbul'da BIST 100 endeksi günü yüzde 1,25 düşüşle tamamladı.",
       "sources": 3
     },
     {
       "category": "Gündem",
-      "headline": "Ömer Çelik ve Efkan Ala, Yeni Parti toplantısındaki sloganlara tepki gösterdi",
-      "summary": "AK Parti Genel Başkan Yardımcısı ve Parti Sözcüsü Ömer Çelik ile AK Parti Genel Başkanvekili Efkan Ala, Yeni Parti’nin grup toplantısında Cumhurbaşkanı Erdoğan’a yönelik sloganlara tepki gösterdi.",
-      "sources": 3
-    },
-    {
-      "category": "Gündem",
-      "headline": "Hayati Yazıcı, AK Parti'deki görevlerinden istifa etti",
-      "summary": "AK Parti'nin kurucu isimlerinden Hayati Yazıcı, partideki görevlerinden istifa ettiğini açıkladı.",
+      "headline": "Erdoğan: 15 bin öğretmen alımının duyurusu bu hafta yapılacak",
+      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, 2026 Akademi Giriş Sınavı sonuçlarına göre 15 bin öğretmen adayı alınacağını açıkladı.",
       "sources": 3
     },
     {
       "category": "Siyaset",
-      "headline": "Galatasaray, Şampiyonlar Ligi’nde Aston Villa’yı ağırlıyor",
-      "summary": "Galatasaray, UEFA Şampiyonlar Ligi’nin 5. haftasında Aston Villa’yı sahasında konuk edecek.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "Uber, Nuro ve Lucid San Francisco Körfez Bölgesi’nde sürücüsüz testlere başladı",
-      "summary": "Uber, Nuro ve Lucid, San Francisco Körfez Bölgesi’nde sürücüsüz robotaksi testlerine başladı.",
-      "sources": 2
-    },
-    {
-      "category": "Magazin",
-      "headline": "Derya Uluğ, Asil Gök’le nikâhı öncesi kına gecesi düzenledi",
-      "summary": "Şarkıcı Derya Uluğ, müzisyen Asil Gök’le 25 Kasım’da yapacağı nikâh öncesinde kına gecesi düzenledi.",
+      "headline": "Galatasaray ile Aston Villa, Şampiyonlar Ligi'nin 5. haftasında karşı karşıya",
+      "summary": "Galatasaray, UEFA Şampiyonlar Ligi'nin 5. haftasında İngiltere temsilcisi Aston Villa'yı sahasında ağırlıyor.",
       "sources": 2
     },
     {
       "category": "Bilim",
-      "headline": "Webb, Cassiopeia A kalıntısında yıldızın son evresine ışık tuttu",
-      "summary": "NASA’nın James Webb Uzay Teleskobu, Cassiopeia A adlı süpernova kalıntısının yüksek çözünürlüklü, orta kızılötesi görüntüsünü elde etti.",
+      "headline": "Hubble, NGC 4394 galaksisinin yeni görüntüsünü yayımladı",
+      "summary": "NASA ve Avrupa Uzay Ajansı'nın Hubble Uzay Teleskobu, NGC 4394 galaksisinin yeni görüntüsünü yayımladı.",
+      "sources": 2
+    },
+    {
+      "category": "Spor",
+      "headline": "Galatasaray, Aston Villa'yı 1-0 yendi",
+      "summary": "UEFA Şampiyonlar Ligi'nin 5. haftasında Galatasaray, sahasında Aston Villa'yı 1-0 mağlup etti.",
       "sources": 2
     },
     {
       "category": "Teknoloji",
-      "headline": "Fiat Grizzly ve Fastback’in Türkiye fiyatları açıklandı",
-      "summary": "Fiat’ın Grizzly ve Fastback modellerinin Türkiye satış fiyatları açıklandı.",
+      "headline": "Google Arama, Drive ve Wallet verilerini AI Mode’a bağlıyor",
+      "summary": "Google, Arama’daki yapay zekâ destekli AI Mode özelliğini kişisel verilerle genişletiyor.",
+      "sources": 2
+    },
+    {
+      "category": "Sağlık",
+      "headline": "Böbrek nakli olan öğretmen, Öğretmenler Günü’nü kutluyor",
+      "summary": "Genetik böbrek yetmezliği yaşayan İngilizce öğretmeni Kezban Ezgi Algın, zorlu diyaliz sürecine rağmen öğrencilerinden kopmadı.",
       "sources": 2
     },
     {
       "category": "Teknoloji",
-      "headline": "Hepsiburada’da Efsane Cuma indirimleri başladı",
-      "summary": "Hepsiburada, Efsane Kasım’ın 11. yılına özel Efsane Cuma indirimlerini başlattı.",
+      "headline": "Jensen Huang hakkında viral video ve CEO’luğa dönüş haberi",
+      "summary": "Jensen Huang hakkında yayımlanan haberler farklı gelişmelere odaklanıyor.",
       "sources": 2
     },
     {
-      "category": "Dünya",
-      "headline": "Jensen Huang, Nvidia CEO’su olarak görevine döndü",
-      "summary": "Jensen Huang, Nvidia CEO’su olarak yeniden göreve döndü. Dönüşü, şirket hisselerinin günler önce elden çıkarılmasının ardından yapay zekâ piyasasındaki yükselişe yeni bir ivme kazandırdı.",
+      "category": "Bilim",
+      "headline": "TÜBİTAK, ilaç direncinin yayılımını öngörecek projeleri destekleyecek",
+      "summary": "TÜBİTAK, ilaçlara dirençli mikrop ve virüslerin yayılma riskini öngörmeye yönelik uluslararası projelere destek verecek.",
       "sources": 2
     },
     {
-      "category": "Dünya",
-      "headline": "COP31 iklim zirvesi anlaşmasız sona erdi",
-      "summary": "Türkiye’de düzenlenen COP31 iklim zirvesi, tarafların nihai bir anlaşmaya varamamasıyla sona erdi.",
+      "category": "Teknoloji",
+      "headline": "AB, Türkiye'den hibrit otomobil ithalatına kota getirdi",
+      "summary": "Avrupa Birliği, hibrit otomobil ithalatına getirdiği kota uygulamasına Türkiye’yi de dahil etti.",
       "sources": 2
     },
     {
-      "category": "Magazin",
-      "headline": "Meryem Uzerli, Koruncuk Vakfı’ndaki kız çocuklarını ziyaret etti",
-      "summary": "Oyuncu Meryem Uzerli, destek verdiği Koruncuk Vakfı’ndaki kız çocuklarıyla yeniden buluştu.",
-      "sources": 2
+      "category": "Kültür",
+      "headline": "Grand Theft Auto VI’de araç radyosu müzik keşfine açılıyor",
+      "summary": "Grand Theft Auto VI’de bir araca binmek, oyuncuları yalnızca yolculuğa çıkarmıyor.",
+      "sources": 1
     }
   ]
 }

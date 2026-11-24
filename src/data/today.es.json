@@ -9,12 +9,6 @@
       "sources": 3
     },
     {
-      "category": "Internacional",
-      "headline": "Francisco escribió que vio al diablo en varias ocasiones",
-      "summary": "En extractos de su diario, el papa Francisco escribió que vio al diablo 3 veces y que también vio «las puertas del infierno».",
-      "sources": 2
-    },
-    {
       "category": "Gente",
       "headline": "Un incendio afecta a la mansión de Will Smith en California",
       "summary": "Un nuevo incendio ha afectado a la mansión de California del actor Will Smith y su mujer, Jada Pinkett.",
@@ -57,15 +51,15 @@
       "sources": 2
     },
     {
-      "category": "Cultura",
-      "headline": "Paco Cerdà gana el Premio del Libro Europeo con ‘Presentes’",
-      "summary": "El escritor valenciano Paco Cerdà ha ganado el Premio del Libro Europeo con ‘Presentes’.",
-      "sources": 2
-    },
-    {
       "category": "Economía",
       "headline": "Moeve y World2Fly prueban en un vuelo una mezcla de combustibles sostenibles",
       "summary": "Moeve y World2Fly han operado un vuelo entre Madrid y Lisboa con una mezcla de combustible sintético renovable, combustible sostenible de origen biológico y queroseno convencional.",
+      "sources": 2
+    },
+    {
+      "category": "Internacional",
+      "headline": "Francisco escribió que vio al diablo en varias ocasiones",
+      "summary": "En extractos de su diario, el papa Francisco escribió que vio al diablo 3 veces y que también vio «las puertas del infierno».",
       "sources": 2
     },
     {
@@ -90,6 +84,12 @@
       "category": "Ciencia",
       "headline": "EPHX1, una enzima clave en el avance de la fibrosis hepática",
       "summary": "La enzima EPHX1 se perfila como un elemento clave en la progresión de la fibrosis hepática hacia la cirrosis.",
+      "sources": 1
+    },
+    {
+      "category": "Salud",
+      "headline": "EnVIHos duplica en un año las solicitudes de pruebas del VIH a domicilio",
+      "summary": "EnVIHos, un servicio gratuito de pruebas del VIH a domicilio, ha duplicado sus solicitudes en un año.",
       "sources": 1
     }
   ]

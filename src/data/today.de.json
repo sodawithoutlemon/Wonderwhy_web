@@ -27,9 +27,27 @@
       "sources": 2
     },
     {
+      "category": "Topthemen",
+      "headline": "Leipzig empfängt RC Lens in der Champions League",
+      "summary": "RB Leipzig empfängt in der Champions League den französischen Klub RC Lens.",
+      "sources": 2
+    },
+    {
       "category": "Technik",
       "headline": "Black-Friday-Woche bringt Rabatte auf Apple-Geräte",
       "summary": "Die Black-Friday-Woche hat begonnen. Auch für Nutzerinnen und Nutzer von iPhone, Mac und anderen Apple-Geräten gibt es reduzierte Angebote.",
+      "sources": 2
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Dortmund erkämpft sich 1:1 bei Arsenal",
+      "summary": "Borussia Dortmund hat in der Champions League bei Arsenal in London 1:1 gespielt.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Gukesh und Sindarov beginnen die Schach-WM mit Remis",
+      "summary": "Titelverteidiger Gukesh Dommaraju und sein Herausforderer Javokhir Sindarov haben die Schach-Weltmeisterschaft in Genf mit einem Remis begonnen.",
       "sources": 2
     },
     {
@@ -51,27 +69,15 @@
       "sources": 2
     },
     {
-      "category": "Leute",
-      "headline": "Barbara Eden hält sich mit Radfahren und Krafttraining fit",
-      "summary": "Barbara Eden ist 95 Jahre alt und weiterhin aktiv. Die Schauspielerin wurde in den 1960er-Jahren mit der Serie „Bezaubernde Jeannie“ weltbekannt.",
-      "sources": 2
-    },
-    {
       "category": "Sport",
       "headline": "UEFA-Vertreter lehnen Einsicht in FIFA-Akten ab",
       "summary": "Die europäischen Vertreter im FIFA-Council wollen die von der FIFA angebotenen Akten zum umstrittenen Investorendeal nicht einsehen.",
       "sources": 2
     },
     {
-      "category": "Topthemen",
-      "headline": "Ann-Katrin Berger wechselt von Gotham FC zu Union Berlin",
-      "summary": "Ann-Katrin Berger verlässt den US-Club Gotham FC und wechselt zu Union Berlin.",
-      "sources": 2
-    },
-    {
-      "category": "Topthemen",
-      "headline": "Warnstreiks in der Metall- und Elektroindustrie gehen weiter",
-      "summary": "In der Metall- und Elektroindustrie laufen weitere Warnstreiks.",
+      "category": "Leute",
+      "headline": "Dieter Nuhr sagt wegen Hodgkin-Lymphom alle Auftritte ab",
+      "summary": "Der Kabarettist Dieter Nuhr hat Krebs. Bei dem 66-Jährigen wurde ein Hodgkin-Lymphom festgestellt.",
       "sources": 2
     },
     {
@@ -81,15 +87,9 @@
       "sources": 2
     },
     {
-      "category": "Sport",
-      "headline": "EU-Kommission schlägt Verbot russischer Flaggen bei Sportevents vor",
-      "summary": "Russische Mannschaften und Einzelsportler sollen bei Wettkämpfen in der EU künftig nicht mehr unter ihrer Landesflagge antreten dürfen.",
-      "sources": 2
-    },
-    {
-      "category": "Gesundheit",
-      "headline": "Kürzungen bei Hilfsgeldern gefährden Fortschritte im Kampf gegen HIV",
-      "summary": "Im Kampf gegen HIV sind nach Angaben der Vereinten Nationen Fortschritte erzielt worden.",
+      "category": "Wirtschaft",
+      "headline": "GTA VI erreicht 39 Millionen Spieler auf PlayStation",
+      "summary": "Das lang erwartete Videospiel GTA VI hat auf PlayStation einen neuen Rekord erreicht: 39 Millionen Spieler.",
       "sources": 1
     }
   ]
