@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-25",
+  "day": "2026-11-26",
   "edition": "tr",
   "items": [
     {
       "category": "Gündem",
       "headline": "HSK kararnamesiyle 957 hâkim ve savcının görev yeri değişti",
-      "summary": "Hâkimler ve Savcılar Kurulu, mazeret kararnamesiyle 957 hâkim ve Cumhuriyet savcısının görev yerini değiştirdi.",
-      "sources": 4
+      "summary": "Hakimler ve Savcılar Kurulu, mazeret kararnamesiyle 957 hâkim ve Cumhuriyet savcısının görev yerini değiştirdi.",
+      "sources": 3
     },
     {
-      "category": "Gündem",
-      "headline": "Yargıtay üyeliğine 5 isim seçildi",
-      "summary": "Adalet Bakanı Akın Gürlek, Hâkimler ve Savcılar Kurulu’nun (HSK) Genel Kurulu toplantısında yapılan seçimlerde Yargıtay üyeliğine 5 ismin seçildiğini bildirdi.",
-      "sources": 4
-    },
-    {
-      "category": "Gündem",
-      "headline": "Valiler Kararnamesi yayımlandı: 41 ilin valisi değişti",
-      "summary": "Resmi Gazete’de yayımlanan Valiler Kararnamesi’yle 41 ilin valisi değişti.",
-      "sources": 4
+      "category": "Ekonomi",
+      "headline": "Avrupa ve Borsa İstanbul günü düşüşle tamamladı",
+      "summary": "Avrupa borsaları haftanın 3. işlem gününü düşüşle kapattı.",
+      "sources": 3
     },
     {
       "category": "Ekonomi",
       "headline": "Türk Eximbank 740 milyon dolarlık sendikasyon kredisi sağladı",
-      "summary": "Türk Eximbank, dolar, avro ve yuan cinsinden toplam 740 milyon dolarlık sendikasyon kredisi sağladı.",
+      "summary": "Türk Eximbank, 3 para biriminde toplam 740 milyon dolar tutarında sendikasyon kredisi sağladı.",
+      "sources": 3
+    },
+    {
+      "category": "Gündem",
+      "headline": "Erdoğan, Halife Hafter’i kabul etti",
+      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, Libya Ulusal Ordusu Genel Komutanı Halife Hafter’i Ankara’da kabul etti.",
       "sources": 3
     },
     {
       "category": "Ekonomi",
-      "headline": "İran’da serbest piyasada dolar 284 bin tümeni gördü",
-      "summary": "İran’da doların serbest piyasadaki satış kuru, ABD yaptırımları sonrasında tarihinin en yüksek seviyesine çıktı.",
+      "headline": "Küresel piyasalar ABD verilerini bekliyor",
+      "summary": "Küresel piyasalarda bugün açıklanacak ABD verileri izleniyor.",
       "sources": 3
     },
     {
-      "category": "Ekonomi",
-      "headline": "Küresel piyasalar ABD verilerine odaklandı",
-      "summary": "Küresel piyasalarda bugün ABD’den gelecek büyüme ve Kişisel Tüketim Harcamaları verileri izleniyor.",
-      "sources": 3
+      "category": "Bilim",
+      "headline": "Hubble, Roman teleskobu için Samanyolu’nu inceliyor",
+      "summary": "NASA’nın Hubble Uzay Teleskobu, Samanyolu’nun merkezine yakın yıldızlarla dolu bir bölgeyi görüntüledi.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Samsung Display, ams OSRAM’ın yüzde 9,1 hissesini alıyor",
+      "summary": "Samsung Display, Avusturyalı ams OSRAM’ın yaklaşık yüzde 9,1 hissesini 210 milyon euro karşılığında satın alıyor.",
+      "sources": 2
     },
     {
       "category": "Magazin",
-      "headline": "Wilma Elles, James Bond kızı olmayı istediğini söyledi",
-      "summary": "Oyuncu Wilma Elles, yeni James Bond seçimiyle ilgili soruya esprili bir yanıt verdi.",
+      "headline": "Ufuk Beydemir ve Sharon Kovacs’ın kızları dünyaya geldi",
+      "summary": "Şarkıcı Ufuk Beydemir ve Hollandalı sevgilisi Sharon Kovacs, kız bebeklerini kucaklarına aldı.",
       "sources": 2
+    },
+    {
+      "category": "Sağlık",
+      "headline": "Kezban Ezgi Algın, böbrek naklinin ardından Öğretmenler Günü’nü kutluyor",
+      "summary": "Genetik böbrek yetmezliği yaşayan İngilizce öğretmeni Kezban Ezgi Algın, zorlu diyaliz sürecine rağmen öğrencilerinden kopmadı.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Amazon ve Meta, Muse’un alışveriş erişimini yeniden açmayı görüşüyor",
+      "summary": "Amazon ve Meta, yapay zekâ asistanı Muse’un Amazon’un çevrimiçi pazarında alışveriş yapmasına izin verecek olası bir anlaşmayı görüşüyor.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Vodafone ve İTÜ, ücretsiz Siber Güvenlik Akademisi’ni başlattı",
+      "summary": "Vodafone Business ve İTÜ, siber güvenlik alanında uzman yetiştirmek amacıyla ücretsiz çevrim içi bir akademi başlattı.",
+      "sources": 2
+    },
+    {
+      "category": "Dünya",
+      "headline": "Fatima Payman, Senato konuşmasını 6 aylık kızıyla yaptı",
+      "summary": "Avustralyalı senatör Fatima Payman, Senatoda konuşma yaparken 6 aylık kızı Aliyah’ı kucağında tuttu.",
+      "sources": 1
     },
     {
       "category": "Siyaset",
-      "headline": "Galatasaray ile Aston Villa, Şampiyonlar Ligi'nin 5. haftasında karşı karşıya",
-      "summary": "Galatasaray, UEFA Şampiyonlar Ligi'nin 5. haftasında İngiltere temsilcisi Aston Villa'yı sahasında ağırlıyor.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "Amazon ve Meta, Muse’un alışveriş engelini kaldırmayı görüşüyor",
-      "summary": "Amazon ve Meta, Meta’nın yapay zekâ ajanı Muse’un Amazon pazar yerinde alışveriş yapmasının önünü açabilecek bir anlaşmayı görüşüyor.",
-      "sources": 2
-    },
-    {
-      "category": "Bilim",
-      "headline": "Hubble, NGC 4394 galaksisinin yeni görüntüsünü yayımladı",
-      "summary": "NASA ve Avrupa Uzay Ajansı'nın Hubble Uzay Teleskobu, NGC 4394 galaksisinin yeni görüntüsünü yayımladı.",
-      "sources": 2
-    },
-    {
-      "category": "Spor",
-      "headline": "Galatasaray, Aston Villa'yı 1-0 yendi",
-      "summary": "UEFA Şampiyonlar Ligi'nin 5. haftasında Galatasaray, sahasında Aston Villa'yı 1-0 mağlup etti.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "Google Arama, Drive ve Wallet verilerini AI Mode’a bağlıyor",
-      "summary": "Google, Arama’daki yapay zekâ destekli AI Mode özelliğini kişisel verilerle genişletiyor.",
-      "sources": 2
-    },
-    {
-      "category": "Bilim",
-      "headline": "TÜBİTAK, ilaç direncinin yayılımını öngörecek projeleri destekleyecek",
-      "summary": "TÜBİTAK, ilaçlara dirençli mikrop ve virüslerin yayılma riskini öngörmeye yönelik uluslararası projelere destek verecek.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "Jensen Huang hakkında viral video ve CEO’luğa dönüş haberi",
-      "summary": "Jensen Huang hakkında yayımlanan haberler farklı gelişmelere odaklanıyor.",
-      "sources": 2
+      "headline": "Davut Gül’den sokakta kalanlar için 112 çağrısı",
+      "summary": "İstanbul Valisi Davut Gül, gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini söyledi.",
+      "sources": 1
     },
     {
       "category": "Kültür",
-      "headline": "Jon Fosse’nin Vaim Hotel’i kimlik ve tutsaklık üzerine tekinsiz bir roman",
-      "summary": "Nobel ödüllü Norveçli yazar Jon Fosse’nin Vaim Hotel adlı romanı, Vaim üçlemesinin ikinci kitabı.",
+      "headline": "GTA VI albümü, yıldızlarla dolu yeni şarkılarıyla öne çıkıyor",
+      "summary": "Grand Theft Auto VI için hazırlanan albüm, oyundan bağımsız dinlenebilecek yeni şarkıları bir araya getiriyor.",
+      "sources": 1
+    },
+    {
+      "category": "Kültür",
+      "headline": "Gençler Macy's Şükran Günü geçit töreninde sahne alıyor",
+      "summary": "Macy's, ünlü Şükran Günü geçit töreninin 100. yıl dönümünü kutluyor.",
       "sources": 1
     }
   ]

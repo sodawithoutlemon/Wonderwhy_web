@@ -3,6 +3,18 @@
   "edition": "de",
   "items": [
     {
+      "category": "Topthemen",
+      "headline": "Andreas Wolff verlässt den THW Kiel",
+      "summary": "Nationaltorhüter Andreas Wolff verlässt den THW Kiel. Mit 35 Jahren sucht er noch einmal eine neue Herausforderung.",
+      "sources": 3
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Bayern verliert 1:2 in Lille und kassiert erste Saisonniederlage",
+      "summary": "Der FC Bayern hat in der Champions League beim OSC Lille 1:2 verloren.",
+      "sources": 3
+    },
+    {
       "category": "Sport",
       "headline": "Gukesh und Sindarow eröffnen Schach-WM mit Remis",
       "summary": "Die erste Partie der Schach-Weltmeisterschaft in Genf ist ohne Sieger zu Ende gegangen.",
@@ -16,20 +28,20 @@
     },
     {
       "category": "Topthemen",
-      "headline": "Deutsche Bahn will bald Flixtrain-Tickets verkaufen",
-      "summary": "Die Deutsche Bahn will künftig auch Tickets für Flixtrain-Züge über ihre Internetseite und App anbieten.",
+      "headline": "Stuttgart verliert 0:2 bei Inter Mailand",
+      "summary": "Der VfB Stuttgart hat in der Champions League 0:2 bei Inter Mailand verloren.",
       "sources": 3
+    },
+    {
+      "category": "Sport",
+      "headline": "Liverpool gewinnt in Brügge, Wirtz trifft erneut",
+      "summary": "Der FC Liverpool hat in der Champions League beim FC Brügge klar gewonnen.",
+      "sources": 2
     },
     {
       "category": "Technik",
       "headline": "Anthropic-Aktie fällt nach Börsenstart unter den Ausgabepreis",
       "summary": "Anthropic startete mit einem deutlichen Kurssprung an der Börse.",
-      "sources": 2
-    },
-    {
-      "category": "Topthemen",
-      "headline": "USA kündigen neue Zölle gegen EU und China an",
-      "summary": "Die USA haben neue Zölle auf Waren aus der EU und China angekündigt.",
       "sources": 2
     },
     {
@@ -39,33 +51,27 @@
       "sources": 2
     },
     {
-      "category": "Topthemen",
-      "headline": "Jennifer Barreto ist Miss Universe 2026",
-      "summary": "Jennifer Barreto hat die Wahl zur Miss Universe 2026 gewonnen.",
-      "sources": 2
-    },
-    {
-      "category": "Politik",
-      "headline": "Linken-Abgeordnete blockieren Zugang zu Veranstaltung mit Ex-Mossad-Chef",
-      "summary": "Zwei Abgeordnete der Linken haben im Bundestag den Zugang zu einer Veranstaltung mit dem früheren Mossad-Chef David Barnea blockiert.",
-      "sources": 2
-    },
-    {
       "category": "Technik",
       "headline": "Microsoft ruft nach Cloud-Ausfall „Code Red“ aus",
       "summary": "Nach einer weltweiten Störung seiner Clouddienste hat Microsoft die höchste Alarmstufe „Code Red“ ausgerufen.",
       "sources": 2
     },
     {
-      "category": "Sport",
-      "headline": "Real Madrid besiegt PSV Eindhoven in der Champions League",
-      "summary": "Real Madrid hat in der Champions League gegen PSV Eindhoven gewonnen und damit seine starke Serie fortgesetzt.",
+      "category": "Leute",
+      "headline": "Uhr fällt bei „Bares für Rares“ zu Boden und zerbricht",
+      "summary": "Bei „Bares für Rares“ erlebt eine Verkäuferin gleich 2 Rückschläge.",
+      "sources": 2
+    },
+    {
+      "category": "Politik",
+      "headline": "Rutte lobt Trumps Umgang mit Putin",
+      "summary": "Nato-Generalsekretär Mark Rutte lobt Donald Trumps Umgang mit Wladimir Putin.",
       "sources": 2
     },
     {
       "category": "Sport",
-      "headline": "Federica Brignone beendet wegen Schmerzen ihre Karriere",
-      "summary": "Die italienische Skirennläuferin Federica Brignone hat ihr Karriereende erklärt.",
+      "headline": "Real Madrid besiegt PSV Eindhoven in der Champions League",
+      "summary": "Real Madrid hat in der Champions League gegen PSV Eindhoven gewonnen und damit seine starke Serie fortgesetzt.",
       "sources": 2
     },
     {
@@ -76,20 +82,14 @@
     },
     {
       "category": "Leute",
-      "headline": "Veruschka von Lehndorff mit 87 Jahren gestorben",
-      "summary": "Veruschka Gräfin von Lehndorff ist im Alter von 87 Jahren gestorben.",
+      "headline": "Eric Stehfest und Sarah Scheil erwarten ihr erstes gemeinsames Kind",
+      "summary": "Eric Stehfest und seine Partnerin Sarah Scheil erwarten ihr erstes gemeinsames Kind.",
       "sources": 2
     },
     {
       "category": "Kultur",
       "headline": "Jensen Huang und die Glaubwürdigkeit der KI-Wette",
       "summary": "Jensen Huang, Chef des Chipkonzerns Nvidia, steht im Zentrum der Erwartungen an künstliche Intelligenz.",
-      "sources": 2
-    },
-    {
-      "category": "Leute",
-      "headline": "Friedrich Merz würdigt Heino bei Gala der Mittelstands- und Wirtschaftsunion",
-      "summary": "Friedrich Merz hat sich als langjähriger Fan von Heino zu erkennen gegeben.",
       "sources": 2
     }
   ]

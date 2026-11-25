@@ -4,8 +4,8 @@
   "items": [
     {
       "category": "Entertainment",
-      "headline": "Gordon Ramsay to host ‘Top Gear’ as show plans 2028 return",
-      "summary": "Gordon Ramsay will host the BBC’s “Top Gear” when the motoring show returns in 2028.",
+      "headline": "Netflix cancels Will Ferrell golf comedy ‘The Hawk’ after 1 season",
+      "summary": "Netflix has canceled “The Hawk,” a golf comedy starring Will Ferrell, after 1 season.",
       "sources": 3
     },
     {
@@ -33,21 +33,39 @@
       "sources": 2
     },
     {
-      "category": "Sports",
-      "headline": "Jannik Sinner has minor knee surgery",
-      "summary": "Jannik Sinner has had minor surgery on his knee. The world number two chose the procedure after months of rehabilitation failed to resolve an injury to his right knee.",
+      "category": "World",
+      "headline": "Canadian astronaut Joshua Kutryk welcomes third child while aboard the ISS",
+      "summary": "Canadian astronaut Joshua Kutryk’s wife gave birth to the couple’s third child while he was aboard the International Space Station.",
       "sources": 2
     },
     {
-      "category": "Technology",
-      "headline": "Amazon and Meta discuss ending Muse shopping block",
-      "summary": "Amazon and Meta are reportedly discussing a deal that would let Meta’s Muse AI agent shop on Amazon’s marketplace.",
+      "category": "Sports",
+      "headline": "Aaron Rodgers says his time in Pittsburgh is over after being benched",
+      "summary": "The Steelers are benching Aaron Rodgers for their Black Friday home game against the Denver Broncos.",
       "sources": 2
     },
     {
       "category": "Science",
       "headline": "Hubble captures barred galaxy NGC 4394",
       "summary": "A new image from the Hubble Space Telescope puts the galaxy NGC 4394 in focus, highlighting its distinct central bar.",
+      "sources": 2
+    },
+    {
+      "category": "Science",
+      "headline": "Hubble surveys the Milky Way’s crowded center ahead of Roman",
+      "summary": "NASA’s Hubble Space Telescope has captured a colorful field of stars in the Milky Way, looking toward the galaxy’s central bulge.",
+      "sources": 2
+    },
+    {
+      "category": "Politics",
+      "headline": "Vance says Huang is not under investigation",
+      "summary": "Vice President JD Vance said Attorney General Todd Blanche assured him that Nvidia CEO Jensen Huang was not under investigation.",
+      "sources": 2
+    },
+    {
+      "category": "Technology",
+      "headline": "Amazon and Meta discuss ending Muse shopping block",
+      "summary": "Amazon and Meta are reportedly discussing a deal that would let Meta’s Muse AI agent shop on Amazon’s marketplace.",
       "sources": 2
     },
     {
@@ -63,12 +81,6 @@
       "sources": 2
     },
     {
-      "category": "National",
-      "headline": "Inflation rose to 3.8% in October as gas prices cooled",
-      "summary": "Consumer prices rose 3. 8% in October compared with a year earlier, the Commerce Department said Wednesday.",
-      "sources": 2
-    },
-    {
       "category": "Technology",
       "headline": "Meta brings its Muse AI assistant to Instagram DMs",
       "summary": "Meta is integrating its Muse AI assistant into Instagram direct messages.",
@@ -78,18 +90,6 @@
       "category": "Politics",
       "headline": "Trump pardons Thanksgiving turkeys Freedom and Feathers",
       "summary": "President Trump pardoned 2 turkeys, Freedom and Feathers, as part of the annual Thanksgiving tradition.",
-      "sources": 2
-    },
-    {
-      "category": "Politics",
-      "headline": "Trump awards Rudy Giuliani the Presidential Medal of Freedom",
-      "summary": "President Trump awarded former New York City Mayor Rudy Giuliani the Presidential Medal of Freedom in the Oval Office.",
-      "sources": 2
-    },
-    {
-      "category": "World",
-      "headline": "Pope Francis’s diary describes visions of the devil and a spiritual crisis",
-      "summary": "Published extracts from Pope Francis’s diary say he saw the devil 3 times.",
       "sources": 2
     }
   ]

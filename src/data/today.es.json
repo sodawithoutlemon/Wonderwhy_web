@@ -16,6 +16,18 @@
     },
     {
       "category": "Deportes",
+      "headline": "Alonso habla de las dudas que le plantea la paternidad",
+      "summary": "Fernando Alonso ha hablado de cómo vive la paternidad mientras continúa compitiendo en Fórmula 1.",
+      "sources": 2
+    },
+    {
+      "category": "Nacional",
+      "headline": "Sánchez defiende incentivos fiscales para propietarios frente al enfoque punitivo de sus socios",
+      "summary": "Pedro Sánchez ha defendido ofrecer incentivos fiscales a los propietarios de viviendas, frente al enfoque que califica de punitivo de sus socios de izquierda.",
+      "sources": 2
+    },
+    {
+      "category": "Deportes",
       "headline": "Miguel Ángel Gil Marín dimite como vicepresidente de LaLiga",
       "summary": "Miguel Ángel Gil Marín ha dimitido como vicepresidente de LaLiga.",
       "sources": 2
@@ -24,12 +36,6 @@
       "category": "Deportes",
       "headline": "Mourinho destaca la reacción del Madrid y bromea sobre lo que ocurre en el vestuario",
       "summary": "José Mourinho celebró la reacción del Real Madrid tras llegar al descanso perdiendo 0-1 ante el PSV.",
-      "sources": 2
-    },
-    {
-      "category": "Deportes",
-      "headline": "Trinity Rodman se pierde el clasificatorio para el Mundial por una lesión en el hombro",
-      "summary": "Trinity Rodman no estará con Estados Unidos en el partido clasificatorio para el Mundial de 2027 de este sábado, en Texas, ante El Salvador.",
       "sources": 2
     },
     {
@@ -69,6 +75,12 @@
       "sources": 1
     },
     {
+      "category": "Salud",
+      "headline": "El ayuno en días alternos podría favorecer la memoria",
+      "summary": "Un estudio español relaciona el ayuno en días alternos con una mejora de la memoria.",
+      "sources": 1
+    },
+    {
       "category": "Política",
       "headline": "Excavaciones en Iznatoraf revelan un poblado de más de 4.000 años",
       "summary": "Las obras para construir un mirador en Iznatoraf, Jaén, han sacado a la luz restos arqueológicos de distintas épocas.",
@@ -78,18 +90,6 @@
       "category": "Política",
       "headline": "La subasta de capones de Cascajares recauda 140.930 euros para Nuevo Futuro",
       "summary": "La Fundación Cascajares recaudó 140. 930 euros en la XXVII Subasta Benéfica de Capones, celebrada en el Hotel Palace de Madrid a beneficio de la Asociación Nuevo Futuro.",
-      "sources": 1
-    },
-    {
-      "category": "Ciencia",
-      "headline": "Un estudio explora biomarcadores inmunológicos para personalizar el tratamiento de la sepsis",
-      "summary": "El Hospital General Universitario Santa Lucía de Cartagena participa en un estudio multicéntrico de investigación clínica sobre la sepsis.",
-      "sources": 1
-    },
-    {
-      "category": "Política",
-      "headline": "La falta de recursos y la presión privada ponen en riesgo el Estado de bienestar",
-      "summary": "La sanidad, la educación y los servicios sociales afrontan una crisis que amenaza con hacerse permanente.",
       "sources": 1
     }
   ]
