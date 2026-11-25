@@ -1,96 +1,96 @@
 {
-  "day": "2026-11-24",
+  "day": "2026-11-25",
   "edition": "de",
   "items": [
     {
       "category": "Sport",
-      "headline": "Schach-WM in Genf: Sindarov gilt gegen Gukesh als Favorit",
-      "summary": "In Genf beginnt heute die Schach-Weltmeisterschaft zwischen Javokhir Sindarov und Dommaraju Gukesh.",
-      "sources": 2
-    },
-    {
-      "category": "Technik",
-      "headline": "Jensen Huang kehrt als Nvidia-Chef zurück, Aktie steigt kräftig",
-      "summary": "Jensen Huang ist als Chef des Chipkonzerns Nvidia zurückgekehrt.",
-      "sources": 2
-    },
-    {
-      "category": "Leute",
-      "headline": "Bahar Kizil legt aus gesundheitlichen Gründen eine Musikpause ein",
-      "summary": "Vor 20 Jahren gewann Bahar Kizil gemeinsam mit Mandy Capristo und Senna Gammour die Castingshow „Popstars“.",
-      "sources": 2
-    },
-    {
-      "category": "Topthemen",
-      "headline": "Ifo-Geschäftsklima auf höchstem Stand seit Frühjahr 2023",
-      "summary": "Das Ifo-Geschäftsklima ist auf den höchsten Stand seit dem Frühjahr 2023 gestiegen.",
-      "sources": 2
-    },
-    {
-      "category": "Topthemen",
-      "headline": "Leipzig empfängt RC Lens in der Champions League",
-      "summary": "RB Leipzig empfängt in der Champions League den französischen Klub RC Lens.",
-      "sources": 2
-    },
-    {
-      "category": "Technik",
-      "headline": "Black-Friday-Woche bringt Rabatte auf Apple-Geräte",
-      "summary": "Die Black-Friday-Woche hat begonnen. Auch für Nutzerinnen und Nutzer von iPhone, Mac und anderen Apple-Geräten gibt es reduzierte Angebote.",
-      "sources": 2
-    },
-    {
-      "category": "Topthemen",
-      "headline": "Dortmund erkämpft sich 1:1 bei Arsenal",
-      "summary": "Borussia Dortmund hat in der Champions League bei Arsenal in London 1:1 gespielt.",
-      "sources": 2
-    },
-    {
-      "category": "Sport",
-      "headline": "Gukesh und Sindarov beginnen die Schach-WM mit Remis",
-      "summary": "Titelverteidiger Gukesh Dommaraju und sein Herausforderer Javokhir Sindarov haben die Schach-Weltmeisterschaft in Genf mit einem Remis begonnen.",
-      "sources": 2
+      "headline": "Gukesh und Sindarow eröffnen Schach-WM mit Remis",
+      "summary": "Die erste Partie der Schach-Weltmeisterschaft in Genf ist ohne Sieger zu Ende gegangen.",
+      "sources": 3
     },
     {
       "category": "Wirtschaft",
-      "headline": "Stimmung in deutschen Unternehmen steigt weiter",
-      "summary": "Die Stimmung in der deutschen Wirtschaft hat sich im November zum 7.",
+      "headline": "Ifo-Geschäftsklima steigt auf höchsten Stand seit Frühjahr 2023",
+      "summary": "Die Stimmung in der deutschen Wirtschaft hat sich im November zum siebten Monat in Folge verbessert.",
+      "sources": 3
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Deutsche Bahn will bald Flixtrain-Tickets verkaufen",
+      "summary": "Die Deutsche Bahn will künftig auch Tickets für Flixtrain-Züge über ihre Internetseite und App anbieten.",
+      "sources": 3
+    },
+    {
+      "category": "Technik",
+      "headline": "Anthropic-Aktie fällt nach Börsenstart unter den Ausgabepreis",
+      "summary": "Anthropic startete mit einem deutlichen Kurssprung an der Börse.",
       "sources": 2
     },
     {
-      "category": "Leute",
-      "headline": "Patrice Aminati trauert um 3 Freundinnen mit Krebs",
-      "summary": "Patrice Aminati trauert um 3 Frauen, die ihr besonders nahestanden.",
+      "category": "Topthemen",
+      "headline": "USA kündigen neue Zölle gegen EU und China an",
+      "summary": "Die USA haben neue Zölle auf Waren aus der EU und China angekündigt.",
       "sources": 2
     },
     {
       "category": "Technik",
-      "headline": "NRW-Polizei will Palantir durch deutsche Software ersetzen",
-      "summary": "Die Polizei in Nordrhein-Westfalen will den US-Dienst Palantir durch deutsche Software ersetzen.",
+      "headline": "Cyberangriff soll Analysesystem der CIA getroffen haben",
+      "summary": "Angreifer sollen Zugriff auf ein Analysesystem der CIA erlangt haben.",
+      "sources": 2
+    },
+    {
+      "category": "Topthemen",
+      "headline": "Jennifer Barreto ist Miss Universe 2026",
+      "summary": "Jennifer Barreto hat die Wahl zur Miss Universe 2026 gewonnen.",
+      "sources": 2
+    },
+    {
+      "category": "Politik",
+      "headline": "Linken-Abgeordnete blockieren Zugang zu Veranstaltung mit Ex-Mossad-Chef",
+      "summary": "Zwei Abgeordnete der Linken haben im Bundestag den Zugang zu einer Veranstaltung mit dem früheren Mossad-Chef David Barnea blockiert.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "Microsoft ruft nach Cloud-Ausfall „Code Red“ aus",
+      "summary": "Nach einer weltweiten Störung seiner Clouddienste hat Microsoft die höchste Alarmstufe „Code Red“ ausgerufen.",
       "sources": 2
     },
     {
       "category": "Sport",
-      "headline": "UEFA-Vertreter lehnen Einsicht in FIFA-Akten ab",
-      "summary": "Die europäischen Vertreter im FIFA-Council wollen die von der FIFA angebotenen Akten zum umstrittenen Investorendeal nicht einsehen.",
+      "headline": "Real Madrid besiegt PSV Eindhoven in der Champions League",
+      "summary": "Real Madrid hat in der Champions League gegen PSV Eindhoven gewonnen und damit seine starke Serie fortgesetzt.",
+      "sources": 2
+    },
+    {
+      "category": "Sport",
+      "headline": "Federica Brignone beendet wegen Schmerzen ihre Karriere",
+      "summary": "Die italienische Skirennläuferin Federica Brignone hat ihr Karriereende erklärt.",
+      "sources": 2
+    },
+    {
+      "category": "Wissen",
+      "headline": "China plant erstmals einen ausländischen Raumfahrer auf Tiangong",
+      "summary": "China will mit der Mission Shenzhou 24 erstmals einen Raumfahrer aus Pakistan zu seiner Raumstation Tiangong schicken.",
       "sources": 2
     },
     {
       "category": "Leute",
-      "headline": "Dieter Nuhr sagt wegen Hodgkin-Lymphom alle Auftritte ab",
-      "summary": "Der Kabarettist Dieter Nuhr hat Krebs. Bei dem 66-Jährigen wurde ein Hodgkin-Lymphom festgestellt.",
+      "headline": "Veruschka von Lehndorff mit 87 Jahren gestorben",
+      "summary": "Veruschka Gräfin von Lehndorff ist im Alter von 87 Jahren gestorben.",
       "sources": 2
     },
     {
       "category": "Kultur",
-      "headline": "Jensen Huang und die Wette auf künstliche Intelligenz",
-      "summary": "Jensen Huang, Chef des Chipkonzerns Nvidia, steht im Zentrum der großen Wette auf künstliche Intelligenz.",
+      "headline": "Jensen Huang und die Glaubwürdigkeit der KI-Wette",
+      "summary": "Jensen Huang, Chef des Chipkonzerns Nvidia, steht im Zentrum der Erwartungen an künstliche Intelligenz.",
       "sources": 2
     },
     {
-      "category": "Wirtschaft",
-      "headline": "GTA VI erreicht 39 Millionen Spieler auf PlayStation",
-      "summary": "Das lang erwartete Videospiel GTA VI hat auf PlayStation einen neuen Rekord erreicht: 39 Millionen Spieler.",
-      "sources": 1
+      "category": "Leute",
+      "headline": "Friedrich Merz würdigt Heino bei Gala der Mittelstands- und Wirtschaftsunion",
+      "summary": "Friedrich Merz hat sich als langjähriger Fan von Heino zu erkennen gegeben.",
+      "sources": 2
     }
   ]
 }

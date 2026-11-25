@@ -4,20 +4,26 @@
   "items": [
     {
       "category": "Gündem",
+      "headline": "HSK kararnamesiyle 957 hâkim ve savcının görev yeri değişti",
+      "summary": "Hâkimler ve Savcılar Kurulu, mazeret kararnamesiyle 957 hâkim ve Cumhuriyet savcısının görev yerini değiştirdi.",
+      "sources": 4
+    },
+    {
+      "category": "Gündem",
+      "headline": "Yargıtay üyeliğine 5 isim seçildi",
+      "summary": "Adalet Bakanı Akın Gürlek, Hâkimler ve Savcılar Kurulu’nun (HSK) Genel Kurulu toplantısında yapılan seçimlerde Yargıtay üyeliğine 5 ismin seçildiğini bildirdi.",
+      "sources": 4
+    },
+    {
+      "category": "Gündem",
       "headline": "Valiler Kararnamesi yayımlandı: 41 ilin valisi değişti",
       "summary": "Resmi Gazete’de yayımlanan Valiler Kararnamesi’yle 41 ilin valisi değişti.",
       "sources": 4
     },
     {
       "category": "Ekonomi",
-      "headline": "HGS'deki usulsüz tahsilatlar iade edilecek",
-      "summary": "Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, Hızlı Geçiş Sistemi'nde usulüne uygun yapılmayan ödemelerin vatandaşlara iade edileceğini açıkladı.",
-      "sources": 3
-    },
-    {
-      "category": "Gündem",
-      "headline": "Hayati Yazıcı, AK Parti’deki görevlerinden istifa etti",
-      "summary": "AK Parti’nin kurucu isimlerinden Hayati Yazıcı, partideki görevlerinden istifa ettiğini açıkladı.",
+      "headline": "Türk Eximbank 740 milyon dolarlık sendikasyon kredisi sağladı",
+      "summary": "Türk Eximbank, dolar, avro ve yuan cinsinden toplam 740 milyon dolarlık sendikasyon kredisi sağladı.",
       "sources": 3
     },
     {
@@ -28,20 +34,26 @@
     },
     {
       "category": "Ekonomi",
-      "headline": "BIST 100 günü yüzde 1,25 düşüşle tamamladı",
-      "summary": "Borsa İstanbul'da BIST 100 endeksi günü yüzde 1,25 düşüşle tamamladı.",
+      "headline": "Küresel piyasalar ABD verilerine odaklandı",
+      "summary": "Küresel piyasalarda bugün ABD’den gelecek büyüme ve Kişisel Tüketim Harcamaları verileri izleniyor.",
       "sources": 3
     },
     {
-      "category": "Gündem",
-      "headline": "Erdoğan: 15 bin öğretmen alımının duyurusu bu hafta yapılacak",
-      "summary": "Cumhurbaşkanı Recep Tayyip Erdoğan, 2026 Akademi Giriş Sınavı sonuçlarına göre 15 bin öğretmen adayı alınacağını açıkladı.",
-      "sources": 3
+      "category": "Magazin",
+      "headline": "Wilma Elles, James Bond kızı olmayı istediğini söyledi",
+      "summary": "Oyuncu Wilma Elles, yeni James Bond seçimiyle ilgili soruya esprili bir yanıt verdi.",
+      "sources": 2
     },
     {
       "category": "Siyaset",
       "headline": "Galatasaray ile Aston Villa, Şampiyonlar Ligi'nin 5. haftasında karşı karşıya",
       "summary": "Galatasaray, UEFA Şampiyonlar Ligi'nin 5. haftasında İngiltere temsilcisi Aston Villa'yı sahasında ağırlıyor.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
+      "headline": "Amazon ve Meta, Muse’un alışveriş engelini kaldırmayı görüşüyor",
+      "summary": "Amazon ve Meta, Meta’nın yapay zekâ ajanı Muse’un Amazon pazar yerinde alışveriş yapmasının önünü açabilecek bir anlaşmayı görüşüyor.",
       "sources": 2
     },
     {
@@ -63,9 +75,9 @@
       "sources": 2
     },
     {
-      "category": "Sağlık",
-      "headline": "Böbrek nakli olan öğretmen, Öğretmenler Günü’nü kutluyor",
-      "summary": "Genetik böbrek yetmezliği yaşayan İngilizce öğretmeni Kezban Ezgi Algın, zorlu diyaliz sürecine rağmen öğrencilerinden kopmadı.",
+      "category": "Bilim",
+      "headline": "TÜBİTAK, ilaç direncinin yayılımını öngörecek projeleri destekleyecek",
+      "summary": "TÜBİTAK, ilaçlara dirençli mikrop ve virüslerin yayılma riskini öngörmeye yönelik uluslararası projelere destek verecek.",
       "sources": 2
     },
     {
@@ -75,21 +87,9 @@
       "sources": 2
     },
     {
-      "category": "Bilim",
-      "headline": "TÜBİTAK, ilaç direncinin yayılımını öngörecek projeleri destekleyecek",
-      "summary": "TÜBİTAK, ilaçlara dirençli mikrop ve virüslerin yayılma riskini öngörmeye yönelik uluslararası projelere destek verecek.",
-      "sources": 2
-    },
-    {
-      "category": "Teknoloji",
-      "headline": "AB, Türkiye'den hibrit otomobil ithalatına kota getirdi",
-      "summary": "Avrupa Birliği, hibrit otomobil ithalatına getirdiği kota uygulamasına Türkiye’yi de dahil etti.",
-      "sources": 2
-    },
-    {
       "category": "Kültür",
-      "headline": "Grand Theft Auto VI’de araç radyosu müzik keşfine açılıyor",
-      "summary": "Grand Theft Auto VI’de bir araca binmek, oyuncuları yalnızca yolculuğa çıkarmıyor.",
+      "headline": "Jon Fosse’nin Vaim Hotel’i kimlik ve tutsaklık üzerine tekinsiz bir roman",
+      "summary": "Nobel ödüllü Norveçli yazar Jon Fosse’nin Vaim Hotel adlı romanı, Vaim üçlemesinin ikinci kitabı.",
       "sources": 1
     }
   ]

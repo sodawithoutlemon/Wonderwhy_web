@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-24",
+  "day": "2026-11-25",
   "edition": "en",
   "items": [
     {
       "category": "Entertainment",
-      "headline": "The Rings of Power renewed for Season 4",
-      "summary": "Amazon has renewed The Lord of the Rings: The Rings of Power for a fourth season.",
+      "headline": "Gordon Ramsay to host ‘Top Gear’ as show plans 2028 return",
+      "summary": "Gordon Ramsay will host the BBC’s “Top Gear” when the motoring show returns in 2028.",
       "sources": 3
     },
     {
       "category": "Entertainment",
-      "headline": "‘I See Buildings Fall Like Lightning’ leads BIFA craft winners",
-      "summary": "The British Independent Film Awards has announced winners in 10 craft categories for 2026.",
+      "headline": "Ava DuVernay to receive London Critics’ Circle’s first Laura Mulvey award",
+      "summary": "Ava DuVernay will receive the first Laura Mulvey Female Trailblazer Award at the 2027 London Critics’ Circle Film Awards.",
+      "sources": 3
+    },
+    {
+      "category": "Entertainment",
+      "headline": "Jenn Kuzmyk to leave Banff World Media Festival on Dec. 11",
+      "summary": "Jenn Kuzmyk will leave her post as executive director of the Banff World Media Festival on Dec.",
       "sources": 3
     },
     {
       "category": "Sports",
-      "headline": "Brandon Aiyuk is set to meet with the Commanders",
-      "summary": "Free-agent wide receiver Brandon Aiyuk is scheduled to meet with the Washington Commanders after his recent release from the San Francisco 49ers.",
-      "sources": 2
-    },
-    {
-      "category": "Technology",
-      "headline": "Tidal will ban AI-generated music starting December 9",
-      "summary": "Tidal will ban AI-generated music starting December 9. The company expects to remove about 29 million tracks from its service.",
-      "sources": 2
-    },
-    {
-      "category": "Science",
-      "headline": "Webb reveals clues in Cassiopeia A’s supernova remnant",
-      "summary": "NASA’s James Webb Space Telescope has captured a detailed view of Cassiopeia A, a remnant left by a massive star’s explosion.",
+      "headline": "Morgan says Wales must finish Nations Championship strongly",
+      "summary": "Jac Morgan says Wales have had a positive Nations Championship campaign, but the team still needs a strong finish.",
       "sources": 2
     },
     {
       "category": "Sports",
-      "headline": "Kevin de Bruyne returns to Manchester City after move to Napoli",
-      "summary": "Kevin de Bruyne is returning to Manchester City after joining Napoli last summer.",
-      "sources": 2
-    },
-    {
-      "category": "National",
-      "headline": "Nvidia restores Jensen Huang as CEO after 2 weeks",
-      "summary": "Nvidia has restored Jensen Huang as its chief executive, just 2 weeks after he resigned.",
-      "sources": 2
-    },
-    {
-      "category": "Technology",
-      "headline": "Apple renews Ted Lasso for Season 5",
-      "summary": "Apple has renewed Ted Lasso for a fifth season on Apple TV. The series had appeared to be ending after Season 3, making the renewal a return for a show many viewers thought was finished.",
+      "headline": "Lincoln sack head coaches Chris Cohen and Tom Shaw",
+      "summary": "Lincoln have sacked joint head coaches Chris Cohen and Tom Shaw, just 6 months after the pair took charge of the Championship side.",
       "sources": 2
     },
     {
       "category": "Sports",
-      "headline": "Gloucestershire to become Bristol Lions for T20 Blast",
-      "summary": "Gloucestershire will compete as the Bristol Lions in the T20 Blast starting with the 2027 season.",
-      "sources": 2
-    },
-    {
-      "category": "Science",
-      "headline": "Hubble shows barred galaxy NGC 4394",
-      "summary": "NASA and ESA’s Hubble Space Telescope has released a new view of NGC 4394, a bright galaxy with a distinct bar.",
-      "sources": 2
-    },
-    {
-      "category": "World",
-      "headline": "India’s Cockroach movement leader says he was stopped from flying to UK",
-      "summary": "Saurav Das, a leader of India’s youth-led Cockroach movement, says immigration officials stopped him from boarding a flight from Delhi to the UK.",
+      "headline": "Jannik Sinner has minor knee surgery",
+      "summary": "Jannik Sinner has had minor surgery on his knee. The world number two chose the procedure after months of rehabilitation failed to resolve an injury to his right knee.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Uber, Nuro, and Lucid begin driverless robotaxi testing in the Bay Area",
-      "summary": "Uber, Nuro, and Lucid have begun testing fully driverless robotaxis on public roads in the San Francisco Bay Area.",
+      "headline": "Amazon and Meta discuss ending Muse shopping block",
+      "summary": "Amazon and Meta are reportedly discussing a deal that would let Meta’s Muse AI agent shop on Amazon’s marketplace.",
       "sources": 2
     },
     {
-      "category": "Entertainment",
-      "headline": "Disney orders an Aquamarine series",
-      "summary": "Disney has ordered a live-action series inspired by the 2006 film Aquamarine.",
+      "category": "Science",
+      "headline": "Hubble captures barred galaxy NGC 4394",
+      "summary": "A new image from the Hubble Space Telescope puts the galaxy NGC 4394 in focus, highlighting its distinct central bar.",
       "sources": 2
     },
     {
       "category": "Politics",
-      "headline": "Trump says he persuaded Nvidia’s board to reinstate Jensen Huang",
-      "summary": "Jensen Huang returned as Nvidia’s CEO on Monday, after the company’s board changed its mind within days.",
+      "headline": "Trump held millions in Nvidia stock as he pushed for Jensen Huang’s reinstatement",
+      "summary": "Financial disclosure documents show President Trump held tens of millions of dollars in Nvidia shares while pressing for the reinstatement of the company’s chief executive, Jensen Huang.",
+      "sources": 2
+    },
+    {
+      "category": "World",
+      "headline": "China launches Shenzhou-24 with first foreign astronaut aboard",
+      "summary": "China has launched the Shenzhou-24 spacecraft with 3 astronauts aboard.",
       "sources": 2
     },
     {
       "category": "National",
-      "headline": "U.S.-led group to host 2031 Women’s World Cup",
-      "summary": "FIFA has confirmed a United States-led bid to host the 2031 Women’s World Cup.",
+      "headline": "Inflation rose to 3.8% in October as gas prices cooled",
+      "summary": "Consumer prices rose 3. 8% in October compared with a year earlier, the Commerce Department said Wednesday.",
+      "sources": 2
+    },
+    {
+      "category": "Technology",
+      "headline": "Meta brings its Muse AI assistant to Instagram DMs",
+      "summary": "Meta is integrating its Muse AI assistant into Instagram direct messages.",
+      "sources": 2
+    },
+    {
+      "category": "Politics",
+      "headline": "Trump pardons Thanksgiving turkeys Freedom and Feathers",
+      "summary": "President Trump pardoned 2 turkeys, Freedom and Feathers, as part of the annual Thanksgiving tradition.",
+      "sources": 2
+    },
+    {
+      "category": "Politics",
+      "headline": "Trump awards Rudy Giuliani the Presidential Medal of Freedom",
+      "summary": "President Trump awarded former New York City Mayor Rudy Giuliani the Presidential Medal of Freedom in the Oval Office.",
+      "sources": 2
+    },
+    {
+      "category": "World",
+      "headline": "Pope Francis’s diary describes visions of the devil and a spiritual crisis",
+      "summary": "Published extracts from Pope Francis’s diary say he saw the devil 3 times.",
       "sources": 2
     }
   ]

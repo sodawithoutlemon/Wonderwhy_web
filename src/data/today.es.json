@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-24",
+  "day": "2026-11-25",
   "edition": "es",
   "items": [
     {
-      "category": "Deportes",
-      "headline": "Ferran Torres compra las oficinas del Valencia por cerca de 7 millones de euros",
-      "summary": "Ferran Torres, delantero valenciano del PSG, ha comprado las oficinas del Valencia junto a Mestalla por una cantidad cercana a los 7 millones de euros.",
+      "category": "Economía",
+      "headline": "El Corte Inglés aprueba un plan estratégico de 5.000 millones hasta 2032",
+      "summary": "El Corte Inglés ha aprobado un plan estratégico con una inversión de hasta 5.",
       "sources": 3
     },
     {
       "category": "Gente",
-      "headline": "Un incendio afecta a la mansión de Will Smith en California",
-      "summary": "Un nuevo incendio ha afectado a la mansión de California del actor Will Smith y su mujer, Jada Pinkett.",
+      "headline": "Blanca Romero confirma su ruptura con Quique Sánchez Flores",
+      "summary": "Blanca Romero ha confirmado que ha terminado su relación con Quique Sánchez Flores.",
+      "sources": 3
+    },
+    {
+      "category": "Deportes",
+      "headline": "Miguel Ángel Gil Marín dimite como vicepresidente de LaLiga",
+      "summary": "Miguel Ángel Gil Marín ha dimitido como vicepresidente de LaLiga.",
       "sources": 2
     },
     {
       "category": "Deportes",
-      "headline": "Lamine Yamal se pierde el partido ante el Sabah por molestias en el tobillo",
-      "summary": "Lamine Yamal no viajará a Azerbaiyán con el Barcelona y se perderá el partido de Champions ante el Sabah, previsto para el miércoles.",
+      "headline": "Mourinho destaca la reacción del Madrid y bromea sobre lo que ocurre en el vestuario",
+      "summary": "José Mourinho celebró la reacción del Real Madrid tras llegar al descanso perdiendo 0-1 ante el PSV.",
       "sources": 2
     },
     {
-      "category": "Gente",
-      "headline": "Blanca Romero y Quique Sánchez Flores rompen tras un año de relación",
-      "summary": "Blanca Romero y Quique Sánchez Flores habrían puesto fin a su relación después de un año juntos.",
-      "sources": 2
-    },
-    {
-      "category": "Economía",
-      "headline": "El impuesto a la banca aportará 1.400 millones para vivienda",
-      "summary": "El Gobierno ha aprobado una nueva modificación del impuesto a la banca, que busca recaudar 1.",
-      "sources": 2
-    },
-    {
-      "category": "Salud",
-      "headline": "El Gobierno anuncia un decreto para proteger la información sobre el aborto y recurrirá una ley madrileña",
-      "summary": "Pedro Sánchez ha anunciado un real decreto para blindar la información sobre el aborto.",
-      "sources": 2
-    },
-    {
-      "category": "Gente",
-      "headline": "Gabriela Guillén recuerda a Carlos Osborne como «un caballero»",
-      "summary": "Gabriela Guillén ha hablado de Carlos, el hijo de Bertín Osborne y Fabiola Martínez.",
+      "category": "Deportes",
+      "headline": "Trinity Rodman se pierde el clasificatorio para el Mundial por una lesión en el hombro",
+      "summary": "Trinity Rodman no estará con Estados Unidos en el partido clasificatorio para el Mundial de 2027 de este sábado, en Texas, ante El Salvador.",
       "sources": 2
     },
     {
       "category": "Economía",
       "headline": "El Gobierno rebaja el IRPF a 2,6 millones de autónomos y simplifica el IVA",
-      "summary": "El Consejo de Ministros ha aprobado un paquete de medidas fiscales para los autónomos.",
-      "sources": 2
-    },
-    {
-      "category": "Economía",
-      "headline": "Moeve y World2Fly prueban en un vuelo una mezcla de combustibles sostenibles",
-      "summary": "Moeve y World2Fly han operado un vuelo entre Madrid y Lisboa con una mezcla de combustible sintético renovable, combustible sostenible de origen biológico y queroseno convencional.",
-      "sources": 2
-    },
-    {
-      "category": "Internacional",
-      "headline": "Francisco escribió que vio al diablo en varias ocasiones",
-      "summary": "En extractos de su diario, el papa Francisco escribió que vio al diablo 3 veces y que también vio «las puertas del infierno».",
-      "sources": 2
-    },
-    {
-      "category": "Deportes",
-      "headline": "Jorge Ventosa deja El Hormiguero tras 19 años",
-      "summary": "Jorge Ventosa dejará El Hormiguero después de 19 años vinculado al programa.",
-      "sources": 2
-    },
-    {
-      "category": "Nacional",
-      "headline": "Feijóo promete recuperar la «equidad» en los informativos de RTVE",
-      "summary": "Alberto Núñez Feijóo ha criticado a RTVE y ha descrito la televisión como «norcoreana».",
+      "summary": "El Gobierno ha aprobado un paquete de medidas fiscales para los autónomos.",
       "sources": 2
     },
     {
       "category": "Cultura",
-      "headline": "Disney estrenará el 27 de noviembre «Hechizo: Bienvenidos a Hexe»",
-      "summary": "Disney estrenará el 27 de noviembre «Hechizo: Bienvenidos a Hexe», una nueva película de animación.",
-      "sources": 1
+      "headline": "Dos lecturas opuestas de la colaboración entre Fincher y Tarantino",
+      "summary": "Las nuevas desventuras de Cliff Booth reúne a David Fincher y Quentin Tarantino, con Brad Pitt.",
+      "sources": 2
     },
     {
-      "category": "Ciencia",
-      "headline": "EPHX1, una enzima clave en el avance de la fibrosis hepática",
-      "summary": "La enzima EPHX1 se perfila como un elemento clave en la progresión de la fibrosis hepática hacia la cirrosis.",
+      "category": "Internacional",
+      "headline": "Francisco escribió que vio al diablo y las puertas del infierno",
+      "summary": "El papa Francisco escribió en su diario que vio al diablo 3 veces y también las puertas del infierno.",
+      "sources": 2
+    },
+    {
+      "category": "Cultura",
+      "headline": "Paco Cerdà gana el Premio del Libro Europeo por ‘Presentes’",
+      "summary": "El escritor valenciano Paco Cerdà ha ganado el Premio del Libro Europeo con ‘Presentes’.",
+      "sources": 2
+    },
+    {
+      "category": "Salud",
+      "headline": "El Royo Villanova incorpora una unidad cardiopulmonar para pacientes con EPOC",
+      "summary": "El hospital Royo Villanova, en Aragón, ha incorporado una unidad cardiopulmonar.",
       "sources": 1
     },
     {
       "category": "Salud",
-      "headline": "EnVIHos duplica en un año las solicitudes de pruebas del VIH a domicilio",
-      "summary": "EnVIHos, un servicio gratuito de pruebas del VIH a domicilio, ha duplicado sus solicitudes en un año.",
+      "headline": "El Hospital de Torrejón recurre al teatro para mejorar el bienestar de pacientes crónicos",
+      "summary": "El Hospital de Torrejón utiliza el teatro como parte de una iniciativa dirigida a mejorar el bienestar de las personas con enfermedades crónicas.",
+      "sources": 1
+    },
+    {
+      "category": "Política",
+      "headline": "Excavaciones en Iznatoraf revelan un poblado de más de 4.000 años",
+      "summary": "Las obras para construir un mirador en Iznatoraf, Jaén, han sacado a la luz restos arqueológicos de distintas épocas.",
+      "sources": 1
+    },
+    {
+      "category": "Política",
+      "headline": "La subasta de capones de Cascajares recauda 140.930 euros para Nuevo Futuro",
+      "summary": "La Fundación Cascajares recaudó 140. 930 euros en la XXVII Subasta Benéfica de Capones, celebrada en el Hotel Palace de Madrid a beneficio de la Asociación Nuevo Futuro.",
+      "sources": 1
+    },
+    {
+      "category": "Ciencia",
+      "headline": "Un estudio explora biomarcadores inmunológicos para personalizar el tratamiento de la sepsis",
+      "summary": "El Hospital General Universitario Santa Lucía de Cartagena participa en un estudio multicéntrico de investigación clínica sobre la sepsis.",
+      "sources": 1
+    },
+    {
+      "category": "Política",
+      "headline": "La falta de recursos y la presión privada ponen en riesgo el Estado de bienestar",
+      "summary": "La sanidad, la educación y los servicios sociales afrontan una crisis que amenaza con hacerse permanente.",
       "sources": 1
     }
   ]
