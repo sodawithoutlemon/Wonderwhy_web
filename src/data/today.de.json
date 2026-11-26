@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-25",
+  "day": "2026-11-26",
   "edition": "de",
   "items": [
     {
       "category": "Topthemen",
-      "headline": "Andreas Wolff verlässt den THW Kiel",
-      "summary": "Nationaltorhüter Andreas Wolff verlässt den THW Kiel. Mit 35 Jahren sucht er noch einmal eine neue Herausforderung.",
-      "sources": 3
-    },
-    {
-      "category": "Topthemen",
-      "headline": "Bayern verliert 1:2 in Lille und kassiert erste Saisonniederlage",
-      "summary": "Der FC Bayern hat in der Champions League beim OSC Lille 1:2 verloren.",
-      "sources": 3
+      "headline": "Pablo Hernández de Cos soll EZB-Präsident werden",
+      "summary": "Pablo Hernández de Cos soll neuer Präsident der Europäischen Zentralbank werden.",
+      "sources": 4
     },
     {
       "category": "Sport",
-      "headline": "Gukesh und Sindarow eröffnen Schach-WM mit Remis",
-      "summary": "Die erste Partie der Schach-Weltmeisterschaft in Genf ist ohne Sieger zu Ende gegangen.",
-      "sources": 3
-    },
-    {
-      "category": "Wirtschaft",
-      "headline": "Ifo-Geschäftsklima steigt auf höchsten Stand seit Frühjahr 2023",
-      "summary": "Die Stimmung in der deutschen Wirtschaft hat sich im November zum siebten Monat in Folge verbessert.",
+      "headline": "Jannik Sinner sagt für Australian Open 2027 ab",
+      "summary": "Jannik Sinner wird bei den Australian Open 2027 nicht antreten.",
       "sources": 3
     },
     {
       "category": "Topthemen",
       "headline": "Stuttgart verliert 0:2 bei Inter Mailand",
-      "summary": "Der VfB Stuttgart hat in der Champions League 0:2 bei Inter Mailand verloren.",
+      "summary": "Der VfB Stuttgart hat in der Champions League bei Inter Mailand mit 0:2 verloren.",
+      "sources": 3
+    },
+    {
+      "category": "Topthemen",
+      "headline": "SpaceX darf bis zu 1 Million Satelliten für KI-Rechenzentren starten",
+      "summary": "Die USA haben SpaceX erlaubt, bis zu 1 Million Satelliten für Rechenzentren mit künstlicher Intelligenz ins All zu bringen.",
+      "sources": 3
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Deutsche Wirtschaft wächst im dritten Quartal nur um 0,1 Prozent",
+      "summary": "Die deutsche Wirtschaft ist im dritten Quartal nur um 0,1 Prozent gewachsen.",
+      "sources": 3
+    },
+    {
+      "category": "Leute",
+      "headline": "Veruschka, Deutschlands erstes Supermodel, ist mit 87 Jahren gestorben",
+      "summary": "Veruschka ist im Alter von 87 Jahren gestorben. Die als Vera Lehndorff bekannte Deutsche galt als erstes deutsches Supermodel.",
       "sources": 3
     },
     {
       "category": "Sport",
-      "headline": "Liverpool gewinnt in Brügge, Wirtz trifft erneut",
-      "summary": "Der FC Liverpool hat in der Champions League beim FC Brügge klar gewonnen.",
-      "sources": 2
-    },
-    {
-      "category": "Technik",
-      "headline": "Anthropic-Aktie fällt nach Börsenstart unter den Ausgabepreis",
-      "summary": "Anthropic startete mit einem deutlichen Kurssprung an der Börse.",
-      "sources": 2
-    },
-    {
-      "category": "Technik",
-      "headline": "Cyberangriff soll Analysesystem der CIA getroffen haben",
-      "summary": "Angreifer sollen Zugriff auf ein Analysesystem der CIA erlangt haben.",
-      "sources": 2
-    },
-    {
-      "category": "Technik",
-      "headline": "Microsoft ruft nach Cloud-Ausfall „Code Red“ aus",
-      "summary": "Nach einer weltweiten Störung seiner Clouddienste hat Microsoft die höchste Alarmstufe „Code Red“ ausgerufen.",
-      "sources": 2
-    },
-    {
-      "category": "Leute",
-      "headline": "Uhr fällt bei „Bares für Rares“ zu Boden und zerbricht",
-      "summary": "Bei „Bares für Rares“ erlebt eine Verkäuferin gleich 2 Rückschläge.",
+      "headline": "Andreas Wolff verlässt den THW Kiel",
+      "summary": "Handball-Nationaltorhüter Andreas Wolff und der THW Kiel gehen nach der laufenden Vertragsvereinbarung getrennte Wege.",
       "sources": 2
     },
     {
       "category": "Politik",
-      "headline": "Rutte lobt Trumps Umgang mit Putin",
-      "summary": "Nato-Generalsekretär Mark Rutte lobt Donald Trumps Umgang mit Wladimir Putin.",
+      "headline": "CDU-Abgeordnete Saskia Ludwig will dem Haushalt nicht zustimmen",
+      "summary": "Die CDU-Abgeordnete Saskia Ludwig will dem Bundeshaushalt nicht zustimmen.",
       "sources": 2
     },
     {
       "category": "Sport",
-      "headline": "Real Madrid besiegt PSV Eindhoven in der Champions League",
-      "summary": "Real Madrid hat in der Champions League gegen PSV Eindhoven gewonnen und damit seine starke Serie fortgesetzt.",
+      "headline": "Deutschland scheitert im Davis Cup an Großbritannien",
+      "summary": "Deutschlands Traum vom ersten Davis-Cup-Sieg seit 33 Jahren ist geplatzt.",
+      "sources": 2
+    },
+    {
+      "category": "Politik",
+      "headline": "Unionspolitiker schlagen Kompromiss im Rentenstreit vor",
+      "summary": "Im Streit um die Rente schlagen Unionspolitiker einen Kompromiss vor.",
+      "sources": 2
+    },
+    {
+      "category": "Technik",
+      "headline": "Suzuki zeigt elektrischen Ignis, Marktstart in Europa für Sommer 2027 geplant",
+      "summary": "Suzuki hat den elektrischen Ignis vorgestellt. Er soll der erste vollelektrische Kleinstwagen der Marke werden.",
       "sources": 2
     },
     {
       "category": "Wissen",
-      "headline": "China plant erstmals einen ausländischen Raumfahrer auf Tiangong",
-      "summary": "China will mit der Mission Shenzhou 24 erstmals einen Raumfahrer aus Pakistan zu seiner Raumstation Tiangong schicken.",
+      "headline": "Junge Erwachsene haben seltener Sex",
+      "summary": "Junge Erwachsene werden zunehmend seltener mit anderen intim.",
       "sources": 2
     },
     {
-      "category": "Leute",
-      "headline": "Eric Stehfest und Sarah Scheil erwarten ihr erstes gemeinsames Kind",
-      "summary": "Eric Stehfest und seine Partnerin Sarah Scheil erwarten ihr erstes gemeinsames Kind.",
+      "category": "Wirtschaft",
+      "headline": "Unicredit-Chef Orcel will Aufsichtsratschef der Commerzbank werden",
+      "summary": "Unicredit treibt die geplante Übernahme der Commerzbank voran.",
       "sources": 2
     },
     {
       "category": "Kultur",
-      "headline": "Jensen Huang und die Glaubwürdigkeit der KI-Wette",
-      "summary": "Jensen Huang, Chef des Chipkonzerns Nvidia, steht im Zentrum der Erwartungen an künstliche Intelligenz.",
+      "headline": "Jensen Huang und die Zukunftswette auf KI",
+      "summary": "Jensen Huang, der Chef von Nvidia, steht im Zentrum zweier sehr unterschiedlicher Deutungen.",
+      "sources": 2
+    },
+    {
+      "category": "Wirtschaft",
+      "headline": "Kartenzahlung überholt Bargeld erstmals in Geschäften",
+      "summary": "In der Eurozone zahlen Menschen in Geschäften inzwischen häufiger mit Karte als mit Scheinen und Münzen.",
       "sources": 2
     }
   ]

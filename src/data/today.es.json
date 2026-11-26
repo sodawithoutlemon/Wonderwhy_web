@@ -1,95 +1,95 @@
 {
-  "day": "2026-11-25",
+  "day": "2026-11-26",
   "edition": "es",
   "items": [
     {
       "category": "Economía",
-      "headline": "El Corte Inglés aprueba un plan estratégico de 5.000 millones hasta 2032",
-      "summary": "El Corte Inglés ha aprobado un plan estratégico con una inversión de hasta 5.",
+      "headline": "El Corte Inglés aprueba un plan de inversión de 5.000 millones hasta 2032",
+      "summary": "El Corte Inglés ha aprobado un nuevo plan estratégico para el periodo 2027-2032, con una inversión de hasta 5.",
+      "sources": 3
+    },
+    {
+      "category": "Deportes",
+      "headline": "España inicia ante Austria los cuartos de final de la Copa Davis",
+      "summary": "España y Austria disputan en Bolonia los cuartos de final de la Copa Davis.",
       "sources": 3
     },
     {
       "category": "Gente",
-      "headline": "Blanca Romero confirma su ruptura con Quique Sánchez Flores",
-      "summary": "Blanca Romero ha confirmado que ha terminado su relación con Quique Sánchez Flores.",
+      "headline": "Un gran jurado imputa al padre de Meghan Markle por posesión de pornografía infantil",
+      "summary": "Un gran jurado de Estados Unidos ha imputado a Thomas Markle, padre de Meghan Markle, por 2 delitos de posesión de pornografía infantil.",
       "sources": 3
     },
     {
       "category": "Deportes",
-      "headline": "Alonso habla de las dudas que le plantea la paternidad",
-      "summary": "Fernando Alonso ha hablado de cómo vive la paternidad mientras continúa compitiendo en Fórmula 1.",
+      "headline": "BMW entrega coches a la plantilla del Real Madrid",
+      "summary": "La primera plantilla del Real Madrid ha recibido sus nuevos coches oficiales de BMW en un acto celebrado en el Bernabéu.",
+      "sources": 2
+    },
+    {
+      "category": "Deportes",
+      "headline": "Alonso se pregunta si se está perdiendo momentos importantes como padre",
+      "summary": "Fernando Alonso ha hablado sobre la paternidad en una conversación con Aston Martin.",
       "sources": 2
     },
     {
       "category": "Nacional",
-      "headline": "Sánchez defiende incentivos fiscales para propietarios frente al enfoque punitivo de sus socios",
-      "summary": "Pedro Sánchez ha defendido ofrecer incentivos fiscales a los propietarios de viviendas, frente al enfoque que califica de punitivo de sus socios de izquierda.",
+      "headline": "Sánchez defiende incentivos fiscales para propietarios frente al enfoque de sus socios de izquierda",
+      "summary": "Pedro Sánchez defiende ofrecer incentivos fiscales a los propietarios, frente al enfoque que califica de «punitivismo» de sus socios de izquierda.",
       "sources": 2
     },
     {
-      "category": "Deportes",
-      "headline": "Miguel Ángel Gil Marín dimite como vicepresidente de LaLiga",
-      "summary": "Miguel Ángel Gil Marín ha dimitido como vicepresidente de LaLiga.",
+      "category": "Tecnología",
+      "headline": "WhatsApp ya permite programar mensajes hasta 14 días antes",
+      "summary": "WhatsApp ya permite programar mensajes para que se envíen más tarde, tanto en chats individuales como en grupos.",
       "sources": 2
     },
     {
-      "category": "Deportes",
-      "headline": "Mourinho destaca la reacción del Madrid y bromea sobre lo que ocurre en el vestuario",
-      "summary": "José Mourinho celebró la reacción del Real Madrid tras llegar al descanso perdiendo 0-1 ante el PSV.",
+      "category": "Salud",
+      "headline": "El Gobierno restringe los sabores y aromas de los cigarrillos electrónicos",
+      "summary": "El Gobierno ha aprobado un Real Decreto que restringe los sabores y aromas de los cigarrillos electrónicos.",
       "sources": 2
     },
     {
       "category": "Economía",
-      "headline": "El Gobierno rebaja el IRPF a 2,6 millones de autónomos y simplifica el IVA",
-      "summary": "El Gobierno ha aprobado un paquete de medidas fiscales para los autónomos.",
+      "headline": "Isidro Fainé deja la presidencia de la Fundación CEDE y Ramón Adell le relevará",
+      "summary": "Isidro Fainé deja la presidencia de la Fundación CEDE. Le sustituirá Ramón Adell, actual vicepresidente de la entidad.",
+      "sources": 2
+    },
+    {
+      "category": "Gente",
+      "headline": "Eva González y Nacho muestran su relación en Sevilla",
+      "summary": "Eva González y su novio Nacho se dejaron ver juntos en Sevilla, con besos apasionados.",
+      "sources": 2
+    },
+    {
+      "category": "Economía",
+      "headline": "El BOE convoca 14.373 plazas para la Administración General del Estado",
+      "summary": "El Boletín Oficial del Estado ha publicado la convocatoria de 14.",
+      "sources": 2
+    },
+    {
+      "category": "Nacional",
+      "headline": "El Frente Amplio suma 450 apoyos del mundo de la cultura",
+      "summary": "El Frente Amplio ha anunciado 450 nuevas adhesiones a un manifiesto de apoyo a su candidatura.",
       "sources": 2
     },
     {
       "category": "Cultura",
-      "headline": "Dos lecturas opuestas de la colaboración entre Fincher y Tarantino",
-      "summary": "Las nuevas desventuras de Cliff Booth reúne a David Fincher y Quentin Tarantino, con Brad Pitt.",
+      "headline": "Fincher y Tarantino dividen opiniones con Las nuevas desventuras de Cliff Booth",
+      "summary": "Las nuevas desventuras de Cliff Booth reúne a David Fincher, Quentin Tarantino y Brad Pitt, pero las valoraciones sobre la película son muy distintas.",
       "sources": 2
     },
     {
-      "category": "Internacional",
-      "headline": "Francisco escribió que vio al diablo y las puertas del infierno",
-      "summary": "El papa Francisco escribió en su diario que vio al diablo 3 veces y también las puertas del infierno.",
-      "sources": 2
-    },
-    {
-      "category": "Cultura",
-      "headline": "Paco Cerdà gana el Premio del Libro Europeo por ‘Presentes’",
-      "summary": "El escritor valenciano Paco Cerdà ha ganado el Premio del Libro Europeo con ‘Presentes’.",
-      "sources": 2
-    },
-    {
-      "category": "Salud",
-      "headline": "El Royo Villanova incorpora una unidad cardiopulmonar para pacientes con EPOC",
-      "summary": "El hospital Royo Villanova, en Aragón, ha incorporado una unidad cardiopulmonar.",
-      "sources": 1
-    },
-    {
-      "category": "Salud",
-      "headline": "El Hospital de Torrejón recurre al teatro para mejorar el bienestar de pacientes crónicos",
-      "summary": "El Hospital de Torrejón utiliza el teatro como parte de una iniciativa dirigida a mejorar el bienestar de las personas con enfermedades crónicas.",
-      "sources": 1
-    },
-    {
-      "category": "Salud",
-      "headline": "El ayuno en días alternos podría favorecer la memoria",
-      "summary": "Un estudio español relaciona el ayuno en días alternos con una mejora de la memoria.",
+      "category": "Tecnología",
+      "headline": "Silvio Garattini explica cómo organiza su alimentación a los 98 años",
+      "summary": "Silvio Garattini, oncólogo y farmacólogo italiano de 98 años, sigue activo en la investigación y cuenta que come poco.",
       "sources": 1
     },
     {
       "category": "Política",
-      "headline": "Excavaciones en Iznatoraf revelan un poblado de más de 4.000 años",
-      "summary": "Las obras para construir un mirador en Iznatoraf, Jaén, han sacado a la luz restos arqueológicos de distintas épocas.",
-      "sources": 1
-    },
-    {
-      "category": "Política",
-      "headline": "La subasta de capones de Cascajares recauda 140.930 euros para Nuevo Futuro",
-      "summary": "La Fundación Cascajares recaudó 140. 930 euros en la XXVII Subasta Benéfica de Capones, celebrada en el Hotel Palace de Madrid a beneficio de la Asociación Nuevo Futuro.",
+      "headline": "Larry Fink sitúa a España ante un gran ciclo de inversión",
+      "summary": "Larry Fink, presidente y consejero delegado de BlackRock, ha señalado a España como un mercado estratégico ante un posible gran ciclo de inversión.",
       "sources": 1
     }
   ]

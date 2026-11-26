@@ -3,21 +3,21 @@
   "edition": "tr",
   "items": [
     {
+      "category": "Ekonomi",
+      "headline": "Türk Eximbank 740 milyon dolarlık sendikasyon kredisi sağladı",
+      "summary": "Türk Eximbank, 3 para biriminde toplam 740 milyon dolar tutarında sendikasyon kredisi sağladı.",
+      "sources": 3
+    },
+    {
       "category": "Gündem",
-      "headline": "HSK kararnamesiyle 957 hâkim ve savcının görev yeri değişti",
-      "summary": "Hakimler ve Savcılar Kurulu, mazeret kararnamesiyle 957 hâkim ve Cumhuriyet savcısının görev yerini değiştirdi.",
+      "headline": "Dışişleri Bakanlığı, Avrupa Parlamentosu kararını reddetti",
+      "summary": "Dışişleri Bakanlığı, Avrupa Parlamentosu Genel Kurulu’nda Türkiye ile Libya arasında imzalanan deniz yetki alanları mutabakatına ilişkin kabul edilen kararı reddetti.",
       "sources": 3
     },
     {
       "category": "Ekonomi",
       "headline": "Avrupa ve Borsa İstanbul günü düşüşle tamamladı",
       "summary": "Avrupa borsaları haftanın 3. işlem gününü düşüşle kapattı.",
-      "sources": 3
-    },
-    {
-      "category": "Ekonomi",
-      "headline": "Türk Eximbank 740 milyon dolarlık sendikasyon kredisi sağladı",
-      "summary": "Türk Eximbank, 3 para biriminde toplam 740 milyon dolar tutarında sendikasyon kredisi sağladı.",
       "sources": 3
     },
     {
@@ -33,15 +33,21 @@
       "sources": 3
     },
     {
-      "category": "Bilim",
-      "headline": "Hubble, Roman teleskobu için Samanyolu’nu inceliyor",
-      "summary": "NASA’nın Hubble Uzay Teleskobu, Samanyolu’nun merkezine yakın yıldızlarla dolu bir bölgeyi görüntüledi.",
-      "sources": 2
+      "category": "Gündem",
+      "headline": "HSK kararnamesiyle 957 hâkim ve savcının görev yeri değişti",
+      "summary": "Hakimler ve Savcılar Kurulu, mazeret kararnamesiyle 957 hâkim ve Cumhuriyet savcısının görev yerini değiştirdi.",
+      "sources": 3
     },
     {
       "category": "Teknoloji",
-      "headline": "Samsung Display, ams OSRAM’ın yüzde 9,1 hissesini alıyor",
-      "summary": "Samsung Display, Avusturyalı ams OSRAM’ın yaklaşık yüzde 9,1 hissesini 210 milyon euro karşılığında satın alıyor.",
+      "headline": "Apple, macOS çalıştıran iPad'leri şirket içinde test ediyor",
+      "summary": "Apple, macOS işletim sistemiyle çalışan iPad'leri şirket içinde test ediyor.",
+      "sources": 2
+    },
+    {
+      "category": "Bilim",
+      "headline": "Hubble, Roman teleskobu için Samanyolu’nu inceliyor",
+      "summary": "NASA’nın Hubble Uzay Teleskobu, Samanyolu’nun merkezine yakın yıldızlarla dolu bir bölgeyi görüntüledi.",
       "sources": 2
     },
     {
@@ -58,38 +64,32 @@
     },
     {
       "category": "Teknoloji",
+      "headline": "Goldgenie, Galaxy S26 Ultra ve Z Fold 8 Ultra'yı lüks kaplamalarla satışa çıkardı",
+      "summary": "Lüks kişiselleştirme şirketi Goldgenie, Samsung'un Galaxy S26 Ultra ve katlanabilir Z Fold 8 Ultra modellerini özel kaplamalarla satışa çıkardı.",
+      "sources": 2
+    },
+    {
+      "category": "Teknoloji",
       "headline": "Amazon ve Meta, Muse’un alışveriş erişimini yeniden açmayı görüşüyor",
       "summary": "Amazon ve Meta, yapay zekâ asistanı Muse’un Amazon’un çevrimiçi pazarında alışveriş yapmasına izin verecek olası bir anlaşmayı görüşüyor.",
       "sources": 2
     },
     {
-      "category": "Teknoloji",
-      "headline": "Vodafone ve İTÜ, ücretsiz Siber Güvenlik Akademisi’ni başlattı",
-      "summary": "Vodafone Business ve İTÜ, siber güvenlik alanında uzman yetiştirmek amacıyla ücretsiz çevrim içi bir akademi başlattı.",
+      "category": "Spor",
+      "headline": "Beşiktaş, Hapoel Beer-Sheva'yı Gürcistan'da ağırlayacak",
+      "summary": "Beşiktaş, UEFA Avrupa Ligi'nin 5. haftasında bugün Hapoel Beer-Sheva ile karşılaşacak.",
       "sources": 2
     },
     {
-      "category": "Dünya",
-      "headline": "Fatima Payman, Senato konuşmasını 6 aylık kızıyla yaptı",
-      "summary": "Avustralyalı senatör Fatima Payman, Senatoda konuşma yaparken 6 aylık kızı Aliyah’ı kucağında tuttu.",
-      "sources": 1
-    },
-    {
-      "category": "Siyaset",
-      "headline": "Davut Gül’den sokakta kalanlar için 112 çağrısı",
-      "summary": "İstanbul Valisi Davut Gül, gece hava sıcaklığının 2 dereceye kadar düşmesinin beklendiğini söyledi.",
-      "sources": 1
-    },
-    {
       "category": "Kültür",
-      "headline": "GTA VI albümü, yıldızlarla dolu yeni şarkılarıyla öne çıkıyor",
-      "summary": "Grand Theft Auto VI için hazırlanan albüm, oyundan bağımsız dinlenebilecek yeni şarkıları bir araya getiriyor.",
+      "headline": "Laura van der Heijden ve Jâms Coleman’dan teselli arayan Fransız çello müziği",
+      "summary": "Çellist Laura van der Heijden ile piyanist Jâms Coleman, Chandos etiketiyle yayımlanan Lumière albümünde Fransız bestecilerin eserlerini yorumluyor.",
       "sources": 1
     },
     {
-      "category": "Kültür",
-      "headline": "Gençler Macy's Şükran Günü geçit töreninde sahne alıyor",
-      "summary": "Macy's, ünlü Şükran Günü geçit töreninin 100. yıl dönümünü kutluyor.",
+      "category": "Bilim",
+      "headline": "İskandinavya’daki kaya oymaları av alanlarını göstermiş olabilir",
+      "summary": "Yaklaşık MÖ 9000 ile MÖ 4000 arasında, eski İskandinavya’da yaşayan insanlar kayalıklara büyük hayvan figürleri oydu.",
       "sources": 1
     }
   ]

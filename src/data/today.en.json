@@ -1,96 +1,96 @@
 {
-  "day": "2026-11-25",
+  "day": "2026-11-26",
   "edition": "en",
   "items": [
     {
-      "category": "Entertainment",
-      "headline": "Netflix cancels Will Ferrell golf comedy ‘The Hawk’ after 1 season",
-      "summary": "Netflix has canceled “The Hawk,” a golf comedy starring Will Ferrell, after 1 season.",
-      "sources": 3
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Ava DuVernay to receive London Critics’ Circle’s first Laura Mulvey award",
-      "summary": "Ava DuVernay will receive the first Laura Mulvey Female Trailblazer Award at the 2027 London Critics’ Circle Film Awards.",
-      "sources": 3
-    },
-    {
-      "category": "Entertainment",
-      "headline": "Jenn Kuzmyk to leave Banff World Media Festival on Dec. 11",
-      "summary": "Jenn Kuzmyk will leave her post as executive director of the Banff World Media Festival on Dec.",
+      "category": "National",
+      "headline": "Macy’s Thanksgiving Day Parade postponed to Saturday",
+      "summary": "The Macy’s Thanksgiving Day Parade has been postponed because of expected severe weather.",
       "sources": 3
     },
     {
       "category": "Sports",
-      "headline": "Morgan says Wales must finish Nations Championship strongly",
-      "summary": "Jac Morgan says Wales have had a positive Nations Championship campaign, but the team still needs a strong finish.",
+      "headline": "Russell calls Verstappen’s criticism after Las Vegas Grand Prix amusing",
+      "summary": "George Russell says he found Max Verstappen’s criticism of him after the Las Vegas Grand Prix “quite amusing.",
       "sources": 2
     },
     {
       "category": "Sports",
-      "headline": "Lincoln sack head coaches Chris Cohen and Tom Shaw",
-      "summary": "Lincoln have sacked joint head coaches Chris Cohen and Tom Shaw, just 6 months after the pair took charge of the Championship side.",
+      "headline": "Oliver Bearman to continue with Haas in 2027",
+      "summary": "Britain's Oliver Bearman will continue racing for Haas in Formula 1 in 2027.",
       "sources": 2
     },
     {
-      "category": "World",
-      "headline": "Canadian astronaut Joshua Kutryk welcomes third child while aboard the ISS",
-      "summary": "Canadian astronaut Joshua Kutryk’s wife gave birth to the couple’s third child while he was aboard the International Space Station.",
-      "sources": 2
-    },
-    {
-      "category": "Sports",
-      "headline": "Aaron Rodgers says his time in Pittsburgh is over after being benched",
-      "summary": "The Steelers are benching Aaron Rodgers for their Black Friday home game against the Denver Broncos.",
-      "sources": 2
-    },
-    {
-      "category": "Science",
-      "headline": "Hubble captures barred galaxy NGC 4394",
-      "summary": "A new image from the Hubble Space Telescope puts the galaxy NGC 4394 in focus, highlighting its distinct central bar.",
-      "sources": 2
-    },
-    {
-      "category": "Science",
-      "headline": "Hubble surveys the Milky Way’s crowded center ahead of Roman",
-      "summary": "NASA’s Hubble Space Telescope has captured a colorful field of stars in the Milky Way, looking toward the galaxy’s central bulge.",
-      "sources": 2
-    },
-    {
-      "category": "Politics",
-      "headline": "Vance says Huang is not under investigation",
-      "summary": "Vice President JD Vance said Attorney General Todd Blanche assured him that Nvidia CEO Jensen Huang was not under investigation.",
+      "category": "Entertainment",
+      "headline": "Constance Wang calls her portrayal in Netflix’s “The Altruists” stereotypical and racist",
+      "summary": "Former FTX chief operating officer Constance Wang criticized her portrayal in Netflix’s limited series “The Altruists.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Amazon and Meta discuss ending Muse shopping block",
-      "summary": "Amazon and Meta are reportedly discussing a deal that would let Meta’s Muse AI agent shop on Amazon’s marketplace.",
+      "headline": "FCC approves SpaceX plan for up to 1 million AI satellites",
+      "summary": "The Federal Communications Commission has approved SpaceX’s plan to deploy up to 1 million satellites equipped with AI chips.",
       "sources": 2
     },
     {
-      "category": "Politics",
-      "headline": "Trump held millions in Nvidia stock as he pushed for Jensen Huang’s reinstatement",
-      "summary": "Financial disclosure documents show President Trump held tens of millions of dollars in Nvidia shares while pressing for the reinstatement of the company’s chief executive, Jensen Huang.",
+      "category": "Sports",
+      "headline": "Botham returns as Morgan-Williams prepares for first start",
+      "summary": "Wales will make 5 changes for its Nations Championship finale against Japan.",
       "sources": 2
     },
     {
       "category": "World",
-      "headline": "China launches Shenzhou-24 with first foreign astronaut aboard",
-      "summary": "China has launched the Shenzhou-24 spacecraft with 3 astronauts aboard.",
+      "headline": "North Korea expels Swiss diplomat amid dispute linked to children’s camp",
+      "summary": "North Korea has expelled a Swiss diplomat from Pyongyang. Al Jazeera says the dispute centers on the Songdowon International Children’s Camp, while BBC World describes it as a sanctions row.",
       "sources": 2
     },
     {
       "category": "Technology",
-      "headline": "Meta brings its Muse AI assistant to Instagram DMs",
-      "summary": "Meta is integrating its Muse AI assistant into Instagram direct messages.",
+      "headline": "Alienware Aurora priced at $1,900 in early Black Friday deal",
+      "summary": "An Alienware Aurora desktop is being offered for $1,900 as an early Black Friday deal.",
+      "sources": 2
+    },
+    {
+      "category": "Entertainment",
+      "headline": "Richard Hammond says he declined a BBC approach to return to Top Gear",
+      "summary": "Richard Hammond says the BBC approached him about returning to Top Gear as the motoring show prepares for a reboot.",
+      "sources": 2
+    },
+    {
+      "category": "Entertainment",
+      "headline": "New book alleges Bob Iger got Disney employee pregnant during affair",
+      "summary": "A forthcoming biography of Bob Iger alleges that he got a Disney employee pregnant during an affair in the 1990s.",
+      "sources": 2
+    },
+    {
+      "category": "National",
+      "headline": "Thanksgiving travel disrupted by storms and heavy traffic",
+      "summary": "Thanksgiving travel is underway across the U. S.",
       "sources": 2
     },
     {
       "category": "Politics",
-      "headline": "Trump pardons Thanksgiving turkeys Freedom and Feathers",
-      "summary": "President Trump pardoned 2 turkeys, Freedom and Feathers, as part of the annual Thanksgiving tradition.",
+      "headline": "Trump administration proposes tariffs on China, EU and other economies",
+      "summary": "The Trump administration is moving to raise tariffs on imports from China, the European Union, and other economies.",
       "sources": 2
+    },
+    {
+      "category": "National",
+      "headline": "Steelers release Aaron Rodgers after he criticizes coach over benching",
+      "summary": "The Pittsburgh Steelers released quarterback Aaron Rodgers after benching him.",
+      "sources": 2
+    },
+    {
+      "category": "Science",
+      "headline": "Dragonflies eat insects and each other during autumn migrations",
+      "summary": "New research shows that dragonflies eat a range of insects, and sometimes each other, during their autumn migrations.",
+      "sources": 1
+    },
+    {
+      "category": "Politics",
+      "headline": "Giving thanks for American progress can encourage hope",
+      "summary": "Giving thanks for American progress can help people adopt a more hopeful mindset.",
+      "sources": 1
     }
   ]
 }
